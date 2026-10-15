@@ -32,6 +32,20 @@
 - Browser-like tabs to organize your local solutions
 - Extensive problems: includes all problems with sample test cases, hidden test cases and reference solutions from Blind 75 and NeetCode 150
 
+## Changes in this repository
+
+Additions and fixes made on top of upstream Cojudge:
+
+- **111 reference solutions added** — problems that shipped without a `Marker.java` now have a full reference solution plus `isCorrect` validator. All 111 were verified end-to-end (compile → official tests → self-check → example acceptance) with `scripts/verify-markers-local.mjs`: **111/111 passing**.
+- **Fast navigation** — the home page used to re-scan ~35,000 content files (summaries + source badges for all ~2,900 problems) on *every* back-navigation and course-tab switch, costing ~2.4 s per hop. The scan is now cached server-side and auto-invalidated with `fs.watch` when content changes. In-browser measurements: **~150 ms per navigation**, one-time warm-up on first load after server start.
+- **Verified baseline** — 186/186 unit tests pass (`npx vitest run`), `npm run build` clean, and both local runner images (`cojudge/python:3.11`, `cojudge/cpp:13`) build and pass offline checks.
+
+Re-verify any marker (requires a JDK):
+
+```bash
+node scripts/verify-markers-local.mjs --only two-sum   # one or more slugs
+```
+
 ## Requirements
 
 - Node.js (v18+) and npm for CLI or source installs; desktop releases bundle Node.js
