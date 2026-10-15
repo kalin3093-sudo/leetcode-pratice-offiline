@@ -1,0 +1,58 @@
+{
+  "id": "stable-subarrays-with-equal-boundary-and-interior-sum",
+  "title": "3728. Stable Subarrays With Equal Boundary and Interior Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/stable-subarrays-with-equal-boundary-and-interior-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "capacity = [9,3,3,3,9]",
+      "output": "2",
+      "explanation": "[9,3,3,3,9] is stable because the first and last elements are both 9, and the sum of the elements strictly between them is 3 + 3 + 3 = 9. [3,3,3] is stable because the first and last elements are both 3, and the sum of the elements strictly between them is 3."
+    },
+    {
+      "input": "capacity = [1,2,3,4,5]",
+      "output": "0",
+      "explanation": "No subarray of length at least 3 has equal first and last elements, so the answer is 0."
+    },
+    {
+      "input": "capacity = [-4,4,0,0,-8,-4]",
+      "output": "1",
+      "explanation": "[-4,4,0,0,-8,-4] is stable because the first and last elements are both -4, and the sum of the elements strictly between them is 4 + 0 + 0 + (-8) = -4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countStableSubarrays(vector<int>& capacity) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countStableSubarrays(int[] capacity) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countStableSubarrays(self, capacity: List[int]) -> int:\n        ",
+    "typescript": "function countStableSubarrays(capacity: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountStableSubarrays(int[] capacity) {\n        \n    }\n}",
+    "go": "func countStableSubarrays(capacity []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_stable_subarrays(capacity: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "capacity": "[9,3,3,3,9]"
+    },
+    {
+      "capacity": "[1,2,3,4,5]"
+    },
+    {
+      "capacity": "[-4,4,0,0,-8,-4]"
+    }
+  ],
+  "functionName": "countStableSubarrays",
+  "params": [
+    {
+      "name": "capacity",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use prefix sums",
+    "Let the prefix sum array be <code>p</code>; notice that for a stable range <code>[l, r]</code>, the condition becomes <code>p[r - 1] - p[l] == a[r]</code> and <code>a[l] == a[r]</code>",
+    "For each index <code>r</code>, you want to count the number of previous indices <code>l</code> such that <code>p[l] == p[r - 1] - a[r]</code> and <code>a[l] == a[r]</code>",
+    "You can do this efficiently by maintaining a map from <code>(a[i], p[i])</code> to a frequency count as you iterate"
+  ]
+}

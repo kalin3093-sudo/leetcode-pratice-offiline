@@ -1,0 +1,51 @@
+{
+  "id": "length-of-the-longest-valid-substring",
+  "title": "2781. Length of the Longest Valid Substring",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/length-of-the-longest-valid-substring/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "word = \"cbaaaabc\", forbidden = [\"aaa\",\"cb\"]",
+      "output": "4",
+      "explanation": "There are 11 valid substrings in word: \"c\", \"b\", \"a\", \"ba\", \"aa\", \"bc\", \"baa\", \"aab\", \"ab\", \"abc\" and \"aabc\". The length of the longest valid substring is 4. It can be shown that all other substrings contain either \"aaa\" or \"cb\" as a substring."
+    },
+    {
+      "input": "word = \"leetcode\", forbidden = [\"de\",\"le\",\"e\"]",
+      "output": "4",
+      "explanation": "There are 11 valid substrings in word: \"l\", \"t\", \"c\", \"o\", \"d\", \"tc\", \"co\", \"od\", \"tco\", \"cod\", and \"tcod\". The length of the longest valid substring is 4. It can be shown that all other substrings contain either \"de\", \"le\", or \"e\" as a substring."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestValidSubstring(string word, vector<string>& forbidden) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestValidSubstring(String word, List<String> forbidden) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestValidSubstring(self, word: str, forbidden: List[str]) -> int:\n        ",
+    "typescript": "function longestValidSubstring(word: string, forbidden: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestValidSubstring(string word, IList<string> forbidden) {\n        \n    }\n}",
+    "go": "func longestValidSubstring(word string, forbidden []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_valid_substring(word: String, forbidden: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "cbaaaabc",
+      "forbidden": "[\"aaa\",\"cb\"]"
+    },
+    {
+      "word": "leetcode",
+      "forbidden": "[\"de\",\"le\",\"e\"]"
+    }
+  ],
+  "functionName": "longestValidSubstring",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    },
+    {
+      "name": "forbidden",
+      "type": "string_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

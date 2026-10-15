@@ -1,0 +1,55 @@
+{
+  "id": "minimum-average-of-smallest-and-largest-elements",
+  "title": "3194. Minimum Average of Smallest and Largest Elements",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [7,8,3,4,15,13,4,1]",
+      "output": "5.5",
+      "explanation": "step nums averages 0 [7,8,3,4,15,13,4,1] [] 1 [7,8,3,4,13,4] [8] 2 [7,8,4,4] [8,8] 3 [7,4] [8,8,6] 4 [] [8,8,6,5.5] The smallest element of averages, 5.5, is returned."
+    },
+    {
+      "input": "nums = [1,9,8,3,10,5]",
+      "output": "5.5",
+      "explanation": "step nums averages 0 [1,9,8,3,10,5] [] 1 [9,8,3,5] [5.5] 2 [8,5] [5.5,6] 3 [] [5.5,6,6.5]"
+    },
+    {
+      "input": "nums = [1,2,3,7,8,9]",
+      "output": "5.0",
+      "explanation": "step nums averages 0 [1,2,3,7,8,9] [] 1 [2,3,7,8] [5] 2 [3,7] [5,5] 3 [] [5,5,5]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double minimumAverage(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double minimumAverage(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumAverage(self, nums: List[int]) -> float:\n        ",
+    "typescript": "function minimumAverage(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double MinimumAverage(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumAverage(nums []int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_average(nums: Vec<i32>) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[7,8,3,4,15,13,4,1]"
+    },
+    {
+      "nums": "[1,9,8,3,10,5]"
+    },
+    {
+      "nums": "[1,2,3,7,8,9]"
+    }
+  ],
+  "functionName": "minimumAverage",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "double",
+  "hints": [
+    "If <code>nums</code> is sorted, then the elements of <code>averages</code> are <code>(nums[i] + nums[n - i - 1]) / 2</code>  for all <code>i < n / 2</code>."
+  ]
+}

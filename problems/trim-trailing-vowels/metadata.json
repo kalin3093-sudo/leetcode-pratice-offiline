@@ -1,0 +1,55 @@
+{
+  "id": "trim-trailing-vowels",
+  "title": "3856. Trim Trailing Vowels",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/trim-trailing-vowels/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"idea\"",
+      "output": "\"id\"",
+      "explanation": "Removing \"idea\", we obtain the string \"id\"."
+    },
+    {
+      "input": "s = \"day\"",
+      "output": "\"day\"",
+      "explanation": "There are no trailing vowels in the string \"day\"."
+    },
+    {
+      "input": "s = \"aeiou\"",
+      "output": "\"\"",
+      "explanation": "Removing \"aeiou\", we obtain the string \"\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string trimTrailingVowels(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String trimTrailingVowels(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def trimTrailingVowels(self, s: str) -> str:\n        ",
+    "typescript": "function trimTrailingVowels(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string TrimTrailingVowels(string s) {\n        \n    }\n}",
+    "go": "func trimTrailingVowels(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn trim_trailing_vowels(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "idea"
+    },
+    {
+      "s": "day"
+    },
+    {
+      "s": "aeiou"
+    }
+  ],
+  "functionName": "trimTrailingVowels",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Simulate; pop the last character as long as it is a vowel."
+  ]
+}

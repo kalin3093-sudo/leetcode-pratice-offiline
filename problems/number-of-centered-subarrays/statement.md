@@ -1,0 +1,10 @@
+You are given an integer array `nums`.
+
+A **subarray** of `nums` is called **centered** if the sum of its elements is **equal to at least one** element within that **same subarray**.
+
+Return the number of **centered subarrays** of `nums`.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 500`
+-   `-10^5 ≤ nums[i] ≤ 10^5`

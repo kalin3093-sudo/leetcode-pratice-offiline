@@ -1,0 +1,60 @@
+{
+  "id": "total-characters-in-string-after-transformations-ii",
+  "title": "3337. Total Characters in String After Transformations II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abcyy\", t = 2, nums = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]",
+      "output": "7",
+      "explanation": "First Transformation (t = 1): 'a' becomes 'b' as nums[0] == 1 'b' becomes 'c' as nums[1] == 1 'c' becomes 'd' as nums[2] == 1 'y' becomes 'z' as nums[24] == 1 'y' becomes 'z' as nums[24] == 1 String after the first transformation: \"bcdzz\" Second Transformation (t = 2): 'b' becomes 'c' as nums[1] == 1 'c' becomes 'd' as nums[2] == 1 'd' becomes 'e' as nums[3] == 1 'z' becomes 'ab' as nums[25] == 2 'z' becomes 'ab' as nums[25] == 2 String after the second transformation: \"cdeabab\" Final Length of the string: The string is \"cdeabab\", which has 7 characters."
+    },
+    {
+      "input": "s = \"azbk\", t = 1, nums = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]",
+      "output": "8",
+      "explanation": "First Transformation (t = 1): 'a' becomes 'bc' as nums[0] == 2 'z' becomes 'ab' as nums[25] == 2 'b' becomes 'cd' as nums[1] == 2 'k' becomes 'lm' as nums[10] == 2 String after the first transformation: \"bcabcdlm\" Final Length of the string: The string is \"bcabcdlm\", which has 8 characters."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int lengthAfterTransformations(string s, int t, vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int lengthAfterTransformations(String s, int t, List<Integer> nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lengthAfterTransformations(self, s: str, t: int, nums: List[int]) -> int:\n        ",
+    "typescript": "function lengthAfterTransformations(s: string, t: number, nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LengthAfterTransformations(string s, int t, IList<int> nums) {\n        \n    }\n}",
+    "go": "func lengthAfterTransformations(s string, t int, nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn length_after_transformations(s: String, t: i32, nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcyy",
+      "t": 2,
+      "nums": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2]"
+    },
+    {
+      "s": "azbk",
+      "t": 1,
+      "nums": "[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]"
+    }
+  ],
+  "functionName": "lengthAfterTransformations",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "int"
+    },
+    {
+      "name": "nums",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Model the problem as a matrix multiplication problem.",
+    "Use exponentiation to quickly multiply matrices."
+  ]
+}

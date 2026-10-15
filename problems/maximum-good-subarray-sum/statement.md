@@ -1,0 +1,11 @@
+You are given an array `nums` of length `n` and a **positive** integer `k`.
+
+A subarray of `nums` is called **good** if the **absolute difference** between its first and last element is **exactly** `k`, in other words, the subarray `nums[i..j]` is good if `|nums[i] - nums[j]| == k`.
+
+Return *the **maximum** sum of a **good** subarray of* `nums`. *If there are no good subarrays**, return* `0`.
+
+**Constraints:**
+
+-   `2 ≤ nums.length ≤ 10^5`
+-   `-10^9 ≤ nums[i] ≤ 10^9`
+-   `1 ≤ k ≤ 10^9`

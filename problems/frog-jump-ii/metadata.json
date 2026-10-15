@@ -1,0 +1,48 @@
+{
+  "id": "frog-jump-ii",
+  "title": "2498. Frog Jump II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/frog-jump-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stones = [0,2,5,6,7]",
+      "output": "5",
+      "explanation": "The above figure represents one of the optimal paths the frog can take. The cost of this path is 5, which is the maximum length of a jump. Since it is not possible to achieve a cost of less than 5, we return it."
+    },
+    {
+      "input": "stones = [0,3,9]",
+      "output": "9",
+      "explanation": "The frog can jump directly to the last stone and come back to the first stone. In this case, the length of each jump will be 9. The cost for the path will be max(9, 9) = 9. It can be shown that this is the minimum achievable cost."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxJump(vector<int>& stones) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxJump(int[] stones) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxJump(self, stones: list[int]) -> int:\n        ",
+    "typescript": "function maxJump(stones: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxJump(int[] stones) {\n        \n    }\n}",
+    "go": "func maxJump(stones []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_jump(stones: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stones": "[0,2,5,6,7]"
+    },
+    {
+      "stones": "[0,3,9]"
+    }
+  ],
+  "functionName": "maxJump",
+  "params": [
+    {
+      "name": "stones",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "One of the optimal strategies will be to jump to every stone.",
+    "Skipping just one stone in every forward jump and jumping to those skipped stones in backward jump can minimize the maximum jump."
+  ]
+}

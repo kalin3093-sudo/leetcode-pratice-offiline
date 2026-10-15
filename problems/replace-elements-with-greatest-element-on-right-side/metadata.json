@@ -1,0 +1,48 @@
+{
+  "id": "replace-elements-with-greatest-element-on-right-side",
+  "title": "1299. Replace Elements with Greatest Element on Right Side",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [17,18,5,4,6,1]",
+      "output": "[18,6,6,6,1,-1]",
+      "explanation": "- index 0 --> the greatest element to the right of index 0 is index 1 (18). - index 1 --> the greatest element to the right of index 1 is index 4 (6). - index 2 --> the greatest element to the right of index 2 is index 4 (6). - index 3 --> the greatest element to the right of index 3 is index 4 (6). - index 4 --> the greatest element to the right of index 4 is index 5 (1). - index 5 --> there are no elements to the right of index 5, so we put -1."
+    },
+    {
+      "input": "arr = [400]",
+      "output": "[-1]",
+      "explanation": "There are no elements to the right of index 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> replaceElements(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] replaceElements(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def replaceElements(self, arr: list[int]) -> list[int]:\n        ",
+    "typescript": "function replaceElements(arr: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ReplaceElements(int[] arr) {\n        \n    }\n}",
+    "go": "func replaceElements(arr []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn replace_elements(arr: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[17,18,5,4,6,1]"
+    },
+    {
+      "arr": "[400]"
+    }
+  ],
+  "functionName": "replaceElements",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Loop through the array starting from the end.",
+    "Keep the maximum value seen so far."
+  ]
+}

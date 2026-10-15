@@ -1,0 +1,48 @@
+{
+  "id": "maximize-greatness-of-an-array",
+  "title": "2592. Maximize Greatness of an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-greatness-of-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,5,2,1,3,1]",
+      "output": "4",
+      "explanation": "One of the optimal rearrangements is perm = [2,5,1,3,3,1,1]. At indices = 0, 1, 3, and 4, perm[i] > nums[i]. Hence, we return 4."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "3",
+      "explanation": "We can prove the optimal perm is [2,3,4,1]. At indices = 0, 1, and 2, perm[i] > nums[i]. Hence, we return 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximizeGreatness(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximizeGreatness(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximizeGreatness(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maximizeGreatness(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximizeGreatness(int[] nums) {\n        \n    }\n}",
+    "go": "func maximizeGreatness(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximize_greatness(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,5,2,1,3,1]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "maximizeGreatness",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we use sorting and two pointers here?",
+    "Assign every element the next bigger unused element as many times as possible."
+  ]
+}

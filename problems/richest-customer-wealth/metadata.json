@@ -1,0 +1,55 @@
+{
+  "id": "richest-customer-wealth",
+  "title": "1672. Richest Customer Wealth",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/richest-customer-wealth/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "accounts = [[1,2,3],[3,2,1]]",
+      "output": "6",
+      "explanation": "1st customer has wealth = 1 + 2 + 3 = 6 2nd customer has wealth = 3 + 2 + 1 = 6 Both customers are considered the richest with a wealth of 6 each, so return 6."
+    },
+    {
+      "input": "accounts = [[1,5],[7,3],[3,5]]",
+      "output": "10",
+      "explanation": "1st customer has wealth = 6 2nd customer has wealth = 10 3rd customer has wealth = 8 The 2nd customer is the richest with a wealth of 10."
+    },
+    {
+      "input": "accounts = [[2,8,7],[7,1,3],[1,9,5]]",
+      "output": "17"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumWealth(vector<vector<int>>& accounts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumWealth(int[][] accounts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumWealth(self, accounts: list[list[int]]) -> int:\n        ",
+    "typescript": "function maximumWealth(accounts: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumWealth(int[][] accounts) {\n        \n    }\n}",
+    "go": "func maximumWealth(accounts [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_wealth(accounts: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "accounts": "[[1,2,3],[3,2,1]]"
+    },
+    {
+      "accounts": "[[1,5],[7,3],[3,5]]"
+    },
+    {
+      "accounts": "[[2,8,7],[7,1,3],[1,9,5]]"
+    }
+  ],
+  "functionName": "maximumWealth",
+  "params": [
+    {
+      "name": "accounts",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Calculate the wealth of each customer",
+    "Find the maximum element in array."
+  ]
+}

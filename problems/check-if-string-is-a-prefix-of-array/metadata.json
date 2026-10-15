@@ -1,0 +1,54 @@
+{
+  "id": "check-if-string-is-a-prefix-of-array",
+  "title": "1961. Check If String Is a Prefix of Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"iloveleetcode\", words = [\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "output": "true",
+      "explanation": "s can be made by concatenating \"i\", \"love\", and \"leetcode\" together."
+    },
+    {
+      "input": "s = \"iloveleetcode\", words = [\"apples\",\"i\",\"love\",\"leetcode\"]",
+      "output": "false",
+      "explanation": "It is impossible to make s using a prefix of arr."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isPrefixString(string s, vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isPrefixString(String s, String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isPrefixString(self, s: str, words: list[str]) -> bool:\n        ",
+    "typescript": "function isPrefixString(s: string, words: string[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsPrefixString(string s, string[] words) {\n        \n    }\n}",
+    "go": "func isPrefixString(s string, words []string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_prefix_string(s: String, words: Vec<String>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "iloveleetcode",
+      "words": "[\"i\",\"love\",\"leetcode\",\"apples\"]"
+    },
+    {
+      "s": "iloveleetcode",
+      "words": "[\"apples\",\"i\",\"love\",\"leetcode\"]"
+    }
+  ],
+  "functionName": "isPrefixString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "There are only words.length prefix strings.",
+    "Create all of them and see if s is one of them."
+  ]
+}

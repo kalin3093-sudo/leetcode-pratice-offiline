@@ -1,0 +1,52 @@
+{
+  "id": "convert-to-base-2",
+  "title": "1017. Convert to Base -2",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/convert-to-base-2/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "\"110\""
+    },
+    {
+      "input": "n = 3",
+      "output": "\"111\""
+    },
+    {
+      "input": "n = 4",
+      "output": "\"100\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string baseNeg2(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String baseNeg2(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def baseNeg2(self, n: int) -> str:\n        ",
+    "typescript": "function baseNeg2(n: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string BaseNeg2(int n) {\n        \n    }\n}",
+    "go": "func baseNeg2(n int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn base_neg2(n: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2
+    },
+    {
+      "n": 3
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "baseNeg2",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Figure out whether you need the ones digit placed or not, then shift by two."
+  ]
+}

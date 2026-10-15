@@ -1,0 +1,47 @@
+{
+  "id": "count-pairs-that-form-a-complete-day-i",
+  "title": "3184. Count Pairs That Form a Complete Day I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "hours = [12,12,30,24,24]",
+      "output": "2",
+      "explanation": "The pairs of indices that form a complete day are (0, 1) and (3, 4)."
+    },
+    {
+      "input": "hours = [72,48,24,3]",
+      "output": "3",
+      "explanation": "The pairs of indices that form a complete day are (0, 1), (0, 2), and (1, 2)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countCompleteDayPairs(vector<int>& hours) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countCompleteDayPairs(int[] hours) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countCompleteDayPairs(self, hours: List[int]) -> int:\n        ",
+    "typescript": "function countCompleteDayPairs(hours: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountCompleteDayPairs(int[] hours) {\n        \n    }\n}",
+    "go": "func countCompleteDayPairs(hours []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_complete_day_pairs(hours: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "hours": "[12,12,30,24,24]"
+    },
+    {
+      "hours": "[72,48,24,3]"
+    }
+  ],
+  "functionName": "countCompleteDayPairs",
+  "params": [
+    {
+      "name": "hours",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Brute force all pairs <code>(i, j)</code> and check if they form a valid complete day. It is considered a complete day if <code>(hours[i] + hours[j]) % 24 == 0</code>."
+  ]
+}

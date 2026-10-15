@@ -1,0 +1,56 @@
+{
+  "id": "next-greater-numerically-balanced-number",
+  "title": "2048. Next Greater Numerically Balanced Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/next-greater-numerically-balanced-number/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "22",
+      "explanation": "22 is numerically balanced since: - The digit 2 occurs 2 times. It is also the smallest numerically balanced number strictly greater than 1."
+    },
+    {
+      "input": "n = 1000",
+      "output": "1333",
+      "explanation": "1333 is numerically balanced since: - The digit 1 occurs 1 time. - The digit 3 occurs 3 times. It is also the smallest numerically balanced number strictly greater than 1000. Note that 1022 cannot be the answer because 0 appeared more than 0 times."
+    },
+    {
+      "input": "n = 3000",
+      "output": "3133",
+      "explanation": "3133 is numerically balanced since: - The digit 1 occurs 1 time. - The digit 3 occurs 3 times. It is also the smallest numerically balanced number strictly greater than 3000."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int nextBeautifulNumber(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int nextBeautifulNumber(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nextBeautifulNumber(self, n: int) -> int:\n        ",
+    "typescript": "function nextBeautifulNumber(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NextBeautifulNumber(int n) {\n        \n    }\n}",
+    "go": "func nextBeautifulNumber(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn next_beautiful_number(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 1000
+    },
+    {
+      "n": 3000
+    }
+  ],
+  "functionName": "nextBeautifulNumber",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How far away can the next greater numerically balanced number be from n?",
+    "With the given constraints, what is the largest numerically balanced number?"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "frog-jump",
+  "title": "403. Frog Jump",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/frog-jump/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stones = [0,1,3,5,6,8,12,17]",
+      "output": "true",
+      "explanation": "The frog can jump to the last stone by jumping 1 unit to the 2nd stone, then 2 units to the 3rd stone, then 2 units to the 4th stone, then 3 units to the 6th stone, 4 units to the 7th stone, and 5 units to the 8th stone."
+    },
+    {
+      "input": "stones = [0,1,2,3,4,8,9,11]",
+      "output": "false",
+      "explanation": "There is no way to jump to the last stone as the gap between the 5th and 6th stone is too large."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canCross(vector<int>& stones) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canCross(int[] stones) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canCross(self, stones: list[int]) -> bool:\n        ",
+    "typescript": "function canCross(stones: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanCross(int[] stones) {\n        \n    }\n}",
+    "go": "func canCross(stones []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_cross(stones: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stones": "[0,1,3,5,6,8,12,17]"
+    },
+    {
+      "stones": "[0,1,2,3,4,8,9,11]"
+    }
+  ],
+  "functionName": "canCross",
+  "params": [
+    {
+      "name": "stones",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "student-attendance-record-i",
+  "title": "551. Student Attendance Record I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/student-attendance-record-i/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"PPALLP\"",
+      "output": "true",
+      "explanation": "The student has fewer than 2 absences and was never late 3 or more consecutive days."
+    },
+    {
+      "input": "s = \"PPALLL\"",
+      "output": "false",
+      "explanation": "The student was late 3 consecutive days in the last 3 days, so is not eligible for the award."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkRecord(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkRecord(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkRecord(self, s: str) -> bool:\n        ",
+    "typescript": "function checkRecord(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckRecord(string s) {\n        \n    }\n}",
+    "go": "func checkRecord(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_record(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "PPALLP"
+    },
+    {
+      "s": "PPALLL"
+    }
+  ],
+  "functionName": "checkRecord",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

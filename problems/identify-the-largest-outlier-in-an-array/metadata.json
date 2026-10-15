@@ -1,0 +1,56 @@
+{
+  "id": "identify-the-largest-outlier-in-an-array",
+  "title": "3371. Identify the Largest Outlier in an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,5,10]",
+      "output": "10",
+      "explanation": "The special numbers could be 2 and 3, thus making their sum 5 and the outlier 10."
+    },
+    {
+      "input": "nums = [-2,-1,-3,-6,4]",
+      "output": "4",
+      "explanation": "The special numbers could be -2, -1, and -3, thus making their sum -6 and the outlier 4."
+    },
+    {
+      "input": "nums = [1,1,1,1,1,5,5]",
+      "output": "5",
+      "explanation": "The special numbers could be 1, 1, 1, 1, and 1, thus making their sum 5 and the other 5 as the outlier."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getLargestOutlier(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getLargestOutlier(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getLargestOutlier(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function getLargestOutlier(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetLargestOutlier(int[] nums) {\n        \n    }\n}",
+    "go": "func getLargestOutlier(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_largest_outlier(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,5,10]"
+    },
+    {
+      "nums": "[-2,-1,-3,-6,4]"
+    },
+    {
+      "nums": "[1,1,1,1,1,5,5]"
+    }
+  ],
+  "functionName": "getLargestOutlier",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What will be the value of array sum if we remove the outlier from it?",
+    "Use hashmap to find occurrence of an element quickly."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "flip-columns-for-maximum-number-of-equal-rows",
+  "title": "1072. Flip Columns For Maximum Number of Equal Rows",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[0,1],[1,1]]",
+      "output": "1",
+      "explanation": "After flipping no values, 1 row has all values equal."
+    },
+    {
+      "input": "matrix = [[0,1],[1,0]]",
+      "output": "2",
+      "explanation": "After flipping values in the first column, both rows have equal values."
+    },
+    {
+      "input": "matrix = [[0,0,0],[0,0,1],[1,1,0]]",
+      "output": "2",
+      "explanation": "After flipping values in the first two columns, the last two rows have equal values."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxEqualRowsAfterFlips(vector<vector<int>>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxEqualRowsAfterFlips(int[][] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxEqualRowsAfterFlips(self, matrix: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxEqualRowsAfterFlips(matrix: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxEqualRowsAfterFlips(int[][] matrix) {\n        \n    }\n}",
+    "go": "func maxEqualRowsAfterFlips(matrix [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_equal_rows_after_flips(matrix: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[0,1],[1,1]]"
+    },
+    {
+      "matrix": "[[0,1],[1,0]]"
+    },
+    {
+      "matrix": "[[0,0,0],[0,0,1],[1,1,0]]"
+    }
+  ],
+  "functionName": "maxEqualRowsAfterFlips",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Flipping a subset of columns is like doing a bitwise XOR of some number K onto each row.  We want rows X with X ^ K = all 0s or all 1s.  This is the same as X = X^K ^K = (all 0s or all 1s) ^ K, so we want to count rows that have opposite bits set.  For example, if K = 1, then we count rows X = (00000...001, or 1111....110)."
+  ]
+}

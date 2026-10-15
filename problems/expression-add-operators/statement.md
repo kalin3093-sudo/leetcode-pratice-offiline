@@ -1,0 +1,11 @@
+Given a string `num` that contains only digits and an integer `target`, return ***all possibilities** to insert the binary operators* `'+'`*,* `'-'`*, and/or* `'*'` *between the digits of* `num` *so that the resultant expression evaluates to the* `target` *value*.
+
+Note that operands in the returned expressions **should not** contain leading zeros.
+
+**Note** that a number can contain multiple digits.
+
+**Constraints:**
+
+-   `1 ≤ num.length ≤ 10`
+-   `num` consists of only digits.
+-   `-2^31 ≤ target ≤ 2^31 - 1`

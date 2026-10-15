@@ -1,0 +1,66 @@
+{
+  "id": "cyclically-shift-rows-and-columns",
+  "title": "4052. Cyclically Shift Rows and Columns",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/cyclically-shift-rows-and-columns/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 2, grid = [[1,2],[3,4]], rowShift = [1,0], colShift = [0,1]",
+      "output": "[[2,4],[3,1]]",
+      "explanation": "The grid changes as follows:"
+    },
+    {
+      "input": "n = 3, grid = [[1,2,3],[4,5,6],[7,8,9]], rowShift = [1,2,0], colShift = [2,2,1]",
+      "output": "[[7,8,5],[2,3,9],[6,4,1]]",
+      "explanation": "The grid changes as follows:"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> cyclicShift(int n, vector<vector<int>>& grid, vector<int>& rowShift, vector<int>& colShift) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] cyclicShift(int n, int[][] grid, int[] rowShift, int[] colShift) {\n        \n    }\n}",
+    "python": "class Solution:\n    def cyclicShift(self, n: int, grid: list[list[int]], rowShift: list[int], colShift: list[int]) -> list[list[int]]:\n        ",
+    "typescript": "function cyclicShift(n: number, grid: number[][], rowShift: number[], colShift: number[]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] CyclicShift(int n, int[][] grid, int[] rowShift, int[] colShift) {\n        \n    }\n}",
+    "go": "func cyclicShift(n int, grid [][]int, rowShift []int, colShift []int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn cyclic_shift(n: i32, grid: Vec<Vec<i32>>, row_shift: Vec<i32>, col_shift: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "grid": "[[1,2],[3,4]]",
+      "rowShift": "[1,0]",
+      "colShift": "[0,1]"
+    },
+    {
+      "n": 3,
+      "grid": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "rowShift": "[1,2,0]",
+      "colShift": "[2,2,1]"
+    }
+  ],
+  "functionName": "cyclicShift",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "rowShift",
+      "type": "int_array"
+    },
+    {
+      "name": "colShift",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "<p><strong>1a (Simulation).</strong> Apply all row shifts into a temporary grid, then apply all column shifts from that grid into the answer.</p>",
+    "<p><strong>2a (Direct Mapping).</strong> An element originally at <code>(i, j)</code> first moves to column <code>c = (j - rowShift[i] + n) % n</code>, then moves to row <code>(i - colShift[c] + n) % n</code>. Place it directly at this final position in a new grid.</p>"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "maximum-erasure-value",
+  "title": "1695. Maximum Erasure Value",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-erasure-value/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,2,4,5,6]",
+      "output": "17",
+      "explanation": "The optimal subarray here is [2,4,5,6]."
+    },
+    {
+      "input": "nums = [5,2,1,2,5,2,1,2,5]",
+      "output": "8",
+      "explanation": "The optimal subarray here is [5,2,1] or [1,2,5]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumUniqueSubarray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumUniqueSubarray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumUniqueSubarray(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maximumUniqueSubarray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumUniqueSubarray(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumUniqueSubarray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_unique_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,2,4,5,6]"
+    },
+    {
+      "nums": "[5,2,1,2,5,2,1,2,5]"
+    }
+  ],
+  "functionName": "maximumUniqueSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The main point here is for the subarray to contain unique elements for each index. Only the first subarrays starting from that index have unique elements.",
+    "This can be solved using the two pointers technique"
+  ]
+}

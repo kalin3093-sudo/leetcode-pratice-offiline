@@ -1,0 +1,56 @@
+{
+  "id": "maximize-the-total-height-of-unique-towers",
+  "title": "3301. Maximize the Total Height of Unique Towers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "maximumHeight = [2,3,4,3]",
+      "output": "10",
+      "explanation": "We can assign heights in the following way: [1, 2, 4, 3]."
+    },
+    {
+      "input": "maximumHeight = [15,10]",
+      "output": "25",
+      "explanation": "We can assign heights in the following way: [15, 10]."
+    },
+    {
+      "input": "maximumHeight = [2,2,1]",
+      "output": "-1",
+      "explanation": "It's impossible to assign positive heights to each index so that no two towers have the same height."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumTotalSum(vector<int>& maximumHeight) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumTotalSum(int[] maximumHeight) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumTotalSum(self, maximumHeight: List[int]) -> int:\n        ",
+    "typescript": "function maximumTotalSum(maximumHeight: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumTotalSum(int[] maximumHeight) {\n        \n    }\n}",
+    "go": "func maximumTotalSum(maximumHeight []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_total_sum(maximum_height: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "maximumHeight": "[2,3,4,3]"
+    },
+    {
+      "maximumHeight": "[15,10]"
+    },
+    {
+      "maximumHeight": "[2,2,1]"
+    }
+  ],
+  "functionName": "maximumTotalSum",
+  "params": [
+    {
+      "name": "maximumHeight",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Sort the array <code>maximumHeight</code> in descending order.",
+    "After sorting, it can be seen that the maximum height that we can assign to the <code>i<sup>th</sup></code> element is <code>min(maximumHeight[i], maximumHeight[i - 1] - 1)</code>."
+  ]
+}

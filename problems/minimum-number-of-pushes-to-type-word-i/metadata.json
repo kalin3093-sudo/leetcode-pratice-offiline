@@ -1,0 +1,48 @@
+{
+  "id": "minimum-number-of-pushes-to-type-word-i",
+  "title": "3014. Minimum Number of Pushes to Type Word I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "word = \"abcde\"",
+      "output": "5",
+      "explanation": "The remapped keypad given in the image provides the minimum cost. \"a\" -> one push on key 2 \"b\" -> one push on key 3 \"c\" -> one push on key 4 \"d\" -> one push on key 5 \"e\" -> one push on key 6 Total cost is 1 + 1 + 1 + 1 + 1 = 5. It can be shown that no other mapping can provide a lower cost."
+    },
+    {
+      "input": "word = \"xycdefghij\"",
+      "output": "12",
+      "explanation": "The remapped keypad given in the image provides the minimum cost. \"x\" -> one push on key 2 \"y\" -> two pushes on key 2 \"c\" -> one push on key 3 \"d\" -> two pushes on key 3 \"e\" -> one push on key 4 \"f\" -> one push on key 5 \"g\" -> one push on key 6 \"h\" -> one push on key 7 \"i\" -> one push on key 8 \"j\" -> one push on key 9 Total cost is 1 + 2 + 1 + 2 + 1 + 1 + 1 + 1 + 1 + 1 = 12. It can be shown that no other mapping can provide a lower cost."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumPushes(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumPushes(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumPushes(self, word: str) -> int:\n        ",
+    "typescript": "function minimumPushes(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumPushes(string word) {\n        \n    }\n}",
+    "go": "func minimumPushes(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_pushes(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "abcde"
+    },
+    {
+      "word": "xycdefghij"
+    }
+  ],
+  "functionName": "minimumPushes",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We have 8 keys in total. We can type 8 characters with one push each, 8 different characters with two pushes each, and so on.",
+    "The optimal way is to map letters to keys evenly."
+  ]
+}

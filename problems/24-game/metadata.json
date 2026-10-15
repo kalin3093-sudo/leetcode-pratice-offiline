@@ -1,0 +1,44 @@
+{
+  "id": "24-game",
+  "title": "679. 24 Game",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/24-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cards = [4,1,8,7]",
+      "output": "true",
+      "explanation": "(8-4) * (7-1) = 24"
+    },
+    {
+      "input": "cards = [1,2,1,2]",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool judgePoint24(vector<int>& cards) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean judgePoint24(int[] cards) {\n        \n    }\n}",
+    "python": "class Solution:\n    def judgePoint24(self, cards: list[int]) -> bool:\n        ",
+    "typescript": "function judgePoint24(cards: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool JudgePoint24(int[] cards) {\n        \n    }\n}",
+    "go": "func judgePoint24(cards []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn judge_point24(cards: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cards": "[4,1,8,7]"
+    },
+    {
+      "cards": "[1,2,1,2]"
+    }
+  ],
+  "functionName": "judgePoint24",
+  "params": [
+    {
+      "name": "cards",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,79 @@
+{
+  "id": "minimum-edge-toggles-on-a-tree",
+  "title": "3812. Minimum Edge Toggles on a Tree",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/",
+  "category": "tree",
+  "examples": [
+    {
+      "input": "n = 3, edges = [[0,1],[1,2]], start = \"010\", target = \"100\"",
+      "output": "[0]",
+      "explanation": "Toggle edge with index 0, which flips nodes 0 and 1. The string changes from \"010\" to \"100\", matching the target."
+    },
+    {
+      "input": "n = 7, edges = [[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]], start = \"0011000\", target = \"0010001\"",
+      "output": "[1,2,5]",
+      "explanation": "Toggle edge with index 1, which flips nodes 1 and 2. Toggle edge with index 2, which flips nodes 2 and 3. Toggle edge with index 5, which flips nodes 1 and 6. After these operations, the resulting string becomes \"0010001\", which matches the target."
+    },
+    {
+      "input": "n = 2, edges = [[0,1]], start = \"00\", target = \"01\"",
+      "output": "[-1]",
+      "explanation": "There is no sequence of edge toggles that transforms \"00\" into \"01\". Therefore, we return [-1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minimumFlips(int n, vector<vector<int>>& edges, string start, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> minimumFlips(int n, int[][] edges, String start, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumFlips(self, n: int, edges: List[List[int]], start: str, target: str) -> List[int]:\n        ",
+    "typescript": "function minimumFlips(n: number, edges: number[][], start: string, target: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> MinimumFlips(int n, int[][] edges, string start, string target) {\n        \n    }\n}",
+    "go": "func minimumFlips(n int, edges [][]int, start string, target string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_flips(n: i32, edges: Vec<Vec<i32>>, start: String, target: String) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "edges": "[[0,1],[1,2]]",
+      "start": "010",
+      "target": "100"
+    },
+    {
+      "n": 7,
+      "edges": "[[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]]",
+      "start": "0011000",
+      "target": "0010001"
+    },
+    {
+      "n": 2,
+      "edges": "[[0,1]]",
+      "start": "00",
+      "target": "01"
+    }
+  ],
+  "functionName": "minimumFlips",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "start",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Use a depth-first search (DFS).",
+    "Root the tree at any node. Traverse the tree, keeping track of flips applied from the parent to the subtree.",
+    "After processing a child subtree, determine whether the current node still needs to be flipped to match the target. If a flip is needed, record the corresponding edge.",
+    "Collect all flipped edges; if the transformation is impossible, return <code>[-1]</code>."
+  ]
+}

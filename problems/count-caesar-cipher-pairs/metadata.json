@@ -1,0 +1,49 @@
+{
+  "id": "count-caesar-cipher-pairs",
+  "title": "3805. Count Caesar Cipher Pairs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-caesar-cipher-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"fusion\",\"layout\"]",
+      "output": "1",
+      "explanation": "words[0] = \"fusion\" and words[1] = \"layout\" are similar because we can apply the operation to \"fusion\" 6 times. The string \"fusion\" changes as follows. \"fusion\" \"gvtjpo\" \"hwukqp\" \"ixvlrq\" \"jywmsr\" \"kzxnts\" \"layout\""
+    },
+    {
+      "input": "words = [\"ab\",\"aa\",\"za\",\"aa\"]",
+      "output": "2",
+      "explanation": "words[0] = \"ab\" and words[2] = \"za\" are similar. words[1] = \"aa\" and words[3] = \"aa\" are similar."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countPairs(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countPairs(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPairs(self, words: List[str]) -> int:\n        ",
+    "typescript": "function countPairs(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountPairs(string[] words) {\n        \n    }\n}",
+    "go": "func countPairs(words []string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_pairs(words: Vec<String>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"fusion\",\"layout\"]"
+    },
+    {
+      "words": "[\"ab\",\"aa\",\"za\",\"aa\"]"
+    }
+  ],
+  "functionName": "countPairs",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Two strings are similar if the differences between consecutive characters (mod 26) are the same; normalize each string by shifting its first character to <code>'a'</code>.",
+    "Compute a hashable key for each normalized string representing its relative character differences.",
+    "Use a map to count how many strings share the same normalized key."
+  ]
+}

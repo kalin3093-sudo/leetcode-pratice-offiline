@@ -1,0 +1,63 @@
+{
+  "id": "find-the-integer-added-to-array-i",
+  "title": "3131. Find the Integer Added to Array I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-integer-added-to-array-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [2,6,4], nums2 = [9,7,5]",
+      "output": "3",
+      "explanation": "The integer added to each element of nums1 is 3."
+    },
+    {
+      "input": "nums1 = [10], nums2 = [5]",
+      "output": "-5",
+      "explanation": "The integer added to each element of nums1 is -5."
+    },
+    {
+      "input": "nums1 = [1,1,1,1], nums2 = [1,1,1,1]",
+      "output": "0",
+      "explanation": "The integer added to each element of nums1 is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int addedInteger(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int addedInteger(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def addedInteger(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
+    "typescript": "function addedInteger(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AddedInteger(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func addedInteger(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn added_integer(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[2,6,4]",
+      "nums2": "[9,7,5]"
+    },
+    {
+      "nums1": "[10]",
+      "nums2": "[5]"
+    },
+    {
+      "nums1": "[1,1,1,1]",
+      "nums2": "[1,1,1,1]"
+    }
+  ],
+  "functionName": "addedInteger",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Notice that, after sorting both arrays, there should be a one-to-one correspondence between every element.",
+    "Thus <code>x = min(nums2) - min(nums1)</code>."
+  ]
+}

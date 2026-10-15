@@ -1,0 +1,56 @@
+{
+  "id": "strong-password-checker-ii",
+  "title": "2299. Strong Password Checker II",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/strong-password-checker-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "password = \"IloveLe3tcode!\"",
+      "output": "true",
+      "explanation": "The password meets all the requirements. Therefore, we return true."
+    },
+    {
+      "input": "password = \"Me+You--IsMyDream\"",
+      "output": "false",
+      "explanation": "The password does not contain a digit and also contains 2 of the same character in adjacent positions. Therefore, we return false."
+    },
+    {
+      "input": "password = \"1aB!\"",
+      "output": "false",
+      "explanation": "The password does not meet the length requirement. Therefore, we return false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool strongPasswordCheckerII(string password) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean strongPasswordCheckerII(String password) {\n        \n    }\n}",
+    "python": "class Solution:\n    def strongPasswordCheckerII(self, password: str) -> bool:\n        ",
+    "typescript": "function strongPasswordCheckerII(password: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool StrongPasswordCheckerII(string password) {\n        \n    }\n}",
+    "go": "func strongPasswordCheckerII(password string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn strong_password_checker_ii(password: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "password": "IloveLe3tcode!"
+    },
+    {
+      "password": "Me+You--IsMyDream"
+    },
+    {
+      "password": "1aB!"
+    }
+  ],
+  "functionName": "strongPasswordCheckerII",
+  "params": [
+    {
+      "name": "password",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "You can use a boolean flag to define certain types of characters seen in the string.",
+    "In the end, check if all boolean flags have ended up True, and do not forget to check the \"adjacent\" and \"length\" criteria."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "convert-integer-to-the-sum-of-two-no-zero-integers",
+  "title": "1317. Convert Integer to the Sum of Two No-Zero Integers",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "[1,1]",
+      "explanation": "Let a = 1 and b = 1. Both a and b are no-zero integers, and a + b = 2 = n."
+    },
+    {
+      "input": "n = 11",
+      "output": "[2,9]",
+      "explanation": "Let a = 2 and b = 9. Both a and b are no-zero integers, and a + b = 11 = n. Note that there are other valid answers as [8, 3] that can be accepted."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> getNoZeroIntegers(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] getNoZeroIntegers(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getNoZeroIntegers(self, n: int) -> list[int]:\n        ",
+    "typescript": "function getNoZeroIntegers(n: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] GetNoZeroIntegers(int n) {\n        \n    }\n}",
+    "go": "func getNoZeroIntegers(n int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_no_zero_integers(n: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 19
+    },
+    {
+      "n": 139
+    }
+  ],
+  "functionName": "getNoZeroIntegers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Loop through all elements from 1 to n.",
+    "Choose A = i and B = n - i then check if A and B are both No-Zero integers."
+  ]
+}

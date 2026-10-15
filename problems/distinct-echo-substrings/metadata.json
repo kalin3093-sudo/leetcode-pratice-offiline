@@ -1,0 +1,49 @@
+{
+  "id": "distinct-echo-substrings",
+  "title": "1316. Distinct Echo Substrings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/distinct-echo-substrings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "text = \"abcabcabc\"",
+      "output": "3",
+      "explanation": "The 3 substrings are \"abcabc\", \"bcabca\" and \"cabcab\"."
+    },
+    {
+      "input": "text = \"leetcodeleetcode\"",
+      "output": "2",
+      "explanation": "The 2 substrings are \"ee\" and \"leetcodeleetcode\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distinctEchoSubstrings(string text) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distinctEchoSubstrings(String text) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distinctEchoSubstrings(self, text: str) -> int:\n        ",
+    "typescript": "function distinctEchoSubstrings(text: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DistinctEchoSubstrings(string text) {\n        \n    }\n}",
+    "go": "func distinctEchoSubstrings(text string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distinct_echo_substrings(text: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "abcabcabc"
+    },
+    {
+      "text": "leetcodeleetcode"
+    }
+  ],
+  "functionName": "distinctEchoSubstrings",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Given a substring of the text, how to check if it can be written as the concatenation of a string with itself ?",
+    "We can do that in linear time, a faster way is to use hashing.",
+    "Try all substrings and use hashing to check them."
+  ]
+}

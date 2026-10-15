@@ -1,0 +1,57 @@
+{
+  "id": "smallest-all-ones-multiple",
+  "title": "3790. Smallest All-Ones Multiple",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/smallest-all-ones-multiple/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "k = 3",
+      "output": "3",
+      "explanation": "n = 111 because 111 is divisible by 3, but 1 and 11 are not. The length of n = 111 is 3."
+    },
+    {
+      "input": "k = 7",
+      "output": "6",
+      "explanation": "n = 111111. The length of n = 111111 is 6."
+    },
+    {
+      "input": "k = 2",
+      "output": "-1",
+      "explanation": "There does not exist a valid n that is a multiple of 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minAllOneMultiple(int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minAllOneMultiple(int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minAllOneMultiple(self, k: int) -> int:\n        ",
+    "typescript": "function minAllOneMultiple(k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinAllOneMultiple(int k) {\n        \n    }\n}",
+    "go": "func minAllOneMultiple(k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_all_one_multiple(k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 3
+    },
+    {
+      "k": 7
+    },
+    {
+      "k": 2
+    }
+  ],
+  "functionName": "minAllOneMultiple",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Notice that <code>n % k</code> should be <code>0</code>.",
+    "Build the number digit-by-digit using only modulo <code>k</code>. Start with remainder <code>rem = 1 % k</code>. Repeatedly update <code>rem = (rem * 10 + 1) % k</code> while counting how many <code>1</code>s have been appended.",
+    "Continue until <code>rem == 0</code> or a remainder repeats (which indicates a cycle and that no such <code>n</code> exists)."
+  ]
+}

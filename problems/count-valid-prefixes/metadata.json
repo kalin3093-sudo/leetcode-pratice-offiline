@@ -1,0 +1,48 @@
+{
+  "id": "count-valid-prefixes",
+  "title": "4006. Count Valid Prefixes",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-valid-prefixes/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"00101\"",
+      "output": "3",
+      "explanation": "The valid prefixes are: \"0\": It is already an alternating string. \"001\": It can be rearranged into \"010\", which is an alternating string. \"00101\": It can be rearranged into \"01010\", which is an alternating string. Thus, the answer is 3."
+    },
+    {
+      "input": "s = \"101\"",
+      "output": "3",
+      "explanation": "All prefixes of s = \"101\" are already alternating strings. Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countValidPrefixes(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countValidPrefixes(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countValidPrefixes(self, s: str) -> int:\n        ",
+    "typescript": "function countValidPrefixes(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountValidPrefixes(string s) {\n        \n    }\n}",
+    "go": "func countValidPrefixes(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_valid_prefixes(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "00101"
+    },
+    {
+      "s": "101"
+    }
+  ],
+  "functionName": "countValidPrefixes",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>A binary string can be rearranged into an alternating string if the numbers of <code>'0'</code> and <code>'1'</code> differ by at most one.</p>",
+    "<p>Scan <code>s</code> from left to right, maintain the counts of both characters in the current prefix, and count the prefixes satisfying this condition.</p>"
+  ]
+}

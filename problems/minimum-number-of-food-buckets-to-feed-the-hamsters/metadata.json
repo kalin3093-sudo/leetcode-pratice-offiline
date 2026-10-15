@@ -1,0 +1,58 @@
+{
+  "id": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+  "title": "2086. Minimum Number of Food Buckets to Feed the Hamsters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "hamsters = \"H..H\"",
+      "output": "2",
+      "explanation": "We place two food buckets at indices 1 and 2. It can be shown that if we place only one food bucket, one of the hamsters will not be fed."
+    },
+    {
+      "input": "hamsters = \".H.H.\"",
+      "output": "1",
+      "explanation": "We place one food bucket at index 2."
+    },
+    {
+      "input": "hamsters = \".HHH.\"",
+      "output": "-1",
+      "explanation": "If we place a food bucket at every empty index as shown, the hamster at index 2 will not be able to eat."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumBuckets(string hamsters) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumBuckets(String hamsters) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumBuckets(self, hamsters: str) -> int:\n        ",
+    "typescript": "function minimumBuckets(hamsters: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumBuckets(string hamsters) {\n        \n    }\n}",
+    "go": "func minimumBuckets(hamsters string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_buckets(hamsters: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "hamsters": "H..H"
+    },
+    {
+      "hamsters": ".H.H."
+    },
+    {
+      "hamsters": ".HHH."
+    }
+  ],
+  "functionName": "minimumBuckets",
+  "params": [
+    {
+      "name": "hamsters",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "When is it impossible to feed all the hamsters?",
+    "When one or more hamsters do not have an empty space adjacent to it.",
+    "Assuming all previous hamsters are fed. If there is a hamster at index i and you are able to place a bucket at index i - 1 or i + 1, where should you put it?",
+    "It is always better to place a bucket at index i + 1 because it can feed the next hamster as well."
+  ]
+}

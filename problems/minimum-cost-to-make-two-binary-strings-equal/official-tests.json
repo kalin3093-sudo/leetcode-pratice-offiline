@@ -1,0 +1,23 @@
+[
+  {
+    "s": "01000",
+    "t": "10111",
+    "flipCost": 10,
+    "swapCost": 2,
+    "crossCost": 2
+  },
+  {
+    "s": "001",
+    "t": "110",
+    "flipCost": 2,
+    "swapCost": 100,
+    "crossCost": 100
+  },
+  {
+    "s": "1010",
+    "t": "1010",
+    "flipCost": 5,
+    "swapCost": 5,
+    "crossCost": 5
+  }
+]

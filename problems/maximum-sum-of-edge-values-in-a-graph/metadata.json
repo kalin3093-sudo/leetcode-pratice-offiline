@@ -1,0 +1,54 @@
+{
+  "id": "maximum-sum-of-edge-values-in-a-graph",
+  "title": "3547. Maximum Sum of Edge Values in a Graph",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4, edges = [[0,1],[1,2],[2,3]]",
+      "output": "23",
+      "explanation": "The diagram above illustrates an optimal assignment of values to nodes. The sum of the values of the edges is: (1 * 3) + (3 * 4) + (4 * 2) = 23."
+    },
+    {
+      "input": "n = 6, edges = [[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]",
+      "output": "82",
+      "explanation": "The diagram above illustrates an optimal assignment of values to nodes. The sum of the values of the edges is: (1 * 2) + (2 * 4) + (4 * 6) + (6 * 5) + (5 * 3) + (3 * 1) = 82."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxScore(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxScore(int n, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, n: int, edges: List[List[int]]) -> int:\n        ",
+    "typescript": "function maxScore(n: number, edges: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxScore(int n, int[][] edges) {\n        \n    }\n}",
+    "go": "func maxScore(n int, edges [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(n: i32, edges: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "edges": "[[0,1],[1,2],[2,3]]"
+    },
+    {
+      "n": 6,
+      "edges": "[[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]"
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "The graph is either a simple path or a cycle.",
+    "Greedily assign values to the nodes."
+  ]
+}

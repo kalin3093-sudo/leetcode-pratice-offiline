@@ -1,0 +1,48 @@
+{
+  "id": "find-the-width-of-columns-of-a-grid",
+  "title": "2639. Find the Width of Columns of a Grid",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1],[22],[333]]",
+      "output": "[3]",
+      "explanation": "In the 0th column, 333 is of length 3."
+    },
+    {
+      "input": "grid = [[-15,1,3],[15,7,12],[5,6,-2]]",
+      "output": "[3,1,2]",
+      "explanation": "In the 0th column, only -15 is of length 3. In the 1st column, all integers are of length 1. In the 2nd column, both 12 and -2 are of length 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findColumnWidth(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findColumnWidth(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findColumnWidth(self, grid: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function findColumnWidth(grid: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindColumnWidth(int[][] grid) {\n        \n    }\n}",
+    "go": "func findColumnWidth(grid [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_column_width(grid: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1],[22],[333]]"
+    },
+    {
+      "grid": "[[-15,1,3],[15,7,12],[5,6,-2]]"
+    }
+  ],
+  "functionName": "findColumnWidth",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "You can find the length of a number by dividing it by 10 and then rounding it down again and again until this number becomes equal to 0. Add 1 if this number is negative.",
+    "Traverse the matrix column-wise to find the maximum length in each column."
+  ]
+}

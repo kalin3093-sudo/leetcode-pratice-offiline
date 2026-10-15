@@ -1,0 +1,44 @@
+{
+  "id": "concatenated-words",
+  "title": "472. Concatenated Words",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/concatenated-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]",
+      "output": "[\"catsdogcats\",\"dogcatsdog\",\"ratcatdogcat\"]",
+      "explanation": "\"catsdogcats\" can be concatenated by \"cats\", \"dog\" and \"cats\"; \"dogcatsdog\" can be concatenated by \"dog\", \"cats\" and \"dog\"; \"ratcatdogcat\" can be concatenated by \"rat\", \"cat\", \"dog\" and \"cat\"."
+    },
+    {
+      "input": "words = [\"cat\",\"dog\",\"catdog\"]",
+      "output": "[\"catdog\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findAllConcatenatedWordsInADict(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> findAllConcatenatedWordsInADict(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findAllConcatenatedWordsInADict(self, words: list[str]) -> list[str]:\n        ",
+    "typescript": "function findAllConcatenatedWordsInADict(words: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> FindAllConcatenatedWordsInADict(string[] words) {\n        \n    }\n}",
+    "go": "func findAllConcatenatedWordsInADict(words []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_all_concatenated_words_in_a_dict(words: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]"
+    },
+    {
+      "words": "[\"cat\",\"dog\",\"catdog\"]"
+    }
+  ],
+  "functionName": "findAllConcatenatedWordsInADict",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

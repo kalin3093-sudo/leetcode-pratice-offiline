@@ -1,0 +1,61 @@
+{
+  "id": "step-by-step-directions-from-a-binary-tree-node-to-another",
+  "title": "2096. Step-By-Step Directions From a Binary Tree Node to Another",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6",
+      "output": "\"UURL\"",
+      "explanation": "The shortest path is: 3 &rarr; 1 &rarr; 5 &rarr; 2 &rarr; 6."
+    },
+    {
+      "input": "root = [2,1], startValue = 2, destValue = 1",
+      "output": "\"L\"",
+      "explanation": "The shortest path is: 2 &rarr; 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass Solution {\npublic:\n    string getDirections(TreeNode* root, int startValue, int destValue) {\n        \n    }\n};",
+    "java": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n    public String getDirections(TreeNode root, int startValue, int destValue) {\n        \n    }\n}",
+    "python": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def getDirections(self, root: TreeNode | None, startValue: int, destValue: int) -> str:\n        ",
+    "typescript": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     val: number\n *     left: TreeNode | null\n *     right: TreeNode | null\n *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.left = (left===undefined ? null : left)\n *         this.right = (right===undefined ? null : right)\n *     }\n * }\n */\n\nfunction getDirections(root: TreeNode | null, startValue: number, destValue: number): string {\n    \n};",
+    "csharp": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\npublic class Solution {\n    public string GetDirections(TreeNode root, int startValue, int destValue) {\n        \n    }\n}",
+    "go": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc getDirections(root *TreeNode, startValue int, destValue int) string {\n    \n}",
+    "rust": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn get_directions(root: Option<Rc<RefCell<TreeNode>>>, start_value: i32, dest_value: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "root": "[5,1,2,3,null,6,4]",
+      "startValue": 3,
+      "destValue": 6
+    },
+    {
+      "root": "[2,1]",
+      "startValue": 2,
+      "destValue": 1
+    }
+  ],
+  "functionName": "getDirections",
+  "params": [
+    {
+      "name": "root",
+      "type": "tree_node"
+    },
+    {
+      "name": "startValue",
+      "type": "int"
+    },
+    {
+      "name": "destValue",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "The shortest path between any two nodes in a tree must pass through their Lowest Common Ancestor (LCA). The path will travel upwards from node s to the LCA and then downwards from the LCA to node t.",
+    "Find the path strings from root → s, and root → t. Can you use these two strings to prepare the final answer?",
+    "Remove the longest common prefix of the two path strings to get the path LCA → s, and LCA → t. Each step in the path of LCA → s should be reversed as 'U'."
+  ]
+}

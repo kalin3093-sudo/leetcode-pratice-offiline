@@ -1,0 +1,63 @@
+{
+  "id": "check-if-word-can-be-placed-in-crossword",
+  "title": "2018. Check if Word Can Be Placed In Crossword",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "board = [[\"#\", \" \", \"#\"], [\" \", \" \", \"#\"], [\"#\", \"c\", \" \"]], word = \"abc\"",
+      "output": "true",
+      "explanation": "The word \"abc\" can be placed as shown above (top to bottom)."
+    },
+    {
+      "input": "board = [[\" \", \"#\", \"a\"], [\" \", \"#\", \"c\"], [\" \", \"#\", \"a\"]], word = \"ac\"",
+      "output": "false",
+      "explanation": "It is impossible to place the word because there will always be a space/letter above or below it."
+    },
+    {
+      "input": "board = [[\"#\", \" \", \"#\"], [\" \", \" \", \"#\"], [\"#\", \" \", \"c\"]], word = \"ca\"",
+      "output": "true",
+      "explanation": "The word \"ca\" can be placed as shown above (right to left)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool placeWordInCrossword(vector<vector<char>>& board, string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean placeWordInCrossword(char[][] board, String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def placeWordInCrossword(self, board: list[list[str]], word: str) -> bool:\n        ",
+    "typescript": "function placeWordInCrossword(board: string[][], word: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool PlaceWordInCrossword(char[][] board, string word) {\n        \n    }\n}",
+    "go": "func placeWordInCrossword(board [][]byte, word string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn place_word_in_crossword(board: Vec<Vec<char>>, word: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "board": "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\"c\",\" \"]]",
+      "word": "abc"
+    },
+    {
+      "board": "[[\" \",\"#\",\"a\"],[\" \",\"#\", \"c\"],[\" \",\"#\",\"a\"]]",
+      "word": "ac"
+    },
+    {
+      "board": "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\" \",\"c\"]]",
+      "word": "ca"
+    }
+  ],
+  "functionName": "placeWordInCrossword",
+  "params": [
+    {
+      "name": "board",
+      "type": "char_array_2d"
+    },
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Check all possible placements for the word.",
+    "There is a limited number of places where a word can start."
+  ]
+}

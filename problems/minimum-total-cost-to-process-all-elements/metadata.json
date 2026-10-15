@@ -1,0 +1,64 @@
+{
+  "id": "minimum-total-cost-to-process-all-elements",
+  "title": "3987. Minimum Total Cost to Process All Elements",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4], k = 4",
+      "output": "3",
+      "explanation": "After processing nums[0], we have 4 - 1 = 3 units of resources left. After processing nums[1], we have 3 - 2 = 1 unit of resources left. Since nums[2] = 3 and only 1 unit of resources is available, we perform the first operation costing 1. After processing nums[2], we have 1 + 4 - 3 = 2 units of resources left. Since nums[3] = 4 and only 2 units of resources are available, we perform the second operation costing 2, to have 2 + 4 = 6 units of resources, which is enough to process nums[3]. Thus, the total cost is 1 + 2 = 3."
+    },
+    {
+      "input": "nums = [1,1,7,14], k = 4",
+      "output": "15",
+      "explanation": "After processing nums[0], we have 4 - 1 = 3 units of resources left. After processing nums[1], we have 3 - 1 = 2 units of resources left. Since nums[2] = 7 and only 2 units of resources are available, we perform two operations costing 1 + 2 = 3. After processing nums[2], we have 2 + 4 + 4 - 7 = 3 units of resources left. Since nums[3] = 14 and only 3 units of resources are available, we perform three operations costing 3 + 4 + 5 = 12, to have 3 + 4 + 4 + 4 = 15 units of resources, which is enough to process nums[3]. Thus, the total cost is 3 + 12 = 15."
+    },
+    {
+      "input": "nums = [1,2,3,4], k = 10",
+      "output": "0",
+      "explanation": "To process all elements, we can use the initial 10 units of resources without performing any operations. Thus, the total cost required is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumCost(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumCost(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumCost(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function minimumCost(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumCost(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minimumCost(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_cost(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]",
+      "k": 4
+    },
+    {
+      "nums": "[1,1,7,14]",
+      "k": 4
+    },
+    {
+      "nums": "[1,2,3,4]",
+      "k": 10
+    }
+  ],
+  "functionName": "minimumCost",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Perform an operation only when the current resources are less than the next required value.</p>",
+    "<p>If <code>x</code> more operations are needed after already performing <code>cnt</code> operations, their cost is <code>(cnt + 1) + (cnt + 2) + ... + (cnt + x)</code>.</p>",
+    "<p>Use the arithmetic progression formula to add this cost efficiently, then update the current resources and continue scanning <code>nums</code>.</p>"
+  ]
+}

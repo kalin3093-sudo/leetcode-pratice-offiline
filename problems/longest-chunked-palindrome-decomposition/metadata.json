@@ -1,0 +1,56 @@
+{
+  "id": "longest-chunked-palindrome-decomposition",
+  "title": "1147. Longest Chunked Palindrome Decomposition",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "text = \"ghiabcdefhelloadamhelloabcdefghi\"",
+      "output": "7",
+      "explanation": "We can split the string on \"(ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)\"."
+    },
+    {
+      "input": "text = \"merchant\"",
+      "output": "1",
+      "explanation": "We can split the string on \"(merchant)\"."
+    },
+    {
+      "input": "text = \"antaprezatepzapreanta\"",
+      "output": "11",
+      "explanation": "We can split the string on \"(a)(nt)(a)(pre)(za)(tep)(za)(pre)(a)(nt)(a)\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestDecomposition(string text) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestDecomposition(String text) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestDecomposition(self, text: str) -> int:\n        ",
+    "typescript": "function longestDecomposition(text: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestDecomposition(string text) {\n        \n    }\n}",
+    "go": "func longestDecomposition(text string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_decomposition(text: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "ghiabcdefhelloadamhelloabcdefghi"
+    },
+    {
+      "text": "merchant"
+    },
+    {
+      "text": "antaprezatepzapreanta"
+    }
+  ],
+  "functionName": "longestDecomposition",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Using a rolling hash, we can quickly check whether two strings are equal.",
+    "Use that as the basis of a dp."
+  ]
+}

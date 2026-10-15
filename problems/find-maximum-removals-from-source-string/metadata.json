@@ -1,0 +1,80 @@
+{
+  "id": "find-maximum-removals-from-source-string",
+  "title": "3316. Find Maximum Removals From Source String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-maximum-removals-from-source-string/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "source = \"abbaa\", pattern = \"aba\", targetIndices = [0,1,2]",
+      "output": "1",
+      "explanation": "We can't remove source[0] but we can do either of these two operations: Remove source[1], so that source becomes \"a_baa\". Remove source[2], so that source becomes \"ab_aa\"."
+    },
+    {
+      "input": "source = \"bcda\", pattern = \"d\", targetIndices = [0,3]",
+      "output": "2",
+      "explanation": "We can remove source[0] and source[3] in two operations."
+    },
+    {
+      "input": "source = \"dda\", pattern = \"dda\", targetIndices = [0,1,2]",
+      "output": "0",
+      "explanation": "We can't remove any character from source."
+    },
+    {
+      "input": "source = \"yeyeykyded\", pattern = \"yeyyd\", targetIndices = [0,2,3,4]",
+      "output": "2",
+      "explanation": "We can remove source[2] and source[3] in two operations."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxRemovals(string source, string pattern, vector<int>& targetIndices) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxRemovals(String source, String pattern, int[] targetIndices) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxRemovals(self, source: str, pattern: str, targetIndices: List[int]) -> int:\n        ",
+    "typescript": "function maxRemovals(source: string, pattern: string, targetIndices: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxRemovals(string source, string pattern, int[] targetIndices) {\n        \n    }\n}",
+    "go": "func maxRemovals(source string, pattern string, targetIndices []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_removals(source: String, pattern: String, target_indices: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "source": "abbaa",
+      "pattern": "aba",
+      "targetIndices": "[0,1,2]"
+    },
+    {
+      "source": "bcda",
+      "pattern": "d",
+      "targetIndices": "[0,3]"
+    },
+    {
+      "source": "dda",
+      "pattern": "dda",
+      "targetIndices": "[0,1,2]"
+    },
+    {
+      "source": "yeyeykyded",
+      "pattern": "yeyyd",
+      "targetIndices": "[0,2,3,4]"
+    }
+  ],
+  "functionName": "maxRemovals",
+  "params": [
+    {
+      "name": "source",
+      "type": "string"
+    },
+    {
+      "name": "pattern",
+      "type": "string"
+    },
+    {
+      "name": "targetIndices",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "At each index in <code>targetIndices</code>, make the choice to remove or not remove the character."
+  ]
+}

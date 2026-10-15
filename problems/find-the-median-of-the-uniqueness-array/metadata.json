@@ -1,0 +1,57 @@
+{
+  "id": "find-the-median-of-the-uniqueness-array",
+  "title": "3134. Find the Median of the Uniqueness Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "1",
+      "explanation": "The uniqueness array of nums is [distinct(nums[0..0]), distinct(nums[1..1]), distinct(nums[2..2]), distinct(nums[0..1]), distinct(nums[1..2]), distinct(nums[0..2])] which is equal to [1, 1, 1, 2, 2, 3]. The uniqueness array has a median of 1. Therefore, the answer is 1."
+    },
+    {
+      "input": "nums = [3,4,3,4,5]",
+      "output": "2",
+      "explanation": "The uniqueness array of nums is [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3]. The uniqueness array has a median of 2. Therefore, the answer is 2."
+    },
+    {
+      "input": "nums = [4,3,5,4]",
+      "output": "2",
+      "explanation": "The uniqueness array of nums is [1, 1, 1, 1, 2, 2, 2, 3, 3, 3]. The uniqueness array has a median of 2. Therefore, the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int medianOfUniquenessArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int medianOfUniquenessArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def medianOfUniquenessArray(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function medianOfUniquenessArray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MedianOfUniquenessArray(int[] nums) {\n        \n    }\n}",
+    "go": "func medianOfUniquenessArray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn median_of_uniqueness_array(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[3,4,3,4,5]"
+    },
+    {
+      "nums": "[4,3,5,4]"
+    }
+  ],
+  "functionName": "medianOfUniquenessArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Binary search over the answer.",
+    "For a given <code>x</code>, you need to check if <code>x</code> is the median, to the left of the median, or to the right of the median. You can do that by counting the number of sub-arrays <code>nums[i…j]</code> such that <code>distinct(num[i…j]) <= x</code>.",
+    "Use the sliding window to solve the counting problem in the hint above."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "search-suggestions-system",
+  "title": "1268. Search Suggestions System",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/search-suggestions-system/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "products = [\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"], searchWord = \"mouse\"",
+      "output": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]",
+      "explanation": "products sorted lexicographically = [\"mobile\",\"moneypot\",\"monitor\",\"mouse\",\"mousepad\"]. After typing m and mo all products match and we show user [\"mobile\",\"moneypot\",\"monitor\"]. After typing mou, mous and mouse the system suggests [\"mouse\",\"mousepad\"]."
+    },
+    {
+      "input": "products = [\"havana\"], searchWord = \"havana\"",
+      "output": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]",
+      "explanation": "The only word \"havana\" will be always suggested while typing the search word."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<string>> suggestedProducts(vector<string>& products, string searchWord) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<String>> suggestedProducts(String[] products, String searchWord) {\n        \n    }\n}",
+    "python": "class Solution:\n    def suggestedProducts(self, products: list[str], searchWord: str) -> list[list[str]]:\n        ",
+    "typescript": "function suggestedProducts(products: string[], searchWord: string): string[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<string>> SuggestedProducts(string[] products, string searchWord) {\n        \n    }\n}",
+    "go": "func suggestedProducts(products []string, searchWord string) [][]string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn suggested_products(products: Vec<String>, search_word: String) -> Vec<Vec<String>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "products": "[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"]",
+      "searchWord": "mouse"
+    },
+    {
+      "products": "[\"havana\"]",
+      "searchWord": "havana"
+    }
+  ],
+  "functionName": "suggestedProducts",
+  "params": [
+    {
+      "name": "products",
+      "type": "string_array"
+    },
+    {
+      "name": "searchWord",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list_2d",
+  "hints": [
+    "Brute force is a good choice because length of the string is ≤ 1000.",
+    "Binary search the answer.",
+    "Use Trie data structure to store the best three matching. Traverse the Trie."
+  ]
+}

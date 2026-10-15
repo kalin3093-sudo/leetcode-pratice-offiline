@@ -1,0 +1,56 @@
+{
+  "id": "shortest-subarray-to-be-removed-to-make-array-sorted",
+  "title": "1574. Shortest Subarray to be Removed to Make Array Sorted",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,2,3,10,4,2,3,5]",
+      "output": "3",
+      "explanation": "The shortest subarray we can remove is [10,4,2] of length 3. The remaining elements after that will be [1,2,3,3,5] which are sorted. Another correct solution is to remove the subarray [3,10,4]."
+    },
+    {
+      "input": "arr = [5,4,3,2,1]",
+      "output": "4",
+      "explanation": "Since the array is strictly decreasing, we can only keep a single element. Therefore we need to remove a subarray of length 4, either [5,4,3,2] or [4,3,2,1]."
+    },
+    {
+      "input": "arr = [1,2,3]",
+      "output": "0",
+      "explanation": "The array is already non-decreasing. We do not need to remove any elements."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findLengthOfShortestSubarray(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findLengthOfShortestSubarray(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLengthOfShortestSubarray(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function findLengthOfShortestSubarray(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindLengthOfShortestSubarray(int[] arr) {\n        \n    }\n}",
+    "go": "func findLengthOfShortestSubarray(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_length_of_shortest_subarray(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[11,10,18,14,12,11,16,20,13,11]"
+    },
+    {
+      "arr": "[17,32,32,29,4,29,19,5,26,35,35,6,10,27,11,35,0,31]"
+    },
+    {
+      "arr": "[1,8,34,2,3,22,18,27,3,1,0,12,21,23,8,7,17]"
+    }
+  ],
+  "functionName": "findLengthOfShortestSubarray",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The key is to find the longest non-decreasing subarray starting with the first element or ending with the last element, respectively.",
+    "After removing some subarray, the result is the concatenation of a sorted prefix and a sorted suffix, where the last element of the prefix is smaller than the first element of the suffix."
+  ]
+}

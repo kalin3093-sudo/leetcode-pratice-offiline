@@ -1,0 +1,53 @@
+{
+  "id": "cut-off-trees-for-golf-event",
+  "title": "675. Cut Off Trees for Golf Event",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/cut-off-trees-for-golf-event/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "forest = [[1,2,3],[0,0,4],[7,6,5]]",
+      "output": "6",
+      "explanation": "Following the path above allows you to cut off the trees from shortest to tallest in 6 steps."
+    },
+    {
+      "input": "forest = [[1,2,3],[0,0,0],[7,6,5]]",
+      "output": "-1",
+      "explanation": "The trees in the bottom row cannot be accessed as the middle row is blocked."
+    },
+    {
+      "input": "forest = [[2,3,4],[0,0,5],[8,7,6]]",
+      "output": "6",
+      "explanation": "You can follow the same path as Example 1 to cut off all the trees. Note that you can cut off the first tree at (0, 0) before making any steps."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int cutOffTree(vector<vector<int>>& forest) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int cutOffTree(List<List<Integer>> forest) {\n        \n    }\n}",
+    "python": "class Solution:\n    def cutOffTree(self, forest: list[list[int]]) -> int:\n        ",
+    "typescript": "function cutOffTree(forest: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CutOffTree(IList<IList<int>> forest) {\n        \n    }\n}",
+    "go": "func cutOffTree(forest [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn cut_off_tree(forest: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "forest": "[[1,2,3],[0,0,4],[7,6,5]]"
+    },
+    {
+      "forest": "[[1,2,3],[0,0,0],[7,6,5]]"
+    },
+    {
+      "forest": "[[2,3,4],[0,0,5],[8,7,6]]"
+    }
+  ],
+  "functionName": "cutOffTree",
+  "params": [
+    {
+      "name": "forest",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

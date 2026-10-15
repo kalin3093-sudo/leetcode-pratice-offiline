@@ -1,0 +1,49 @@
+{
+  "id": "average-waiting-time",
+  "title": "1701. Average Waiting Time",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/average-waiting-time/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "customers = [[1,2],[2,5],[4,3]]",
+      "output": "5.00000",
+      "explanation": "1) The first customer arrives at time 1, the chef takes his order and starts preparing it immediately at time 1, and finishes at time 3, so the waiting time of the first customer is 3 - 1 = 2. 2) The second customer arrives at time 2, the chef takes his order and starts preparing it at time 3, and finishes at time 8, so the waiting time of the second customer is 8 - 2 = 6. 3) The third customer arrives at time 4, the chef takes his order and starts preparing it at time 8, and finishes at time 11, so the waiting time of the third customer is 11 - 4 = 7. So the average waiting time = (2 + 6 + 7) / 3 = 5."
+    },
+    {
+      "input": "customers = [[5,2],[5,4],[10,3],[20,1]]",
+      "output": "3.25000",
+      "explanation": "1) The first customer arrives at time 5, the chef takes his order and starts preparing it immediately at time 5, and finishes at time 7, so the waiting time of the first customer is 7 - 5 = 2. 2) The second customer arrives at time 5, the chef takes his order and starts preparing it at time 7, and finishes at time 11, so the waiting time of the second customer is 11 - 5 = 6. 3) The third customer arrives at time 10, the chef takes his order and starts preparing it at time 11, and finishes at time 14, so the waiting time of the third customer is 14 - 10 = 4. 4) The fourth customer arrives at time 20, the chef takes his order and starts preparing it immediately at time 20, and finishes at time 21, so the waiting time of the fourth customer is 21 - 20 = 1. So the average waiting time = (2 + 6 + 4 + 1) / 4 = 3.25."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double averageWaitingTime(vector<vector<int>>& customers) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double averageWaitingTime(int[][] customers) {\n        \n    }\n}",
+    "python": "class Solution:\n    def averageWaitingTime(self, customers: list[list[int]]) -> float:\n        ",
+    "typescript": "function averageWaitingTime(customers: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double AverageWaitingTime(int[][] customers) {\n        \n    }\n}",
+    "go": "func averageWaitingTime(customers [][]int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn average_waiting_time(customers: Vec<Vec<i32>>) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "customers": "[[1,2],[2,5],[4,3]]"
+    },
+    {
+      "customers": "[[5,2],[5,4],[10,3],[20,1]]"
+    }
+  ],
+  "functionName": "averageWaitingTime",
+  "params": [
+    {
+      "name": "customers",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "double",
+  "hints": [
+    "Iterate on the customers, maintaining the time the chef will finish the previous orders.",
+    "If that time is before the current arrival time, the chef starts immediately. Else, the current customer waits till the chef finishes, and then the chef starts.",
+    "Update the running time by the time when the chef starts preparing + preparation time."
+  ]
+}

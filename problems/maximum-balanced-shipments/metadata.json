@@ -1,0 +1,48 @@
+{
+  "id": "maximum-balanced-shipments",
+  "title": "3638. Maximum Balanced Shipments",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-balanced-shipments/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "weight = [2,5,1,4,3]",
+      "output": "2",
+      "explanation": "We can form the maximum of two balanced shipments as follows: Shipment 1: [2, 5, 1] Maximum parcel weight = 5 Last parcel weight = 1, which is strictly less than 5. Thus, it's balanced. Shipment 2: [4, 3] Maximum parcel weight = 4 Last parcel weight = 3, which is strictly less than 4. Thus, it's balanced. It is impossible to partition the parcels to achieve more than two balanced shipments, so the answer is 2."
+    },
+    {
+      "input": "weight = [4,4]",
+      "output": "0",
+      "explanation": "No balanced shipment can be formed in this case: A shipment [4, 4] has maximum weight 4 and the last parcel's weight is also 4, which is not strictly less. Thus, it's not balanced. Single-parcel shipments [4] have the last parcel weight equal to the maximum parcel weight, thus not balanced. As there is no way to form even one balanced shipment, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxBalancedShipments(vector<int>& weight) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxBalancedShipments(int[] weight) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxBalancedShipments(self, weight: List[int]) -> int:\n        ",
+    "typescript": "function maxBalancedShipments(weight: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxBalancedShipments(int[] weight) {\n        \n    }\n}",
+    "go": "func maxBalancedShipments(weight []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_balanced_shipments(weight: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "weight": "[2,5,1,4,3]"
+    },
+    {
+      "weight": "[4,4]"
+    }
+  ],
+  "functionName": "maxBalancedShipments",
+  "params": [
+    {
+      "name": "weight",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a monotonic stack to find for each end index <code>i</code> the nearest previous index <code>j</code> with <code>weight[j] > weight[i]</code> (set <code>j = -1</code> if none).",
+    "Then set <code>dp[i] = best[j] + 1</code> (using <code>best[-1] = 0</code>), and update <code>best[i] = max(best[i-1], dp[i])</code>; the result is <code>best[n-1]</code>."
+  ]
+}

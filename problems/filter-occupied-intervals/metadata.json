@@ -1,0 +1,62 @@
+{
+  "id": "filter-occupied-intervals",
+  "title": "3975. Filter Occupied Intervals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/filter-occupied-intervals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "occupiedIntervals = [[2,6],[4,8],[10,10],[10,12],[14,16]], freeStart = 7, freeEnd = 11",
+      "output": "[[2,6],[12,12],[14,16]]",
+      "explanation": "After merging, the occupied intervals are [2, 8], [10, 12], and [14, 16]. Excluding the free interval [7, 11] results in [2, 6], [12, 12], and [14, 16]."
+    },
+    {
+      "input": "occupiedIntervals = [[1,5],[2,3]], freeStart = 3, freeEnd = 8",
+      "output": "[[1,2]]",
+      "explanation": "After merging, the occupied interval is [1, 5]. Excluding the free interval [3, 8] results in [1, 2]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> filterOccupiedIntervals(vector<vector<int>>& occupiedIntervals, int freeStart, int freeEnd) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> filterOccupiedIntervals(int[][] occupiedIntervals, int freeStart, int freeEnd) {\n        \n    }\n}",
+    "python": "class Solution:\n    def filterOccupiedIntervals(self, occupiedIntervals: List[List[int]], freeStart: int, freeEnd: int) -> List[List[int]]:\n        ",
+    "typescript": "function filterOccupiedIntervals(occupiedIntervals: number[][], freeStart: number, freeEnd: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> FilterOccupiedIntervals(int[][] occupiedIntervals, int freeStart, int freeEnd) {\n        \n    }\n}",
+    "go": "func filterOccupiedIntervals(occupiedIntervals [][]int, freeStart int, freeEnd int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn filter_occupied_intervals(occupied_intervals: Vec<Vec<i32>>, free_start: i32, free_end: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "occupiedIntervals": "[[2,6],[4,8],[10,10],[10,12],[14,16]]",
+      "freeStart": 7,
+      "freeEnd": 11
+    },
+    {
+      "occupiedIntervals": "[[1,5],[2,3]]",
+      "freeStart": 3,
+      "freeEnd": 8
+    }
+  ],
+  "functionName": "filterOccupiedIntervals",
+  "params": [
+    {
+      "name": "occupiedIntervals",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "freeStart",
+      "type": "int"
+    },
+    {
+      "name": "freeEnd",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": [
+    "Sort the occupied intervals by start time.",
+    "While merging, two intervals should be combined if the next interval starts at most one point after the current interval ends.",
+    "After merging, remove <code>[freeStart, freeEnd]</code> from each merged interval independently.",
+    "An interval may disappear completely, shrink on one side, remain unchanged, or split into two intervals."
+  ]
+}

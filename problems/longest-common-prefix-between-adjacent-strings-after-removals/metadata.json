@@ -1,0 +1,49 @@
+{
+  "id": "longest-common-prefix-between-adjacent-strings-after-removals",
+  "title": "3598. Longest Common Prefix Between Adjacent Strings After Removals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"jump\",\"run\",\"run\",\"jump\",\"run\"]",
+      "output": "[3,0,0,3,3]",
+      "explanation": "Removing index 0: words becomes [\"run\", \"run\", \"jump\", \"run\"] Longest adjacent pair is [\"run\", \"run\"] having a common prefix \"run\" (length 3) Removing index 1: words becomes [\"jump\", \"run\", \"jump\", \"run\"] No adjacent pairs share a common prefix (length 0) Removing index 2: words becomes [\"jump\", \"run\", \"jump\", \"run\"] No adjacent pairs share a common prefix (length 0) Removing index 3: words becomes [\"jump\", \"run\", \"run\", \"run\"] Longest adjacent pair is [\"run\", \"run\"] having a common prefix \"run\" (length 3) Removing index 4: words becomes [\"jump\", \"run\", \"run\", \"jump\"] Longest adjacent pair is [\"run\", \"run\"] having a common prefix \"run\" (length 3)"
+    },
+    {
+      "input": "words = [\"dog\",\"racer\",\"car\"]",
+      "output": "[0,0,0]",
+      "explanation": "Removing any index results in an answer of 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> longestCommonPrefix(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] longestCommonPrefix(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestCommonPrefix(self, words: List[str]) -> List[int]:\n        ",
+    "typescript": "function longestCommonPrefix(words: string[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] LongestCommonPrefix(string[] words) {\n        \n    }\n}",
+    "go": "func longestCommonPrefix(words []string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_common_prefix(words: Vec<String>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]"
+    },
+    {
+      "words": "[\"dog\",\"racer\",\"car\"]"
+    }
+  ],
+  "functionName": "longestCommonPrefix",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Precompute the longest common prefix length for adjacent prefixes and suffixes.",
+    "After deleting <code>words[i]</code>, compute the longest common prefix for <code>words[i - 1]</code> and <code>words[i + 1]</code> (if they exist).",
+    "Use the result of the prefix computation up to <code>i - 1</code> and the suffix computation from <code>i + 1</code> onwards."
+  ]
+}

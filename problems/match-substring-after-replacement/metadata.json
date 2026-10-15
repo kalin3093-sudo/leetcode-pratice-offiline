@@ -1,0 +1,70 @@
+{
+  "id": "match-substring-after-replacement",
+  "title": "2301. Match Substring After Replacement",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/match-substring-after-replacement/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"fool3e7bar\", sub = \"leet\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "output": "true",
+      "explanation": "Replace the first 'e' in sub with '3' and 't' in sub with '7'. Now sub = \"l3e7\" is a substring of s, so we return true."
+    },
+    {
+      "input": "s = \"fooleetbar\", sub = \"f00l\", mappings = [[\"o\",\"0\"]]",
+      "output": "false",
+      "explanation": "The string \"f00l\" is not a substring of s and no replacements can be made. Note that we cannot replace '0' with 'o'."
+    },
+    {
+      "input": "s = \"Fool33tbaR\", sub = \"leetd\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]",
+      "output": "true",
+      "explanation": "Replace the first and second 'e' in sub with '3' and 'd' in sub with 'b'. Now sub = \"l33tb\" is a substring of s, so we return true."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool matchReplacement(string s, string sub, vector<vector<char>>& mappings) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean matchReplacement(String s, String sub, char[][] mappings) {\n        \n    }\n}",
+    "python": "class Solution:\n    def matchReplacement(self, s: str, sub: str, mappings: list[list[str]]) -> bool:\n        ",
+    "typescript": "function matchReplacement(s: string, sub: string, mappings: string[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool MatchReplacement(string s, string sub, char[][] mappings) {\n        \n    }\n}",
+    "go": "func matchReplacement(s string, sub string, mappings [][]byte) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn match_replacement(s: String, sub: String, mappings: Vec<Vec<char>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "fool3e7bar",
+      "sub": "leet",
+      "mappings": "[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]"
+    },
+    {
+      "s": "fooleetbar",
+      "sub": "f00l",
+      "mappings": "[[\"o\",\"0\"]]"
+    },
+    {
+      "s": "Fool33tbaR",
+      "sub": "leetd",
+      "mappings": "[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]"
+    }
+  ],
+  "functionName": "matchReplacement",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "sub",
+      "type": "string"
+    },
+    {
+      "name": "mappings",
+      "type": "char_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Enumerate all substrings of s with the same length as sub, and compare each substring to sub for equality.",
+    "How can you quickly tell if a character of s can result from replacing the corresponding character in sub?"
+  ]
+}

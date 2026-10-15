@@ -1,0 +1,63 @@
+{
+  "id": "number-of-bit-changes-to-make-two-integers-equal",
+  "title": "3226. Number of Bit Changes to Make Two Integers Equal",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "n = 13, k = 4",
+      "output": "2",
+      "explanation": "Initially, the binary representations of n and k are n = (1101)2 and k = (0100)2. We can change the first and fourth bits of n. The resulting integer is n = (0100)2 = k."
+    },
+    {
+      "input": "n = 21, k = 21",
+      "output": "0",
+      "explanation": "n and k are already equal, so no changes are needed."
+    },
+    {
+      "input": "n = 14, k = 13",
+      "output": "-1",
+      "explanation": "It is not possible to make n equal to k."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minChanges(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minChanges(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minChanges(self, n: int, k: int) -> int:\n        ",
+    "typescript": "function minChanges(n: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinChanges(int n, int k) {\n        \n    }\n}",
+    "go": "func minChanges(n int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_changes(n: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 13,
+      "k": 4
+    },
+    {
+      "n": 21,
+      "k": 21
+    },
+    {
+      "n": 14,
+      "k": 13
+    }
+  ],
+  "functionName": "minChanges",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the binary representations of <code>n</code> and <code>k</code>.",
+    "Any bit that is equal to 1 in <code>n</code> and equal to 0 in <code>k</code> needs to be changed."
+  ]
+}

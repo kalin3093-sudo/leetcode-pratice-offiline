@@ -1,0 +1,64 @@
+{
+  "id": "rearrange-characters-to-make-target-string",
+  "title": "2287. Rearrange Characters to Make Target String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/rearrange-characters-to-make-target-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"ilovecodingonleetcode\", target = \"code\"",
+      "output": "2",
+      "explanation": "For the first copy of \"code\", take the letters at indices 4, 5, 6, and 7. For the second copy of \"code\", take the letters at indices 17, 18, 19, and 20. The strings that are formed are \"ecod\" and \"code\" which can both be rearranged into \"code\". We can make at most two copies of \"code\", so we return 2."
+    },
+    {
+      "input": "s = \"abcba\", target = \"abc\"",
+      "output": "1",
+      "explanation": "We can make one copy of \"abc\" by taking the letters at indices 0, 1, and 2. We can make at most one copy of \"abc\", so we return 1. Note that while there is an extra 'a' and 'b' at indices 3 and 4, we cannot reuse the letter 'c' at index 2, so we cannot make a second copy of \"abc\"."
+    },
+    {
+      "input": "s = \"abbaccaddaeea\", target = \"aaaaa\"",
+      "output": "1",
+      "explanation": "We can make one copy of \"aaaaa\" by taking the letters at indices 0, 3, 6, 9, and 12. We can make at most one copy of \"aaaaa\", so we return 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int rearrangeCharacters(string s, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int rearrangeCharacters(String s, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rearrangeCharacters(self, s: str, target: str) -> int:\n        ",
+    "typescript": "function rearrangeCharacters(s: string, target: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RearrangeCharacters(string s, string target) {\n        \n    }\n}",
+    "go": "func rearrangeCharacters(s string, target string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rearrange_characters(s: String, target: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "ilovecodingonleetcode",
+      "target": "code"
+    },
+    {
+      "s": "abcba",
+      "target": "abc"
+    },
+    {
+      "s": "abbaccaddaeea",
+      "target": "aaaaa"
+    }
+  ],
+  "functionName": "rearrangeCharacters",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the frequency of each character in s and target.",
+    "Consider each letter one at a time. If there are x occurrences of a letter in s and y occurrences of the same letter in target, how many copies of this letter can we make?",
+    "We can make floor(x / y) copies of the letter."
+  ]
+}

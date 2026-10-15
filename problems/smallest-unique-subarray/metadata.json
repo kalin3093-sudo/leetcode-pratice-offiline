@@ -1,0 +1,58 @@
+{
+  "id": "smallest-unique-subarray",
+  "title": "3934. Smallest Unique Subarray",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-unique-subarray/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,3,3]",
+      "output": "3",
+      "explanation": "Subarrays of length 1: [3] &rarr; appears 3 times Subarrays of length 2: [3, 3] &rarr; appears 2 times Subarrays of length 3: [3, 3, 3] &rarr; appears once The subarray [3, 3, 3] is unique, so the smallest unique subarray length is 3."
+    },
+    {
+      "input": "nums = [2,1,2,3,3]",
+      "output": "1",
+      "explanation": "Subarrays of length 1: [2] &rarr; appears 2 times [1] &rarr; appears once [3] &rarr; appears 2 times The subarray [1] is unique, so the smallest unique subarray length is 1."
+    },
+    {
+      "input": "nums = [1,1,2,2,1]",
+      "output": "2",
+      "explanation": "Subarrays of length 1: [1] &rarr; appears 3 times [2] &rarr; appears 2 times Subarrays of length 2: [1, 1] &rarr; appears once [1, 2] &rarr; appears once [2, 2] &rarr; appears once [2, 1] &rarr; appears once There is at least one subarray of length 2 that is unique, so the smallest unique subarray length is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestUniqueSubarray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestUniqueSubarray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestUniqueSubarray(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function smallestUniqueSubarray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestUniqueSubarray(int[] nums) {\n        \n    }\n}",
+    "go": "func smallestUniqueSubarray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_unique_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,3,3]"
+    },
+    {
+      "nums": "[2,1,2,3,3]"
+    },
+    {
+      "nums": "[1,1,2,2,1]"
+    }
+  ],
+  "functionName": "smallestUniqueSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think in terms of checking a fixed length <code>len</code>: count all subarrays of length <code>len</code>, and see whether any one appears exactly once.",
+    "Use rolling hash so each subarray can be represented in <code>O(1)</code> after preprocessing, instead of comparing arrays directly.",
+    "The answer can be binary searched because if there is a unique subarray of length <code>len</code>, then there is also a unique subarray of some length <code>> len</code>.",
+    "For each checked length, store frequencies of hashes in a hashmap. If any hash has frequency 1, that length works."
+  ]
+}

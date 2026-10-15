@@ -1,0 +1,50 @@
+{
+  "id": "repeated-string-match",
+  "title": "686. Repeated String Match",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/repeated-string-match/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "a = \"abcd\", b = \"cdabcdab\"",
+      "output": "3",
+      "explanation": "We return 3 because by repeating a three times \"abcdabcdabcd\", b is a substring of it."
+    },
+    {
+      "input": "a = \"a\", b = \"aa\"",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int repeatedStringMatch(string a, string b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int repeatedStringMatch(String a, String b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def repeatedStringMatch(self, a: str, b: str) -> int:\n        ",
+    "typescript": "function repeatedStringMatch(a: string, b: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RepeatedStringMatch(string a, string b) {\n        \n    }\n}",
+    "go": "func repeatedStringMatch(a string, b string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn repeated_string_match(a: String, b: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": "abcd",
+      "b": "cdabcdab"
+    },
+    {
+      "a": "a",
+      "b": "aa"
+    }
+  ],
+  "functionName": "repeatedStringMatch",
+  "params": [
+    {
+      "name": "a",
+      "type": "string"
+    },
+    {
+      "name": "b",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

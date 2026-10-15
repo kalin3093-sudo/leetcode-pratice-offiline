@@ -1,0 +1,55 @@
+{
+  "id": "increment-submatrices-by-one",
+  "title": "2536. Increment Submatrices by One",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/increment-submatrices-by-one/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 3, queries = [[1,1,2,2],[0,0,1,1]]",
+      "output": "[[1,1,0],[1,2,1],[0,1,1]]",
+      "explanation": "The diagram above shows the initial matrix, the matrix after the first query, and the matrix after the second query. - In the first query, we add 1 to every element in the submatrix with the top left corner (1, 1) and bottom right corner (2, 2). - In the second query, we add 1 to every element in the submatrix with the top left corner (0, 0) and bottom right corner (1, 1)."
+    },
+    {
+      "input": "n = 2, queries = [[0,0,1,1]]",
+      "output": "[[1,1],[1,1]]",
+      "explanation": "The diagram above shows the initial matrix and the matrix after the first query. - In the first query we add 1 to every element in the matrix."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> rangeAddQueries(int n, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] rangeAddQueries(int n, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rangeAddQueries(self, n: int, queries: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function rangeAddQueries(n: number, queries: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] RangeAddQueries(int n, int[][] queries) {\n        \n    }\n}",
+    "go": "func rangeAddQueries(n int, queries [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn range_add_queries(n: i32, queries: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "queries": "[[1,1,2,2],[0,0,1,1]]"
+    },
+    {
+      "n": 2,
+      "queries": "[[0,0,1,1]]"
+    }
+  ],
+  "functionName": "rangeAddQueries",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Imagine each row as a separate array. Instead of updating the whole submatrix together, we can use prefix sum to update each row separately.",
+    "For each query, iterate over the rows i in the range [row1, row2] and add 1 to prefix sum S[i][col1], and subtract 1 from S[i][col2 + 1].",
+    "After doing this operation for all the queries, update each row separately with S[i][j] = S[i][j] + S[i][j - 1]."
+  ]
+}

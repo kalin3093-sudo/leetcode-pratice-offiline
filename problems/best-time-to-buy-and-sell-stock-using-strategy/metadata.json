@@ -1,0 +1,60 @@
+{
+  "id": "best-time-to-buy-and-sell-stock-using-strategy",
+  "title": "3652. Best Time to Buy and Sell Stock using Strategy",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "prices = [4,2,8], strategy = [-1,0,1], k = 2",
+      "output": "10",
+      "explanation": "Modification Strategy Profit Calculation Profit Original [-1, 0, 1] (-1 &times; 4) + (0 &times; 2) + (1 &times; 8) = -4 + 0 + 8 4 Modify [0, 1] [0, 1, 1] (0 &times; 4) + (1 &times; 2) + (1 &times; 8) = 0 + 2 + 8 10 Modify [1, 2] [-1, 0, 1] (-1 &times; 4) + (0 &times; 2) + (1 &times; 8) = -4 + 0 + 8 4 Thus, the maximum possible profit is 10, which is achieved by modifying the subarray [0, 1]."
+    },
+    {
+      "input": "prices = [5,4,3], strategy = [1,1,0], k = 2",
+      "output": "9",
+      "explanation": "Modification Strategy Profit Calculation Profit Original [1, 1, 0] (1 &times; 5) + (1 &times; 4) + (0 &times; 3) = 5 + 4 + 0 9 Modify [0, 1] [0, 1, 0] (0 &times; 5) + (1 &times; 4) + (0 &times; 3) = 0 + 4 + 0 4 Modify [1, 2] [1, 0, 1] (1 &times; 5) + (0 &times; 4) + (1 &times; 3) = 5 + 0 + 3 8 Thus, the maximum possible profit is 9, which is achieved without any modification."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxProfit(vector<int>& prices, vector<int>& strategy, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxProfit(int[] prices, int[] strategy, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProfit(self, prices: List[int], strategy: List[int], k: int) -> int:\n        ",
+    "typescript": "function maxProfit(prices: number[], strategy: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxProfit(int[] prices, int[] strategy, int k) {\n        \n    }\n}",
+    "go": "func maxProfit(prices []int, strategy []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_profit(prices: Vec<i32>, strategy: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "prices": "[4,2,8]",
+      "strategy": "[-1,0,1]",
+      "k": 2
+    },
+    {
+      "prices": "[5,4,3]",
+      "strategy": "[1,1,0]",
+      "k": 2
+    }
+  ],
+  "functionName": "maxProfit",
+  "params": [
+    {
+      "name": "prices",
+      "type": "int_array"
+    },
+    {
+      "name": "strategy",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use prefix sums to precompute the base profit and to get fast range queries (sums of <code>prices</code> and counts of each <code>strategy</code> value over any interval).",
+    "Try every segment of length <code>k</code>: compute the profit delta caused by replacing that segment (using the prefix queries) and take the maximum of <code>base + delta</code>."
+  ]
+}

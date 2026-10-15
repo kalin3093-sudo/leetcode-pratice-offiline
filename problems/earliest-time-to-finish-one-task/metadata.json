@@ -1,0 +1,47 @@
+{
+  "id": "earliest-time-to-finish-one-task",
+  "title": "3683. Earliest Time to Finish One Task",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/earliest-time-to-finish-one-task/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tasks = [[1,6],[2,3]]",
+      "output": "5",
+      "explanation": "The first task starts at time t = 1 and finishes at time 1 + 6 = 7. The second task finishes at time 2 + 3 = 5. You can finish one task at time 5."
+    },
+    {
+      "input": "tasks = [[100,100],[100,100],[100,100]]",
+      "output": "200",
+      "explanation": "All three tasks finish at time 100 + 100 = 200."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int earliestTime(vector<vector<int>>& tasks) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int earliestTime(int[][] tasks) {\n        \n    }\n}",
+    "python": "class Solution:\n    def earliestTime(self, tasks: List[List[int]]) -> int:\n        ",
+    "typescript": "function earliestTime(tasks: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EarliestTime(int[][] tasks) {\n        \n    }\n}",
+    "go": "func earliestTime(tasks [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn earliest_time(tasks: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tasks": "[[1,6],[2,3]]"
+    },
+    {
+      "tasks": "[[100,100],[100,100],[100,100]]"
+    }
+  ],
+  "functionName": "earliestTime",
+  "params": [
+    {
+      "name": "tasks",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Compute <code>finish[i] = s[i] + t[i]</code> for each task and take the minimum."
+  ]
+}

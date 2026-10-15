@@ -1,0 +1,49 @@
+{
+  "id": "ways-to-split-array-into-good-subarrays",
+  "title": "2750. Ways to Split Array Into Good Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,0,0,1]",
+      "output": "3",
+      "explanation": "There are 3 ways to split nums into good subarrays: - [0,1] [0,0,1] - [0,1,0] [0,1] - [0,1,0,0] [1]"
+    },
+    {
+      "input": "nums = [0,1,0]",
+      "output": "1",
+      "explanation": "There is 1 way to split nums into good subarrays: - [0,1,0]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfGoodSubarraySplits(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfGoodSubarraySplits(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfGoodSubarraySplits(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function numberOfGoodSubarraySplits(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfGoodSubarraySplits(int[] nums) {\n        \n    }\n}",
+    "go": "func numberOfGoodSubarraySplits(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_good_subarray_splits(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,0,0,1]"
+    },
+    {
+      "nums": "[0,1,0]"
+    }
+  ],
+  "functionName": "numberOfGoodSubarraySplits",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If the array consists of only 0s answer is 0.",
+    "In the final split, exactly one separation point exists between two consecutive 1s.",
+    "In how many ways can separation points be put?"
+  ]
+}

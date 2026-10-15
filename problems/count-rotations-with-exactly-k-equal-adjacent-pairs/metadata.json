@@ -1,0 +1,55 @@
+{
+  "id": "count-rotations-with-exactly-k-equal-adjacent-pairs",
+  "title": "4043. Count Rotations With Exactly K Equal Adjacent Pairs",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-rotations-with-exactly-k-equal-adjacent-pairs/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aab\", k = 1",
+      "output": "2",
+      "explanation": "The cyclic rotations of s are: \"aab\": The characters at positions 0 and 1 are equal, so score = 1. \"aba\": No two adjacent characters are equal, so score = 0. \"baa\": The characters at positions 1 and 2 are equal, so score = 1. Since score equals k for 2 cyclic rotations of s, the answer is 2."
+    },
+    {
+      "input": "s = \"abca\", k = 0",
+      "output": "1",
+      "explanation": "The cyclic rotations of s are: \"abca\": No two adjacent characters are equal, so score = 0. \"bcaa\": The characters at positions 2 and 3 are equal, so score = 1. \"caab\": The characters at positions 1 and 2 are equal, so score = 1. \"aabc\": The characters at positions 0 and 1 are equal, so score = 1. Since score equals k for only 1 cyclic rotation of s, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countRotations(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countRotations(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countRotations(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function countRotations(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountRotations(string s, int k) {\n        \n    }\n}",
+    "go": "func countRotations(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_rotations(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aab",
+      "k": 1
+    },
+    {
+      "s": "abca",
+      "k": 0
+    }
+  ],
+  "functionName": "countRotations",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<strong>1a (Simulation).</strong> Construct the rotation for each possible prefix length and count its equal adjacent pairs.",
+    "<strong>2a (Counting).</strong> Let <code>total</code> be the number of equal adjacent pairs when the string is treated as circular, including the pair formed by its last and first characters.",
+    "<strong>2b (Counting).</strong> Each rotation excludes exactly one circular adjacent pair. Its score is <code>total - 1</code> if the excluded pair has equal characters, and <code>total</code> otherwise."
+  ]
+}

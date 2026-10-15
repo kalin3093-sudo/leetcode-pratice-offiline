@@ -1,0 +1,65 @@
+{
+  "id": "maximum-total-from-optimal-activation-order",
+  "title": "3645. Maximum Total from Optimal Activation Order",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-total-from-optimal-activation-order/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "value = [3,5,8], limit = [2,1,3]",
+      "output": "16",
+      "explanation": "One optimal activation order is: Step Activated i value[i] Active Before i Active After i Becomes Inactive j Inactive Elements Total 1 1 5 0 1 j = 1 as limit[1] = 1 [1] 5 2 0 3 0 1 - [1] 8 3 2 8 1 2 j = 0 as limit[0] = 2 [0, 1] 16 Thus, the maximum possible total is 16."
+    },
+    {
+      "input": "value = [4,2,6], limit = [1,1,1]",
+      "output": "6",
+      "explanation": "One optimal activation order is: Step Activated i value[i] Active Before i Active After i Becomes Inactive j Inactive Elements Total 1 2 6 0 1 j = 0, 1, 2 as limit[j] = 1 [0, 1, 2] 6 Thus, the maximum possible total is 6."
+    },
+    {
+      "input": "value = [4,1,5,2], limit = [3,3,2,3]",
+      "output": "12",
+      "explanation": "One optimal activation order is: Step Activated i value[i] Active Before i Active After i Becomes Inactive j Inactive Elements Total 1 2 5 0 1 - [ ] 5 2 0 4 1 2 j = 2 as limit[2] = 2 [2] 9 3 1 1 1 2 - [2] 10 4 3 2 2 3 j = 0, 1, 3 as limit[j] = 3 [0, 1, 2, 3] 12 Thus, the maximum possible total is 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxTotal(vector<int>& value, vector<int>& limit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxTotal(int[] value, int[] limit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxTotal(self, value: List[int], limit: List[int]) -> int:\n        ",
+    "typescript": "function maxTotal(value: number[], limit: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxTotal(int[] value, int[] limit) {\n        \n    }\n}",
+    "go": "func maxTotal(value []int, limit []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_total(value: Vec<i32>, limit: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "value": "[3,5,8]",
+      "limit": "[2,1,3]"
+    },
+    {
+      "value": "[4,2,6]",
+      "limit": "[1,1,1]"
+    },
+    {
+      "value": "[4,1,5,2]",
+      "limit": "[3,3,2,3]"
+    }
+  ],
+  "functionName": "maxTotal",
+  "params": [
+    {
+      "name": "value",
+      "type": "int_array"
+    },
+    {
+      "name": "limit",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Group the items by their <code>limit</code> values, as decisions for each <code>limit</code> are independent.",
+    "For a group with <code>limit = j</code> and <code>m</code> items, its contribution is the sum of the top <code>min(j, m)</code> values.",
+    "To extract each group's top values, use a min-heap of capacity <code>j</code>: push each <code>value[i]</code>, and whenever the heap size exceeds <code>j</code>, pop the smallest.",
+    "After processing a group's heap, sum its elements and add to the overall total; repeat for all groups in any order."
+  ]
+}

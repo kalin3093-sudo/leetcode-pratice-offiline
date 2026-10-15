@@ -1,0 +1,58 @@
+{
+  "id": "zigzag-conversion",
+  "title": "6. Zigzag Conversion",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/zigzag-conversion/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"PAYPALISHIRING\", numRows = 3",
+      "output": "\"PAHNAPLSIIGYIR\""
+    },
+    {
+      "input": "s = \"PAYPALISHIRING\", numRows = 4",
+      "output": "\"PINALSIGYAHRPI\"",
+      "explanation": "P     I    N A   L S  I G Y A   H R P     I"
+    },
+    {
+      "input": "s = \"A\", numRows = 1",
+      "output": "\"A\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string convert(string s, int numRows) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String convert(String s, int numRows) {\n        \n    }\n}",
+    "python": "class Solution:\n    def convert(self, s: str, numRows: int) -> str:\n        ",
+    "typescript": "function convert(s: string, numRows: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string Convert(string s, int numRows) {\n        \n    }\n}",
+    "go": "func convert(s string, numRows int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn convert(s: String, num_rows: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "PAYPALISHIRING",
+      "numRows": 3
+    },
+    {
+      "s": "PAYPALISHIRING",
+      "numRows": 4
+    },
+    {
+      "s": "A",
+      "numRows": 1
+    }
+  ],
+  "functionName": "convert",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "numRows",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

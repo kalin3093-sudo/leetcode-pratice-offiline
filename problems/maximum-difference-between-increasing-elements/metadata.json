@@ -1,0 +1,56 @@
+{
+  "id": "maximum-difference-between-increasing-elements",
+  "title": "2016. Maximum Difference Between Increasing Elements",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-difference-between-increasing-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [7,1,5,4]",
+      "output": "4",
+      "explanation": "The maximum difference occurs with i = 1 and j = 2, nums[j] - nums[i] = 5 - 1 = 4. Note that with i = 1 and j = 0, the difference nums[j] - nums[i] = 7 - 1 = 6, but i > j, so it is not valid."
+    },
+    {
+      "input": "nums = [9,4,3,2]",
+      "output": "-1",
+      "explanation": "There is no i and j such that i < j and nums[i] < nums[j]."
+    },
+    {
+      "input": "nums = [1,5,2,10]",
+      "output": "9",
+      "explanation": "The maximum difference occurs with i = 0 and j = 3, nums[j] - nums[i] = 10 - 1 = 9."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumDifference(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maximumDifference(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumDifference(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_difference(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[7,1,5,4]"
+    },
+    {
+      "nums": "[9,4,3,2]"
+    },
+    {
+      "nums": "[1,5,2,10]"
+    }
+  ],
+  "functionName": "maximumDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Could you keep track of the minimum element visited while traversing?",
+    "We have a potential candidate for the answer if the prefix min is less than nums[i]."
+  ]
+}

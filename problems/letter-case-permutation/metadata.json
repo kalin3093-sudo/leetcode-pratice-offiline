@@ -1,0 +1,43 @@
+{
+  "id": "letter-case-permutation",
+  "title": "784. Letter Case Permutation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/letter-case-permutation/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"a1b2\"",
+      "output": "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]"
+    },
+    {
+      "input": "s = \"3z4\"",
+      "output": "[\"3z4\",\"3Z4\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> letterCasePermutation(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> letterCasePermutation(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def letterCasePermutation(self, s: str) -> list[str]:\n        ",
+    "typescript": "function letterCasePermutation(s: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> LetterCasePermutation(string s) {\n        \n    }\n}",
+    "go": "func letterCasePermutation(s string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn letter_case_permutation(s: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "a1b2"
+    },
+    {
+      "s": "3z4"
+    }
+  ],
+  "functionName": "letterCasePermutation",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

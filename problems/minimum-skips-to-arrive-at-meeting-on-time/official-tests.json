@@ -1,0 +1,17 @@
+[
+  {
+    "dist": "[1,3,2]",
+    "speed": 4,
+    "hoursBefore": 2
+  },
+  {
+    "dist": "[7,3,5,5]",
+    "speed": 2,
+    "hoursBefore": 10
+  },
+  {
+    "dist": "[7,3,5,5]",
+    "speed": 1,
+    "hoursBefore": 10
+  }
+]

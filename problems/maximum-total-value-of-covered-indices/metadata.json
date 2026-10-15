@@ -1,0 +1,65 @@
+{
+  "id": "maximum-total-value-of-covered-indices",
+  "title": "3952. Maximum Total Value of Covered Indices",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-total-value-of-covered-indices/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [9,2,6,1], s = \"0101\"",
+      "output": "15",
+      "explanation": "Initially, indices 1 and 3 contain tokens. Move the token from index 3 to index 2. Move the token from index 1 to index 0. The covered indices are [0, 2], so the total value is nums[0] + nums[2] = 9 + 6 = 15."
+    },
+    {
+      "input": "nums = [5,1,4], s = \"001\"",
+      "output": "4",
+      "explanation": "Initially, only index 2 contains a token. It is optimal to leave the token at index 2. The covered index is [2], so the total value is nums[2] = 4."
+    },
+    {
+      "input": "nums = [9,3,5], s = \"011\"",
+      "output": "14",
+      "explanation": "Initially, indices 1 and 2 contain tokens. Move the token from index 1 to index 0. The covered indices are [0, 2], so the total value is nums[0] + nums[2] = 9 + 5 = 14."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxTotal(vector<int>& nums, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxTotal(int[] nums, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxTotal(self, nums: List[int], s: str) -> int:\n        ",
+    "typescript": "function maxTotal(nums: number[], s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxTotal(int[] nums, string s) {\n        \n    }\n}",
+    "go": "func maxTotal(nums []int, s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_total(nums: Vec<i32>, s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[9,2,6,1]",
+      "s": "0101"
+    },
+    {
+      "nums": "[5,1,4]",
+      "s": "001"
+    },
+    {
+      "nums": "[9,3,5]",
+      "s": "011"
+    }
+  ],
+  "functionName": "maxTotal",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "1a (Greedy). Consider each maximal block of consecutive tokens independently, together with the index immediately before the block if it exists.",
+    "1b (Greedy). From this range, every index except one can be covered, so subtract the minimum <code>nums</code> value in the range.",
+    "2a (DP). A token at index <code>i</code> can only end at <code>i</code> or <code>i - 1</code>.",
+    "2b (DP). Process indices from left to right and keep whether the previous index is already covered; try both choices for the current token when possible."
+  ]
+}

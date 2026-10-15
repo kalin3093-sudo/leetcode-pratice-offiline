@@ -1,0 +1,44 @@
+{
+  "id": "number-of-squareful-arrays",
+  "title": "996. Number of Squareful Arrays",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-squareful-arrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,17,8]",
+      "output": "2",
+      "explanation": "[1,8,17] and [17,8,1] are the valid permutations."
+    },
+    {
+      "input": "nums = [2,2,2]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSquarefulPerms(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSquarefulPerms(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSquarefulPerms(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function numSquarefulPerms(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSquarefulPerms(int[] nums) {\n        \n    }\n}",
+    "go": "func numSquarefulPerms(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_squareful_perms(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,17,8]"
+    },
+    {
+      "nums": "[2,2,2]"
+    }
+  ],
+  "functionName": "numSquarefulPerms",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

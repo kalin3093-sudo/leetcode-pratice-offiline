@@ -1,0 +1,48 @@
+{
+  "id": "clear-digits",
+  "title": "3174. Clear Digits",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/clear-digits/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "\"abc\"",
+      "explanation": "There is no digit in the string."
+    },
+    {
+      "input": "s = \"cb34\"",
+      "output": "\"\"",
+      "explanation": "First, we apply the operation on s[2], and s becomes \"c4\". Then we apply the operation on s[1], and s becomes \"\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string clearDigits(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String clearDigits(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def clearDigits(self, s: str) -> str:\n        ",
+    "typescript": "function clearDigits(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ClearDigits(string s) {\n        \n    }\n}",
+    "go": "func clearDigits(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn clear_digits(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc"
+    },
+    {
+      "s": "cb34"
+    }
+  ],
+  "functionName": "clearDigits",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Process string <code>s</code> from left to right, if <code>s[i]</code> is a digit, mark the nearest unmarked non-digit index to its left.",
+    "Delete all digits and all marked characters."
+  ]
+}

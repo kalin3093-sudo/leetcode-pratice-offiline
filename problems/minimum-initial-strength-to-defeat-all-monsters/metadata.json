@@ -1,0 +1,55 @@
+{
+  "id": "minimum-initial-strength-to-defeat-all-monsters",
+  "title": "4008. Minimum Initial Strength to Defeat All Monsters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "monsters = [5,10,15], boosts = [[1,1,10]]",
+      "output": "30",
+      "explanation": "Let's start with an initial strength of 30. monsters[0] = 5: At index 0, the bonus is 0. Since 30 + 0 >= 5, this monster can be defeated. The strength becomes 30 - 5 = 25. monsters[1] = 10: At index 1, the bonus is 10. Since 25 + 10 >= 10, this monster can be defeated. The strength becomes 25 - 10 = 15. monsters[2] = 15: At index 2, the bonus is 0. Since 15 + 0 >= 15, this monster can be defeated. The strength becomes 15 - 15 = 0. Thus, the minimum initial strength required is 30."
+    },
+    {
+      "input": "monsters = [5,10,15], boosts = [[1,2,10],[1,2,5]]",
+      "output": "5",
+      "explanation": "Let's start with an initial strength of 5. monsters[0] = 5: The bonus is 0. Since 5 + 0 >= 5, the monster can be defeated. The strength becomes 5 - 5 = 0. monsters[1] = 10: The two overlapping boosts provide bonus = 10 + 5 = 15. Since 0 + 15 >= 10, the monster can be defeated. The strength remains 0. monsters[2] = 15: The two overlapping boosts again provide bonus = 15. Since 0 + 15 >= 15, the monster can be defeated. The strength remains 0. Thus, the minimum initial strength required is 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minInitialStrength(vector<int>& monsters, vector<vector<int>>& boosts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minInitialStrength(int[] monsters, int[][] boosts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minInitialStrength(self, monsters: list[int], boosts: list[list[int]]) -> int:\n        ",
+    "typescript": "function minInitialStrength(monsters: number[], boosts: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinInitialStrength(int[] monsters, int[][] boosts) {\n        \n    }\n}",
+    "go": "func minInitialStrength(monsters []int, boosts [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_initial_strength(monsters: Vec<i32>, boosts: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "monsters": "[5,10,15]",
+      "boosts": "[[1,1,10]]"
+    },
+    {
+      "monsters": "[5,10,15]",
+      "boosts": "[[1,2,10],[1,2,5]]"
+    }
+  ],
+  "functionName": "minInitialStrength",
+  "params": [
+    {
+      "name": "monsters",
+      "type": "int_array"
+    },
+    {
+      "name": "boosts",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<p>Use a difference array to compute the total temporary bonus applied at every monster.</p>",
+    "<p>Before fighting monster <code>i</code>, your current strength is <code>max(0, initialStrength - prefixSum)</code>, where <code>prefixSum</code> is the total strength of all previously defeated monsters.</p>",
+    "<p>If <code>bonus[i] &lt; monsters[i]</code>, then the initial strength must be at least <code>prefixSum + monsters[i] - bonus[i]</code>. Take the maximum of this value over all monsters.</p>"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "maximum-count-of-positive-integer-and-negative-integer",
+  "title": "2529. Maximum Count of Positive Integer and Negative Integer",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [-2,-1,-1,1,2,3]",
+      "output": "3",
+      "explanation": "There are 3 positive integers and 3 negative integers. The maximum count among them is 3."
+    },
+    {
+      "input": "nums = [-3,-2,-1,0,0,1,2]",
+      "output": "3",
+      "explanation": "There are 2 positive integers and 3 negative integers. The maximum count among them is 3."
+    },
+    {
+      "input": "nums = [5,20,66,1314]",
+      "output": "4",
+      "explanation": "There are 4 positive integers and 0 negative integers. The maximum count among them is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumCount(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumCount(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumCount(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maximumCount(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumCount(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumCount(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_count(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[-2,-1,-1,1,2,3]"
+    },
+    {
+      "nums": "[-3,-2,-1,0,0,1,2]"
+    },
+    {
+      "nums": "[5,20,66,1314]"
+    }
+  ],
+  "functionName": "maximumCount",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count how many positive integers and negative integers are in the array.",
+    "Since the array is sorted, can we use the binary search?"
+  ]
+}

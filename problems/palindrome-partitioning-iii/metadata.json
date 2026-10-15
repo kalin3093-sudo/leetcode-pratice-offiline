@@ -1,0 +1,62 @@
+{
+  "id": "palindrome-partitioning-iii",
+  "title": "1278. Palindrome Partitioning III",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/palindrome-partitioning-iii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abc\", k = 2",
+      "output": "1",
+      "explanation": "You can split the string into \"ab\" and \"c\", and change 1 character in \"ab\" to make it palindrome."
+    },
+    {
+      "input": "s = \"aabbc\", k = 3",
+      "output": "0",
+      "explanation": "You can split the string into \"aa\", \"bb\" and \"c\", all of them are palindrome."
+    },
+    {
+      "input": "s = \"leetcode\", k = 8",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int palindromePartition(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int palindromePartition(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def palindromePartition(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function palindromePartition(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PalindromePartition(string s, int k) {\n        \n    }\n}",
+    "go": "func palindromePartition(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn palindrome_partition(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc",
+      "k": 2
+    },
+    {
+      "s": "aabbc",
+      "k": 3
+    },
+    {
+      "s": "leetcode",
+      "k": 8
+    }
+  ],
+  "functionName": "palindromePartition",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each substring calculate the minimum number of steps to make it palindrome and store it in a table.",
+    "Create a dp(pos, cnt) which means the minimum number of characters changed for the suffix of s starting on pos splitting the suffix on cnt chunks."
+  ]
+}

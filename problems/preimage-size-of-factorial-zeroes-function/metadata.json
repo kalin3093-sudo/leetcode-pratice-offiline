@@ -1,0 +1,52 @@
+{
+  "id": "preimage-size-of-factorial-zeroes-function",
+  "title": "793. Preimage Size of Factorial Zeroes Function",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "k = 0",
+      "output": "5",
+      "explanation": "0!, 1!, 2!, 3!, and 4! end with k = 0 zeroes."
+    },
+    {
+      "input": "k = 5",
+      "output": "0",
+      "explanation": "There is no x such that x! ends in k = 5 zeroes."
+    },
+    {
+      "input": "k = 3",
+      "output": "5"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int preimageSizeFZF(int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int preimageSizeFZF(int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def preimageSizeFZF(self, k: int) -> int:\n        ",
+    "typescript": "function preimageSizeFZF(k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PreimageSizeFZF(int k) {\n        \n    }\n}",
+    "go": "func preimageSizeFZF(k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn preimage_size_fzf(k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 0
+    },
+    {
+      "k": 5
+    },
+    {
+      "k": 3
+    }
+  ],
+  "functionName": "preimageSizeFZF",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

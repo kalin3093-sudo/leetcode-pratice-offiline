@@ -1,0 +1,56 @@
+{
+  "id": "number-of-ways-to-reorder-array-to-get-same-bst",
+  "title": "1569. Number of Ways to Reorder Array to Get Same BST",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,3]",
+      "output": "1",
+      "explanation": "We can reorder nums to be [2,3,1] which will yield the same BST. There are no other ways to reorder nums which will yield the same BST."
+    },
+    {
+      "input": "nums = [3,4,5,1,2]",
+      "output": "5",
+      "explanation": "The following 5 arrays will yield the same BST: [3,1,2,4,5] [3,1,4,2,5] [3,1,4,5,2] [3,4,1,2,5] [3,4,1,5,2]"
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "0",
+      "explanation": "There are no other orderings of nums that will yield the same BST."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numOfWays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numOfWays(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numOfWays(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function numOfWays(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumOfWays(int[] nums) {\n        \n    }\n}",
+    "go": "func numOfWays(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_of_ways(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,3]"
+    },
+    {
+      "nums": "[3,4,5,1,2]"
+    },
+    {
+      "nums": "[1,2,3]"
+    }
+  ],
+  "functionName": "numOfWays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a divide and conquer strategy.",
+    "The first number will always be the root. Consider the numbers smaller and larger than the root separately. When merging the results together, how many ways can you order x elements in x+y positions?"
+  ]
+}

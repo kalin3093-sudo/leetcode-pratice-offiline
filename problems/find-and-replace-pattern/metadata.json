@@ -1,0 +1,50 @@
+{
+  "id": "find-and-replace-pattern",
+  "title": "890. Find and Replace Pattern",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-and-replace-pattern/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], pattern = \"abb\"",
+      "output": "[\"mee\",\"aqq\"]",
+      "explanation": "\"mee\" matches the pattern because there is a permutation {a -> m, b -> e, ...}. \"ccc\" does not match the pattern because {a -> c, b -> c, ...} is not a permutation, since a and b map to the same letter."
+    },
+    {
+      "input": "words = [\"a\",\"b\",\"c\"], pattern = \"a\"",
+      "output": "[\"a\",\"b\",\"c\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findAndReplacePattern(vector<string>& words, string pattern) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> findAndReplacePattern(String[] words, String pattern) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findAndReplacePattern(self, words: list[str], pattern: str) -> list[str]:\n        ",
+    "typescript": "function findAndReplacePattern(words: string[], pattern: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> FindAndReplacePattern(string[] words, string pattern) {\n        \n    }\n}",
+    "go": "func findAndReplacePattern(words []string, pattern string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_and_replace_pattern(words: Vec<String>, pattern: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]",
+      "pattern": "abb"
+    },
+    {
+      "words": "[\"a\",\"b\",\"c\"]",
+      "pattern": "a"
+    }
+  ],
+  "functionName": "findAndReplacePattern",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "pattern",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

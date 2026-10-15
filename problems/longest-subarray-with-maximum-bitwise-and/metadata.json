@@ -1,0 +1,48 @@
+{
+  "id": "longest-subarray-with-maximum-bitwise-and",
+  "title": "2419. Longest Subarray With Maximum Bitwise AND",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,3,2,2]",
+      "output": "2",
+      "explanation": "The maximum possible bitwise AND of a subarray is 3. The longest subarray with that value is [3,3], so we return 2."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "1",
+      "explanation": "The maximum possible bitwise AND of a subarray is 4. The longest subarray with that value is [4], so we return 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubarray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubarray(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function longestSubarray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubarray(int[] nums) {\n        \n    }\n}",
+    "go": "func longestSubarray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,3,2,2]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "longestSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Notice that the bitwise AND of two different numbers will always be strictly less than the maximum of those two numbers.",
+    "What does that tell us about the nature of the subarray that we should choose?"
+  ]
+}

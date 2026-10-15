@@ -1,0 +1,45 @@
+{
+  "id": "rectangle-area-ii",
+  "title": "850. Rectangle Area II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/rectangle-area-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rectangles = [[0,0,2,2],[1,0,2,3],[1,0,3,1]]",
+      "output": "6",
+      "explanation": "A total area of 6 is covered by all three rectangles, as illustrated in the picture. From (1,1) to (2,2), the green and red rectangles overlap. From (1,0) to (2,3), all three rectangles overlap."
+    },
+    {
+      "input": "rectangles = [[0,0,1000000000,1000000000]]",
+      "output": "49",
+      "explanation": "The answer is 1018 modulo (109 + 7), which is 49."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int rectangleArea(vector<vector<int>>& rectangles) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int rectangleArea(int[][] rectangles) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rectangleArea(self, rectangles: list[list[int]]) -> int:\n        ",
+    "typescript": "function rectangleArea(rectangles: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RectangleArea(int[][] rectangles) {\n        \n    }\n}",
+    "go": "func rectangleArea(rectangles [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rectangle_area(rectangles: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rectangles": "[[0,0,2,2],[1,0,2,3],[1,0,3,1]]"
+    },
+    {
+      "rectangles": "[[0,0,1000000000,1000000000]]"
+    }
+  ],
+  "functionName": "rectangleArea",
+  "params": [
+    {
+      "name": "rectangles",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "find-the-k-th-character-in-string-game-i",
+  "title": "3304. Find the K-th Character in String Game I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "k = 5",
+      "output": "\"b\"",
+      "explanation": "Initially, word = \"a\". We need to do the operation three times: Generated string is \"b\", word becomes \"ab\". Generated string is \"bc\", word becomes \"abbc\". Generated string is \"bccd\", word becomes \"abbcbccd\"."
+    },
+    {
+      "input": "k = 10",
+      "output": "\"c\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    char kthCharacter(int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public char kthCharacter(int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kthCharacter(self, k: int) -> str:\n        ",
+    "typescript": "function kthCharacter(k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public char KthCharacter(int k) {\n        \n    }\n}",
+    "go": "func kthCharacter(k int) byte {\n    \n}",
+    "rust": "impl Solution {\n    pub fn kth_character(k: i32) -> char {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 5
+    },
+    {
+      "k": 10
+    }
+  ],
+  "functionName": "kthCharacter",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "char",
+  "hints": [
+    "The constraints are small. Construct the string by simulating the operations."
+  ]
+}

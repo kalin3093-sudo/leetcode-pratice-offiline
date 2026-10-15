@@ -1,0 +1,56 @@
+{
+  "id": "find-the-longest-substring-containing-vowels-in-even-counts",
+  "title": "1371. Find the Longest Substring Containing Vowels in Even Counts",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"eleetminicoworoep\"",
+      "output": "13",
+      "explanation": "The longest substring is \"leetminicowor\" which contains two each of the vowels: e, i and o and zero of the vowels: a and u."
+    },
+    {
+      "input": "s = \"leetcodeisgreat\"",
+      "output": "5",
+      "explanation": "The longest substring is \"leetc\" which contains two e's."
+    },
+    {
+      "input": "s = \"bcbcbc\"",
+      "output": "6",
+      "explanation": "In this case, the given string \"bcbcbc\" is the longest because all vowels: a, e, i, o and u appear zero times."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findTheLongestSubstring(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findTheLongestSubstring(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findTheLongestSubstring(self, s: str) -> int:\n        ",
+    "typescript": "function findTheLongestSubstring(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindTheLongestSubstring(string s) {\n        \n    }\n}",
+    "go": "func findTheLongestSubstring(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_the_longest_substring(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "eleetminicoworoep"
+    },
+    {
+      "s": "leetcodeisgreat"
+    },
+    {
+      "s": "bcbcbc"
+    }
+  ],
+  "functionName": "findTheLongestSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Represent the counts (odd or even) of vowels with a bitmask.",
+    "Precompute the prefix xor for the bitmask of vowels and then get the longest valid substring."
+  ]
+}

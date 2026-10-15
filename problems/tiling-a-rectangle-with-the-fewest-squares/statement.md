@@ -1,0 +1,5 @@
+Given a rectangle of size `n` x `m`, return *the minimum number of integer-sided squares that tile the rectangle*.
+
+**Constraints:**
+
+-   `1 ≤ n, m ≤ 13`

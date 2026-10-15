@@ -1,0 +1,77 @@
+{
+  "id": "count-all-possible-routes",
+  "title": "1575. Count All Possible Routes",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-all-possible-routes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "locations = [2,3,6,8,4], start = 1, finish = 3, fuel = 5",
+      "output": "4",
+      "explanation": "The following are all possible routes, each uses 5 units of fuel: 1 -> 3 1 -> 2 -> 3 1 -> 4 -> 3 1 -> 4 -> 2 -> 3"
+    },
+    {
+      "input": "locations = [4,3,1], start = 1, finish = 0, fuel = 6",
+      "output": "5",
+      "explanation": "The following are all possible routes: 1 -> 0, used fuel = 1 1 -> 2 -> 0, used fuel = 5 1 -> 2 -> 1 -> 0, used fuel = 5 1 -> 0 -> 1 -> 0, used fuel = 3 1 -> 0 -> 1 -> 0 -> 1 -> 0, used fuel = 5"
+    },
+    {
+      "input": "locations = [5,2,1], start = 0, finish = 2, fuel = 3",
+      "output": "0",
+      "explanation": "It is impossible to get from 0 to 2 using only 3 units of fuel since the shortest route needs 4 units of fuel."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countRoutes(vector<int>& locations, int start, int finish, int fuel) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countRoutes(int[] locations, int start, int finish, int fuel) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countRoutes(self, locations: list[int], start: int, finish: int, fuel: int) -> int:\n        ",
+    "typescript": "function countRoutes(locations: number[], start: number, finish: number, fuel: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountRoutes(int[] locations, int start, int finish, int fuel) {\n        \n    }\n}",
+    "go": "func countRoutes(locations []int, start int, finish int, fuel int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "locations": "[2,3,6,8,4]",
+      "start": 1,
+      "finish": 3,
+      "fuel": 5
+    },
+    {
+      "locations": "[4,3,1]",
+      "start": 1,
+      "finish": 0,
+      "fuel": 6
+    },
+    {
+      "locations": "[5,2,1]",
+      "start": 0,
+      "finish": 2,
+      "fuel": 3
+    }
+  ],
+  "functionName": "countRoutes",
+  "params": [
+    {
+      "name": "locations",
+      "type": "int_array"
+    },
+    {
+      "name": "start",
+      "type": "int"
+    },
+    {
+      "name": "finish",
+      "type": "int"
+    },
+    {
+      "name": "fuel",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming to solve this problem with each state defined by the city index and fuel left.",
+    "Since the array contains distinct integers fuel will always be spent in each move and so there can be no cycles."
+  ]
+}

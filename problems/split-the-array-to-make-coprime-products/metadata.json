@@ -1,0 +1,48 @@
+{
+  "id": "split-the-array-to-make-coprime-products",
+  "title": "2584. Split the Array to Make Coprime Products",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/split-the-array-to-make-coprime-products/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,7,8,15,3,5]",
+      "output": "2",
+      "explanation": "The table above shows the values of the product of the first i + 1 elements, the remaining elements, and their gcd at each index i. The only valid split is at index 2."
+    },
+    {
+      "input": "nums = [4,7,15,8,3,5]",
+      "output": "-1",
+      "explanation": "The table above shows the values of the product of the first i + 1 elements, the remaining elements, and their gcd at each index i. There is no valid split."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findValidSplit(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findValidSplit(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findValidSplit(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function findValidSplit(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindValidSplit(int[] nums) {\n        \n    }\n}",
+    "go": "func findValidSplit(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_valid_split(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,7,8,15,3,5]"
+    },
+    {
+      "nums": "[4,7,15,8,3,5]"
+    }
+  ],
+  "functionName": "findValidSplit",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Two numbers with GCD equal to 1 have no common prime divisor.",
+    "Find the prime factorization of the left and right sides and check if they share a prime divisor."
+  ]
+}

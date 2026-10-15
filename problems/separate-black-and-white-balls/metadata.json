@@ -1,0 +1,56 @@
+{
+  "id": "separate-black-and-white-balls",
+  "title": "2938. Separate Black and White Balls",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/separate-black-and-white-balls/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"101\"",
+      "output": "1",
+      "explanation": "We can group all the black balls to the right in the following way: - Swap s[0] and s[1], s = \"011\". Initially, 1s are not grouped together, requiring at least 1 step to group them to the right."
+    },
+    {
+      "input": "s = \"100\"",
+      "output": "2",
+      "explanation": "We can group all the black balls to the right in the following way: - Swap s[0] and s[1], s = \"010\". - Swap s[1] and s[2], s = \"001\". It can be proven that the minimum number of steps needed is 2."
+    },
+    {
+      "input": "s = \"0111\"",
+      "output": "0",
+      "explanation": "All the black balls are already grouped to the right."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumSteps(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumSteps(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumSteps(self, s: str) -> int:\n        ",
+    "typescript": "function minimumSteps(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumSteps(string s) {\n        \n    }\n}",
+    "go": "func minimumSteps(s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_steps(s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "101"
+    },
+    {
+      "s": "100"
+    },
+    {
+      "s": "0111"
+    }
+  ],
+  "functionName": "minimumSteps",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Every <code>1</code> in the string <code>s</code> should be swapped with every <code>0</code> on its right side.",
+    "Iterate right to left and count the number of <code>0</code> that have already occurred, whenever you iterate on <code>1</code> add that counter to the answer."
+  ]
+}

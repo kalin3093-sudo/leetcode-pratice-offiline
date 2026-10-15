@@ -1,0 +1,53 @@
+{
+  "id": "water-bottles-ii",
+  "title": "3100. Water Bottles II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/water-bottles-ii/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "numBottles = 13, numExchange = 6",
+      "output": "15",
+      "explanation": "The table above shows the number of full water bottles, empty water bottles, the value of numExchange, and the number of bottles drunk."
+    },
+    {
+      "input": "numBottles = 10, numExchange = 3",
+      "output": "13",
+      "explanation": "The table above shows the number of full water bottles, empty water bottles, the value of numExchange, and the number of bottles drunk."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxBottlesDrunk(int numBottles, int numExchange) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxBottlesDrunk(int numBottles, int numExchange) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxBottlesDrunk(self, numBottles: int, numExchange: int) -> int:\n        ",
+    "typescript": "function maxBottlesDrunk(numBottles: number, numExchange: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxBottlesDrunk(int numBottles, int numExchange) {\n        \n    }\n}",
+    "go": "func maxBottlesDrunk(numBottles int, numExchange int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_bottles_drunk(num_bottles: i32, num_exchange: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "numBottles": 13,
+      "numExchange": 6
+    },
+    {
+      "numBottles": 10,
+      "numExchange": 3
+    }
+  ],
+  "functionName": "maxBottlesDrunk",
+  "params": [
+    {
+      "name": "numBottles",
+      "type": "int"
+    },
+    {
+      "name": "numExchange",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the process step by step. At each step, drink <code>numExchange</code> bottles of water then exchange them for a full bottle. Keep repeating this step until you cannot exchange  bottles anymore."
+  ]
+}

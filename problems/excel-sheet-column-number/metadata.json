@@ -1,0 +1,50 @@
+{
+  "id": "excel-sheet-column-number",
+  "title": "171. Excel Sheet Column Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/excel-sheet-column-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "columnTitle = \"A\"",
+      "output": "1"
+    },
+    {
+      "input": "columnTitle = \"AB\"",
+      "output": "28"
+    },
+    {
+      "input": "columnTitle = \"ZY\"",
+      "output": "701"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int titleToNumber(string columnTitle) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int titleToNumber(String columnTitle) {\n        \n    }\n}",
+    "python": "class Solution:\n    def titleToNumber(self, columnTitle: str) -> int:\n        ",
+    "typescript": "function titleToNumber(columnTitle: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TitleToNumber(string columnTitle) {\n        \n    }\n}",
+    "go": "func titleToNumber(columnTitle string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn title_to_number(column_title: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "columnTitle": "A"
+    },
+    {
+      "columnTitle": "AB"
+    },
+    {
+      "columnTitle": "ZY"
+    }
+  ],
+  "functionName": "titleToNumber",
+  "params": [
+    {
+      "name": "columnTitle",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

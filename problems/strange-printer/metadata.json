@@ -1,0 +1,45 @@
+{
+  "id": "strange-printer",
+  "title": "664. Strange Printer",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/strange-printer/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aaabbb\"",
+      "output": "2",
+      "explanation": "Print \"aaa\" first and then print \"bbb\"."
+    },
+    {
+      "input": "s = \"aba\"",
+      "output": "2",
+      "explanation": "Print \"aaa\" first and then print \"b\" from the second place of the string, which will cover the existing character 'a'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int strangePrinter(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int strangePrinter(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def strangePrinter(self, s: str) -> int:\n        ",
+    "typescript": "function strangePrinter(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int StrangePrinter(string s) {\n        \n    }\n}",
+    "go": "func strangePrinter(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn strange_printer(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaabbb"
+    },
+    {
+      "s": "aba"
+    }
+  ],
+  "functionName": "strangePrinter",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

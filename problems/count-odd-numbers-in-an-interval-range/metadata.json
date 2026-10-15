@@ -1,0 +1,54 @@
+{
+  "id": "count-odd-numbers-in-an-interval-range",
+  "title": "1523. Count Odd Numbers in an Interval Range",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "low = 3, high = 7",
+      "output": "3",
+      "explanation": "The odd numbers between 3 and 7 are [3,5,7]."
+    },
+    {
+      "input": "low = 8, high = 10",
+      "output": "1",
+      "explanation": "The odd numbers between 8 and 10 are [9]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countOdds(int low, int high) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countOdds(int low, int high) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countOdds(self, low: int, high: int) -> int:\n        ",
+    "typescript": "function countOdds(low: number, high: number): number {\n\n};",
+    "csharp": "public class Solution {\n    public int CountOdds(int low, int high) {\n        \n    }\n}",
+    "go": "func countOdds(low int, high int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_odds(low: i32, high: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "low": 3,
+      "high": 7
+    },
+    {
+      "low": 8,
+      "high": 10
+    }
+  ],
+  "functionName": "countOdds",
+  "params": [
+    {
+      "name": "low",
+      "type": "int"
+    },
+    {
+      "name": "high",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If the range (high - low + 1) is even, the number of even and odd numbers in this range will be the same.",
+    "If the range (high - low + 1) is odd, the solution will depend on the parity of high and low."
+  ]
+}

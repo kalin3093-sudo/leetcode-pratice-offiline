@@ -1,0 +1,60 @@
+{
+  "id": "split-two-strings-to-make-palindrome",
+  "title": "1616. Split Two Strings to Make Palindrome",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/split-two-strings-to-make-palindrome/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "a = \"x\", b = \"y\"",
+      "output": "true"
+    },
+    {
+      "input": "a = \"xbdef\", b = \"xecab\"",
+      "output": "false"
+    },
+    {
+      "input": "a = \"ulacfd\", b = \"jizalu\"",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkPalindromeFormation(string a, string b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkPalindromeFormation(String a, String b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkPalindromeFormation(self, a: str, b: str) -> bool:\n        ",
+    "typescript": "function checkPalindromeFormation(a: string, b: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckPalindromeFormation(string a, string b) {\n        \n    }\n}",
+    "go": "func checkPalindromeFormation(a string, b string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_palindrome_formation(a: String, b: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": "x",
+      "b": "y"
+    },
+    {
+      "a": "xbdef",
+      "b": "xecab"
+    },
+    {
+      "a": "ulacfd",
+      "b": "jizalu"
+    }
+  ],
+  "functionName": "checkPalindromeFormation",
+  "params": [
+    {
+      "name": "a",
+      "type": "string"
+    },
+    {
+      "name": "b",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Try finding the largest prefix from a that matches a suffix in b",
+    "Try string matching"
+  ]
+}

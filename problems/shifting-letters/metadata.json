@@ -1,0 +1,50 @@
+{
+  "id": "shifting-letters",
+  "title": "848. Shifting Letters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shifting-letters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"abc\", shifts = [3,5,9]",
+      "output": "\"rpl\"",
+      "explanation": "We start with \"abc\". After shifting the first 1 letters of s by 3, we have \"dbc\". After shifting the first 2 letters of s by 5, we have \"igc\". After shifting the first 3 letters of s by 9, we have \"rpl\", the answer."
+    },
+    {
+      "input": "s = \"aaa\", shifts = [1,2,3]",
+      "output": "\"gfd\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string shiftingLetters(string s, vector<int>& shifts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String shiftingLetters(String s, int[] shifts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shiftingLetters(self, s: str, shifts: list[int]) -> str:\n        ",
+    "typescript": "function shiftingLetters(s: string, shifts: number[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ShiftingLetters(string s, int[] shifts) {\n        \n    }\n}",
+    "go": "func shiftingLetters(s string, shifts []int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shifting_letters(s: String, shifts: Vec<i32>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc",
+      "shifts": "[3,5,9]"
+    },
+    {
+      "s": "aaa",
+      "shifts": "[1,2,3]"
+    }
+  ],
+  "functionName": "shiftingLetters",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "shifts",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

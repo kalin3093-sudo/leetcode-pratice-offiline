@@ -1,0 +1,56 @@
+{
+  "id": "minimum-number-of-operations-to-make-array-continuous",
+  "title": "2009. Minimum Number of Operations to Make Array Continuous",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,2,5,3]",
+      "output": "0",
+      "explanation": "nums is already continuous."
+    },
+    {
+      "input": "nums = [1,2,3,5,6]",
+      "output": "1",
+      "explanation": "One possible solution is to change the last element to 4. The resulting array is [1,2,3,5,4], which is continuous."
+    },
+    {
+      "input": "nums = [1,10,100,1000]",
+      "output": "3",
+      "explanation": "One possible solution is to: - Change the second element to 2. - Change the third element to 3. - Change the fourth element to 4. The resulting array is [1,2,3,4], which is continuous."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,2,5,3]"
+    },
+    {
+      "nums": "[1,2,3,5,6]"
+    },
+    {
+      "nums": "[1,10,100,1000]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the array.",
+    "For every index do a binary search to get the possible right end of the window and calculate the possible answer."
+  ]
+}

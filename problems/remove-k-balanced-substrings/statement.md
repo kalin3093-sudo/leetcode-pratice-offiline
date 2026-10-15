@@ -1,0 +1,15 @@
+You are given a string `s` consisting of `'('` and `')'`, and an integer `k`.
+
+A **string** is **k-balanced** if it is **exactly** `k` **consecutive** `'('` followed by `k` **consecutive** `')'`, i.e., `'(' * k + ')' * k`.
+
+For example, if `k = 3`, k-balanced is `"((()))"`.
+
+You must **repeatedly** remove all **non-overlapping k-balanced substrings** from `s`, and then join the remaining parts. Continue this process until no k-balanced **substring** exists.
+
+Return the final string after all possible removals.
+
+**Constraints:**
+
+-   `2 ≤ s.length ≤ 10^5`
+-   `s` consists only of `'('` and `')'`.
+-   `1 ≤ k ≤ s.length / 2`

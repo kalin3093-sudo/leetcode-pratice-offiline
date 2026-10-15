@@ -1,0 +1,11 @@
+You are given a non-negative integer array `nums` and an integer `k`.
+
+You must select a **subarray** of `nums` such that the **difference** between its **maximum** and **minimum** elements is at most `k`. The **value** of this subarray is the bitwise XOR of all elements in the subarray.
+
+Return an integer denoting the **maximum** possible **value** of the selected subarray.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 4 * 10^4`
+-   `0 ≤ nums[i] < 2^15`
+-   `0 ≤ k < 2^15`

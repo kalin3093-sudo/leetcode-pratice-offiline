@@ -1,0 +1,48 @@
+{
+  "id": "minimum-obstacle-removal-to-reach-corner",
+  "title": "2290. Minimum Obstacle Removal to Reach Corner",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,1],[1,1,0],[1,1,0]]",
+      "output": "2",
+      "explanation": "We can remove the obstacles at (0, 1) and (0, 2) to create a path from (0, 0) to (2, 2). It can be shown that we need to remove at least 2 obstacles, so we return 2. Note that there may be other ways to remove 2 obstacles to create a path."
+    },
+    {
+      "input": "grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]",
+      "output": "0",
+      "explanation": "We can move from (0, 0) to (2, 4) without removing any obstacles, so we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumObstacles(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumObstacles(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumObstacles(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function minimumObstacles(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumObstacles(int[][] grid) {\n        \n    }\n}",
+    "go": "func minimumObstacles(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_obstacles(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,1],[1,1,0],[1,1,0]]"
+    },
+    {
+      "grid": "[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]"
+    }
+  ],
+  "functionName": "minimumObstacles",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Model the grid as a graph where cells are nodes and edges are between adjacent cells. Edges to cells with obstacles have a cost of 1 and all other edges have a cost of 0.",
+    "Could you use 0-1 Breadth-First Search or Dijkstra’s algorithm?"
+  ]
+}

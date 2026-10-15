@@ -1,0 +1,47 @@
+{
+  "id": "determine-if-string-halves-are-alike",
+  "title": "1704. Determine if String Halves Are Alike",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/determine-if-string-halves-are-alike/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"book\"",
+      "output": "true",
+      "explanation": "a = \"bo\" and b = \"ok\". a has 1 vowel and b has 1 vowel. Therefore, they are alike."
+    },
+    {
+      "input": "s = \"textbook\"",
+      "output": "false",
+      "explanation": "a = \"text\" and b = \"book\". a has 1 vowel whereas b has 2. Therefore, they are not alike. Notice that the vowel o is counted twice."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool halvesAreAlike(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean halvesAreAlike(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def halvesAreAlike(self, s: str) -> bool:\n        ",
+    "typescript": "function halvesAreAlike(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HalvesAreAlike(string s) {\n        \n    }\n}",
+    "go": "func halvesAreAlike(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn halves_are_alike(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "book"
+    },
+    {
+      "s": "textbook"
+    }
+  ],
+  "functionName": "halvesAreAlike",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Create a function that checks if a character is a vowel, either uppercase or lowercase."
+  ]
+}

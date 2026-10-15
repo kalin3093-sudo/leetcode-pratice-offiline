@@ -1,0 +1,55 @@
+{
+  "id": "parse-lisp-expression",
+  "title": "736. Parse Lisp Expression",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/parse-lisp-expression/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "expression = \"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
+      "output": "14",
+      "explanation": "In the expression (add x y), when checking for the value of the variable x, we check from the innermost scope to the outermost in the context of the variable we are trying to evaluate. Since x = 3 is found first, the value of x is 3."
+    },
+    {
+      "input": "expression = \"(let x 3 x 2 x)\"",
+      "output": "2",
+      "explanation": "Assignment in let statements is processed sequentially."
+    },
+    {
+      "input": "expression = \"(let x 1 y 2 x (add x y) (add x y))\"",
+      "output": "5",
+      "explanation": "The first (add x y) evaluates as 3, and is assigned to x. The second (add x y) evaluates as 3+2 = 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int evaluate(string expression) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int evaluate(String expression) {\n        \n    }\n}",
+    "python": "class Solution:\n    def evaluate(self, expression: str) -> int:\n        ",
+    "typescript": "function evaluate(expression: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int Evaluate(string expression) {\n        \n    }\n}",
+    "go": "func evaluate(expression string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn evaluate(expression: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "expression": "(let x 2 (mult x (let x 3 y 4 (add x y))))"
+    },
+    {
+      "expression": "(let x 3 x 2 x)"
+    },
+    {
+      "expression": "(let x 1 y 2 x (add x y) (add x y))"
+    }
+  ],
+  "functionName": "evaluate",
+  "params": [
+    {
+      "name": "expression",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "* If the expression starts with a digit or '-', it's an integer: return it.\r\n\r\n* If the expression starts with a letter, it's a variable.  Recall it by checking the current scope in reverse order.\r\n\r\n* Otherwise, group the tokens (variables or expressions) within this expression by counting the \"balance\" `bal` of the occurrences of `'('` minus the number of occurrences of `')'`.  When the balance is zero, we have ended a token.  For example, `(add 1 (add 2 3))` should have tokens `'1'` and `'(add 2 3)'`.\r\n\r\n* For add and mult expressions, evaluate each token and return the addition or multiplication of them.\r\n\r\n* For let expressions, evaluate each expression sequentially and assign it to the variable in the current scope, then return the evaluation of the final expression."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "shortest-subarray-with-sum-at-least-k",
+  "title": "862. Shortest Subarray with Sum at Least K",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1], k = 1",
+      "output": "1"
+    },
+    {
+      "input": "nums = [1,2], k = 4",
+      "output": "-1"
+    },
+    {
+      "input": "nums = [2,-1,2], k = 3",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestSubarray(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestSubarray(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestSubarray(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function shortestSubarray(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestSubarray(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func shortestSubarray(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_subarray(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1]",
+      "k": 1
+    },
+    {
+      "nums": "[1,2]",
+      "k": 4
+    },
+    {
+      "nums": "[2,-1,2]",
+      "k": 3
+    }
+  ],
+  "functionName": "shortestSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

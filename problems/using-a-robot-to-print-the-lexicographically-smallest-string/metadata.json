@@ -1,0 +1,57 @@
+{
+  "id": "using-a-robot-to-print-the-lexicographically-smallest-string",
+  "title": "2434. Using a Robot to Print the Lexicographically Smallest String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"zza\"",
+      "output": "\"azz\"",
+      "explanation": "Let p denote the written string. Initially p=\"\", s=\"zza\", t=\"\". Perform first operation three times p=\"\", s=\"\", t=\"zza\". Perform second operation three times p=\"azz\", s=\"\", t=\"\"."
+    },
+    {
+      "input": "s = \"bac\"",
+      "output": "\"abc\"",
+      "explanation": "Let p denote the written string. Perform first operation twice p=\"\", s=\"c\", t=\"ba\". Perform second operation twice p=\"ab\", s=\"c\", t=\"\". Perform first operation p=\"ab\", s=\"\", t=\"c\". Perform second operation p=\"abc\", s=\"\", t=\"\"."
+    },
+    {
+      "input": "s = \"bdda\"",
+      "output": "\"addb\"",
+      "explanation": "Let p denote the written string. Initially p=\"\", s=\"bdda\", t=\"\". Perform first operation four times p=\"\", s=\"\", t=\"bdda\". Perform second operation four times p=\"addb\", s=\"\", t=\"\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string robotWithString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String robotWithString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def robotWithString(self, s: str) -> str:\n        ",
+    "typescript": "function robotWithString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RobotWithString(string s) {\n        \n    }\n}",
+    "go": "func robotWithString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn robot_with_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "zza"
+    },
+    {
+      "s": "bac"
+    },
+    {
+      "s": "bdda"
+    }
+  ],
+  "functionName": "robotWithString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "If there are some character “a” ’ s in the string, they can be written on paper before anything else.",
+    "Every character in the string before the last “a” should be written in reversed order.",
+    "After the robot writes every “a” on paper, the same holds for other characters “b”, ”c”, …etc."
+  ]
+}

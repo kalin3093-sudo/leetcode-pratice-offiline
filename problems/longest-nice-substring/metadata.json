@@ -1,0 +1,55 @@
+{
+  "id": "longest-nice-substring",
+  "title": "1763. Longest Nice Substring",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/longest-nice-substring/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"YazaAay\"",
+      "output": "\"aAa\"",
+      "explanation": "\"aAa\" is a nice string because 'A/a' is the only letter of the alphabet in s, and both 'A' and 'a' appear. \"aAa\" is the longest nice substring."
+    },
+    {
+      "input": "s = \"Bb\"",
+      "output": "\"Bb\"",
+      "explanation": "\"Bb\" is a nice string because both 'B' and 'b' appear. The whole string is a substring."
+    },
+    {
+      "input": "s = \"c\"",
+      "output": "\"\"",
+      "explanation": "There are no nice substrings."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string longestNiceSubstring(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String longestNiceSubstring(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestNiceSubstring(self, s: str) -> str:\n        ",
+    "typescript": "function longestNiceSubstring(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LongestNiceSubstring(string s) {\n        \n    }\n}",
+    "go": "func longestNiceSubstring(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_nice_substring(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "YazaAay"
+    },
+    {
+      "s": "Bb"
+    },
+    {
+      "s": "c"
+    }
+  ],
+  "functionName": "longestNiceSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Brute force and check each substring to see if it is nice."
+  ]
+}

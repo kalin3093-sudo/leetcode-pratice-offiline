@@ -1,0 +1,65 @@
+{
+  "id": "number-of-effective-subsequences",
+  "title": "3757. Number of Effective Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-effective-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "3",
+      "explanation": "The Bitwise OR of the array is 1 OR 2 OR 3 = 3. Subsequences that are effective are: [1, 3]: The remaining element [2] has a Bitwise OR of 2. [2, 3]: The remaining element [1] has a Bitwise OR of 1. [1, 2, 3]: The remaining elements [] have a Bitwise OR of 0. Thus, the total number of effective subsequences is 3."
+    },
+    {
+      "input": "nums = [7,4,6]",
+      "output": "4",
+      "explanation": "The Bitwise OR of the array is 7 OR 4 OR 6 = 7. Subsequences that are effective are: [7]: The remaining elements [4, 6] have a Bitwise OR of 6. [7, 4]: The remaining element [6] has a Bitwise OR of 6. [7, 6]: The remaining element [4] has a Bitwise OR of 4. [7, 4, 6]: The remaining elements [] have a Bitwise OR of 0. Thus, the total number of effective subsequences is 4."
+    },
+    {
+      "input": "nums = [8,8]",
+      "output": "1",
+      "explanation": "The Bitwise OR of the array is 8 OR 8 = 8. Only the subsequence [8, 8] is effective since removing it leaves [] which has a Bitwise OR of 0. Thus, the total number of effective subsequences is 1."
+    },
+    {
+      "input": "nums = [2,2,1]",
+      "output": "5",
+      "explanation": "The Bitwise OR of the array is 2 OR 2 OR 1 = 3. Subsequences that are effective are: [1]: The remaining elements [2, 2] have a Bitwise OR of 2. [2, 1] (using nums[0], nums[2]): The remaining element [2] has a Bitwise OR of 2. [2, 1] (using nums[1], nums[2]): The remaining element [2] has a Bitwise OR of 2. [2, 2]: The remaining element [1] has a Bitwise OR of 1. [2, 2, 1]: The remaining elements [] have a Bitwise OR of 0. Thus, the total number of effective subsequences is 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countEffective(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countEffective(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countEffective(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countEffective(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountEffective(int[] nums) {\n        \n    }\n}",
+    "go": "func countEffective(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_effective(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[7,4,6]"
+    },
+    {
+      "nums": "[8,8]"
+    },
+    {
+      "nums": "[2,2,1]"
+    }
+  ],
+  "functionName": "countEffective",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The bitwise OR is reduced if a bit is completely removed from the array OR.",
+    "To completely remove a bit, all of its occurrences must be removed from the array.",
+    "Count such subsets and apply inclusion-exclusion on the bits."
+  ]
+}

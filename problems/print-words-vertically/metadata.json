@@ -1,0 +1,54 @@
+{
+  "id": "print-words-vertically",
+  "title": "1324. Print Words Vertically",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/print-words-vertically/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"HOW ARE YOU\"",
+      "output": "[\"HAY\",\"ORO\",\"WEU\"]",
+      "explanation": "Each word is printed vertically. \"HAY\" \"ORO\" \"WEU\""
+    },
+    {
+      "input": "s = \"TO BE OR NOT TO BE\"",
+      "output": "[\"TBONTB\",\"OEROOE\",'\"   T\"']",
+      "explanation": "Trailing spaces is not allowed. \"TBONTB\" \"OEROOE\" \"   T\""
+    },
+    {
+      "input": "s = \"CONTEST IS COMING\"",
+      "output": "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> printVertically(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> printVertically(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def printVertically(self, s: str) -> List[str]:\n        ",
+    "typescript": "function printVertically(s: string): string[] {\n\n};",
+    "csharp": "public class Solution {\n    public IList<string> PrintVertically(string s) {\n        \n    }\n}",
+    "go": "func printVertically(s string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn print_vertically(s: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "HOW ARE YOU"
+    },
+    {
+      "s": "TO BE OR NOT TO BE"
+    },
+    {
+      "s": "CONTEST IS COMING"
+    }
+  ],
+  "functionName": "printVertically",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Use the maximum length of words to determine the length of the returned answer. However, don't forget to remove trailing spaces."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "smallest-string-with-swaps",
+  "title": "1202. Smallest String With Swaps",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/smallest-string-with-swaps/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"dcab\", pairs = [[0,3],[1,2]]",
+      "output": "\"bacd\""
+    },
+    {
+      "input": "s = \"dcab\", pairs = [[0,3],[1,2],[0,2]]",
+      "output": "\"abcd\""
+    },
+    {
+      "input": "s = \"cba\", pairs = [[0,1],[1,2]]",
+      "output": "\"abc\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestStringWithSwaps(string s, vector<vector<int>>& pairs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestStringWithSwaps(self, s: str, pairs: list[list[int]]) -> str:\n        ",
+    "typescript": "function smallestStringWithSwaps(s: string, pairs: number[][]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestStringWithSwaps(string s, IList<IList<int>> pairs) {\n        \n    }\n}",
+    "go": "func smallestStringWithSwaps(s string, pairs [][]int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_string_with_swaps(s: String, pairs: Vec<Vec<i32>>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "dcab",
+      "pairs": "[[0,3],[1,2]]"
+    },
+    {
+      "s": "dcab",
+      "pairs": "[[0,3],[1,2],[0,2]]"
+    },
+    {
+      "s": "cba",
+      "pairs": "[[0,1],[1,2]]"
+    }
+  ],
+  "functionName": "smallestStringWithSwaps",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "pairs",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Think of it as a graph problem.",
+    "Consider the pairs as connected nodes in the graph, what can you do with a connected component of indices ?",
+    "We can sort each connected component alone to get the lexicographically minimum string."
+  ]
+}

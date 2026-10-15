@@ -1,0 +1,55 @@
+{
+  "id": "make-array-empty",
+  "title": "2659. Make Array Empty",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/make-array-empty/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,4,-1]",
+      "output": "5"
+    },
+    {
+      "input": "nums = [1,2,4,3]",
+      "output": "5"
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countOperationsToEmptyArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countOperationsToEmptyArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countOperationsToEmptyArray(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countOperationsToEmptyArray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountOperationsToEmptyArray(int[] nums) {\n        \n    }\n}",
+    "go": "func countOperationsToEmptyArray(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_operations_to_empty_array(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,4,-1]"
+    },
+    {
+      "nums": "[1,2,4,3]"
+    },
+    {
+      "nums": "[1,2,3]"
+    }
+  ],
+  "functionName": "countOperationsToEmptyArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Understand the order in which the indices are removed from the array.",
+    "We don’t really need to delete or move the elements, only the array length matters.",
+    "Upon removing an index, decide how many steps it takes to move to the next one.",
+    "Use a data structure to speed up the calculation."
+  ]
+}

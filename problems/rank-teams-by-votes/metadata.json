@@ -1,0 +1,56 @@
+{
+  "id": "rank-teams-by-votes",
+  "title": "1366. Rank Teams by Votes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/rank-teams-by-votes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "votes = [\"ABC\",\"ACB\",\"ABC\",\"ACB\",\"ACB\"]",
+      "output": "\"ACB\"",
+      "explanation": "Team A was ranked first place by 5 voters. No other team was voted as first place, so team A is the first team. Team B was ranked second by 2 voters and ranked third by 3 voters. Team C was ranked second by 3 voters and ranked third by 2 voters. As most of the voters ranked C second, team C is the second team, and team B is the third."
+    },
+    {
+      "input": "votes = [\"WXYZ\",\"XYZW\"]",
+      "output": "\"XWYZ\"",
+      "explanation": "X is the winner due to the tie-breaking rule. X has the same votes as W for the first position, but X has one vote in the second position, while W does not have any votes in the second position."
+    },
+    {
+      "input": "votes = [\"ZMNAGUEDSJYLBOPHRQICWFXTVK\"]",
+      "output": "\"ZMNAGUEDSJYLBOPHRQICWFXTVK\"",
+      "explanation": "Only one voter, so their votes are used for the ranking."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string rankTeams(vector<string>& votes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String rankTeams(String[] votes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rankTeams(self, votes: list[str]) -> str:\n        ",
+    "typescript": "function rankTeams(votes: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RankTeams(string[] votes) {\n        \n    }\n}",
+    "go": "func rankTeams(votes []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rank_teams(votes: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "votes": "[\"ABC\",\"ACB\",\"ABC\",\"ACB\",\"ACB\"]"
+    },
+    {
+      "votes": "[\"WXYZ\",\"XYZW\"]"
+    },
+    {
+      "votes": "[\"ZMNAGUEDSJYLBOPHRQICWFXTVK\"]"
+    }
+  ],
+  "functionName": "rankTeams",
+  "params": [
+    {
+      "name": "votes",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Build array rank where rank[i][j] is the number of votes for team i to be the j-th rank.",
+    "Sort the teams by rank array. if rank array is the same for two or more teams, sort them by the ID in ascending order."
+  ]
+}

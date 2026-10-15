@@ -1,0 +1,11 @@
+[
+  {
+    "usageLimits": "[1,2,5]"
+  },
+  {
+    "usageLimits": "[2,1,2]"
+  },
+  {
+    "usageLimits": "[1,1]"
+  }
+]

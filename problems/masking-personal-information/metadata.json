@@ -1,0 +1,53 @@
+{
+  "id": "masking-personal-information",
+  "title": "831. Masking Personal Information",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/masking-personal-information/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"LeetCode@LeetCode.com\"",
+      "output": "\"l*****e@leetcode.com\"",
+      "explanation": "s is an email address. The name and domain are converted to lowercase, and the middle of the name is replaced by 5 asterisks."
+    },
+    {
+      "input": "s = \"AB@qq.com\"",
+      "output": "\"a*****b@qq.com\"",
+      "explanation": "s is an email address. The name and domain are converted to lowercase, and the middle of the name is replaced by 5 asterisks. Note that even though \"ab\" is 2 characters, it still must have 5 asterisks in the middle."
+    },
+    {
+      "input": "s = \"1(234)567-890\"",
+      "output": "\"***-***-7890\"",
+      "explanation": "s is a phone number. There are 10 digits, so the local number is 10 digits and the country code is 0 digits. Thus, the resulting masked number is \"***-***-7890\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string maskPII(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String maskPII(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maskPII(self, s: str) -> str:\n        ",
+    "typescript": "function maskPII(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MaskPII(string s) {\n        \n    }\n}",
+    "go": "func maskPII(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn mask_pii(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "LeetCode@LeetCode.com"
+    },
+    {
+      "s": "AB@qq.com"
+    },
+    {
+      "s": "1(234)567-890"
+    }
+  ],
+  "functionName": "maskPII",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

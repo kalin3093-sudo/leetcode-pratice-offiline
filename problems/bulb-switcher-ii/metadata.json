@@ -1,0 +1,60 @@
+{
+  "id": "bulb-switcher-ii",
+  "title": "672. Bulb Switcher II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/bulb-switcher-ii/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1, presses = 1",
+      "output": "2",
+      "explanation": "Status can be: - [off] by pressing button 1 - [on] by pressing button 2"
+    },
+    {
+      "input": "n = 2, presses = 1",
+      "output": "3",
+      "explanation": "Status can be: - [off, off] by pressing button 1 - [on, off] by pressing button 2 - [off, on] by pressing button 3"
+    },
+    {
+      "input": "n = 3, presses = 1",
+      "output": "4",
+      "explanation": "Status can be: - [off, off, off] by pressing button 1 - [on, off, on] by pressing button 2 - [off, on, off] by pressing button 3 - [off, on, on] by pressing button 4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int flipLights(int n, int presses) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int flipLights(int n, int presses) {\n        \n    }\n}",
+    "python": "class Solution:\n    def flipLights(self, n: int, presses: int) -> int:\n        ",
+    "typescript": "function flipLights(n: number, presses: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FlipLights(int n, int presses) {\n        \n    }\n}",
+    "go": "func flipLights(n int, presses int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn flip_lights(n: i32, presses: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1,
+      "presses": 1
+    },
+    {
+      "n": 2,
+      "presses": 1
+    },
+    {
+      "n": 3,
+      "presses": 1
+    }
+  ],
+  "functionName": "flipLights",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "presses",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

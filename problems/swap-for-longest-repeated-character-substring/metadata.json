@@ -1,0 +1,55 @@
+{
+  "id": "swap-for-longest-repeated-character-substring",
+  "title": "1156. Swap For Longest Repeated Character Substring",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/swap-for-longest-repeated-character-substring/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "text = \"ababa\"",
+      "output": "3",
+      "explanation": "We can swap the first 'b' with the last 'a', or the last 'b' with the first 'a'. Then, the longest repeated character substring is \"aaa\" with length 3."
+    },
+    {
+      "input": "text = \"aaabaaa\"",
+      "output": "6",
+      "explanation": "Swap 'b' with the last 'a' (or the first 'a'), and we get longest repeated character substring \"aaaaaa\" with length 6."
+    },
+    {
+      "input": "text = \"aaaaa\"",
+      "output": "5",
+      "explanation": "No need to swap, longest repeated character substring is \"aaaaa\" with length is 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxRepOpt1(string text) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxRepOpt1(String text) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxRepOpt1(self, text: str) -> int:\n        ",
+    "typescript": "function maxRepOpt1(text: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxRepOpt1(string text) {\n        \n    }\n}",
+    "go": "func maxRepOpt1(text string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_rep_opt1(text: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "bbaababbba"
+    },
+    {
+      "text": "bbabbbbbaaba"
+    },
+    {
+      "text": "abaaaaabbbbbaa"
+    }
+  ],
+  "functionName": "maxRepOpt1",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There are two cases:  a block of characters, or two blocks of characters between one different character. \r\n By keeping a run-length encoded version of the string, we can easily check these cases."
+  ]
+}

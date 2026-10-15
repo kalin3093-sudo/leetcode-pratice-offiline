@@ -1,0 +1,56 @@
+{
+  "id": "find-greatest-common-divisor-of-array",
+  "title": "1979. Find Greatest Common Divisor of Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,6,9,10]",
+      "output": "2",
+      "explanation": "The smallest number in nums is 2. The largest number in nums is 10. The greatest common divisor of 2 and 10 is 2."
+    },
+    {
+      "input": "nums = [7,5,6,8,3]",
+      "output": "1",
+      "explanation": "The smallest number in nums is 3. The largest number in nums is 8. The greatest common divisor of 3 and 8 is 1."
+    },
+    {
+      "input": "nums = [3,3]",
+      "output": "3",
+      "explanation": "The smallest number in nums is 3. The largest number in nums is 3. The greatest common divisor of 3 and 3 is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findGCD(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findGCD(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findGCD(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function findGCD(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindGCD(int[] nums) {\n        \n    }\n}",
+    "go": "func findGCD(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_gcd(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,6,9,10]"
+    },
+    {
+      "nums": "[7,5,6,8,3]"
+    },
+    {
+      "nums": "[3,3]"
+    }
+  ],
+  "functionName": "findGCD",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the minimum and maximum in one iteration. Let them be mn and mx.",
+    "Try all the numbers in the range [1, mn] and check the largest number which divides both of them."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "valid-tic-tac-toe-state",
+  "title": "794. Valid Tic-Tac-Toe State",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/valid-tic-tac-toe-state/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "board = [\"O  \",\"   \",\"   \"]",
+      "output": "false",
+      "explanation": "The first player always plays \"X\"."
+    },
+    {
+      "input": "board = [\"XOX\",\" X \",\"   \"]",
+      "output": "false",
+      "explanation": "Players take turns making moves."
+    },
+    {
+      "input": "board = [\"XOX\",\"O O\",\"XOX\"]",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool validTicTacToe(vector<string>& board) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean validTicTacToe(String[] board) {\n        \n    }\n}",
+    "python": "class Solution:\n    def validTicTacToe(self, board: list[str]) -> bool:\n        ",
+    "typescript": "function validTicTacToe(board: string[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ValidTicTacToe(string[] board) {\n        \n    }\n}",
+    "go": "func validTicTacToe(board []string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn valid_tic_tac_toe(board: Vec<String>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "board": "[\"O  \",\"   \",\"   \"]"
+    },
+    {
+      "board": "[\"XOX\",\" X \",\"   \"]"
+    },
+    {
+      "board": "[\"XOX\",\"O O\",\"XOX\"]"
+    }
+  ],
+  "functionName": "validTicTacToe",
+  "params": [
+    {
+      "name": "board",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

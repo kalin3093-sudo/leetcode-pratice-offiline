@@ -1,0 +1,56 @@
+{
+  "id": "take-gifts-from-the-richest-pile",
+  "title": "2558. Take Gifts From the Richest Pile",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/take-gifts-from-the-richest-pile/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "gifts = [25,64,9,4,100], k = 4",
+      "output": "29",
+      "explanation": "The gifts are taken in the following way: - In the first second, the last pile is chosen and 10 gifts are left behind. - Then the second pile is chosen and 8 gifts are left behind. - After that the first pile is chosen and 5 gifts are left behind. - Finally, the last pile is chosen again and 3 gifts are left behind. The final remaining gifts are [5,8,9,4,3], so the total number of gifts remaining is 29."
+    },
+    {
+      "input": "gifts = [1,1,1,1], k = 4",
+      "output": "4",
+      "explanation": "In this case, regardless which pile you choose, you have to leave behind 1 gift in each pile. That is, you can't take any pile with you. So, the total gifts remaining are 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long pickGifts(vector<int>& gifts, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long pickGifts(int[] gifts, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def pickGifts(self, gifts: List[int], k: int) -> int:\n        ",
+    "typescript": "function pickGifts(gifts: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long PickGifts(int[] gifts, int k) {\n        \n    }\n}",
+    "go": "func pickGifts(gifts []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn pick_gifts(gifts: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "gifts": "[25,64,9,4,100]",
+      "k": 4
+    },
+    {
+      "gifts": "[1,1,1,1]",
+      "k": 4
+    }
+  ],
+  "functionName": "pickGifts",
+  "params": [
+    {
+      "name": "gifts",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "How can you keep track of the largest gifts in the array",
+    "What is an efficient way to find the square root of a number?",
+    "Can you keep adding up the values of the gifts while ensuring they are in a certain order?",
+    "Can we use a priority queue or heap here?"
+  ]
+}

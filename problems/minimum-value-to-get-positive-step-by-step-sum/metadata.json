@@ -1,0 +1,54 @@
+{
+  "id": "minimum-value-to-get-positive-step-by-step-sum",
+  "title": "1413. Minimum Value to Get Positive Step by Step Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [-3,2,-3,4,2]",
+      "output": "5",
+      "explanation": "If you choose startValue = 4, in the third iteration your step by step sum is less than 1. step by step sum startValue = 4 | startValue = 5 | nums (4 -3 ) = 1  | (5 -3 ) = 2    |  -3 (1 +2 ) = 3  | (2 +2 ) = 4    |   2 (3 -3 ) = 0  | (4 -3 ) = 1    |  -3 (0 +4 ) = 4  | (1 +4 ) = 5    |   4 (4 +2 ) = 6  | (5 +2 ) = 7    |   2"
+    },
+    {
+      "input": "nums = [1,2]",
+      "output": "1",
+      "explanation": "Minimum start value should be positive."
+    },
+    {
+      "input": "nums = [1,-2,-3]",
+      "output": "5"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minStartValue(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minStartValue(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minStartValue(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minStartValue(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinStartValue(int[] nums) {\n        \n    }\n}",
+    "go": "func minStartValue(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_start_value(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[-3,2,-3,4,2]"
+    },
+    {
+      "nums": "[1,2]"
+    },
+    {
+      "nums": "[1,-2,-3]"
+    }
+  ],
+  "functionName": "minStartValue",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the minimum prefix sum."
+  ]
+}

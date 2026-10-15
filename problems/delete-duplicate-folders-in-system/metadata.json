@@ -1,0 +1,56 @@
+{
+  "id": "delete-duplicate-folders-in-system",
+  "title": "1948. Delete Duplicate Folders in System",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/delete-duplicate-folders-in-system/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "paths = [[\"a\"],[\"c\"],[\"d\"],[\"a\",\"b\"],[\"c\",\"b\"],[\"d\",\"a\"]]",
+      "output": "[[\"d\"],[\"d\",\"a\"]]",
+      "explanation": "The file structure is as shown. Folders \"/a\" and \"/c\" (and their subfolders) are marked for deletion because they both contain an empty folder named \"b\"."
+    },
+    {
+      "input": "paths = [[\"a\"],[\"c\"],[\"a\",\"b\"],[\"c\",\"b\"],[\"a\",\"b\",\"x\"],[\"a\",\"b\",\"x\",\"y\"],[\"w\"],[\"w\",\"y\"]]",
+      "output": "[[\"c\"],[\"c\",\"b\"],[\"a\"],[\"a\",\"b\"]]",
+      "explanation": "The file structure is as shown. Folders \"/a/b/x\" and \"/w\" (and their subfolders) are marked for deletion because they both contain an empty folder named \"y\". Note that folders \"/a\" and \"/c\" are identical after the deletion, but they are not deleted because they were not marked beforehand."
+    },
+    {
+      "input": "paths = [[\"a\",\"b\"],[\"c\",\"d\"],[\"c\"],[\"a\"]]",
+      "output": "[[\"c\"],[\"c\",\"d\"],[\"a\"],[\"a\",\"b\"]]",
+      "explanation": "All folders are unique in the file system. Note that the returned array can be in a different order as the order does not matter."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<string>> deleteDuplicateFolder(vector<vector<string>>& paths) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<String>> deleteDuplicateFolder(List<List<String>> paths) {\n        \n    }\n}",
+    "python": "class Solution:\n    def deleteDuplicateFolder(self, paths: list[list[str]]) -> list[list[str]]:\n        ",
+    "typescript": "function deleteDuplicateFolder(paths: string[][]): string[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<string>> DeleteDuplicateFolder(IList<IList<string>> paths) {\n        \n    }\n}",
+    "go": "func deleteDuplicateFolder(paths [][]string) [][]string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn delete_duplicate_folder(paths: Vec<Vec<String>>) -> Vec<Vec<String>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "paths": "[[\"a\"],[\"c\"],[\"d\"],[\"a\",\"b\"],[\"c\",\"b\"],[\"d\",\"a\"]]"
+    },
+    {
+      "paths": "[[\"a\"],[\"c\"],[\"a\",\"b\"],[\"c\",\"b\"],[\"a\",\"b\",\"x\"],[\"a\",\"b\",\"x\",\"y\"],[\"w\"],[\"w\",\"y\"]]"
+    },
+    {
+      "paths": "[[\"a\",\"b\"],[\"c\",\"d\"],[\"c\"],[\"a\"]]"
+    }
+  ],
+  "functionName": "deleteDuplicateFolder",
+  "params": [
+    {
+      "name": "paths",
+      "type": "string_list_2d"
+    }
+  ],
+  "outputType": "string_list_2d",
+  "hints": [
+    "Can we use a trie to build the folder structure?",
+    "Can we utilize hashing to hash the folder structures?"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "sum-multiples",
+  "title": "2652. Sum Multiples",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/sum-multiples/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 7",
+      "output": "21",
+      "explanation": "Numbers in the range [1, 7] that are divisible by 3, 5, or 7 are 3, 5, 6, 7. The sum of these numbers is 21."
+    },
+    {
+      "input": "n = 10",
+      "output": "40",
+      "explanation": "Numbers in the range [1, 10] that are divisible by 3, 5, or 7 are 3, 5, 6, 7, 9, 10. The sum of these numbers is 40."
+    },
+    {
+      "input": "n = 9",
+      "output": "30",
+      "explanation": "Numbers in the range [1, 9] that are divisible by 3, 5, or 7 are 3, 5, 6, 7, 9. The sum of these numbers is 30."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfMultiples(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfMultiples(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfMultiples(self, n: int) -> int:\n        ",
+    "typescript": "function sumOfMultiples(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfMultiples(int n) {\n        \n    }\n}",
+    "go": "func sumOfMultiples(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_multiples(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 7
+    },
+    {
+      "n": 10
+    },
+    {
+      "n": 9
+    }
+  ],
+  "functionName": "sumOfMultiples",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate through the range 1 to n and count numbers divisible by either 3, 5, or 7."
+  ]
+}

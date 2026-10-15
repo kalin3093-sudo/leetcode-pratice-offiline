@@ -1,0 +1,51 @@
+{
+  "id": "shortest-unsorted-continuous-subarray",
+  "title": "581. Shortest Unsorted Continuous Subarray",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-unsorted-continuous-subarray/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,6,4,8,10,9,15]",
+      "output": "5",
+      "explanation": "You need to sort [6, 4, 8, 10, 9] in ascending order to make the whole array sorted in ascending order."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "0"
+    },
+    {
+      "input": "nums = [1]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findUnsortedSubarray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findUnsortedSubarray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findUnsortedSubarray(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function findUnsortedSubarray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindUnsortedSubarray(int[] nums) {\n        \n    }\n}",
+    "go": "func findUnsortedSubarray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_unsorted_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,6,4,8,10,9,15]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "findUnsortedSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

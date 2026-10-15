@@ -1,0 +1,22 @@
+[
+  {
+    "source": "abbaa",
+    "pattern": "aba",
+    "targetIndices": "[0,1,2]"
+  },
+  {
+    "source": "bcda",
+    "pattern": "d",
+    "targetIndices": "[0,3]"
+  },
+  {
+    "source": "dda",
+    "pattern": "dda",
+    "targetIndices": "[0,1,2]"
+  },
+  {
+    "source": "yeyeykyded",
+    "pattern": "yeyyd",
+    "targetIndices": "[0,2,3,4]"
+  }
+]

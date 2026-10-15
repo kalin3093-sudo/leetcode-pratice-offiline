@@ -1,0 +1,55 @@
+{
+  "id": "maximum-k-to-sort-a-permutation",
+  "title": "3644. Maximum K to Sort a Permutation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,3,2,1]",
+      "output": "1",
+      "explanation": "Choose k = 1. Swapping nums[1] = 3 and nums[3] = 1 is allowed since nums[1] AND nums[3] == 1, resulting in a sorted permutation: [0, 1, 2, 3]."
+    },
+    {
+      "input": "nums = [0,1,3,2]",
+      "output": "2",
+      "explanation": "Choose k = 2. Swapping nums[2] = 3 and nums[3] = 2 is allowed since nums[2] AND nums[3] == 2, resulting in a sorted permutation: [0, 1, 2, 3]."
+    },
+    {
+      "input": "nums = [3,2,1,0]",
+      "output": "0",
+      "explanation": "Only k = 0 allows sorting since no greater k allows the required swaps where nums[i] AND nums[j] == k."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sortPermutation(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sortPermutation(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortPermutation(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function sortPermutation(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SortPermutation(int[] nums) {\n        \n    }\n}",
+    "go": "func sortPermutation(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_permutation(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,3,2,1]"
+    },
+    {
+      "nums": "[0,1,3,2]"
+    },
+    {
+      "nums": "[3,2,1,0]"
+    }
+  ],
+  "functionName": "sortPermutation",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Take the bitwise AND of all elements that are not in their correct position."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "count-of-smaller-numbers-after-self",
+  "title": "315. Count of Smaller Numbers After Self",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,2,6,1]",
+      "output": "[2,1,1,0]",
+      "explanation": "To the right of 5 there are 2 smaller elements (2 and 1). To the right of 2 there is only 1 smaller element (1). To the right of 6 there is 1 smaller element (1). To the right of 1 there is 0 smaller element."
+    },
+    {
+      "input": "nums = [-1]",
+      "output": "[0]"
+    },
+    {
+      "input": "nums = [-1,-1]",
+      "output": "[0,0]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> countSmaller(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> countSmaller(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSmaller(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function countSmaller(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> CountSmaller(int[] nums) {\n        \n    }\n}",
+    "go": "func countSmaller(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_smaller(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,2,6,1]"
+    },
+    {
+      "nums": "[-1]"
+    },
+    {
+      "nums": "[-1,-1]"
+    }
+  ],
+  "functionName": "countSmaller",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "rabbits-in-forest",
+  "title": "781. Rabbits in Forest",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/rabbits-in-forest/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "answers = [1,1,2]",
+      "output": "5",
+      "explanation": "The two rabbits that answered \"1\" could both be the same color, say red. The rabbit that answered \"2\" can't be red or the answers would be inconsistent. Say the rabbit that answered \"2\" was blue. Then there should be 2 other blue rabbits in the forest that didn't answer into the array. The smallest possible number of rabbits in the forest is therefore 5: 3 that answered plus 2 that didn't."
+    },
+    {
+      "input": "answers = [10,10,10]",
+      "output": "11"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numRabbits(vector<int>& answers) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numRabbits(int[] answers) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numRabbits(self, answers: list[int]) -> int:\n        ",
+    "typescript": "function numRabbits(answers: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumRabbits(int[] answers) {\n        \n    }\n}",
+    "go": "func numRabbits(answers []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_rabbits(answers: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "answers": "[1,1,2]"
+    },
+    {
+      "answers": "[10,10,10]"
+    }
+  ],
+  "functionName": "numRabbits",
+  "params": [
+    {
+      "name": "answers",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

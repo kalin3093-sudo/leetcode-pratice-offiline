@@ -1,0 +1,48 @@
+{
+  "id": "maximize-consecutive-elements-in-an-array-after-modification",
+  "title": "3041. Maximize Consecutive Elements in an Array After Modification",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,5,1,1]",
+      "output": "3",
+      "explanation": "We can increase the elements at indices 0 and 3. The resulting array is nums = [3,1,5,2,1]. We select the elements [3,1,5,2,1] and we sort them to obtain [1,2,3], which are consecutive. It can be shown that we cannot select more than 3 consecutive elements."
+    },
+    {
+      "input": "nums = [1,4,7,10]",
+      "output": "1",
+      "explanation": "The maximum consecutive elements that we can select is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSelectedElements(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSelectedElements(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSelectedElements(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxSelectedElements(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSelectedElements(int[] nums) {\n        \n    }\n}",
+    "go": "func maxSelectedElements(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_selected_elements(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,5,1,1]"
+    },
+    {
+      "nums": "[1,4,7,10]"
+    }
+  ],
+  "functionName": "maxSelectedElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the array and try using dynamic programming.",
+    "Let <code>dp[i]</code> be the length of the longest consecutive elements ending at element at index <code>i</code> in the sorted array."
+  ]
+}

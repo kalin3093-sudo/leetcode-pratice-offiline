@@ -1,0 +1,61 @@
+{
+  "id": "maximum-product-of-two-integers-with-no-common-bits",
+  "title": "3670. Maximum Product of Two Integers With No Common Bits",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5,6,7]",
+      "output": "12",
+      "explanation": "The best pair is 3 (011) and 4 (100). They share no set bits and 3 * 4 = 12."
+    },
+    {
+      "input": "nums = [5,6,4]",
+      "output": "0",
+      "explanation": "Every pair of numbers has at least one common set bit. Hence, the answer is 0."
+    },
+    {
+      "input": "nums = [64,8,32]",
+      "output": "2048",
+      "explanation": "No pair of numbers share a common bit, so the answer is the product of the two maximum elements, 64 and 32 (64 * 32 = 2048)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxProduct(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxProduct(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProduct(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxProduct(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxProduct(int[] nums) {\n        \n    }\n}",
+    "go": "func maxProduct(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_product(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,5,6,7]"
+    },
+    {
+      "nums": "[5,6,4]"
+    },
+    {
+      "nums": "[64,8,32]"
+    }
+  ],
+  "functionName": "maxProduct",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Think of each number as a mask: treat <code>nums[i]</code> as a bitmask.",
+    "Create an array <code>dp</code> of size <code>1 << B</code>, where <code>B</code> is your bit‑width.",
+    "Initialize <code>dp[mask]</code> to the maximum <code>nums[i]</code> exactly equal to that <code>mask</code>, or 0 if none.",
+    "For each <code>m</code>, propagate to all its super‑masks <code>M</code>: <code>dp[m] = max(dp[m], dp[M])</code>",
+    "For a number <code>x</code> with mask <code>mx</code>, compute its \"complement mask\" as <code>cm = ~mx & ((1 << B)-1)</code>.",
+    "The best disjoint partner is then <code>dp[cm]</code>.",
+    "Loop over all <code>x</code> in <code>nums</code>, look up <code>dp[cm]</code>, and track the maximum <code>x * partner</code>."
+  ]
+}

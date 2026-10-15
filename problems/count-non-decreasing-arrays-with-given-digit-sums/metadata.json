@@ -1,0 +1,58 @@
+{
+  "id": "count-non-decreasing-arrays-with-given-digit-sums",
+  "title": "3883. Count Non Decreasing Arrays With Given Digit Sums",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "digitSum = [25,1]",
+      "output": "6",
+      "explanation": "Numbers whose sum of digits is 25 are 799, 889, 898, 979, 988, and 997. The only number whose sum of digits is 1 that can appear after these values while keeping the array non-decreasing is 1000. Thus, the valid arrays are [799, 1000], [889, 1000], [898, 1000], [979, 1000], [988, 1000], and [997, 1000]. Hence, the answer is 6."
+    },
+    {
+      "input": "digitSum = [1]",
+      "output": "4",
+      "explanation": "The valid arrays are [1], [10], [100], and [1000]. Thus, the answer is 4."
+    },
+    {
+      "input": "digitSum = [2,49,23]",
+      "output": "0",
+      "explanation": "There is no integer in the range [0, 5000] whose sum of digits is 49. Thus, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countArrays(vector<int>& digitSum) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countArrays(int[] digitSum) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countArrays(self, digitSum: list[int]) -> int:\n        ",
+    "typescript": "function countArrays(digitSum: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountArrays(int[] digitSum) {\n        \n    }\n}",
+    "go": "func countArrays(digitSum []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_arrays(digit_sum: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "digitSum": "[25,1]"
+    },
+    {
+      "digitSum": "[1]"
+    },
+    {
+      "digitSum": "[2,49,23]"
+    }
+  ],
+  "functionName": "countArrays",
+  "params": [
+    {
+      "name": "digitSum",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming",
+    "Group every number from 0 to 5000 by its digit sum into sorted vectors once.",
+    "<code>dp[j]</code> holds the number of ways ending exactly at the j-th candidate for the current position.",
+    "Build prefix sums on the previous <code>dp</code>, then use <code>upper_bound</code> on the sorted previous list to count all values <= current."
+  ]
+}

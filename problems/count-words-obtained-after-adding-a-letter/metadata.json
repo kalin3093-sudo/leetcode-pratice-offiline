@@ -1,0 +1,54 @@
+{
+  "id": "count-words-obtained-after-adding-a-letter",
+  "title": "2135. Count Words Obtained After Adding a Letter",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "startWords = [\"ant\",\"act\",\"tack\"], targetWords = [\"tack\",\"act\",\"acti\"]",
+      "output": "2",
+      "explanation": "- In order to form targetWords[0] = \"tack\", we use startWords[1] = \"act\", append 'k' to it, and rearrange \"actk\" to \"tack\". - There is no string in startWords that can be used to obtain targetWords[1] = \"act\". Note that \"act\" does exist in startWords, but we must append one letter to the string before rearranging it. - In order to form targetWords[2] = \"acti\", we use startWords[1] = \"act\", append 'i' to it, and rearrange \"acti\" to \"acti\" itself."
+    },
+    {
+      "input": "startWords = [\"ab\",\"a\"], targetWords = [\"abc\",\"abcd\"]",
+      "output": "1",
+      "explanation": "- In order to form targetWords[0] = \"abc\", we use startWords[0] = \"ab\", add 'c' to it, and rearrange it to \"abc\". - There is no string in startWords that can be used to obtain targetWords[1] = \"abcd\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int wordCount(vector<string>& startWords, vector<string>& targetWords) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int wordCount(String[] startWords, String[] targetWords) {\n        \n    }\n}",
+    "python": "class Solution:\n    def wordCount(self, startWords: list[str], targetWords: list[str]) -> int:\n        ",
+    "typescript": "function wordCount(startWords: string[], targetWords: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int WordCount(string[] startWords, string[] targetWords) {\n        \n    }\n}",
+    "go": "func wordCount(startWords []string, targetWords []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn word_count(start_words: Vec<String>, target_words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "startWords": "[\"ant\",\"act\",\"tack\"]",
+      "targetWords": "[\"tack\",\"act\",\"acti\"]"
+    },
+    {
+      "startWords": "[\"ab\",\"a\"]",
+      "targetWords": "[\"abc\",\"abcd\"]"
+    }
+  ],
+  "functionName": "wordCount",
+  "params": [
+    {
+      "name": "startWords",
+      "type": "string_array"
+    },
+    {
+      "name": "targetWords",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Which data structure can be used to efficiently check if a string exists in startWords?",
+    "After appending a letter, all letters of a string can be rearranged in any possible way. How can we use this to reduce our search space while checking if a string in targetWords can be obtained from a string in startWords?"
+  ]
+}

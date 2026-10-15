@@ -1,0 +1,47 @@
+{
+  "id": "count-subarrays-of-length-three-with-a-condition",
+  "title": "3392. Count Subarrays of Length Three With a Condition",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,1,4,1]",
+      "output": "1",
+      "explanation": "Only the subarray [1,4,1] contains exactly 3 elements where the sum of the first and third numbers equals half the middle number."
+    },
+    {
+      "input": "nums = [1,1,1]",
+      "output": "0",
+      "explanation": "[1,1,1] is the only subarray of length 3. However, its first and third numbers do not add to half the middle number."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSubarrays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSubarrays(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSubarrays(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countSubarrays(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSubarrays(int[] nums) {\n        \n    }\n}",
+    "go": "func countSubarrays(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_subarrays(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,1,4,1]"
+    },
+    {
+      "nums": "[1,1,1]"
+    }
+  ],
+  "functionName": "countSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The constraints are small. Consider checking every subarray."
+  ]
+}

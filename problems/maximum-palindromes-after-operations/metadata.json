@@ -1,0 +1,60 @@
+{
+  "id": "maximum-palindromes-after-operations",
+  "title": "3035. Maximum Palindromes After Operations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-palindromes-after-operations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"abbb\",\"ba\",\"aa\"]",
+      "output": "3",
+      "explanation": "In this example, one way to get the maximum number of palindromes is: Choose i = 0, j = 1, x = 0, y = 0, so we swap words[0][0] and words[1][0]. words becomes [\"bbbb\",\"aa\",\"aa\"]. All strings in words are now palindromes. Hence, the maximum number of palindromes achievable is 3."
+    },
+    {
+      "input": "words = [\"abc\",\"ab\"]",
+      "output": "2",
+      "explanation": "In this example, one way to get the maximum number of palindromes is: Choose i = 0, j = 1, x = 1, y = 0, so we swap words[0][1] and words[1][0]. words becomes [\"aac\",\"bb\"]. Choose i = 0, j = 0, x = 1, y = 2, so we swap words[0][1] and words[0][2]. words becomes [\"aca\",\"bb\"]. Both strings are now palindromes. Hence, the maximum number of palindromes achievable is 2."
+    },
+    {
+      "input": "words = [\"cd\",\"ef\",\"a\"]",
+      "output": "1",
+      "explanation": "In this example, there is no need to perform any operation. There is one palindrome in words \"a\". It can be shown that it is not possible to get more than one palindrome after any number of operations. Hence, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxPalindromesAfterOperations(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxPalindromesAfterOperations(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPalindromesAfterOperations(self, words: List[str]) -> int:\n        ",
+    "typescript": "function maxPalindromesAfterOperations(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxPalindromesAfterOperations(string[] words) {\n        \n    }\n}",
+    "go": "func maxPalindromesAfterOperations(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_palindromes_after_operations(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abbb\",\"ba\",\"aa\"]"
+    },
+    {
+      "words": "[\"abc\",\"ab\"]"
+    },
+    {
+      "words": "[\"cd\",\"ef\",\"a\"]"
+    }
+  ],
+  "functionName": "maxPalindromesAfterOperations",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We can redistribute all the letters freely among the words.",
+    "Calculate the frequency of each letter and total the number of matching letter pairs that can be formed from the letters, i.e., <code>total = sum(freq[ch] / 2)</code> for all <code>'a' <= ch <= 'z'</code>.",
+    "We can greedily try making palindromes from <code>words[i]</code> with the smallest length to <code>words[i]</code> with the longest length.",
+    "For the current index, <code>i</code>, we try to make <code>words[i]</code> a palindrome. We need <code>len(words[i]) / 2</code> matching character pairs, and the letter in the middle (if it exists) can be freely chosen afterward.",
+    "We can check if we have enough pairs for index <code>i</code>; if we do, we increase the number of palindromes we can make and decrease the number of pairs we have. Otherwise, we end the loop at this index.",
+    "The answer is the number of palindromes we were able to make in the end."
+  ]
+}

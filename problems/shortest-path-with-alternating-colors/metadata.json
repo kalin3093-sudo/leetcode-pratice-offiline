@@ -1,0 +1,57 @@
+{
+  "id": "shortest-path-with-alternating-colors",
+  "title": "1129. Shortest Path with Alternating Colors",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-path-with-alternating-colors/",
+  "category": "breadth-first-search",
+  "examples": [
+    {
+      "input": "n = 3, redEdges = [[0,1],[1,2]], blueEdges = []",
+      "output": "[0,1,-1]"
+    },
+    {
+      "input": "n = 3, redEdges = [[0,1]], blueEdges = [[2,1]]",
+      "output": "[0,1,-1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& redEdges, vector<vector<int>>& blueEdges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] shortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestAlternatingPaths(self, n: int, redEdges: list[list[int]], blueEdges: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function shortestAlternatingPaths(n: number, redEdges: number[][], blueEdges: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ShortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {\n        \n    }\n}",
+    "go": "func shortestAlternatingPaths(n int, redEdges [][]int, blueEdges [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_alternating_paths(n: i32, red_edges: Vec<Vec<i32>>, blue_edges: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "redEdges": "[[0,1],[1,2]]",
+      "blueEdges": "[]"
+    },
+    {
+      "n": 3,
+      "redEdges": "[[0,1]]",
+      "blueEdges": "[[2,1]]"
+    }
+  ],
+  "functionName": "shortestAlternatingPaths",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "redEdges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "blueEdges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Do a breadth-first search, where the \"nodes\" are actually (Node, color of last edge taken)."
+  ]
+}

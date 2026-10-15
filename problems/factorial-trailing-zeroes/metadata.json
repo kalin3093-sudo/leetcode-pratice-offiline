@@ -1,0 +1,52 @@
+{
+  "id": "factorial-trailing-zeroes",
+  "title": "172. Factorial Trailing Zeroes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/factorial-trailing-zeroes/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "0",
+      "explanation": "3! = 6, no trailing zero."
+    },
+    {
+      "input": "n = 5",
+      "output": "1",
+      "explanation": "5! = 120, one trailing zero."
+    },
+    {
+      "input": "n = 0",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int trailingZeroes(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int trailingZeroes(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def trailingZeroes(self, n: int) -> int:\n        ",
+    "typescript": "function trailingZeroes(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TrailingZeroes(int n) {\n        \n    }\n}",
+    "go": "func trailingZeroes(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn trailing_zeroes(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 5
+    },
+    {
+      "n": 0
+    }
+  ],
+  "functionName": "trailingZeroes",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

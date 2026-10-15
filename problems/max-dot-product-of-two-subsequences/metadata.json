@@ -1,0 +1,62 @@
+{
+  "id": "max-dot-product-of-two-subsequences",
+  "title": "1458. Max Dot Product of Two Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/max-dot-product-of-two-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [2,1,-2,5], nums2 = [3,0,-6]",
+      "output": "18",
+      "explanation": "Take subsequence [2,-2] from nums1 and subsequence [3,-6] from nums2. Their dot product is (2*3 + (-2)*(-6)) = 18."
+    },
+    {
+      "input": "nums1 = [3,-2], nums2 = [2,-6,7]",
+      "output": "21",
+      "explanation": "Take subsequence [3] from nums1 and subsequence [7] from nums2. Their dot product is (3*7) = 21."
+    },
+    {
+      "input": "nums1 = [-1,-1], nums2 = [1,1]",
+      "output": "-1",
+      "explanation": "Take subsequence [-1] from nums1 and subsequence [1] from nums2. Their dot product is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDotProduct(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDotProduct(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDotProduct(self, nums1: list[int], nums2: list[int]) -> int:\n        ",
+    "typescript": "function maxDotProduct(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDotProduct(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func maxDotProduct(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_dot_product(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[2,1,-2,5]",
+      "nums2": "[3,0,-6]"
+    },
+    {
+      "nums1": "[3,-2]",
+      "nums2": "[2,-6,7]"
+    },
+    {
+      "nums1": "[-1,-1]",
+      "nums2": "[1,1]"
+    }
+  ],
+  "functionName": "maxDotProduct",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming, define DP[i][j] as the maximum dot product of two subsequences starting in the position i of nums1 and position j of nums2."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "minimum-number-of-days-to-make-m-bouquets",
+  "title": "1482. Minimum Number of Days to Make m Bouquets",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "bloomDay = [1,10,3,10,2], m = 3, k = 1",
+      "output": "3",
+      "explanation": "Let us see what happened in the first three days. x means flower bloomed and _ means flower did not bloom in the garden. We need 3 bouquets each should contain 1 flower. After day 1: [x, _, _, _, _]   // we can only make one bouquet. After day 2: [x, _, _, _, x]   // we can only make two bouquets. After day 3: [x, _, x, _, x]   // we can make 3 bouquets. The answer is 3."
+    },
+    {
+      "input": "bloomDay = [1,10,3,10,2], m = 3, k = 2",
+      "output": "-1",
+      "explanation": "We need 3 bouquets each has 2 flowers, that means we need 6 flowers. We only have 5 flowers so it is impossible to get the needed bouquets and we return -1."
+    },
+    {
+      "input": "bloomDay = [7,7,7,7,12,7,7], m = 2, k = 3",
+      "output": "12",
+      "explanation": "We need 2 bouquets each should have 3 flowers. Here is the garden after the 7 and 12 days: After day 7: [x, x, x, x, _, x, x] We can make one bouquet of the first three flowers that bloomed. We cannot make another bouquet from the last three flowers that bloomed because they are not adjacent. After day 12: [x, x, x, x, x, x, x] It is obvious that we can make two bouquets in different ways."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDays(vector<int>& bloomDay, int m, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDays(int[] bloomDay, int m, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDays(self, bloomDay: list[int], m: int, k: int) -> int:\n        ",
+    "typescript": "function minDays(bloomDay: number[], m: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDays(int[] bloomDay, int m, int k) {\n        \n    }\n}",
+    "go": "func minDays(bloomDay []int, m int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_days(bloom_day: Vec<i32>, m: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "bloomDay": "[1,10,3,10,2]",
+      "m": 3,
+      "k": 1
+    },
+    {
+      "bloomDay": "[1,10,3,10,2]",
+      "m": 3,
+      "k": 2
+    },
+    {
+      "bloomDay": "[7,7,7,7,12,7,7]",
+      "m": 2,
+      "k": 3
+    }
+  ],
+  "functionName": "minDays",
+  "params": [
+    {
+      "name": "bloomDay",
+      "type": "int_array"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If we can make m or more bouquets at day x, then we can still make m or more bouquets at any day y > x.",
+    "We can check easily if we can make enough bouquets at day x if we can get group adjacent flowers at day x."
+  ]
+}

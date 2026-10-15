@@ -1,0 +1,65 @@
+{
+  "id": "climbing-stairs-ii",
+  "title": "3693. Climbing Stairs II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/climbing-stairs-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 4, costs = [1,2,3,4]",
+      "output": "13",
+      "explanation": "One optimal path is 0 &rarr; 1 &rarr; 2 &rarr; 4 Jump Cost Calculation Cost 0 &rarr; 1 costs[1] + (1 - 0)2 = 1 + 1 2 1 &rarr; 2 costs[2] + (2 - 1)2 = 2 + 1 3 2 &rarr; 4 costs[4] + (4 - 2)2 = 4 + 4 8 Thus, the minimum total cost is 2 + 3 + 8 = 13"
+    },
+    {
+      "input": "n = 4, costs = [5,1,6,2]",
+      "output": "11",
+      "explanation": "One optimal path is 0 &rarr; 2 &rarr; 4 Jump Cost Calculation Cost 0 &rarr; 2 costs[2] + (2 - 0)2 = 1 + 4 5 2 &rarr; 4 costs[4] + (4 - 2)2 = 2 + 4 6 Thus, the minimum total cost is 5 + 6 = 11"
+    },
+    {
+      "input": "n = 3, costs = [9,8,3]",
+      "output": "12",
+      "explanation": "The optimal path is 0 &rarr; 3 with total cost = costs[3] + (3 - 0)2 = 3 + 9 = 12"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int climbStairs(int n, vector<int>& costs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int climbStairs(int n, int[] costs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def climbStairs(self, n: int, costs: List[int]) -> int:\n        ",
+    "typescript": "function climbStairs(n: number, costs: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ClimbStairs(int n, int[] costs) {\n        \n    }\n}",
+    "go": "func climbStairs(n int, costs []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn climb_stairs(n: i32, costs: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "costs": "[1,2,3,4]"
+    },
+    {
+      "n": 4,
+      "costs": "[5,1,6,2]"
+    },
+    {
+      "n": 3,
+      "costs": "[9,8,3]"
+    }
+  ],
+  "functionName": "climbStairs",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "costs",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming where <code>dp[j]</code> represents the minimum cost to reach step <code>j</code>.",
+    "From step <code>i</code>, you can jump to <code>i+1</code>, <code>i+2</code>, or <code>i+3</code>. Transition depends only on the previous three states.",
+    "<code>dp[j] = min(dp[i] + costs[j] + (j - i)<sup>2</sup>)</code> for all <code>i</code> in {<code>j-1</code>, <code>j-2</code>, <code>j-3</code>}.",
+    "Initialize <code>dp[0] = 0</code> and compute up to <code>dp[n]</code>; the answer is <code>dp[n]</code>."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "count-the-repetitions",
+  "title": "466. Count The Repetitions",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-the-repetitions/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s1 = \"acb\", n1 = 4, s2 = \"ab\", n2 = 2",
+      "output": "2"
+    },
+    {
+      "input": "s1 = \"acb\", n1 = 1, s2 = \"acb\", n2 = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getMaxRepetitions(string s1, int n1, string s2, int n2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getMaxRepetitions(String s1, int n1, String s2, int n2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getMaxRepetitions(self, s1: str, n1: int, s2: str, n2: int) -> int:\n        ",
+    "typescript": "function getMaxRepetitions(s1: string, n1: number, s2: string, n2: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetMaxRepetitions(string s1, int n1, string s2, int n2) {\n        \n    }\n}",
+    "go": "func getMaxRepetitions(s1 string, n1 int, s2 string, n2 int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_max_repetitions(s1: String, n1: i32, s2: String, n2: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s1": "acb",
+      "n1": 4,
+      "s2": "ab",
+      "n2": 2
+    },
+    {
+      "s1": "acb",
+      "n1": 1,
+      "s2": "acb",
+      "n2": 1
+    }
+  ],
+  "functionName": "getMaxRepetitions",
+  "params": [
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "n1",
+      "type": "int"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    },
+    {
+      "name": "n2",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "3sum-closest",
+  "title": "16. 3Sum Closest",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/3sum-closest/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [-1,2,1,-4], target = 1",
+      "output": "2",
+      "explanation": "The sum that is closest to the target is 2. (-1 + 2 + 1 = 2)."
+    },
+    {
+      "input": "nums = [0,0,0], target = 1",
+      "output": "0",
+      "explanation": "The sum that is closest to the target is 0. (0 + 0 + 0 = 0)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int threeSumClosest(vector<int>& nums, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int threeSumClosest(int[] nums, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def threeSumClosest(self, nums: list[int], target: int) -> int:\n        ",
+    "typescript": "function threeSumClosest(nums: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ThreeSumClosest(int[] nums, int target) {\n        \n    }\n}",
+    "go": "func threeSumClosest(nums []int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn three_sum_closest(nums: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[-1,2,1,-4]",
+      "target": 1
+    },
+    {
+      "nums": "[0,0,0]",
+      "target": 1
+    }
+  ],
+  "functionName": "threeSumClosest",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "minimum-non-zero-product-of-the-array-elements",
+  "title": "1969. Minimum Non-Zero Product of the Array Elements",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "p = 1",
+      "output": "1",
+      "explanation": "nums = [1]. There is only one element, so the product equals that element."
+    },
+    {
+      "input": "p = 2",
+      "output": "6",
+      "explanation": "nums = [01, 10, 11]. Any swap would either make the product 0 or stay the same. Thus, the array product of 1 * 2 * 3 = 6 is already minimized."
+    },
+    {
+      "input": "p = 3",
+      "output": "1512",
+      "explanation": "nums = [001, 010, 011, 100, 101, 110, 111] - In the first operation we can swap the leftmost bit of the second and fifth elements. - The resulting array is [001, 110, 011, 100, 001, 110, 111]. - In the second operation we can swap the middle bit of the third and fourth elements. - The resulting array is [001, 110, 001, 110, 001, 110, 111]. The array product is 1 * 6 * 1 * 6 * 1 * 6 * 7 = 1512, which is the minimum possible product."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minNonZeroProduct(int p) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minNonZeroProduct(int p) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minNonZeroProduct(self, p: int) -> int:\n        ",
+    "typescript": "function minNonZeroProduct(p: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinNonZeroProduct(int p) {\n        \n    }\n}",
+    "go": "func minNonZeroProduct(p int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_non_zero_product(p: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "p": 1
+    },
+    {
+      "p": 2
+    },
+    {
+      "p": 3
+    }
+  ],
+  "functionName": "minNonZeroProduct",
+  "params": [
+    {
+      "name": "p",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to minimize each element by swapping bits with any of the elements after it.",
+    "If you swap out all the 1s in some element, this will lead to a product of zero."
+  ]
+}

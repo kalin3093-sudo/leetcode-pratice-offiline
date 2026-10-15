@@ -1,0 +1,45 @@
+{
+  "id": "maximum-length-of-pair-chain",
+  "title": "646. Maximum Length of Pair Chain",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-length-of-pair-chain/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "pairs = [[1,2],[2,3],[3,4]]",
+      "output": "2",
+      "explanation": "The longest chain is [1,2] -> [3,4]."
+    },
+    {
+      "input": "pairs = [[1,2],[7,8],[4,5]]",
+      "output": "3",
+      "explanation": "The longest chain is [1,2] -> [4,5] -> [7,8]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findLongestChain(vector<vector<int>>& pairs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findLongestChain(int[][] pairs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLongestChain(self, pairs: list[list[int]]) -> int:\n        ",
+    "typescript": "function findLongestChain(pairs: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindLongestChain(int[][] pairs) {\n        \n    }\n}",
+    "go": "func findLongestChain(pairs [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_longest_chain(pairs: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "pairs": "[[1,2],[2,3],[3,4]]"
+    },
+    {
+      "pairs": "[[1,2],[7,8],[4,5]]"
+    }
+  ],
+  "functionName": "findLongestChain",
+  "params": [
+    {
+      "name": "pairs",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

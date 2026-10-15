@@ -1,0 +1,50 @@
+{
+  "id": "mirror-reflection",
+  "title": "858. Mirror Reflection",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/mirror-reflection/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "p = 2, q = 1",
+      "output": "2",
+      "explanation": "The ray meets receptor 2 the first time it gets reflected back to the left wall."
+    },
+    {
+      "input": "p = 3, q = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int mirrorReflection(int p, int q) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int mirrorReflection(int p, int q) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mirrorReflection(self, p: int, q: int) -> int:\n        ",
+    "typescript": "function mirrorReflection(p: number, q: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MirrorReflection(int p, int q) {\n        \n    }\n}",
+    "go": "func mirrorReflection(p int, q int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn mirror_reflection(p: i32, q: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "p": 2,
+      "q": 1
+    },
+    {
+      "p": 3,
+      "q": 1
+    }
+  ],
+  "functionName": "mirrorReflection",
+  "params": [
+    {
+      "name": "p",
+      "type": "int"
+    },
+    {
+      "name": "q",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

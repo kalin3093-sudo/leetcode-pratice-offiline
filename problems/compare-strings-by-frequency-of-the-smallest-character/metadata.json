@@ -1,0 +1,54 @@
+{
+  "id": "compare-strings-by-frequency-of-the-smallest-character",
+  "title": "1170. Compare Strings by Frequency of the Smallest Character",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "queries = [\"cbd\"], words = [\"zaaaz\"]",
+      "output": "[1]",
+      "explanation": "On the first query we have f(\"cbd\") = 1, f(\"zaaaz\") = 3 so f(\"cbd\") < f(\"zaaaz\")."
+    },
+    {
+      "input": "queries = [\"bbb\",\"cc\"], words = [\"a\",\"aa\",\"aaa\",\"aaaa\"]",
+      "output": "[1,2]",
+      "explanation": "On the first query only f(\"bbb\") < f(\"aaaa\"). On the second query both f(\"aaa\") and f(\"aaaa\") are both > f(\"cc\")."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> numSmallerByFrequency(vector<string>& queries, vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] numSmallerByFrequency(String[] queries, String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSmallerByFrequency(self, queries: list[str], words: list[str]) -> list[int]:\n        ",
+    "typescript": "function numSmallerByFrequency(queries: string[], words: string[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] NumSmallerByFrequency(string[] queries, string[] words) {\n        \n    }\n}",
+    "go": "func numSmallerByFrequency(queries []string, words []string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_smaller_by_frequency(queries: Vec<String>, words: Vec<String>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "queries": "[\"cbd\"]",
+      "words": "[\"zaaaz\"]"
+    },
+    {
+      "queries": "[\"bbb\",\"cc\"]",
+      "words": "[\"a\",\"aa\",\"aaa\",\"aaaa\"]"
+    }
+  ],
+  "functionName": "numSmallerByFrequency",
+  "params": [
+    {
+      "name": "queries",
+      "type": "string_array"
+    },
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "For each string from words calculate the leading count and store it in an array, then sort the integer array.",
+    "For each string from queries calculate the leading count \"p\" and in base of the sorted array calculated on the step 1 do a binary search to count the number of items greater than \"p\"."
+  ]
+}

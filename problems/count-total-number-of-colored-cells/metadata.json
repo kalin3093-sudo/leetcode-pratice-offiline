@@ -1,0 +1,47 @@
+{
+  "id": "count-total-number-of-colored-cells",
+  "title": "2579. Count Total Number of Colored Cells",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-total-number-of-colored-cells/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "1",
+      "explanation": "After 1 minute, there is only 1 blue cell, so we return 1."
+    },
+    {
+      "input": "n = 2",
+      "output": "5",
+      "explanation": "After 2 minutes, there are 4 colored cells on the boundary and 1 in the center, so we return 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long coloredCells(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long coloredCells(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def coloredCells(self, n: int) -> int:\n        ",
+    "typescript": "function coloredCells(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long ColoredCells(int n) {\n        \n    }\n}",
+    "go": "func coloredCells(n int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn colored_cells(n: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "coloredCells",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Derive a mathematical relation between total number of colored cells and the time elapsed in minutes."
+  ]
+}

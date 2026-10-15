@@ -1,0 +1,49 @@
+{
+  "id": "minimum-operations-to-transform-string",
+  "title": "3675. Minimum Operations to Transform String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-transform-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"yz\"",
+      "output": "2",
+      "explanation": "Change 'y' to 'z' to get \"zz\". Change 'z' to 'a' to get \"aa\". Thus, the answer is 2."
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "0",
+      "explanation": "The string \"a\" only consists of 'a' characters. Thus, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, s: str) -> int:\n        ",
+    "typescript": "function minOperations(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(string s) {\n        \n    }\n}",
+    "go": "func minOperations(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "yz"
+    },
+    {
+      "s": "a"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Each operation shifts every occurrence of a chosen character forward by one in the alphabet (with wrap-around).",
+    "For any character <code>c</code>, the number of moves required to turn it into <code>'a'</code> is <code>(26 - (ord(c) - ord('a'))) % 26</code>.",
+    "You can plan operations so characters that need more shifts are advanced first and cause merges that don't increase the total number of moves; therefore the minimum number of moves equals the maximum, over characters appearing in <code>s</code>, of <code>(26 - (ord(c) - ord('a'))) % 26</code>."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "construct-k-palindrome-strings",
+  "title": "1400. Construct K Palindrome Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/construct-k-palindrome-strings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"annabelle\", k = 2",
+      "output": "true",
+      "explanation": "You can construct two palindromes using all characters in s. Some possible constructions \"anna\" + \"elble\", \"anbna\" + \"elle\", \"anellena\" + \"b\""
+    },
+    {
+      "input": "s = \"leetcode\", k = 3",
+      "output": "false",
+      "explanation": "It is impossible to construct 3 palindromes using all the characters of s."
+    },
+    {
+      "input": "s = \"true\", k = 4",
+      "output": "true",
+      "explanation": "The only possible solution is to put each character in a separate string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canConstruct(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canConstruct(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canConstruct(self, s: str, k: int) -> bool:\n        ",
+    "typescript": "function canConstruct(s: string, k: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanConstruct(string s, int k) {\n        \n    }\n}",
+    "go": "func canConstruct(s string, k int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_construct(s: String, k: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "annabelle",
+      "k": 2
+    },
+    {
+      "s": "leetcode",
+      "k": 3
+    },
+    {
+      "s": "true",
+      "k": 4
+    }
+  ],
+  "functionName": "canConstruct",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "If the s.length < k we cannot construct k strings from s and answer is false.",
+    "If the number of characters that have odd counts is > k then the minimum number of palindrome strings we can construct is > k and answer is false.",
+    "Otherwise you can construct exactly k palindrome strings and answer is true (why ?)."
+  ]
+}

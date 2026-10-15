@@ -1,0 +1,43 @@
+{
+  "id": "next-greater-element-iii",
+  "title": "556. Next Greater Element III",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/next-greater-element-iii/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 12",
+      "output": "21"
+    },
+    {
+      "input": "n = 21",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int nextGreaterElement(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int nextGreaterElement(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nextGreaterElement(self, n: int) -> int:\n        ",
+    "typescript": "function nextGreaterElement(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NextGreaterElement(int n) {\n        \n    }\n}",
+    "go": "func nextGreaterElement(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn next_greater_element(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 12
+    },
+    {
+      "n": 21
+    }
+  ],
+  "functionName": "nextGreaterElement",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

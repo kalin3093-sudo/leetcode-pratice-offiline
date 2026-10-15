@@ -1,0 +1,53 @@
+{
+  "id": "absolute-difference-between-maximum-and-minimum-k-elements",
+  "title": "3774. Absolute Difference Between Maximum and Minimum K Elements",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,2,2,4], k = 2",
+      "output": "5",
+      "explanation": "The k = 2 largest elements are 4 and 5. Their sum is 4 + 5 = 9. The k = 2 smallest elements are 2 and 2. Their sum is 2 + 2 = 4. The absolute difference is abs(9 - 4) = 5."
+    },
+    {
+      "input": "nums = [100], k = 1",
+      "output": "0",
+      "explanation": "The largest element is 100. The smallest element is 100. The absolute difference is abs(100 - 100) = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int absDifference(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int absDifference(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def absDifference(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function absDifference(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AbsDifference(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func absDifference(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn abs_difference(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,2,2,4]",
+      "k": 2
+    },
+    {
+      "nums": "[100]",
+      "k": 1
+    }
+  ],
+  "functionName": "absDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the array and find the difference between the first and last <code>k</code> values."
+  ]
+}

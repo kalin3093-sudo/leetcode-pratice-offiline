@@ -1,0 +1,56 @@
+{
+  "id": "count-almost-equal-pairs-i",
+  "title": "3265. Count Almost Equal Pairs I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-almost-equal-pairs-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,12,30,17,21]",
+      "output": "2",
+      "explanation": "The almost equal pairs of elements are: 3 and 30. By swapping 3 and 0 in 30, you get 3. 12 and 21. By swapping 1 and 2 in 12, you get 21."
+    },
+    {
+      "input": "nums = [1,1,1,1,1]",
+      "output": "10",
+      "explanation": "Every two elements in the array are almost equal."
+    },
+    {
+      "input": "nums = [123,231]",
+      "output": "0",
+      "explanation": "We cannot swap any two digits of 123 or 231 to reach the other."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPairs(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countPairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPairs(int[] nums) {\n        \n    }\n}",
+    "go": "func countPairs(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_pairs(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,12,30,17,21]"
+    },
+    {
+      "nums": "[1,1,1,1,1]"
+    },
+    {
+      "nums": "[123,231]"
+    }
+  ],
+  "functionName": "countPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Since the constraint on the number of elements is small, you can check all pairs in the array.",
+    "For each pair, perform an operation on one of the elements and check if it becomes equal to the other."
+  ]
+}

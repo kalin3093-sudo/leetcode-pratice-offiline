@@ -1,0 +1,48 @@
+{
+  "id": "password-strength",
+  "title": "3941. Password Strength",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/password-strength/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "password = \"aA1!\"",
+      "output": "11",
+      "explanation": "The distinct characters are 'a', 'A', '1' and '!'. Thus, the strength = 1 + 2 + 3 + 5 = 11."
+    },
+    {
+      "input": "password = \"bbB11#\"",
+      "output": "11",
+      "explanation": "The distinct characters are 'b', 'B', '1' and '#'. Thus, the strength = 1 + 2 + 3 + 5 = 11."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int passwordStrength(string password) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int passwordStrength(String password) {\n        \n    }\n}",
+    "python": "class Solution:\n    def passwordStrength(self, password: str) -> int:\n        ",
+    "typescript": "function passwordStrength(password: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PasswordStrength(string password) {\n        \n    }\n}",
+    "go": "func passwordStrength(password string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn password_strength(password: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "password": "aA1!"
+    },
+    {
+      "password": "bbB11#"
+    }
+  ],
+  "functionName": "passwordStrength",
+  "params": [
+    {
+      "name": "password",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Remove duplicates from the string.",
+    "Now you can sum up the corresponding points of each character."
+  ]
+}

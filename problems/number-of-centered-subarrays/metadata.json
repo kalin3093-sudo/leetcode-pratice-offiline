@@ -1,0 +1,47 @@
+{
+  "id": "number-of-centered-subarrays",
+  "title": "3804. Number of Centered Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-centered-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [-1,1,0]",
+      "output": "5",
+      "explanation": "All single-element subarrays ([-1], [1], [0]) are centered. The subarray [1, 0] has a sum of 1, which is present in the subarray. The subarray [-1, 1, 0] has a sum of 0, which is present in the subarray. Thus, the answer is 5."
+    },
+    {
+      "input": "nums = [2,-3]",
+      "output": "2",
+      "explanation": "Only single-element subarrays ([2], [-3]) are centered."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int centeredSubarrays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int centeredSubarrays(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def centeredSubarrays(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function centeredSubarrays(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CenteredSubarrays(int[] nums) {\n        \n    }\n}",
+    "go": "func centeredSubarrays(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn centered_subarrays(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[-1,1,0]"
+    },
+    {
+      "nums": "[2,-3]"
+    }
+  ],
+  "functionName": "centeredSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Generate all subarrays and use a hashmap to check whether the sum exists in the generated subarrays."
+  ]
+}

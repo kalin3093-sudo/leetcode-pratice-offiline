@@ -1,0 +1,46 @@
+{
+  "id": "remove-all-adjacent-duplicates-in-string",
+  "title": "1047. Remove All Adjacent Duplicates In String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abbaca\"",
+      "output": "\"ca\"",
+      "explanation": "For example, in \"abbaca\" we could remove \"bb\" since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is \"aaca\", of which only \"aa\" is possible, so the final string is \"ca\"."
+    },
+    {
+      "input": "s = \"azxxzy\"",
+      "output": "\"ay\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string removeDuplicates(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String removeDuplicates(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeDuplicates(self, s: str) -> str:\n        ",
+    "typescript": "function removeDuplicates(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RemoveDuplicates(string s) {\n        \n    }\n}",
+    "go": "func removeDuplicates(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_duplicates(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abbaca"
+    },
+    {
+      "s": "azxxzy"
+    }
+  ],
+  "functionName": "removeDuplicates",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Use a stack to process everything greedily."
+  ]
+}

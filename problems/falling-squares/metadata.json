@@ -1,0 +1,47 @@
+{
+  "id": "falling-squares",
+  "title": "699. Falling Squares",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/falling-squares/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "positions = [[1,2],[2,3],[6,1]]",
+      "output": "[2,5,5]",
+      "explanation": "After the first drop, the tallest stack is square 1 with a height of 2. After the second drop, the tallest stack is squares 1 and 2 with a height of 5. After the third drop, the tallest stack is still squares 1 and 2 with a height of 5. Thus, we return an answer of [2, 5, 5]."
+    },
+    {
+      "input": "positions = [[100,100],[200,100]]",
+      "output": "[100,100]",
+      "explanation": "After the first drop, the tallest stack is square 1 with a height of 100. After the second drop, the tallest stack is either square 1 or square 2, both with heights of 100. Thus, we return an answer of [100, 100]. Note that square 2 only brushes the right side of square 1, which does not count as landing on it."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> fallingSquares(vector<vector<int>>& positions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> fallingSquares(int[][] positions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def fallingSquares(self, positions: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function fallingSquares(positions: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FallingSquares(int[][] positions) {\n        \n    }\n}",
+    "go": "func fallingSquares(positions [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn falling_squares(positions: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "positions": "[[1,2],[2,3],[6,1]]"
+    },
+    {
+      "positions": "[[100,100],[200,100]]"
+    }
+  ],
+  "functionName": "fallingSquares",
+  "params": [
+    {
+      "name": "positions",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "If positions = [[10, 20], [20, 30]], this is the same as [[1, 2], [2, 3]].  Currently, the values of positions are very large.  Can you generalize this approach so as to make the values in positions manageable?"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "detect-capital",
+  "title": "520. Detect Capital",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/detect-capital/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"USA\"",
+      "output": "true"
+    },
+    {
+      "input": "word = \"FlaG\"",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool detectCapitalUse(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean detectCapitalUse(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def detectCapitalUse(self, word: str) -> bool:\n        ",
+    "typescript": "function detectCapitalUse(word: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool DetectCapitalUse(string word) {\n        \n    }\n}",
+    "go": "func detectCapitalUse(word string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn detect_capital_use(word: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "USA"
+    },
+    {
+      "word": "FlaG"
+    }
+  ],
+  "functionName": "detectCapitalUse",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,24 @@
+import java.util.*;
+class Marker {
+  public int dominantIndex(int[] nums) {
+    int ans = 0;
+    int mx = 0;
+    int secondMax = 0;
+
+    for (int i = 0; i < nums.length; ++i)
+      if (nums[i] > mx) {
+        secondMax = mx;
+        mx = nums[i];
+        ans = i;
+      } else if (nums[i] > secondMax) {
+        secondMax = nums[i];
+      }
+
+    return mx >= 2 * secondMax ? ans : -1;
+  }
+
+    public boolean isCorrect(int[] nums, int output) {
+        int expected = dominantIndex(nums);
+        return expected == output;
+    }
+}

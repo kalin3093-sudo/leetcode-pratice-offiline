@@ -1,0 +1,17 @@
+[
+  {
+    "firstWord": "acb",
+    "secondWord": "cba",
+    "targetWord": "cdb"
+  },
+  {
+    "firstWord": "aaa",
+    "secondWord": "a",
+    "targetWord": "aab"
+  },
+  {
+    "firstWord": "aaa",
+    "secondWord": "a",
+    "targetWord": "aaaa"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "id": "find-the-k-sum-of-an-array",
+  "title": "2386. Find the K-Sum of an Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-k-sum-of-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,4,-2], k = 5",
+      "output": "2",
+      "explanation": "All the possible subsequence sums that we can obtain are the following sorted in decreasing order: 6, 4, 4, 2, 2, 0, 0, -2. The 5-Sum of the array is 2."
+    },
+    {
+      "input": "nums = [1,-2,3,4,-10,12], k = 16",
+      "output": "10",
+      "explanation": "The 16-Sum of the array is 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long kSum(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long kSum(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kSum(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function kSum(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long KSum(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func kSum(nums []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn k_sum(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,4,-2]",
+      "k": 5
+    },
+    {
+      "nums": "[1,-2,3,4,-10,12]",
+      "k": 16
+    }
+  ],
+  "functionName": "kSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Start from the largest sum possible, and keep finding the next largest sum until you reach the kth sum.",
+    "Starting from a sum, what are the two next largest sums that you can obtain from it?"
+  ]
+}

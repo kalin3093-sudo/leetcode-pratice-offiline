@@ -1,0 +1,49 @@
+{
+  "id": "replace-words",
+  "title": "648. Replace Words",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/replace-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "dictionary = [\"cat\",\"bat\",\"rat\"], sentence = \"the cattle was rattled by the battery\"",
+      "output": "\"the cat was rat by the bat\""
+    },
+    {
+      "input": "dictionary = [\"a\",\"b\",\"c\"], sentence = \"aadsfasf absbs bbab cadsfafs\"",
+      "output": "\"a a b c\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string replaceWords(vector<string>& dictionary, string sentence) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String replaceWords(List<String> dictionary, String sentence) {\n        \n    }\n}",
+    "python": "class Solution:\n    def replaceWords(self, dictionary: list[str], sentence: str) -> str:\n        ",
+    "typescript": "function replaceWords(dictionary: string[], sentence: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReplaceWords(IList<string> dictionary, string sentence) {\n        \n    }\n}",
+    "go": "func replaceWords(dictionary []string, sentence string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn replace_words(dictionary: Vec<String>, sentence: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "dictionary": "[\"cat\",\"bat\",\"rat\"]",
+      "sentence": "the cattle was rattled by the battery"
+    },
+    {
+      "dictionary": "[\"a\",\"b\",\"c\"]",
+      "sentence": "aadsfasf absbs bbab cadsfafs"
+    }
+  ],
+  "functionName": "replaceWords",
+  "params": [
+    {
+      "name": "dictionary",
+      "type": "string_list"
+    },
+    {
+      "name": "sentence",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "maximum-of-absolute-value-expression",
+  "title": "1131. Maximum of Absolute Value Expression",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-of-absolute-value-expression/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr1 = [1,2,3,4], arr2 = [-1,4,5,6]",
+      "output": "13"
+    },
+    {
+      "input": "arr1 = [1,-2,-5,0,10], arr2 = [0,-2,-1,-7,-4]",
+      "output": "20"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxAbsValExpr(vector<int>& arr1, vector<int>& arr2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxAbsValExpr(int[] arr1, int[] arr2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxAbsValExpr(self, arr1: list[int], arr2: list[int]) -> int:\n        ",
+    "typescript": "function maxAbsValExpr(arr1: number[], arr2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxAbsValExpr(int[] arr1, int[] arr2) {\n        \n    }\n}",
+    "go": "func maxAbsValExpr(arr1 []int, arr2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_abs_val_expr(arr1: Vec<i32>, arr2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr1": "[1,2,3,4]",
+      "arr2": "[-1,4,5,6]"
+    },
+    {
+      "arr1": "[1,-2,-5,0,10]",
+      "arr2": "[0,-2,-1,-7,-4]"
+    }
+  ],
+  "functionName": "maxAbsValExpr",
+  "params": [
+    {
+      "name": "arr1",
+      "type": "int_array"
+    },
+    {
+      "name": "arr2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use the idea that abs(A) + abs(B) = max(A+B, A-B, -A+B, -A-B)."
+  ]
+}

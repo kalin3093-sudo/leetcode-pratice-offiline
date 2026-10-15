@@ -1,0 +1,54 @@
+{
+  "id": "maximum-compatibility-score-sum",
+  "title": "1947. Maximum Compatibility Score Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-compatibility-score-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "students = [[1,1,0],[1,0,1],[0,0,1]], mentors = [[1,0,0],[0,0,1],[1,1,0]]",
+      "output": "8",
+      "explanation": "We assign students to mentors in the following way: - student 0 to mentor 2 with a compatibility score of 3. - student 1 to mentor 0 with a compatibility score of 2. - student 2 to mentor 1 with a compatibility score of 3. The compatibility score sum is 3 + 2 + 3 = 8."
+    },
+    {
+      "input": "students = [[0,0],[0,0],[0,0]], mentors = [[1,1],[1,1],[1,1]]",
+      "output": "0",
+      "explanation": "The compatibility score of any student-mentor pair is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxCompatibilitySum(vector<vector<int>>& students, vector<vector<int>>& mentors) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxCompatibilitySum(int[][] students, int[][] mentors) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxCompatibilitySum(self, students: list[list[int]], mentors: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxCompatibilitySum(students: number[][], mentors: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxCompatibilitySum(int[][] students, int[][] mentors) {\n        \n    }\n}",
+    "go": "func maxCompatibilitySum(students [][]int, mentors [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_compatibility_sum(students: Vec<Vec<i32>>, mentors: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "students": "[[1,1,0],[1,0,1],[0,0,1]]",
+      "mentors": "[[1,0,0],[0,0,1],[1,1,0]]"
+    },
+    {
+      "students": "[[0,0],[0,0],[0,0]]",
+      "mentors": "[[1,1],[1,1],[1,1]]"
+    }
+  ],
+  "functionName": "maxCompatibilitySum",
+  "params": [
+    {
+      "name": "students",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "mentors",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Calculate the compatibility score for each student-mentor pair.",
+    "Try every permutation of students with the original mentors array."
+  ]
+}

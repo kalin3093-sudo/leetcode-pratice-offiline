@@ -1,0 +1,53 @@
+{
+  "id": "maximum-number-of-balloons",
+  "title": "1189. Maximum Number of Balloons",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-number-of-balloons/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "text = \"nlaebolko\"",
+      "output": "1"
+    },
+    {
+      "input": "text = \"loonbalxballpoon\"",
+      "output": "2"
+    },
+    {
+      "input": "text = \"leetcode\"",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxNumberOfBalloons(string text) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxNumberOfBalloons(String text) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxNumberOfBalloons(self, text: str) -> int:\n        ",
+    "typescript": "function maxNumberOfBalloons(text: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxNumberOfBalloons(string text) {\n        \n    }\n}",
+    "go": "func maxNumberOfBalloons(text string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_number_of_balloons(text: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "nlaebolko"
+    },
+    {
+      "text": "loonbalxballpoon"
+    },
+    {
+      "text": "leetcode"
+    }
+  ],
+  "functionName": "maxNumberOfBalloons",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the frequency of letters in the given string.",
+    "Find the letter than can make the minimum number of instances of the word \"balloon\"."
+  ]
+}

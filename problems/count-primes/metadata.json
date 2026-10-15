@@ -1,0 +1,55 @@
+{
+  "id": "count-primes",
+  "title": "204. Count Primes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-primes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 10",
+      "output": "4",
+      "explanation": "There are 4 prime numbers less than 10, they are 2, 3, 5, 7."
+    },
+    {
+      "input": "n = 0",
+      "output": "0"
+    },
+    {
+      "input": "n = 1",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPrimes(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPrimes(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPrimes(self, n: int) -> int:\n        ",
+    "typescript": "function countPrimes(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPrimes(int n) {\n        \n    }\n}",
+    "go": "func countPrimes(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_primes(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10
+    },
+    {
+      "n": 0
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "countPrimes",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Checking all the integers in the range [1, n - 1] is not efficient. Think about a better approach.",
+    "Since most of the numbers are not primes, we need a fast approach to exclude the non-prime integers.",
+    "Use Sieve of Eratosthenes."
+  ]
+}

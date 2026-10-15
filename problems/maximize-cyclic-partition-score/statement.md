@@ -1,0 +1,13 @@
+You are given a **cyclic** array `nums` and an integer `k`.
+
+**Partition** `nums` into **at most** `k` subarrays. As `nums` is cyclic, these subarrays may wrap around from the end of the array back to the beginning.
+
+The **range** of a subarray is the difference between its **maximum** and **minimum** values. The **score** of a partition is the sum of subarray **ranges**.
+
+Return the **maximum** possible **score** among all cyclic partitions.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 1000`
+-   `1 ≤ nums[i] ≤ 10^9`
+-   `1 ≤ k ≤ nums.length`

@@ -1,0 +1,72 @@
+{
+  "id": "determine-the-winner-of-a-bowling-game",
+  "title": "2660. Determine the Winner of a Bowling Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "player1 = [5,10,3,2], player2 = [6,5,7,3]",
+      "output": "1",
+      "explanation": "The score of player 1 is 5 + 10 + 2*3 + 2*2 = 25. The score of player 2 is 6 + 5 + 7 + 3 = 21."
+    },
+    {
+      "input": "player1 = [3,5,7,6], player2 = [8,10,10,2]",
+      "output": "2",
+      "explanation": "The score of player 1 is 3 + 5 + 7 + 6 = 21. The score of player 2 is 8 + 10 + 2*10 + 2*2 = 42."
+    },
+    {
+      "input": "player1 = [2,3], player2 = [4,1]",
+      "output": "0",
+      "explanation": "The score of player1 is 2 + 3 = 5. The score of player2 is 4 + 1 = 5."
+    },
+    {
+      "input": "player1 = [1,1,1,10,10,10,10], player2 = [10,10,10,10,1,1,1]",
+      "output": "2",
+      "explanation": "The score of player1 is 1 + 1 + 1 + 10 + 2*10 + 2*10 + 2*10 = 73. The score of player2 is 10 + 2*10 + 2*10 + 2*10 + 2*1 + 2*1 + 1 = 75."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int isWinner(vector<int>& player1, vector<int>& player2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int isWinner(int[] player1, int[] player2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isWinner(self, player1: List[int], player2: List[int]) -> int:\n        ",
+    "typescript": "function isWinner(player1: number[], player2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int IsWinner(int[] player1, int[] player2) {\n        \n    }\n}",
+    "go": "func isWinner(player1 []int, player2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_winner(player1: Vec<i32>, player2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "player1": "[5,10,3,2]",
+      "player2": "[6,5,7,3]"
+    },
+    {
+      "player1": "[3,5,7,6]",
+      "player2": "[8,10,10,2]"
+    },
+    {
+      "player1": "[2,3]",
+      "player2": "[4,1]"
+    },
+    {
+      "player1": "[1,1,1,10,10,10,10]",
+      "player2": "[10,10,10,10,1,1,1]"
+    }
+  ],
+  "functionName": "isWinner",
+  "params": [
+    {
+      "name": "player1",
+      "type": "int_array"
+    },
+    {
+      "name": "player2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think about simulating the process to calculate the answer.",
+    "Iterate over each element and check the previous two elements. See if one of them is 10 and can affect the score."
+  ]
+}

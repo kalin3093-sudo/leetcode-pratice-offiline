@@ -1,0 +1,62 @@
+{
+  "id": "minimum-time-to-make-rope-colorful",
+  "title": "1578. Minimum Time to Make Rope Colorful",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-time-to-make-rope-colorful/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "colors = \"abaac\", neededTime = [1,2,3,4,5]",
+      "output": "3",
+      "explanation": "In the above image, 'a' is blue, 'b' is red, and 'c' is green. Bob can remove the blue balloon at index 2. This takes 3 seconds. There are no longer two consecutive balloons of the same color. Total time = 3."
+    },
+    {
+      "input": "colors = \"abc\", neededTime = [1,2,3]",
+      "output": "0",
+      "explanation": "The rope is already colorful. Bob does not need to remove any balloons from the rope."
+    },
+    {
+      "input": "colors = \"aabaa\", neededTime = [1,2,3,4,1]",
+      "output": "2",
+      "explanation": "Bob will remove the balloons at indices 0 and 4. Each balloons takes 1 second to remove. There are no longer two consecutive balloons of the same color. Total time = 1 + 1 = 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCost(string colors, vector<int>& neededTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCost(String colors, int[] neededTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, colors: str, neededTime: list[int]) -> int:\n        ",
+    "typescript": "function minCost(colors: string, neededTime: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCost(string colors, int[] neededTime) {\n        \n    }\n}",
+    "go": "func minCost(colors string, neededTime []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(colors: String, needed_time: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "colors": "abaac",
+      "neededTime": "[1,2,3,4,5]"
+    },
+    {
+      "colors": "abc",
+      "neededTime": "[1,2,3]"
+    },
+    {
+      "colors": "aabaa",
+      "neededTime": "[1,2,3,4,1]"
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "colors",
+      "type": "string"
+    },
+    {
+      "name": "neededTime",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Maintain the running sum and max value for repeated letters."
+  ]
+}

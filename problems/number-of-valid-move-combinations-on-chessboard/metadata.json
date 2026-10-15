@@ -1,0 +1,63 @@
+{
+  "id": "number-of-valid-move-combinations-on-chessboard",
+  "title": "2056. Number of Valid Move Combinations On Chessboard",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "pieces = [\"rook\"], positions = [[1,1]]",
+      "output": "15",
+      "explanation": "The image above shows the possible squares the piece can move to."
+    },
+    {
+      "input": "pieces = [\"queen\"], positions = [[1,1]]",
+      "output": "22",
+      "explanation": "The image above shows the possible squares the piece can move to."
+    },
+    {
+      "input": "pieces = [\"bishop\"], positions = [[4,3]]",
+      "output": "12",
+      "explanation": "The image above shows the possible squares the piece can move to."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countCombinations(vector<string>& pieces, vector<vector<int>>& positions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countCombinations(String[] pieces, int[][] positions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countCombinations(self, pieces: list[str], positions: list[list[int]]) -> int:\n        ",
+    "typescript": "function countCombinations(pieces: string[], positions: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountCombinations(string[] pieces, int[][] positions) {\n        \n    }\n}",
+    "go": "func countCombinations(pieces []string, positions [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_combinations(pieces: Vec<String>, positions: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "pieces": "[\"rook\"]",
+      "positions": "[[1,1]]"
+    },
+    {
+      "pieces": "[\"queen\"]",
+      "positions": "[[1,1]]"
+    },
+    {
+      "pieces": "[\"bishop\"]",
+      "positions": "[[4,3]]"
+    }
+  ],
+  "functionName": "countCombinations",
+  "params": [
+    {
+      "name": "pieces",
+      "type": "string_array"
+    },
+    {
+      "name": "positions",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "N is small, we can generate all possible move combinations.",
+    "For each possible move combination, determine which ones are valid."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "reaching-points",
+  "title": "780. Reaching Points",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/reaching-points/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "sx = 1, sy = 1, tx = 3, ty = 5",
+      "output": "true",
+      "explanation": "One series of moves that transforms the starting point to the target is: (1, 1) -> (1, 2) (1, 2) -> (3, 2) (3, 2) -> (3, 5)"
+    },
+    {
+      "input": "sx = 1, sy = 1, tx = 2, ty = 2",
+      "output": "false"
+    },
+    {
+      "input": "sx = 1, sy = 1, tx = 1, ty = 1",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool reachingPoints(int sx, int sy, int tx, int ty) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean reachingPoints(int sx, int sy, int tx, int ty) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reachingPoints(self, sx: int, sy: int, tx: int, ty: int) -> bool:\n        ",
+    "typescript": "function reachingPoints(sx: number, sy: number, tx: number, ty: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ReachingPoints(int sx, int sy, int tx, int ty) {\n        \n    }\n}",
+    "go": "func reachingPoints(sx int, sy int, tx int, ty int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reaching_points(sx: i32, sy: i32, tx: i32, ty: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "sx": 1,
+      "sy": 1,
+      "tx": 3,
+      "ty": 5
+    },
+    {
+      "sx": 1,
+      "sy": 1,
+      "tx": 2,
+      "ty": 2
+    },
+    {
+      "sx": 1,
+      "sy": 1,
+      "tx": 1,
+      "ty": 1
+    }
+  ],
+  "functionName": "reachingPoints",
+  "params": [
+    {
+      "name": "sx",
+      "type": "int"
+    },
+    {
+      "name": "sy",
+      "type": "int"
+    },
+    {
+      "name": "tx",
+      "type": "int"
+    },
+    {
+      "name": "ty",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

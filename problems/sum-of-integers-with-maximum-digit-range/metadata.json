@@ -1,0 +1,48 @@
+{
+  "id": "sum-of-integers-with-maximum-digit-range",
+  "title": "3982. Sum of Integers with Maximum Digit Range",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5724,111,350]",
+      "output": "6074",
+      "explanation": "i nums[i] Largest Smallest Digit Range 0 5724 7 2 5 1 111 1 1 0 2 350 5 0 5 The maximum digit range is 5. The integers with this digit range are 5724 and 350, so the answer is 5724 + 350 = 6074."
+    },
+    {
+      "input": "nums = [90,900]",
+      "output": "990",
+      "explanation": "i nums[i] Largest Smallest Digit Range 0 90 9 0 9 1 900 9 0 9 The maximum digit range is 9. Both integers have this digit range, so the answer is 90 + 900 = 990."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDigitRange(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDigitRange(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDigitRange(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maxDigitRange(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDigitRange(int[] nums) {\n        \n    }\n}",
+    "go": "func maxDigitRange(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_digit_range(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5724,111,350]"
+    },
+    {
+      "nums": "[90,900]"
+    }
+  ],
+  "functionName": "maxDigitRange",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Compute the digit range of each number by scanning its decimal digits.</p>",
+    "<p>First find the maximum digit range, then sum all numbers whose digit range equals it.</p>"
+  ]
+}

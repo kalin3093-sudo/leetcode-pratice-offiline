@@ -1,0 +1,51 @@
+{
+  "id": "stamping-the-sequence",
+  "title": "936. Stamping The Sequence",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/stamping-the-sequence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "stamp = \"abc\", target = \"ababc\"",
+      "output": "[0,2]",
+      "explanation": "Initially s = \"?????\". - Place stamp at index 0 to get \"abc??\". - Place stamp at index 2 to get \"ababc\". [1,0,2] would also be accepted as an answer, as well as some other answers."
+    },
+    {
+      "input": "stamp = \"abca\", target = \"aabcaca\"",
+      "output": "[3,0,1]",
+      "explanation": "Initially s = \"???????\". - Place stamp at index 3 to get \"???abca\". - Place stamp at index 0 to get \"abcabca\". - Place stamp at index 1 to get \"aabcaca\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> movesToStamp(string stamp, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] movesToStamp(String stamp, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def movesToStamp(self, stamp: str, target: str) -> list[int]:\n        ",
+    "typescript": "function movesToStamp(stamp: string, target: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MovesToStamp(string stamp, string target) {\n        \n    }\n}",
+    "go": "func movesToStamp(stamp string, target string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn moves_to_stamp(stamp: String, target: String) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stamp": "abc",
+      "target": "ababc"
+    },
+    {
+      "stamp": "abca",
+      "target": "aabcaca"
+    }
+  ],
+  "functionName": "movesToStamp",
+  "params": [
+    {
+      "name": "stamp",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

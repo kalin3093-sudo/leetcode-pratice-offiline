@@ -1,0 +1,55 @@
+{
+  "id": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",
+  "title": "1452. People Whose List of Favorite Companies Is Not a Subset of Another List",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
+      "output": "[0,1,4]",
+      "explanation": "Person with index=2 has favoriteCompanies[2]=[\"google\",\"facebook\"] which is a subset of favoriteCompanies[0]=[\"leetcode\",\"google\",\"facebook\"] corresponding to the person with index 0. Person with index=3 has favoriteCompanies[3]=[\"google\"] which is a subset of favoriteCompanies[0]=[\"leetcode\",\"google\",\"facebook\"] and favoriteCompanies[1]=[\"google\",\"microsoft\"]. Other lists of favorite companies are not a subset of another list, therefore, the answer is [0,1,4]."
+    },
+    {
+      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
+      "output": "[0,1]",
+      "explanation": "In this case favoriteCompanies[2]=[\"facebook\",\"google\"] is a subset of favoriteCompanies[0]=[\"leetcode\",\"google\",\"facebook\"], therefore, the answer is [0,1]."
+    },
+    {
+      "input": "favoriteCompanies = [[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
+      "output": "[0,1,2,3]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> peopleIndexes(vector<vector<string>>& favoriteCompanies) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> peopleIndexes(List<List<String>> favoriteCompanies) {\n        \n    }\n}",
+    "python": "class Solution:\n    def peopleIndexes(self, favoriteCompanies: list[list[str]]) -> list[int]:\n        ",
+    "typescript": "function peopleIndexes(favoriteCompanies: string[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> PeopleIndexes(IList<IList<string>> favoriteCompanies) {\n        \n    }\n}",
+    "go": "func peopleIndexes(favoriteCompanies [][]string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn people_indexes(favorite_companies: Vec<Vec<String>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "favoriteCompanies": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]"
+    },
+    {
+      "favoriteCompanies": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]"
+    },
+    {
+      "favoriteCompanies": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]"
+    }
+  ],
+  "functionName": "peopleIndexes",
+  "params": [
+    {
+      "name": "favoriteCompanies",
+      "type": "string_list_2d"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Use hashing to convert company names in numbers and then for each list check if this is a subset of any other list.",
+    "In order to check if a list is a subset of another list, use two pointers technique to get a linear solution for this task. The total complexity will be O(n^2 * m) where n is the number of lists and m is the maximum number of elements in a list."
+  ]
+}

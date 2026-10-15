@@ -1,0 +1,77 @@
+{
+  "id": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+  "title": "2030. Smallest K-Length Subsequence With Occurrences of a Letter",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leet\", k = 3, letter = \"e\", repetition = 1",
+      "output": "\"eet\"",
+      "explanation": "There are four subsequences of length 3 that have the letter 'e' appear at least 1 time: - \"lee\" (from \"leet\") - \"let\" (from \"leet\") - \"let\" (from \"leet\") - \"eet\" (from \"leet\") The lexicographically smallest subsequence among them is \"eet\"."
+    },
+    {
+      "input": "s = \"leetcode\", k = 4, letter = \"e\", repetition = 2",
+      "output": "\"ecde\"",
+      "explanation": "\"ecde\" is the lexicographically smallest subsequence of length 4 that has the letter \"e\" appear at least 2 times."
+    },
+    {
+      "input": "s = \"bb\", k = 2, letter = \"b\", repetition = 2",
+      "output": "\"bb\"",
+      "explanation": "\"bb\" is the only subsequence of length 2 that has the letter \"b\" appear at least 2 times."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestSubsequence(string s, int k, char letter, int repetition) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestSubsequence(String s, int k, char letter, int repetition) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestSubsequence(self, s: str, k: int, letter: str, repetition: int) -> str:\n        ",
+    "typescript": "function smallestSubsequence(s: string, k: number, letter: string, repetition: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestSubsequence(string s, int k, char letter, int repetition) {\n        \n    }\n}",
+    "go": "func smallestSubsequence(s string, k int, letter byte, repetition int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_subsequence(s: String, k: i32, letter: char, repetition: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leet",
+      "k": 3,
+      "letter": "e",
+      "repetition": 1
+    },
+    {
+      "s": "leetcode",
+      "k": 4,
+      "letter": "e",
+      "repetition": 2
+    },
+    {
+      "s": "bb",
+      "k": 2,
+      "letter": "b",
+      "repetition": 2
+    }
+  ],
+  "functionName": "smallestSubsequence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "letter",
+      "type": "char"
+    },
+    {
+      "name": "repetition",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Use stack. For every character to be appended, decide how many character(s) from the stack needs to get popped based on the stack length and the count of the required character.",
+    "Pop the extra characters out from the stack and return the characters in the stack (reversed)."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sum-of-sortable-integers",
+  "title": "3886. Sum of Sortable Integers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-sortable-integers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,1,2]",
+      "output": "3",
+      "explanation": "For n = 3, possible divisors are 1 and 3. For k = 1: each subarray has one element. No rotation can sort the array. For k = 3: the single subarray [3, 1, 2] can be rotated once to produce [1, 2, 3], which is sorted. Only k = 3 is sortable. Hence, the answer is 3."
+    },
+    {
+      "input": "nums = [7,6,5]",
+      "output": "0",
+      "explanation": "For n = 3, possible divisors are 1 and 3. For k = 1: each subarray has one element. No rotation can sort the array. For k = 3: the single subarray [7, 6, 5] cannot be rotated into non-decreasing order. No k is sortable. Hence, the answer is 0."
+    },
+    {
+      "input": "nums = [5,8]",
+      "output": "3",
+      "explanation": "For n = 2, possible divisors are 1 and 2. Since [5, 8] is already sorted, every divisor is sortable. Hence, the answer is 1 + 2 = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sortableIntegers(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sortableIntegers(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortableIntegers(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function sortableIntegers(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SortableIntegers(int[] nums) {\n        \n    }\n}",
+    "go": "func sortableIntegers(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sortable_integers(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,1,2]"
+    },
+    {
+      "nums": "[7,6,5]"
+    },
+    {
+      "nums": "[5,8]"
+    }
+  ],
+  "functionName": "sortableIntegers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "First, observe that <code>k</code> must divide <code>n</code>, since the array is partitioned into subarrays of length <code>k</code>. Iterate over all divisors of <code>n</code>.",
+    "Let <code>s</code> be the sorted version of the array. For each divisor <code>k</code>, check every block <code>[i, i+k)</code>.",
+    "A block can be rotated to match its sorted counterpart if the sorted segment <code>s[i..i+k-1]</code> appears as a cyclic rotation of <code>nums[i..i+k-1]</code>.",
+    "You can test this by checking whether the sorted segment exists inside two concatenated copies of the block. If all blocks satisfy this, then <code>k</code> is sortable."
+  ]
+}

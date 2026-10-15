@@ -1,0 +1,62 @@
+{
+  "id": "maximize-sum-of-at-most-k-distinct-elements",
+  "title": "3684. Maximize Sum of At Most K Distinct Elements",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [84,93,100,77,90], k = 3",
+      "output": "[100,93,90]",
+      "explanation": "The maximum sum is 283, which is attained by choosing 93, 100 and 90. We rearrange them in strictly descending order as [100, 93, 90]."
+    },
+    {
+      "input": "nums = [84,93,100,77,93], k = 3",
+      "output": "[100,93,84]",
+      "explanation": "The maximum sum is 277, which is attained by choosing 84, 93 and 100. We rearrange them in strictly descending order as [100, 93, 84]. We cannot choose 93, 100 and 93 because the chosen numbers must be distinct."
+    },
+    {
+      "input": "nums = [1,1,1,2,2,2], k = 6",
+      "output": "[2,1]",
+      "explanation": "The maximum sum is 3, which is attained by choosing 1 and 2. We rearrange them in strictly descending order as [2, 1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> maxKDistinct(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] maxKDistinct(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxKDistinct(self, nums: List[int], k: int) -> List[int]:\n        ",
+    "typescript": "function maxKDistinct(nums: number[], k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MaxKDistinct(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func maxKDistinct(nums []int, k int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_k_distinct(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[84,93,100,77,90]",
+      "k": 3
+    },
+    {
+      "nums": "[84,93,100,77,93]",
+      "k": 3
+    },
+    {
+      "nums": "[1,1,1,2,2,2]",
+      "k": 6
+    }
+  ],
+  "functionName": "maxKDistinct",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use a set to dedupe then sort descending and pick top <code>k</code>."
+  ]
+}

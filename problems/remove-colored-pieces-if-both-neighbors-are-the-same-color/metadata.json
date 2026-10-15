@@ -1,0 +1,57 @@
+{
+  "id": "remove-colored-pieces-if-both-neighbors-are-the-same-color",
+  "title": "2038. Remove Colored Pieces if Both Neighbors are the Same Color",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "colors = \"AAABABB\"",
+      "output": "true",
+      "explanation": "AAABABB -> AABABB Alice moves first. She removes the second 'A' from the left since that is the only 'A' whose neighbors are both 'A'. Now it's Bob's turn. Bob cannot make a move on his turn since there are no 'B's whose neighbors are both 'B'. Thus, Alice wins, so return true."
+    },
+    {
+      "input": "colors = \"AA\"",
+      "output": "false",
+      "explanation": "Alice has her turn first. There are only two 'A's and both are on the edge of the line, so she cannot move on her turn. Thus, Bob wins, so return false."
+    },
+    {
+      "input": "colors = \"ABBBBBBBAAA\"",
+      "output": "false",
+      "explanation": "ABBBBBBBAAA -> ABBBBBBBAA Alice moves first. Her only option is to remove the second to last 'A' from the right. ABBBBBBBAA -> ABBBBBBAA Next is Bob's turn. He has many options for which 'B' piece to remove. He can pick any. On Alice's second turn, she has no more pieces that she can remove. Thus, Bob wins, so return false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool winnerOfGame(string colors) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean winnerOfGame(String colors) {\n        \n    }\n}",
+    "python": "class Solution:\n    def winnerOfGame(self, colors: str) -> bool:\n        ",
+    "typescript": "function winnerOfGame(colors: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool WinnerOfGame(string colors) {\n        \n    }\n}",
+    "go": "func winnerOfGame(colors string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn winner_of_game(colors: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "colors": "AAABABB"
+    },
+    {
+      "colors": "AA"
+    },
+    {
+      "colors": "ABBBBBBBAAA"
+    }
+  ],
+  "functionName": "winnerOfGame",
+  "params": [
+    {
+      "name": "colors",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Does the number of moves a player can make depend on what the other player does? No",
+    "How many moves can Alice make if colors == \"AAAAAA\"",
+    "If a group of n consecutive pieces has the same color, the player can take n - 2 of those pieces if n is greater than or equal to 3"
+  ]
+}

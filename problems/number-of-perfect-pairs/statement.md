@@ -1,0 +1,17 @@
+You are given an integer array `nums`.
+
+A pair of indices `(i, j)` is called **perfect** if the following conditions are satisfied:
+
+-   `i < j`
+-   Let `a = nums[i]`, `b = nums[j]`. Then:
+    -   `min(|a - b|, |a + b|) ≤ min(|a|, |b|)`
+    -   `max(|a - b|, |a + b|) ≥ max(|a|, |b|)`
+
+Return the number of **distinct** perfect pairs.
+
+**Note:** The absolute value `|x|` refers to the **non-negative** value of `x`.
+
+**Constraints:**
+
+-   `2 ≤ nums.length ≤ 10^5`
+-   `-10^9 ≤ nums[i] ≤ 10^9`

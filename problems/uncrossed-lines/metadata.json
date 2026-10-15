@@ -1,0 +1,60 @@
+{
+  "id": "uncrossed-lines",
+  "title": "1035. Uncrossed Lines",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/uncrossed-lines/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,4,2], nums2 = [1,2,4]",
+      "output": "2",
+      "explanation": "We can draw 2 uncrossed lines as in the diagram. We cannot draw 3 uncrossed lines, because the line from nums1[1] = 4 to nums2[2] = 4 will intersect the line from nums1[2]=2 to nums2[1]=2."
+    },
+    {
+      "input": "nums1 = [2,5,1,2,5], nums2 = [10,5,2,1,5,2]",
+      "output": "3"
+    },
+    {
+      "input": "nums1 = [1,3,7,1,7,5], nums2 = [1,9,2,5,1]",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxUncrossedLines(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxUncrossedLines(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxUncrossedLines(self, nums1: list[int], nums2: list[int]) -> int:\n        ",
+    "typescript": "function maxUncrossedLines(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxUncrossedLines(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func maxUncrossedLines(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_uncrossed_lines(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,4,2]",
+      "nums2": "[1,2,4]"
+    },
+    {
+      "nums1": "[2,5,1,2,5]",
+      "nums2": "[10,5,2,1,5,2]"
+    },
+    {
+      "nums1": "[1,3,7,1,7,5]",
+      "nums2": "[1,9,2,5,1]"
+    }
+  ],
+  "functionName": "maxUncrossedLines",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think dynamic programming.  Given an oracle dp(i,j) that tells us how many lines A[i:], B[j:]  [the sequence A[i], A[i+1], ... and B[j], B[j+1], ...] are uncrossed, can we write this as a recursion?"
+  ]
+}

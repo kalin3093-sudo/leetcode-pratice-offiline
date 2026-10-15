@@ -1,0 +1,55 @@
+{
+  "id": "number-of-substrings-with-only-1s",
+  "title": "1513. Number of Substrings With Only 1s",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-substrings-with-only-1s/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"0110111\"",
+      "output": "9",
+      "explanation": "There are 9 substring in total with only 1's characters. \"1\" -> 5 times. \"11\" -> 3 times. \"111\" -> 1 time."
+    },
+    {
+      "input": "s = \"101\"",
+      "output": "2",
+      "explanation": "Substring \"1\" is shown 2 times in s."
+    },
+    {
+      "input": "s = \"111111\"",
+      "output": "21",
+      "explanation": "Each substring contains only 1's characters."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSub(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSub(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSub(self, s: str) -> int:\n        ",
+    "typescript": "function numSub(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSub(string s) {\n        \n    }\n}",
+    "go": "func numSub(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_sub(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "0110111"
+    },
+    {
+      "s": "101"
+    },
+    {
+      "s": "111111"
+    }
+  ],
+  "functionName": "numSub",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count number of 1s in each consecutive-1 group. For a group with n consecutive 1s, the total contribution of it to the final answer is (n + 1) * n // 2."
+  ]
+}

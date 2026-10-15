@@ -1,0 +1,54 @@
+{
+  "id": "minimum-number-of-operations-to-make-word-k-periodic",
+  "title": "3137. Minimum Number of Operations to Make Word K-Periodic",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"leetcodeleet\", k = 4",
+      "output": "1",
+      "explanation": "We can obtain a 4-periodic string by picking i = 4 and j = 0. After this operation, word becomes equal to \"leetleetleet\"."
+    },
+    {
+      "input": "word = \"leetcoleet\", k = 2",
+      "output": "3",
+      "explanation": "We can obtain a 2-periodic string by applying the operations in the table below. i j word 0 2 etetcoleet 4 0 etetetleet 6 0 etetetetet"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperationsToMakeKPeriodic(string word, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperationsToMakeKPeriodic(String word, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOperationsToMakeKPeriodic(self, word: str, k: int) -> int:\n        ",
+    "typescript": "function minimumOperationsToMakeKPeriodic(word: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperationsToMakeKPeriodic(string word, int k) {\n        \n    }\n}",
+    "go": "func minimumOperationsToMakeKPeriodic(word string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations_to_make_k_periodic(word: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "leetcodeleet",
+      "k": 4
+    },
+    {
+      "word": "leetcoleet",
+      "k": 2
+    }
+  ],
+  "functionName": "minimumOperationsToMakeKPeriodic",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Calculate the frequency of each substring of length <code>k</code> that starts at an index that is divisible by <code>k</code>.",
+    "The period of the final string will be the substring with the highest frequency."
+  ]
+}

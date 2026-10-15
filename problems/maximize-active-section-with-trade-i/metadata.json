@@ -1,0 +1,65 @@
+{
+  "id": "maximize-active-section-with-trade-i",
+  "title": "3499. Maximize Active Section with Trade I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-active-section-with-trade-i/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"01\"",
+      "output": "1",
+      "explanation": "Because there is no block of '1's surrounded by '0's, no valid trade is possible. The maximum number of active sections is 1."
+    },
+    {
+      "input": "s = \"0100\"",
+      "output": "4",
+      "explanation": "String \"0100\" &rarr; Augmented to \"101001\". Choose \"0100\", convert \"101001\" &rarr; \"100001\" &rarr; \"111111\". The final string without augmentation is \"1111\". The maximum number of active sections is 4."
+    },
+    {
+      "input": "s = \"1000100\"",
+      "output": "7",
+      "explanation": "String \"1000100\" &rarr; Augmented to \"110001001\". Choose \"000100\", convert \"110001001\" &rarr; \"110000001\" &rarr; \"111111111\". The final string without augmentation is \"1111111\". The maximum number of active sections is 7."
+    },
+    {
+      "input": "s = \"01010\"",
+      "output": "4",
+      "explanation": "String \"01010\" &rarr; Augmented to \"1010101\". Choose \"010\", convert \"1010101\" &rarr; \"1000101\" &rarr; \"1111101\". The final string without augmentation is \"11110\". The maximum number of active sections is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxActiveSectionsAfterTrade(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxActiveSectionsAfterTrade(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxActiveSectionsAfterTrade(self, s: str) -> int:\n        ",
+    "typescript": "function maxActiveSectionsAfterTrade(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxActiveSectionsAfterTrade(string s) {\n        \n    }\n}",
+    "go": "func maxActiveSectionsAfterTrade(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_active_sections_after_trade(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "01"
+    },
+    {
+      "s": "0100"
+    },
+    {
+      "s": "1000100"
+    },
+    {
+      "s": "01010"
+    }
+  ],
+  "functionName": "maxActiveSectionsAfterTrade",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Split the string into several zero-one segments.",
+    "For each one-segment, if it has two neighbors (i.e., it is surrounded by two zero-segments), the total sum of their lengths is one of the candidates for <code>delta</code>.",
+    "Find the maximum <code>delta</code> and add it to the total number of ones in the string."
+  ]
+}

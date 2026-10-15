@@ -1,0 +1,22 @@
+import java.util.*;
+class Marker {
+  public String addSpaces(String s, int[] spaces) {
+    StringBuilder sb = new StringBuilder();
+    int j = 0; // spaces' index
+
+    for (int i = 0; i < s.length(); ++i) {
+      if (j < spaces.length && i == spaces[j]) {
+        sb.append(' ');
+        ++j;
+      }
+      sb.append(s.charAt(i));
+    }
+
+    return sb.toString();
+  }
+
+    public boolean isCorrect(String s, int[] spaces, String output) {
+        String expected = addSpaces(s, spaces);
+        return expected.equals(output);
+    }
+}

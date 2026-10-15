@@ -1,0 +1,47 @@
+{
+  "id": "traffic-signal-color",
+  "title": "3894. Traffic Signal Color",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/traffic-signal-color/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "timer = 60",
+      "output": "\"Red\"",
+      "explanation": "Since timer = 60, and 30 < timer <= 90, the answer is \"Red\"."
+    },
+    {
+      "input": "timer = 5",
+      "output": "\"Invalid\"",
+      "explanation": "Since timer = 5, it does not satisfy any of the given conditions, the answer is \"Invalid\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string trafficSignal(int timer) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String trafficSignal(int timer) {\n        \n    }\n}",
+    "python": "class Solution:\n    def trafficSignal(self, timer: int) -> str:\n        ",
+    "typescript": "function trafficSignal(timer: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string TrafficSignal(int timer) {\n        \n    }\n}",
+    "go": "func trafficSignal(timer int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn traffic_signal(timer: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "timer": 60
+    },
+    {
+      "timer": 5
+    }
+  ],
+  "functionName": "trafficSignal",
+  "params": [
+    {
+      "name": "timer",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Simulate as described"
+  ]
+}

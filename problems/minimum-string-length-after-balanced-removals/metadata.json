@@ -1,0 +1,57 @@
+{
+  "id": "minimum-string-length-after-balanced-removals",
+  "title": "3746. Minimum String Length After Balanced Removals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-string-length-after-balanced-removals/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aabbab\"",
+      "output": "0",
+      "explanation": "The substring \"aabbab\" has three 'a' and three 'b'. Since their counts are equal, we can remove the entire string directly. The minimum length is 0."
+    },
+    {
+      "input": "s = \"aaaa\"",
+      "output": "4",
+      "explanation": "Every substring of \"aaaa\" contains only 'a' characters. No substring can be removed as a result, so the minimum length remains 4."
+    },
+    {
+      "input": "s = \"aaabb\"",
+      "output": "1",
+      "explanation": "First, remove the substring \"ab\", leaving \"aab\". Next, remove the new substring \"ab\", leaving \"a\". No further removals are possible, so the minimum length is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minLengthAfterRemovals(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minLengthAfterRemovals(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minLengthAfterRemovals(self, s: str) -> int:\n        ",
+    "typescript": "function minLengthAfterRemovals(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinLengthAfterRemovals(string s) {\n        \n    }\n}",
+    "go": "func minLengthAfterRemovals(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_length_after_removals(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aabbab"
+    },
+    {
+      "s": "aaaa"
+    },
+    {
+      "s": "aaabb"
+    }
+  ],
+  "functionName": "minLengthAfterRemovals",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Remove the longest possible balanced substring initially",
+    "Let the count of a's be <code>count_a</code> and the count of b's be <code>count_b</code>. Can we derive the final length from these?",
+    "The answer is <code>abs(count_a - count_b)</code>"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "make-a-square-with-the-same-color",
+  "title": "3127. Make a Square with the Same Color",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/make-a-square-with-the-same-color/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]",
+      "output": "true",
+      "explanation": "It can be done by changing the color of the grid[0][2]."
+    },
+    {
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]",
+      "output": "false",
+      "explanation": "It cannot be done by changing at most one cell."
+    },
+    {
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]",
+      "output": "true",
+      "explanation": "The grid already contains a 2 x 2 square of the same color."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canMakeSquare(vector<vector<char>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canMakeSquare(char[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canMakeSquare(self, grid: List[List[str]]) -> bool:\n        ",
+    "typescript": "function canMakeSquare(grid: string[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanMakeSquare(char[][] grid) {\n        \n    }\n}",
+    "go": "func canMakeSquare(grid [][]byte) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_make_square(grid: Vec<Vec<char>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]"
+    },
+    {
+      "grid": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]"
+    },
+    {
+      "grid": "[[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]"
+    }
+  ],
+  "functionName": "canMakeSquare",
+  "params": [
+    {
+      "name": "grid",
+      "type": "char_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "It is impossible to create <code>2 x 2</code> square with the same color by changing the color of at most one cell when the number of <code>‘W'</code> or <code>'B’</code> in all squares is 2."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "ways-to-make-a-fair-array",
+  "title": "1664. Ways to Make a Fair Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/ways-to-make-a-fair-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,6,4]",
+      "output": "1",
+      "explanation": "Remove index 0: [1,6,4] -> Even sum: 1 + 4 = 5. Odd sum: 6. Not fair. Remove index 1: [2,6,4] -> Even sum: 2 + 4 = 6. Odd sum: 6. Fair. Remove index 2: [2,1,4] -> Even sum: 2 + 4 = 6. Odd sum: 1. Not fair. Remove index 3: [2,1,6] -> Even sum: 2 + 6 = 8. Odd sum: 1. Not fair. There is 1 index that you can remove to make nums fair."
+    },
+    {
+      "input": "nums = [1,1,1]",
+      "output": "3",
+      "explanation": "You can remove any index and the remaining array is fair."
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "0",
+      "explanation": "You cannot make a fair array after removing any index."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int waysToMakeFair(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int waysToMakeFair(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def waysToMakeFair(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function waysToMakeFair(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int WaysToMakeFair(int[] nums) {\n        \n    }\n}",
+    "go": "func waysToMakeFair(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn ways_to_make_fair(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,6,4]"
+    },
+    {
+      "nums": "[1,1,1]"
+    },
+    {
+      "nums": "[1,2,3]"
+    }
+  ],
+  "functionName": "waysToMakeFair",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The parity of the indices after the removed element changes.",
+    "Calculate prefix sums for even and odd indices separately to calculate for each index in O(1)."
+  ]
+}

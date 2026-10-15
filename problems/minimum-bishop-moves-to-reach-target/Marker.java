@@ -1,0 +1,15 @@
+import java.util.*;
+class Marker {
+    public int minBishopMoves(int[] source, int[] target) {
+        int sr = source[0], sc = source[1];
+        int tr = target[0], tc = target[1];
+        if ((sr + sc) % 2 != (tr + tc) % 2) return -1;
+        if (sr - sc == tr - tc || sr + sc == tr + tc) return 1;
+        return 2;
+    }
+
+    public boolean isCorrect(int[] source, int[] target, int output) {
+        int expected = minBishopMoves(source, target);
+        return expected == output;
+    }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "largest-local-values-in-a-matrix-ii",
+  "title": "3933. Largest Local Values in a Matrix II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-local-values-in-a-matrix-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,2,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0]]",
+      "output": "1",
+      "explanation": "For the non-zero cell (3, 3), x = matrix[3][3] = 2. The highlighted cells are the considered cells within x rows and x columns of (3, 3). The four cells with both row and column distances equal to x = 2 are ignored. No considered cell has a value greater than 2, so (3, 3) is a local maximum. There are no other non-zero cells, so the answer is 1."
+    },
+    {
+      "input": "matrix = [[1,2],[3,4]]",
+      "output": "1",
+      "explanation": "Only the cell with value 4 is a local maximum. Every other non-zero cell considers a cell with a greater value."
+    },
+    {
+      "input": "matrix = [[1,0,1],[0,1,0],[1,0,1]]",
+      "output": "5",
+      "explanation": "For a cell with value 1, the considered cells are the cell itself and its 4-directionally adjacent cells that are inside the matrix. Each of the five cells with value 1 only considers cells with values 0 or 1, so all five of them are local maximums."
+    },
+    {
+      "input": "matrix = [[1,1],[1,1]]",
+      "output": "4",
+      "explanation": "All cells have the same value. Therefore, no cell considers another cell with a greater value, so all 4 cells are local maximums."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countLocalMaximums(vector<vector<int>>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countLocalMaximums(int[][] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countLocalMaximums(self, matrix: list[list[int]]) -> int:\n        ",
+    "typescript": "function countLocalMaximums(matrix: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountLocalMaximums(int[][] matrix) {\n        \n    }\n}",
+    "go": "func countLocalMaximums(matrix [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_local_maximums(matrix: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,2,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0]]"
+    },
+    {
+      "matrix": "[[1,2],[3,4]]"
+    },
+    {
+      "matrix": "[[1,0,1],[0,1,0],[1,0,1]]"
+    }
+  ],
+  "functionName": "countLocalMaximums",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Brute forcing every centered square can be too slow: each check may scan up to <code>200 * 200</code> cells.",
+    "Since all values are at most 200, build prefix sums by threshold: for each <code>v</code>, store how many cells have value <code>> v</code> in every prefix rectangle.",
+    "For a cell with value <code>x</code>, query its clamped square using the prefix sum for threshold <code>x</code>. If the count of values <code>> x</code> is zero, it is a local maximum.",
+    "Remember to subtract the ignored corner cells <code>(i ± x, j ± x)</code> from the queried count if they are inside the matrix and greater than <code>x</code>."
+  ]
+}

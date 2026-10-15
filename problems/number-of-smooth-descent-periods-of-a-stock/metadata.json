@@ -1,0 +1,57 @@
+{
+  "id": "number-of-smooth-descent-periods-of-a-stock",
+  "title": "2110. Number of Smooth Descent Periods of a Stock",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "prices = [3,2,1,4]",
+      "output": "7",
+      "explanation": "There are 7 smooth descent periods: [3], [2], [1], [4], [3,2], [2,1], and [3,2,1] Note that a period with one day is a smooth descent period by the definition."
+    },
+    {
+      "input": "prices = [8,6,7,7]",
+      "output": "4",
+      "explanation": "There are 4 smooth descent periods: [8], [6], [7], and [7] Note that [8,6] is not a smooth descent period as 8 - 6 &ne; 1."
+    },
+    {
+      "input": "prices = [1]",
+      "output": "1",
+      "explanation": "There is 1 smooth descent period: [1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long getDescentPeriods(vector<int>& prices) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long getDescentPeriods(int[] prices) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getDescentPeriods(self, prices: list[int]) -> int:\n        ",
+    "typescript": "function getDescentPeriods(prices: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long GetDescentPeriods(int[] prices) {\n        \n    }\n}",
+    "go": "func getDescentPeriods(prices []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_descent_periods(prices: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "prices": "[3,2,1,4]"
+    },
+    {
+      "prices": "[8,6,7,7]"
+    },
+    {
+      "prices": "[1]"
+    }
+  ],
+  "functionName": "getDescentPeriods",
+  "params": [
+    {
+      "name": "prices",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Any array is a series of adjacent longest possible smooth descent periods. For example, [5,3,2,1,7,6] is [5] + [3,2,1] + [7,6].",
+    "Think of a 2-pointer approach to traverse the array and find each longest possible period.",
+    "Suppose you found the longest possible period with a length of k. How many periods are within that period? How can you count them quickly? Think of the formula to calculate the sum of 1, 2, 3, ..., k."
+  ]
+}

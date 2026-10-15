@@ -1,0 +1,60 @@
+{
+  "id": "shift-2d-grid",
+  "title": "1260. Shift 2D Grid",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/shift-2d-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2,3],[4,5,6],[7,8,9]], k = 1",
+      "output": "[[9,1,2],[3,4,5],[6,7,8]]"
+    },
+    {
+      "input": "grid = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4",
+      "output": "[[12,0,21,13],[3,8,1,9],[19,7,2,5],[4,6,11,10]]"
+    },
+    {
+      "input": "grid = [[1,2,3],[4,5,6],[7,8,9]], k = 9",
+      "output": "[[1,2,3],[4,5,6],[7,8,9]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> shiftGrid(vector<vector<int>>& grid, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> shiftGrid(int[][] grid, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shiftGrid(self, grid: list[list[int]], k: int) -> list[list[int]]:\n        ",
+    "typescript": "function shiftGrid(grid: number[][], k: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> ShiftGrid(int[][] grid, int k) {\n        \n    }\n}",
+    "go": "func shiftGrid(grid [][]int, k int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shift_grid(grid: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "k": 1
+    },
+    {
+      "grid": "[[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]]",
+      "k": 4
+    },
+    {
+      "grid": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "k": 9
+    }
+  ],
+  "functionName": "shiftGrid",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": [
+    "Simulate step by step. move grid[i][j] to grid[i][j+1]. handle last column of the grid.",
+    "Put the matrix row by row to a vector. take k % vector.length and move last k of the vector to the beginning. put the vector to the matrix back the same way."
+  ]
+}

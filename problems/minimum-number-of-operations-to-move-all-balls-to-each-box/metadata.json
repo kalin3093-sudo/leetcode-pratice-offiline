@@ -1,0 +1,48 @@
+{
+  "id": "minimum-number-of-operations-to-move-all-balls-to-each-box",
+  "title": "1769. Minimum Number of Operations to Move All Balls to Each Box",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "boxes = \"110\"",
+      "output": "[1,1,3]",
+      "explanation": "The answer for each box is as follows: 1) First box: you will have to move one ball from the second box to the first box in one operation. 2) Second box: you will have to move one ball from the first box to the second box in one operation. 3) Third box: you will have to move one ball from the first box to the third box in two operations, and move one ball from the second box to the third box in one operation."
+    },
+    {
+      "input": "boxes = \"001011\"",
+      "output": "[11,8,5,4,3,4]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minOperations(string boxes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] minOperations(String boxes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, boxes: str) -> list[int]:\n        ",
+    "typescript": "function minOperations(boxes: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MinOperations(string boxes) {\n        \n    }\n}",
+    "go": "func minOperations(boxes string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(boxes: String) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "boxes": "110"
+    },
+    {
+      "boxes": "001011"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "boxes",
+      "type": "string"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "If you want to move a ball from box i to box j, you'll need abs(i-j) moves.",
+    "To move all balls to some box, you can move them one by one.",
+    "For each box i, iterate on each ball in a box j, and add abs(i-j) to answers[i]."
+  ]
+}

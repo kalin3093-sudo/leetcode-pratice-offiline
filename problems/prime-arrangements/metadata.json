@@ -1,0 +1,48 @@
+{
+  "id": "prime-arrangements",
+  "title": "1175. Prime Arrangements",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/prime-arrangements/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "12",
+      "explanation": "For example [1,2,5,4,3] is a valid permutation, but [5,2,3,4,1] is not because the prime number 5 is at index 1."
+    },
+    {
+      "input": "n = 100",
+      "output": "682289015"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numPrimeArrangements(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numPrimeArrangements(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numPrimeArrangements(self, n: int) -> int:\n        ",
+    "typescript": "function numPrimeArrangements(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumPrimeArrangements(int n) {\n        \n    }\n}",
+    "go": "func numPrimeArrangements(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_prime_arrangements(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 100
+    }
+  ],
+  "functionName": "numPrimeArrangements",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Solve the problem for prime numbers and composite numbers separately.",
+    "Multiply the number of permutations of prime numbers over prime indices with the number of permutations of composite numbers over composite indices.",
+    "The number of permutations equals the factorial."
+  ]
+}

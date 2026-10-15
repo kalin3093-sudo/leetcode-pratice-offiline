@@ -1,0 +1,69 @@
+{
+  "id": "distance-between-bus-stops",
+  "title": "1184. Distance Between Bus Stops",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/distance-between-bus-stops/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "distance = [1,2,3,4], start = 0, destination = 1",
+      "output": "1",
+      "explanation": "Distance between 0 and 1 is 1 or 9, minimum is 1."
+    },
+    {
+      "input": "distance = [1,2,3,4], start = 0, destination = 2",
+      "output": "3",
+      "explanation": "Distance between 0 and 2 is 3 or 7, minimum is 3."
+    },
+    {
+      "input": "distance = [1,2,3,4], start = 0, destination = 3",
+      "output": "4",
+      "explanation": "Distance between 0 and 3 is 6 or 4, minimum is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distanceBetweenBusStops(vector<int>& distance, int start, int destination) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distanceBetweenBusStops(int[] distance, int start, int destination) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distanceBetweenBusStops(self, distance: List[int], start: int, destination: int) -> int:\n        ",
+    "typescript": "function distanceBetweenBusStops(distance: number[], start: number, destination: number): number {\n\n};",
+    "csharp": "public class Solution {\n    public int DistanceBetweenBusStops(int[] distance, int start, int destination) {\n        \n    }\n}",
+    "go": "func distanceBetweenBusStops(distance []int, start int, destination int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distance_between_bus_stops(distance: Vec<i32>, start: i32, destination: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "distance": "[1,2,3,4]",
+      "start": 0,
+      "destination": 1
+    },
+    {
+      "distance": "[1,2,3,4]",
+      "start": 0,
+      "destination": 2
+    },
+    {
+      "distance": "[1,2,3,4]",
+      "start": 0,
+      "destination": 3
+    }
+  ],
+  "functionName": "distanceBetweenBusStops",
+  "params": [
+    {
+      "name": "distance",
+      "type": "int_array"
+    },
+    {
+      "name": "start",
+      "type": "int"
+    },
+    {
+      "name": "destination",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the distance between the two stops if the bus moved in clockwise or counterclockwise directions."
+  ]
+}

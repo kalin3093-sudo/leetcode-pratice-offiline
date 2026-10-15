@@ -1,0 +1,47 @@
+{
+  "id": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+  "title": "2996. Smallest Missing Integer Greater Than Sequential Prefix Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,2,5]",
+      "output": "6",
+      "explanation": "The longest sequential prefix of nums is [1,2,3] with a sum of 6. 6 is not in the array, therefore 6 is the smallest missing integer greater than or equal to the sum of the longest sequential prefix."
+    },
+    {
+      "input": "nums = [3,4,5,1,12,14,13]",
+      "output": "15",
+      "explanation": "The longest sequential prefix of nums is [3,4,5] with a sum of 12. 12, 13, and 14 belong to the array while 15 does not. Therefore 15 is the smallest missing integer greater than or equal to the sum of the longest sequential prefix."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int missingInteger(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int missingInteger(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def missingInteger(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function missingInteger(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MissingInteger(int[] nums) {\n        \n    }\n}",
+    "go": "func missingInteger(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn missing_integer(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,2,5]"
+    },
+    {
+      "nums": "[3,4,5,1,12,14,13]"
+    }
+  ],
+  "functionName": "missingInteger",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "To find the longest sequential prefix, iterate from left to right. For a fixed <code>i</code>, if <code>nums[i] != nums[i - 1] + 1</code> then the longest sequential prefix ends at <code>i - 1</code>."
+  ]
+}

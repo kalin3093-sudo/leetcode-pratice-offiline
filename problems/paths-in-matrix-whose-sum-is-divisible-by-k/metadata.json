@@ -1,0 +1,64 @@
+{
+  "id": "paths-in-matrix-whose-sum-is-divisible-by-k",
+  "title": "2435. Paths in Matrix Whose Sum Is Divisible by K",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[5,2,4],[3,0,5],[0,7,2]], k = 3",
+      "output": "2",
+      "explanation": "There are two paths where the sum of the elements on the path is divisible by k. The first path highlighted in red has a sum of 5 + 2 + 4 + 5 + 2 = 18 which is divisible by 3. The second path highlighted in blue has a sum of 5 + 3 + 0 + 5 + 2 = 15 which is divisible by 3."
+    },
+    {
+      "input": "grid = [[0,0]], k = 5",
+      "output": "1",
+      "explanation": "The path highlighted in red has a sum of 0 + 0 = 0 which is divisible by 5."
+    },
+    {
+      "input": "grid = [[7,3,4,9],[2,3,6,2],[2,3,7,0]], k = 1",
+      "output": "10",
+      "explanation": "Every integer is divisible by 1 so the sum of the elements on every possible path is divisible by k."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfPaths(vector<vector<int>>& grid, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfPaths(int[][] grid, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfPaths(self, grid: list[list[int]], k: int) -> int:\n        ",
+    "typescript": "function numberOfPaths(grid: number[][], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfPaths(int[][] grid, int k) {\n        \n    }\n}",
+    "go": "func numberOfPaths(grid [][]int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_paths(grid: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[5,2,4],[3,0,5],[0,7,2]]",
+      "k": 3
+    },
+    {
+      "grid": "[[0,0]]",
+      "k": 5
+    },
+    {
+      "grid": "[[7,3,4,9],[2,3,6,2],[2,3,7,0]]",
+      "k": 1
+    }
+  ],
+  "functionName": "numberOfPaths",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The actual numbers in grid do not matter. What matters are the remainders you get when you divide the numbers by k.",
+    "We can use dynamic programming to solve this problem. What can we use as states?",
+    "Let dp[i][j][value] represent the number of paths where the sum of the elements on the path has a remainder of value when divided by k."
+  ]
+}

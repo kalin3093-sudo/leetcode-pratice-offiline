@@ -1,0 +1,49 @@
+{
+  "id": "vowel-spellchecker",
+  "title": "966. Vowel Spellchecker",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/vowel-spellchecker/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "output": "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "input": "wordlist = [\"yellow\"], queries = [\"YellOw\"]",
+      "output": "[\"yellow\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> spellchecker(vector<string>& wordlist, vector<string>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] spellchecker(String[] wordlist, String[] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def spellchecker(self, wordlist: list[str], queries: list[str]) -> list[str]:\n        ",
+    "typescript": "function spellchecker(wordlist: string[], queries: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] Spellchecker(string[] wordlist, string[] queries) {\n        \n    }\n}",
+    "go": "func spellchecker(wordlist []string, queries []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn spellchecker(wordlist: Vec<String>, queries: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "wordlist": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]",
+      "queries": "[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]"
+    },
+    {
+      "wordlist": "[\"yellow\"]",
+      "queries": "[\"YellOw\"]"
+    }
+  ],
+  "functionName": "spellchecker",
+  "params": [
+    {
+      "name": "wordlist",
+      "type": "string_array"
+    },
+    {
+      "name": "queries",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": []
+}

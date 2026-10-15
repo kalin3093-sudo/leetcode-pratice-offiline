@@ -1,0 +1,54 @@
+{
+  "id": "maximum-number-of-eaten-apples",
+  "title": "1705. Maximum Number of Eaten Apples",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-eaten-apples/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "apples = [1,2,3,5,2], days = [3,2,1,4,2]",
+      "output": "7",
+      "explanation": "You can eat 7 apples: - On the first day, you eat an apple that grew on the first day. - On the second day, you eat an apple that grew on the second day. - On the third day, you eat an apple that grew on the second day. After this day, the apples that grew on the third day rot. - On the fourth to the seventh days, you eat apples that grew on the fourth day."
+    },
+    {
+      "input": "apples = [3,0,0,0,0,2], days = [3,0,0,0,0,2]",
+      "output": "5",
+      "explanation": "You can eat 5 apples: - On the first to the third day you eat apples that grew on the first day. - Do nothing on the fouth and fifth days. - On the sixth and seventh days you eat apples that grew on the sixth day."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int eatenApples(vector<int>& apples, vector<int>& days) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int eatenApples(int[] apples, int[] days) {\n        \n    }\n}",
+    "python": "class Solution:\n    def eatenApples(self, apples: list[int], days: list[int]) -> int:\n        ",
+    "typescript": "function eatenApples(apples: number[], days: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EatenApples(int[] apples, int[] days) {\n        \n    }\n}",
+    "go": "func eatenApples(apples []int, days []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn eaten_apples(apples: Vec<i32>, days: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "apples": "[1,2,3,5,2]",
+      "days": "[3,2,1,4,2]"
+    },
+    {
+      "apples": "[3,0,0,0,0,2]",
+      "days": "[3,0,0,0,0,2]"
+    }
+  ],
+  "functionName": "eatenApples",
+  "params": [
+    {
+      "name": "apples",
+      "type": "int_array"
+    },
+    {
+      "name": "days",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "It's optimal to finish the apples that will rot first before those that will rot last",
+    "You need a structure to keep the apples sorted by their finish time"
+  ]
+}

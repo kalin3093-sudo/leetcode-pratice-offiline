@@ -1,0 +1,55 @@
+{
+  "id": "minimum-number-of-taps-to-open-to-water-a-garden",
+  "title": "1326. Minimum Number of Taps to Open to Water a Garden",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, ranges = [3,4,1,1,0,0]",
+      "output": "1",
+      "explanation": "The tap at point 0 can cover the interval [-3,3] The tap at point 1 can cover the interval [-3,5] The tap at point 2 can cover the interval [1,3] The tap at point 3 can cover the interval [2,4] The tap at point 4 can cover the interval [4,4] The tap at point 5 can cover the interval [5,5] Opening Only the second tap will water the whole garden [0,5]"
+    },
+    {
+      "input": "n = 3, ranges = [0,0,0,0]",
+      "output": "-1",
+      "explanation": "Even if you activate all the four taps you cannot water the whole garden."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minTaps(int n, vector<int>& ranges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minTaps(int n, int[] ranges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minTaps(self, n: int, ranges: list[int]) -> int:\n        ",
+    "typescript": "function minTaps(n: number, ranges: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinTaps(int n, int[] ranges) {\n        \n    }\n}",
+    "go": "func minTaps(n int, ranges []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_taps(n: i32, ranges: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "ranges": "[3,4,1,1,0,0]"
+    },
+    {
+      "n": 3,
+      "ranges": "[0,0,0,0]"
+    }
+  ],
+  "functionName": "minTaps",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "ranges",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Create intervals of the area covered by each tap, sort intervals by the left end.",
+    "We need to cover the interval [0, n]. we can start with the first interval and out of all intervals that intersect with it we choose the one that covers the farthest point to the right.",
+    "What if there is a gap between intervals that is not covered ? we should stop and return -1 as there is some interval that cannot be covered."
+  ]
+}

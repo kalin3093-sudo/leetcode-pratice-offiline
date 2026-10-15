@@ -1,0 +1,59 @@
+{
+  "id": "inverse-coin-change",
+  "title": "3592. Inverse Coin Change",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/inverse-coin-change/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "numWays = [0,1,0,2,0,3,0,4,0,5]",
+      "output": "[2,4,6]",
+      "explanation": "Amount Number of ways Explanation 1 0 There is no way to select coins with total value 1. 2 1 The only way is [2]. 3 0 There is no way to select coins with total value 3. 4 2 The ways are [2, 2] and [4]. 5 0 There is no way to select coins with total value 5. 6 3 The ways are [2, 2, 2], [2, 4], and [6]. 7 0 There is no way to select coins with total value 7. 8 4 The ways are [2, 2, 2, 2], [2, 2, 4], [2, 6], and [4, 4]. 9 0 There is no way to select coins with total value 9. 10 5 The ways are [2, 2, 2, 2, 2], [2, 2, 2, 4], [2, 4, 4], [2, 2, 6], and [4, 6]."
+    },
+    {
+      "input": "numWays = [1,2,2,3,4]",
+      "output": "[1,2,5]",
+      "explanation": "Amount Number of ways Explanation 1 1 The only way is [1]. 2 2 The ways are [1, 1] and [2]. 3 2 The ways are [1, 1, 1] and [1, 2]. 4 3 The ways are [1, 1, 1, 1], [1, 1, 2], and [2, 2]. 5 4 The ways are [1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 2, 2], and [5]."
+    },
+    {
+      "input": "numWays = [1,2,3,4,15]",
+      "output": "[]",
+      "explanation": "No set of denomination satisfies this array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findCoins(vector<int>& numWays) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> findCoins(int[] numWays) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findCoins(self, numWays: List[int]) -> List[int]:\n        ",
+    "typescript": "function findCoins(numWays: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FindCoins(int[] numWays) {\n        \n    }\n}",
+    "go": "func findCoins(numWays []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_coins(num_ways: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "numWays": "[0,1,0,2,0,3,0,4,0,5]"
+    },
+    {
+      "numWays": "[1,2,2,3,4]"
+    },
+    {
+      "numWays": "[1,2,3,4,15]"
+    }
+  ],
+  "functionName": "findCoins",
+  "params": [
+    {
+      "name": "numWays",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Observe that for the smallest denomination <code>c</code>, you must have <code>numWays[c] == 1</code>.",
+    "Find the smallest <code>c > 0</code> with <code>numWays[c] == 1</code> and append <code>c</code> to your <code>ans</code> list.",
+    "\"Remove\" that coin’s contribution by doing, for each <code>s</code> from <code>c</code> up to <code>n</code>: numWays[s] -= numWays[s - c]",
+    "Repeat: pick the next smallest <code>c</code> with <code>numWays[c] == 1</code>, remove it, and so on.",
+    "At the end, if <code>numWays</code> is all zeros, your <code>ans</code> is valid; otherwise, return an empty array."
+  ]
+}

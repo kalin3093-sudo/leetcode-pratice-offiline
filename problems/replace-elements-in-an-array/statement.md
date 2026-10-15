@@ -1,0 +1,19 @@
+You are given a **0-indexed** array `nums` that consists of `n` **distinct** positive integers. Apply `m` operations to this array, where in the `i^th` operation you replace the number `operations[i][0]` with `operations[i][1]`.
+
+It is guaranteed that in the `i^th` operation:
+
+-   `operations[i][0]` **exists** in `nums`.
+-   `operations[i][1]` does **not** exist in `nums`.
+
+Return *the array obtained after applying all the operations*.
+
+**Constraints:**
+
+-   `n == nums.length`
+-   `m == operations.length`
+-   `1 ≤ n, m ≤ 10^5`
+-   All the values of `nums` are **distinct**.
+-   `operations[i].length == 2`
+-   `1 ≤ nums[i], operations[i][0], operations[i][1] ≤ 10^6`
+-   `operations[i][0]` will exist in `nums` when applying the `i^th` operation.
+-   `operations[i][1]` will not exist in `nums` when applying the `i^th` operation.

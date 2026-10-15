@@ -1,0 +1,52 @@
+{
+  "id": "lexicographically-smallest-string-after-deleting-duplicate-characters",
+  "title": "3816. Lexicographically Smallest String After Deleting Duplicate Characters",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aaccb\"",
+      "output": "\"aacb\"",
+      "explanation": "We can form the strings \"acb\", \"aacb\", \"accb\", and \"aaccb\". \"aacb\" is the lexicographically smallest one. For example, we can obtain \"aacb\" by choosing 'c' and deleting its first occurrence."
+    },
+    {
+      "input": "s = \"z\"",
+      "output": "\"z\"",
+      "explanation": "We cannot perform any operations. The only string we can form is \"z\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lexSmallestAfterDeletion(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lexSmallestAfterDeletion(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lexSmallestAfterDeletion(self, s: str) -> str:\n        ",
+    "typescript": "function lexSmallestAfterDeletion(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LexSmallestAfterDeletion(string s) {\n        \n    }\n}",
+    "go": "func lexSmallestAfterDeletion(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn lex_smallest_after_deletion(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaccb"
+    },
+    {
+      "s": "z"
+    }
+  ],
+  "functionName": "lexSmallestAfterDeletion",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Solve greedily.",
+    "Each distinct letter must appear at least once in the final string.",
+    "For each letter, maintain a deque of its positions.",
+    "At each step, try letters from <code>'a'</code> to <code>'z'</code> and pick the smallest letter whose earliest position lies within a safe window.",
+    "Do not pick an occurrence if choosing it would make some other letter impossible to keep.",
+    "Mark positions as used and repeat, always minimizing the next chosen character."
+  ]
+}

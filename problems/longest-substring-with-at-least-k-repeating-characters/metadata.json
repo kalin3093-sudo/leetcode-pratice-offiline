@@ -1,0 +1,51 @@
+{
+  "id": "longest-substring-with-at-least-k-repeating-characters",
+  "title": "395. Longest Substring with At Least K Repeating Characters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aaabb\", k = 3",
+      "output": "3",
+      "explanation": "The longest substring is \"aaa\", as 'a' is repeated 3 times."
+    },
+    {
+      "input": "s = \"ababbc\", k = 2",
+      "output": "5",
+      "explanation": "The longest substring is \"ababb\", as 'a' is repeated 2 times and 'b' is repeated 3 times."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubstring(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubstring(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubstring(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function longestSubstring(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubstring(string s, int k) {\n        \n    }\n}",
+    "go": "func longestSubstring(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_substring(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaabb",
+      "k": 3
+    },
+    {
+      "s": "ababbc",
+      "k": 2
+    }
+  ],
+  "functionName": "longestSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

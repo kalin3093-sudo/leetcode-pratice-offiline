@@ -1,0 +1,55 @@
+{
+  "id": "decode-the-message",
+  "title": "2325. Decode the Message",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/decode-the-message/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "key = \"the quick brown fox jumps over the lazy dog\", message = \"vkbs bs t suepuv\"",
+      "output": "\"this is a secret\"",
+      "explanation": "The diagram above shows the substitution table. It is obtained by taking the first appearance of each letter in \"the quick brown fox jumps over the lazy dog\"."
+    },
+    {
+      "input": "key = \"eljuxhpwnyrdgtqkviszcfmabo\", message = \"zwx hnfx lqantp mnoeius ycgk vcnjrdb\"",
+      "output": "\"the five boxing wizards jump quickly\"",
+      "explanation": "The diagram above shows the substitution table. It is obtained by taking the first appearance of each letter in \"eljuxhpwnyrdgtqkviszcfmabo\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string decodeMessage(string key, string message) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String decodeMessage(String key, String message) {\n        \n    }\n}",
+    "python": "class Solution:\n    def decodeMessage(self, key: str, message: str) -> str:\n        ",
+    "typescript": "function decodeMessage(key: string, message: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string DecodeMessage(string key, string message) {\n        \n    }\n}",
+    "go": "func decodeMessage(key string, message string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn decode_message(key: String, message: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "key": "the quick brown fox jumps over the lazy dog",
+      "message": "vkbs bs t suepuv"
+    },
+    {
+      "key": "eljuxhpwnyrdgtqkviszcfmabo",
+      "message": "zwx hnfx lqantp mnoeius ycgk vcnjrdb"
+    }
+  ],
+  "functionName": "decodeMessage",
+  "params": [
+    {
+      "name": "key",
+      "type": "string"
+    },
+    {
+      "name": "message",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Iterate through the characters in the key to construct a mapping to the English alphabet.",
+    "Make sure to check that the current character is not already in the mapping (only the first appearance is considered).",
+    "Map the characters in the message according to the constructed mapping."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "number-of-visible-people-in-a-queue",
+  "title": "1944. Number of Visible People in a Queue",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-visible-people-in-a-queue/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "heights = [10,6,8,5,11,9]",
+      "output": "[3,1,2,1,1,0]",
+      "explanation": "Person 0 can see person 1, 2, and 4. Person 1 can see person 2. Person 2 can see person 3 and 4. Person 3 can see person 4. Person 4 can see person 5. Person 5 can see no one since nobody is to the right of them."
+    },
+    {
+      "input": "heights = [5,1,2,3,10]",
+      "output": "[4,1,1,1,0]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> canSeePersonsCount(vector<int>& heights) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] canSeePersonsCount(int[] heights) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canSeePersonsCount(self, heights: list[int]) -> list[int]:\n        ",
+    "typescript": "function canSeePersonsCount(heights: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] CanSeePersonsCount(int[] heights) {\n        \n    }\n}",
+    "go": "func canSeePersonsCount(heights []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_see_persons_count(heights: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "heights": "[10,6,8,5,11,9]"
+    },
+    {
+      "heights": "[5,1,2,3,10]"
+    }
+  ],
+  "functionName": "canSeePersonsCount",
+  "params": [
+    {
+      "name": "heights",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "How to solve this problem in quadratic complexity ?",
+    "For every subarray start at index i, keep finding new maximum values until a value larger than arr[i] is found.",
+    "Since the limits are high, you need a linear solution.",
+    "Use a stack to keep the values of the array sorted as you iterate the array from the end to the start.",
+    "Keep popping from the stack the elements in sorted order until a value larger than arr[i] is found, these are the ones that person i can see."
+  ]
+}

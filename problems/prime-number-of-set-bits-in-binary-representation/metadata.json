@@ -1,0 +1,53 @@
+{
+  "id": "prime-number-of-set-bits-in-binary-representation",
+  "title": "762. Prime Number of Set Bits in Binary Representation",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "left = 6, right = 10",
+      "output": "4",
+      "explanation": "6  -> 110 (2 set bits, 2 is prime) 7  -> 111 (3 set bits, 3 is prime) 8  -> 1000 (1 set bit, 1 is not prime) 9  -> 1001 (2 set bits, 2 is prime) 10 -> 1010 (2 set bits, 2 is prime) 4 numbers have a prime number of set bits."
+    },
+    {
+      "input": "left = 10, right = 15",
+      "output": "5",
+      "explanation": "10 -> 1010 (2 set bits, 2 is prime) 11 -> 1011 (3 set bits, 3 is prime) 12 -> 1100 (2 set bits, 2 is prime) 13 -> 1101 (3 set bits, 3 is prime) 14 -> 1110 (3 set bits, 3 is prime) 15 -> 1111 (4 set bits, 4 is not prime) 5 numbers have a prime number of set bits."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPrimeSetBits(int left, int right) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPrimeSetBits(int left, int right) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPrimeSetBits(self, left: int, right: int) -> int:\n        ",
+    "typescript": "function countPrimeSetBits(left: number, right: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPrimeSetBits(int left, int right) {\n        \n    }\n}",
+    "go": "func countPrimeSetBits(left int, right int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_prime_set_bits(left: i32, right: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "left": 6,
+      "right": 10
+    },
+    {
+      "left": 10,
+      "right": 15
+    }
+  ],
+  "functionName": "countPrimeSetBits",
+  "params": [
+    {
+      "name": "left",
+      "type": "int"
+    },
+    {
+      "name": "right",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Write a helper function to count the number of set bits in a number, then check whether the number of set bits is 2, 3, 5, 7, 11, 13, 17 or 19."
+  ]
+}

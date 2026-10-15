@@ -1,0 +1,66 @@
+{
+  "id": "count-days-spent-together",
+  "title": "2409. Count Days Spent Together",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-days-spent-together/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "arriveAlice = \"08-15\", leaveAlice = \"08-18\", arriveBob = \"08-16\", leaveBob = \"08-19\"",
+      "output": "3",
+      "explanation": "Alice will be in Rome from August 15 to August 18. Bob will be in Rome from August 16 to August 19. They are both in Rome together on August 16th, 17th, and 18th, so the answer is 3."
+    },
+    {
+      "input": "arriveAlice = \"10-01\", leaveAlice = \"10-31\", arriveBob = \"11-01\", leaveBob = \"12-31\"",
+      "output": "0",
+      "explanation": "There is no day when Alice and Bob are in Rome together, so we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countDaysTogether(string arriveAlice, string leaveAlice, string arriveBob, string leaveBob) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countDaysTogether(self, arriveAlice: str, leaveAlice: str, arriveBob: str, leaveBob: str) -> int:\n        ",
+    "typescript": "function countDaysTogether(arriveAlice: string, leaveAlice: string, arriveBob: string, leaveBob: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountDaysTogether(string arriveAlice, string leaveAlice, string arriveBob, string leaveBob) {\n        \n    }\n}",
+    "go": "func countDaysTogether(arriveAlice string, leaveAlice string, arriveBob string, leaveBob string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_days_together(arrive_alice: String, leave_alice: String, arrive_bob: String, leave_bob: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arriveAlice": "08-15",
+      "leaveAlice": "08-18",
+      "arriveBob": "08-16",
+      "leaveBob": "08-19"
+    },
+    {
+      "arriveAlice": "10-01",
+      "leaveAlice": "10-31",
+      "arriveBob": "11-01",
+      "leaveBob": "12-31"
+    }
+  ],
+  "functionName": "countDaysTogether",
+  "params": [
+    {
+      "name": "arriveAlice",
+      "type": "string"
+    },
+    {
+      "name": "leaveAlice",
+      "type": "string"
+    },
+    {
+      "name": "arriveBob",
+      "type": "string"
+    },
+    {
+      "name": "leaveBob",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For a given day, determine if Alice or Bob or both are in Rome.",
+    "Brute force all 365 days for both Alice and Bob."
+  ]
+}

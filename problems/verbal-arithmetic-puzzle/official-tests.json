@@ -1,0 +1,14 @@
+[
+  {
+    "words": "[\"SEND\",\"MORE\"]",
+    "result": "MONEY"
+  },
+  {
+    "words": "[\"SIX\",\"SEVEN\",\"SEVEN\"]",
+    "result": "TWENTY"
+  },
+  {
+    "words": "[\"LEET\",\"CODE\"]",
+    "result": "POINT"
+  }
+]

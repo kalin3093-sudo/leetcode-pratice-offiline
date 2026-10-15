@@ -1,0 +1,48 @@
+{
+  "id": "maximum-value-of-a-string-in-an-array",
+  "title": "2496. Maximum Value of a String in an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "strs = [\"alic3\",\"bob\",\"3\",\"4\",\"00000\"]",
+      "output": "5",
+      "explanation": "- \"alic3\" consists of both letters and digits, so its value is its length, i.e. 5. - \"bob\" consists only of letters, so its value is also its length, i.e. 3. - \"3\" consists only of digits, so its value is its numeric equivalent, i.e. 3. - \"4\" also consists only of digits, so its value is 4. - \"00000\" consists only of digits, so its value is 0. Hence, the maximum value is 5, of \"alic3\"."
+    },
+    {
+      "input": "strs = [\"1\",\"01\",\"001\",\"0001\"]",
+      "output": "1",
+      "explanation": "Each string in the array has value 1. Hence, we return 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumValue(vector<string>& strs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumValue(String[] strs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumValue(self, strs: list[str]) -> int:\n        ",
+    "typescript": "function maximumValue(strs: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumValue(string[] strs) {\n        \n    }\n}",
+    "go": "func maximumValue(strs []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_value(strs: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "strs": "[\"alic3\",\"bob\",\"3\",\"4\",\"00000\"]"
+    },
+    {
+      "strs": "[\"1\",\"01\",\"001\",\"0001\"]"
+    }
+  ],
+  "functionName": "maximumValue",
+  "params": [
+    {
+      "name": "strs",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For strings comprising only of digits, convert them into integers.",
+    "For all other strings, calculate their length."
+  ]
+}

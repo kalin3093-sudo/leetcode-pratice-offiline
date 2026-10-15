@@ -1,0 +1,44 @@
+{
+  "id": "squares-of-a-sorted-array",
+  "title": "977. Squares of a Sorted Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [-4,-1,0,3,10]",
+      "output": "[0,1,9,16,100]",
+      "explanation": "After squaring, the array becomes [16,1,0,9,100]. After sorting, it becomes [0,1,9,16,100]."
+    },
+    {
+      "input": "nums = [-7,-3,2,3,11]",
+      "output": "[4,9,9,49,121]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> sortedSquares(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] sortedSquares(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortedSquares(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function sortedSquares(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SortedSquares(int[] nums) {\n        \n    }\n}",
+    "go": "func sortedSquares(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[-4,-1,0,3,10]"
+    },
+    {
+      "nums": "[-7,-3,2,3,11]"
+    }
+  ],
+  "functionName": "sortedSquares",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

@@ -1,0 +1,13 @@
+You are given an integer array `nums` and an integer `k`.
+
+Your task is to partition `nums` into **exactly** `k` subarrays and return an integer denoting the **minimum possible score** among all valid partitions.
+
+The **score** of a partition is the **sum** of the **values** of all its subarrays.
+
+The **value** of a subarray is defined as `sumArr * (sumArr + 1) / 2`, where `sumArr` is the sum of its elements.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 1000`
+-   `1 ≤ nums[i] ≤ 10^4`
+-   `1 ≤ k ≤ nums.length`

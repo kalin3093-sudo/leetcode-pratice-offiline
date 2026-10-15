@@ -1,0 +1,56 @@
+{
+  "id": "time-taken-to-mark-all-nodes",
+  "title": "3241. Time Taken to Mark All Nodes",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/time-taken-to-mark-all-nodes/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "edges = [[0,1],[0,2]]",
+      "output": "[2,4,3]",
+      "explanation": "For i = 0: Node 1 is marked at t = 1, and Node 2 at t = 2. For i = 1: Node 0 is marked at t = 2, and Node 2 at t = 4. For i = 2: Node 0 is marked at t = 2, and Node 1 at t = 3."
+    },
+    {
+      "input": "edges = [[0,1]]",
+      "output": "[1,2]",
+      "explanation": "For i = 0: Node 1 is marked at t = 1. For i = 1: Node 0 is marked at t = 2."
+    },
+    {
+      "input": "edges = [[2,4],[0,1],[2,3],[0,2]]",
+      "output": "[4,6,3,5,5]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> timeTaken(vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] timeTaken(int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def timeTaken(self, edges: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function timeTaken(edges: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] TimeTaken(int[][] edges) {\n        \n    }\n}",
+    "go": "func timeTaken(edges [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn time_taken(edges: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "edges": "[[0,1],[0,2]]"
+    },
+    {
+      "edges": "[[0,1]]"
+    },
+    {
+      "edges": "[[2,4],[0,1],[2,3],[0,2]]"
+    }
+  ],
+  "functionName": "timeTaken",
+  "params": [
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Can we use dp on trees?",
+    "Store the two most distant children for each node.",
+    "When re-rooting the tree, keep a variable for distance to the root node."
+  ]
+}

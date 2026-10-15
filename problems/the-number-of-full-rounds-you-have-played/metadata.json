@@ -1,0 +1,54 @@
+{
+  "id": "the-number-of-full-rounds-you-have-played",
+  "title": "1904. The Number of Full Rounds You Have Played",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "loginTime = \"09:31\", logoutTime = \"10:14\"",
+      "output": "1",
+      "explanation": "You played one full round from 09:45 to 10:00. You did not play the full round from 09:30 to 09:45 because you logged in at 09:31 after it began. You did not play the full round from 10:00 to 10:15 because you logged out at 10:14 before it ended."
+    },
+    {
+      "input": "loginTime = \"21:30\", logoutTime = \"03:00\"",
+      "output": "22",
+      "explanation": "You played 10 full rounds from 21:30 to 00:00 and 12 full rounds from 00:00 to 03:00. 10 + 12 = 22."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfRounds(string loginTime, string logoutTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfRounds(String loginTime, String logoutTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfRounds(self, loginTime: str, logoutTime: str) -> int:\n        ",
+    "typescript": "function numberOfRounds(loginTime: string, logoutTime: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfRounds(string loginTime, string logoutTime) {\n        \n    }\n}",
+    "go": "func numberOfRounds(loginTime string, logoutTime string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_rounds(login_time: String, logout_time: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "loginTime": "09:31",
+      "logoutTime": "10:14"
+    },
+    {
+      "loginTime": "21:30",
+      "logoutTime": "03:00"
+    }
+  ],
+  "functionName": "numberOfRounds",
+  "params": [
+    {
+      "name": "loginTime",
+      "type": "string"
+    },
+    {
+      "name": "logoutTime",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider the day as 48 hours instead of 24.",
+    "For each round check if you were playing."
+  ]
+}

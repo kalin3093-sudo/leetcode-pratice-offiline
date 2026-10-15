@@ -1,0 +1,9 @@
+You are given two positive integers `n` and `k`.
+
+Return an integer denoting the `n^th` smallest positive integer that has **exactly** `k` ones in its binary representation. It is guaranteed that the answer is **strictly less** than `2^50`.
+
+**Constraints:**
+
+-   `1 ≤ n ≤ 2^50`
+-   `1 ≤ k ≤ 50`
+-   The answer is strictly less than `2^50`.

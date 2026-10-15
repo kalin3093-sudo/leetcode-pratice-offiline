@@ -1,0 +1,56 @@
+{
+  "id": "most-profit-assigning-work",
+  "title": "826. Most Profit Assigning Work",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/most-profit-assigning-work/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]",
+      "output": "100",
+      "explanation": "Workers are assigned jobs of difficulty [4,4,6,6] and they get a profit of [20,20,30,30] separately."
+    },
+    {
+      "input": "difficulty = [85,47,57], profit = [24,66,99], worker = [40,25,25]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProfitAssignment(self, difficulty: list[int], profit: list[int], worker: list[int]) -> int:\n        ",
+    "typescript": "function maxProfitAssignment(difficulty: number[], profit: number[], worker: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n        \n    }\n}",
+    "go": "func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_profit_assignment(difficulty: Vec<i32>, profit: Vec<i32>, worker: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "difficulty": "[2,4,6,8,10]",
+      "profit": "[10,20,30,40,50]",
+      "worker": "[4,5,6,7]"
+    },
+    {
+      "difficulty": "[85,47,57]",
+      "profit": "[24,66,99]",
+      "worker": "[40,25,25]"
+    }
+  ],
+  "functionName": "maxProfitAssignment",
+  "params": [
+    {
+      "name": "difficulty",
+      "type": "int_array"
+    },
+    {
+      "name": "profit",
+      "type": "int_array"
+    },
+    {
+      "name": "worker",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

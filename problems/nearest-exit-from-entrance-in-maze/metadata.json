@@ -1,0 +1,63 @@
+{
+  "id": "nearest-exit-from-entrance-in-maze",
+  "title": "1926. Nearest Exit from Entrance in Maze",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "maze = [[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]], entrance = [1,2]",
+      "output": "1",
+      "explanation": "There are 3 exits in this maze at [1,0], [0,2], and [2,3]. Initially, you are at the entrance cell [1,2]. - You can reach [1,0] by moving 2 steps left. - You can reach [0,2] by moving 1 step up. It is impossible to reach [2,3] from the entrance. Thus, the nearest exit is [0,2], which is 1 step away."
+    },
+    {
+      "input": "maze = [[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]], entrance = [1,0]",
+      "output": "2",
+      "explanation": "There is 1 exit in this maze at [1,2]. [1,0] does not count as an exit since it is the entrance cell. Initially, you are at the entrance cell [1,0]. - You can reach [1,2] by moving 2 steps right. Thus, the nearest exit is [1,2], which is 2 steps away."
+    },
+    {
+      "input": "maze = [[\".\",\"+\"]], entrance = [0,0]",
+      "output": "-1",
+      "explanation": "There are no exits in this maze."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int nearestExit(vector<vector<char>>& maze, vector<int>& entrance) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int nearestExit(char[][] maze, int[] entrance) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nearestExit(self, maze: list[list[str]], entrance: list[int]) -> int:\n        ",
+    "typescript": "function nearestExit(maze: string[][], entrance: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NearestExit(char[][] maze, int[] entrance) {\n        \n    }\n}",
+    "go": "func nearestExit(maze [][]byte, entrance []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn nearest_exit(maze: Vec<Vec<char>>, entrance: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "maze": "[[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]]",
+      "entrance": "[1,2]"
+    },
+    {
+      "maze": "[[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]]",
+      "entrance": "[1,0]"
+    },
+    {
+      "maze": "[[\".\",\"+\"]]",
+      "entrance": "[0,0]"
+    }
+  ],
+  "functionName": "nearestExit",
+  "params": [
+    {
+      "name": "maze",
+      "type": "char_array_2d"
+    },
+    {
+      "name": "entrance",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Which type of traversal lets you find the distance from a point?",
+    "Try using a Breadth First Search."
+  ]
+}

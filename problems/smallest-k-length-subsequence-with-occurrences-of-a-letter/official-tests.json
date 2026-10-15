@@ -1,0 +1,20 @@
+[
+  {
+    "s": "leet",
+    "k": 3,
+    "letter": "e",
+    "repetition": 1
+  },
+  {
+    "s": "leetcode",
+    "k": 4,
+    "letter": "e",
+    "repetition": 2
+  },
+  {
+    "s": "bb",
+    "k": 2,
+    "letter": "b",
+    "repetition": 2
+  }
+]

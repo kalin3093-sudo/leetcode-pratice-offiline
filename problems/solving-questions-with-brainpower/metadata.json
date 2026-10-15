@@ -1,0 +1,51 @@
+{
+  "id": "solving-questions-with-brainpower",
+  "title": "2140. Solving Questions With Brainpower",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/solving-questions-with-brainpower/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "questions = [[3,2],[4,3],[4,4],[2,5]]",
+      "output": "5",
+      "explanation": "The maximum points can be earned by solving questions 0 and 3. - Solve question 0: Earn 3 points, will be unable to solve the next 2 questions - Unable to solve questions 1 and 2 - Solve question 3: Earn 2 points Total points earned: 3 + 2 = 5. There is no other way to earn 5 or more points."
+    },
+    {
+      "input": "questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "output": "7",
+      "explanation": "The maximum points can be earned by solving questions 1 and 4. - Skip question 0 - Solve question 1: Earn 2 points, will be unable to solve the next 2 questions - Unable to solve questions 2 and 3 - Solve question 4: Earn 5 points Total points earned: 2 + 5 = 7. There is no other way to earn 7 or more points."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long mostPoints(vector<vector<int>>& questions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long mostPoints(int[][] questions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mostPoints(self, questions: list[list[int]]) -> int:\n        ",
+    "typescript": "function mostPoints(questions: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MostPoints(int[][] questions) {\n        \n    }\n}",
+    "go": "func mostPoints(questions [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn most_points(questions: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "questions": "[[3,2],[4,3],[4,4],[2,5]]"
+    },
+    {
+      "questions": "[[1,1],[2,2],[3,3],[4,4],[5,5]]"
+    }
+  ],
+  "functionName": "mostPoints",
+  "params": [
+    {
+      "name": "questions",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "For each question, we can either solve it or skip it. How can we use Dynamic Programming to decide the most optimal option for each problem?",
+    "We store for each question the maximum points we can earn if we started the exam on that question.",
+    "If we skip a question, then the answer for it will be the same as the answer for the next question.",
+    "If we solve a question, then the answer for it will be the points of the current question plus the answer for the next solvable question.",
+    "The maximum of these two values will be the answer to the current question."
+  ]
+}

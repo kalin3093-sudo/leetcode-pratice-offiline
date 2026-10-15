@@ -1,0 +1,48 @@
+{
+  "id": "split-array-by-prime-indices",
+  "title": "3618. Split Array by Prime Indices",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/split-array-by-prime-indices/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,4]",
+      "output": "1",
+      "explanation": "The only prime index in the array is 2, so nums[2] = 4 is placed in array A. The remaining elements, nums[0] = 2 and nums[1] = 3 are placed in array B. sum(A) = 4, sum(B) = 2 + 3 = 5. The absolute difference is |4 - 5| = 1."
+    },
+    {
+      "input": "nums = [-1,5,7,0]",
+      "output": "3",
+      "explanation": "The prime indices in the array are 2 and 3, so nums[2] = 7 and nums[3] = 0 are placed in array A. The remaining elements, nums[0] = -1 and nums[1] = 5 are placed in array B. sum(A) = 7 + 0 = 7, sum(B) = -1 + 5 = 4. The absolute difference is |7 - 4| = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long splitArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long splitArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def splitArray(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function splitArray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SplitArray(int[] nums) {\n        \n    }\n}",
+    "go": "func splitArray(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn split_array(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,4]"
+    },
+    {
+      "nums": "[-1,5,7,0]"
+    }
+  ],
+  "functionName": "splitArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Generate all primes up to <code>nums.length</code> (e.g., with the Sieve of Eratosthenes).",
+    "Iterate through <code>nums</code>, adding <code>nums[i]</code> to <code>sumA</code> if <code>i</code> is prime, otherwise to <code>sumB</code>, then return <code>|sumA - sumB|</code>."
+  ]
+}

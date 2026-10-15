@@ -1,0 +1,68 @@
+{
+  "id": "maximize-total-cost-of-alternating-subarrays",
+  "title": "3196. Maximize Total Cost of Alternating Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,-2,3,4]",
+      "output": "10",
+      "explanation": "One way to maximize the total cost is by splitting [1, -2, 3, 4] into subarrays [1, -2, 3] and [4]. The total cost will be (1 + 2 + 3) + 4 = 10."
+    },
+    {
+      "input": "nums = [1,-1,1,-1]",
+      "output": "4",
+      "explanation": "One way to maximize the total cost is by splitting [1, -1, 1, -1] into subarrays [1, -1] and [1, -1]. The total cost will be (1 + 1) + (1 + 1) = 4."
+    },
+    {
+      "input": "nums = [0]",
+      "output": "0",
+      "explanation": "We cannot split the array further, so the answer is 0."
+    },
+    {
+      "input": "nums = [1,-1]",
+      "output": "2",
+      "explanation": "Selecting the whole array gives a total cost of 1 + 1 = 2, which is the maximum."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumTotalCost(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumTotalCost(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumTotalCost(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maximumTotalCost(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumTotalCost(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumTotalCost(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_total_cost(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,-2,3,4]"
+    },
+    {
+      "nums": "[1,-1,1,-1]"
+    },
+    {
+      "nums": "[0]"
+    },
+    {
+      "nums": "[1,-1]"
+    }
+  ],
+  "functionName": "maximumTotalCost",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "The problem can be solved using dynamic programming.",
+    "Since we can always start a new subarray, the problem is the same as selecting some elements in the array and flipping their signs to negative to maximize the sum. However, we cannot flip the signs of 2 consecutive elements, and the first element in the array cannot be negative.",
+    "Let <code>dp[i][0/1]</code> be the largest sum we can get for prefix <code>nums[0..i]</code>, where <code>dp[i][0]</code> is the maximum if the <code>i<sup>th</sup></code> element wasn't flipped, and <code>dp[i][1]</code> is the maximum if the <code>i<sup>th</sup></code> element was flipped.",
+    "Based on the restriction:<br />\r\n<code>dp[i][0] = max(dp[i - 1][0], dp[i - 1][1]) + nums[i]</code><br />\r\n<code>dp[i][1] = dp[i - 1][0] - nums[i]</code>",
+    "The initial state is:<br />\r\n<code>dp[1][0] = nums[0] + nums[1]</code><br />\r\n<code>dp[1][1] = nums[0] - nums[1]</code><br />\r\nand the answer is <code>max(dp[n - 1][0], dp[n - 1][1])</code>.",
+    "Can you optimize the space complexity?"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "largest-multiple-of-three",
+  "title": "1363. Largest Multiple of Three",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/largest-multiple-of-three/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "digits = [8,1,9]",
+      "output": "\"981\""
+    },
+    {
+      "input": "digits = [8,6,7,1,0]",
+      "output": "\"8760\""
+    },
+    {
+      "input": "digits = [1]",
+      "output": "\"\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestMultipleOfThree(vector<int>& digits) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestMultipleOfThree(int[] digits) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestMultipleOfThree(self, digits: list[int]) -> str:\n        ",
+    "typescript": "function largestMultipleOfThree(digits: number[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestMultipleOfThree(int[] digits) {\n        \n    }\n}",
+    "go": "func largestMultipleOfThree(digits []int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_multiple_of_three(digits: Vec<i32>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "digits": "[8,1,9]"
+    },
+    {
+      "digits": "[8,6,7,1,0]"
+    },
+    {
+      "digits": "[1]"
+    }
+  ],
+  "functionName": "largestMultipleOfThree",
+  "params": [
+    {
+      "name": "digits",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "A number is a multiple of three if and only if its sum of digits is a multiple of three.",
+    "Use dynamic programming.",
+    "To find the maximum number, try to maximize the number of digits of the number.",
+    "Sort the digits in descending order to find the maximum number."
+  ]
+}

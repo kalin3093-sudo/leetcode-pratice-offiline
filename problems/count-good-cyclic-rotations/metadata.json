@@ -1,0 +1,48 @@
+{
+  "id": "count-good-cyclic-rotations",
+  "title": "4044. Count Good Cyclic Rotations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-good-cyclic-rotations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5,6]",
+      "output": "3",
+      "explanation": "The cyclic rotations of nums are: Cyclic rotation Sum of first n / 2 elements Sum of last n / 2 elements [1, 2, 3, 4, 5, 6] 1 + 2 + 3 = 6 4 + 5 + 6 = 15 [2, 3, 4, 5, 6, 1] 2 + 3 + 4 = 9 5 + 6 + 1 = 12 [3, 4, 5, 6, 1, 2] 3 + 4 + 5 = 12 6 + 1 + 2 = 9 [4, 5, 6, 1, 2, 3] 4 + 5 + 6 = 15 1 + 2 + 3 = 6 [5, 6, 1, 2, 3, 4] 5 + 6 + 1 = 12 2 + 3 + 4 = 9 [6, 1, 2, 3, 4, 5] 6 + 1 + 2 = 9 3 + 4 + 5 = 12 The first half has a greater sum than the second half for 3 rotations. Thus, the answer is 3."
+    },
+    {
+      "input": "nums = [1,2,1,2]",
+      "output": "0",
+      "explanation": "The cyclic rotations of nums are: Cyclic rotation Sum of first n / 2 elements Sum of last n / 2 elements [1, 2, 1, 2] 1 + 2 = 3 1 + 2 = 3 [2, 1, 2, 1] 2 + 1 = 3 2 + 1 = 3 [1, 2, 1, 2] 1 + 2 = 3 1 + 2 = 3 [2, 1, 2, 1] 2 + 1 = 3 2 + 1 = 3 No cyclic rotation is good because the two sums are equal for every rotation. Thus, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countGoodRotations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countGoodRotations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countGoodRotations(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countGoodRotations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountGoodRotations(int[] nums) {\n        \n    }\n}",
+    "go": "func countGoodRotations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_good_rotations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,5,6]"
+    },
+    {
+      "nums": "[1,2,1,2]"
+    }
+  ],
+  "functionName": "countGoodRotations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let <code>total</code> be the sum of all elements and <code>first</code> be the sum of the first half of a rotation. The rotation is good exactly when <code>first &gt; total - first</code>.",
+    "Maintain <code>first</code> using a circular sliding window of length <code>n / 2</code>. Moving to the next rotation removes one element from the window and adds one element."
+  ]
+}

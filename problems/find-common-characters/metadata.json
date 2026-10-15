@@ -1,0 +1,43 @@
+{
+  "id": "find-common-characters",
+  "title": "1002. Find Common Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-common-characters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"bella\",\"label\",\"roller\"]",
+      "output": "[\"e\",\"l\",\"l\"]"
+    },
+    {
+      "input": "words = [\"cool\",\"lock\",\"cook\"]",
+      "output": "[\"c\",\"o\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> commonChars(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> commonChars(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def commonChars(self, words: list[str]) -> list[str]:\n        ",
+    "typescript": "function commonChars(words: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> CommonChars(string[] words) {\n        \n    }\n}",
+    "go": "func commonChars(words []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn common_chars(words: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"bella\",\"label\",\"roller\"]"
+    },
+    {
+      "words": "[\"cool\",\"lock\",\"cook\"]"
+    }
+  ],
+  "functionName": "commonChars",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

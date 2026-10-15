@@ -1,0 +1,54 @@
+{
+  "id": "sort-the-students-by-their-kth-score",
+  "title": "2545. Sort the Students by Their Kth Score",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sort-the-students-by-their-kth-score/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "score = [[10,6,9,1],[7,5,11,2],[4,8,3,15]], k = 2",
+      "output": "[[7,5,11,2],[10,6,9,1],[4,8,3,15]]",
+      "explanation": "In the above diagram, S denotes the student, while E denotes the exam. - The student with index 1 scored 11 in exam 2, which is the highest score, so they got first place. - The student with index 0 scored 9 in exam 2, which is the second highest score, so they got second place. - The student with index 2 scored 3 in exam 2, which is the lowest score, so they got third place."
+    },
+    {
+      "input": "score = [[3,4],[5,6]], k = 0",
+      "output": "[[5,6],[3,4]]",
+      "explanation": "In the above diagram, S denotes the student, while E denotes the exam. - The student with index 1 scored 5 in exam 0, which is the highest score, so they got first place. - The student with index 0 scored 3 in exam 0, which is the lowest score, so they got second place."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> sortTheStudents(vector<vector<int>>& score, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] sortTheStudents(int[][] score, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortTheStudents(self, score: list[list[int]], k: int) -> list[list[int]]:\n        ",
+    "typescript": "function sortTheStudents(score: number[][], k: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] SortTheStudents(int[][] score, int k) {\n        \n    }\n}",
+    "go": "func sortTheStudents(score [][]int, k int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_the_students(score: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "score": "[[10,6,9,1],[7,5,11,2],[4,8,3,15]]",
+      "k": 2
+    },
+    {
+      "score": "[[3,4],[5,6]]",
+      "k": 0
+    }
+  ],
+  "functionName": "sortTheStudents",
+  "params": [
+    {
+      "name": "score",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Find the row with the highest score in the kth exam and swap it with the first row.",
+    "After fixing the first row, perform the same operation for the rest of the rows, and the matrix's rows will get sorted one by one."
+  ]
+}

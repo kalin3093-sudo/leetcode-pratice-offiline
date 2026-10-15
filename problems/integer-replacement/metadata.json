@@ -1,0 +1,52 @@
+{
+  "id": "integer-replacement",
+  "title": "397. Integer Replacement",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/integer-replacement/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 8",
+      "output": "3",
+      "explanation": "8 -> 4 -> 2 -> 1"
+    },
+    {
+      "input": "n = 7",
+      "output": "4",
+      "explanation": "7 -> 8 -> 4 -> 2 -> 1 or 7 -> 6 -> 3 -> 2 -> 1"
+    },
+    {
+      "input": "n = 4",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int integerReplacement(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int integerReplacement(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def integerReplacement(self, n: int) -> int:\n        ",
+    "typescript": "function integerReplacement(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int IntegerReplacement(int n) {\n        \n    }\n}",
+    "go": "func integerReplacement(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn integer_replacement(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 8
+    },
+    {
+      "n": 7
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "integerReplacement",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

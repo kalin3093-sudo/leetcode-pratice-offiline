@@ -1,0 +1,55 @@
+{
+  "id": "minimum-number-of-swaps-to-make-the-binary-string-alternating",
+  "title": "1864. Minimum Number of Swaps to Make the Binary String Alternating",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"111000\"",
+      "output": "1",
+      "explanation": "Swap positions 1 and 4: \"111000\" -> \"101010\" The string is now alternating."
+    },
+    {
+      "input": "s = \"010\"",
+      "output": "0",
+      "explanation": "The string is already alternating, no swaps are needed."
+    },
+    {
+      "input": "s = \"1110\"",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSwaps(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSwaps(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSwaps(self, s: str) -> int:\n        ",
+    "typescript": "function minSwaps(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSwaps(string s) {\n        \n    }\n}",
+    "go": "func minSwaps(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_swaps(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "111000"
+    },
+    {
+      "s": "010"
+    },
+    {
+      "s": "1110"
+    }
+  ],
+  "functionName": "minSwaps",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think about all valid strings of length n.",
+    "Try to count the mismatched positions with each valid string of length n."
+  ]
+}

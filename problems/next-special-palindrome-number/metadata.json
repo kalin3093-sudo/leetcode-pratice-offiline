@@ -1,0 +1,50 @@
+{
+  "id": "next-special-palindrome-number",
+  "title": "3646. Next Special Palindrome Number",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/next-special-palindrome-number/",
+  "category": "backtracking",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "22",
+      "explanation": "22 is the smallest special number greater than 2, as it is a palindrome and the digit 2 appears exactly 2 times."
+    },
+    {
+      "input": "n = 33",
+      "output": "212",
+      "explanation": "212 is the smallest special number greater than 33, as it is a palindrome and the digits 1 and 2 appear exactly 1 and 2 times respectively."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long specialPalindrome(long long n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long specialPalindrome(long n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def specialPalindrome(self, n: int) -> int:\n        ",
+    "typescript": "function specialPalindrome(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SpecialPalindrome(long n) {\n        \n    }\n}",
+    "go": "func specialPalindrome(n int64) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn special_palindrome(n: i64) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "2"
+    },
+    {
+      "n": "33"
+    }
+  ],
+  "functionName": "specialPalindrome",
+  "params": [
+    {
+      "name": "n",
+      "type": "long"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "There are only a few special numbers; preprocess them.",
+    "Use bitmasking to brute‑force all valid selections of digits <code>k</code> for the number.",
+    "Generate all permutations of the first half of the digits, then mirror them to form the full palindrome.",
+    "For each <code>n</code>, use binary search to find the smallest special number strictly greater than <code>n</code>."
+  ]
+}

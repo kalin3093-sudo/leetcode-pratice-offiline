@@ -1,0 +1,70 @@
+{
+  "id": "find-the-number-of-possible-ways-for-an-event",
+  "title": "3317. Find the Number of Possible Ways for an Event",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1, x = 2, y = 3",
+      "output": "6",
+      "explanation": "There are 2 ways to assign a stage to the performer. The jury can award a score of either 1, 2, or 3 to the only band."
+    },
+    {
+      "input": "n = 5, x = 2, y = 1",
+      "output": "32",
+      "explanation": "Each performer will be assigned either stage 1 or stage 2. All bands will be awarded a score of 1."
+    },
+    {
+      "input": "n = 3, x = 3, y = 4",
+      "output": "684"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfWays(int n, int x, int y) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfWays(int n, int x, int y) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfWays(self, n: int, x: int, y: int) -> int:\n        ",
+    "typescript": "function numberOfWays(n: number, x: number, y: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfWays(int n, int x, int y) {\n        \n    }\n}",
+    "go": "func numberOfWays(n int, x int, y int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_ways(n: i32, x: i32, y: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1,
+      "x": 2,
+      "y": 3
+    },
+    {
+      "n": 5,
+      "x": 2,
+      "y": 1
+    },
+    {
+      "n": 3,
+      "x": 3,
+      "y": 4
+    }
+  ],
+  "functionName": "numberOfWays",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    },
+    {
+      "name": "y",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Fix the number of stages.",
+    "Assign the Performers to the stages.",
+    "Use inclusion-exclusion to ensure that no stage has 0 performers."
+  ]
+}

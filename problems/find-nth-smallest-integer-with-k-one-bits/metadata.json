@@ -1,0 +1,55 @@
+{
+  "id": "find-nth-smallest-integer-with-k-one-bits",
+  "title": "3821. Find Nth Smallest Integer With K One Bits",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4, k = 2",
+      "output": "9",
+      "explanation": "The 4 smallest positive integers that have exactly k = 2 ones in their binary representations are: 3 = 112 5 = 1012 6 = 1102 9 = 10012"
+    },
+    {
+      "input": "n = 3, k = 1",
+      "output": "4",
+      "explanation": "The 3 smallest positive integers that have exactly k = 1 one in their binary representations are: 1 = 12 2 = 102 4 = 1002"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long nthSmallest(long long n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long nthSmallest(long n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nthSmallest(self, n: int, k: int) -> int:\n        ",
+    "typescript": "function nthSmallest(n: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long NthSmallest(long n, int k) {\n        \n    }\n}",
+    "go": "func nthSmallest(n int64, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn nth_smallest(n: i64, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "4",
+      "k": 2
+    },
+    {
+      "n": "3",
+      "k": 1
+    }
+  ],
+  "functionName": "nthSmallest",
+  "params": [
+    {
+      "name": "n",
+      "type": "long"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Since the answer is strictly less than <code>2<sup>50</sup></code>, we can iterate over the number of bits (the length) of the result.",
+    "Precompute binomial coefficients <code>C(n, k)</code> to count how many numbers with exactly <code>k</code> set bits exist for a given length.",
+    "Determine the position of the most significant bit first, then greedily determine the remaining bits from MSB to LSB based on the remaining count <code>n</code>."
+  ]
+}

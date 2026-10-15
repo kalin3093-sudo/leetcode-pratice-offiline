@@ -1,0 +1,45 @@
+{
+  "id": "number-complement",
+  "title": "476. Number Complement",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-complement/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "num = 5",
+      "output": "2",
+      "explanation": "The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2."
+    },
+    {
+      "input": "num = 1",
+      "output": "0",
+      "explanation": "The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findComplement(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findComplement(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findComplement(self, num: int) -> int:\n        ",
+    "typescript": "function findComplement(num: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindComplement(int num) {\n        \n    }\n}",
+    "go": "func findComplement(num int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_complement(num: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 5
+    },
+    {
+      "num": 1
+    }
+  ],
+  "functionName": "findComplement",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

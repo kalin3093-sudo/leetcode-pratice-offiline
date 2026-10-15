@@ -1,0 +1,64 @@
+{
+  "id": "count-of-unfinished-tasks-after-each-shift",
+  "title": "4012. Count of Unfinished Tasks After Each Shift",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-of-unfinished-tasks-after-each-shift/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tasks = [1,4,4], shifts = [9,1,4]",
+      "output": "[0,2,1]",
+      "explanation": "Shift 0: The tasks require 1 + 4 + 4 = 9 units of time, so all tasks are completed. There are 0 unfinished tasks. Shift 1: Processing restarts from task 0. The shift has time 1, so task 0 is completed. There are 2 unfinished tasks. Shift 2: Processing continues from task 1. The shift has time 4, so task 1 is completed. There is 1 unfinished task."
+    },
+    {
+      "input": "tasks = [2,3,4], shifts = [20,4,5]",
+      "output": "[0,2,0]",
+      "explanation": "Shift 0: The tasks require 2 + 3 + 4 = 9 units of time, so all tasks are completed. The remaining time in this shift is ignored. There are 0 unfinished tasks. Shift 1: Processing restarts from task 0. The shift has time 4, so task 0 is completed and task 1 is partially completed. There are 2 unfinished tasks. Shift 2: Processing continues from task 1. The remaining time needed is 1 + 4 = 5, so all tasks are completed. There are 0 unfinished tasks."
+    },
+    {
+      "input": "tasks = [4,2], shifts = [3,6,1]",
+      "output": "[2,0,2]",
+      "explanation": "Shift 0: The shift has time 3, so task 0 is partially completed with 1 unit of work remaining. There are 2 unfinished tasks. Shift 1: Processing continues from task 0. The remaining time needed is 1 + 2 = 3, so all tasks are completed. There are 0 unfinished tasks. Shift 2: Processing restarts from task 0. The shift has time 1, so task 0 is partially completed. There are 2 unfinished tasks."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> countTasks(vector<int>& tasks, vector<int>& shifts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] countTasks(int[] tasks, int[] shifts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countTasks(self, tasks: List[int], shifts: List[int]) -> List[int]:\n        ",
+    "typescript": "function countTasks(tasks: number[], shifts: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] CountTasks(int[] tasks, int[] shifts) {\n        \n    }\n}",
+    "go": "func countTasks(tasks []int, shifts []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_tasks(tasks: Vec<i32>, shifts: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tasks": "[1,4,4]",
+      "shifts": "[9,1,4]"
+    },
+    {
+      "tasks": "[2,3,4]",
+      "shifts": "[20,4,5]"
+    },
+    {
+      "tasks": "[4,2]",
+      "shifts": "[3,6,1]"
+    }
+  ],
+  "functionName": "countTasks",
+  "params": [
+    {
+      "name": "tasks",
+      "type": "int_array"
+    },
+    {
+      "name": "shifts",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "<p>Build prefix sums of <code>tasks</code>, where <code>prefix[i]</code> is the total time needed to complete tasks <code>0</code> through <code>i</code>.</p>",
+    "<p>Maintain the amount of work already completed in the current pass through <code>tasks</code>. If adding the current shift length reaches or exceeds the total task time, all tasks are completed, so append <code>0</code> and reset the completed work to <code>0</code>.</p>",
+    "<p>Otherwise, use binary search on the prefix sums to count how many tasks have been fully completed. If this count is <code>c</code>, then <code>tasks.length - c</code> tasks are unfinished.</p>"
+  ]
+}

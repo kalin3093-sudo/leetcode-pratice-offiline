@@ -1,0 +1,56 @@
+{
+  "id": "minimum-cost-to-change-the-final-value-of-expression",
+  "title": "1896. Minimum Cost to Change the Final Value of Expression",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "expression = \"1&(0|1)\"",
+      "output": "1",
+      "explanation": "We can turn \"1&(0|1)\" into \"1&(0&1)\" by changing the '|' to a '&' using 1 operation. The new expression evaluates to 0."
+    },
+    {
+      "input": "expression = \"(0&0)&(0&0&0)\"",
+      "output": "3",
+      "explanation": "We can turn \"(0&0)&(0&0&0)\" into \"(0|1)|(0&0&0)\" using 3 operations. The new expression evaluates to 1."
+    },
+    {
+      "input": "expression = \"(0|(1|0&1))\"",
+      "output": "1",
+      "explanation": "We can turn \"(0|(1|0&1))\" into \"(0|(0|0&1))\" using 1 operation. The new expression evaluates to 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperationsToFlip(string expression) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperationsToFlip(String expression) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperationsToFlip(self, expression: str) -> int:\n        ",
+    "typescript": "function minOperationsToFlip(expression: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperationsToFlip(string expression) {\n        \n    }\n}",
+    "go": "func minOperationsToFlip(expression string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations_to_flip(expression: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "expression": "1&(0|1)"
+    },
+    {
+      "expression": "(0&0)&(0&0&0)"
+    },
+    {
+      "expression": "(0|(1|0&1))"
+    }
+  ],
+  "functionName": "minOperationsToFlip",
+  "params": [
+    {
+      "name": "expression",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How many possible states are there for a given expression?",
+    "Is there a data structure that we can use to solve the problem optimally?"
+  ]
+}

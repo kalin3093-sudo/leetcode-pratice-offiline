@@ -1,0 +1,53 @@
+{
+  "id": "letter-tile-possibilities",
+  "title": "1079. Letter Tile Possibilities",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/letter-tile-possibilities/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "tiles = \"AAB\"",
+      "output": "8",
+      "explanation": "The possible sequences are \"A\", \"B\", \"AA\", \"AB\", \"BA\", \"AAB\", \"ABA\", \"BAA\"."
+    },
+    {
+      "input": "tiles = \"AAABBC\"",
+      "output": "188"
+    },
+    {
+      "input": "tiles = \"V\"",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numTilePossibilities(string tiles) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numTilePossibilities(String tiles) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numTilePossibilities(self, tiles: str) -> int:\n        ",
+    "typescript": "function numTilePossibilities(tiles: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumTilePossibilities(string tiles) {\n        \n    }\n}",
+    "go": "func numTilePossibilities(tiles string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_tile_possibilities(tiles: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tiles": "AAB"
+    },
+    {
+      "tiles": "AAABBC"
+    },
+    {
+      "tiles": "V"
+    }
+  ],
+  "functionName": "numTilePossibilities",
+  "params": [
+    {
+      "name": "tiles",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to build the string with a backtracking DFS by considering what you can put in every position."
+  ]
+}

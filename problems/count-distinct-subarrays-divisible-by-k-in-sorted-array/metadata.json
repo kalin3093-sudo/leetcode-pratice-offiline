@@ -1,0 +1,55 @@
+{
+  "id": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
+  "title": "3729. Count Distinct Subarrays Divisible by K in Sorted Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], k = 3",
+      "output": "3",
+      "explanation": "The good subarrays are [1, 2], [3], and [1, 2, 3]. For example, [1, 2, 3] is good because the sum of its elements is 1 + 2 + 3 = 6, and 6 % k = 6 % 3 = 0."
+    },
+    {
+      "input": "nums = [2,2,2,2,2,2], k = 6",
+      "output": "2",
+      "explanation": "The good subarrays are [2, 2, 2] and [2, 2, 2, 2, 2, 2]. For example, [2, 2, 2] is good because the sum of its elements is 2 + 2 + 2 = 6, and 6 % k = 6 % 6 = 0. Note that [2, 2, 2] is counted only once."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long numGoodSubarrays(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long numGoodSubarrays(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numGoodSubarrays(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function numGoodSubarrays(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long NumGoodSubarrays(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func numGoodSubarrays(nums []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_good_subarrays(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]",
+      "k": 3
+    },
+    {
+      "nums": "[2,2,2,2,2,2]",
+      "k": 6
+    }
+  ],
+  "functionName": "numGoodSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use prefix sums.",
+    "Any subarray with >= 2 distinct values has a unique strict-increase boundary <code>(i, j)</code>, so the value sequence is identified by that boundary and how many elements you take from each edge.",
+    "Count single-value sequences per run by testing <code>(L*val) % k == 0</code>."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sort-integers-by-the-number-of-1-bits",
+  "title": "1356. Sort Integers by The Number of 1 Bits",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [0,1,2,3,4,5,6,7,8]",
+      "output": "[0,1,2,4,8,3,5,6,7]"
+    },
+    {
+      "input": "arr = [1024,512,256,128,64,32,16,8,4,2,1]",
+      "output": "[1,2,4,8,16,32,64,128,256,512,1024]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> sortByBits(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] sortByBits(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortByBits(self, arr: list[int]) -> list[int]:\n        ",
+    "typescript": "function sortByBits(arr: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SortByBits(int[] arr) {\n        \n    }\n}",
+    "go": "func sortByBits(arr []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_by_bits(arr: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[0,1,2,3,4,5,6,7,8]"
+    },
+    {
+      "arr": "[1024,512,256,128,64,32,16,8,4,2,1]"
+    }
+  ],
+  "functionName": "sortByBits",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Simulate the problem. Count the number of 1's in the binary representation of each integer.",
+    "Sort by the number of 1's ascending and by the value in case of tie."
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "divisor1": 2,
+    "divisor2": 7,
+    "uniqueCnt1": 1,
+    "uniqueCnt2": 3
+  },
+  {
+    "divisor1": 3,
+    "divisor2": 5,
+    "uniqueCnt1": 2,
+    "uniqueCnt2": 1
+  },
+  {
+    "divisor1": 2,
+    "divisor2": 4,
+    "uniqueCnt1": 8,
+    "uniqueCnt2": 2
+  }
+]

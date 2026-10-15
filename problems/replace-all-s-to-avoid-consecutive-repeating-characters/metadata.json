@@ -1,0 +1,48 @@
+{
+  "id": "replace-all-s-to-avoid-consecutive-repeating-characters",
+  "title": "1576. Replace All ?'s to Avoid Consecutive Repeating Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"?zs\"",
+      "output": "\"azs\"",
+      "explanation": "There are 25 solutions for this problem. From \"azs\" to \"yzs\", all are valid. Only \"z\" is an invalid modification as the string will consist of consecutive repeating characters in \"zzs\"."
+    },
+    {
+      "input": "s = \"ubv?w\"",
+      "output": "\"ubvaw\"",
+      "explanation": "There are 24 solutions for this problem. Only \"v\" and \"w\" are invalid modifications as the strings will consist of consecutive repeating characters in \"ubvvw\" and \"ubvww\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string modifyString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String modifyString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def modifyString(self, s: str) -> str:\n        ",
+    "typescript": "function modifyString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ModifyString(string s) {\n        \n    }\n}",
+    "go": "func modifyString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn modify_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "?zs"
+    },
+    {
+      "s": "ubv?w"
+    }
+  ],
+  "functionName": "modifyString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Processing string from left to right, whenever you get a ‘?’, check left character and right character, and select a character not equal to either of them",
+    "Do take care to compare with replaced occurrence of ‘?’ when checking the left character."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "largest-local-values-in-a-matrix",
+  "title": "2373. Largest Local Values in a Matrix",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-local-values-in-a-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]",
+      "output": "[[9,9],[8,6]]",
+      "explanation": "The diagram above shows the original matrix and the generated matrix. Notice that each value in the generated matrix corresponds to the largest value of a contiguous 3 x 3 matrix in grid."
+    },
+    {
+      "input": "grid = [[1,1,1,1,1],[1,1,1,1,1],[1,1,2,1,1],[1,1,1,1,1],[1,1,1,1,1]]",
+      "output": "[[2,2,2],[2,2,2],[2,2,2]]",
+      "explanation": "Notice that the 2 is contained within every contiguous 3 x 3 matrix in grid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> largestLocal(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] largestLocal(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestLocal(self, grid: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function largestLocal(grid: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] LargestLocal(int[][] grid) {\n        \n    }\n}",
+    "go": "func largestLocal(grid [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_local(grid: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]"
+    },
+    {
+      "grid": "[[1,1,1,1,1],[1,1,1,1,1],[1,1,2,1,1],[1,1,1,1,1],[1,1,1,1,1]]"
+    }
+  ],
+  "functionName": "largestLocal",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Use nested loops to run through all possible 3 x 3 windows in the matrix.",
+    "For each 3 x 3 window, iterate through the values to get the maximum value within the window."
+  ]
+}

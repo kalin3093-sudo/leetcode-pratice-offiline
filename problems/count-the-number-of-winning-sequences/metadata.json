@@ -1,0 +1,49 @@
+{
+  "id": "count-the-number-of-winning-sequences",
+  "title": "3320. Count The Number of Winning Sequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-the-number-of-winning-sequences/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"FFF\"",
+      "output": "3",
+      "explanation": "Bob can beat Alice by making one of the following sequences of moves: \"WFW\", \"FWF\", or \"WEW\". Note that other winning sequences like \"WWE\" or \"EWW\" are invalid since Bob cannot make the same move twice in a row."
+    },
+    {
+      "input": "s = \"FWEFW\"",
+      "output": "18",
+      "explanation": "Bob can beat Alice by making one of the following sequences of moves: \"FWFWF\", \"FWFWE\", \"FWEFE\", \"FWEWE\", \"FEFWF\", \"FEFWE\", \"FEFEW\", \"FEWFE\", \"WFEFE\", \"WFEWE\", \"WEFWF\", \"WEFWE\", \"WEFEF\", \"WEFEW\", \"WEWFW\", \"WEWFE\", \"EWFWE\", or \"EWEWE\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countWinningSequences(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countWinningSequences(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countWinningSequences(self, s: str) -> int:\n        ",
+    "typescript": "function countWinningSequences(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountWinningSequences(string s) {\n        \n    }\n}",
+    "go": "func countWinningSequences(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_winning_sequences(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "FFF"
+    },
+    {
+      "s": "FWEFW"
+    }
+  ],
+  "functionName": "countWinningSequences",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "For <code>0 < i < n - 1</code>, <code>-n < j < n</code>, and <code>k</code> in <code>{’F’, ‘W’, ‘E’}</code>, let <code>dp[i][j][k]</code>  be the number of sequences consisting of the first <code>i</code> moves such that the difference between bob’s points and alice’s point is equal to <code>j</code> and the <code>i<sup>th</sup></code> move that Bob played is <code>k</code>.",
+    "The answer is the sum of <code>dp[n - 1][j][k]</code>over all <code>j > 0</code> and over all <code>k</code>."
+  ]
+}

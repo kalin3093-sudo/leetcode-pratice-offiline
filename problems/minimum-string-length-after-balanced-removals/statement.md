@@ -1,0 +1,10 @@
+You are given a string `s` consisting only of the characters `'a'` and `'b'`.
+
+You are allowed to repeatedly remove **any substring** where the number of `'a'` characters is equal to the number of `'b'` characters. After each removal, the remaining parts of the string are concatenated together without gaps.
+
+Return an integer denoting the **minimum possible length** of the string after performing any number of such operations.
+
+**Constraints:**
+
+-   `1 ≤ s.length ≤ 10^5`
+-   `s[i]` is either `'a'` or `'b'`.

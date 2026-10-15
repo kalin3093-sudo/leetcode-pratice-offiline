@@ -1,0 +1,47 @@
+{
+  "id": "remove-trailing-zeros-from-a-string",
+  "title": "2710. Remove Trailing Zeros From a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/remove-trailing-zeros-from-a-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "num = \"51230100\"",
+      "output": "\"512301\"",
+      "explanation": "Integer \"51230100\" has 2 trailing zeros, we remove them and return integer \"512301\"."
+    },
+    {
+      "input": "num = \"123\"",
+      "output": "\"123\"",
+      "explanation": "Integer \"123\" has no trailing zeros, we return integer \"123\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string removeTrailingZeros(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String removeTrailingZeros(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeTrailingZeros(self, num: str) -> str:\n        ",
+    "typescript": "function removeTrailingZeros(num: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RemoveTrailingZeros(string num) {\n        \n    }\n}",
+    "go": "func removeTrailingZeros(num string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_trailing_zeros(num: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "51230100"
+    },
+    {
+      "num": "123"
+    }
+  ],
+  "functionName": "removeTrailingZeros",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Find the last non-zero digit in num."
+  ]
+}

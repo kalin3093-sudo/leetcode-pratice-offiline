@@ -1,0 +1,47 @@
+{
+  "id": "minimum-moves-to-reach-target-with-rotations",
+  "title": "1210. Minimum Moves to Reach Target with Rotations",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,0,0,0,0,1], [1,1,0,0,1,0], [0,0,0,0,1,1], [0,0,1,0,1,0], [0,1,1,0,0,0], [0,1,1,0,0,0]]",
+      "output": "11",
+      "explanation": "One possible solution is [right, right, rotate clockwise, right, down, down, down, down, rotate counterclockwise, right, down]."
+    },
+    {
+      "input": "grid = [[0,0,1,1,1,1], [0,0,0,0,1,1], [1,1,0,0,0,1], [1,1,1,0,0,1], [1,1,1,0,0,1], [1,1,1,0,0,0]]",
+      "output": "9"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumMoves(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumMoves(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumMoves(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function minimumMoves(grid: number[][]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int MinimumMoves(int[][] grid) {\n        \n    }\n}",
+    "go": "func minimumMoves(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_moves(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,0,0,0,0,1],[1,1,0,0,1,0],[0,0,0,0,1,1],[0,0,1,0,1,0],[0,1,1,0,0,0],[0,1,1,0,0,0]]\r"
+    },
+    {
+      "grid": "[[0,0,1,1,1,1],[0,0,0,0,1,1],[1,1,0,0,0,1],[1,1,1,0,0,1],[1,1,1,0,0,1],[1,1,1,0,0,0]]\r"
+    }
+  ],
+  "functionName": "minimumMoves",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use BFS to find the answer.",
+    "The state of the BFS is the position (x, y) along with a binary value that specifies if the position is horizontal or vertical."
+  ]
+}

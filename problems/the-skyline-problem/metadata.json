@@ -1,0 +1,44 @@
+{
+  "id": "the-skyline-problem",
+  "title": "218. The Skyline Problem",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/the-skyline-problem/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]",
+      "output": "[[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]",
+      "explanation": "Figure A shows the buildings of the input. Figure B shows the skyline formed by those buildings. The red points in figure B represent the key points in the output list."
+    },
+    {
+      "input": "buildings = [[0,2,3],[2,5,3]]",
+      "output": "[[0,3],[5,0]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> getSkyline(int[][] buildings) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getSkyline(self, buildings: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function getSkyline(buildings: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> GetSkyline(int[][] buildings) {\n        \n    }\n}",
+    "go": "func getSkyline(buildings [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_skyline(buildings: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "buildings": "[[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]"
+    },
+    {
+      "buildings": "[[0,2,3],[2,5,3]]"
+    }
+  ],
+  "functionName": "getSkyline",
+  "params": [
+    {
+      "name": "buildings",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": []
+}

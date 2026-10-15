@@ -1,0 +1,45 @@
+{
+  "id": "arranging-coins",
+  "title": "441. Arranging Coins",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/arranging-coins/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "2",
+      "explanation": "Because the 3rd row is incomplete, we return 2."
+    },
+    {
+      "input": "n = 8",
+      "output": "3",
+      "explanation": "Because the 4th row is incomplete, we return 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int arrangeCoins(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int arrangeCoins(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def arrangeCoins(self, n: int) -> int:\n        ",
+    "typescript": "function arrangeCoins(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ArrangeCoins(int n) {\n        \n    }\n}",
+    "go": "func arrangeCoins(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn arrange_coins(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 8
+    }
+  ],
+  "functionName": "arrangeCoins",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

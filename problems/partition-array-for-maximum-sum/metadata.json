@@ -1,0 +1,61 @@
+{
+  "id": "partition-array-for-maximum-sum",
+  "title": "1043. Partition Array for Maximum Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partition-array-for-maximum-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,15,7,9,2,5,10], k = 3",
+      "output": "84",
+      "explanation": "arr becomes [15,15,15,9,10,10,10]"
+    },
+    {
+      "input": "arr = [1,4,1,5,7,3,6,1,9,9,3], k = 4",
+      "output": "83"
+    },
+    {
+      "input": "arr = [1], k = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSumAfterPartitioning(vector<int>& arr, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSumAfterPartitioning(int[] arr, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSumAfterPartitioning(self, arr: list[int], k: int) -> int:\n        ",
+    "typescript": "function maxSumAfterPartitioning(arr: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSumAfterPartitioning(int[] arr, int k) {\n        \n    }\n}",
+    "go": "func maxSumAfterPartitioning(arr []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_sum_after_partitioning(arr: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,15,7,9,2,5,10]",
+      "k": 3
+    },
+    {
+      "arr": "[1,4,1,5,7,3,6,1,9,9,3]",
+      "k": 4
+    },
+    {
+      "arr": "[1]",
+      "k": 1
+    }
+  ],
+  "functionName": "maxSumAfterPartitioning",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think dynamic programming:  dp[i] will be the answer for array A[0], ..., A[i-1].",
+    "For j = 1 .. k that keeps everything in bounds, dp[i] is the maximum of dp[i-j] + max(A[i-1], ..., A[i-j]) * j ."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "find-first-palindromic-string-in-the-array",
+  "title": "2108. Find First Palindromic String in the Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]",
+      "output": "\"ada\"",
+      "explanation": "The first string that is palindromic is \"ada\". Note that \"racecar\" is also palindromic, but it is not the first."
+    },
+    {
+      "input": "words = [\"notapalindrome\",\"racecar\"]",
+      "output": "\"racecar\"",
+      "explanation": "The first and only string that is palindromic is \"racecar\"."
+    },
+    {
+      "input": "words = [\"def\",\"ghi\"]",
+      "output": "\"\"",
+      "explanation": "There are no palindromic strings, so the empty string is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string firstPalindrome(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String firstPalindrome(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def firstPalindrome(self, words: list[str]) -> str:\n        ",
+    "typescript": "function firstPalindrome(words: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FirstPalindrome(string[] words) {\n        \n    }\n}",
+    "go": "func firstPalindrome(words []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn first_palindrome(words: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]"
+    },
+    {
+      "words": "[\"notapalindrome\",\"racecar\"]"
+    },
+    {
+      "words": "[\"def\",\"ghi\"]"
+    }
+  ],
+  "functionName": "firstPalindrome",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Iterate through the elements in order. As soon as the current element is a palindrome, return it.",
+    "To check if an element is a palindrome, can you reverse the string?"
+  ]
+}

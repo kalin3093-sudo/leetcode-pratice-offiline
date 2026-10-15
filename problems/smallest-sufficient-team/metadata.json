@@ -1,0 +1,52 @@
+{
+  "id": "smallest-sufficient-team",
+  "title": "1125. Smallest Sufficient Team",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-sufficient-team/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "req_skills = [\"java\",\"nodejs\",\"reactjs\"], people = [[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
+      "output": "[0,2]"
+    },
+    {
+      "input": "req_skills = [\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"], people = [[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
+      "output": "[1,2]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> smallestSufficientTeam(vector<string>& req_skills, vector<vector<string>>& people) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] smallestSufficientTeam(String[] req_skills, List<List<String>> people) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestSufficientTeam(self, req_skills: list[str], people: list[list[str]]) -> list[int]:\n        ",
+    "typescript": "function smallestSufficientTeam(req_skills: string[], people: string[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SmallestSufficientTeam(string[] req_skills, IList<IList<string>> people) {\n        \n    }\n}",
+    "go": "func smallestSufficientTeam(req_skills []string, people [][]string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_sufficient_team(req_skills: Vec<String>, people: Vec<Vec<String>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "req_skills": "[\"java\",\"nodejs\",\"reactjs\"]",
+      "people": "[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]"
+    },
+    {
+      "req_skills": "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]",
+      "people": "[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]"
+    }
+  ],
+  "functionName": "smallestSufficientTeam",
+  "params": [
+    {
+      "name": "req_skills",
+      "type": "string_array"
+    },
+    {
+      "name": "people",
+      "type": "string_list_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Do a bitmask DP.",
+    "For each person, for each set of skills, we can update our understanding of a minimum set of people needed to perform this set of skills."
+  ]
+}

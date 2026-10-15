@@ -1,0 +1,57 @@
+{
+  "id": "minimum-number-of-operations-to-have-distinct-elements",
+  "title": "3779. Minimum Number of Operations to Have Distinct Elements",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-have-distinct-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,8,3,6,5,8]",
+      "output": "1",
+      "explanation": "In the first operation, we remove the first three elements. The remaining elements [6, 5, 8] are all distinct, so we stop. Only one operation is needed."
+    },
+    {
+      "input": "nums = [2,2]",
+      "output": "1",
+      "explanation": "After one operation, the array becomes empty, which meets the stopping condition."
+    },
+    {
+      "input": "nums = [4,3,5,1,2]",
+      "output": "0",
+      "explanation": "All elements in the array are distinct, therefore no operations are needed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,8,3,6,5,8]"
+    },
+    {
+      "nums": "[2,2]"
+    },
+    {
+      "nums": "[4,3,5,1,2]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the operations as described using a map that is initially filled.",
+    "While the map does not contain all distinct elements, delete the first three values using a pointer.",
+    "Repeat until the map contains all distinct elements or becomes empty."
+  ]
+}

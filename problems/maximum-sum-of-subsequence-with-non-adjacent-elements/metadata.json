@@ -1,0 +1,54 @@
+{
+  "id": "maximum-sum-of-subsequence-with-non-adjacent-elements",
+  "title": "3165. Maximum Sum of Subsequence With Non-adjacent Elements",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,5,9], queries = [[1,-2],[0,-3]]",
+      "output": "21",
+      "explanation": "After the 1st query, nums = [3,-2,9] and the maximum sum of a subsequence with non-adjacent elements is 3 + 9 = 12. After the 2nd query, nums = [-3,-2,9] and the maximum sum of a subsequence with non-adjacent elements is 9."
+    },
+    {
+      "input": "nums = [0,-1], queries = [[0,-5]]",
+      "output": "0",
+      "explanation": "After the 1st query, nums = [-5,-1] and the maximum sum of a subsequence with non-adjacent elements is 0 (choosing an empty subsequence)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumSumSubsequence(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumSumSubsequence(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumSumSubsequence(self, nums: List[int], queries: List[List[int]]) -> int:\n        ",
+    "typescript": "function maximumSumSubsequence(nums: number[], queries: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumSumSubsequence(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func maximumSumSubsequence(nums []int, queries [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_sum_subsequence(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,5,9]",
+      "queries": "[[1,-2],[0,-3]]"
+    },
+    {
+      "nums": "[0,-1]",
+      "queries": "[[0,-5]]"
+    }
+  ],
+  "functionName": "maximumSumSubsequence",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can you solve each query in <code>O(nums.length)</code> with dynamic programming?",
+    "In order to optimize, we will use segment tree where each node contains the maximum value of (front element has been chosen or not, back element has been chosen or not)."
+  ]
+}

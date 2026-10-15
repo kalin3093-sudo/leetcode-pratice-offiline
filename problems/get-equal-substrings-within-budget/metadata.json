@@ -1,0 +1,70 @@
+{
+  "id": "get-equal-substrings-within-budget",
+  "title": "1208. Get Equal Substrings Within Budget",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/get-equal-substrings-within-budget/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abcd\", t = \"bcdf\", maxCost = 3",
+      "output": "3",
+      "explanation": "\"abc\" of s can change to \"bcd\". That costs 3, so the maximum length is 3."
+    },
+    {
+      "input": "s = \"abcd\", t = \"cdef\", maxCost = 3",
+      "output": "1",
+      "explanation": "Each character in s costs 2 to change to character in t,  so the maximum length is 1."
+    },
+    {
+      "input": "s = \"abcd\", t = \"acde\", maxCost = 0",
+      "output": "1",
+      "explanation": "You cannot make any change, so the maximum length is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int equalSubstring(string s, string t, int maxCost) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int equalSubstring(String s, String t, int maxCost) {\n        \n    }\n}",
+    "python": "class Solution:\n    def equalSubstring(self, s: str, t: str, maxCost: int) -> int:\n        ",
+    "typescript": "function equalSubstring(s: string, t: string, maxCost: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EqualSubstring(string s, string t, int maxCost) {\n        \n    }\n}",
+    "go": "func equalSubstring(s string, t string, maxCost int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn equal_substring(s: String, t: String, max_cost: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcd",
+      "t": "bcdf",
+      "maxCost": 3
+    },
+    {
+      "s": "abcd",
+      "t": "cdef",
+      "maxCost": 3
+    },
+    {
+      "s": "abcd",
+      "t": "acde",
+      "maxCost": 0
+    }
+  ],
+  "functionName": "equalSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    },
+    {
+      "name": "maxCost",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Calculate the differences between s[i] and t[i].",
+    "Use a sliding window to track the longest valid substring."
+  ]
+}

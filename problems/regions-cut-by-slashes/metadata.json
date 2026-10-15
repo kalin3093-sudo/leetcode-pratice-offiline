@@ -1,0 +1,51 @@
+{
+  "id": "regions-cut-by-slashes",
+  "title": "959. Regions Cut By Slashes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/regions-cut-by-slashes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [\"​/\",\"/​\"]",
+      "output": "2"
+    },
+    {
+      "input": "grid = [\"​/\",\"​​\"]",
+      "output": "1"
+    },
+    {
+      "input": "grid = [\"/\\\",\"\\/\"]",
+      "output": "5",
+      "explanation": "Recall that because \\ characters are escaped, \"\\\\/\" refers to \\/, and \"/\\\\\" refers to /\\."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int regionsBySlashes(vector<string>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int regionsBySlashes(String[] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def regionsBySlashes(self, grid: list[str]) -> int:\n        ",
+    "typescript": "function regionsBySlashes(grid: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RegionsBySlashes(string[] grid) {\n        \n    }\n}",
+    "go": "func regionsBySlashes(grid []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn regions_by_slashes(grid: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[\" /\",\"/ \"]"
+    },
+    {
+      "grid": "[\" /\",\"  \"]"
+    },
+    {
+      "grid": "[\"/\\\\\",\"\\\\/\"]"
+    }
+  ],
+  "functionName": "regionsBySlashes",
+  "params": [
+    {
+      "name": "grid",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

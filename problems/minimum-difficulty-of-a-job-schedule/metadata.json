@@ -1,0 +1,63 @@
+{
+  "id": "minimum-difficulty-of-a-job-schedule",
+  "title": "1335. Minimum Difficulty of a Job Schedule",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "jobDifficulty = [6,5,4,3,2,1], d = 2",
+      "output": "7",
+      "explanation": "First day you can finish the first 5 jobs, total difficulty = 6. Second day you can finish the last job, total difficulty = 1. The difficulty of the schedule = 6 + 1 = 7"
+    },
+    {
+      "input": "jobDifficulty = [9,9,9], d = 4",
+      "output": "-1",
+      "explanation": "If you finish a job per day you will still have a free day. you cannot find a schedule for the given jobs."
+    },
+    {
+      "input": "jobDifficulty = [1,1,1], d = 3",
+      "output": "3",
+      "explanation": "The schedule is one job per day. total difficulty will be 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDifficulty(vector<int>& jobDifficulty, int d) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDifficulty(int[] jobDifficulty, int d) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDifficulty(self, jobDifficulty: list[int], d: int) -> int:\n        ",
+    "typescript": "function minDifficulty(jobDifficulty: number[], d: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDifficulty(int[] jobDifficulty, int d) {\n        \n    }\n}",
+    "go": "func minDifficulty(jobDifficulty []int, d int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_difficulty(job_difficulty: Vec<i32>, d: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "jobDifficulty": "[6,5,4,3,2,1]",
+      "d": 2
+    },
+    {
+      "jobDifficulty": "[9,9,9]",
+      "d": 4
+    },
+    {
+      "jobDifficulty": "[1,1,1]",
+      "d": 3
+    }
+  ],
+  "functionName": "minDifficulty",
+  "params": [
+    {
+      "name": "jobDifficulty",
+      "type": "int_array"
+    },
+    {
+      "name": "d",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use DP. Try to cut the array into d non-empty sub-arrays. Try all possible cuts for the array.",
+    "Use dp[i][j] where DP states are i the index of the last cut and j the number of remaining cuts. Complexity is O(n * n * d)."
+  ]
+}

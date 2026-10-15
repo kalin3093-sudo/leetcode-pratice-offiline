@@ -1,0 +1,49 @@
+{
+  "id": "count-distinct-numbers-on-board",
+  "title": "2549. Count Distinct Numbers on Board",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-distinct-numbers-on-board/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "4",
+      "explanation": "Initially, 5 is present on the board. The next day, 2 and 4 will be added since 5 % 2 == 1 and 5 % 4 == 1. After that day, 3 will be added to the board because 4 % 3 == 1. At the end of a billion days, the distinct numbers on the board will be 2, 3, 4, and 5."
+    },
+    {
+      "input": "n = 3",
+      "output": "2",
+      "explanation": "Since 3 % 2 == 1, 2 will be added to the board. After a billion days, the only two distinct numbers on the board are 2 and 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distinctIntegers(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distinctIntegers(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distinctIntegers(self, n: int) -> int:\n        ",
+    "typescript": "function distinctIntegers(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DistinctIntegers(int n) {\n        \n    }\n}",
+    "go": "func distinctIntegers(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distinct_integers(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 3
+    }
+  ],
+  "functionName": "distinctIntegers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For n > 2, n % (n - 1) == 1 thus n - 1 will be added on the board the next day.",
+    "As the operations are performed for so long time, all the numbers lesser than n except 1 will be added to the board.",
+    "What will happen if n == 1?"
+  ]
+}

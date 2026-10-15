@@ -1,0 +1,44 @@
+{
+  "id": "arithmetic-slices",
+  "title": "413. Arithmetic Slices",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/arithmetic-slices/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "3",
+      "explanation": "We have 3 arithmetic slices in nums: [1, 2, 3], [2, 3, 4] and [1,2,3,4] itself."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfArithmeticSlices(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfArithmeticSlices(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfArithmeticSlices(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function numberOfArithmeticSlices(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfArithmeticSlices(int[] nums) {\n        \n    }\n}",
+    "go": "func numberOfArithmeticSlices(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_arithmetic_slices(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "numberOfArithmeticSlices",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "longest-subarray-of-1s-after-deleting-one-element",
+  "title": "1493. Longest Subarray of 1's After Deleting One Element",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,0,1]",
+      "output": "3",
+      "explanation": "After deleting the number in position 2, [1,1,1] contains 3 numbers with value of 1's."
+    },
+    {
+      "input": "nums = [0,1,1,1,0,1,1,0,1]",
+      "output": "5",
+      "explanation": "After deleting the number in position 4, [0,1,1,1,1,1,0,1] longest subarray with value of 1's is [1,1,1,1,1]."
+    },
+    {
+      "input": "nums = [1,1,1]",
+      "output": "2",
+      "explanation": "You must delete one element."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubarray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubarray(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function longestSubarray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubarray(int[] nums) {\n        \n    }\n}",
+    "go": "func longestSubarray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,0,1]"
+    },
+    {
+      "nums": "[0,1,1,1,0,1,1,0,1]"
+    },
+    {
+      "nums": "[1,1,1]"
+    }
+  ],
+  "functionName": "longestSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Maintain a sliding window where there is at most one zero in it."
+  ]
+}

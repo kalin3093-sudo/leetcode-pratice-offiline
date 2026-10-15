@@ -1,0 +1,12 @@
+You are given an integer array `nums`.
+
+The **digit range** of an integer is defined as the difference between its **largest** digit and **smallest** digit.
+
+For example, the digit range of 5724 is `7 - 2 = 5`.
+
+Return the sum of all integers in `nums` whose **digit range** is equal to the **maximum digit range** among all integers in the array.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 100`
+-   `10 ≤ nums[i] ≤ 10^5`

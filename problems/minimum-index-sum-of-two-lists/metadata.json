@@ -1,0 +1,60 @@
+{
+  "id": "minimum-index-sum-of-two-lists",
+  "title": "599. Minimum Index Sum of Two Lists",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-index-sum-of-two-lists/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "output": "[\"Shogun\"]",
+      "explanation": "The only common string is \"Shogun\"."
+    },
+    {
+      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"KFC\",\"Shogun\",\"Burger King\"]",
+      "output": "[\"Shogun\"]",
+      "explanation": "The common string with the least index sum is \"Shogun\" with index sum = (0 + 1) = 1."
+    },
+    {
+      "input": "list1 = [\"happy\",\"sad\",\"good\"], list2 = [\"sad\",\"happy\",\"good\"]",
+      "output": "[\"sad\",\"happy\"]",
+      "explanation": "There are three common strings: \"happy\" with index sum = (0 + 1) = 1. \"sad\" with index sum = (1 + 0) = 1. \"good\" with index sum = (2 + 2) = 4. The strings with the least index sum are \"sad\" and \"happy\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findRestaurant(vector<string>& list1, vector<string>& list2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] findRestaurant(String[] list1, String[] list2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findRestaurant(self, list1: list[str], list2: list[str]) -> list[str]:\n        ",
+    "typescript": "function findRestaurant(list1: string[], list2: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] FindRestaurant(string[] list1, string[] list2) {\n        \n    }\n}",
+    "go": "func findRestaurant(list1 []string, list2 []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_restaurant(list1: Vec<String>, list2: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "list1": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]",
+      "list2": "[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]"
+    },
+    {
+      "list1": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]",
+      "list2": "[\"KFC\",\"Shogun\",\"Burger King\"]"
+    },
+    {
+      "list1": "[\"happy\",\"sad\",\"good\"]",
+      "list2": "[\"sad\",\"happy\",\"good\"]"
+    }
+  ],
+  "functionName": "findRestaurant",
+  "params": [
+    {
+      "name": "list1",
+      "type": "string_array"
+    },
+    {
+      "name": "list2",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": []
+}

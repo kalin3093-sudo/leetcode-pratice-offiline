@@ -1,0 +1,10 @@
+[
+  {
+    "bottom": "BCD",
+    "allowed": "[\"BCC\",\"CDE\",\"CEA\",\"FFF\"]"
+  },
+  {
+    "bottom": "AAAA",
+    "allowed": "[\"AAB\",\"AAC\",\"BCD\",\"BBE\",\"DEF\"]"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  { "s": "anagram", "t": "nagaram" },
+  { "s": "rat", "t": "car" },
+  { "s": "ab", "t": "aa" },
+  { "s": "a", "t": "a" },
+  { "s": "ab", "t": "ba" }
+]

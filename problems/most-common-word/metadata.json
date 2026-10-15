@@ -1,0 +1,50 @@
+{
+  "id": "most-common-word",
+  "title": "819. Most Common Word",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/most-common-word/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\", banned = [\"hit\"]",
+      "output": "\"ball\"",
+      "explanation": "\"hit\" occurs 3 times, but it is a banned word. \"ball\" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. Note that words in the paragraph are not case sensitive, that punctuation is ignored (even if adjacent to words, such as \"ball,\"), and that \"hit\" isn't the answer even though it occurs more because it is banned."
+    },
+    {
+      "input": "paragraph = \"a.\", banned = []",
+      "output": "\"a\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string mostCommonWord(string paragraph, vector<string>& banned) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String mostCommonWord(String paragraph, String[] banned) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mostCommonWord(self, paragraph: str, banned: list[str]) -> str:\n        ",
+    "typescript": "function mostCommonWord(paragraph: string, banned: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MostCommonWord(string paragraph, string[] banned) {\n        \n    }\n}",
+    "go": "func mostCommonWord(paragraph string, banned []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn most_common_word(paragraph: String, banned: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "paragraph": "Bob hit a ball, the hit BALL flew far after it was hit.",
+      "banned": "[\"hit\"]"
+    },
+    {
+      "paragraph": "a.",
+      "banned": "[]"
+    }
+  ],
+  "functionName": "mostCommonWord",
+  "params": [
+    {
+      "name": "paragraph",
+      "type": "string"
+    },
+    {
+      "name": "banned",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

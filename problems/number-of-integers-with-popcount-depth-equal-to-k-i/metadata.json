@@ -1,0 +1,55 @@
+{
+  "id": "number-of-integers-with-popcount-depth-equal-to-k-i",
+  "title": "3621. Number of Integers With Popcount-Depth Equal to K I",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4, k = 1",
+      "output": "2",
+      "explanation": "The following integers in the range [1, 4] have popcount-depth exactly equal to 1: x Binary Sequence 2 \"10\" 2 &rarr; 1 4 \"100\" 4 &rarr; 1 Thus, the answer is 2."
+    },
+    {
+      "input": "n = 7, k = 2",
+      "output": "3",
+      "explanation": "The following integers in the range [1, 7] have popcount-depth exactly equal to 2: x Binary Sequence 3 \"11\" 3 &rarr; 2 &rarr; 1 5 \"101\" 5 &rarr; 2 &rarr; 1 6 \"110\" 6 &rarr; 2 &rarr; 1 Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long popcountDepth(long long n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long popcountDepth(long n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def popcountDepth(self, n: int, k: int) -> int:\n        ",
+    "typescript": "function popcountDepth(n: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long PopcountDepth(long n, int k) {\n        \n    }\n}",
+    "go": "func popcountDepth(n int64, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn popcount_depth(n: i64, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "4",
+      "k": 1
+    },
+    {
+      "n": "7",
+      "k": 2
+    }
+  ],
+  "functionName": "popcountDepth",
+  "params": [
+    {
+      "name": "n",
+      "type": "long"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use digit dynamic programming on the binary representation of <code>n</code>: let <code>dp[pos][ones][tight]</code> = number of ways to choose bits from the most significant down to position <code>pos</code> with exactly <code>ones</code> ones so far, where <code>tight</code> indicates whether you're still matching the prefix of <code>n</code>.",
+    "Precompute <code>depth[j]</code> for all <code>j</code> from <code>0</code> to <code>64</code> by repeatedly applying <code>popcount(j)</code> until you reach <code>1</code>.",
+    "After your DP, let <code>dp_final[j]</code> be the count of numbers <= <code>n</code> that have exactly <code>j</code> ones; the answer is the sum of all <code>dp_final[j]</code> for which <code>depth[j] == k</code>."
+  ]
+}

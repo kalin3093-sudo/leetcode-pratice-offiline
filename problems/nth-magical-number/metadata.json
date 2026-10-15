@@ -1,0 +1,55 @@
+{
+  "id": "nth-magical-number",
+  "title": "878. Nth Magical Number",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/nth-magical-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1, a = 2, b = 3",
+      "output": "2"
+    },
+    {
+      "input": "n = 4, a = 2, b = 3",
+      "output": "6"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int nthMagicalNumber(int n, int a, int b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int nthMagicalNumber(int n, int a, int b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nthMagicalNumber(self, n: int, a: int, b: int) -> int:\n        ",
+    "typescript": "function nthMagicalNumber(n: number, a: number, b: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NthMagicalNumber(int n, int a, int b) {\n        \n    }\n}",
+    "go": "func nthMagicalNumber(n int, a int, b int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn nth_magical_number(n: i32, a: i32, b: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1,
+      "a": 2,
+      "b": 3
+    },
+    {
+      "n": 4,
+      "a": 2,
+      "b": 3
+    }
+  ],
+  "functionName": "nthMagicalNumber",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

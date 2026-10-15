@@ -1,0 +1,71 @@
+{
+  "id": "maximum-number-of-integers-to-choose-from-a-range-i",
+  "title": "2554. Maximum Number of Integers to Choose From a Range I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "banned = [1,6,5], n = 5, maxSum = 6",
+      "output": "2",
+      "explanation": "You can choose the integers 2 and 4. 2 and 4 are from the range [1, 5], both did not appear in banned, and their sum is 6, which did not exceed maxSum."
+    },
+    {
+      "input": "banned = [1,2,3,4,5,6,7], n = 8, maxSum = 1",
+      "output": "0",
+      "explanation": "You cannot choose any integer while following the mentioned conditions."
+    },
+    {
+      "input": "banned = [11], n = 7, maxSum = 50",
+      "output": "7",
+      "explanation": "You can choose the integers 1, 2, 3, 4, 5, 6, and 7. They are from the range [1, 7], all did not appear in banned, and their sum is 28, which did not exceed maxSum."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxCount(vector<int>& banned, int n, int maxSum) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxCount(int[] banned, int n, int maxSum) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxCount(self, banned: list[int], n: int, maxSum: int) -> int:\n        ",
+    "typescript": "function maxCount(banned: number[], n: number, maxSum: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxCount(int[] banned, int n, int maxSum) {\n        \n    }\n}",
+    "go": "func maxCount(banned []int, n int, maxSum int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_count(banned: Vec<i32>, n: i32, max_sum: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "banned": "[1,6,5]",
+      "n": 5,
+      "maxSum": 6
+    },
+    {
+      "banned": "[1,2,3,4,5,6,7]",
+      "n": 8,
+      "maxSum": 1
+    },
+    {
+      "banned": "[11]",
+      "n": 7,
+      "maxSum": 50
+    }
+  ],
+  "functionName": "maxCount",
+  "params": [
+    {
+      "name": "banned",
+      "type": "int_array"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "maxSum",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Keep the banned numbers that are less than or equal to n in a set.",
+    "Loop over the numbers from 1 to n and if the number is not banned, use it.",
+    "Keep adding numbers while they are not banned, and their sum is less than or equal to k."
+  ]
+}

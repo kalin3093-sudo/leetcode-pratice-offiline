@@ -1,0 +1,49 @@
+{
+  "id": "sum-of-largest-prime-substrings",
+  "title": "3556. Sum of Largest Prime Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-largest-prime-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"12234\"",
+      "output": "1469",
+      "explanation": "The unique prime numbers formed from the substrings of \"12234\" are 2, 3, 23, 223, and 1223. The 3 largest primes are 1223, 223, and 23. Their sum is 1469."
+    },
+    {
+      "input": "s = \"111\"",
+      "output": "11",
+      "explanation": "The unique prime number formed from the substrings of \"111\" is 11. Since there is only one prime number, the sum is 11."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long sumOfLargestPrimes(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long sumOfLargestPrimes(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfLargestPrimes(self, s: str) -> int:\n        ",
+    "typescript": "function sumOfLargestPrimes(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SumOfLargestPrimes(string s) {\n        \n    }\n}",
+    "go": "func sumOfLargestPrimes(s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_largest_primes(s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "12234"
+    },
+    {
+      "s": "111"
+    }
+  ],
+  "functionName": "sumOfLargestPrimes",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Iterate over all substrings of <code>s</code> to generate candidate numbers.",
+    "Check each candidate for primality in <code>O(sqrt(n))</code> time.",
+    "Store unique primes, then sum the three largest (or all if fewer than three)."
+  ]
+}

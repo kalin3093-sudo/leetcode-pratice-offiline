@@ -1,0 +1,55 @@
+{
+  "id": "balanced-k-factor-decomposition",
+  "title": "3669. Balanced K-Factor Decomposition",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/balanced-k-factor-decomposition/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 100, k = 2",
+      "output": "[10,10]",
+      "explanation": "The split [10, 10] yields 10 * 10 = 100 and a max-min difference of 0, which is minimal."
+    },
+    {
+      "input": "n = 44, k = 3",
+      "output": "[2,2,11]",
+      "explanation": "Split [1, 1, 44] yields a difference of 43 Split [1, 2, 22] yields a difference of 21 Split [1, 4, 11] yields a difference of 10 Split [2, 2, 11] yields a difference of 9 Therefore, [2, 2, 11] is the optimal split with the smallest difference 9."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minDifference(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] minDifference(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDifference(self, n: int, k: int) -> List[int]:\n        ",
+    "typescript": "function minDifference(n: number, k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MinDifference(int n, int k) {\n        \n    }\n}",
+    "go": "func minDifference(n int, k int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_difference(n: i32, k: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 100,
+      "k": 2
+    },
+    {
+      "n": 44,
+      "k": 3
+    }
+  ],
+  "functionName": "minDifference",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "First, compute all positive divisors of <code>n</code> and sort them into a list <code>divs</code>.",
+    "Use a recursive search <code>dfs(start, picked, prod, path)</code> that picks the next divisor from <code>divs[start...]</code>, multiplies it into <code>prod</code>, and appends to <code>path</code> until you have <code>k</code> factors whose product is <code>n</code>.",
+    "During the search, keep track of the best <code>path</code> that minimizes max(path) – min(path) and return it."
+  ]
+}

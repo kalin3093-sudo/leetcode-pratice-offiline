@@ -1,0 +1,14 @@
+[
+  {
+    "words": "[\"alice\",\"bob\",\"charlie\"]",
+    "s": "abc"
+  },
+  {
+    "words": "[\"an\",\"apple\"]",
+    "s": "a"
+  },
+  {
+    "words": "[\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"]",
+    "s": "ngguoy"
+  }
+]

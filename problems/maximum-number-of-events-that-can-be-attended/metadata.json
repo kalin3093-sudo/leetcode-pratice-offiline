@@ -1,0 +1,47 @@
+{
+  "id": "maximum-number-of-events-that-can-be-attended",
+  "title": "1353. Maximum Number of Events That Can Be Attended",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "events = [[1,2],[2,3],[3,4]]",
+      "output": "3",
+      "explanation": "You can attend all the three events. One way to attend them all is as shown. Attend the first event on day 1. Attend the second event on day 2. Attend the third event on day 3."
+    },
+    {
+      "input": "events= [[1,2],[2,3],[3,4],[1,2]]",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxEvents(vector<vector<int>>& events) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxEvents(int[][] events) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxEvents(self, events: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxEvents(events: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxEvents(int[][] events) {\n        \n    }\n}",
+    "go": "func maxEvents(events [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_events(events: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "events": "[[1,2],[2,3],[3,4]]"
+    },
+    {
+      "events": "[[1,2],[2,3],[3,4],[1,2]]"
+    }
+  ],
+  "functionName": "maxEvents",
+  "params": [
+    {
+      "name": "events",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the events by the start time and in case of tie by the end time in ascending order.",
+    "Loop over the sorted events. Attend as much as you can and keep the last day occupied. When you try to attend new event keep in mind the first day you can attend a new event in."
+  ]
+}

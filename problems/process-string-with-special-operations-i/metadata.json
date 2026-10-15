@@ -1,0 +1,47 @@
+{
+  "id": "process-string-with-special-operations-i",
+  "title": "3612. Process String with Special Operations I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/process-string-with-special-operations-i/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"a#b%*\"",
+      "output": "\"ba\"",
+      "explanation": "i s[i] Operation Current result 0 'a' Append 'a' \"a\" 1 '#' Duplicate result \"aa\" 2 'b' Append 'b' \"aab\" 3 '%' Reverse result \"baa\" 4 '*' Remove the last character \"ba\" Thus, the final result is \"ba\"."
+    },
+    {
+      "input": "s = \"z*#\"",
+      "output": "\"\"",
+      "explanation": "i s[i] Operation Current result 0 'z' Append 'z' \"z\" 1 '*' Remove the last character \"\" 2 '#' Duplicate the string \"\" Thus, the final result is \"\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string processStr(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String processStr(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def processStr(self, s: str) -> str:\n        ",
+    "typescript": "function processStr(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ProcessStr(string s) {\n        \n    }\n}",
+    "go": "func processStr(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn process_str(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "a#b%*"
+    },
+    {
+      "s": "z*#"
+    }
+  ],
+  "functionName": "processStr",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Simulate as described"
+  ]
+}

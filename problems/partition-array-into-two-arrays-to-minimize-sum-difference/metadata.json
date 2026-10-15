@@ -1,0 +1,58 @@
+{
+  "id": "partition-array-into-two-arrays-to-minimize-sum-difference",
+  "title": "2035. Partition Array Into Two Arrays to Minimize Sum Difference",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,9,7,3]",
+      "output": "2",
+      "explanation": "One optimal partition is: [3,9] and [7,3]. The absolute difference between the sums of the arrays is abs((3 + 9) - (7 + 3)) = 2."
+    },
+    {
+      "input": "nums = [-36,36]",
+      "output": "72",
+      "explanation": "One optimal partition is: [-36] and [36]. The absolute difference between the sums of the arrays is abs((-36) - (36)) = 72."
+    },
+    {
+      "input": "nums = [2,-1,0,4,-2,-9]",
+      "output": "0",
+      "explanation": "One optimal partition is: [2,4,-9] and [-1,0,-2]. The absolute difference between the sums of the arrays is abs((2 + 4 + -9) - (-1 + 0 + -2)) = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumDifference(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minimumDifference(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumDifference(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_difference(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,9,7,3]"
+    },
+    {
+      "nums": "[-36,36]"
+    },
+    {
+      "nums": "[2,-1,0,4,-2,-9]"
+    }
+  ],
+  "functionName": "minimumDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The target sum for the two partitions is sum(nums) / 2.",
+    "Could you reduce the time complexity if you arbitrarily divide nums into two halves (two arrays)? Meet-in-the-Middle?",
+    "For both halves, pre-calculate a 2D array where the kth index will store all possible sum values if only k elements from this half are added.",
+    "For each sum of k elements in the first half, find the best sum of n-k elements in the second half such that the two sums add up to a value closest to the target sum from hint 1. These two subsets will form one array of the partition."
+  ]
+}

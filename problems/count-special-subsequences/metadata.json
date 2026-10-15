@@ -1,0 +1,48 @@
+{
+  "id": "count-special-subsequences",
+  "title": "3404. Count Special Subsequences",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-special-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,3,6,1]",
+      "output": "1",
+      "explanation": "There is one special subsequence in nums. (p, q, r, s) = (0, 2, 4, 6): This corresponds to elements (1, 3, 3, 1). nums[p] * nums[r] = nums[0] * nums[4] = 1 * 3 = 3 nums[q] * nums[s] = nums[2] * nums[6] = 3 * 1 = 3"
+    },
+    {
+      "input": "nums = [3,4,3,4,3,4,3,4]",
+      "output": "3",
+      "explanation": "There are three special subsequences in nums. (p, q, r, s) = (0, 2, 4, 6): This corresponds to elements (3, 3, 3, 3). nums[p] * nums[r] = nums[0] * nums[4] = 3 * 3 = 9 nums[q] * nums[s] = nums[2] * nums[6] = 3 * 3 = 9 (p, q, r, s) = (1, 3, 5, 7): This corresponds to elements (4, 4, 4, 4). nums[p] * nums[r] = nums[1] * nums[5] = 4 * 4 = 16 nums[q] * nums[s] = nums[3] * nums[7] = 4 * 4 = 16 (p, q, r, s) = (0, 2, 5, 7): This corresponds to elements (3, 3, 4, 4). nums[p] * nums[r] = nums[0] * nums[5] = 3 * 4 = 12 nums[q] * nums[s] = nums[2] * nums[7] = 3 * 4 = 12"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long numberOfSubsequences(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long numberOfSubsequences(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSubsequences(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function numberOfSubsequences(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long NumberOfSubsequences(int[] nums) {\n        \n    }\n}",
+    "go": "func numberOfSubsequences(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_subsequences(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,3,6,1]"
+    },
+    {
+      "nums": "[3,4,3,4,3,4,3,4]"
+    }
+  ],
+  "functionName": "numberOfSubsequences",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Count pairs where <code>nums[p] / nums[q]</code> equals <code>nums[s] / nums[r]</code>, using GCD to handle ratios efficiently.",
+    "Try iterating over <code>(p, q)</code> pairs and efficiently count valid <code>(r, s)</code> pairs with the same ratio."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "maximum-path-score-in-a-grid",
+  "title": "3742. Maximum Path Score in a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-path-score-in-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0, 1],[2, 0]], k = 1",
+      "output": "2",
+      "explanation": "The optimal path is: Cell grid[i][j] Score Total Score Cost Total Cost (0, 0) 0 0 0 0 0 (1, 0) 2 2 2 1 1 (1, 1) 0 0 2 0 1 Thus, the maximum possible score is 2."
+    },
+    {
+      "input": "grid = [[0, 1],[1, 2]], k = 1",
+      "output": "-1",
+      "explanation": "There is no path that reaches cell (1, 1) without exceeding cost k. Thus, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxPathScore(vector<vector<int>>& grid, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxPathScore(int[][] grid, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPathScore(self, grid: List[List[int]], k: int) -> int:\n        ",
+    "typescript": "function maxPathScore(grid: number[][], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxPathScore(int[][] grid, int k) {\n        \n    }\n}",
+    "go": "func maxPathScore(grid [][]int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_path_score(grid: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0, 1],[2, 0]]",
+      "k": 1
+    },
+    {
+      "grid": "[[0, 1],[1, 2]]",
+      "k": 1
+    }
+  ],
+  "functionName": "maxPathScore",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "Let <code>dp[i][j][c]</code> = max score at cell <code>(i,j)</code> with total cost exactly <code>c</code> (0 <= <code>c</code> <= <code>k</code>).",
+    "Update <code>dp[i][j][c]</code> from <code>(i-1,j)</code> and <code>(i,j-1)</code> using <code>cost = (grid[i][j] == 0 ? 0 : 1)</code> and <code>score = grid[i][j]</code>.",
+    "Answer = <code>max(dp[m-1][n-1][c])</code> for <code>c=0..k</code>, or <code>-1</code> if none."
+  ]
+}

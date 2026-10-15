@@ -1,0 +1,48 @@
+{
+  "id": "prime-pairs-with-target-sum",
+  "title": "2761. Prime Pairs With Target Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/prime-pairs-with-target-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 10",
+      "output": "[[3,7],[5,5]]",
+      "explanation": "In this example, there are two prime pairs that satisfy the criteria. These pairs are [3,7] and [5,5], and we return them in the sorted order as described in the problem statement."
+    },
+    {
+      "input": "n = 2",
+      "output": "[]",
+      "explanation": "We can show that there is no prime number pair that gives a sum of 2, so we return an empty array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> findPrimePairs(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> findPrimePairs(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findPrimePairs(self, n: int) -> List[List[int]]:\n        ",
+    "typescript": "function findPrimePairs(n: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> FindPrimePairs(int n) {\n        \n    }\n}",
+    "go": "func findPrimePairs(n int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_prime_pairs(n: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "findPrimePairs",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": [
+    "Pre-compute all the prime numbers in the range [1, n] using a sieve, and store them in a data structure where they can be accessed in O(1) time.",
+    "For x in the range [2, n/2], we can use the pre-computed list of prime numbers to check if both x and n - x are primes. If they are, we add them to the result."
+  ]
+}

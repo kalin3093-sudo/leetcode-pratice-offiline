@@ -1,0 +1,48 @@
+{
+  "id": "apply-operations-to-make-string-empty",
+  "title": "3039. Apply Operations to Make String Empty",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/apply-operations-to-make-string-empty/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"aabcbbca\"",
+      "output": "\"ba\"",
+      "explanation": "Explained in the statement."
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "\"abcd\"",
+      "explanation": "We do the following operation: - Remove the underlined characters s = \"abcd\". The resulting string is s = \"\". The string just before the last operation is \"abcd\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lastNonEmptyString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lastNonEmptyString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lastNonEmptyString(self, s: str) -> str:\n        ",
+    "typescript": "function lastNonEmptyString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LastNonEmptyString(string s) {\n        \n    }\n}",
+    "go": "func lastNonEmptyString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn last_non_empty_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aabcbbca"
+    },
+    {
+      "s": "abcd"
+    }
+  ],
+  "functionName": "lastNonEmptyString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Before the last operation, only the most frequent characters in the original string will remain.",
+    "Keep only the last occurence of each of the most frequent characters."
+  ]
+}

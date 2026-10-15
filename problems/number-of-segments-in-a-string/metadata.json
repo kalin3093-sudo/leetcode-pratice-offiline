@@ -1,0 +1,44 @@
+{
+  "id": "number-of-segments-in-a-string",
+  "title": "434. Number of Segments in a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-segments-in-a-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"Hello, my name is John\"",
+      "output": "5",
+      "explanation": "The five segments are [\"Hello,\", \"my\", \"name\", \"is\", \"John\"]"
+    },
+    {
+      "input": "s = \"Hello\"",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSegments(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSegments(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSegments(self, s: str) -> int:\n        ",
+    "typescript": "function countSegments(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSegments(string s) {\n        \n    }\n}",
+    "go": "func countSegments(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_segments(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "Hello, my name is John"
+    },
+    {
+      "s": "Hello"
+    }
+  ],
+  "functionName": "countSegments",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

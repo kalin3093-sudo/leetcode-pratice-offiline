@@ -1,0 +1,71 @@
+{
+  "id": "minimize-the-maximum-waiting-time-at-synchronized-traffic-lights",
+  "title": "4025. Minimize the Maximum Waiting Time at Synchronized Traffic Lights",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-the-maximum-waiting-time-at-synchronized-traffic-lights/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "period = 8, lights = [2,3], arrivalTime = [2,5,8,11]",
+      "output": "5",
+      "explanation": "One optimal solution is: Assign arrivalTime[0] to the traffic light with lights[1] = 3. Here, r = 2 % 8 = 2. Since 2 < 3, the waiting time is 0. Assign arrivalTime[1] to the traffic light with lights[0] = 2. Here, r = 5 % 8 = 5. Since 5 >= 2, the waiting time is 8 - 5 = 3. Assign arrivalTime[2] to the traffic light with lights[0] = 2. Here, r = 8 % 8 = 0. Since 0 < 2, the waiting time is 0. Assign arrivalTime[3] to the traffic light with lights[0] = 2. Here, r = 11 % 8 = 3. Since 3 >= 2, the waiting time is 8 - 3 = 5. The penalty of this assignment is 5, which is the minimum possible. Other optimal assignments may exist."
+    },
+    {
+      "input": "period = 10, lights = [3,6,8], arrivalTime = [4,9,15]",
+      "output": "1",
+      "explanation": "One optimal solution is: Assign arrivalTime[0] to the traffic light with lights[2] = 8. Here, r = 4 % 10 = 4. Since 4 < 8, the waiting time is 0. Assign arrivalTime[1] to the traffic light with lights[2] = 8. Here, r = 9 % 10 = 9. Since 9 >= 8, the waiting time is 10 - 9 = 1. Assign arrivalTime[2] to the traffic light with lights[2] = 8. Here, r = 15 % 10 = 5. Since 5 < 8, the waiting time is 0. The penalty of this assignment is 1, which is the minimum possible."
+    },
+    {
+      "input": "period = 5, lights = [2], arrivalTime = [2,3,4,5,6]",
+      "output": "3",
+      "explanation": "One optimal solution is: Assign arrivalTime[0] to the traffic light with lights[0] = 2. Here, r = 2 % 5 = 2. Since 2 >= 2, the waiting time is 5 - 2 = 3. Assign arrivalTime[1] to the traffic light with lights[0] = 2. Here, r = 3 % 5 = 3. Since 3 >= 2, the waiting time is 5 - 3 = 2. Assign arrivalTime[2] to the traffic light with lights[0] = 2. Here, r = 4 % 5 = 4. Since 4 >= 2, the waiting time is 5 - 4 = 1. Assign arrivalTime[3] to the traffic light with lights[0] = 2. Here, r = 5 % 5 = 0. Since 0 < 2, the waiting time is 0. Assign arrivalTime[4] to the traffic light with lights[0] = 2. Here, r = 6 % 5 = 1. Since 1 < 2, the waiting time is 0. The penalty of this assignment is 3, which is the minimum possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minPenalty(int period, vector<int>& lights, vector<int>& arrivalTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minPenalty(int period, int[] lights, int[] arrivalTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minPenalty(self, period: int, lights: list[int], arrivalTime: list[int]) -> int:\n        ",
+    "typescript": "function minPenalty(period: number, lights: number[], arrivalTime: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinPenalty(int period, int[] lights, int[] arrivalTime) {\n        \n    }\n}",
+    "go": "func minPenalty(period int, lights []int, arrivalTime []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_penalty(period: i32, lights: Vec<i32>, arrival_time: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "period": 8,
+      "lights": "[2,3]",
+      "arrivalTime": "[2,5,8,11]"
+    },
+    {
+      "period": 10,
+      "lights": "[3,6,8]",
+      "arrivalTime": "[4,9,15]"
+    },
+    {
+      "period": 5,
+      "lights": "[2]",
+      "arrivalTime": "[2,3,4,5,6]"
+    }
+  ],
+  "functionName": "minPenalty",
+  "params": [
+    {
+      "name": "period",
+      "type": "int"
+    },
+    {
+      "name": "lights",
+      "type": "int_array"
+    },
+    {
+      "name": "arrivalTime",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Since traffic lights have no capacity restriction, each car can choose its traffic light independently.</p>",
+    "<p>Let <code>maxGreen</code> be the maximum value in <code>lights</code>. A car with <code>r = arrivalTime[j] % period</code> can have waiting time 0 if and only if <code>r &lt; maxGreen</code>.</p>",
+    "<p>Otherwise, every traffic light is red when the car arrives, and its waiting time is <code>period - r</code>. Take the maximum waiting time over all cars.</p>"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "find-the-minimum-cost-array-permutation",
+  "title": "3149. Find the Minimum Cost Array Permutation",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-minimum-cost-array-permutation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,0,2]",
+      "output": "[0,1,2]",
+      "explanation": "The lexicographically smallest permutation with minimum cost is [0,1,2]. The cost of this permutation is |0 - 0| + |1 - 2| + |2 - 1| = 2."
+    },
+    {
+      "input": "nums = [0,2,1]",
+      "output": "[0,2,1]",
+      "explanation": "The lexicographically smallest permutation with minimum cost is [0,2,1]. The cost of this permutation is |0 - 1| + |2 - 2| + |1 - 0| = 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findPermutation(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findPermutation(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findPermutation(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function findPermutation(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindPermutation(int[] nums) {\n        \n    }\n}",
+    "go": "func findPermutation(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_permutation(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,0,2]"
+    },
+    {
+      "nums": "[0,2,1]"
+    }
+  ],
+  "functionName": "findPermutation",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "The score function is cyclic, so we can always set <code>perm[0] = 0</code> for the smallest lexical order.",
+    "It’s similar to the Traveling Salesman Problem. Use Dynamic Programming.",
+    "Use a bitmask to track which elements have been assigned to <code>perm</code>."
+  ]
+}

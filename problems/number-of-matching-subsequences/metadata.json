@@ -1,0 +1,50 @@
+{
+  "id": "number-of-matching-subsequences",
+  "title": "792. Number of Matching Subsequences",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-matching-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"abcde\", words = [\"a\",\"bb\",\"acd\",\"ace\"]",
+      "output": "3",
+      "explanation": "There are three strings in words that are a subsequence of s: \"a\", \"acd\", \"ace\"."
+    },
+    {
+      "input": "s = \"dsahjpjauf\", words = [\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numMatchingSubseq(string s, vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numMatchingSubseq(String s, String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numMatchingSubseq(self, s: str, words: list[str]) -> int:\n        ",
+    "typescript": "function numMatchingSubseq(s: string, words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumMatchingSubseq(string s, string[] words) {\n        \n    }\n}",
+    "go": "func numMatchingSubseq(s string, words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_matching_subseq(s: String, words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcde",
+      "words": "[\"a\",\"bb\",\"acd\",\"ace\"]"
+    },
+    {
+      "s": "dsahjpjauf",
+      "words": "[\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]"
+    }
+  ],
+  "functionName": "numMatchingSubseq",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

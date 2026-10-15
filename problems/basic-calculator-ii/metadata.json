@@ -1,0 +1,50 @@
+{
+  "id": "basic-calculator-ii",
+  "title": "227. Basic Calculator II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/basic-calculator-ii/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"3+2*2\"",
+      "output": "7"
+    },
+    {
+      "input": "s = \" 3/2 \"",
+      "output": "1"
+    },
+    {
+      "input": "s = \" 3+5 / 2 \"",
+      "output": "5"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int calculate(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int calculate(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def calculate(self, s: str) -> int:\n        ",
+    "typescript": "function calculate(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int Calculate(string s) {\n        \n    }\n}",
+    "go": "func calculate(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn calculate(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "3+2*2"
+    },
+    {
+      "s": " 3/2 "
+    },
+    {
+      "s": " 3+5 / 2 "
+    }
+  ],
+  "functionName": "calculate",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

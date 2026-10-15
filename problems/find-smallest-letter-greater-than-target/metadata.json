@@ -1,0 +1,62 @@
+{
+  "id": "find-smallest-letter-greater-than-target",
+  "title": "744. Find Smallest Letter Greater Than Target",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "letters = [\"c\",\"f\",\"j\"], target = \"a\"",
+      "output": "\"c\"",
+      "explanation": "The smallest character that is lexicographically greater than 'a' in letters is 'c'."
+    },
+    {
+      "input": "letters = [\"c\",\"f\",\"j\"], target = \"c\"",
+      "output": "\"f\"",
+      "explanation": "The smallest character that is lexicographically greater than 'c' in letters is 'f'."
+    },
+    {
+      "input": "letters = [\"x\",\"x\",\"y\",\"y\"], target = \"z\"",
+      "output": "\"x\"",
+      "explanation": "There are no characters in letters that is lexicographically greater than 'z' so we return letters[0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    char nextGreatestLetter(vector<char>& letters, char target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nextGreatestLetter(self, letters: list[str], target: str) -> str:\n        ",
+    "typescript": "function nextGreatestLetter(letters: string[], target: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public char NextGreatestLetter(char[] letters, char target) {\n        \n    }\n}",
+    "go": "func nextGreatestLetter(letters []byte, target byte) byte {\n    \n}",
+    "rust": "impl Solution {\n    pub fn next_greatest_letter(letters: Vec<char>, target: char) -> char {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "letters": "[\"c\",\"f\",\"j\"]",
+      "target": "a"
+    },
+    {
+      "letters": "[\"c\",\"f\",\"j\"]",
+      "target": "c"
+    },
+    {
+      "letters": "[\"x\",\"x\",\"y\",\"y\"]",
+      "target": "z"
+    }
+  ],
+  "functionName": "nextGreatestLetter",
+  "params": [
+    {
+      "name": "letters",
+      "type": "char_array"
+    },
+    {
+      "name": "target",
+      "type": "char"
+    }
+  ],
+  "outputType": "char",
+  "hints": [
+    "Try to find whether each of 26 next letters are in the given string array."
+  ]
+}

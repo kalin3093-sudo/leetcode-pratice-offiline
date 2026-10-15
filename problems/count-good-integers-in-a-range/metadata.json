@@ -1,0 +1,61 @@
+{
+  "id": "count-good-integers-in-a-range",
+  "title": "3966. Count Good Integers in a Range",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-good-integers-in-a-range/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "l = 10, r = 15, k = 1",
+      "output": "3",
+      "explanation": "The good integers in the range are 10, 11, and 12. For 10, abs(1 - 0) = 1. For 11, abs(1 - 1) = 0. For 12, abs(1 - 2) = 1. All these differences are at most k = 1. Thus, the answer is 3."
+    },
+    {
+      "input": "l = 201, r = 204, k = 2",
+      "output": "2",
+      "explanation": "The good integers in the range are 201 and 202. For 201, abs(2 - 0) = 2 and abs(0 - 1) = 1. For 202, abs(2 - 0) = 2 and abs(0 - 2) = 2. Thus, the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long goodIntegers(long long l, long long r, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long goodIntegers(long l, long r, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def goodIntegers(self, l: int, r: int, k: int) -> int:\n        ",
+    "typescript": "function goodIntegers(l: number, r: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long GoodIntegers(long l, long r, int k) {\n        \n    }\n}",
+    "go": "func goodIntegers(l int64, r int64, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn good_integers(l: i64, r: i64, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": "10",
+      "r": "15",
+      "k": 1
+    },
+    {
+      "l": "201",
+      "r": "204",
+      "k": 2
+    }
+  ],
+  "functionName": "goodIntegers",
+  "params": [
+    {
+      "name": "l",
+      "type": "long"
+    },
+    {
+      "name": "r",
+      "type": "long"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Count good integers less than or equal to some bound <code>x</code>, then subtract the count for <code>l - 1</code> from the count for <code>r</code>.",
+    "Use digit DP over the decimal representation of <code>x</code>.",
+    "Keep the previous digit in the DP state, and when placing the next digit, ensure the absolute difference is at most <code>k</code>."
+  ]
+}

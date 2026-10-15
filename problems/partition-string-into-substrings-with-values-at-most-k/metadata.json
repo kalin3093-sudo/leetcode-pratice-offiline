@@ -1,0 +1,51 @@
+{
+  "id": "partition-string-into-substrings-with-values-at-most-k",
+  "title": "2522. Partition String Into Substrings With Values at Most K",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partition-string-into-substrings-with-values-at-most-k/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"165462\", k = 60",
+      "output": "4",
+      "explanation": "We can partition the string into substrings \"16\", \"54\", \"6\", and \"2\". Each substring has a value less than or equal to k = 60. It can be shown that we cannot partition the string into less than 4 substrings."
+    },
+    {
+      "input": "s = \"238182\", k = 5",
+      "output": "-1",
+      "explanation": "There is no good partition for this string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumPartition(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumPartition(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumPartition(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function minimumPartition(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumPartition(string s, int k) {\n        \n    }\n}",
+    "go": "func minimumPartition(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_partition(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "165462",
+      "k": 60
+    },
+    {
+      "s": "238182",
+      "k": 5
+    }
+  ],
+  "functionName": "minimumPartition",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

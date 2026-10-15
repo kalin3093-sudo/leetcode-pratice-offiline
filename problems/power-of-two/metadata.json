@@ -1,0 +1,52 @@
+{
+  "id": "power-of-two",
+  "title": "231. Power of Two",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/power-of-two/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "true",
+      "explanation": "20 = 1"
+    },
+    {
+      "input": "n = 16",
+      "output": "true",
+      "explanation": "24 = 16"
+    },
+    {
+      "input": "n = 3",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isPowerOfTwo(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isPowerOfTwo(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isPowerOfTwo(self, n: int) -> bool:\n        ",
+    "typescript": "function isPowerOfTwo(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsPowerOfTwo(int n) {\n        \n    }\n}",
+    "go": "func isPowerOfTwo(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_power_of_two(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 16
+    },
+    {
+      "n": 3
+    }
+  ],
+  "functionName": "isPowerOfTwo",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

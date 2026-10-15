@@ -1,0 +1,55 @@
+{
+  "id": "sell-diminishing-valued-colored-balls",
+  "title": "1648. Sell Diminishing-Valued Colored Balls",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sell-diminishing-valued-colored-balls/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "inventory = [2,5], orders = 4",
+      "output": "14",
+      "explanation": "Sell the 1st color 1 time (2) and the 2nd color 3 times (5 + 4 + 3). The maximum total value is 2 + 5 + 4 + 3 = 14."
+    },
+    {
+      "input": "inventory = [3,5], orders = 6",
+      "output": "19",
+      "explanation": "Sell the 1st color 2 times (3 + 2) and the 2nd color 4 times (5 + 4 + 3 + 2). The maximum total value is 3 + 2 + 5 + 4 + 3 + 2 = 19."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProfit(vector<int>& inventory, int orders) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProfit(int[] inventory, int orders) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProfit(self, inventory: list[int], orders: int) -> int:\n        ",
+    "typescript": "function maxProfit(inventory: number[], orders: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProfit(int[] inventory, int orders) {\n        \n    }\n}",
+    "go": "func maxProfit(inventory []int, orders int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_profit(inventory: Vec<i32>, orders: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "inventory": "[2,5]",
+      "orders": 4
+    },
+    {
+      "inventory": "[3,5]",
+      "orders": 6
+    }
+  ],
+  "functionName": "maxProfit",
+  "params": [
+    {
+      "name": "inventory",
+      "type": "int_array"
+    },
+    {
+      "name": "orders",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Greedily sell the most expensive ball.",
+    "There is some value k where all balls of value > k are sold, and some, (maybe 0) of balls of value k are sold.",
+    "Use binary search to find this value k, and use maths to find the total sum."
+  ]
+}

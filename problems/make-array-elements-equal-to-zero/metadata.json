@@ -1,0 +1,47 @@
+{
+  "id": "make-array-elements-equal-to-zero",
+  "title": "3354. Make Array Elements Equal to Zero",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/make-array-elements-equal-to-zero/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,0,2,0,3]",
+      "output": "2",
+      "explanation": "The only possible valid selections are the following: Choose curr = 3, and a movement direction to the left. [1,0,2,0,3] -> [1,0,2,0,3] -> [1,0,1,0,3] -> [1,0,1,0,3] -> [1,0,1,0,2] -> [1,0,1,0,2] -> [1,0,0,0,2] -> [1,0,0,0,2] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,1] -> [0,0,0,0,0]. Choose curr = 3, and a movement direction to the right. [1,0,2,0,3] -> [1,0,2,0,3] -> [1,0,2,0,2] -> [1,0,2,0,2] -> [1,0,1,0,2] -> [1,0,1,0,2] -> [1,0,1,0,1] -> [1,0,1,0,1] -> [1,0,0,0,1] -> [1,0,0,0,1] -> [1,0,0,0,0] -> [1,0,0,0,0] -> [1,0,0,0,0] -> [1,0,0,0,0] -> [0,0,0,0,0]."
+    },
+    {
+      "input": "nums = [2,3,4,0,4,1,0]",
+      "output": "0",
+      "explanation": "There are no possible valid selections."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countValidSelections(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countValidSelections(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countValidSelections(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countValidSelections(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountValidSelections(int[] nums) {\n        \n    }\n}",
+    "go": "func countValidSelections(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_valid_selections(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,0,2,0,3]"
+    },
+    {
+      "nums": "[2,3,4,0,4,1,0]"
+    }
+  ],
+  "functionName": "countValidSelections",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Since the constraints are very small, you can simulate the process described."
+  ]
+}

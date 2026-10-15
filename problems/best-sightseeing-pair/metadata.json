@@ -1,0 +1,46 @@
+{
+  "id": "best-sightseeing-pair",
+  "title": "1014. Best Sightseeing Pair",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/best-sightseeing-pair/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "values = [8,1,5,2,6]",
+      "output": "11",
+      "explanation": "i = 0, j = 2, values[i] + values[j] + i - j = 8 + 5 + 0 - 2 = 11"
+    },
+    {
+      "input": "values = [1,2]",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScoreSightseeingPair(vector<int>& values) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScoreSightseeingPair(int[] values) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScoreSightseeingPair(self, values: list[int]) -> int:\n        ",
+    "typescript": "function maxScoreSightseeingPair(values: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScoreSightseeingPair(int[] values) {\n        \n    }\n}",
+    "go": "func maxScoreSightseeingPair(values []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score_sightseeing_pair(values: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "values": "[8,1,5,2,6]"
+    },
+    {
+      "values": "[1,2]"
+    }
+  ],
+  "functionName": "maxScoreSightseeingPair",
+  "params": [
+    {
+      "name": "values",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can you tell the best sightseeing spot in one pass (ie. as you iterate over the input?)  What should we store or keep track of as we iterate to do this?"
+  ]
+}

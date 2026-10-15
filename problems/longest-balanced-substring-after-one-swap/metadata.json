@@ -1,0 +1,51 @@
+{
+  "id": "longest-balanced-substring-after-one-swap",
+  "title": "3900. Longest Balanced Substring After One Swap",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-balanced-substring-after-one-swap/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"100001\"",
+      "output": "4",
+      "explanation": "Swap \"100001\". The string becomes \"101000\". Select the substring \"101000\", which is balanced because it has two '0's and two '1's."
+    },
+    {
+      "input": "s = \"111\"",
+      "output": "0",
+      "explanation": "Choose not to perform any swaps. Select the empty substring, which is balanced because it has zero '0's and zero '1's."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestBalanced(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestBalanced(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestBalanced(self, s: str) -> int:\n        ",
+    "typescript": "function longestBalanced(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestBalanced(string s) {\n        \n    }\n}",
+    "go": "func longestBalanced(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_balanced(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "100001"
+    },
+    {
+      "s": "111"
+    }
+  ],
+  "functionName": "longestBalanced",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A balanced substring has the same number of <code>0</code>s and <code>1</code>s.",
+    "Even after one swap, the answer cannot exceed <code>2 * min(cnt0, cnt1)</code>.",
+    "The swap is only useful if it can improve one chosen window.",
+    "Look for a substring whose balance can be fixed by moving one mismatched character in or out.",
+    "Track prefix balance and check how far a valid segment can extend after one swap."
+  ]
+}

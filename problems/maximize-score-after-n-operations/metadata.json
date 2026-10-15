@@ -1,0 +1,56 @@
+{
+  "id": "maximize-score-after-n-operations",
+  "title": "1799. Maximize Score After N Operations",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-score-after-n-operations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2]",
+      "output": "1",
+      "explanation": "The optimal choice of operations is: (1 * gcd(1, 2)) = 1"
+    },
+    {
+      "input": "nums = [3,4,6,8]",
+      "output": "11",
+      "explanation": "The optimal choice of operations is: (1 * gcd(3, 6)) + (2 * gcd(4, 8)) = 3 + 8 = 11"
+    },
+    {
+      "input": "nums = [1,2,3,4,5,6]",
+      "output": "14",
+      "explanation": "The optimal choice of operations is: (1 * gcd(1, 5)) + (2 * gcd(2, 4)) + (3 * gcd(3, 6)) = 1 + 4 + 9 = 14"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScore(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScore(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maxScore(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScore(int[] nums) {\n        \n    }\n}",
+    "go": "func maxScore(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2]"
+    },
+    {
+      "nums": "[3,4,6,8]"
+    },
+    {
+      "nums": "[1,2,3,4,5,6]"
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find every way to split the array until n groups of 2. Brute force recursion is acceptable.",
+    "Calculate the gcd of every pair and greedily multiply the largest gcds."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "largest-even-number",
+  "title": "3798. Largest Even Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-even-number/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1112\"",
+      "output": "\"1112\"",
+      "explanation": "The string already represents the largest possible even number, so no deletions are needed."
+    },
+    {
+      "input": "s = \"221\"",
+      "output": "\"22\"",
+      "explanation": "Deleting '1' results in the largest possible even number which is equal to 22."
+    },
+    {
+      "input": "s = \"1\"",
+      "output": "\"\"",
+      "explanation": "There is no way to get an even number."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestEven(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestEven(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestEven(self, s: str) -> str:\n        ",
+    "typescript": "function largestEven(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestEven(string s) {\n        \n    }\n}",
+    "go": "func largestEven(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_even(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1112"
+    },
+    {
+      "s": "221"
+    },
+    {
+      "s": "1"
+    }
+  ],
+  "functionName": "largestEven",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "A number ending with <code>'1'</code> is odd.",
+    "Find the last <code>'2'</code> in <code>s</code>. If none, return <code>\"\"</code>. Otherwise return the prefix up to and including that <code>'2'</code>."
+  ]
+}

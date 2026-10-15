@@ -1,0 +1,53 @@
+{
+  "id": "crawler-log-folder",
+  "title": "1598. Crawler Log Folder",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/crawler-log-folder/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "logs = [\"d1/\",\"d2/\",\"../\",\"d21/\",\"./\"]",
+      "output": "2",
+      "explanation": "Use this change folder operation \"../\" 2 times and go back to the main folder."
+    },
+    {
+      "input": "logs = [\"d1/\",\"d2/\",\"./\",\"d3/\",\"../\",\"d31/\"]",
+      "output": "3"
+    },
+    {
+      "input": "logs = [\"d1/\",\"../\",\"../\",\"../\"]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<string>& logs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(String[] logs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, logs: list[str]) -> int:\n        ",
+    "typescript": "function minOperations(logs: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(string[] logs) {\n        \n    }\n}",
+    "go": "func minOperations(logs []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(logs: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "logs": "[\"d1/\",\"d2/\",\"../\",\"d21/\",\"./\"]"
+    },
+    {
+      "logs": "[\"d1/\",\"d2/\",\"./\",\"d3/\",\"../\",\"d31/\"]"
+    },
+    {
+      "logs": "[\"d1/\",\"../\",\"../\",\"../\"]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "logs",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the process but don’t move the pointer beyond the main folder."
+  ]
+}

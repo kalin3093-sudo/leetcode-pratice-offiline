@@ -1,0 +1,54 @@
+{
+  "id": "stone-game-v",
+  "title": "1563. Stone Game V",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/stone-game-v/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stoneValue = [6,2,3,4,5,5]",
+      "output": "18",
+      "explanation": "In the first round, Alice divides the row to [6,2,3], [4,5,5]. The left row has the value 11 and the right row has value 14. Bob throws away the right row and Alice's score is now 11. In the second round Alice divides the row to [6], [2,3]. This time Bob throws away the left row and Alice's score becomes 16 (11 + 5). The last round Alice has only one choice to divide the row which is [2], [3]. Bob throws away the right row and Alice's score is now 18 (16 + 2). The game ends because only one stone is remaining in the row."
+    },
+    {
+      "input": "stoneValue = [7,7,7,7,7,7,7]",
+      "output": "28"
+    },
+    {
+      "input": "stoneValue = [4]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int stoneGameV(vector<int>& stoneValue) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int stoneGameV(int[] stoneValue) {\n        \n    }\n}",
+    "python": "class Solution:\n    def stoneGameV(self, stoneValue: list[int]) -> int:\n        ",
+    "typescript": "function stoneGameV(stoneValue: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int StoneGameV(int[] stoneValue) {\n        \n    }\n}",
+    "go": "func stoneGameV(stoneValue []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn stone_game_v(stone_value: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stoneValue": "[6,2,3,4,5,5]"
+    },
+    {
+      "stoneValue": "[7,7,7,7,7,7,7]"
+    },
+    {
+      "stoneValue": "[4]"
+    }
+  ],
+  "functionName": "stoneGameV",
+  "params": [
+    {
+      "name": "stoneValue",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We need to try all possible divisions for the current row to get the max score.",
+    "As calculating all possible divisions will lead us to calculate some sub-problems more than once, we need to think of dynamic programming."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "most-popular-video-creator",
+  "title": "2456. Most Popular Video Creator",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/most-popular-video-creator/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "creators = [\"alice\",\"bob\",\"alice\",\"chris\"], ids = [\"one\",\"two\",\"three\",\"four\"], views = [5,10,5,4]",
+      "output": "[[\"alice\",\"one\"],[\"bob\",\"two\"]]",
+      "explanation": "The popularity of alice is 5 + 5 = 10. The popularity of bob is 10. The popularity of chris is 4. alice and bob are the most popular creators. For bob, the video with the highest view count is \"two\". For alice, the videos with the highest view count are \"one\" and \"three\". Since \"one\" is lexicographically smaller than \"three\", it is included in the answer."
+    },
+    {
+      "input": "creators = [\"alice\",\"alice\",\"alice\"], ids = [\"a\",\"b\",\"c\"], views = [1,2,2]",
+      "output": "[[\"alice\",\"b\"]]",
+      "explanation": "The videos with id \"b\" and \"c\" have the highest view count. Since \"b\" is lexicographically smaller than \"c\", it is included in the answer."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<string>> mostPopularCreator(vector<string>& creators, vector<string>& ids, vector<int>& views) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<String>> mostPopularCreator(String[] creators, String[] ids, int[] views) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mostPopularCreator(self, creators: list[str], ids: list[str], views: list[int]) -> list[list[str]]:\n        ",
+    "typescript": "function mostPopularCreator(creators: string[], ids: string[], views: number[]): string[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<string>> MostPopularCreator(string[] creators, string[] ids, int[] views) {\n        \n    }\n}",
+    "go": "func mostPopularCreator(creators []string, ids []string, views []int) [][]string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn most_popular_creator(creators: Vec<String>, ids: Vec<String>, views: Vec<i32>) -> Vec<Vec<String>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "creators": "[\"alice\",\"bob\",\"alice\",\"chris\"]",
+      "ids": "[\"one\",\"two\",\"three\",\"four\"]",
+      "views": "[5,10,5,4]"
+    },
+    {
+      "creators": "[\"alice\",\"alice\",\"alice\"]",
+      "ids": "[\"a\",\"b\",\"c\"]",
+      "views": "[1,2,2]"
+    }
+  ],
+  "functionName": "mostPopularCreator",
+  "params": [
+    {
+      "name": "creators",
+      "type": "string_array"
+    },
+    {
+      "name": "ids",
+      "type": "string_array"
+    },
+    {
+      "name": "views",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string_list_2d",
+  "hints": [
+    "Use a hash table to store and categorize videos based on their creator.",
+    "For each creator, iterate through all their videos and use three variables to keep track of their popularity, their most popular video, and the id of their most popular video."
+  ]
+}

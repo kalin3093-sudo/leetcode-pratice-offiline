@@ -1,0 +1,54 @@
+{
+  "id": "calculate-delayed-arrival-time",
+  "title": "2651. Calculate Delayed Arrival Time",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/calculate-delayed-arrival-time/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "arrivalTime = 15, delayedTime = 5",
+      "output": "20",
+      "explanation": "Arrival time of the train was 15:00 hours. It is delayed by 5 hours. Now it will reach at 15+5 = 20 (20:00 hours)."
+    },
+    {
+      "input": "arrivalTime = 13, delayedTime = 11",
+      "output": "0",
+      "explanation": "Arrival time of the train was 13:00 hours. It is delayed by 11 hours. Now it will reach at 13+11=24 (Which is denoted by 00:00 in 24 hours format so return 0)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findDelayedArrivalTime(int arrivalTime, int delayedTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findDelayedArrivalTime(int arrivalTime, int delayedTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findDelayedArrivalTime(self, arrivalTime: int, delayedTime: int) -> int:\n        ",
+    "typescript": "function findDelayedArrivalTime(arrivalTime: number, delayedTime: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindDelayedArrivalTime(int arrivalTime, int delayedTime) {\n        \n    }\n}",
+    "go": "func findDelayedArrivalTime(arrivalTime int, delayedTime int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_delayed_arrival_time(arrival_time: i32, delayed_time: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arrivalTime": 15,
+      "delayedTime": 5
+    },
+    {
+      "arrivalTime": 13,
+      "delayedTime": 11
+    }
+  ],
+  "functionName": "findDelayedArrivalTime",
+  "params": [
+    {
+      "name": "arrivalTime",
+      "type": "int"
+    },
+    {
+      "name": "delayedTime",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use the modulo operator to handle the case when the arrival time plus the delayed time goes beyond 24 hours.",
+    "If the arrival time plus the delayed time is greater than or equal to 24, you can also subtract 24 to get the time in the 24-hour format."
+  ]
+}

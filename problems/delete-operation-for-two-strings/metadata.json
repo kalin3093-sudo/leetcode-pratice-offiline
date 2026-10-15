@@ -1,0 +1,50 @@
+{
+  "id": "delete-operation-for-two-strings",
+  "title": "583. Delete Operation for Two Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/delete-operation-for-two-strings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word1 = \"sea\", word2 = \"eat\"",
+      "output": "2",
+      "explanation": "You need one step to make \"sea\" to \"ea\" and another step to make \"eat\" to \"ea\"."
+    },
+    {
+      "input": "word1 = \"leetcode\", word2 = \"etco\"",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDistance(string word1, string word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDistance(String word1, String word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDistance(self, word1: str, word2: str) -> int:\n        ",
+    "typescript": "function minDistance(word1: string, word2: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDistance(string word1, string word2) {\n        \n    }\n}",
+    "go": "func minDistance(word1 string, word2 string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_distance(word1: String, word2: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "sea",
+      "word2": "eat"
+    },
+    {
+      "word1": "leetcode",
+      "word2": "etco"
+    }
+  ],
+  "functionName": "minDistance",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

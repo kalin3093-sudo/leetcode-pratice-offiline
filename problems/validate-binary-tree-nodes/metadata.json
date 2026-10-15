@@ -1,0 +1,67 @@
+{
+  "id": "validate-binary-tree-nodes",
+  "title": "1361. Validate Binary Tree Nodes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/validate-binary-tree-nodes/",
+  "category": "tree",
+  "examples": [
+    {
+      "input": "n = 4, leftChild = [1,-1,3,-1], rightChild = [2,-1,-1,-1]",
+      "output": "true"
+    },
+    {
+      "input": "n = 4, leftChild = [1,-1,3,-1], rightChild = [2,3,-1,-1]",
+      "output": "false"
+    },
+    {
+      "input": "n = 2, leftChild = [1,0], rightChild = [-1,-1]",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {\n        \n    }\n}",
+    "python": "class Solution:\n    def validateBinaryTreeNodes(self, n: int, leftChild: list[int], rightChild: list[int]) -> bool:\n        ",
+    "typescript": "function validateBinaryTreeNodes(n: number, leftChild: number[], rightChild: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ValidateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {\n        \n    }\n}",
+    "go": "func validateBinaryTreeNodes(n int, leftChild []int, rightChild []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn validate_binary_tree_nodes(n: i32, left_child: Vec<i32>, right_child: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "leftChild": "[1,-1,3,-1]",
+      "rightChild": "[2,-1,-1,-1]"
+    },
+    {
+      "n": 4,
+      "leftChild": "[1,-1,3,-1]",
+      "rightChild": "[2,3,-1,-1]"
+    },
+    {
+      "n": 2,
+      "leftChild": "[1,0]",
+      "rightChild": "[-1,-1]"
+    }
+  ],
+  "functionName": "validateBinaryTreeNodes",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "leftChild",
+      "type": "int_array"
+    },
+    {
+      "name": "rightChild",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Find the parent of each node.",
+    "A valid tree must have nodes with only one parent and exactly one node with no parent."
+  ]
+}

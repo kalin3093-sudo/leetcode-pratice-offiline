@@ -1,0 +1,70 @@
+{
+  "id": "minimum-skips-to-arrive-at-meeting-on-time",
+  "title": "1883. Minimum Skips to Arrive at Meeting On Time",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "dist = [1,3,2], speed = 4, hoursBefore = 2",
+      "output": "1",
+      "explanation": "Without skipping any rests, you will arrive in (1/4 + 3/4) + (3/4 + 1/4) + (2/4) = 2.5 hours. You can skip the first rest to arrive in ((1/4 + 0) + (3/4 + 0)) + (2/4) = 1.5 hours. Note that the second rest is shortened because you finish traveling the second road at an integer hour due to skipping the first rest."
+    },
+    {
+      "input": "dist = [7,3,5,5], speed = 2, hoursBefore = 10",
+      "output": "2",
+      "explanation": "Without skipping any rests, you will arrive in (7/2 + 1/2) + (3/2 + 1/2) + (5/2 + 1/2) + (5/2) = 11.5 hours. You can skip the first and third rest to arrive in ((7/2 + 0) + (3/2 + 0)) + ((5/2 + 0) + (5/2)) = 10 hours."
+    },
+    {
+      "input": "dist = [7,3,5,5], speed = 1, hoursBefore = 10",
+      "output": "-1",
+      "explanation": "It is impossible to arrive at the meeting on time even if you skip all the rests."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSkips(vector<int>& dist, int speed, int hoursBefore) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSkips(int[] dist, int speed, int hoursBefore) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSkips(self, dist: list[int], speed: int, hoursBefore: int) -> int:\n        ",
+    "typescript": "function minSkips(dist: number[], speed: number, hoursBefore: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSkips(int[] dist, int speed, int hoursBefore) {\n        \n    }\n}",
+    "go": "func minSkips(dist []int, speed int, hoursBefore int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_skips(dist: Vec<i32>, speed: i32, hours_before: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "dist": "[1,3,2]",
+      "speed": 4,
+      "hoursBefore": 2
+    },
+    {
+      "dist": "[7,3,5,5]",
+      "speed": 2,
+      "hoursBefore": 10
+    },
+    {
+      "dist": "[7,3,5,5]",
+      "speed": 1,
+      "hoursBefore": 10
+    }
+  ],
+  "functionName": "minSkips",
+  "params": [
+    {
+      "name": "dist",
+      "type": "int_array"
+    },
+    {
+      "name": "speed",
+      "type": "int"
+    },
+    {
+      "name": "hoursBefore",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Is there something you can keep track of from one road to another?",
+    "How would knowing the start time for each state help us solve the problem?"
+  ]
+}

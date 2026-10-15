@@ -1,0 +1,48 @@
+{
+  "id": "number-of-senior-citizens",
+  "title": "2678. Number of Senior Citizens",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-senior-citizens/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "details = [\"7868190130M7522\",\"5303914400F9211\",\"9273338290F4010\"]",
+      "output": "2",
+      "explanation": "The passengers at indices 0, 1, and 2 have ages 75, 92, and 40. Thus, there are 2 people who are over 60 years old."
+    },
+    {
+      "input": "details = [\"1313579440F2036\",\"2921522980M5644\"]",
+      "output": "0",
+      "explanation": "None of the passengers are older than 60."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSeniors(vector<string>& details) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSeniors(String[] details) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSeniors(self, details: List[str]) -> int:\n        ",
+    "typescript": "function countSeniors(details: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSeniors(string[] details) {\n        \n    }\n}",
+    "go": "func countSeniors(details []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_seniors(details: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "details": "[\"7868190130M7522\",\"5303914400F9211\",\"9273338290F4010\"]"
+    },
+    {
+      "details": "[\"1313579440F2036\",\"2921522980M5644\"]"
+    }
+  ],
+  "functionName": "countSeniors",
+  "params": [
+    {
+      "name": "details",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Convert the value at index 11 and 12 to a numerical value.",
+    "The age of the person at index i is equal to details[i][11]*10+details[i][12]."
+  ]
+}

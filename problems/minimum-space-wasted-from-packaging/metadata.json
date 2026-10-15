@@ -1,0 +1,63 @@
+{
+  "id": "minimum-space-wasted-from-packaging",
+  "title": "1889. Minimum Space Wasted From Packaging",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-space-wasted-from-packaging/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "packages = [2,3,5], boxes = [[4,8],[2,8]]",
+      "output": "6",
+      "explanation": "It is optimal to choose the first supplier, using two size-4 boxes and one size-8 box. The total waste is (4-2) + (4-3) + (8-5) = 6."
+    },
+    {
+      "input": "packages = [2,3,5], boxes = [[1,4],[2,3],[3,4]]",
+      "output": "-1",
+      "explanation": "There is no box that the package of size 5 can fit in."
+    },
+    {
+      "input": "packages = [3,5,8,10,11,12], boxes = [[12],[11,9],[10,5,14]]",
+      "output": "9",
+      "explanation": "It is optimal to choose the third supplier, using two size-5 boxes, two size-10 boxes, and two size-14 boxes. The total waste is (5-3) + (5-5) + (10-8) + (10-10) + (14-11) + (14-12) = 9."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minWastedSpace(vector<int>& packages, vector<vector<int>>& boxes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minWastedSpace(int[] packages, int[][] boxes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minWastedSpace(self, packages: list[int], boxes: list[list[int]]) -> int:\n        ",
+    "typescript": "function minWastedSpace(packages: number[], boxes: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinWastedSpace(int[] packages, int[][] boxes) {\n        \n    }\n}",
+    "go": "func minWastedSpace(packages []int, boxes [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_wasted_space(packages: Vec<i32>, boxes: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "packages": "[2,3,5]",
+      "boxes": "[[4,8],[2,8]]"
+    },
+    {
+      "packages": "[2,3,5]",
+      "boxes": "[[1,4],[2,3],[3,4]]"
+    },
+    {
+      "packages": "[3,5,8,10,11,12]",
+      "boxes": "[[12],[11,9],[10,5,14]]"
+    }
+  ],
+  "functionName": "minWastedSpace",
+  "params": [
+    {
+      "name": "packages",
+      "type": "int_array"
+    },
+    {
+      "name": "boxes",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Given a fixed size box, is there a way to quickly query which packages (i.e., count and sizes) should end up in that box size?",
+    "Do we have to order the boxes a certain way to allow us to answer the query quickly?"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "alphabet-board-path",
+  "title": "1138. Alphabet Board Path",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/alphabet-board-path/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "target = \"leet\"",
+      "output": "\"DDR!UURRR!!DDD!\""
+    },
+    {
+      "input": "target = \"code\"",
+      "output": "\"RR!DDRR!UUL!R!\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string alphabetBoardPath(string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String alphabetBoardPath(String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def alphabetBoardPath(self, target: str) -> str:\n        ",
+    "typescript": "function alphabetBoardPath(target: string): string {\n\n};",
+    "csharp": "public class Solution {\n    public string AlphabetBoardPath(string target) {\n        \n    }\n}",
+    "go": "func alphabetBoardPath(target string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn alphabet_board_path(target: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "target": "leet"
+    },
+    {
+      "target": "code"
+    }
+  ],
+  "functionName": "alphabetBoardPath",
+  "params": [
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Create a hashmap from letter to position on the board.",
+    "Now for each letter, try moving there in steps, where at each step you check if it is inside the boundaries of the board."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "longest-palindromic-subsequence-after-at-most-k-operations",
+  "title": "3472. Longest Palindromic Subsequence After at Most K Operations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abced\", k = 2",
+      "output": "3",
+      "explanation": "Replace s[1] with the next letter, and s becomes \"acced\". Replace s[4] with the previous letter, and s becomes \"accec\". The subsequence \"ccc\" forms a palindrome of length 3, which is the maximum."
+    },
+    {
+      "input": "s = \"aaazzz\", k = 4",
+      "output": "6",
+      "explanation": "Replace s[0] with the previous letter, and s becomes \"zaazzz\". Replace s[4] with the next letter, and s becomes \"zaazaz\". Replace s[3] with the next letter, and s becomes \"zaaaaz\". The entire string forms a palindrome of length 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestPalindromicSubsequence(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestPalindromicSubsequence(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestPalindromicSubsequence(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function longestPalindromicSubsequence(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestPalindromicSubsequence(string s, int k) {\n        \n    }\n}",
+    "go": "func longestPalindromicSubsequence(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_palindromic_subsequence(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abced",
+      "k": 2
+    },
+    {
+      "s": "aaazzz",
+      "k": 4
+    }
+  ],
+  "functionName": "longestPalindromicSubsequence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "<code>dp[i][j][k]</code> is the length of the longest palindromic subsequence in substring <code>[i..j]</code> with cost at most <code>k</code>.",
+    "<code>dp[i][j][k] = max(dp[i + 1][j][k], dp[i][j - 1][k], dp[i + 1][j - 1][k - dist(s[i], s[j])] + 2)</code>, where <code>dist(x, y)</code> is the minimum cyclic distance between <code>x</code> and <code>y</code>."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "reverse-letters-then-special-characters-in-a-string",
+  "title": "3823. Reverse Letters Then Special Characters in a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \")ebc#da@f(\"",
+      "output": "\"(fad@cb#e)\"",
+      "explanation": "The letters in the string are ['e', 'b', 'c', 'd', 'a', 'f']: Reversing them gives ['f', 'a', 'd', 'c', 'b', 'e'] s becomes \")fad#cb@e(\" The special characters in the string are [')', '#', '@', '(']: Reversing them gives ['(', '@', '#', ')'] s becomes \"(fad@cb#e)\""
+    },
+    {
+      "input": "s = \"z\"",
+      "output": "\"z\"",
+      "explanation": "The string contains only one letter, and reversing it does not change the string. There are no special characters."
+    },
+    {
+      "input": "s = \"!@#$%^&*()\"",
+      "output": "\")(*&^%$#@!\"",
+      "explanation": "The string contains no letters. The string contains all special characters, so reversing the special characters reverses the whole string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reverseByType(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reverseByType(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reverseByType(self, s: str) -> str:\n        ",
+    "typescript": "function reverseByType(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReverseByType(string s) {\n        \n    }\n}",
+    "go": "func reverseByType(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reverse_by_type(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": ")ebc#da@f("
+    },
+    {
+      "s": "z"
+    },
+    {
+      "s": "!@#$%^&*()"
+    }
+  ],
+  "functionName": "reverseByType",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Use two pointers from ends, skipping non-letters.",
+    "Use two pointers from ends, skipping letters."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "check-divisibility-by-digit-sum-and-product",
+  "title": "3622. Check Divisibility by Digit Sum and Product",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 99",
+      "output": "true",
+      "explanation": "Since 99 is divisible by the sum (9 + 9 = 18) plus product (9 * 9 = 81) of its digits (total 99), the output is true."
+    },
+    {
+      "input": "n = 23",
+      "output": "false",
+      "explanation": "Since 23 is not divisible by the sum (2 + 3 = 5) plus product (2 * 3 = 6) of its digits (total 11), the output is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkDivisibility(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkDivisibility(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkDivisibility(self, n: int) -> bool:\n        ",
+    "typescript": "function checkDivisibility(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckDivisibility(int n) {\n        \n    }\n}",
+    "go": "func checkDivisibility(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_divisibility(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 99
+    },
+    {
+      "n": 23
+    }
+  ],
+  "functionName": "checkDivisibility",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Compute the digits' sum and product, then check if <code>n % (sum + product) == 0</code>."
+  ]
+}

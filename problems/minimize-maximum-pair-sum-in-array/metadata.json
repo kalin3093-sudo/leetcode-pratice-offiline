@@ -1,0 +1,48 @@
+{
+  "id": "minimize-maximum-pair-sum-in-array",
+  "title": "1877. Minimize Maximum Pair Sum in Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,5,2,3]",
+      "output": "7",
+      "explanation": "The elements can be paired up into pairs (3,3) and (5,2). The maximum pair sum is max(3+3, 5+2) = max(6, 7) = 7."
+    },
+    {
+      "input": "nums = [3,5,4,2,4,6]",
+      "output": "8",
+      "explanation": "The elements can be paired up into pairs (3,5), (4,4), and (6,2). The maximum pair sum is max(3+5, 4+4, 6+2) = max(8, 8, 8) = 8."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minPairSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minPairSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minPairSum(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minPairSum(nums: number[]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int MinPairSum(int[] nums) {\n        \n    }\n}",
+    "go": "func minPairSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_pair_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,5,2,3]"
+    },
+    {
+      "nums": "[3,5,4,2,4,6]"
+    }
+  ],
+  "functionName": "minPairSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Would sorting help find the optimal order?",
+    "Given a specific element, how would you minimize its specific pairwise sum?"
+  ]
+}

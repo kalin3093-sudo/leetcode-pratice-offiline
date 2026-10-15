@@ -1,0 +1,55 @@
+{
+  "id": "valid-binary-strings-with-cost-limit",
+  "title": "3955. Valid Binary Strings With Cost Limit",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/valid-binary-strings-with-cost-limit/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 3, k = 1",
+      "output": "[\"000\",\"010\",\"100\"]",
+      "explanation": "The binary strings of length 3 without consecutive '1' characters are: \"000\" : cost = 0 \"100\" : cost = 0 \"010\" : cost = 1 \"001\" : cost = 2 \"101\" : cost = 0 + 2 = 2 Among these, the strings with cost less than or equal to k = 1 are \"000\", \"010\" and \"100\". Thus, the valid strings are [\"000\", \"010\", \"100\"]."
+    },
+    {
+      "input": "n = 1, k = 0",
+      "output": "[\"0\",\"1\"]",
+      "explanation": "The valid binary strings of length 1 are \"0\" and \"1\". Thus the answer is [\"0\", \"1\"]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> generateValidStrings(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> generateValidStrings(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def generateValidStrings(self, n: int, k: int) -> list[str]:\n        ",
+    "typescript": "function generateValidStrings(n: number, k: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> GenerateValidStrings(int n, int k) {\n        \n    }\n}",
+    "go": "func generateValidStrings(n int, k int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn generate_valid_strings(n: i32, k: i32) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "k": 1
+    },
+    {
+      "n": 1,
+      "k": 0
+    }
+  ],
+  "functionName": "generateValidStrings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Build the string from left to right using backtracking.",
+    "At index <code>i</code>, you can place <code>'1'</code> only if the previous character is not <code>'1'</code> and the new cost does not exceed <code>k</code>.",
+    "Whenever the string reaches length <code>n</code>, add it to the answer."
+  ]
+}

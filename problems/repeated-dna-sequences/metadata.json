@@ -1,0 +1,43 @@
+{
+  "id": "repeated-dna-sequences",
+  "title": "187. Repeated DNA Sequences",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/repeated-dna-sequences/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
+      "output": "[\"AAAAACCCCC\",\"CCCCCAAAAA\"]"
+    },
+    {
+      "input": "s = \"AAAAAAAAAAAAA\"",
+      "output": "[\"AAAAAAAAAA\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findRepeatedDnaSequences(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> findRepeatedDnaSequences(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findRepeatedDnaSequences(self, s: str) -> list[str]:\n        ",
+    "typescript": "function findRepeatedDnaSequences(s: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> FindRepeatedDnaSequences(string s) {\n        \n    }\n}",
+    "go": "func findRepeatedDnaSequences(s string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_repeated_dna_sequences(s: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+    },
+    {
+      "s": "AAAAAAAAAAAAA"
+    }
+  ],
+  "functionName": "findRepeatedDnaSequences",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

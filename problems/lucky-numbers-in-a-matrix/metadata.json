@@ -1,0 +1,56 @@
+{
+  "id": "lucky-numbers-in-a-matrix",
+  "title": "1380. Lucky Numbers in a Matrix",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/lucky-numbers-in-a-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[3,7,8],[9,11,13],[15,16,17]]",
+      "output": "[15]",
+      "explanation": "15 is the only lucky number since it is the minimum in its row and the maximum in its column."
+    },
+    {
+      "input": "matrix = [[1,10,4,2],[9,3,8,7],[15,16,17,12]]",
+      "output": "[12]",
+      "explanation": "12 is the only lucky number since it is the minimum in its row and the maximum in its column."
+    },
+    {
+      "input": "matrix = [[7,8],[1,2]]",
+      "output": "[7]",
+      "explanation": "7 is the only lucky number since it is the minimum in its row and the maximum in its column."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> luckyNumbers(vector<vector<int>>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> luckyNumbers(int[][] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def luckyNumbers(self, matrix: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function luckyNumbers(matrix: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> LuckyNumbers(int[][] matrix) {\n        \n    }\n}",
+    "go": "func luckyNumbers(matrix [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn lucky_numbers(matrix: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[3,7,8],[9,11,13],[15,16,17]]"
+    },
+    {
+      "matrix": "[[1,10,4,2],[9,3,8,7],[15,16,17,12]]"
+    },
+    {
+      "matrix": "[[7,8],[1,2]]"
+    }
+  ],
+  "functionName": "luckyNumbers",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Find out and save the minimum of each row and maximum of each column in two lists.",
+    "Then scan through the whole matrix to identify the elements that satisfy the criteria."
+  ]
+}

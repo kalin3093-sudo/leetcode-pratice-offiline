@@ -1,0 +1,56 @@
+{
+  "id": "number-of-ways-to-split-a-string",
+  "title": "1573. Number of Ways to Split a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-ways-to-split-a-string/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"10101\"",
+      "output": "4",
+      "explanation": "There are four ways to split s in 3 parts where each part contain the same number of letters '1'. \"1|010|1\" \"1|01|01\" \"10|10|1\" \"10|1|01\""
+    },
+    {
+      "input": "s = \"1001\"",
+      "output": "0"
+    },
+    {
+      "input": "s = \"0000\"",
+      "output": "3",
+      "explanation": "There are three ways to split s in 3 parts. \"0|0|00\" \"0|00|0\" \"00|0|0\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numWays(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numWays(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numWays(self, s: str) -> int:\n        ",
+    "typescript": "function numWays(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumWays(string s) {\n        \n    }\n}",
+    "go": "func numWays(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_ways(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "10101"
+    },
+    {
+      "s": "1001"
+    },
+    {
+      "s": "0000"
+    }
+  ],
+  "functionName": "numWays",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There is no way if the sum (number of '1's) is not divisible by the number of splits. So sum%3 should be 0.",
+    "Preffix s1 , and suffix s3 should have sum/3 characters '1'.",
+    "Follow up: Can you generalize the problem with numbers between [-10^9, 10^9] such the sum between subarrays s1, s2, s3 are the same?"
+  ]
+}

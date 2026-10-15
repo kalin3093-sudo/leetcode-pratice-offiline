@@ -1,0 +1,49 @@
+{
+  "id": "count-number-of-bad-pairs",
+  "title": "2364. Count Number of Bad Pairs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-number-of-bad-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,1,3,3]",
+      "output": "5",
+      "explanation": "The pair (0, 1) is a bad pair since 1 - 0 != 1 - 4. The pair (0, 2) is a bad pair since 2 - 0 != 3 - 4, 2 != -1. The pair (0, 3) is a bad pair since 3 - 0 != 3 - 4, 3 != -1. The pair (1, 2) is a bad pair since 2 - 1 != 3 - 1, 1 != 2. The pair (2, 3) is a bad pair since 3 - 2 != 3 - 3, 1 != 0. There are a total of 5 bad pairs, so we return 5."
+    },
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "0",
+      "explanation": "There are no bad pairs."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countBadPairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countBadPairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countBadPairs(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countBadPairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountBadPairs(int[] nums) {\n        \n    }\n}",
+    "go": "func countBadPairs(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_bad_pairs(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,1,3,3]"
+    },
+    {
+      "nums": "[1,2,3,4,5]"
+    }
+  ],
+  "functionName": "countBadPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Would it be easier to count the number of pairs that are not bad pairs?",
+    "Notice that (j - i != nums[j] - nums[i]) is the same as (nums[i] - i != nums[j] - j).",
+    "Keep a counter of nums[i] - i. To be efficient, use a HashMap."
+  ]
+}

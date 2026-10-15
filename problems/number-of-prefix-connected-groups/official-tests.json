@@ -1,0 +1,14 @@
+[
+  {
+    "words": "[\"apple\",\"apply\",\"banana\",\"bandit\"]",
+    "k": 2
+  },
+  {
+    "words": "[\"car\",\"cat\",\"cartoon\"]",
+    "k": 3
+  },
+  {
+    "words": "[\"bat\",\"dog\",\"dog\",\"doggy\",\"bat\"]",
+    "k": 3
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "id": "count-values-with-equally-spaced-occurrences-i",
+  "title": "4048. Count Values With Equally Spaced Occurrences I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,8,1,5,1,5,8,5]",
+      "output": "2",
+      "explanation": "1 is special because it occurs exactly three times at equally spaced indices 0, 2, and 4. 5 is special because it occurs exactly three times at equally spaced indices 3, 5, and 7. 8 is not special because it occurs only twice. Therefore, the answer is 2."
+    },
+    {
+      "input": "nums = [8,8,8,8]",
+      "output": "0",
+      "explanation": "8 is not special because it does not occur exactly three times. Therefore, the answer is 0."
+    },
+    {
+      "input": "nums = [8,6,6,8,8]",
+      "output": "0",
+      "explanation": "8 occurs at indices 0, 3, and 4, which are not equally spaced. 6 occurs only twice. Therefore, no integer is special."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSpecialIntegers(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSpecialIntegers(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSpecialIntegers(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countSpecialIntegers(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSpecialIntegers(int[] nums) {\n        \n    }\n}",
+    "go": "func countSpecialIntegers(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_special_integers(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,8,1,5,1,5,8,5]"
+    },
+    {
+      "nums": "[8,8,8,8]"
+    },
+    {
+      "nums": "[8,6,6,8,8]"
+    }
+  ],
+  "functionName": "countSpecialIntegers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p><strong>1a (Brute Force).</strong> Count each value's occurrences, then enumerate all triples of indices <code>i &lt; j &lt; k</code>. Count a triple if <code>nums[i] == nums[j] == nums[k]</code>, <code>j - i == k - j</code>, and the value appears exactly three times in the array.</p>",
+    "<p><strong>2a (Grouping Indices).</strong> Group occurrence indices by value. Count the groups containing exactly three indices whose two consecutive gaps are equal.</p>"
+  ]
+}

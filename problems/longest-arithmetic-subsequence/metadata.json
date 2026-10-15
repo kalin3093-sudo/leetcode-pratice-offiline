@@ -1,0 +1,53 @@
+{
+  "id": "longest-arithmetic-subsequence",
+  "title": "1027. Longest Arithmetic Subsequence",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-arithmetic-subsequence/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3, 6, 9, 12]",
+      "output": "4",
+      "explanation": "The whole array is already an arithmetic sequence with a common difference of 3, so the longest arithmetic subsequence is [3, 6, 9, 12], of length 4."
+    },
+    {
+      "input": "nums = [9, 4, 7, 2, 10]",
+      "output": "3",
+      "explanation": "The longest arithmetic subsequence is [4, 7, 10] (indices 1, 2, 4), with a common difference of 3. There is no arithmetic subsequence of length 4."
+    },
+    {
+      "input": "nums = [20, 1, 15, 3, 10, 5, 8]",
+      "output": "4",
+      "explanation": "The longest arithmetic subsequence is [20, 15, 10, 5] (indices 0, 2, 4, 5), with a common difference of -5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestArithSeqLength(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestArithSeqLength(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestArithSeqLength(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function longestArithSeqLength(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestArithSeqLength(int[] nums) {\n        \n    }\n}",
+    "go": "func longestArithSeqLength(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_arith_seq_length(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,6,9,12]"
+    },
+    {
+      "nums": "[9,4,7,2,10]"
+    },
+    {
+      "nums": "[20,1,15,3,10,5,8]"
+    }
+  ],
+  "functionName": "longestArithSeqLength",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

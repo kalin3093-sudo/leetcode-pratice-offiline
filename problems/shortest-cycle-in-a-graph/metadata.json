@@ -1,0 +1,54 @@
+{
+  "id": "shortest-cycle-in-a-graph",
+  "title": "2608. Shortest Cycle in a Graph",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/shortest-cycle-in-a-graph/",
+  "category": "breadth-first-search",
+  "examples": [
+    {
+      "input": "n = 7, edges = [[0,1],[1,2],[2,0],[3,4],[4,5],[5,6],[6,3]]",
+      "output": "3",
+      "explanation": "The cycle with the smallest length is : 0 -> 1 -> 2 -> 0"
+    },
+    {
+      "input": "n = 4, edges = [[0,1],[0,2]]",
+      "output": "-1",
+      "explanation": "There are no cycles in this graph."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findShortestCycle(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findShortestCycle(int n, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findShortestCycle(self, n: int, edges: list[list[int]]) -> int:\n        ",
+    "typescript": "function findShortestCycle(n: number, edges: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindShortestCycle(int n, int[][] edges) {\n        \n    }\n}",
+    "go": "func findShortestCycle(n int, edges [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_shortest_cycle(n: i32, edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 7,
+      "edges": "[[0,1],[1,2],[2,0],[3,4],[4,5],[5,6],[6,3]]"
+    },
+    {
+      "n": 4,
+      "edges": "[[0,1],[0,2]]"
+    }
+  ],
+  "functionName": "findShortestCycle",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How can BFS be used?",
+    "For each vertex u, calculate the length of the shortest cycle that contains vertex u using BFS"
+  ]
+}

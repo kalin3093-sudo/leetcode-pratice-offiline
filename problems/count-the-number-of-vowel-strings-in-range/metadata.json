@@ -1,0 +1,59 @@
+{
+  "id": "count-the-number-of-vowel-strings-in-range",
+  "title": "2586. Count the Number of Vowel Strings in Range",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"are\",\"amy\",\"u\"], left = 0, right = 2",
+      "output": "2",
+      "explanation": "- \"are\" is a vowel string because it starts with 'a' and ends with 'e'. - \"amy\" is not a vowel string because it does not end with a vowel. - \"u\" is a vowel string because it starts with 'u' and ends with 'u'. The number of vowel strings in the mentioned range is 2."
+    },
+    {
+      "input": "words = [\"hey\",\"aeo\",\"mu\",\"ooo\",\"artro\"], left = 1, right = 4",
+      "output": "3",
+      "explanation": "- \"aeo\" is a vowel string because it starts with 'a' and ends with 'o'. - \"mu\" is not a vowel string because it does not start with a vowel. - \"ooo\" is a vowel string because it starts with 'o' and ends with 'o'. - \"artro\" is a vowel string because it starts with 'a' and ends with 'o'. The number of vowel strings in the mentioned range is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int vowelStrings(vector<string>& words, int left, int right) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int vowelStrings(String[] words, int left, int right) {\n        \n    }\n}",
+    "python": "class Solution:\n    def vowelStrings(self, words: list[str], left: int, right: int) -> int:\n        ",
+    "typescript": "function vowelStrings(words: string[], left: number, right: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int VowelStrings(string[] words, int left, int right) {\n        \n    }\n}",
+    "go": "func vowelStrings(words []string, left int, right int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn vowel_strings(words: Vec<String>, left: i32, right: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"are\",\"amy\",\"u\"]",
+      "left": 0,
+      "right": 2
+    },
+    {
+      "words": "[\"hey\",\"aeo\",\"mu\",\"ooo\",\"artro\"]",
+      "left": 1,
+      "right": 4
+    }
+  ],
+  "functionName": "vowelStrings",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "left",
+      "type": "int"
+    },
+    {
+      "name": "right",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "consider iterating over all strings from left to right and use an if condition to check if the first character and last character are vowels."
+  ]
+}

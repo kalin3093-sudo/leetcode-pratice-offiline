@@ -1,0 +1,53 @@
+{
+  "id": "minimum-number-of-flips-to-make-binary-grid-palindromic-ii",
+  "title": "3240. Minimum Number of Flips to Make Binary Grid Palindromic II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,0,0],[0,1,0],[0,0,1]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[0,1],[0,1],[0,0]]",
+      "output": "2"
+    },
+    {
+      "input": "grid = [[1],[1]]",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minFlips(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minFlips(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minFlips(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function minFlips(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinFlips(int[][] grid) {\n        \n    }\n}",
+    "go": "func minFlips(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_flips(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,0,0],[0,1,0],[0,0,1]]"
+    },
+    {
+      "grid": "[[0,1],[0,1],[0,0]]"
+    },
+    {
+      "grid": "[[1],[1]]"
+    }
+  ],
+  "functionName": "minFlips",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each <code>(x, y)</code>, find <code>(m - 1 - x, y)</code>, <code>(m - 1 - x, n - 1 - y)</code>, and <code>(x, n - 1 - y)</code>; they should be the same.",
+    "Note that we need to specially handle the middle row (column) if the number of rows (columns) is odd."
+  ]
+}

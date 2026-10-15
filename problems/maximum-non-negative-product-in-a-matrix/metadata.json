@@ -1,0 +1,55 @@
+{
+  "id": "maximum-non-negative-product-in-a-matrix",
+  "title": "1594. Maximum Non Negative Product in a Matrix",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[-1,-2,-3],[-2,-3,-3],[-3,-3,-2]]",
+      "output": "-1",
+      "explanation": "It is not possible to get non-negative product in the path from (0, 0) to (2, 2), so return -1."
+    },
+    {
+      "input": "grid = [[1,-2,1],[1,-2,1],[3,-4,1]]",
+      "output": "8",
+      "explanation": "Maximum non-negative product is shown (1 * 1 * -2 * -4 * 1 = 8)."
+    },
+    {
+      "input": "grid = [[1,3],[0,-4]]",
+      "output": "0",
+      "explanation": "Maximum non-negative product is shown (1 * 0 * -4 = 0)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProductPath(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProductPath(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProductPath(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxProductPath(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProductPath(int[][] grid) {\n        \n    }\n}",
+    "go": "func maxProductPath(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_product_path(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[-1,-2,-3],[-2,-3,-3],[-3,-3,-2]]"
+    },
+    {
+      "grid": "[[1,-2,1],[1,-2,1],[3,-4,1]]"
+    },
+    {
+      "grid": "[[1,3],[0,-4]]"
+    }
+  ],
+  "functionName": "maxProductPath",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use Dynamic programming. Keep the highest value and lowest value you can achieve up to a point."
+  ]
+}

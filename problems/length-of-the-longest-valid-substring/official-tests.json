@@ -1,0 +1,10 @@
+[
+  {
+    "word": "cbaaaabc",
+    "forbidden": "[\"aaa\",\"cb\"]"
+  },
+  {
+    "word": "leetcode",
+    "forbidden": "[\"de\",\"le\",\"e\"]"
+  }
+]

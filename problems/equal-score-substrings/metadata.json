@@ -1,0 +1,47 @@
+{
+  "id": "equal-score-substrings",
+  "title": "3707. Equal Score Substrings",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/equal-score-substrings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"adcb\"",
+      "output": "true",
+      "explanation": "Split at index i = 1: Left substring = s[0..1] = \"ad\" with score = 1 + 4 = 5 Right substring = s[2..3] = \"cb\" with score = 3 + 2 = 5 Both substrings have equal scores, so the output is true."
+    },
+    {
+      "input": "s = \"bace\"",
+      "output": "false",
+      "explanation": "No split produces equal scores, so the output is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool scoreBalance(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean scoreBalance(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def scoreBalance(self, s: str) -> bool:\n        ",
+    "typescript": "function scoreBalance(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ScoreBalance(string s) {\n        \n    }\n}",
+    "go": "func scoreBalance(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn score_balance(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "adcb"
+    },
+    {
+      "s": "bace"
+    }
+  ],
+  "functionName": "scoreBalance",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use brute-force"
+  ]
+}

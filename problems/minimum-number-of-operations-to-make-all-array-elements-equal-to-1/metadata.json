@@ -1,0 +1,48 @@
+{
+  "id": "minimum-number-of-operations-to-make-all-array-elements-equal-to-1",
+  "title": "2654. Minimum Number of Operations to Make All Array Elements Equal to 1",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,6,3,4]",
+      "output": "4",
+      "explanation": "We can do the following operations: - Choose index i = 2 and replace nums[2] with gcd(3,4) = 1. Now we have nums = [2,6,1,4]. - Choose index i = 1 and replace nums[1] with gcd(6,1) = 1. Now we have nums = [2,1,1,4]. - Choose index i = 0 and replace nums[0] with gcd(2,1) = 1. Now we have nums = [1,1,1,4]. - Choose index i = 2 and replace nums[3] with gcd(1,4) = 1. Now we have nums = [1,1,1,1]."
+    },
+    {
+      "input": "nums = [2,10,6,14]",
+      "output": "-1",
+      "explanation": "It can be shown that it is impossible to make all the elements equal to 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,6,3,4]"
+    },
+    {
+      "nums": "[2,10,6,14]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Note that if you have at least one occurrence of 1 in the array, then you can make all the other elements equal to 1 with one operation each.",
+    "Try finding the shortest subarray with a gcd equal to 1."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "find-special-substring-of-length-k",
+  "title": "3456. Find Special Substring of Length K",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-special-substring-of-length-k/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aaabaaa\", k = 3",
+      "output": "true",
+      "explanation": "The substring s[4..6] == \"aaa\" satisfies the conditions. It has a length of 3. All characters are the same. The character before \"aaa\" is 'b', which is different from 'a'. There is no character after \"aaa\"."
+    },
+    {
+      "input": "s = \"abc\", k = 2",
+      "output": "false",
+      "explanation": "There is no substring of length 2 that consists of one distinct character and satisfies the conditions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool hasSpecialSubstring(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean hasSpecialSubstring(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hasSpecialSubstring(self, s: str, k: int) -> bool:\n        ",
+    "typescript": "function hasSpecialSubstring(s: string, k: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HasSpecialSubstring(string s, int k) {\n        \n    }\n}",
+    "go": "func hasSpecialSubstring(s string, k int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn has_special_substring(s: String, k: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaabaaa",
+      "k": 3
+    },
+    {
+      "s": "abc",
+      "k": 2
+    }
+  ],
+  "functionName": "hasSpecialSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Return <code>true</code> if there is a sequence of consecutive characters of length <code>k</code>"
+  ]
+}

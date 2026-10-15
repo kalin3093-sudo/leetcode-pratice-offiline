@@ -1,0 +1,55 @@
+{
+  "id": "take-k-of-each-character-from-left-and-right",
+  "title": "2516. Take K of Each Character From Left and Right",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aabaaaacaabc\", k = 2",
+      "output": "8",
+      "explanation": "Take three characters from the left of s. You now have two 'a' characters, and one 'b' character. Take five characters from the right of s. You now have four 'a' characters, two 'b' characters, and two 'c' characters. A total of 3 + 5 = 8 minutes is needed. It can be proven that 8 is the minimum number of minutes needed."
+    },
+    {
+      "input": "s = \"a\", k = 1",
+      "output": "-1",
+      "explanation": "It is not possible to take one 'b' or 'c' so return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int takeCharacters(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int takeCharacters(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def takeCharacters(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function takeCharacters(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TakeCharacters(string s, int k) {\n        \n    }\n}",
+    "go": "func takeCharacters(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn take_characters(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aabaaaacaabc",
+      "k": 2
+    },
+    {
+      "s": "a",
+      "k": 1
+    }
+  ],
+  "functionName": "takeCharacters",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Start by counting the frequency of each character and checking if it is possible.",
+    "If you take x characters from the left side, what is the minimum number of characters you need to take from the right side? Find this for all values of x in the range 0 ≤ x ≤ s.length.",
+    "Use a two-pointers approach to avoid computing the same information multiple times."
+  ]
+}

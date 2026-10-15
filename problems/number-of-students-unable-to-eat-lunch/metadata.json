@@ -1,0 +1,53 @@
+{
+  "id": "number-of-students-unable-to-eat-lunch",
+  "title": "1700. Number of Students Unable to Eat Lunch",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "students = [1,1,0,0], sandwiches = [0,1,0,1]",
+      "output": "0",
+      "explanation": "- Front student leaves the top sandwich and returns to the end of the line making students = [1,0,0,1]. - Front student leaves the top sandwich and returns to the end of the line making students = [0,0,1,1]. - Front student takes the top sandwich and leaves the line making students = [0,1,1] and sandwiches = [1,0,1]. - Front student leaves the top sandwich and returns to the end of the line making students = [1,1,0]. - Front student takes the top sandwich and leaves the line making students = [1,0] and sandwiches = [0,1]. - Front student leaves the top sandwich and returns to the end of the line making students = [0,1]. - Front student takes the top sandwich and leaves the line making students = [1] and sandwiches = [1]. - Front student takes the top sandwich and leaves the line making students = [] and sandwiches = []. Hence all students are able to eat."
+    },
+    {
+      "input": "students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countStudents(vector<int>& students, vector<int>& sandwiches) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countStudents(int[] students, int[] sandwiches) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countStudents(self, students: list[int], sandwiches: list[int]) -> int:\n        ",
+    "typescript": "function countStudents(students: number[], sandwiches: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountStudents(int[] students, int[] sandwiches) {\n        \n    }\n}",
+    "go": "func countStudents(students []int, sandwiches []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_students(students: Vec<i32>, sandwiches: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "students": "[1,1,0,0]",
+      "sandwiches": "[0,1,0,1]"
+    },
+    {
+      "students": "[1,1,1,0,0,1]",
+      "sandwiches": "[1,0,0,0,1,1]"
+    }
+  ],
+  "functionName": "countStudents",
+  "params": [
+    {
+      "name": "students",
+      "type": "int_array"
+    },
+    {
+      "name": "sandwiches",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the given in the statement",
+    "Calculate those who will eat instead of those who will not."
+  ]
+}

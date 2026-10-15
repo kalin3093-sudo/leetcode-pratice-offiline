@@ -1,0 +1,43 @@
+{
+  "id": "minimum-add-to-make-parentheses-valid",
+  "title": "921. Minimum Add to Make Parentheses Valid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"())\"",
+      "output": "1"
+    },
+    {
+      "input": "s = \"(((\"",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minAddToMakeValid(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minAddToMakeValid(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minAddToMakeValid(self, s: str) -> int:\n        ",
+    "typescript": "function minAddToMakeValid(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinAddToMakeValid(string s) {\n        \n    }\n}",
+    "go": "func minAddToMakeValid(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_add_to_make_valid(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "())"
+    },
+    {
+      "s": "((("
+    }
+  ],
+  "functionName": "minAddToMakeValid",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

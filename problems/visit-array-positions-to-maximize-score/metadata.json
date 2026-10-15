@@ -1,0 +1,54 @@
+{
+  "id": "visit-array-positions-to-maximize-score",
+  "title": "2786. Visit Array Positions to Maximize Score",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/visit-array-positions-to-maximize-score/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,6,1,9,2], x = 5",
+      "output": "13",
+      "explanation": "We can visit the following positions in the array: 0 -> 2 -> 3 -> 4. The corresponding values are 2, 6, 1 and 9. Since the integers 6 and 1 have different parities, the move 2 -> 3 will make you lose a score of x = 5. The total score will be: 2 + 6 + 1 + 9 - 5 = 13."
+    },
+    {
+      "input": "nums = [2,4,6,8], x = 3",
+      "output": "20",
+      "explanation": "All the integers in the array have the same parities, so we can visit all of them without losing any score. The total score is: 2 + 4 + 6 + 8 = 20."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxScore(vector<int>& nums, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxScore(int[] nums, int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, nums: List[int], x: int) -> int:\n        ",
+    "typescript": "function maxScore(nums: number[], x: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxScore(int[] nums, int x) {\n        \n    }\n}",
+    "go": "func maxScore(nums []int, x int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(nums: Vec<i32>, x: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,6,1,9,2]",
+      "x": 5
+    },
+    {
+      "nums": "[2,4,6,8]",
+      "x": 3
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "How can we use dynamic programming to solve the problem?",
+    "Let dp[i] be the answer to the subarray nums[0…i]. What are the transitions of this dp?"
+  ]
+}

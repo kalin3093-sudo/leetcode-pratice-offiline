@@ -1,0 +1,58 @@
+{
+  "id": "escape-the-spreading-fire",
+  "title": "2258. Escape the Spreading Fire",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/escape-the-spreading-fire/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,2,0,0,0,0,0],[0,0,0,2,2,1,0],[0,2,0,0,1,2,0],[0,0,2,2,2,0,2],[0,0,0,0,0,0,0]]",
+      "output": "3",
+      "explanation": "The figure above shows the scenario where you stay in the initial position for 3 minutes. You will still be able to safely reach the safehouse. Staying for more than 3 minutes will not allow you to safely reach the safehouse."
+    },
+    {
+      "input": "grid = [[0,0,0,0],[0,1,2,0],[0,2,0,0]]",
+      "output": "-1",
+      "explanation": "The figure above shows the scenario where you immediately move towards the safehouse. Fire will spread to any cell you move towards and it is impossible to safely reach the safehouse. Thus, -1 is returned."
+    },
+    {
+      "input": "grid = [[0,0,0],[2,2,0],[1,2,0]]",
+      "output": "1000000000",
+      "explanation": "The figure above shows the initial grid. Notice that the fire is contained by walls and you will always be able to safely reach the safehouse. Thus, 109 is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumMinutes(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumMinutes(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumMinutes(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function maximumMinutes(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumMinutes(int[][] grid) {\n        \n    }\n}",
+    "go": "func maximumMinutes(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_minutes(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,2,0,0,0,0,0],[0,0,0,2,2,1,0],[0,2,0,0,1,2,0],[0,0,2,2,2,0,2],[0,0,0,0,0,0,0]]"
+    },
+    {
+      "grid": "[[0,0,0,0],[0,1,2,0],[0,2,0,0]]"
+    },
+    {
+      "grid": "[[0,0,0],[2,2,0],[1,2,0]]"
+    }
+  ],
+  "functionName": "maximumMinutes",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For some tile (x, y), how can we determine when, if ever, the fire will reach it?",
+    "We can use multi-source BFS to find the earliest time the fire will reach each cell.",
+    "Then, starting with a given t minutes of staying in the initial position, we can check if there is a safe path to the safehouse using the obtained information about the fire.",
+    "We can use binary search to efficiently find the maximum t that allows us to reach the safehouse."
+  ]
+}

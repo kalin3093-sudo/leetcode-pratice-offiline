@@ -1,0 +1,66 @@
+{
+  "id": "maximum-consistent-columns-in-a-grid",
+  "title": "3989. Maximum Consistent Columns in a Grid",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-consistent-columns-in-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[-2,0,3]], limit = 2",
+      "output": "2",
+      "explanation": "Remove column 2 and keep columns 0 and 1, which gives |grid[0][1] &minus; grid[0][0]| = |0 &minus; (&minus;2)| = 2 <= limit. Thus, the maximum number of columns that can remain is 2."
+    },
+    {
+      "input": "grid = [[1,-1,1],[2,2,2]], limit = 1",
+      "output": "2",
+      "explanation": "Remove column 1 and keep columns 0 and 2, which gives |grid[0][2] &minus; grid[0][0]| = |1 &minus; 1| = 0 <= limit and |grid[1][2] &minus; grid[1][0]| = |2 &minus; 2| = 0 <= limit. Thus, the maximum number of columns that can remain is 2."
+    },
+    {
+      "input": "grid = [[-5,5]], limit = 9",
+      "output": "1",
+      "explanation": "Remove either column 0 or column 1, since |grid[0][1] &minus; grid[0][0]| = |5 &minus; (&minus;5)| = 10 > limit. Thus, the maximum number of columns that can remain is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxConsistentColumns(vector<vector<int>>& grid, int limit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxConsistentColumns(int[][] grid, int limit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxConsistentColumns(self, grid: List[List[int]], limit: int) -> int:\n        ",
+    "typescript": "function maxConsistentColumns(grid: number[][], limit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxConsistentColumns(int[][] grid, int limit) {\n        \n    }\n}",
+    "go": "func maxConsistentColumns(grid [][]int, limit int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_consistent_columns(grid: Vec<Vec<i32>>, limit: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[-2,0,3]]",
+      "limit": 2
+    },
+    {
+      "grid": "[[1,-1,1],[2,2,2]]",
+      "limit": 1
+    },
+    {
+      "grid": "[[-5,5]]",
+      "limit": 9
+    }
+  ],
+  "functionName": "maxConsistentColumns",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "limit",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Think of each column as one item in a subsequence. Two columns <code>a</code> and <code>b</code> with <code>a &lt; b</code> can be adjacent in the remaining grid only if <code>|grid[i][b] - grid[i][a]| &lt;= limit</code> for every row <code>i</code>.</p>",
+    "<p>Precompute whether every pair of columns <code>(a, b)</code> is compatible.</p>",
+    "<p>Let <code>dp[j]</code> be the maximum number of columns in a valid remaining grid whose last column is <code>j</code>.</p>",
+    "<p>For each <code>j</code>, try all previous columns <code>i &lt; j</code>. If columns <code>i</code> and <code>j</code> are compatible, update <code>dp[j] = max(dp[j], dp[i] + 1)</code>.</p>",
+    "<p>The answer is the maximum value of <code>dp[j]</code>.</p>"
+  ]
+}

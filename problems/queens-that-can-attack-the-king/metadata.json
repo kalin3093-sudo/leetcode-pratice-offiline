@@ -1,0 +1,54 @@
+{
+  "id": "queens-that-can-attack-the-king",
+  "title": "1222. Queens That Can Attack the King",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/queens-that-can-attack-the-king/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "queens = [[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]], king = [0,0]",
+      "output": "[[0,1],[1,0],[3,3]]",
+      "explanation": "The diagram above shows the three queens that can directly attack the king and the three queens that cannot attack the king (i.e., marked with red dashes)."
+    },
+    {
+      "input": "queens = [[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]], king = [3,3]",
+      "output": "[[2,2],[3,4],[4,4]]",
+      "explanation": "The diagram above shows the three queens that can directly attack the king and the three queens that cannot attack the king (i.e., marked with red dashes)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> queensAttacktheKing(vector<vector<int>>& queens, vector<int>& king) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {\n        \n    }\n}",
+    "python": "class Solution:\n    def queensAttacktheKing(self, queens: list[list[int]], king: list[int]) -> list[list[int]]:\n        ",
+    "typescript": "function queensAttacktheKing(queens: number[][], king: number[]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> QueensAttacktheKing(int[][] queens, int[] king) {\n        \n    }\n}",
+    "go": "func queensAttacktheKing(queens [][]int, king []int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn queens_attackthe_king(queens: Vec<Vec<i32>>, king: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "queens": "[[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]]",
+      "king": "[0,0]"
+    },
+    {
+      "queens": "[[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]]",
+      "king": "[3,3]"
+    }
+  ],
+  "functionName": "queensAttacktheKing",
+  "params": [
+    {
+      "name": "queens",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "king",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": [
+    "Check 8 directions around the King.",
+    "Find the nearest queen in each direction."
+  ]
+}

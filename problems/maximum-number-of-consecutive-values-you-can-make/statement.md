@@ -1,0 +1,11 @@
+You are given an integer array `coins` of length `n` which represents the `n` coins that you own. The value of the `i^th` coin is `coins[i]`. You can **make** some value `x` if you can choose some of your `n` coins such that their values sum up to `x`.
+
+Return the *maximum number of consecutive integer values that you **can** **make** with your coins **starting** from and **including*** `0`.
+
+Note that you may have multiple coins of the same value.
+
+**Constraints:**
+
+-   `coins.length == n`
+-   `1 ≤ n ≤ 4 * 10^4`
+-   `1 ≤ coins[i] ≤ 4 * 10^4`

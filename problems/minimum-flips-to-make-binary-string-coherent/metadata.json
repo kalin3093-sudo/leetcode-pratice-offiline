@@ -1,0 +1,53 @@
+{
+  "id": "minimum-flips-to-make-binary-string-coherent",
+  "title": "3922. Minimum Flips to Make Binary String Coherent",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1010\"",
+      "output": "1",
+      "explanation": "Flip s[0] to get \"0010\", which contains no \"011\" or \"110\" subsequences."
+    },
+    {
+      "input": "s = \"0110\"",
+      "output": "1",
+      "explanation": "Flip s[1] to get \"0010\", removing all forbidden subsequences \"011\" and \"110\"."
+    },
+    {
+      "input": "s = \"1000\"",
+      "output": "0",
+      "explanation": "The string already has no \"011\" or \"110\" subsequences, so no flips are needed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minFlips(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minFlips(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minFlips(self, s: str) -> int:\n        ",
+    "typescript": "function minFlips(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinFlips(string s) {\n        \n    }\n}",
+    "go": "func minFlips(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_flips(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1010"
+    },
+    {
+      "s": "0110"
+    },
+    {
+      "s": "1000"
+    }
+  ],
+  "functionName": "minFlips",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

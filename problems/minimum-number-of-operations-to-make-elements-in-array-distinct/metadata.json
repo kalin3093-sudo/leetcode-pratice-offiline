@@ -1,0 +1,55 @@
+{
+  "id": "minimum-number-of-operations-to-make-elements-in-array-distinct",
+  "title": "3396. Minimum Number of Operations to Make Elements in Array Distinct",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,2,3,3,5,7]",
+      "output": "2",
+      "explanation": "In the first operation, the first 3 elements are removed, resulting in the array [4, 2, 3, 3, 5, 7]. In the second operation, the next 3 elements are removed, resulting in the array [3, 5, 7], which has distinct elements. Therefore, the answer is 2."
+    },
+    {
+      "input": "nums = [4,5,6,4,4]",
+      "output": "2",
+      "explanation": "In the first operation, the first 3 elements are removed, resulting in the array [4, 4]. In the second operation, all remaining elements are removed, resulting in an empty array. Therefore, the answer is 2."
+    },
+    {
+      "input": "nums = [6,7,8,9]",
+      "output": "0",
+      "explanation": "The array already contains distinct elements. Therefore, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimumOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,2,3,3,5,7]"
+    },
+    {
+      "nums": "[4,5,6,4,4]"
+    },
+    {
+      "nums": "[6,7,8,9]"
+    }
+  ],
+  "functionName": "minimumOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The constraints are small. Try brute force."
+  ]
+}

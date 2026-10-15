@@ -1,0 +1,43 @@
+{
+  "id": "find-duplicate-file-in-system",
+  "title": "609. Find Duplicate File in System",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-duplicate-file-in-system/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "paths = [\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]",
+      "output": "[[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+    },
+    {
+      "input": "paths = [\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\"]",
+      "output": "[[\"root/a/2.txt\",\"root/c/d/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<string>> findDuplicate(vector<string>& paths) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<String>> findDuplicate(String[] paths) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findDuplicate(self, paths: list[str]) -> list[list[str]]:\n        ",
+    "typescript": "function findDuplicate(paths: string[]): string[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<string>> FindDuplicate(string[] paths) {\n        \n    }\n}",
+    "go": "func findDuplicate(paths []string) [][]string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_duplicate(paths: Vec<String>) -> Vec<Vec<String>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "paths": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]"
+    },
+    {
+      "paths": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\"]"
+    }
+  ],
+  "functionName": "findDuplicate",
+  "params": [
+    {
+      "name": "paths",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list_2d",
+  "hints": []
+}

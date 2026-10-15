@@ -1,0 +1,50 @@
+{
+  "id": "largest-component-size-by-common-factor",
+  "title": "952. Largest Component Size by Common Factor",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/largest-component-size-by-common-factor/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,6,15,35]",
+      "output": "4"
+    },
+    {
+      "input": "nums = [20,50,9,63]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [2,3,6,7,4,12,21,39]",
+      "output": "8"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestComponentSize(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestComponentSize(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestComponentSize(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function largestComponentSize(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestComponentSize(int[] nums) {\n        \n    }\n}",
+    "go": "func largestComponentSize(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_component_size(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,6,15,35]"
+    },
+    {
+      "nums": "[20,50,9,63]"
+    },
+    {
+      "nums": "[2,3,6,7,4,12,21,39]"
+    }
+  ],
+  "functionName": "largestComponentSize",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

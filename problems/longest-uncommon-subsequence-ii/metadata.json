@@ -1,0 +1,43 @@
+{
+  "id": "longest-uncommon-subsequence-ii",
+  "title": "522. Longest Uncommon Subsequence II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-uncommon-subsequence-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "strs = [\"aba\",\"cdc\",\"eae\"]",
+      "output": "3"
+    },
+    {
+      "input": "strs = [\"aaa\",\"aaa\",\"aa\"]",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findLUSlength(vector<string>& strs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findLUSlength(String[] strs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLUSlength(self, strs: list[str]) -> int:\n        ",
+    "typescript": "function findLUSlength(strs: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindLUSlength(string[] strs) {\n        \n    }\n}",
+    "go": "func findLUSlength(strs []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_lu_slength(strs: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "strs": "[\"aba\",\"cdc\",\"eae\"]"
+    },
+    {
+      "strs": "[\"aaa\",\"aaa\",\"aa\"]"
+    }
+  ],
+  "functionName": "findLUSlength",
+  "params": [
+    {
+      "name": "strs",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

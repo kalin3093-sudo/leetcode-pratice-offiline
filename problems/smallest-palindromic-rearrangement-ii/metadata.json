@@ -1,0 +1,66 @@
+{
+  "id": "smallest-palindromic-rearrangement-ii",
+  "title": "3518. Smallest Palindromic Rearrangement II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abba\", k = 2",
+      "output": "\"baab\"",
+      "explanation": "The two distinct palindromic rearrangements of \"abba\" are \"abba\" and \"baab\". Lexicographically, \"abba\" comes before \"baab\". Since k = 2, the output is \"baab\"."
+    },
+    {
+      "input": "s = \"aa\", k = 2",
+      "output": "\"\"",
+      "explanation": "There is only one palindromic rearrangement: \"aa\". The output is an empty string since k = 2 exceeds the number of possible rearrangements."
+    },
+    {
+      "input": "s = \"bacab\", k = 1",
+      "output": "\"abcba\"",
+      "explanation": "The two distinct palindromic rearrangements of \"bacab\" are \"abcba\" and \"bacab\". Lexicographically, \"abcba\" comes before \"bacab\". Since k = 1, the output is \"abcba\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestPalindrome(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestPalindrome(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestPalindrome(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function smallestPalindrome(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestPalindrome(string s, int k) {\n        \n    }\n}",
+    "go": "func smallestPalindrome(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_palindrome(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abba",
+      "k": 2
+    },
+    {
+      "s": "aa",
+      "k": 2
+    },
+    {
+      "s": "bacab",
+      "k": 1
+    }
+  ],
+  "functionName": "smallestPalindrome",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Only build <code>floor(n / 2)</code> characters (the rest are determined by symmetry).",
+    "Count character frequencies and use half the counts for construction.",
+    "Incrementally choose each character (from smallest to largest) and calculate how many valid arrangements result if that character is chosen at the current index.",
+    "If the count is at least <code>k</code>, fix that character; otherwise, subtract the count from <code>k</code> and try the next candidate.",
+    "Use combinatorics to compute the number of permutations at each step."
+  ]
+}

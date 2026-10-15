@@ -1,0 +1,48 @@
+{
+  "id": "divide-array-into-equal-pairs",
+  "title": "2206. Divide Array Into Equal Pairs",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/divide-array-into-equal-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,2,3,2,2,2]",
+      "output": "true",
+      "explanation": "There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "false",
+      "explanation": "There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool divideArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean divideArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def divideArray(self, nums: list[int]) -> bool:\n        ",
+    "typescript": "function divideArray(nums: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool DivideArray(int[] nums) {\n        \n    }\n}",
+    "go": "func divideArray(nums []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn divide_array(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,2,3,2,2,2]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "divideArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "For any number x in the range [1, 500], count the number of elements in nums whose values are equal to x.",
+    "The elements with equal value can be divided completely into pairs if and only if their count is even."
+  ]
+}

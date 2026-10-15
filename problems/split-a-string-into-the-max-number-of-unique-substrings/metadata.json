@@ -1,0 +1,56 @@
+{
+  "id": "split-a-string-into-the-max-number-of-unique-substrings",
+  "title": "1593. Split a String Into the Max Number of Unique Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"ababccc\"",
+      "output": "5",
+      "explanation": "One way to split maximally is ['a', 'b', 'ab', 'c', 'cc']. Splitting like ['a', 'b', 'a', 'b', 'c', 'cc'] is not valid as you have 'a' and 'b' multiple times."
+    },
+    {
+      "input": "s = \"aba\"",
+      "output": "2",
+      "explanation": "One way to split maximally is ['a', 'ba']."
+    },
+    {
+      "input": "s = \"aa\"",
+      "output": "1",
+      "explanation": "It is impossible to split the string any further."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxUniqueSplit(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxUniqueSplit(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxUniqueSplit(self, s: str) -> int:\n        ",
+    "typescript": "function maxUniqueSplit(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxUniqueSplit(string s) {\n        \n    }\n}",
+    "go": "func maxUniqueSplit(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_unique_split(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "ababccc"
+    },
+    {
+      "s": "aba"
+    },
+    {
+      "s": "aa"
+    }
+  ],
+  "functionName": "maxUniqueSplit",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a set to keep track of which substrings have been used already",
+    "Try each possible substring at every position and backtrack if a complete split is not possible"
+  ]
+}

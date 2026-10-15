@@ -1,0 +1,65 @@
+{
+  "id": "find-the-largest-almost-missing-integer",
+  "title": "3471. Find the Largest Almost Missing Integer",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,9,2,1,7], k = 3",
+      "output": "7",
+      "explanation": "1 appears in 2 subarrays of size 3: [9, 2, 1] and [2, 1, 7]. 2 appears in 3 subarrays of size 3: [3, 9, 2], [9, 2, 1], [2, 1, 7]. 3 appears in 1 subarray of size 3: [3, 9, 2]. 7 appears in 1 subarray of size 3: [2, 1, 7]. 9 appears in 2 subarrays of size 3: [3, 9, 2], and [9, 2, 1]. We return 7 since it is the largest integer that appears in exactly one subarray of size k."
+    },
+    {
+      "input": "nums = [3,9,7,2,1,7], k = 4",
+      "output": "3",
+      "explanation": "1 appears in 2 subarrays of size 4: [9, 7, 2, 1], [7, 2, 1, 7]. 2 appears in 3 subarrays of size 4: [3, 9, 7, 2], [9, 7, 2, 1], [7, 2, 1, 7]. 3 appears in 1 subarray of size 4: [3, 9, 7, 2]. 7 appears in 3 subarrays of size 4: [3, 9, 7, 2], [9, 7, 2, 1], [7, 2, 1, 7]. 9 appears in 2 subarrays of size 4: [3, 9, 7, 2], [9, 7, 2, 1]. We return 3 since it is the largest and only integer that appears in exactly one subarray of size k."
+    },
+    {
+      "input": "nums = [0,0], k = 1",
+      "output": "-1",
+      "explanation": "There is no integer that appears in only one subarray of size 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestInteger(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestInteger(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestInteger(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function largestInteger(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestInteger(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func largestInteger(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_integer(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,9,2,1,7]",
+      "k": 3
+    },
+    {
+      "nums": "[3,9,7,2,1,7]",
+      "k": 4
+    },
+    {
+      "nums": "[0,0]",
+      "k": 1
+    }
+  ],
+  "functionName": "largestInteger",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Solve the problem for three different cases: <code>k = 1</code>, <code>k = n</code>, and <code>1 < k < n</code>",
+    "If <code>k = 1</code>, return the largest element that occurs exactly once in <code>nums</code>",
+    "If <code>k = n</code>, return the largest element in <code>nums</code>",
+    "If <code>1 < k < n</code>, all elements different from <code>nums[0]</code> and <code>nums[n - 1]</code> will occur in more than one subarray of size <code>k</code>. Hence, the answer is the largest of <code>nums[0]</code> and <code>nums[n - 1]</code> if they both occur exactly once in the array. If one of them occurs more than once, return the other. If both of them occur more than once, return -1."
+  ]
+}

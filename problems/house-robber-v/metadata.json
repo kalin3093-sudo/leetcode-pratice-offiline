@@ -1,0 +1,67 @@
+{
+  "id": "house-robber-v",
+  "title": "3840. House Robber V",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/house-robber-v/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,4,3,5], colors = [1,1,2,2]",
+      "output": "9",
+      "explanation": "Choose houses i = 1 with nums[1] = 4 and i = 3 with nums[3] = 5 because they are non-adjacent. Thus, the total amount robbed is 4 + 5 = 9."
+    },
+    {
+      "input": "nums = [3,1,2,4], colors = [2,3,2,2]",
+      "output": "8",
+      "explanation": "Choose houses i = 0 with nums[0] = 3, i = 1 with nums[1] = 1, and i = 3 with nums[3] = 4. This selection is valid because houses i = 0 and i = 1 have different colors, and house i = 3 is non-adjacent to i = 1. Thus, the total amount robbed is 3 + 1 + 4 = 8."
+    },
+    {
+      "input": "nums = [10,1,3,9], colors = [1,1,1,2]",
+      "output": "22",
+      "explanation": "Choose houses i = 0 with nums[0] = 10, i = 2 with nums[2] = 3, and i = 3 with nums[3] = 9. This selection is valid because houses i = 0 and i = 2 are non-adjacent, and houses i = 2 and i = 3 have different colors. Thus, the total amount robbed is 10 + 3 + 9 = 22."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long rob(vector<int>& nums, vector<int>& colors) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long rob(int[] nums, int[] colors) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rob(self, nums: List[int], colors: List[int]) -> int:\n        ",
+    "typescript": "function rob(nums: number[], colors: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long Rob(int[] nums, int[] colors) {\n        \n    }\n}",
+    "go": "func rob(nums []int, colors []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rob(nums: Vec<i32>, colors: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,4,3,5]",
+      "colors": "[1,1,2,2]"
+    },
+    {
+      "nums": "[3,1,2,4]",
+      "colors": "[2,3,2,2]"
+    },
+    {
+      "nums": "[10,1,3,9]",
+      "colors": "[1,1,1,2]"
+    }
+  ],
+  "functionName": "rob",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "colors",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use dynamic programming",
+    "Let <code>dp[i]</code> be the maximum money robbable considering houses up to index <code>i</code>",
+    "Initialize <code>dp[i]</code> with <code>nums[i]</code>, then compare with skipping the house: <code>dp[i - 1]</code>",
+    "If <code>colors[i] != colors[i - 1]</code>, allow taking adjacent house: <code>nums[i] + dp[i - 1]</code>",
+    "Always allow non-adjacent take: <code>nums[i] + dp[i - 2]</code>",
+    "Answer is <code>dp[n - 1]</code>"
+  ]
+}

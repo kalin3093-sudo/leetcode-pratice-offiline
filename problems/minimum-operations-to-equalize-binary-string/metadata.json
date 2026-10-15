@@ -1,0 +1,64 @@
+{
+  "id": "minimum-operations-to-equalize-binary-string",
+  "title": "3666. Minimum Operations to Equalize Binary String",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"110\", k = 1",
+      "output": "1",
+      "explanation": "There is one '0' in s. Since k = 1, we can flip it directly in one operation."
+    },
+    {
+      "input": "s = \"0101\", k = 3",
+      "output": "2",
+      "explanation": "One optimal set of operations choosing k = 3 indices in each operation is: Operation 1: Flip indices [0, 1, 3]. s changes from \"0101\" to \"1000\". Operation 2: Flip indices [1, 2, 3]. s changes from \"1000\" to \"1111\". Thus, the minimum number of operations is 2."
+    },
+    {
+      "input": "s = \"101\", k = 2",
+      "output": "-1",
+      "explanation": "Since k = 2 and s has only one '0', it is impossible to flip exactly k indices to make all '1'. Hence, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function minOperations(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(string s, int k) {\n        \n    }\n}",
+    "go": "func minOperations(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "110",
+      "k": 1
+    },
+    {
+      "s": "0101",
+      "k": 3
+    },
+    {
+      "s": "101",
+      "k": 2
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Model state as <code>z</code> = number of zeros; flipping <code>k</code> picks <code>i</code> zeros (<code>i</code> between <code>max(0, k - (n - z))</code> and <code>min(k, z)</code>) and transforms <code>z</code> to <code>z'</code> = <code>z + k - 2 * i</code>, so <code>z'</code> lies in a contiguous range and has parity <code>(z + k) % 2</code>.",
+    "Build a graph on states <code>0..n</code> and run <code>BFS</code> from initial <code>z</code> to reach <code>0</code>; each edge from <code>z</code> goes to all <code>z'</code> in that computed interval.",
+    "For speed, keep two ordered sets of unvisited states by parity and erase ranges with <code>lower_bound</code> while <code>BFSing</code> to achieve near <code>O(n log n)</code> time."
+  ]
+}

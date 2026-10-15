@@ -1,0 +1,78 @@
+{
+  "id": "path-existence-queries-in-a-graph-ii",
+  "title": "3534. Path Existence Queries in a Graph II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, nums = [1,8,3,4,2], maxDiff = 3, queries = [[0,3],[2,4]]",
+      "output": "[1,1]",
+      "explanation": "The resulting graph is: Query Shortest Path Minimum Distance [0, 3] 0 &rarr; 3 1 [2, 4] 2 &rarr; 4 1 Thus, the output is [1, 1]."
+    },
+    {
+      "input": "n = 5, nums = [5,3,1,9,10], maxDiff = 2, queries = [[0,1],[0,2],[2,3],[4,3]]",
+      "output": "[1,2,-1,1]",
+      "explanation": "The resulting graph is: Query Shortest Path Minimum Distance [0, 1] 0 &rarr; 1 1 [0, 2] 0 &rarr; 1 &rarr; 2 2 [2, 3] None -1 [4, 3] 3 &rarr; 4 1 Thus, the output is [1, 2, -1, 1]."
+    },
+    {
+      "input": "n = 3, nums = [3,6,1], maxDiff = 1, queries = [[0,0],[0,1],[1,2]]",
+      "output": "[0,-1,-1]",
+      "explanation": "There are no edges between any two nodes because: Nodes 0 and 1: |nums[0] - nums[1]| = |3 - 6| = 3 > 1 Nodes 0 and 2: |nums[0] - nums[2]| = |3 - 1| = 2 > 1 Nodes 1 and 2: |nums[1] - nums[2]| = |6 - 1| = 5 > 1 Thus, no node can reach any other node, and the output is [0, -1, -1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> pathExistenceQueries(int n, vector<int>& nums, int maxDiff, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def pathExistenceQueries(self, n: int, nums: List[int], maxDiff: int, queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function pathExistenceQueries(n: number, nums: number[], maxDiff: number, queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] PathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {\n        \n    }\n}",
+    "go": "func pathExistenceQueries(n int, nums []int, maxDiff int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn path_existence_queries(n: i32, nums: Vec<i32>, max_diff: i32, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "nums": "[1,8,3,4,2]",
+      "maxDiff": 3,
+      "queries": "[[0,3],[2,4]]"
+    },
+    {
+      "n": 5,
+      "nums": "[5,3,1,9,10]",
+      "maxDiff": 2,
+      "queries": "[[0,1],[0,2],[2,3],[4,3]]"
+    },
+    {
+      "n": 3,
+      "nums": "[3,6,1]",
+      "maxDiff": 1,
+      "queries": "[[0,0],[0,1],[1,2]]"
+    }
+  ],
+  "functionName": "pathExistenceQueries",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "maxDiff",
+      "type": "int"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Sort the nodes according to <code>nums[i]</code>.",
+    "Can we use binary jumping?",
+    "Use binary jumping with a sparse table data structure."
+  ]
+}

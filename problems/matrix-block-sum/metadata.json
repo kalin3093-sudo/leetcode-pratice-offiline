@@ -1,0 +1,53 @@
+{
+  "id": "matrix-block-sum",
+  "title": "1314. Matrix Block Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/matrix-block-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[1,2,3],[4,5,6],[7,8,9]], k = 1",
+      "output": "[[12,21,16],[27,45,33],[24,39,28]]"
+    },
+    {
+      "input": "mat = [[1,2,3],[4,5,6],[7,8,9]], k = 2",
+      "output": "[[45,45,45],[45,45,45],[45,45,45]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> matrixBlockSum(vector<vector<int>>& mat, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] matrixBlockSum(int[][] mat, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def matrixBlockSum(self, mat: list[list[int]], k: int) -> list[list[int]]:\n        ",
+    "typescript": "function matrixBlockSum(mat: number[][], k: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] MatrixBlockSum(int[][] mat, int k) {\n        \n    }\n}",
+    "go": "func matrixBlockSum(mat [][]int, k int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn matrix_block_sum(mat: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "k": 1
+    },
+    {
+      "mat": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "k": 2
+    }
+  ],
+  "functionName": "matrixBlockSum",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "How to calculate the required sum for a cell (i,j) fast ?",
+    "Use the concept of cumulative sum array.",
+    "Create a cumulative sum matrix where dp[i][j] is the sum of all cells in the rectangle from (0,0) to (i,j), use inclusion-exclusion idea."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "largest-merge-of-two-strings",
+  "title": "1754. Largest Merge Of Two Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-merge-of-two-strings/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "word1 = \"cabaa\", word2 = \"bcaaa\"",
+      "output": "\"cbcabaaaaa\"",
+      "explanation": "One way to get the lexicographically largest merge is: - Take from word1: merge = \"c\", word1 = \"abaa\", word2 = \"bcaaa\" - Take from word2: merge = \"cb\", word1 = \"abaa\", word2 = \"caaa\" - Take from word2: merge = \"cbc\", word1 = \"abaa\", word2 = \"aaa\" - Take from word1: merge = \"cbca\", word1 = \"baa\", word2 = \"aaa\" - Take from word1: merge = \"cbcab\", word1 = \"aa\", word2 = \"aaa\" - Append the remaining 5 a's from word1 and word2 at the end of merge."
+    },
+    {
+      "input": "word1 = \"abcabc\", word2 = \"abdcaba\"",
+      "output": "\"abdcabcabcaba\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestMerge(string word1, string word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestMerge(String word1, String word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestMerge(self, word1: str, word2: str) -> str:\n        ",
+    "typescript": "function largestMerge(word1: string, word2: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestMerge(string word1, string word2) {\n        \n    }\n}",
+    "go": "func largestMerge(word1 string, word2 string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_merge(word1: String, word2: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "cabaa",
+      "word2": "bcaaa"
+    },
+    {
+      "word1": "abcabc",
+      "word2": "abdcaba"
+    }
+  ],
+  "functionName": "largestMerge",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Build the result character by character. At each step, you choose a character from one of the two strings.",
+    "If the next character of the first string is larger than that of the second string, or vice versa, it's optimal to use the larger one.",
+    "If both are equal, think of a criteria that lets you decide which string to consume the next character from.",
+    "You should choose the next character from the larger string."
+  ]
+}

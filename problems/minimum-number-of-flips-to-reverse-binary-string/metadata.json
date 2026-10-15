@@ -1,0 +1,47 @@
+{
+  "id": "minimum-number-of-flips-to-reverse-binary-string",
+  "title": "3750. Minimum Number of Flips to Reverse Binary String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 7",
+      "output": "0",
+      "explanation": "The binary representation of 7 is \"111\". Its reverse is also \"111\", which is the same. Hence, no flips are needed."
+    },
+    {
+      "input": "n = 10",
+      "output": "4",
+      "explanation": "The binary representation of 10 is \"1010\". Its reverse is \"0101\". All four bits must be flipped to make them equal. Thus, the minimum number of flips required is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumFlips(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumFlips(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumFlips(self, n: int) -> int:\n        ",
+    "typescript": "function minimumFlips(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumFlips(int n) {\n        \n    }\n}",
+    "go": "func minimumFlips(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_flips(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 7
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "minimumFlips",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Generate the reverse of the binary string and use two pointers from the ends to determine where flips are needed."
+  ]
+}

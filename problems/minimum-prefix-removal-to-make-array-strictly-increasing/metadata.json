@@ -1,0 +1,56 @@
+{
+  "id": "minimum-prefix-removal-to-make-array-strictly-increasing",
+  "title": "3818. Minimum Prefix Removal to Make Array Strictly Increasing",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-prefix-removal-to-make-array-strictly-increasing/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,-1,2,3,3,4,5]",
+      "output": "4",
+      "explanation": "Removing the prefix = [1, -1, 2, 3] leaves the remaining array [3, 4, 5] which is strictly increasing."
+    },
+    {
+      "input": "nums = [4,3,-2,-5]",
+      "output": "3",
+      "explanation": "Removing the prefix = [4, 3, -2] leaves the remaining array [-5] which is strictly increasing."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "0",
+      "explanation": "The array nums = [1, 2, 3, 4] is already strictly increasing so removing an empty prefix is sufficient."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumPrefixLength(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumPrefixLength(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumPrefixLength(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimumPrefixLength(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumPrefixLength(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumPrefixLength(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_prefix_length(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,-1,2,3,3,4,5]"
+    },
+    {
+      "nums": "[4,3,-2,-5]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "minimumPrefixLength",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the first index <code>i</code> from the right such that <code>nums[i] >= nums[i + 1]</code>.",
+    "If such an index exists, the answer is <code>i + 1</code>; otherwise, the array is already strictly increasing."
+  ]
+}

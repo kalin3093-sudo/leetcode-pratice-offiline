@@ -1,0 +1,43 @@
+{
+  "id": "base-7",
+  "title": "504. Base 7",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/base-7/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 100",
+      "output": "\"202\""
+    },
+    {
+      "input": "num = -7",
+      "output": "\"-10\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string convertToBase7(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String convertToBase7(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def convertToBase7(self, num: int) -> str:\n        ",
+    "typescript": "function convertToBase7(num: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ConvertToBase7(int num) {\n        \n    }\n}",
+    "go": "func convertToBase7(num int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn convert_to_base7(num: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 100
+    },
+    {
+      "num": -7
+    }
+  ],
+  "functionName": "convertToBase7",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

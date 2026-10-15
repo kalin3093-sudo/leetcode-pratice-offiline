@@ -1,0 +1,55 @@
+{
+  "id": "special-array-i",
+  "title": "3151. Special Array I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/special-array-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1]",
+      "output": "true",
+      "explanation": "There is only one element. So the answer is true."
+    },
+    {
+      "input": "nums = [2,1,4]",
+      "output": "true",
+      "explanation": "There is only two pairs: (2,1) and (1,4), and both of them contain numbers with different parity. So the answer is true."
+    },
+    {
+      "input": "nums = [4,3,1,6]",
+      "output": "false",
+      "explanation": "nums[1] and nums[2] are both odd. So the answer is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isArraySpecial(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isArraySpecial(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isArraySpecial(self, nums: List[int]) -> bool:\n        ",
+    "typescript": "function isArraySpecial(nums: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsArraySpecial(int[] nums) {\n        \n    }\n}",
+    "go": "func isArraySpecial(nums []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_array_special(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1]"
+    },
+    {
+      "nums": "[2,1,4]"
+    },
+    {
+      "nums": "[4,3,1,6]"
+    }
+  ],
+  "functionName": "isArraySpecial",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Try to check the parity of each element and its previous element."
+  ]
+}

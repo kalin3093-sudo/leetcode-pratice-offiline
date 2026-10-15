@@ -1,0 +1,51 @@
+{
+  "id": "sort-colors",
+  "title": "159. Sort Colors",
+  "difficulty": "Medium",
+  "category": "array",
+  "link": "https://leetcode.com/problems/sort-colors/",
+  "examples": [
+    {
+      "input": "nums = [2,0,2,1,1,0]",
+      "output": "[0,0,1,1,2,2]",
+      "explanation": "The array has two 0s, two 1s, and two 2s. Sorting them in-place places all 0s first, then all 1s, then all 2s."
+    },
+    {
+      "input": "nums = [2,0,1]",
+      "output": "[0,1,2]",
+      "explanation": "The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2."
+    }
+  ],
+  "starterCode": {
+    "java": "class Solution {\n    public int[] sortColors(int[] nums) {\n        \n    }\n}",
+    "python": "from typing import List\nclass Solution:\n    def sortColors(self, nums: List[int]) -> List[int]:\n        ",
+    "cpp": "#include <vector>\nusing namespace std;\n\nclass Solution {\npublic:\n    vector<int> sortColors(vector<int>& nums) {\n        return {};\n    }\n};",
+    "csharp": "public class Solution \n{\n    public int[] SortColors(int[] nums) \n    {\n        \n    }\n}",
+    "rust": "pub struct Solution;\n\nimpl Solution {\n    pub fn sort_colors(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}",
+    "go": "package main\n\nfunc SortColors(nums []int) []int {\n    \n}",
+    "typescript": "export function sortColors(nums: number[]): number[] {\n    \n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,0,2,1,1,0]"
+    },
+    {
+      "nums": "[2,0,1]"
+    },
+    {
+      "nums": "[0]"
+    }
+  ],
+  "functionName": "sortColors",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Count 0s, 1s, and 2s in one pass, then overwrite the array (counting sort).",
+    "Or use the Dutch national flag: three pointers (low, mid, high) for a single-pass O(1)-space sort."
+  ]
+}

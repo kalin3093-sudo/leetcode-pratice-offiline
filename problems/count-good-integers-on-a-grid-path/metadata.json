@@ -1,0 +1,71 @@
+{
+  "id": "count-good-integers-on-a-grid-path",
+  "title": "3906. Count Good Integers on a Grid Path",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-good-integers-on-a-grid-path/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "l = 8, r = 10, directions = \"DDDRRR\"",
+      "output": "2",
+      "explanation": "The grid for x = 8: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 Path: (0,0) &rarr; (1,0) &rarr; (2,0) &rarr; (3,0) &rarr; (3,1) &rarr; (3,2) &rarr; (3,3) The sequence of digits visited is [0, 0, 0, 0, 0, 0, 8]. As the sequence of digits visited is non-decreasing, 8 is a good integer. The grid for x = 9: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 The sequence of digits visited is [0, 0, 0, 0, 0, 0, 9]. As the sequence of digits visited is non-decreasing, 9 is a good integer. The grid for x = 10: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 The sequence of digits visited is [0, 0, 0, 0, 0, 1, 0]. As the sequence of digits visited is not non-decreasing, 10 is not a good integer. Hence, only 8 and 9 are good, giving a total of 2 good integers in the range."
+    },
+    {
+      "input": "l = 123456789, r = 123456790, directions = \"DDRRDR\"",
+      "output": "1",
+      "explanation": "The grid for x = 123456789: 0 0 0 0 0 0 0 1 2 3 4 5 6 7 8 9 Path: (0,0) &rarr; (1,0) &rarr; (2,0) &rarr; (2,1) &rarr; (2,2) &rarr; (3,2) &rarr; (3,3) The sequence of digits visited is [0, 0, 2, 3, 4, 8, 9]. As the sequence of digits visited is non-decreasing, 123456789 is a good integer. The grid for x = 123456790: 0 0 0 0 0 0 0 1 2 3 4 5 6 7 9 0 The sequence of digits visited is [0, 0, 2, 3, 4, 9, 0]. As the sequence of digits visited is not non-decreasing, 123456790 is not a good integer. Hence, only 123456789 is good, giving a total of 1 good integer in the range."
+    },
+    {
+      "input": "l = 1288561398769758, r = 1288561398769758, directions = \"RRRDDD\"",
+      "output": "0",
+      "explanation": "The grid for x = 1288561398769758: 1 2 8 8 5 6 1 3 9 8 7 6 9 7 5 8 Path: (0,0) &rarr; (0,1) &rarr; (0,2) &rarr; (0,3) &rarr; (1,3) &rarr; (2,3) &rarr; (3,3) The sequence of digits visited is [1, 2, 8, 8, 3, 6, 8]. As the sequence of digits visited is not non-decreasing, 1288561398769758 is not a good integer. No numbers are good, giving a total of 0 good integers in the range."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countGoodIntegersOnPath(long long l, long long r, string directions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countGoodIntegersOnPath(long l, long r, String directions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countGoodIntegersOnPath(self, l: int, r: int, directions: str) -> int:\n        ",
+    "typescript": "function countGoodIntegersOnPath(l: number, r: number, directions: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountGoodIntegersOnPath(long l, long r, string directions) {\n        \n    }\n}",
+    "go": "func countGoodIntegersOnPath(l int64, r int64, directions string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_good_integers_on_path(l: i64, r: i64, directions: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": "8",
+      "r": "10",
+      "directions": "DDDRRR"
+    },
+    {
+      "l": "123456789",
+      "r": "123456790",
+      "directions": "DDRRDR"
+    },
+    {
+      "l": "1288561398769758",
+      "r": "1288561398769758",
+      "directions": "RRRDDD"
+    }
+  ],
+  "functionName": "countGoodIntegersOnPath",
+  "params": [
+    {
+      "name": "l",
+      "type": "long"
+    },
+    {
+      "name": "r",
+      "type": "long"
+    },
+    {
+      "name": "directions",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Simulate the path to get the 7 increasing indices; since moves are only down/right, the visited positions are in left-to-right digit order, so you only need to check those 7 digits are non-decreasing.",
+    "Use digit dynamic programming with states <code>pos</code> (0..15), <code>tight</code> (0/1), <code>cnt</code> (how many path digits placed 0..7), and <code>prev</code> (previous path digit 0..9); when <code>pos</code> is a path index, require the chosen digit >= <code>prev</code> and advance <code>cnt</code>.",
+    "Compute <code>f(N)</code> = count of good numbers <= <code>N</code> and return <code>f(r) - f(l-1)</code>."
+  ]
+}

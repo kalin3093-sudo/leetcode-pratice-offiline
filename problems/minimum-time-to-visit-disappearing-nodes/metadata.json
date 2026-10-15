@@ -1,0 +1,69 @@
+{
+  "id": "minimum-time-to-visit-disappearing-nodes",
+  "title": "3112. Minimum Time to Visit Disappearing Nodes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 3, edges = [[0,1,2],[1,2,1],[0,2,4]], disappear = [1,1,5]",
+      "output": "[0,-1,4]",
+      "explanation": "We are starting our journey from node 0, and our goal is to find the minimum time required to reach each node before it disappears. For node 0, we don't need any time as it is our starting point. For node 1, we need at least 2 units of time to traverse edges[0]. Unfortunately, it disappears at that moment, so we won't be able to visit it. For node 2, we need at least 4 units of time to traverse edges[2]."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,2],[1,2,1],[0,2,4]], disappear = [1,3,5]",
+      "output": "[0,2,3]",
+      "explanation": "We are starting our journey from node 0, and our goal is to find the minimum time required to reach each node before it disappears. For node 0, we don't need any time as it is the starting point. For node 1, we need at least 2 units of time to traverse edges[0]. For node 2, we need at least 3 units of time to traverse edges[0] and edges[1]."
+    },
+    {
+      "input": "n = 2, edges = [[0,1,1]], disappear = [1,1]",
+      "output": "[0,-1]",
+      "explanation": "Exactly when we reach node 1, it disappears."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minimumTime(int n, vector<vector<int>>& edges, vector<int>& disappear) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] minimumTime(int n, int[][] edges, int[] disappear) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumTime(self, n: int, edges: List[List[int]], disappear: List[int]) -> List[int]:\n        ",
+    "typescript": "function minimumTime(n: number, edges: number[][], disappear: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MinimumTime(int n, int[][] edges, int[] disappear) {\n        \n    }\n}",
+    "go": "func minimumTime(n int, edges [][]int, disappear []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_time(n: i32, edges: Vec<Vec<i32>>, disappear: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "edges": "[[0,1,2],[1,2,1],[0,2,4]]",
+      "disappear": "[1,1,5]"
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,2],[1,2,1],[0,2,4]]",
+      "disappear": "[1,3,5]"
+    },
+    {
+      "n": 2,
+      "edges": "[[0,1,1]]",
+      "disappear": "[1,1]"
+    }
+  ],
+  "functionName": "minimumTime",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "disappear",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use Dijkstra’s algorithm, but only visit nodes if you can reach them before disappearance."
+  ]
+}

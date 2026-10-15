@@ -1,0 +1,48 @@
+{
+  "id": "longest-square-streak-in-an-array",
+  "title": "2501. Longest Square Streak in an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-square-streak-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,3,6,16,8,2]",
+      "output": "3",
+      "explanation": "Choose the subsequence [4,16,2]. After sorting it, it becomes [2,4,16]. - 4 = 2 * 2. - 16 = 4 * 4. Therefore, [4,16,2] is a square streak. It can be shown that every subsequence of length 4 is not a square streak."
+    },
+    {
+      "input": "nums = [2,3,5,6,7]",
+      "output": "-1",
+      "explanation": "There is no square streak in nums so return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSquareStreak(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSquareStreak(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSquareStreak(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function longestSquareStreak(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSquareStreak(int[] nums) {\n        \n    }\n}",
+    "go": "func longestSquareStreak(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_square_streak(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,3,6,16,8,2]"
+    },
+    {
+      "nums": "[2,3,5,6,7]"
+    }
+  ],
+  "functionName": "longestSquareStreak",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "With the constraints, the length of the longest square streak possible is 5.",
+    "Store the elements of nums in a set to quickly check if it exists."
+  ]
+}

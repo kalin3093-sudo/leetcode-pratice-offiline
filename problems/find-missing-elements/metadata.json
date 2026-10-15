@@ -1,0 +1,57 @@
+{
+  "id": "find-missing-elements",
+  "title": "3731. Find Missing Elements",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-missing-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,4,2,5]",
+      "output": "[3]",
+      "explanation": "The smallest integer is 1 and the largest is 5, so the full range should be [1,2,3,4,5]. Among these, only 3 is missing."
+    },
+    {
+      "input": "nums = [7,8,6,9]",
+      "output": "[]",
+      "explanation": "The smallest integer is 6 and the largest is 9, so the full range is [6,7,8,9]. All integers are already present, so no integer is missing."
+    },
+    {
+      "input": "nums = [5,1]",
+      "output": "[2,3,4]",
+      "explanation": "The smallest integer is 1 and the largest is 5, so the full range should be [1,2,3,4,5]. The missing integers are 2, 3, and 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findMissingElements(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> findMissingElements(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMissingElements(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function findMissingElements(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FindMissingElements(int[] nums) {\n        \n    }\n}",
+    "go": "func findMissingElements(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_missing_elements(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,4,2,5]"
+    },
+    {
+      "nums": "[7,8,6,9]"
+    },
+    {
+      "nums": "[5,1]"
+    }
+  ],
+  "functionName": "findMissingElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "First, find the maximum and minimum elements in the array.",
+    "Then, iterate over all the integers in the range <code>[min, max]</code> and check if they are in the array.",
+    "If not, add them to the array, and return the sorted array at the end."
+  ]
+}

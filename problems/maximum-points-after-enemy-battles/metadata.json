@@ -1,0 +1,56 @@
+{
+  "id": "maximum-points-after-enemy-battles",
+  "title": "3207. Maximum Points After Enemy Battles",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-points-after-enemy-battles/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "enemyEnergies = [3,2,2], currentEnergy = 2",
+      "output": "3",
+      "explanation": "The following operations can be performed to get 3 points, which is the maximum: First operation on enemy 1: points increases by 1, and currentEnergy decreases by 2. So, points = 1, and currentEnergy = 0. Second operation on enemy 0: currentEnergy increases by 3, and enemy 0 is marked. So, points = 1, currentEnergy = 3, and marked enemies = [0]. First operation on enemy 2: points increases by 1, and currentEnergy decreases by 2. So, points = 2, currentEnergy = 1, and marked enemies = [0]. Second operation on enemy 2: currentEnergy increases by 2, and enemy 2 is marked. So, points = 2, currentEnergy = 3, and marked enemies = [0, 2]. First operation on enemy 1: points increases by 1, and currentEnergy decreases by 2. So, points = 3, currentEnergy = 1, and marked enemies = [0, 2]."
+    },
+    {
+      "input": "enemyEnergies = [2], currentEnergy = 10",
+      "output": "5",
+      "explanation": "Performing the first operation 5 times on enemy 0 results in the maximum number of points."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumPoints(vector<int>& enemyEnergies, int currentEnergy) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumPoints(int[] enemyEnergies, int currentEnergy) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumPoints(self, enemyEnergies: List[int], currentEnergy: int) -> int:\n        ",
+    "typescript": "function maximumPoints(enemyEnergies: number[], currentEnergy: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumPoints(int[] enemyEnergies, int currentEnergy) {\n        \n    }\n}",
+    "go": "func maximumPoints(enemyEnergies []int, currentEnergy int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_points(enemy_energies: Vec<i32>, current_energy: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "enemyEnergies": "[3,2,2]",
+      "currentEnergy": 2
+    },
+    {
+      "enemyEnergies": "[2]",
+      "currentEnergy": 10
+    }
+  ],
+  "functionName": "maximumPoints",
+  "params": [
+    {
+      "name": "enemyEnergies",
+      "type": "int_array"
+    },
+    {
+      "name": "currentEnergy",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "The problem can be solved greedily.",
+    "Mark all the others except the smallest one first.",
+    "Use the smallest one to increase the energy.",
+    "Note that the initial energy should be no less than the smallest enemy."
+  ]
+}

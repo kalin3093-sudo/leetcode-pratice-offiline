@@ -1,0 +1,50 @@
+{
+  "id": "fraction-addition-and-subtraction",
+  "title": "592. Fraction Addition and Subtraction",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/fraction-addition-and-subtraction/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "expression = \"-1/2+1/2\"",
+      "output": "\"0/1\""
+    },
+    {
+      "input": "expression = \"-1/2+1/2+1/3\"",
+      "output": "\"1/3\""
+    },
+    {
+      "input": "expression = \"1/3-1/2\"",
+      "output": "\"-1/6\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string fractionAddition(string expression) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String fractionAddition(String expression) {\n        \n    }\n}",
+    "python": "class Solution:\n    def fractionAddition(self, expression: str) -> str:\n        ",
+    "typescript": "function fractionAddition(expression: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FractionAddition(string expression) {\n        \n    }\n}",
+    "go": "func fractionAddition(expression string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn fraction_addition(expression: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "expression": "-1/2+1/2"
+    },
+    {
+      "expression": "-1/2+1/2+1/3"
+    },
+    {
+      "expression": "1/3-1/2"
+    }
+  ],
+  "functionName": "fractionAddition",
+  "params": [
+    {
+      "name": "expression",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

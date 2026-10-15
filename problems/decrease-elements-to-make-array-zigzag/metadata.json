@@ -1,0 +1,46 @@
+{
+  "id": "decrease-elements-to-make-array-zigzag",
+  "title": "1144. Decrease Elements To Make Array Zigzag",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "2",
+      "explanation": "We can decrease 2 to 0 or 3 to 1."
+    },
+    {
+      "input": "nums = [9,6,1,6,2]",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int movesToMakeZigzag(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int movesToMakeZigzag(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def movesToMakeZigzag(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function movesToMakeZigzag(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MovesToMakeZigzag(int[] nums) {\n        \n    }\n}",
+    "go": "func movesToMakeZigzag(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn moves_to_make_zigzag(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[9,6,1,6,2]"
+    }
+  ],
+  "functionName": "movesToMakeZigzag",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Do each case (even indexed is greater, odd indexed is greater) separately. In say the even case, you should decrease each even-indexed element until it is lower than its immediate neighbors."
+  ]
+}

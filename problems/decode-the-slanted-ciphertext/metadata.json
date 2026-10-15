@@ -1,0 +1,64 @@
+{
+  "id": "decode-the-slanted-ciphertext",
+  "title": "2075. Decode the Slanted Ciphertext",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/decode-the-slanted-ciphertext/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "encodedText = \"ch   ie   pr\", rows = 3",
+      "output": "\"cipher\"",
+      "explanation": "This is the same example described in the problem description."
+    },
+    {
+      "input": "encodedText = \"iveo    eed   l te   olc\", rows = 4",
+      "output": "\"i love leetcode\"",
+      "explanation": "The figure above denotes the matrix that was used to encode originalText. The blue arrows show how we can find originalText from encodedText."
+    },
+    {
+      "input": "encodedText = \"coding\", rows = 1",
+      "output": "\"coding\"",
+      "explanation": "Since there is only 1 row, both originalText and encodedText are the same."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string decodeCiphertext(string encodedText, int rows) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String decodeCiphertext(String encodedText, int rows) {\n        \n    }\n}",
+    "python": "class Solution:\n    def decodeCiphertext(self, encodedText: str, rows: int) -> str:\n        ",
+    "typescript": "function decodeCiphertext(encodedText: string, rows: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string DecodeCiphertext(string encodedText, int rows) {\n        \n    }\n}",
+    "go": "func decodeCiphertext(encodedText string, rows int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn decode_ciphertext(encoded_text: String, rows: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "encodedText": "ch   ie   pr",
+      "rows": 3
+    },
+    {
+      "encodedText": "iveo    eed   l te   olc",
+      "rows": 4
+    },
+    {
+      "encodedText": "coding",
+      "rows": 1
+    }
+  ],
+  "functionName": "decodeCiphertext",
+  "params": [
+    {
+      "name": "encodedText",
+      "type": "string"
+    },
+    {
+      "name": "rows",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "How can you use rows and encodedText to find the number of columns of the matrix?",
+    "Once you have the number of rows and columns, you can create the matrix and place encodedText in it. How should you place it in the matrix?",
+    "How should you traverse the matrix to \"decode\" originalText?"
+  ]
+}

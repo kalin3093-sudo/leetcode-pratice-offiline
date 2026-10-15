@@ -1,0 +1,55 @@
+{
+  "id": "words-within-two-edits-of-dictionary",
+  "title": "2452. Words Within Two Edits of Dictionary",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/words-within-two-edits-of-dictionary/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "queries = [\"word\",\"note\",\"ants\",\"wood\"], dictionary = [\"wood\",\"joke\",\"moat\"]",
+      "output": "[\"word\",\"note\",\"wood\"]",
+      "explanation": "- Changing the 'r' in \"word\" to 'o' allows it to equal the dictionary word \"wood\". - Changing the 'n' to 'j' and the 't' to 'k' in \"note\" changes it to \"joke\". - It would take more than 2 edits for \"ants\" to equal a dictionary word. - \"wood\" can remain unchanged (0 edits) and match the corresponding dictionary word. Thus, we return [\"word\",\"note\",\"wood\"]."
+    },
+    {
+      "input": "queries = [\"yes\"], dictionary = [\"not\"]",
+      "output": "[]",
+      "explanation": "Applying any two edits to \"yes\" cannot make it equal to \"not\". Thus, we return an empty array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> twoEditWords(vector<string>& queries, vector<string>& dictionary) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> twoEditWords(String[] queries, String[] dictionary) {\n        \n    }\n}",
+    "python": "class Solution:\n    def twoEditWords(self, queries: list[str], dictionary: list[str]) -> list[str]:\n        ",
+    "typescript": "function twoEditWords(queries: string[], dictionary: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> TwoEditWords(string[] queries, string[] dictionary) {\n        \n    }\n}",
+    "go": "func twoEditWords(queries []string, dictionary []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn two_edit_words(queries: Vec<String>, dictionary: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "queries": "[\"word\",\"note\",\"ants\",\"wood\"]",
+      "dictionary": "[\"wood\",\"joke\",\"moat\"]"
+    },
+    {
+      "queries": "[\"yes\"]",
+      "dictionary": "[\"not\"]"
+    }
+  ],
+  "functionName": "twoEditWords",
+  "params": [
+    {
+      "name": "queries",
+      "type": "string_array"
+    },
+    {
+      "name": "dictionary",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Try brute-forcing the problem.",
+    "For each word in queries, try comparing to each word in dictionary.",
+    "If there is a maximum of two edit differences, the word should be present in answer."
+  ]
+}

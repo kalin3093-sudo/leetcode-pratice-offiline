@@ -1,0 +1,174 @@
+# Desktop Apps
+
+Cojudge uses Tauri with the operating system's webview:
+
+- macOS: WKWebView, based on the same WebKit engine as Safari
+- Windows: WebView2
+- Linux: WebKitGTK
+
+A bundled Node.js sidecar runs the existing SvelteKit server on the loopback interface. Users do not need to install Node.js, npm, or Rust to run a packaged application.
+
+## Runtime Requirements
+
+- macOS 13.5 or newer, Windows x64, or Debian/Ubuntu x64
+- Docker Desktop, OrbStack, or Colima only when running, submitting, or debugging code
+
+Open the homepage menu → **Docker settings** to select a runtime for this device, then quit and reopen Cojudge to apply it. The menu is hidden on the demo site. macOS offers Docker Desktop, OrbStack, and Colima (default profile); Linux offers Docker Desktop, Docker Engine, and rootless Docker Engine; Windows offers Docker Desktop. The runtime must be installed and running separately.
+
+The default **Automatic** option gives `DOCKER_HOST` precedence when provided, then checks the standard Docker endpoints for the operating system. An explicit runtime selection overrides `DOCKER_HOST` for the packaged app's backend. The selection is stored in the native app configuration directory and does not change the terminal CLI's Docker configuration. Development mode uses an external server and still requires configuring that server's `DOCKER_HOST`.
+
+Use **Test connection** below the dropdown to ping the selected runtime's Docker API before saving. The test does not change the saved selection or start any containers, and reports connection failures or timeouts in the popup.
+
+## Firebase And Cojudge Cloud
+
+Firebase is optional and is only needed for shared solutions and Cojudge Cloud. Official release builds receive the project configuration from GitHub Actions. For a custom project, open the homepage menu and select **Firebase settings**, then enter the web-app values from the Firebase console:
+
+- API key
+- Auth domain
+- Project ID
+- Messaging sender ID
+- App ID
+- Storage bucket (optional)
+- Google desktop OAuth client ID (required for Cojudge Cloud sign-in)
+- Google desktop OAuth client secret (required when Google enforces it for token exchange)
+
+The values are stored locally on that device and are ignored by the hosted web app. They are excluded from progress backups and Cojudge Cloud snapshots. After the five Firebase web-app fields are configured, the homepage menu shows **Load**. Entering or pasting the fourth character automatically opens `/p/<code>`; no submit action is required.
+
+For a custom Firebase project:
+
+1. Enable Anonymous and Google providers in Firebase Authentication.
+2. Add the hosted domain to Authentication's authorized domains.
+3. Put the Google provider's Web OAuth client ID in `VITE_GOOGLE_WEB_CLIENT_ID`. Add each browser origin that hosts Cojudge to that client's authorized JavaScript origins.
+4. Create a Google OAuth client with application type **Desktop app**. Put its client ID in `VITE_GOOGLE_DESKTOP_CLIENT_ID` and its generated client secret in `VITE_GOOGLE_DESKTOP_CLIENT_SECRET` for local/custom builds.
+5. If Identity Platform asks for external Google client IDs, add the desktop client ID there as well.
+6. Deploy the private per-user and sharing rules with `npx firebase-tools deploy --only firestore:rules --project <project-id>`. Deploy rules before distributing a newer client because cloud schema changes are intentionally rejected until their matching rules are active.
+
+Desktop Google sign-in opens the system browser, listens temporarily on a random `127.0.0.1` port, uses OAuth PKCE, and then closes the local listener. No hosted callback server or VPS is involved. Google calls the native credential a client secret, but installed apps cannot keep embedded values confidential; PKCE and callback validation provide the security boundary.
+
+Cojudge Cloud follows a Git-like synchronization model: login, reconnect, and periodic checks fetch cloud metadata and pull only onto an unchanged local working copy. Local edits and deletions are never pushed by those background checks. **Sync now** explicitly creates a cloud revision, and the five most recent revisions remain available for local restore.
+
+Cloud snapshot schema v3 keeps image payloads in immutable, content-addressed Firestore asset sets instead of the 6 MiB progress JSON. Pasted Markdown images, inline image data URLs, and whiteboard images are replaced with content-hashed references during upload and restored before local data is applied. Revisions with the same image collection reuse the existing asset set without uploading its bytes again. Asset sets are integrity checked, limited to 64 MiB, and garbage collected only after no retained revision references them. Existing schema v1 and revision-scoped v2 snapshots remain readable and are migrated only when a new revision is pushed.
+
+## Development
+
+Install the native build prerequisites for your operating system, Node.js, npm, and Rust, then run:
+
+```bash
+npm install
+npm run desktop:dev
+```
+
+Development mode loads the SvelteKit development server in the native webview. It does not stage or launch the production Node.js sidecar.
+
+## Local Installers
+
+Build the default installer for the current operating system:
+
+```bash
+npm run desktop:build
+```
+
+The platform defaults are DMG on macOS, NSIS EXE on Windows, and DEB on Linux. The build downloads a pinned Node.js runtime, verifies its SHA-256 checksum, builds SvelteKit, and installs only backend production dependencies.
+
+Create an ad-hoc signed macOS build for local testing:
+
+```bash
+APPLE_SIGNING_IDENTITY=- npm run desktop:build
+```
+
+Build a universal macOS DMG:
+
+```bash
+rustup target add aarch64-apple-darwin x86_64-apple-darwin
+APPLE_SIGNING_IDENTITY=- npm run desktop:build -- --target universal-apple-darwin --bundles dmg
+```
+
+Installer output is written under `src-tauri/target/<target>/release/bundle/`, or `src-tauri/target/release/bundle/` for a native build.
+
+## GitHub Release
+
+The `Release desktop installers` workflow is manually triggered:
+
+1. Update the version in `package.json` and `src-tauri/Cargo.toml`.
+2. Open the repository's Actions tab.
+3. Select `Release desktop installers` and choose `Run workflow`.
+4. Enter the version without a leading `v`, for example `0.1.0`.
+
+The workflow builds all platforms before publishing anything. When every build succeeds, it creates tag `v<version>` and a GitHub Release containing:
+
+- Installers: `Cojudge_<version>_universal.dmg`, `Cojudge_<version>_x64-setup.exe`, `Cojudge_<version>_amd64.deb`, `Cojudge-<version>-1.x86_64.rpm`, `Cojudge_<version>_amd64.AppImage`
+- Tauri updater bundles + signatures (`*.app.tar.gz`, `*.AppImage`, `*-setup.exe`/`*.nsis.zip`, plus `*.sig`)
+- `latest.json` — the signed updater manifest polled by the desktop app at `https://github.com/cojudge/cojudge/releases/latest/download/latest.json`
+
+## Automatic Updates
+
+The desktop app checks `github.com/cojudge/cojudge/releases` for new versions using Tauri's signed updater (same flow as `anslwy/openduck`, extended to win/mac/linux):
+
+- Auto-check runs once shortly after startup (desktop only, online only, opt-out via localStorage `cojudge.app-update-preferences.v1`).
+- Homepage menu → **Check for Updates** (directly under Light/Dark theme) triggers a manual check. In a browser it opens the releases page; in the desktop app it shows the update dialog.
+- The update dialog shows current/latest versions, publish date, release-notes preview, **Install Update** (downloads + verifies signature + installs, with a progress bar), **Restart to Apply**, **Skip for this version**, and **Remind Later**. The dialog stays dismissible while the download runs — the install continues in the background and the homepage menu shows the live status. A failed install surfaces the error with a **Retry Install** action and a manual-download fallback link.
+- `latest.json` serves all platforms: `darwin-aarch64` + `darwin-x86_64` (same universal `.app.tar.gz`), `windows-x86_64` (`-setup.exe` or `.nsis.zip`), `linux-x86_64` (`.AppImage`). Linux `.deb`/`.rpm` installs are published for manual download — in-app install targets the AppImage.
+
+One-time signing setup (private key stays out of the repo):
+
+```bash
+npx tauri signer generate -w ~/.tauri/cojudge.key --ci
+# public key -> src-tauri/updater-public-key.pem (committed)
+# also embedded in src-tauri/tauri.conf.json plugins.updater.pubkey
+cat ~/.tauri/cojudge.key.pub
+```
+
+Then add GitHub Actions secrets:
+
+- `TAURI_SIGNING_PRIVATE_KEY` — contents of `~/.tauri/cojudge.key`
+- `TAURI_SIGNING_PRIVATE_KEY_PASSWORD` — only if the key has a password
+
+Local signed test build:
+
+```bash
+export TAURI_SIGNING_PRIVATE_KEY="$(cat ~/.tauri/cojudge.key)"
+npm run desktop:build -- --bundles app
+# check src-tauri/target/*/release/bundle/**/ *.sig exists
+```
+
+Before running a release, configure these GitHub Actions repository secrets. Vite embeds the public project identifiers and desktop client ID in each installer; the workflow compiles the desktop client secret into the native binary rather than the web bundle:
+
+- `FIREBASE_API_KEY`
+- `FIREBASE_AUTH_DOMAIN`
+- `FIREBASE_PROJECT_ID`
+- `FIREBASE_STORAGE_BUCKET`
+- `FIREBASE_MESSAGING_SENDER_ID`
+- `FIREBASE_APP_ID`
+- `GOOGLE_WEB_CLIENT_ID`
+- `GOOGLE_DESKTOP_CLIENT_ID`
+- `GOOGLE_DESKTOP_CLIENT_SECRET`
+- `TAURI_SIGNING_PRIVATE_KEY` (contents of `~/.tauri/cojudge.key` — required for signed updater artifacts)
+- `TAURI_SIGNING_PRIVATE_KEY_PASSWORD` (only if the signing key has a password)
+
+The generated release notes automatically include a **Manage Problems** section (`~/cojudge` for adding/editing problems and courses, plus optional desktop CLI verification) and this required command for the ad-hoc-signed macOS build:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Cojudge.app
+```
+
+## Distribution Signing
+
+The default workflow produces an ad-hoc-signed, non-notarized macOS app and an unsigned Windows installer. macOS users must run the quarantine command above, and Windows may display a SmartScreen warning.
+
+For trusted public distribution, configure Apple Developer ID/notarization credentials and a Windows code-signing certificate in the workflow.
+
+## Packaged Resources
+
+Every installer includes:
+
+- The SvelteKit client and server build
+- The platform-specific Node.js runtime
+- The `cojudge` CLI (`bin/`), which can be added to PATH from the homepage **CLI** menu
+- Production dependencies required by Docker-based judging
+- All courses, problems, tests, markers, and debugger Dockerfiles
+
+Docker itself and language runtime images are not included. Missing runner images are downloaded through the configured Docker daemon as needed.
+
+The in-app **CLI** action writes a shim to `~/.local/bin/cojudge` (macOS/Linux) or `%LOCALAPPDATA%\Cojudge\cli\cojudge.cmd` (Windows) that runs the bundled Node.js sidecar. Uninstall removes that shim. Open a new terminal after installing.
+
+Check the installed release with `cojudge -v`, `cojudge --version`, or `cojudge version`. Check GitHub Releases for a newer app with `cojudge update` (or `cojudge -u`): it prints the download for the current device — install the new app, then reinstall the CLI from the app menu.

@@ -1,0 +1,61 @@
+{
+  "id": "maximum-value-at-a-given-index-in-a-bounded-array",
+  "title": "1802. Maximum Value at a Given Index in a Bounded Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4, index = 2,  maxSum = 6",
+      "output": "2",
+      "explanation": "nums = [1,2,2,1] is one array that satisfies all the conditions. There are no arrays that satisfy all the conditions and have nums[2] == 3, so 2 is the maximum nums[2]."
+    },
+    {
+      "input": "n = 6, index = 1,  maxSum = 10",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxValue(int n, int index, int maxSum) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxValue(int n, int index, int maxSum) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxValue(self, n: int, index: int, maxSum: int) -> int:\n        ",
+    "typescript": "function maxValue(n: number, index: number, maxSum: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxValue(int n, int index, int maxSum) {\n        \n    }\n}",
+    "go": "func maxValue(n int, index int, maxSum int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_value(n: i32, index: i32, max_sum: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "index": 2,
+      "maxSum": 6
+    },
+    {
+      "n": 6,
+      "index": 1,
+      "maxSum": 10
+    }
+  ],
+  "functionName": "maxValue",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "index",
+      "type": "int"
+    },
+    {
+      "name": "maxSum",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What if the problem was instead determining if you could generate a valid array with nums[index] == target?",
+    "To generate the array, set nums[index] to target, nums[index-i] to target-i, and nums[index+i] to target-i. Then, this will give the minimum possible sum, so check if the sum is less than or equal to maxSum.",
+    "n is too large to actually generate the array, so you can use the formula 1 + 2 + ... + n = n * (n+1) / 2 to quickly find the sum of nums[0...index] and nums[index...n-1].",
+    "Binary search for the target. If it is possible, then move the lower bound up. Otherwise, move the upper bound down."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "constrained-subsequence-sum",
+  "title": "1425. Constrained Subsequence Sum",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/constrained-subsequence-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,2,-10,5,20], k = 2",
+      "output": "37",
+      "explanation": "The subsequence is [10, 2, 5, 20]."
+    },
+    {
+      "input": "nums = [-1,-2,-3], k = 1",
+      "output": "-1",
+      "explanation": "The subsequence must be non-empty, so we choose the largest number."
+    },
+    {
+      "input": "nums = [10,-2,-10,-5,20], k = 2",
+      "output": "23",
+      "explanation": "The subsequence is [10, -2, -5, 20]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int constrainedSubsetSum(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int constrainedSubsetSum(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def constrainedSubsetSum(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function constrainedSubsetSum(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ConstrainedSubsetSum(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func constrainedSubsetSum(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn constrained_subset_sum(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,2,-10,5,20]",
+      "k": 2
+    },
+    {
+      "nums": "[-1,-2,-3]",
+      "k": 1
+    },
+    {
+      "nums": "[10,-2,-10,-5,20]",
+      "k": 2
+    }
+  ],
+  "functionName": "constrainedSubsetSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "Let dp[i] be the solution for the prefix of the array that ends at index i, if the element at index i is in the subsequence.",
+    "dp[i] = nums[i] + max(0, dp[i-k], dp[i-k+1], ..., dp[i-1])",
+    "Use a heap with the sliding window technique to optimize the dp."
+  ]
+}

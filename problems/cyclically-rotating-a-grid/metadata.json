@@ -1,0 +1,54 @@
+{
+  "id": "cyclically-rotating-a-grid",
+  "title": "1914. Cyclically Rotating a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/cyclically-rotating-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[40,10],[30,20]], k = 1",
+      "output": "[[10,20],[40,30]]",
+      "explanation": "The figures above represent the grid at every state."
+    },
+    {
+      "input": "grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], k = 2",
+      "output": "[[3,4,8,12],[2,11,10,16],[1,7,6,15],[5,9,13,14]]",
+      "explanation": "The figures above represent the grid at every state."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\r\npublic:\r\n    vector<vector<int>> rotateGrid(vector<vector<int>>& grid, int k) {\r\n        \r\n    }\r\n};",
+    "java": "class Solution {\r\n    public int[][] rotateGrid(int[][] grid, int k) {\r\n        \r\n    }\r\n}",
+    "python": "class Solution:\r\n    def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:",
+    "typescript": "function rotateGrid(grid: number[][], k: number): number[][] {\r\n\r\n};",
+    "csharp": "public class Solution {\r\n    public int[][] RotateGrid(int[][] grid, int k) {\r\n        \r\n    }\r\n}",
+    "go": "func rotateGrid(grid [][]int, k int) [][]int {\r\n    \r\n}",
+    "rust": "impl Solution {\r\n    pub fn rotate_grid(grid: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {\r\n        \r\n    }\r\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[40,10],[30,20]]",
+      "k": 1
+    },
+    {
+      "grid": "[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]",
+      "k": 2
+    }
+  ],
+  "functionName": "rotateGrid",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "First, you need to consider each layer separately as an array.",
+    "Just cycle this array and then re-assign it."
+  ]
+}

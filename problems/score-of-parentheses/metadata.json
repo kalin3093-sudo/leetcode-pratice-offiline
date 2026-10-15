@@ -1,0 +1,50 @@
+{
+  "id": "score-of-parentheses",
+  "title": "856. Score of Parentheses",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/score-of-parentheses/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"()\"",
+      "output": "1"
+    },
+    {
+      "input": "s = \"(())\"",
+      "output": "2"
+    },
+    {
+      "input": "s = \"()()\"",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int scoreOfParentheses(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int scoreOfParentheses(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def scoreOfParentheses(self, s: str) -> int:\n        ",
+    "typescript": "function scoreOfParentheses(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ScoreOfParentheses(string s) {\n        \n    }\n}",
+    "go": "func scoreOfParentheses(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn score_of_parentheses(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "()"
+    },
+    {
+      "s": "(())"
+    },
+    {
+      "s": "()()"
+    }
+  ],
+  "functionName": "scoreOfParentheses",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

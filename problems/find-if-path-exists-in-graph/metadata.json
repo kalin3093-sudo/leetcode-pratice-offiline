@@ -1,0 +1,63 @@
+{
+  "id": "find-if-path-exists-in-graph",
+  "title": "1971. Find if Path Exists in Graph",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2",
+      "output": "true",
+      "explanation": "There are two paths from vertex 0 to vertex 2: - 0 &rarr; 1 &rarr; 2 - 0 &rarr; 2"
+    },
+    {
+      "input": "n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5",
+      "output": "false",
+      "explanation": "There is no path from vertex 0 to vertex 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean validPath(int n, int[][] edges, int source, int destination) {\n        \n    }\n}",
+    "python": "class Solution:\n    def validPath(self, n: int, edges: list[list[int]], source: int, destination: int) -> bool:\n        ",
+    "typescript": "function validPath(n: number, edges: number[][], source: number, destination: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ValidPath(int n, int[][] edges, int source, int destination) {\n        \n    }\n}",
+    "go": "func validPath(n int, edges [][]int, source int, destination int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn valid_path(n: i32, edges: Vec<Vec<i32>>, source: i32, destination: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "edges": "[[0,1],[1,2],[2,0]]",
+      "source": 0,
+      "destination": 2
+    },
+    {
+      "n": 6,
+      "edges": "[[0,1],[0,2],[3,5],[5,4],[4,3]]",
+      "source": 0,
+      "destination": 5
+    }
+  ],
+  "functionName": "validPath",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "source",
+      "type": "int"
+    },
+    {
+      "name": "destination",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

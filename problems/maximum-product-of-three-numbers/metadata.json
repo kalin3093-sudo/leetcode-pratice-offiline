@@ -1,0 +1,53 @@
+{
+  "id": "maximum-product-of-three-numbers",
+  "title": "628. Maximum Product of Three Numbers",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "6",
+      "explanation": "The only three numbers are 1, 2, and 3, so the maximum product is 1 * 2 * 3 = 6."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "24",
+      "explanation": "The largest product comes from the three greatest numbers: 2 * 3 * 4 = 24."
+    },
+    {
+      "input": "nums = [-1,-2,-3]",
+      "output": "-6",
+      "explanation": "The only three numbers are -1, -2, and -3, so the maximum product is (-1) * (-2) * (-3) = -6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumProduct(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumProduct(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumProduct(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maximumProduct(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumProduct(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumProduct(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_product(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    },
+    {
+      "nums": "[-1,-2,-3]"
+    }
+  ],
+  "functionName": "maximumProduct",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

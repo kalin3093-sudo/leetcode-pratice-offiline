@@ -1,0 +1,53 @@
+{
+  "id": "check-if-two-chessboard-squares-have-the-same-color",
+  "title": "3274. Check if Two Chessboard Squares Have the Same Color",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "coordinate1 = \"a1\", coordinate2 = \"c3\"",
+      "output": "true",
+      "explanation": "Both squares are black."
+    },
+    {
+      "input": "coordinate1 = \"a1\", coordinate2 = \"h3\"",
+      "output": "false",
+      "explanation": "Square \"a1\" is black and \"h3\" is white."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkTwoChessboards(string coordinate1, string coordinate2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkTwoChessboards(String coordinate1, String coordinate2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkTwoChessboards(self, coordinate1: str, coordinate2: str) -> bool:\n        ",
+    "typescript": "function checkTwoChessboards(coordinate1: string, coordinate2: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckTwoChessboards(string coordinate1, string coordinate2) {\n        \n    }\n}",
+    "go": "func checkTwoChessboards(coordinate1 string, coordinate2 string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_two_chessboards(coordinate1: String, coordinate2: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "coordinate1": "a1",
+      "coordinate2": "c3"
+    },
+    {
+      "coordinate1": "a1",
+      "coordinate2": "h3"
+    }
+  ],
+  "functionName": "checkTwoChessboards",
+  "params": [
+    {
+      "name": "coordinate1",
+      "type": "string"
+    },
+    {
+      "name": "coordinate2",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "The color of the chessboard is black the sum of row coordinates and column coordinates is even. Otherwise, it's white."
+  ]
+}

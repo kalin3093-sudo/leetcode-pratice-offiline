@@ -1,0 +1,12 @@
+[
+  {
+    "target": "abcdef",
+    "words": "[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]",
+    "costs": "[100,1,1,10,5]"
+  },
+  {
+    "target": "aaaa",
+    "words": "[\"z\",\"zz\",\"zzz\"]",
+    "costs": "[1,10,100]"
+  }
+]

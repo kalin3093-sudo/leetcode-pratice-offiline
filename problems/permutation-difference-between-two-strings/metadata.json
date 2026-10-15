@@ -1,0 +1,53 @@
+{
+  "id": "permutation-difference-between-two-strings",
+  "title": "3146. Permutation Difference between Two Strings",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/permutation-difference-between-two-strings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abc\", t = \"bac\"",
+      "output": "2",
+      "explanation": "For s = \"abc\" and t = \"bac\", the permutation difference of s and t is equal to the sum of: The absolute difference between the index of the occurrence of \"a\" in s and the index of the occurrence of \"a\" in t. The absolute difference between the index of the occurrence of \"b\" in s and the index of the occurrence of \"b\" in t. The absolute difference between the index of the occurrence of \"c\" in s and the index of the occurrence of \"c\" in t. That is, the permutation difference between s and t is equal to |0 - 1| + |1 - 0| + |2 - 2| = 2."
+    },
+    {
+      "input": "s = \"abcde\", t = \"edbac\"",
+      "output": "12",
+      "explanation": "The permutation difference between s and t is equal to |0 - 3| + |1 - 2| + |2 - 4| + |3 - 1| + |4 - 0| = 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findPermutationDifference(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findPermutationDifference(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findPermutationDifference(self, s: str, t: str) -> int:\n        ",
+    "typescript": "function findPermutationDifference(s: string, t: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindPermutationDifference(string s, string t) {\n        \n    }\n}",
+    "go": "func findPermutationDifference(s string, t string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_permutation_difference(s: String, t: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc",
+      "t": "bac"
+    },
+    {
+      "s": "abcde",
+      "t": "edbac"
+    }
+  ],
+  "functionName": "findPermutationDifference",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each character, find the indices of its occurrences in string <code>s</code> then in string <code>t</code>."
+  ]
+}

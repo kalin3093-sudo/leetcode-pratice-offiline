@@ -1,0 +1,63 @@
+{
+  "id": "make-array-strictly-increasing",
+  "title": "1187. Make Array Strictly Increasing",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/make-array-strictly-increasing/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]",
+      "output": "1",
+      "explanation": "Replace 5 with 2, then arr1 = [1, 2, 3, 6, 7]."
+    },
+    {
+      "input": "arr1 = [1,5,3,6,7], arr2 = [4,3,1]",
+      "output": "2",
+      "explanation": "Replace 5 with 3 and then replace 3 with 4. arr1 = [1, 3, 4, 6, 7]."
+    },
+    {
+      "input": "arr1 = [1,5,3,6,7], arr2 = [1,6,3,3]",
+      "output": "-1",
+      "explanation": "You can't make arr1 strictly increasing."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int makeArrayIncreasing(vector<int>& arr1, vector<int>& arr2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int makeArrayIncreasing(int[] arr1, int[] arr2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeArrayIncreasing(self, arr1: list[int], arr2: list[int]) -> int:\n        ",
+    "typescript": "function makeArrayIncreasing(arr1: number[], arr2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MakeArrayIncreasing(int[] arr1, int[] arr2) {\n        \n    }\n}",
+    "go": "func makeArrayIncreasing(arr1 []int, arr2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_array_increasing(arr1: Vec<i32>, arr2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr1": "[1,5,3,6,7]",
+      "arr2": "[1,3,2,4]"
+    },
+    {
+      "arr1": "[1,5,3,6,7]",
+      "arr2": "[4,3,1]"
+    },
+    {
+      "arr1": "[1,5,3,6,7]",
+      "arr2": "[1,6,3,3]"
+    }
+  ],
+  "functionName": "makeArrayIncreasing",
+  "params": [
+    {
+      "name": "arr1",
+      "type": "int_array"
+    },
+    {
+      "name": "arr2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "The state would be the index in arr1 and the index of the previous element in arr2 after sorting it and removing duplicates."
+  ]
+}

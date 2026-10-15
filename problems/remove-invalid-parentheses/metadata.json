@@ -1,0 +1,55 @@
+{
+  "id": "remove-invalid-parentheses",
+  "title": "301. Remove Invalid Parentheses",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/remove-invalid-parentheses/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"()())()\"",
+      "output": "[\"(())()\",\"()()()\"]"
+    },
+    {
+      "input": "s = \"(a)())()\"",
+      "output": "[\"(a())()\",\"(a)()()\"]"
+    },
+    {
+      "input": "s = \")(\"",
+      "output": "[\"\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> removeInvalidParentheses(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> removeInvalidParentheses(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeInvalidParentheses(self, s: str) -> list[str]:\n        ",
+    "typescript": "function removeInvalidParentheses(s: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> RemoveInvalidParentheses(string s) {\n        \n    }\n}",
+    "go": "func removeInvalidParentheses(s string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_invalid_parentheses(s: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "()())()"
+    },
+    {
+      "s": "(a)())()"
+    },
+    {
+      "s": ")("
+    }
+  ],
+  "functionName": "removeInvalidParentheses",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Since we do not know which brackets can be removed, we try all the options! We can use recursion.",
+    "In the recursion, for each bracket, we can either use it or remove it.",
+    "Recursion will generate all the valid parentheses strings but we want the ones with the least number of parentheses deleted.",
+    "We can count the number of invalid brackets to be deleted and only generate the valid strings in the recusrion."
+  ]
+}

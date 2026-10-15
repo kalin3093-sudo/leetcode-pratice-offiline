@@ -1,0 +1,79 @@
+{
+  "id": "shortest-path-with-at-most-k-consecutive-identical-characters",
+  "title": "3970. Shortest Path With At Most K Consecutive Identical Characters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 3, edges = [[0,1,1],[1,2,1],[0,2,3]], labels = \"aab\", k = 1",
+      "output": "3",
+      "explanation": "The optimal valid path from node 0 to node 2 is as follows: Use edges[2] = [0, 2, 3] to reach node 2 with a weight wi = 3. The corresponding concatenation of labels is \"ab\", which satisfies at most k = 1 consecutive identical characters. Thus, the answer is 3."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,1],[1,2,1],[0,2,3]], labels = \"aab\", k = 2",
+      "output": "2",
+      "explanation": "The optimal valid path from node 0 to node 2 is as follows: Use edges[0] = [0, 1, 1] to reach node 1 with weight wi = 1. Use edges[1] = [1, 2, 1] to reach node 2 with weight wi = 1. The corresponding concatenation of labels is \"aab\", which satisfies at most k = 2 consecutive identical characters. Thus, the answer is 2."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,1],[1,2,1]], labels = \"aaa\", k = 2",
+      "output": "-1",
+      "explanation": "There is no valid path from node 0 to node 2 that satisfies at most k = 2 consecutive identical characters. Thus, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestPath(int n, vector<vector<int>>& edges, string labels, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestPath(int n, int[][] edges, String labels, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestPath(self, n: int, edges: List[List[int]], labels: str, k: int) -> int:\n        ",
+    "typescript": "function shortestPath(n: number, edges: number[][], labels: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestPath(int n, int[][] edges, string labels, int k) {\n        \n    }\n}",
+    "go": "func shortestPath(n int, edges [][]int, labels string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_path(n: i32, edges: Vec<Vec<i32>>, labels: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "edges": "[[0,1,1],[1,2,1],[0,2,3]]",
+      "labels": "aab",
+      "k": 1
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,1],[1,2,1],[0,2,3]]",
+      "labels": "aab",
+      "k": 2
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,1],[1,2,1]]",
+      "labels": "aaa",
+      "k": 2
+    }
+  ],
+  "functionName": "shortestPath",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "labels",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The validity of a path depends not only on the current node, but also on how many consecutive times the current node’s label has appeared at the end of the path.",
+    "Use Dijkstra on states <code>(node, count)</code>, where <code>count</code> is the current consecutive run length of <code>labels[node]</code>.",
+    "When moving from node <code>u</code> to node <code>v</code>, the next count becomes <code>count + 1</code> if <code>labels[u] == labels[v]</code>, otherwise it becomes 1. Ignore transitions where the next count exceeds <code>k</code>.",
+    "The answer is the minimum distance among all states ending at node <code>n - 1</code>."
+  ]
+}

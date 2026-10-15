@@ -1,0 +1,48 @@
+{
+  "id": "delete-greatest-value-in-each-row",
+  "title": "2500. Delete Greatest Value in Each Row",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/delete-greatest-value-in-each-row/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2,4],[3,3,1]]",
+      "output": "8",
+      "explanation": "The diagram above shows the removed values in each step. - In the first operation, we remove 4 from the first row and 3 from the second row (notice that, there are two cells with value 3 and we can remove any of them). We add 4 to the answer. - In the second operation, we remove 2 from the first row and 3 from the second row. We add 3 to the answer. - In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer. The final answer = 4 + 3 + 1 = 8."
+    },
+    {
+      "input": "grid = [[10]]",
+      "output": "10",
+      "explanation": "The diagram above shows the removed values in each step. - In the first operation, we remove 10 from the first row. We add 10 to the answer. The final answer = 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int deleteGreatestValue(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int deleteGreatestValue(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def deleteGreatestValue(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function deleteGreatestValue(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DeleteGreatestValue(int[][] grid) {\n        \n    }\n}",
+    "go": "func deleteGreatestValue(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn delete_greatest_value(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2,4],[3,3,1]]"
+    },
+    {
+      "grid": "[[10]]"
+    }
+  ],
+  "functionName": "deleteGreatestValue",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate from the first to the last row and if there exist some unmarked cells, take a maximum from them and mark that cell as visited.",
+    "Add a maximum of newly marked cells to answer and repeat that operation until the whole matrix becomes marked."
+  ]
+}

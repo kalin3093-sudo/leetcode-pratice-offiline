@@ -1,0 +1,56 @@
+{
+  "id": "count-sorted-vowel-strings",
+  "title": "1641. Count Sorted Vowel Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-sorted-vowel-strings/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "5",
+      "explanation": "The 5 sorted strings that consist of vowels only are [\"a\",\"e\",\"i\",\"o\",\"u\"]."
+    },
+    {
+      "input": "n = 2",
+      "output": "15",
+      "explanation": "The 15 sorted strings that consist of vowels only are [\"aa\",\"ae\",\"ai\",\"ao\",\"au\",\"ee\",\"ei\",\"eo\",\"eu\",\"ii\",\"io\",\"iu\",\"oo\",\"ou\",\"uu\"]. Note that \"ea\" is not a valid string since 'e' comes after 'a' in the alphabet."
+    },
+    {
+      "input": "n = 33",
+      "output": "66045"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countVowelStrings(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countVowelStrings(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countVowelStrings(self, n: int) -> int:\n        ",
+    "typescript": "function countVowelStrings(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountVowelStrings(int n) {\n        \n    }\n}",
+    "go": "func countVowelStrings(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_vowel_strings(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    },
+    {
+      "n": 33
+    }
+  ],
+  "functionName": "countVowelStrings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each character, its possible values will depend on the value of its previous character, because it needs to be not smaller than it.",
+    "Think backtracking. Build a recursive function count(n, last_character) that counts the number of valid strings of length n and whose first characters are not less than last_character.",
+    "In this recursive function, iterate on the possible characters for the first character, which will be all the vowels not less than last_character, and for each possible value c, increase the answer by count(n-1, c)."
+  ]
+}

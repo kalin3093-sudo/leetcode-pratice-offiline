@@ -1,0 +1,14 @@
+[
+  {
+    "word": "aeioqq",
+    "k": 1
+  },
+  {
+    "word": "aeiou",
+    "k": 0
+  },
+  {
+    "word": "ieaouqqieaouqq",
+    "k": 1
+  }
+]

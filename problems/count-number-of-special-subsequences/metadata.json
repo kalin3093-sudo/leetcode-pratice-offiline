@@ -1,0 +1,56 @@
+{
+  "id": "count-number-of-special-subsequences",
+  "title": "1955. Count Number of Special Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-number-of-special-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,2,2]",
+      "output": "3",
+      "explanation": "The special subsequences are bolded [0,1,2,2], [0,1,2,2], and [0,1,2,2]."
+    },
+    {
+      "input": "nums = [2,2,0,0]",
+      "output": "0",
+      "explanation": "There are no special subsequences in [2,2,0,0]."
+    },
+    {
+      "input": "nums = [0,1,2,0,1,2]",
+      "output": "7",
+      "explanation": "The special subsequences are bolded: - [0,1,2,0,1,2] - [0,1,2,0,1,2] - [0,1,2,0,1,2] - [0,1,2,0,1,2] - [0,1,2,0,1,2] - [0,1,2,0,1,2] - [0,1,2,0,1,2]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSpecialSubsequences(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSpecialSubsequences(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSpecialSubsequences(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countSpecialSubsequences(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSpecialSubsequences(int[] nums) {\n        \n    }\n}",
+    "go": "func countSpecialSubsequences(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_special_subsequences(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,2,2]"
+    },
+    {
+      "nums": "[2,2,0,0]"
+    },
+    {
+      "nums": "[0,1,2,0,1,2]"
+    }
+  ],
+  "functionName": "countSpecialSubsequences",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we first solve a simpler problem? Counting the number of subsequences with 1s followed by 0s.",
+    "How can we keep track of the partially matched subsequences to help us find the answer?"
+  ]
+}

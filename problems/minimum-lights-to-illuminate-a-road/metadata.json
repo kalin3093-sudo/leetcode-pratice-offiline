@@ -1,0 +1,49 @@
+{
+  "id": "minimum-lights-to-illuminate-a-road",
+  "title": "3964. Minimum Lights to Illuminate a Road",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-lights-to-illuminate-a-road/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "lights = [0,0,0,0]",
+      "output": "2",
+      "explanation": "One optimal placement is: Install an additional bulb at position 1, illuminating positions [0, 1, 2]. Install an additional bulb at position 3, illuminating positions [2, 3]. Therefore, the minimum number of additional bulbs required is 2."
+    },
+    {
+      "input": "lights = [0,0,0,2,0]",
+      "output": "1",
+      "explanation": "Since lights[3] = 2, the working bulb at position 3 illuminates positions [1, 2, 3, 4]. Installing an additional bulb at position 1 illuminates positions [0, 1, 2], making every position visible. Therefore, the minimum number of additional bulbs required is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minLights(vector<int>& lights) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minLights(int[] lights) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minLights(self, lights: list[int]) -> int:\n        ",
+    "typescript": "function minLights(lights: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinLights(int[] lights) {\n        \n    }\n}",
+    "go": "func minLights(lights []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_lights(lights: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "lights": "[0,0,0,0]"
+    },
+    {
+      "lights": "[0,0,0,2,0]"
+    }
+  ],
+  "functionName": "minLights",
+  "params": [
+    {
+      "name": "lights",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "First mark all positions already visible from the existing working bulbs.",
+    "Then scan the road from left to right. Whenever you find the first invisible position <code>i</code>, install a new bulb as far right as possible while still covering <code>i</code>.",
+    "Since each additional bulb covers distance 1, the best position is usually <code>i + 1</code>, unless it goes out of bounds. After placing it, skip all positions it covers."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "minimum-remove-to-make-valid-parentheses",
+  "title": "1249. Minimum Remove to Make Valid Parentheses",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"lee(t(c)o)de)\"",
+      "output": "\"lee(t(c)o)de\"",
+      "explanation": "\"lee(t(co)de)\" , \"lee(t(c)ode)\" would also be accepted."
+    },
+    {
+      "input": "s = \"a)b(c)d\"",
+      "output": "\"ab(c)d\""
+    },
+    {
+      "input": "s = \"))((\"",
+      "output": "\"\"",
+      "explanation": "An empty string is also valid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minRemoveToMakeValid(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minRemoveToMakeValid(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minRemoveToMakeValid(self, s: str) -> str:\n        ",
+    "typescript": "function minRemoveToMakeValid(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinRemoveToMakeValid(string s) {\n        \n    }\n}",
+    "go": "func minRemoveToMakeValid(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_remove_to_make_valid(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "lee(t(c)o)de)"
+    },
+    {
+      "s": "a)b(c)d"
+    },
+    {
+      "s": "))(("
+    }
+  ],
+  "functionName": "minRemoveToMakeValid",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Each prefix of a balanced parentheses has a number of open parentheses greater or equal than closed parentheses, similar idea with each suffix.",
+    "Check the array from left to right, remove characters that do not meet the property mentioned above, same idea in backward way."
+  ]
+}

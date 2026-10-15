@@ -1,0 +1,56 @@
+{
+  "id": "count-submatrices-with-equal-frequency-of-x-and-y",
+  "title": "3212. Count Submatrices With Equal Frequency of X and Y",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[\"X\",\"X\"],[\"X\",\"Y\"]]",
+      "output": "0",
+      "explanation": "No submatrix has an equal frequency of 'X' and 'Y'."
+    },
+    {
+      "input": "grid = [[\".\",\".\"],[\".\",\".\"]]",
+      "output": "0",
+      "explanation": "No submatrix has at least one 'X'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSubmatrices(vector<vector<char>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSubmatrices(char[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSubmatrices(self, grid: List[List[str]]) -> int:\n        ",
+    "typescript": "function numberOfSubmatrices(grid: string[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSubmatrices(char[][] grid) {\n        \n    }\n}",
+    "go": "func numberOfSubmatrices(grid [][]byte) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_submatrices(grid: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]"
+    },
+    {
+      "grid": "[[\"X\",\"X\"],[\"X\",\"Y\"]]"
+    },
+    {
+      "grid": "[[\".\",\".\"],[\".\",\".\"]]"
+    }
+  ],
+  "functionName": "numberOfSubmatrices",
+  "params": [
+    {
+      "name": "grid",
+      "type": "char_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Replace <code>’X’</code> with 1, <code>’Y’</code> with -1 and <code>’.’</code> with 0.",
+    "You need to find how many submatrices <code>grid[0..x][0..y]</code> have a sum of 0 and at least one <code>’X’</code>.",
+    "Use prefix sum to calculate submatrices sum."
+  ]
+}

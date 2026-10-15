@@ -1,0 +1,52 @@
+{
+  "id": "maximize-distance-to-closest-person",
+  "title": "849. Maximize Distance to Closest Person",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-distance-to-closest-person/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "seats = [1,0,0,0,1,0,1]",
+      "output": "2",
+      "explanation": "If Alex sits in the second open seat (i.e. seats[2]), then the closest person has distance 2. If Alex sits in any other open seat, the closest person has distance 1. Thus, the maximum distance to the closest person is 2."
+    },
+    {
+      "input": "seats = [1,0,0,0]",
+      "output": "3",
+      "explanation": "If Alex sits in the last seat (i.e. seats[3]), the closest person is 3 seats away. This is the maximum distance possible, so the answer is 3."
+    },
+    {
+      "input": "seats = [0,1]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDistToClosest(vector<int>& seats) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDistToClosest(int[] seats) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDistToClosest(self, seats: list[int]) -> int:\n        ",
+    "typescript": "function maxDistToClosest(seats: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDistToClosest(int[] seats) {\n        \n    }\n}",
+    "go": "func maxDistToClosest(seats []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_dist_to_closest(seats: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "seats": "[1,0,0,0,1,0,1]"
+    },
+    {
+      "seats": "[1,0,0,0]"
+    },
+    {
+      "seats": "[0,1]"
+    }
+  ],
+  "functionName": "maxDistToClosest",
+  "params": [
+    {
+      "name": "seats",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

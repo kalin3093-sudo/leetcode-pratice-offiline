@@ -1,0 +1,62 @@
+{
+  "id": "kth-distinct-string-in-an-array",
+  "title": "2053. Kth Distinct String in an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/kth-distinct-string-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"], k = 2",
+      "output": "\"a\"",
+      "explanation": "The only distinct strings in arr are \"d\" and \"a\". \"d\" appears 1st, so it is the 1st distinct string. \"a\" appears 2nd, so it is the 2nd distinct string. Since k == 2, \"a\" is returned."
+    },
+    {
+      "input": "arr = [\"aaa\",\"aa\",\"a\"], k = 1",
+      "output": "\"aaa\"",
+      "explanation": "All strings in arr are distinct, so the 1st string \"aaa\" is returned."
+    },
+    {
+      "input": "arr = [\"a\",\"b\",\"a\"], k = 3",
+      "output": "\"\"",
+      "explanation": "The only distinct string is \"b\". Since there are fewer than 3 distinct strings, we return an empty string \"\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string kthDistinct(vector<string>& arr, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String kthDistinct(String[] arr, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kthDistinct(self, arr: list[str], k: int) -> str:\n        ",
+    "typescript": "function kthDistinct(arr: string[], k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string KthDistinct(string[] arr, int k) {\n        \n    }\n}",
+    "go": "func kthDistinct(arr []string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn kth_distinct(arr: Vec<String>, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"]",
+      "k": 2
+    },
+    {
+      "arr": "[\"aaa\",\"aa\",\"a\"]",
+      "k": 1
+    },
+    {
+      "arr": "[\"a\",\"b\",\"a\"]",
+      "k": 3
+    }
+  ],
+  "functionName": "kthDistinct",
+  "params": [
+    {
+      "name": "arr",
+      "type": "string_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Try 'mapping' the strings to check if they are unique or not."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "minimum-number-of-refueling-stops",
+  "title": "871. Minimum Number of Refueling Stops",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-refueling-stops/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "target = 1, startFuel = 1, stations = []",
+      "output": "0",
+      "explanation": "We can reach the target without refueling."
+    },
+    {
+      "input": "target = 100, startFuel = 1, stations = [[10,100]]",
+      "output": "-1",
+      "explanation": "We can not reach the target (or even the first gas station)."
+    },
+    {
+      "input": "target = 100, startFuel = 10, stations = [[10,60],[20,30],[30,30],[60,40]]",
+      "output": "2",
+      "explanation": "We start with 10 liters of fuel. We drive to position 10, expending 10 liters of fuel.  We refuel from 0 liters to 60 liters of gas. Then, we drive from position 10 to position 60 (expending 50 liters of fuel), and refuel from 10 liters to 50 liters of gas.  We then drive to and reach the target. We made 2 refueling stops along the way, so we return 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minRefuelStops(int target, int startFuel, vector<vector<int>>& stations) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minRefuelStops(int target, int startFuel, int[][] stations) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minRefuelStops(self, target: int, startFuel: int, stations: list[list[int]]) -> int:\n        ",
+    "typescript": "function minRefuelStops(target: number, startFuel: number, stations: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinRefuelStops(int target, int startFuel, int[][] stations) {\n        \n    }\n}",
+    "go": "func minRefuelStops(target int, startFuel int, stations [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_refuel_stops(target: i32, start_fuel: i32, stations: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "target": 1,
+      "startFuel": 1,
+      "stations": "[]"
+    },
+    {
+      "target": 100,
+      "startFuel": 1,
+      "stations": "[[10,100]]"
+    },
+    {
+      "target": 100,
+      "startFuel": 10,
+      "stations": "[[10,60],[20,30],[30,30],[60,40]]"
+    }
+  ],
+  "functionName": "minRefuelStops",
+  "params": [
+    {
+      "name": "target",
+      "type": "int"
+    },
+    {
+      "name": "startFuel",
+      "type": "int"
+    },
+    {
+      "name": "stations",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

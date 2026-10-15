@@ -1,0 +1,48 @@
+{
+  "id": "minimum-average-difference",
+  "title": "2256. Minimum Average Difference",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-average-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,3,9,5,3]",
+      "output": "3",
+      "explanation": "- The average difference of index 0 is: |2 / 1 - (5 + 3 + 9 + 5 + 3) / 5| = |2 / 1 - 25 / 5| = |2 - 5| = 3. - The average difference of index 1 is: |(2 + 5) / 2 - (3 + 9 + 5 + 3) / 4| = |7 / 2 - 20 / 4| = |3 - 5| = 2. - The average difference of index 2 is: |(2 + 5 + 3) / 3 - (9 + 5 + 3) / 3| = |10 / 3 - 17 / 3| = |3 - 5| = 2. - The average difference of index 3 is: |(2 + 5 + 3 + 9) / 4 - (5 + 3) / 2| = |19 / 4 - 8 / 2| = |4 - 4| = 0. - The average difference of index 4 is: |(2 + 5 + 3 + 9 + 5) / 5 - 3 / 1| = |24 / 5 - 3 / 1| = |4 - 3| = 1. - The average difference of index 5 is: |(2 + 5 + 3 + 9 + 5 + 3) / 6 - 0| = |27 / 6 - 0| = |4 - 0| = 4. The average difference of index 3 is the minimum average difference so return 3."
+    },
+    {
+      "input": "nums = [0]",
+      "output": "0",
+      "explanation": "The only index is 0 so return 0. The average difference of index 0 is: |0 / 1 - 0| = |0 - 0| = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumAverageDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumAverageDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumAverageDifference(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minimumAverageDifference(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumAverageDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumAverageDifference(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_average_difference(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,3,9,5,3]"
+    },
+    {
+      "nums": "[0]"
+    }
+  ],
+  "functionName": "minimumAverageDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How can we use precalculation to efficiently calculate the average difference at an index?",
+    "Create a prefix and/or suffix sum array."
+  ]
+}

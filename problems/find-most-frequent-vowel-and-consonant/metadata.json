@@ -1,0 +1,48 @@
+{
+  "id": "find-most-frequent-vowel-and-consonant",
+  "title": "3541. Find Most Frequent Vowel and Consonant",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"successes\"",
+      "output": "6",
+      "explanation": "The vowels are: 'u' (frequency 1), 'e' (frequency 2). The maximum frequency is 2. The consonants are: 's' (frequency 4), 'c' (frequency 2). The maximum frequency is 4. The output is 2 + 4 = 6."
+    },
+    {
+      "input": "s = \"aeiaeia\"",
+      "output": "3",
+      "explanation": "The vowels are: 'a' (frequency 3), 'e' ( frequency 2), 'i' (frequency 2). The maximum frequency is 3. There are no consonants in s. Hence, maximum consonant frequency = 0. The output is 3 + 0 = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxFreqSum(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxFreqSum(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxFreqSum(self, s: str) -> int:\n        ",
+    "typescript": "function maxFreqSum(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxFreqSum(string s) {\n        \n    }\n}",
+    "go": "func maxFreqSum(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_freq_sum(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "successes"
+    },
+    {
+      "s": "aeiaeia"
+    }
+  ],
+  "functionName": "maxFreqSum",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a hashmap",
+    "Simulate as described"
+  ]
+}

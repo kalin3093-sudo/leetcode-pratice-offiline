@@ -1,0 +1,50 @@
+{
+  "id": "freedom-trail",
+  "title": "514. Freedom Trail",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/freedom-trail/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "ring = \"godding\", key = \"gd\"",
+      "output": "4",
+      "explanation": "For the first key character 'g', since it is already in place, we just need 1 step to spell this character. For the second key character 'd', we need to rotate the ring \"godding\" anticlockwise by two steps to make it become \"ddinggo\". Also, we need 1 more step for spelling. So the final output is 4."
+    },
+    {
+      "input": "ring = \"godding\", key = \"godding\"",
+      "output": "13"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findRotateSteps(string ring, string key) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findRotateSteps(String ring, String key) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findRotateSteps(self, ring: str, key: str) -> int:\n        ",
+    "typescript": "function findRotateSteps(ring: string, key: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindRotateSteps(string ring, string key) {\n        \n    }\n}",
+    "go": "func findRotateSteps(ring string, key string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_rotate_steps(ring: String, key: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "ring": "godding",
+      "key": "gd"
+    },
+    {
+      "ring": "godding",
+      "key": "godding"
+    }
+  ],
+  "functionName": "findRotateSteps",
+  "params": [
+    {
+      "name": "ring",
+      "type": "string"
+    },
+    {
+      "name": "key",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

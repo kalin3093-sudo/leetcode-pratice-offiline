@@ -1,0 +1,75 @@
+{
+  "id": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+  "title": "3734. Lexicographically Smallest Palindromic Permutation Greater Than Target",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"baba\", target = \"abba\"",
+      "output": "\"baab\"",
+      "explanation": "The palindromic permutations of s (in lexicographical order) are \"abba\" and \"baab\". The lexicographically smallest permutation that is strictly greater than target is \"baab\"."
+    },
+    {
+      "input": "s = \"baba\", target = \"bbaa\"",
+      "output": "\"\"",
+      "explanation": "The palindromic permutations of s (in lexicographical order) are \"abba\" and \"baab\". None of them is lexicographically strictly greater than target. Therefore, the answer is \"\"."
+    },
+    {
+      "input": "s = \"abc\", target = \"abb\"",
+      "output": "\"\"",
+      "explanation": "s has no palindromic permutations. Therefore, the answer is \"\"."
+    },
+    {
+      "input": "s = \"aac\", target = \"abb\"",
+      "output": "\"aca\"",
+      "explanation": "The only palindromic permutation of s is \"aca\". \"aca\" is strictly greater than target. Therefore, the answer is \"aca\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lexPalindromicPermutation(string s, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lexPalindromicPermutation(String s, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lexPalindromicPermutation(self, s: str, target: str) -> str:\n        ",
+    "typescript": "function lexPalindromicPermutation(s: string, target: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LexPalindromicPermutation(string s, string target) {\n        \n    }\n}",
+    "go": "func lexPalindromicPermutation(s string, target string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn lex_palindromic_permutation(s: String, target: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "baba",
+      "target": "abba"
+    },
+    {
+      "s": "baba",
+      "target": "bbaa"
+    },
+    {
+      "s": "abc",
+      "target": "abb"
+    },
+    {
+      "s": "aac",
+      "target": "abb"
+    }
+  ],
+  "functionName": "lexPalindromicPermutation",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "A palindromic permutation exists only if at most one character has an odd count (for odd-length strings) or all counts are even (for even-length strings).",
+    "Focus on constructing the first half of the palindrome. The second half is determined by mirroring.",
+    "To be lexicographically greater than target, the first half must be greater than or equal to target's first half, with careful handling of the middle character for odd-length strings.",
+    "Use a backtracking approach or greedy selection for each position in the first half, trying the smallest available character that can still produce a valid palindrome.",
+    "After building the first half, mirror it (and add the middle character if needed) to form the full palindrome and verify it is strictly greater than target."
+  ]
+}

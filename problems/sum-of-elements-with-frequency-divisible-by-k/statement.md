@@ -1,0 +1,11 @@
+You are given an integer array `nums` and an integer `k`.
+
+Return an integer denoting the **sum** of all elements in `nums` whose **frequency** is divisible by `k`, or 0 if there are no such elements.
+
+**Note:** An element is included in the sum **exactly** as many times as it appears in the array if its total frequency is divisible by `k`.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 100`
+-   `1 ≤ nums[i] ≤ 100`
+-   `1 ≤ k ≤ 100`

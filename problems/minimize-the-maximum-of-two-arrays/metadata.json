@@ -1,0 +1,77 @@
+{
+  "id": "minimize-the-maximum-of-two-arrays",
+  "title": "2513. Minimize the Maximum of Two Arrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "divisor1 = 2, divisor2 = 7, uniqueCnt1 = 1, uniqueCnt2 = 3",
+      "output": "4",
+      "explanation": "We can distribute the first 4 natural numbers into arr1 and arr2. arr1 = [1] and arr2 = [2,3,4]. We can see that both arrays satisfy all the conditions. Since the maximum value is 4, we return it."
+    },
+    {
+      "input": "divisor1 = 3, divisor2 = 5, uniqueCnt1 = 2, uniqueCnt2 = 1",
+      "output": "3",
+      "explanation": "Here arr1 = [1,2], and arr2 = [3] satisfy all conditions. Since the maximum value is 3, we return it."
+    },
+    {
+      "input": "divisor1 = 2, divisor2 = 4, uniqueCnt1 = 8, uniqueCnt2 = 2",
+      "output": "15",
+      "explanation": "Here, the final possible arrays can be arr1 = [1,3,5,7,9,11,13,15], and arr2 = [2,6]. It can be shown that it is not possible to obtain a lower maximum satisfying all conditions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizeSet(int divisor1, int divisor2, int uniqueCnt1, int uniqueCnt2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizeSet(int divisor1, int divisor2, int uniqueCnt1, int uniqueCnt2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeSet(self, divisor1: int, divisor2: int, uniqueCnt1: int, uniqueCnt2: int) -> int:\n        ",
+    "typescript": "function minimizeSet(divisor1: number, divisor2: number, uniqueCnt1: number, uniqueCnt2: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizeSet(int divisor1, int divisor2, int uniqueCnt1, int uniqueCnt2) {\n        \n    }\n}",
+    "go": "func minimizeSet(divisor1 int, divisor2 int, uniqueCnt1 int, uniqueCnt2 int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_set(divisor1: i32, divisor2: i32, unique_cnt1: i32, unique_cnt2: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "divisor1": 2,
+      "divisor2": 7,
+      "uniqueCnt1": 1,
+      "uniqueCnt2": 3
+    },
+    {
+      "divisor1": 3,
+      "divisor2": 5,
+      "uniqueCnt1": 2,
+      "uniqueCnt2": 1
+    },
+    {
+      "divisor1": 2,
+      "divisor2": 4,
+      "uniqueCnt1": 8,
+      "uniqueCnt2": 2
+    }
+  ],
+  "functionName": "minimizeSet",
+  "params": [
+    {
+      "name": "divisor1",
+      "type": "int"
+    },
+    {
+      "name": "divisor2",
+      "type": "int"
+    },
+    {
+      "name": "uniqueCnt1",
+      "type": "int"
+    },
+    {
+      "name": "uniqueCnt2",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use binary search to find smallest maximum element.",
+    "Add numbers divisible by x in nums2 and vice versa."
+  ]
+}

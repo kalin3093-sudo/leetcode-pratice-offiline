@@ -1,0 +1,49 @@
+{
+  "id": "vowels-game-in-a-string",
+  "title": "3227. Vowels Game in a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/vowels-game-in-a-string/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"leetcoder\"",
+      "output": "true",
+      "explanation": "Alice can win the game as follows: Alice plays first, she can delete the underlined substring in s = \"leetcoder\" which contains 3 vowels. The resulting string is s = \"der\". Bob plays second, he can delete the underlined substring in s = \"der\" which contains 0 vowels. The resulting string is s = \"er\". Alice plays third, she can delete the whole string s = \"er\" which contains 1 vowel. Bob plays fourth, since the string is empty, there is no valid play for Bob. So Alice wins the game."
+    },
+    {
+      "input": "s = \"bbcd\"",
+      "output": "false",
+      "explanation": "There is no valid play for Alice in her first turn, so Alice loses the game."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool doesAliceWin(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean doesAliceWin(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def doesAliceWin(self, s: str) -> bool:\n        ",
+    "typescript": "function doesAliceWin(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool DoesAliceWin(string s) {\n        \n    }\n}",
+    "go": "func doesAliceWin(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn does_alice_win(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcoder"
+    },
+    {
+      "s": "bbcd"
+    }
+  ],
+  "functionName": "doesAliceWin",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "If there are no vowels in the initial string, then Bob wins.",
+    "If the number of vowels in the initial string is odd, then Alice can remove the whole string on her first turn and win.",
+    "What if the number of vowels in the initial string is even? What’s the optimal play for Alice’s first turn?"
+  ]
+}

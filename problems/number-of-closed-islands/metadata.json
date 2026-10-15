@@ -1,0 +1,54 @@
+{
+  "id": "number-of-closed-islands",
+  "title": "1254. Number of Closed Islands",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-closed-islands/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]",
+      "output": "2",
+      "explanation": "Islands in gray are closed because they are completely surrounded by water (group of 1s)."
+    },
+    {
+      "input": "grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]",
+      "output": "1"
+    },
+    {
+      "input": "grid = [[1,1,1,1,1,1,1], [1,0,0,0,0,0,1], [1,0,1,1,1,0,1], [1,0,1,0,1,0,1], [1,0,1,1,1,0,1], [1,0,0,0,0,0,1], [1,1,1,1,1,1,1]]",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int closedIsland(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int closedIsland(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closedIsland(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function closedIsland(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ClosedIsland(int[][] grid) {\n        \n    }\n}",
+    "go": "func closedIsland(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn closed_island(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]"
+    },
+    {
+      "grid": "[[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]"
+    },
+    {
+      "grid": "[[1,1,1,1,1,1,1],[1,0,0,0,0,0,1],[1,0,1,1,1,0,1],[1,0,1,0,1,0,1],[1,0,1,1,1,0,1],[1,0,0,0,0,0,1],[1,1,1,1,1,1,1]]"
+    }
+  ],
+  "functionName": "closedIsland",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Exclude connected group of 0s on the corners because they are not closed island.",
+    "Return number of connected component of 0s on the grid."
+  ]
+}

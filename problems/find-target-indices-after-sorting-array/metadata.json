@@ -1,0 +1,63 @@
+{
+  "id": "find-target-indices-after-sorting-array",
+  "title": "2089. Find Target Indices After Sorting Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,5,2,3], target = 2",
+      "output": "[1,2]",
+      "explanation": "After sorting, nums is [1,2,2,3,5]. The indices where nums[i] == 2 are 1 and 2."
+    },
+    {
+      "input": "nums = [1,2,5,2,3], target = 3",
+      "output": "[3]",
+      "explanation": "After sorting, nums is [1,2,2,3,5]. The index where nums[i] == 3 is 3."
+    },
+    {
+      "input": "nums = [1,2,5,2,3], target = 5",
+      "output": "[4]",
+      "explanation": "After sorting, nums is [1,2,2,3,5]. The index where nums[i] == 5 is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> targetIndices(vector<int>& nums, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> targetIndices(int[] nums, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def targetIndices(self, nums: list[int], target: int) -> list[int]:\n        ",
+    "typescript": "function targetIndices(nums: number[], target: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> TargetIndices(int[] nums, int target) {\n        \n    }\n}",
+    "go": "func targetIndices(nums []int, target int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn target_indices(nums: Vec<i32>, target: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,5,2,3]",
+      "target": 2
+    },
+    {
+      "nums": "[1,2,5,2,3]",
+      "target": 3
+    },
+    {
+      "nums": "[1,2,5,2,3]",
+      "target": 5
+    }
+  ],
+  "functionName": "targetIndices",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Try \"sorting\" the array first.",
+    "Now find all indices in the array whose values are equal to target."
+  ]
+}

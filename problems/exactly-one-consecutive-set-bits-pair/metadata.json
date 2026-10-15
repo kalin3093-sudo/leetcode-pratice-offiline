@@ -1,0 +1,47 @@
+{
+  "id": "exactly-one-consecutive-set-bits-pair",
+  "title": "3950. Exactly One Consecutive Set Bits Pair",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "true",
+      "explanation": "Binary representation of 6 is 110. There is exactly one adjacent pair of set bits (\"11\"). Thus, the answer is true."
+    },
+    {
+      "input": "n = 5",
+      "output": "false",
+      "explanation": "Binary representation of 5 is 101. There is no adjacent pair of set bits. Thus, the answer is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool consecutiveSetBits(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean consecutiveSetBits(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def consecutiveSetBits(self, n: int) -> bool:\n        ",
+    "typescript": "function consecutiveSetBits(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ConsecutiveSetBits(int n) {\n        \n    }\n}",
+    "go": "func consecutiveSetBits(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn consecutive_set_bits(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6
+    },
+    {
+      "n": 5
+    }
+  ],
+  "functionName": "consecutiveSetBits",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Pure simulation problem."
+  ]
+}

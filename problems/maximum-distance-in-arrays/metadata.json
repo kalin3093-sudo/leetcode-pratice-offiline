@@ -1,0 +1,44 @@
+{
+  "id": "maximum-distance-in-arrays",
+  "title": "624. Maximum Distance in Arrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-distance-in-arrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arrays = [[1,2,3],[4,5],[1,2,3]]",
+      "output": "4",
+      "explanation": "One way to reach the maximum distance 4 is to pick 1 in the first or third array and pick 5 in the second array."
+    },
+    {
+      "input": "arrays = [[1],[1]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDistance(vector<vector<int>>& arrays) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDistance(List<List<Integer>> arrays) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDistance(self, arrays: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxDistance(arrays: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDistance(IList<IList<int>> arrays) {\n        \n    }\n}",
+    "go": "func maxDistance(arrays [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_distance(arrays: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arrays": "[[1,2,3],[4,5],[1,2,3]]"
+    },
+    {
+      "arrays": "[[1],[1]]"
+    }
+  ],
+  "functionName": "maxDistance",
+  "params": [
+    {
+      "name": "arrays",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

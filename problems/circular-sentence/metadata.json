@@ -1,0 +1,56 @@
+{
+  "id": "circular-sentence",
+  "title": "2490. Circular Sentence",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/circular-sentence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "sentence = \"leetcode exercises sound delightful\"",
+      "output": "true",
+      "explanation": "The words in sentence are [\"leetcode\", \"exercises\", \"sound\", \"delightful\"]. - leetcode's last character is equal to exercises's first character. - exercises's last character is equal to sound's first character. - sound's last character is equal to delightful's first character. - delightful's last character is equal to leetcode's first character. The sentence is circular."
+    },
+    {
+      "input": "sentence = \"eetcode\"",
+      "output": "true",
+      "explanation": "The words in sentence are [\"eetcode\"]. - eetcode's last character is equal to eetcode's first character. The sentence is circular."
+    },
+    {
+      "input": "sentence = \"Leetcode is cool\"",
+      "output": "false",
+      "explanation": "The words in sentence are [\"Leetcode\", \"is\", \"cool\"]. - Leetcode's last character is not equal to is's first character. The sentence is not circular."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isCircularSentence(string sentence) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isCircularSentence(String sentence) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isCircularSentence(self, sentence: str) -> bool:\n        ",
+    "typescript": "function isCircularSentence(sentence: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsCircularSentence(string sentence) {\n        \n    }\n}",
+    "go": "func isCircularSentence(sentence string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_circular_sentence(sentence: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "sentence": "leetcode exercises sound delightful"
+    },
+    {
+      "sentence": "eetcode"
+    },
+    {
+      "sentence": "Leetcode is cool"
+    }
+  ],
+  "functionName": "isCircularSentence",
+  "params": [
+    {
+      "name": "sentence",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Check the character before the empty space and the character after the empty space.",
+    "Check the first character and the last character of the sentence."
+  ]
+}

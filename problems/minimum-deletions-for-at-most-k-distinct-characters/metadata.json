@@ -1,0 +1,65 @@
+{
+  "id": "minimum-deletions-for-at-most-k-distinct-characters",
+  "title": "3545. Minimum Deletions for At Most K Distinct Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abc\", k = 2",
+      "output": "1",
+      "explanation": "s has three distinct characters: 'a', 'b' and 'c', each with a frequency of 1. Since we can have at most k = 2 distinct characters, remove all occurrences of any one character from the string. For example, removing all occurrences of 'c' results in at most k distinct characters. Thus, the answer is 1."
+    },
+    {
+      "input": "s = \"aabb\", k = 2",
+      "output": "0",
+      "explanation": "s has two distinct characters ('a' and 'b') with frequencies of 2 and 2, respectively. Since we can have at most k = 2 distinct characters, no deletions are required. Thus, the answer is 0."
+    },
+    {
+      "input": "s = \"yyyzz\", k = 1",
+      "output": "2",
+      "explanation": "s has two distinct characters ('y' and 'z') with frequencies of 3 and 2, respectively. Since we can have at most k = 1 distinct character, remove all occurrences of any one character from the string. Removing all 'z' results in at most k distinct characters. Thus, the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDeletion(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDeletion(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDeletion(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function minDeletion(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDeletion(string s, int k) {\n        \n    }\n}",
+    "go": "func minDeletion(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_deletion(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc",
+      "k": 2
+    },
+    {
+      "s": "aabb",
+      "k": 2
+    },
+    {
+      "s": "yyyzz",
+      "k": 1
+    }
+  ],
+  "functionName": "minDeletion",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Compute the frequency of each character in <code>s</code> and collect these into a list <code>counts</code>.",
+    "Sort <code>counts</code> in ascending order.",
+    "Let <code>d</code> = (number of distinct characters) – <code>k</code>. If <code>d <= 0</code>, return 0.",
+    "Otherwise, the minimum deletions is the sum of the first <code>d</code> entries in <code>counts</code> (removing the <code>d</code> least-frequent characters)."
+  ]
+}

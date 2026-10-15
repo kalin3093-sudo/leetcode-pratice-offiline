@@ -1,0 +1,64 @@
+{
+  "id": "minimum-stability-factor-of-array",
+  "title": "3605. Minimum Stability Factor of Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-stability-factor-of-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,5,10], maxC = 1",
+      "output": "1",
+      "explanation": "The stable subarray [5, 10] has HCF = 5, which has a stability factor of 2. Since maxC = 1, one optimal strategy is to change nums[1] to 7, resulting in nums = [3, 7, 10]. Now, no subarray of length greater than 1 has HCF >= 2. Thus, the minimum possible stability factor is 1."
+    },
+    {
+      "input": "nums = [2,6,8], maxC = 2",
+      "output": "1",
+      "explanation": "The subarray [2, 6, 8] has HCF = 2, which has a stability factor of 3. Since maxC = 2, one optimal strategy is to change nums[1] to 3 and nums[2] to 5, resulting in nums = [2, 3, 5]. Now, no subarray of length greater than 1 has HCF >= 2. Thus, the minimum possible stability factor is 1."
+    },
+    {
+      "input": "nums = [2,4,9,6], maxC = 1",
+      "output": "2",
+      "explanation": "The stable subarrays are: [2, 4] with HCF = 2 and stability factor of 2. [9, 6] with HCF = 3 and stability factor of 2. Since maxC = 1, the stability factor of 2 cannot be reduced due to two separate stable subarrays. Thus, the minimum possible stability factor is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minStable(vector<int>& nums, int maxC) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minStable(int[] nums, int maxC) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minStable(self, nums: List[int], maxC: int) -> int:\n        ",
+    "typescript": "function minStable(nums: number[], maxC: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinStable(int[] nums, int maxC) {\n        \n    }\n}",
+    "go": "func minStable(nums []int, maxC int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_stable(nums: Vec<i32>, max_c: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,5,10]",
+      "maxC": 1
+    },
+    {
+      "nums": "[2,6,8]",
+      "maxC": 2
+    },
+    {
+      "nums": "[2,4,9,6]",
+      "maxC": 1
+    }
+  ],
+  "functionName": "minStable",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "maxC",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Binary‐search the target length <code>k</code>",
+    "For each <code>k</code>, use fast range‐GCD queries",
+    "Greedily \"hit\" every window of size <code>k+1</code> with an edit if its <code>GCD > 1</code>"
+  ]
+}

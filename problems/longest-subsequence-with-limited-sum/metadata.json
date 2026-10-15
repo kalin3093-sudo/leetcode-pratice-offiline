@@ -1,0 +1,55 @@
+{
+  "id": "longest-subsequence-with-limited-sum",
+  "title": "2389. Longest Subsequence With Limited Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/longest-subsequence-with-limited-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,5,2,1], queries = [3,10,21]",
+      "output": "[2,3,4]",
+      "explanation": "We answer the queries as follows: - The subsequence [2,1] has a sum less than or equal to 3. It can be proven that 2 is the maximum size of such a subsequence, so answer[0] = 2. - The subsequence [4,5,1] has a sum less than or equal to 10. It can be proven that 3 is the maximum size of such a subsequence, so answer[1] = 3. - The subsequence [4,5,2,1] has a sum less than or equal to 21. It can be proven that 4 is the maximum size of such a subsequence, so answer[2] = 4."
+    },
+    {
+      "input": "nums = [2,3,4,5], queries = [1]",
+      "output": "[0]",
+      "explanation": "The empty subsequence is the only subsequence that has a sum less than or equal to 1, so answer[0] = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> answerQueries(vector<int>& nums, vector<int>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] answerQueries(int[] nums, int[] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def answerQueries(self, nums: list[int], queries: list[int]) -> list[int]:\n        ",
+    "typescript": "function answerQueries(nums: number[], queries: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] AnswerQueries(int[] nums, int[] queries) {\n        \n    }\n}",
+    "go": "func answerQueries(nums []int, queries []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn answer_queries(nums: Vec<i32>, queries: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,5,2,1]",
+      "queries": "[3,10,21]"
+    },
+    {
+      "nums": "[2,3,4,5]",
+      "queries": "[1]"
+    }
+  ],
+  "functionName": "answerQueries",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Solve each query independently.",
+    "When solving a query, which elements of nums should you choose to make the subsequence as long as possible?",
+    "Choose the smallest elements in nums that add up to a sum less than the query."
+  ]
+}

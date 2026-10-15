@@ -1,0 +1,76 @@
+{
+  "id": "find-all-good-strings",
+  "title": "1397. Find All Good Strings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-all-good-strings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 2, s1 = \"aa\", s2 = \"da\", evil = \"b\"",
+      "output": "51",
+      "explanation": "There are 25 good strings starting with 'a': \"aa\",\"ac\",\"ad\",...,\"az\". Then there are 25 good strings starting with 'c': \"ca\",\"cc\",\"cd\",...,\"cz\" and finally there is one good string starting with 'd': \"da\"."
+    },
+    {
+      "input": "n = 8, s1 = \"leetcode\", s2 = \"leetgoes\", evil = \"leet\"",
+      "output": "0",
+      "explanation": "All strings greater than or equal to s1 and smaller than or equal to s2 start with the prefix \"leet\", therefore, there is not any good string."
+    },
+    {
+      "input": "n = 2, s1 = \"gx\", s2 = \"gz\", evil = \"x\"",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findGoodStrings(int n, string s1, string s2, string evil) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findGoodStrings(int n, String s1, String s2, String evil) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findGoodStrings(self, n: int, s1: str, s2: str, evil: str) -> int:\n        ",
+    "typescript": "function findGoodStrings(n: number, s1: string, s2: string, evil: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindGoodStrings(int n, string s1, string s2, string evil) {\n        \n    }\n}",
+    "go": "func findGoodStrings(n int, s1 string, s2 string, evil string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_good_strings(n: i32, s1: String, s2: String, evil: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "s1": "aa",
+      "s2": "da",
+      "evil": "b"
+    },
+    {
+      "n": 8,
+      "s1": "leetcode",
+      "s2": "leetgoes",
+      "evil": "leet"
+    },
+    {
+      "n": 2,
+      "s1": "gx",
+      "s2": "gz",
+      "evil": "x"
+    }
+  ],
+  "functionName": "findGoodStrings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    },
+    {
+      "name": "evil",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use DP with 4 states (pos: Int, posEvil: Int, equalToS1: Bool, equalToS2: Bool) which compute the number of valid strings of size \"pos\" where the maximum common suffix with string \"evil\" has size \"posEvil\". When \"equalToS1\" is \"true\", the current valid string is equal to \"S1\" otherwise it is greater. In a similar way when equalToS2 is \"true\" the current valid string is equal to \"S2\" otherwise it is smaller.",
+    "To update the maximum common suffix with string \"evil\" use KMP preprocessing."
+  ]
+}

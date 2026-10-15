@@ -1,0 +1,6 @@
+Given an integer array `nums` of size `n`, return *the number with the value **closest** to* `0` *in* `nums`. If there are multiple answers, return *the number with the **largest** value*.
+
+**Constraints:**
+
+-   `1 ≤ n ≤ 1000`
+-   `-10^5 ≤ nums[i] ≤ 10^5`

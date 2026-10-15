@@ -1,0 +1,55 @@
+{
+  "id": "sort-vowels-by-frequency",
+  "title": "3913. Sort Vowels by Frequency",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sort-vowels-by-frequency/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leetcode\"",
+      "output": "\"leetcedo\"",
+      "explanation": "Vowels in the string are ['e', 'e', 'o', 'e'] with frequencies: e = 3, o = 1. Sorting in non-increasing order of frequency and placing them back into the vowel positions results in \"leetcedo\"."
+    },
+    {
+      "input": "s = \"aeiaaioooa\"",
+      "output": "\"aaaaoooiie\"",
+      "explanation": "Vowels in the string are ['a', 'e', 'i', 'a', 'a', 'i', 'o', 'o', 'o', 'a'] with frequencies: a = 4, o = 3, i = 2, e = 1. Sorting them in non-increasing order of frequency and placing them back into the vowel positions results in \"aaaaoooiie\"."
+    },
+    {
+      "input": "s = \"baeiou\"",
+      "output": "\"baeiou\"",
+      "explanation": "Each vowel appears exactly once, so all have the same frequency. Thus, they retain their relative order based on first occurrence, and the string remains unchanged."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string sortVowels(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String sortVowels(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortVowels(self, s: str) -> str:\n        ",
+    "typescript": "function sortVowels(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SortVowels(string s) {\n        \n    }\n}",
+    "go": "func sortVowels(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_vowels(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcode"
+    },
+    {
+      "s": "aeiaaioooa"
+    },
+    {
+      "s": "baeiou"
+    }
+  ],
+  "functionName": "sortVowels",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Simulate as described"
+  ]
+}

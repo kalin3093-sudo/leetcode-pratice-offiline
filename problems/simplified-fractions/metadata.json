@@ -1,0 +1,55 @@
+{
+  "id": "simplified-fractions",
+  "title": "1447. Simplified Fractions",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/simplified-fractions/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "[\"1/2\"]",
+      "explanation": "\"1/2\" is the only unique fraction with a denominator less-than-or-equal-to 2."
+    },
+    {
+      "input": "n = 3",
+      "output": "[\"1/2\",\"1/3\",\"2/3\"]"
+    },
+    {
+      "input": "n = 4",
+      "output": "[\"1/2\",\"1/3\",\"1/4\",\"2/3\",\"3/4\"]",
+      "explanation": "\"2/4\" is not a simplified fraction because it can be simplified to \"1/2\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> simplifiedFractions(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> simplifiedFractions(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def simplifiedFractions(self, n: int) -> list[str]:\n        ",
+    "typescript": "function simplifiedFractions(n: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> SimplifiedFractions(int n) {\n        \n    }\n}",
+    "go": "func simplifiedFractions(n int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn simplified_fractions(n: i32) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2
+    },
+    {
+      "n": 3
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "simplifiedFractions",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "A fraction is fully simplified if there is no integer that divides cleanly into the numerator and denominator.",
+    "In other words the greatest common divisor of the numerator and the denominator of a simplified fraction is 1."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "shortest-string-that-contains-three-strings",
+  "title": "2800. Shortest String That Contains Three Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-string-that-contains-three-strings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "a = \"abc\", b = \"bca\", c = \"aaa\"",
+      "output": "\"aaabca\"",
+      "explanation": "We show that \"aaabca\" contains all the given strings: a = ans[2...4], b = ans[3..5], c = ans[0..2]. It can be shown that the length of the resulting string would be at least 6 and \"aaabca\" is the lexicographically smallest one."
+    },
+    {
+      "input": "a = \"ab\", b = \"ba\", c = \"aba\"",
+      "output": "\"aba\"",
+      "explanation": "We show that the string \"aba\" contains all the given strings: a = ans[0..1], b = ans[1..2], c = ans[0..2]. Since the length of c is 3, the length of the resulting string would be at least 3. It can be shown that \"aba\" is the lexicographically smallest one."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minimumString(string a, string b, string c) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minimumString(String a, String b, String c) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumString(self, a: str, b: str, c: str) -> str:\n        ",
+    "typescript": "function minimumString(a: string, b: string, c: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinimumString(string a, string b, string c) {\n        \n    }\n}",
+    "go": "func minimumString(a string, b string, c string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_string(a: String, b: String, c: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": "abc",
+      "b": "bca",
+      "c": "aaa"
+    },
+    {
+      "a": "ab",
+      "b": "ba",
+      "c": "aba"
+    }
+  ],
+  "functionName": "minimumString",
+  "params": [
+    {
+      "name": "a",
+      "type": "string"
+    },
+    {
+      "name": "b",
+      "type": "string"
+    },
+    {
+      "name": "c",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Think about how you can generate all possible strings that contain all three input strings as substrings. Can you come up with an efficient algorithm to do this?",
+    "Check all permutations of the words a, b, and c. For each permutation, begin by appending some letters to the end of the first word to form the second word. Then, proceed to add more letters to generate the third word."
+  ]
+}

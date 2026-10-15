@@ -1,0 +1,48 @@
+{
+  "id": "average-value-of-even-numbers-that-are-divisible-by-three",
+  "title": "2455. Average Value of Even Numbers That Are Divisible by Three",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,6,10,12,15]",
+      "output": "9",
+      "explanation": "6 and 12 are even numbers that are divisible by 3. (6 + 12) / 2 = 9."
+    },
+    {
+      "input": "nums = [1,2,4,7,10]",
+      "output": "0",
+      "explanation": "There is no single number that satisfies the requirement, so return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int averageValue(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int averageValue(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def averageValue(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function averageValue(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AverageValue(int[] nums) {\n        \n    }\n}",
+    "go": "func averageValue(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn average_value(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,6,10,12,15]"
+    },
+    {
+      "nums": "[1,2,4,7,10]"
+    }
+  ],
+  "functionName": "averageValue",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What is the property of a number if it is divisible by both 2 and 3 at the same time?",
+    "It is equivalent to finding all the numbers that are divisible by 6."
+  ]
+}

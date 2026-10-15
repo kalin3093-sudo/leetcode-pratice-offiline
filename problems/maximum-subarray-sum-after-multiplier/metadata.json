@@ -1,0 +1,56 @@
+{
+  "id": "maximum-subarray-sum-after-multiplier",
+  "title": "3976. Maximum Subarray Sum After Multiplier",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,-2,3,4,-5], k = 2",
+      "output": "14",
+      "explanation": "Multiply each number in the subarray [3, 4] by 2. This results in nums = [1, -2, 6, 8, -5]. The subarray with the largest sum is [6, 8], so the output is 6 + 8 = 14."
+    },
+    {
+      "input": "nums = [-5,-4,-3], k = 2",
+      "output": "-1",
+      "explanation": "Divide each number in the subarray [-3] by 2. This results in nums = [-5, -4, -1]. The subarray with the largest sum is [-1], so the output is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxSubarraySum(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxSubarraySum(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSubarraySum(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function maxSubarraySum(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxSubarraySum(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func maxSubarraySum(nums []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_subarray_sum(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,-2,3,4,-5]",
+      "k": 2
+    },
+    {
+      "nums": "[-5,-4,-3]",
+      "k": 2
+    }
+  ],
+  "functionName": "maxSubarraySum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use a Kadane-style dynamic programming where the maximum-sum subarray is built from left to right.",
+    "Keep states for four cases: no operation used yet, currently multiplying, currently dividing, and operation already finished.",
+    "The divide value should be computed as truncation toward zero: floor for positive numbers and ceiling for negative numbers.",
+    "The answer is the maximum value over all states and all ending positions."
+  ]
+}

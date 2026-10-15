@@ -1,0 +1,44 @@
+{
+  "id": "magic-squares-in-grid",
+  "title": "840. Magic Squares In Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/magic-squares-in-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[4,3,8,4],[9,5,1,9],[2,7,6,2]]",
+      "output": "1",
+      "explanation": "The following subgrid is a 3 x 3 magic square: while this one is not: In total, there is only one magic square inside the given grid."
+    },
+    {
+      "input": "grid = [[8]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numMagicSquaresInside(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numMagicSquaresInside(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numMagicSquaresInside(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function numMagicSquaresInside(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumMagicSquaresInside(int[][] grid) {\n        \n    }\n}",
+    "go": "func numMagicSquaresInside(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_magic_squares_inside(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[4,3,8,4],[9,5,1,9],[2,7,6,2]]"
+    },
+    {
+      "grid": "[[8]]"
+    }
+  ],
+  "functionName": "numMagicSquaresInside",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,64 @@
+{
+  "id": "minimum-number-of-operations-to-make-arrays-similar",
+  "title": "2449. Minimum Number of Operations to Make Arrays Similar",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [8,12,6], target = [2,14,10]",
+      "output": "2",
+      "explanation": "It is possible to make nums similar to target in two operations: - Choose i = 0 and j = 2, nums = [10,12,4]. - Choose i = 1 and j = 2, nums = [10,14,2]. It can be shown that 2 is the minimum number of operations needed."
+    },
+    {
+      "input": "nums = [1,2,5], target = [4,1,3]",
+      "output": "1",
+      "explanation": "We can make nums similar to target in one operation: - Choose i = 1 and j = 2, nums = [1,4,3]."
+    },
+    {
+      "input": "nums = [1,1,1,1,1], target = [1,1,1,1,1]",
+      "output": "0",
+      "explanation": "The array nums is already similiar to target."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long makeSimilar(vector<int>& nums, vector<int>& target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long makeSimilar(int[] nums, int[] target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeSimilar(self, nums: list[int], target: list[int]) -> int:\n        ",
+    "typescript": "function makeSimilar(nums: number[], target: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MakeSimilar(int[] nums, int[] target) {\n        \n    }\n}",
+    "go": "func makeSimilar(nums []int, target []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_similar(nums: Vec<i32>, target: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[8,12,6]",
+      "target": "[2,14,10]"
+    },
+    {
+      "nums": "[1,2,5]",
+      "target": "[4,1,3]"
+    },
+    {
+      "nums": "[1,1,1,1,1]",
+      "target": "[1,1,1,1,1]"
+    }
+  ],
+  "functionName": "makeSimilar",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Solve for even and odd numbers separately.",
+    "Greedily match smallest even element from nums to smallest even element from target, then similarly next smallest element and so on.",
+    "Similarly, match odd elements too."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "count-ways-to-build-good-strings",
+  "title": "2466. Count Ways To Build Good Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-ways-to-build-good-strings/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "low = 3, high = 3, zero = 1, one = 1",
+      "output": "8",
+      "explanation": "One possible valid good string is \"011\". It can be constructed as follows: \"\" -> \"0\" -> \"01\" -> \"011\". All binary strings from \"000\" to \"111\" are good strings in this example."
+    },
+    {
+      "input": "low = 2, high = 3, zero = 1, one = 2",
+      "output": "5",
+      "explanation": "The good strings are \"00\", \"11\", \"000\", \"110\", and \"011\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countGoodStrings(int low, int high, int zero, int one) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countGoodStrings(int low, int high, int zero, int one) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countGoodStrings(self, low: int, high: int, zero: int, one: int) -> int:\n        ",
+    "typescript": "function countGoodStrings(low: number, high: number, zero: number, one: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountGoodStrings(int low, int high, int zero, int one) {\n        \n    }\n}",
+    "go": "func countGoodStrings(low int, high int, zero int, one int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_good_strings(low: i32, high: i32, zero: i32, one: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "low": 3,
+      "high": 3,
+      "zero": 1,
+      "one": 1
+    },
+    {
+      "low": 2,
+      "high": 3,
+      "zero": 1,
+      "one": 2
+    }
+  ],
+  "functionName": "countGoodStrings",
+  "params": [
+    {
+      "name": "low",
+      "type": "int"
+    },
+    {
+      "name": "high",
+      "type": "int"
+    },
+    {
+      "name": "zero",
+      "type": "int"
+    },
+    {
+      "name": "one",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Calculate the number of good strings with length less or equal to some constant x.",
+    "Apply dynamic programming using the group size of consecutive zeros and ones."
+  ]
+}

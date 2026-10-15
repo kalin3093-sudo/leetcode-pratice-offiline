@@ -1,0 +1,49 @@
+{
+  "id": "lexicographically-largest-power-array",
+  "title": "4059. Lexicographically Largest Power Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/lexicographically-largest-power-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [7,5]",
+      "output": "[0,0,0,0,0,0,0,0,0,0,0,0,2,1,2]",
+      "explanation": "Choose perm = [7, 5]. Both elements have bit 2 set, so power[12] = 2. The first element has bit 1 set, but the second does not, so power[13] = 1. Both elements have bit 0 set, so power[14] = 2. All higher bits are unset in the first element, so the remaining entries are 0."
+    },
+    {
+      "input": "nums = [3,1,7]",
+      "output": "[0,0,0,0,0,0,0,0,0,0,0,0,1,2,3]",
+      "explanation": "Choose perm = [7, 3, 1]. The first element has bit 2 set, but the second does not, so power[12] = 1. The first two elements have bit 1 set, but the third does not, so power[13] = 2. All three elements have bit 0 set, so power[14] = 3. All higher bits are unset in the first element, so the remaining entries are 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> largestPower(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] largestPower(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestPower(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function largestPower(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] LargestPower(int[] nums) {\n        \n    }\n}",
+    "go": "func largestPower(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_power(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[7,5]\r"
+    },
+    {
+      "nums": "[3,1,7]\r"
+    }
+  ],
+  "functionName": "largestPower",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "<p>Process bits from 14 down to 0, maximizing each entry without changing previously maximized entries. Maintain ordered groups of elements that can still be rearranged freely within each group. Initially, all elements belong to one group.</p>",
+    "<p>For the current bit, scan the groups from the beginning. Pass over groups whose elements all have this bit set. At the first group containing an element without this bit set, split it into elements with the bit set followed by elements without it. Stop there and leave all later groups unchanged.</p>",
+    "<p>The current entry of <code>power</code> equals the total size of the fully passed groups plus the number of elements with the bit set in the split group. Preserve the resulting group order for subsequent bits. This takes <code>O(15n)</code> time.</p>"
+  ]
+}

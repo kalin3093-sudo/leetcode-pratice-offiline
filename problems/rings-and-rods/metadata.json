@@ -1,0 +1,56 @@
+{
+  "id": "rings-and-rods",
+  "title": "2103. Rings and Rods",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/rings-and-rods/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "rings = \"B0B6G0R6R0R6G9\"",
+      "output": "1",
+      "explanation": "- The rod labeled 0 holds 3 rings with all colors: red, green, and blue. - The rod labeled 6 holds 3 rings, but it only has red and blue. - The rod labeled 9 holds only a green ring. Thus, the number of rods with all three colors is 1."
+    },
+    {
+      "input": "rings = \"B0R0G0R9R0B0G0\"",
+      "output": "1",
+      "explanation": "- The rod labeled 0 holds 6 rings with all colors: red, green, and blue. - The rod labeled 9 holds only a red ring. Thus, the number of rods with all three colors is 1."
+    },
+    {
+      "input": "rings = \"G4\"",
+      "output": "0",
+      "explanation": "Only one ring is given. Thus, no rods have all three colors."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPoints(string rings) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPoints(String rings) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPoints(self, rings: str) -> int:\n        ",
+    "typescript": "function countPoints(rings: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPoints(string rings) {\n        \n    }\n}",
+    "go": "func countPoints(rings string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_points(rings: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rings": "B0B6G0R6R0R6G9"
+    },
+    {
+      "rings": "B0R0G0R9R0B0G0"
+    },
+    {
+      "rings": "G4"
+    }
+  ],
+  "functionName": "countPoints",
+  "params": [
+    {
+      "name": "rings",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For every rod, look through ‘rings’ to see if the rod contains all colors.",
+    "Create 3 booleans, 1 for each color, to store if that color is present for the current rod. If all 3 are true after looking through the string, then the rod contains all the colors."
+  ]
+}

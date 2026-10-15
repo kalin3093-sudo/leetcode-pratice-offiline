@@ -1,0 +1,59 @@
+{
+  "id": "minimum-swaps-to-group-all-1s-together-ii",
+  "title": "2134. Minimum Swaps to Group All 1's Together II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,0,1,1,0,0]",
+      "output": "1",
+      "explanation": "Here are a few of the ways to group all the 1's together: [0,0,1,1,1,0,0] using 1 swap. [0,1,1,1,0,0,0] using 1 swap. [1,1,0,0,0,0,1] using 2 swaps (using the circular property of the array). There is no way to group all 1's together with 0 swaps. Thus, the minimum number of swaps required is 1."
+    },
+    {
+      "input": "nums = [0,1,1,1,0,0,1,1,0]",
+      "output": "2",
+      "explanation": "Here are a few of the ways to group all the 1's together: [1,1,1,0,0,0,0,1,1] using 2 swaps (using the circular property of the array). [1,1,1,1,1,0,0,0,0] using 2 swaps. There is no way to group all 1's together with 0 or 1 swaps. Thus, the minimum number of swaps required is 2."
+    },
+    {
+      "input": "nums = [1,1,0,0,1]",
+      "output": "0",
+      "explanation": "All the 1's are already grouped together due to the circular property of the array. Thus, the minimum number of swaps required is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSwaps(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSwaps(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSwaps(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minSwaps(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSwaps(int[] nums) {\n        \n    }\n}",
+    "go": "func minSwaps(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_swaps(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,0,1,1,0,0]"
+    },
+    {
+      "nums": "[0,1,1,1,0,0,1,1,0]"
+    },
+    {
+      "nums": "[1,1,0,0,1]"
+    }
+  ],
+  "functionName": "minSwaps",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Notice that the number of 1’s to be grouped together is fixed. It is the number of 1's the whole array has.",
+    "Call this number total. We should then check for every subarray of size total (possibly wrapped around), how many swaps are required to have the subarray be all 1’s.",
+    "The number of swaps required is the number of 0’s in the subarray.",
+    "To eliminate the circular property of the array, we can append the original array to itself. Then, we check each subarray of length total.",
+    "How do we avoid recounting the number of 0’s in the subarray each time? The Sliding Window technique can help."
+  ]
+}

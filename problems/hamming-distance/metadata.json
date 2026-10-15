@@ -1,0 +1,50 @@
+{
+  "id": "hamming-distance",
+  "title": "461. Hamming Distance",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/hamming-distance/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "x = 1, y = 4",
+      "output": "2",
+      "explanation": "1   (0 0 0 1) 4   (0 1 0 0) &uarr;   &uarr; The above arrows point to positions where the corresponding bits are different."
+    },
+    {
+      "input": "x = 3, y = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int hammingDistance(int x, int y) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int hammingDistance(int x, int y) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hammingDistance(self, x: int, y: int) -> int:\n        ",
+    "typescript": "function hammingDistance(x: number, y: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int HammingDistance(int x, int y) {\n        \n    }\n}",
+    "go": "func hammingDistance(x int, y int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn hamming_distance(x: i32, y: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "x": 1,
+      "y": 4
+    },
+    {
+      "x": 3,
+      "y": 1
+    }
+  ],
+  "functionName": "hammingDistance",
+  "params": [
+    {
+      "name": "x",
+      "type": "int"
+    },
+    {
+      "name": "y",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

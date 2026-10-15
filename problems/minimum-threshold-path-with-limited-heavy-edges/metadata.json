@@ -1,0 +1,81 @@
+{
+  "id": "minimum-threshold-path-with-limited-heavy-edges",
+  "title": "3924. Minimum Threshold Path With Limited Heavy Edges",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-threshold-path-with-limited-heavy-edges/",
+  "category": "binary-search",
+  "examples": [
+    {
+      "input": "n = 6, edges = [[0,1,5],[1,2,3],[3,4,4],[4,5,1],[1,4,2]], source = 0, target = 3, k = 1",
+      "output": "4",
+      "explanation": "The minimum threshold such that a path from node 0 to node 3 uses at most 1 heavy edge is 4. Light edges: [1, 2, 3], [3, 4, 4], [4, 5, 1], [1, 4, 2] Heavy edges: [0, 1, 5] A valid path is 0 &rarr; 1 &rarr; 4 &rarr; 3. It uses only 1 heavy edge ([0, 1, 5]), which satisfies the limit k = 1. Any smaller threshold would make it impossible to reach node 3 without exceeding 1 heavy edge."
+    },
+    {
+      "input": "n = 6, edges = [[0,1,3],[1,2,4],[3,4,5],[4,5,6]], source = 0, target = 4, k = 1",
+      "output": "-1",
+      "explanation": "There is no path from node 0 to node 4. Since the target cannot be reached, the output is -1."
+    },
+    {
+      "input": "n = 4, edges = [[0,1,2],[1,2,2],[2,3,2],[3,0,2]], source = 0, target = 0, k = 0",
+      "output": "0",
+      "explanation": "The source and target are the same node. No edges need to be traversed, so the minimum threshold is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumThreshold(int n, vector<vector<int>>& edges, int source, int target, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumThreshold(int n, int[][] edges, int source, int target, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumThreshold(self, n: int, edges: List[List[int]], source: int, target: int, k: int) -> int:\n        ",
+    "typescript": "function minimumThreshold(n: number, edges: number[][], source: number, target: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumThreshold(int n, int[][] edges, int source, int target, int k) {\n        \n    }\n}",
+    "go": "func minimumThreshold(n int, edges [][]int, source int, target int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_threshold(n: i32, edges: Vec<Vec<i32>>, source: i32, target: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "edges": "[[0,1,5],[1,2,3],[3,4,4],[4,5,1],[1,4,2]]",
+      "source": 0,
+      "target": 3,
+      "k": 1
+    },
+    {
+      "n": 6,
+      "edges": "[[0,1,3],[1,2,4],[3,4,5],[4,5,6]]",
+      "source": 0,
+      "target": 4,
+      "k": 1
+    },
+    {
+      "n": 4,
+      "edges": "[[0,1,2],[1,2,2],[2,3,2],[3,0,2]]",
+      "source": 0,
+      "target": 0,
+      "k": 0
+    }
+  ],
+  "functionName": "minimumThreshold",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "source",
+      "type": "int"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

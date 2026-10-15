@@ -1,0 +1,22 @@
+[
+  {
+    "xCorner": 3,
+    "yCorner": 4,
+    "circles": "[[2,1,1]]"
+  },
+  {
+    "xCorner": 3,
+    "yCorner": 3,
+    "circles": "[[1,1,2]]"
+  },
+  {
+    "xCorner": 3,
+    "yCorner": 3,
+    "circles": "[[2,1,1],[1,2,1]]"
+  },
+  {
+    "xCorner": 4,
+    "yCorner": 4,
+    "circles": "[[5,5,1]]"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "id": "count-the-number-of-beautiful-subarrays",
+  "title": "2588. Count the Number of Beautiful Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,3,1,2,4]",
+      "output": "2",
+      "explanation": "There are 2 beautiful subarrays in nums: [4,3,1,2,4] and [4,3,1,2,4]. - We can make all elements in the subarray [3,1,2] equal to 0 in the following way: - Choose [3, 1, 2] and k = 1. Subtract 21 from both numbers. The subarray becomes [1, 1, 0]. - Choose [1, 1, 0] and k = 0. Subtract 20 from both numbers. The subarray becomes [0, 0, 0]. - We can make all elements in the subarray [4,3,1,2,4] equal to 0 in the following way: - Choose [4, 3, 1, 2, 4] and k = 2. Subtract 22 from both numbers. The subarray becomes [0, 3, 1, 2, 0]. - Choose [0, 3, 1, 2, 0] and k = 0. Subtract 20 from both numbers. The subarray becomes [0, 2, 0, 2, 0]. - Choose [0, 2, 0, 2, 0] and k = 1. Subtract 21 from both numbers. The subarray becomes [0, 0, 0, 0, 0]."
+    },
+    {
+      "input": "nums = [1,10,4]",
+      "output": "0",
+      "explanation": "There are no beautiful subarrays in nums."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long beautifulSubarrays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long beautifulSubarrays(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def beautifulSubarrays(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function beautifulSubarrays(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long BeautifulSubarrays(int[] nums) {\n        \n    }\n}",
+    "go": "func beautifulSubarrays(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn beautiful_subarrays(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,3,1,2,4]"
+    },
+    {
+      "nums": "[1,10,4]"
+    }
+  ],
+  "functionName": "beautifulSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "A subarray is beautiful if its xor is equal to zero.",
+    "Compute the prefix xor for every index, then the xor of subarray [left, right] is equal to zero if prefix_xor[left] ^ perfix_xor[right] == 0",
+    "Iterate from left to right and maintain a hash table to count the number of indices equal to the current prefix xor."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "longer-contiguous-segments-of-ones-than-zeros",
+  "title": "1869. Longer Contiguous Segments of Ones than Zeros",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1101\"",
+      "output": "true",
+      "explanation": "The longest contiguous segment of 1s has length 2: \"1101\" The longest contiguous segment of 0s has length 1: \"1101\" The segment of 1s is longer, so return true."
+    },
+    {
+      "input": "s = \"111000\"",
+      "output": "false",
+      "explanation": "The longest contiguous segment of 1s has length 3: \"111000\" The longest contiguous segment of 0s has length 3: \"111000\" The segment of 1s is not longer, so return false."
+    },
+    {
+      "input": "s = \"110100010\"",
+      "output": "false",
+      "explanation": "The longest contiguous segment of 1s has length 2: \"110100010\" The longest contiguous segment of 0s has length 3: \"110100010\" The segment of 1s is not longer, so return false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkZeroOnes(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkZeroOnes(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkZeroOnes(self, s: str) -> bool:\n        ",
+    "typescript": "function checkZeroOnes(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckZeroOnes(string s) {\n        \n    }\n}",
+    "go": "func checkZeroOnes(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_zero_ones(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1101"
+    },
+    {
+      "s": "111000"
+    },
+    {
+      "s": "110100010"
+    }
+  ],
+  "functionName": "checkZeroOnes",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Check every possible segment of 0s and 1s.",
+    "Is there a way to iterate through the string to keep track of the current character and its count?"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "find-the-maximum-factor-score-of-array",
+  "title": "3334. Find the Maximum Factor Score of Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-maximum-factor-score-of-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,4,8,16]",
+      "output": "64",
+      "explanation": "On removing 2, the GCD of the rest of the elements is 4 while the LCM is 16, which gives a maximum factor score of 4 * 16 = 64."
+    },
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "60",
+      "explanation": "The maximum factor score of 60 can be obtained without removing any elements."
+    },
+    {
+      "input": "nums = [3]",
+      "output": "9"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxScore(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxScore(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxScore(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxScore(int[] nums) {\n        \n    }\n}",
+    "go": "func maxScore(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,4,8,16]"
+    },
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[3]"
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use brute force approach with two loops.",
+    "Optimize using prefix and suffix arrays."
+  ]
+}

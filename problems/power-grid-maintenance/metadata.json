@@ -1,0 +1,63 @@
+{
+  "id": "power-grid-maintenance",
+  "title": "3607. Power Grid Maintenance",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/power-grid-maintenance/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "c = 5, connections = [[1,2],[2,3],[3,4],[4,5]], queries = [[1,3],[2,1],[1,1],[2,2],[1,2]]",
+      "output": "[3,2,3]",
+      "explanation": "Initially, all stations {1, 2, 3, 4, 5} are online and form a single power grid. Query [1,3]: Station 3 is online, so the maintenance check is resolved by station 3. Query [2,1]: Station 1 goes offline. The remaining online stations are {2, 3, 4, 5}. Query [1,1]: Station 1 is offline, so the check is resolved by the operational station with the smallest id among {2, 3, 4, 5}, which is station 2. Query [2,2]: Station 2 goes offline. The remaining online stations are {3, 4, 5}. Query [1,2]: Station 2 is offline, so the check is resolved by the operational station with the smallest id among {3, 4, 5}, which is station 3."
+    },
+    {
+      "input": "c = 3, connections = [], queries = [[1,1],[2,1],[1,1]]",
+      "output": "[1,-1]",
+      "explanation": "There are no connections, so each station is its own isolated grid. Query [1,1]: Station 1 is online in its isolated grid, so the maintenance check is resolved by station 1. Query [2,1]: Station 1 goes offline. Query [1,1]: Station 1 is offline and there are no other stations in its grid, so the result is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> processQueries(int c, vector<vector<int>>& connections, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] processQueries(int c, int[][] connections, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def processQueries(self, c: int, connections: List[List[int]], queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function processQueries(c: number, connections: number[][], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ProcessQueries(int c, int[][] connections, int[][] queries) {\n        \n    }\n}",
+    "go": "func processQueries(c int, connections [][]int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn process_queries(c: i32, connections: Vec<Vec<i32>>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "c": 5,
+      "connections": "[[1,2],[2,3],[3,4],[4,5]]",
+      "queries": "[[1,3],[2,1],[1,1],[2,2],[1,2]]"
+    },
+    {
+      "c": 3,
+      "connections": "[]",
+      "queries": "[[1,1],[2,1],[1,1]]"
+    }
+  ],
+  "functionName": "processQueries",
+  "params": [
+    {
+      "name": "c",
+      "type": "int"
+    },
+    {
+      "name": "connections",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use DFS or BFS to assign each station a component ID",
+    "For each component, maintain a sorted set of online station IDs",
+    "For query <code>[2, x]</code>, remove <code>x</code> from the set of its component",
+    "For query <code>[1, x]</code>, if <code>x</code> is in its component’s set return <code>x</code>; otherwise if the set is non-empty return its smallest element; else return <code>-1</code>",
+    "Precompute all components and then handle each query in O(log n) time using the sorted sets"
+  ]
+}

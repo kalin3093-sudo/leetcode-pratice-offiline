@@ -1,0 +1,63 @@
+{
+  "id": "check-if-a-string-contains-all-binary-codes-of-size-k",
+  "title": "1461. Check If a String Contains All Binary Codes of Size K",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"00110110\", k = 2",
+      "output": "true",
+      "explanation": "The binary codes of length 2 are \"00\", \"01\", \"10\" and \"11\". They can be all found as substrings at indices 0, 1, 3 and 2 respectively."
+    },
+    {
+      "input": "s = \"0110\", k = 1",
+      "output": "true",
+      "explanation": "The binary codes of length 1 are \"0\" and \"1\", it is clear that both exist as a substring."
+    },
+    {
+      "input": "s = \"0110\", k = 2",
+      "output": "false",
+      "explanation": "The binary code \"00\" is of length 2 and does not exist in the array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool hasAllCodes(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean hasAllCodes(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hasAllCodes(self, s: str, k: int) -> bool:\n        ",
+    "typescript": "function hasAllCodes(s: string, k: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HasAllCodes(string s, int k) {\n        \n    }\n}",
+    "go": "func hasAllCodes(s string, k int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn has_all_codes(s: String, k: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "00110110",
+      "k": 2
+    },
+    {
+      "s": "0110",
+      "k": 1
+    },
+    {
+      "s": "0110",
+      "k": 2
+    }
+  ],
+  "functionName": "hasAllCodes",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "We need only to check all sub-strings of length k.",
+    "The number of distinct sub-strings should be exactly 2^k."
+  ]
+}

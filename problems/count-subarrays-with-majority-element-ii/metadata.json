@@ -1,0 +1,66 @@
+{
+  "id": "count-subarrays-with-majority-element-ii",
+  "title": "3739. Count Subarrays With Majority Element II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,2,3], target = 2",
+      "output": "5",
+      "explanation": "Valid subarrays with target = 2 as the majority element: nums[1..1] = [2] nums[2..2] = [2] nums[1..2] = [2,2] nums[0..2] = [1,2,2] nums[1..3] = [2,2,3] So there are 5 such subarrays."
+    },
+    {
+      "input": "nums = [1,1,1,1], target = 1",
+      "output": "10",
+      "explanation": "All 10 subarrays have 1 as the majority element."
+    },
+    {
+      "input": "nums = [1,2,3], target = 4",
+      "output": "0",
+      "explanation": "target = 4 does not appear in nums at all. Therefore, there cannot be any subarray where 4 is the majority element. Hence the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countMajoritySubarrays(vector<int>& nums, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countMajoritySubarrays(int[] nums, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countMajoritySubarrays(self, nums: List[int], target: int) -> int:\n        ",
+    "typescript": "function countMajoritySubarrays(nums: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountMajoritySubarrays(int[] nums, int target) {\n        \n    }\n}",
+    "go": "func countMajoritySubarrays(nums []int, target int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_majority_subarrays(nums: Vec<i32>, target: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,2,3]",
+      "target": 2
+    },
+    {
+      "nums": "[1,1,1,1]",
+      "target": 1
+    },
+    {
+      "nums": "[1,2,3]",
+      "target": 4
+    }
+  ],
+  "functionName": "countMajoritySubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Convert to +1/-1: let <code>arr[i] = 1</code> if <code>nums[i] == target</code> else <code>-1</code>.",
+    "Build prefix sums: <code>pref[0]=0</code>, <code>pref[k] = pref[k - 1] + arr[k - 1]</code> for <code>k=1..n</code>.",
+    "Count pairs <code>(i < j)</code> with <code>pref[j] > pref[i]</code> (these correspond to subarrays where <code>target</code> is majority).",
+    "Use coordinate compression on all <code>pref</code> values and a Fenwick tree / ordered map: iterate <code>k</code> from <code>0..n</code>, query how many previous <code>pref</code> are < current, add to <code>ans</code>, then update.",
+    "If <code>target</code> never appears return <code>0</code>."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "unique-length-3-palindromic-subsequences",
+  "title": "1930. Unique Length-3 Palindromic Subsequences",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/unique-length-3-palindromic-subsequences/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aabca\"",
+      "output": "3",
+      "explanation": "The 3 palindromic subsequences of length 3 are: - \"aba\" (subsequence of \"aabca\") - \"aaa\" (subsequence of \"aabca\") - \"aca\" (subsequence of \"aabca\")"
+    },
+    {
+      "input": "s = \"adc\"",
+      "output": "0",
+      "explanation": "There are no palindromic subsequences of length 3 in \"adc\"."
+    },
+    {
+      "input": "s = \"bbcbaba\"",
+      "output": "4",
+      "explanation": "The 4 palindromic subsequences of length 3 are: - \"bbb\" (subsequence of \"bbcbaba\") - \"bcb\" (subsequence of \"bbcbaba\") - \"bab\" (subsequence of \"bbcbaba\") - \"aba\" (subsequence of \"bbcbaba\")"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPalindromicSubsequence(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPalindromicSubsequence(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPalindromicSubsequence(self, s: str) -> int:\n        ",
+    "typescript": "function countPalindromicSubsequence(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPalindromicSubsequence(string s) {\n        \n    }\n}",
+    "go": "func countPalindromicSubsequence(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_palindromic_subsequence(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aabca"
+    },
+    {
+      "s": "adc"
+    },
+    {
+      "s": "bbcbaba"
+    }
+  ],
+  "functionName": "countPalindromicSubsequence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What is the maximum number of length-3 palindromic strings?",
+    "How can we keep track of the characters that appeared to the left of a given position?"
+  ]
+}

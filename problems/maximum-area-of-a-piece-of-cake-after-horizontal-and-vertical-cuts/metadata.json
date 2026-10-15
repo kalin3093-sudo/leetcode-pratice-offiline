@@ -1,0 +1,76 @@
+{
+  "id": "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+  "title": "1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "h = 5, w = 4, horizontalCuts = [1,2,4], verticalCuts = [1,3]",
+      "output": "4",
+      "explanation": "The figure above represents the given rectangular cake. Red lines are the horizontal and vertical cuts. After you cut the cake, the green piece of cake has the maximum area."
+    },
+    {
+      "input": "h = 5, w = 4, horizontalCuts = [3,1], verticalCuts = [1]",
+      "output": "6",
+      "explanation": "The figure above represents the given rectangular cake. Red lines are the horizontal and vertical cuts. After you cut the cake, the green and yellow pieces of cake have the maximum area."
+    },
+    {
+      "input": "h = 5, w = 4, horizontalCuts = [3], verticalCuts = [3]",
+      "output": "9"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxArea(int h, int w, vector<int>& horizontalCuts, vector<int>& verticalCuts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxArea(self, h: int, w: int, horizontalCuts: list[int], verticalCuts: list[int]) -> int:\n        ",
+    "typescript": "function maxArea(h: number, w: number, horizontalCuts: number[], verticalCuts: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts) {\n        \n    }\n}",
+    "go": "func maxArea(h int, w int, horizontalCuts []int, verticalCuts []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_area(h: i32, w: i32, horizontal_cuts: Vec<i32>, vertical_cuts: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "h": 5,
+      "w": 4,
+      "horizontalCuts": "[1,2,4]",
+      "verticalCuts": "[1,3]"
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "horizontalCuts": "[3,1]",
+      "verticalCuts": "[1]"
+    },
+    {
+      "h": 5,
+      "w": 4,
+      "horizontalCuts": "[3]",
+      "verticalCuts": "[3]"
+    }
+  ],
+  "functionName": "maxArea",
+  "params": [
+    {
+      "name": "h",
+      "type": "int"
+    },
+    {
+      "name": "w",
+      "type": "int"
+    },
+    {
+      "name": "horizontalCuts",
+      "type": "int_array"
+    },
+    {
+      "name": "verticalCuts",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the arrays, then compute the maximum difference between two consecutive elements for horizontal cuts and vertical cuts.",
+    "The answer is the product of these maximum values in horizontal cuts and vertical cuts."
+  ]
+}

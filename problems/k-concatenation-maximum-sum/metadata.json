@@ -1,0 +1,62 @@
+{
+  "id": "k-concatenation-maximum-sum",
+  "title": "1191. K-Concatenation Maximum Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/k-concatenation-maximum-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,2], k = 3",
+      "output": "9"
+    },
+    {
+      "input": "arr = [1,-2,1], k = 5",
+      "output": "2"
+    },
+    {
+      "input": "arr = [-1,-2], k = 7",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int kConcatenationMaxSum(vector<int>& arr, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int kConcatenationMaxSum(int[] arr, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kConcatenationMaxSum(self, arr: list[int], k: int) -> int:\n        ",
+    "typescript": "function kConcatenationMaxSum(arr: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int KConcatenationMaxSum(int[] arr, int k) {\n        \n    }\n}",
+    "go": "func kConcatenationMaxSum(arr []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn k_concatenation_max_sum(arr: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,2]",
+      "k": 3
+    },
+    {
+      "arr": "[1,-2,1]",
+      "k": 5
+    },
+    {
+      "arr": "[-1,-2]",
+      "k": 7
+    }
+  ],
+  "functionName": "kConcatenationMaxSum",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How to solve the problem for k=1 ?",
+    "Use Kadane's algorithm for k=1.",
+    "What are the possible cases for the answer ?",
+    "The answer is the maximum between, the answer for k=1, the sum of the whole array multiplied by k, or the maximum suffix sum plus the maximum prefix sum plus (k-2) multiplied by the whole array sum for k > 1."
+  ]
+}

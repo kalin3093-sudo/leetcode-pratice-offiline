@@ -1,0 +1,61 @@
+{
+  "id": "successful-pairs-of-spells-and-potions",
+  "title": "2300. Successful Pairs of Spells and Potions",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "spells = [5,1,3], potions = [1,2,3,4,5], success = 7",
+      "output": "[4,0,3]",
+      "explanation": "- 0th spell: 5 * [1,2,3,4,5] = [5,10,15,20,25]. 4 pairs are successful. - 1st spell: 1 * [1,2,3,4,5] = [1,2,3,4,5]. 0 pairs are successful. - 2nd spell: 3 * [1,2,3,4,5] = [3,6,9,12,15]. 3 pairs are successful. Thus, [4,0,3] is returned."
+    },
+    {
+      "input": "spells = [3,1,2], potions = [8,5,8], success = 16",
+      "output": "[2,0,2]",
+      "explanation": "- 0th spell: 3 * [8,5,8] = [24,15,24]. 2 pairs are successful. - 1st spell: 1 * [8,5,8] = [8,5,8]. 0 pairs are successful. - 2nd spell: 2 * [8,5,8] = [16,10,16]. 2 pairs are successful. Thus, [2,0,2] is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] successfulPairs(int[] spells, int[] potions, long success) {\n        \n    }\n}",
+    "python": "class Solution:\n    def successfulPairs(self, spells: list[int], potions: list[int], success: int) -> list[int]:\n        ",
+    "typescript": "function successfulPairs(spells: number[], potions: number[], success: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SuccessfulPairs(int[] spells, int[] potions, long success) {\n        \n    }\n}",
+    "go": "func successfulPairs(spells []int, potions []int, success int64) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn successful_pairs(spells: Vec<i32>, potions: Vec<i32>, success: i64) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "spells": "[5,1,3]",
+      "potions": "[1,2,3,4,5]",
+      "success": "7"
+    },
+    {
+      "spells": "[3,1,2]",
+      "potions": "[8,5,8]",
+      "success": "16"
+    }
+  ],
+  "functionName": "successfulPairs",
+  "params": [
+    {
+      "name": "spells",
+      "type": "int_array"
+    },
+    {
+      "name": "potions",
+      "type": "int_array"
+    },
+    {
+      "name": "success",
+      "type": "long"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Notice that if a spell and potion pair is successful, then the spell and all stronger potions will be successful too.",
+    "Thus, for each spell, we need to find the potion with the least strength that will form a successful pair.",
+    "We can efficiently do this by sorting the potions based on strength and using binary search."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "goat-latin",
+  "title": "824. Goat Latin",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/goat-latin/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "sentence = \"I speak Goat Latin\"",
+      "output": "\"Imaa peaksmaaa oatGmaaaa atinLmaaaaa\""
+    },
+    {
+      "input": "sentence = \"The quick brown fox jumped over the lazy dog\"",
+      "output": "\"heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string toGoatLatin(string sentence) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String toGoatLatin(String sentence) {\n        \n    }\n}",
+    "python": "class Solution:\n    def toGoatLatin(self, sentence: str) -> str:\n        ",
+    "typescript": "function toGoatLatin(sentence: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ToGoatLatin(string sentence) {\n        \n    }\n}",
+    "go": "func toGoatLatin(sentence string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn to_goat_latin(sentence: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "sentence": "I speak Goat Latin"
+    },
+    {
+      "sentence": "The quick brown fox jumped over the lazy dog"
+    }
+  ],
+  "functionName": "toGoatLatin",
+  "params": [
+    {
+      "name": "sentence",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "tag-validator",
+  "title": "591. Tag Validator",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/tag-validator/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "code = \"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
+      "output": "true",
+      "explanation": "The code is wrapped in a closed tag : <DIV> and </DIV>. The TAG_NAME is valid, the TAG_CONTENT consists of some characters and cdata. Although CDATA_CONTENT has an unmatched start tag with invalid TAG_NAME, it should be considered as plain text, not parsed as a tag. So TAG_CONTENT is valid, and then the code is valid. Thus return true."
+    },
+    {
+      "input": "code = \"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
+      "output": "true",
+      "explanation": "We first separate the code into : start_tag|tag_content|end_tag. start_tag -> \"<DIV>\" end_tag -> \"</DIV>\" tag_content could also be separated into : text1|cdata|text2. text1 -> \">>  ![cdata[]] \" cdata -> \"<![CDATA[<div>]>]]>\", where the CDATA_CONTENT is \"<div>]>\" text2 -> \"]]>>]\" The reason why start_tag is NOT \"<DIV>>>\" is because of the rule 6. The reason why cdata is NOT \"<![CDATA[<div>]>]]>]]>\" is because of the rule 7."
+    },
+    {
+      "input": "code = \"<A>  <B> </A>   </B>\"",
+      "output": "false",
+      "explanation": "Unbalanced. If \"<A>\" is closed, then \"<B>\" must be unmatched, and vice versa."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isValid(string code) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isValid(String code) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isValid(self, code: str) -> bool:\n        ",
+    "typescript": "function isValid(code: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsValid(string code) {\n        \n    }\n}",
+    "go": "func isValid(code string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_valid(code: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "code": "<DIV>This is the first line <![CDATA[<div>]]></DIV>"
+    },
+    {
+      "code": "<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>"
+    },
+    {
+      "code": "<A>  <B> </A>   </B>"
+    }
+  ],
+  "functionName": "isValid",
+  "params": [
+    {
+      "name": "code",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

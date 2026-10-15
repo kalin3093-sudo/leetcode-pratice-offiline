@@ -1,0 +1,61 @@
+{
+  "id": "find-the-original-typed-string-ii",
+  "title": "3333. Find the Original Typed String II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-original-typed-string-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"aabbccdd\", k = 7",
+      "output": "5",
+      "explanation": "The possible strings are: \"aabbccdd\", \"aabbccd\", \"aabbcdd\", \"aabccdd\", and \"abbccdd\"."
+    },
+    {
+      "input": "word = \"aabbccdd\", k = 8",
+      "output": "1",
+      "explanation": "The only possible string is \"aabbccdd\"."
+    },
+    {
+      "input": "word = \"aaabbb\", k = 3",
+      "output": "8"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int possibleStringCount(string word, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int possibleStringCount(String word, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def possibleStringCount(self, word: str, k: int) -> int:\n        ",
+    "typescript": "function possibleStringCount(word: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PossibleStringCount(string word, int k) {\n        \n    }\n}",
+    "go": "func possibleStringCount(word string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn possible_string_count(word: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "aabbccdd",
+      "k": 7
+    },
+    {
+      "word": "aabbccdd",
+      "k": 8
+    },
+    {
+      "word": "aaabbb",
+      "k": 3
+    }
+  ],
+  "functionName": "possibleStringCount",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Instead of solving for at least <code>k</code>, can we solve for at most <code>k - 1</code> length?"
+  ]
+}

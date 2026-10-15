@@ -1,0 +1,65 @@
+{
+  "id": "smallest-stable-index-ii",
+  "title": "3904. Smallest Stable Index II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/smallest-stable-index-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,0,1,4], k = 3",
+      "output": "3",
+      "explanation": "At index 0: The maximum in [5] is 5, and the minimum in [5, 0, 1, 4] is 0, so the instability score is 5 - 0 = 5. At index 1: The maximum in [5, 0] is 5, and the minimum in [0, 1, 4] is 0, so the instability score is 5 - 0 = 5. At index 2: The maximum in [5, 0, 1] is 5, and the minimum in [1, 4] is 1, so the instability score is 5 - 1 = 4. At index 3: The maximum in [5, 0, 1, 4] is 5, and the minimum in [4] is 4, so the instability score is 5 - 4 = 1. This is the first index with an instability score less than or equal to k = 3. Thus, the answer is 3."
+    },
+    {
+      "input": "nums = [3,2,1], k = 1",
+      "output": "-1",
+      "explanation": "At index 0, the instability score is 3 - 1 = 2. At index 1, the instability score is 3 - 1 = 2. At index 2, the instability score is 3 - 1 = 2. None of these values is less than or equal to k = 1, so the answer is -1."
+    },
+    {
+      "input": "nums = [0], k = 0",
+      "output": "0",
+      "explanation": "At index 0, the instability score is 0 - 0 = 0, which is less than or equal to k = 0. Therefore, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int firstStableIndex(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int firstStableIndex(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def firstStableIndex(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function firstStableIndex(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FirstStableIndex(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func firstStableIndex(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn first_stable_index(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,0,1,4]",
+      "k": 3
+    },
+    {
+      "nums": "[3,2,1]",
+      "k": 1
+    },
+    {
+      "nums": "[0]",
+      "k": 0
+    }
+  ],
+  "functionName": "firstStableIndex",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Precompute prefix maximums in an array <code>prefMax</code>, where <code>prefMax[i]</code> is the maximum of <code>nums[0..i]</code>",
+    "Precompute suffix minimums in an array <code>suffMin</code>, where <code>suffMin[i]</code> is the minimum of <code>nums[i..n-1]</code>",
+    "For each index <code>i</code>, compute the instability score as <code>prefMax[i] - suffMin[i]</code>",
+    "Return the smallest index where the instability score is <code><= k</code>. If no such index exists, return <code>-1</code>"
+  ]
+}

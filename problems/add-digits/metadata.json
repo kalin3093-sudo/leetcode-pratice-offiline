@@ -1,0 +1,49 @@
+{
+  "id": "add-digits",
+  "title": "258. Add Digits",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/add-digits/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 38",
+      "output": "2",
+      "explanation": "The process is 38 --> 3 + 8 --> 11 11 --> 1 + 1 --> 2 Since 2 has only one digit, return it."
+    },
+    {
+      "input": "num = 0",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int addDigits(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int addDigits(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def addDigits(self, num: int) -> int:\n        ",
+    "typescript": "function addDigits(num: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AddDigits(int num) {\n        \n    }\n}",
+    "go": "func addDigits(num int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn add_digits(num: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 38
+    },
+    {
+      "num": 0
+    }
+  ],
+  "functionName": "addDigits",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A naive implementation of the above process is trivial. Could you come up with other methods?",
+    "What are all the possible results?",
+    "How do they occur, periodically or randomly?",
+    "You may find this <a href=\"https://en.wikipedia.org/wiki/Digital_root\" target=\"_blank\">Wikipedia article</a> useful."
+  ]
+}

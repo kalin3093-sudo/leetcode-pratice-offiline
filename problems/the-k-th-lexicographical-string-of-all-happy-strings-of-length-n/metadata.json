@@ -1,0 +1,63 @@
+{
+  "id": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+  "title": "1415. The k-th Lexicographical String of All Happy Strings of Length n",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 1, k = 3",
+      "output": "\"c\"",
+      "explanation": "The list [\"a\", \"b\", \"c\"] contains all happy strings of length 1. The third string is \"c\"."
+    },
+    {
+      "input": "n = 1, k = 4",
+      "output": "\"\"",
+      "explanation": "There are only 3 happy strings of length 1."
+    },
+    {
+      "input": "n = 3, k = 9",
+      "output": "\"cab\"",
+      "explanation": "There are 12 different happy string of length 3 [\"aba\", \"abc\", \"aca\", \"acb\", \"bab\", \"bac\", \"bca\", \"bcb\", \"cab\", \"cac\", \"cba\", \"cbc\"]. You will find the 9th string = \"cab\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string getHappyString(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String getHappyString(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getHappyString(self, n: int, k: int) -> str:\n        ",
+    "typescript": "function getHappyString(n: number, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GetHappyString(int n, int k) {\n        \n    }\n}",
+    "go": "func getHappyString(n int, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_happy_string(n: i32, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1,
+      "k": 3
+    },
+    {
+      "n": 1,
+      "k": 4
+    },
+    {
+      "n": 3,
+      "k": 9
+    }
+  ],
+  "functionName": "getHappyString",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Generate recursively all the happy strings of length n.",
+    "Sort them in lexicographical order and return the kth string if it exists."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "lexicographically-smallest-equivalent-string",
+  "title": "1061. Lexicographically Smallest Equivalent String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-equivalent-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s1 = \"parker\", s2 = \"morris\", baseStr = \"parser\"",
+      "output": "\"makkek\"",
+      "explanation": "Based on the equivalency information in s1 and s2, we can group their characters as [m,p], [a,o], [k,r,s], [e,i]. The characters in each group are equivalent and sorted in lexicographical order. So the answer is \"makkek\"."
+    },
+    {
+      "input": "s1 = \"hello\", s2 = \"world\", baseStr = \"hold\"",
+      "output": "\"hdld\"",
+      "explanation": "Based on the equivalency information in s1 and s2, we can group their characters as [h,w], [d,e,o], [l,r]. So only the second letter 'o' in baseStr is changed to 'd', the answer is \"hdld\"."
+    },
+    {
+      "input": "s1 = \"leetcode\", s2 = \"programs\", baseStr = \"sourcecode\"",
+      "output": "\"aauaaaaada\"",
+      "explanation": "We group the equivalent characters in s1 and s2 as [a,o,e,r,s,c], [l,p], [g,t] and [d,m], thus all letters in baseStr except 'u' and 'd' are transformed to 'a', the answer is \"aauaaaaada\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestEquivalentString(string s1, string s2, string baseStr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestEquivalentString(String s1, String s2, String baseStr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestEquivalentString(self, s1: str, s2: str, baseStr: str) -> str:\n        ",
+    "typescript": "function smallestEquivalentString(s1: string, s2: string, baseStr: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestEquivalentString(string s1, string s2, string baseStr) {\n        \n    }\n}",
+    "go": "func smallestEquivalentString(s1 string, s2 string, baseStr string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_equivalent_string(s1: String, s2: String, base_str: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s1": "parker",
+      "s2": "morris",
+      "baseStr": "parser"
+    },
+    {
+      "s1": "hello",
+      "s2": "world",
+      "baseStr": "hold"
+    },
+    {
+      "s1": "leetcode",
+      "s2": "programs",
+      "baseStr": "sourcecode"
+    }
+  ],
+  "functionName": "smallestEquivalentString",
+  "params": [
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    },
+    {
+      "name": "baseStr",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Model these equalities as edges of a graph.",
+    "Group each connected component of the graph and assign each node of this component to the node with the lowest lexicographically character.",
+    "Finally convert the string with the precalculated information."
+  ]
+}

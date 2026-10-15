@@ -1,0 +1,55 @@
+{
+  "id": "invalid-transactions",
+  "title": "1169. Invalid Transactions",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/invalid-transactions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "transactions = [\"alice,20,800,mtv\",\"alice,50,100,beijing\"]",
+      "output": "[\"alice,20,800,mtv\",\"alice,50,100,beijing\"]",
+      "explanation": "The first transaction is invalid because the second transaction occurs within a difference of 60 minutes, have the same name and is in a different city. Similarly the second one is invalid too."
+    },
+    {
+      "input": "transactions = [\"alice,20,800,mtv\",\"alice,50,1200,mtv\"]",
+      "output": "[\"alice,50,1200,mtv\"]"
+    },
+    {
+      "input": "transactions = [\"alice,20,800,mtv\",\"bob,50,1200,mtv\"]",
+      "output": "[\"bob,50,1200,mtv\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> invalidTransactions(vector<string>& transactions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> invalidTransactions(String[] transactions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def invalidTransactions(self, transactions: List[str]) -> List[str]:\n        ",
+    "typescript": "function invalidTransactions(transactions: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> InvalidTransactions(string[] transactions) {\n        \n    }\n}",
+    "go": "func invalidTransactions(transactions []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn invalid_transactions(transactions: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "transactions": "[\"alice,20,800,mtv\",\"alice,50,100,beijing\"]"
+    },
+    {
+      "transactions": "[\"alice,20,800,mtv\",\"alice,50,1200,mtv\"]"
+    },
+    {
+      "transactions": "[\"alice,20,800,mtv\",\"bob,50,1200,mtv\"]"
+    }
+  ],
+  "functionName": "invalidTransactions",
+  "params": [
+    {
+      "name": "transactions",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Split each string into four arrays.",
+    "For each transaction check if it's invalid, you can do this with just a loop with help of the four arrays generated on step 1.",
+    "At the end you perform O(N ^ 2) operations."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "minimum-cost-to-set-cooking-time",
+  "title": "2162. Minimum Cost to Set Cooking Time",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-cost-to-set-cooking-time/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "startAt = 1, moveCost = 2, pushCost = 1, targetSeconds = 600",
+      "output": "6",
+      "explanation": "The following are the possible ways to set the cooking time. - 1 0 0 0, interpreted as 10 minutes and 0 seconds. The finger is already on digit 1, pushes 1 (with cost 1), moves to 0 (with cost 2), pushes 0 (with cost 1), pushes 0 (with cost 1), and pushes 0 (with cost 1). The cost is: 1 + 2 + 1 + 1 + 1 = 6. This is the minimum cost. - 0 9 6 0, interpreted as 9 minutes and 60 seconds. That is also 600 seconds. The finger moves to 0 (with cost 2), pushes 0 (with cost 1), moves to 9 (with cost 2), pushes 9 (with cost 1), moves to 6 (with cost 2), pushes 6 (with cost 1), moves to 0 (with cost 2), and pushes 0 (with cost 1). The cost is: 2 + 1 + 2 + 1 + 2 + 1 + 2 + 1 = 12. - 9 6 0, normalized as 0960 and interpreted as 9 minutes and 60 seconds. The finger moves to 9 (with cost 2), pushes 9 (with cost 1), moves to 6 (with cost 2), pushes 6 (with cost 1), moves to 0 (with cost 2), and pushes 0 (with cost 1). The cost is: 2 + 1 + 2 + 1 + 2 + 1 = 9."
+    },
+    {
+      "input": "startAt = 0, moveCost = 1, pushCost = 2, targetSeconds = 76",
+      "output": "6",
+      "explanation": "The optimal way is to push two digits: 7 6, interpreted as 76 seconds. The finger moves to 7 (with cost 1), pushes 7 (with cost 2), moves to 6 (with cost 1), and pushes 6 (with cost 2). The total cost is: 1 + 2 + 1 + 2 = 6 Note other possible ways are 0076, 076, 0116, and 116, but none of them produces the minimum cost."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCostSetTime(int startAt, int moveCost, int pushCost, int targetSeconds) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCostSetTime(int startAt, int moveCost, int pushCost, int targetSeconds) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCostSetTime(self, startAt: int, moveCost: int, pushCost: int, targetSeconds: int) -> int:\n        ",
+    "typescript": "function minCostSetTime(startAt: number, moveCost: number, pushCost: number, targetSeconds: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCostSetTime(int startAt, int moveCost, int pushCost, int targetSeconds) {\n        \n    }\n}",
+    "go": "func minCostSetTime(startAt int, moveCost int, pushCost int, targetSeconds int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost_set_time(start_at: i32, move_cost: i32, push_cost: i32, target_seconds: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "startAt": 1,
+      "moveCost": 2,
+      "pushCost": 1,
+      "targetSeconds": 600
+    },
+    {
+      "startAt": 0,
+      "moveCost": 1,
+      "pushCost": 2,
+      "targetSeconds": 76
+    }
+  ],
+  "functionName": "minCostSetTime",
+  "params": [
+    {
+      "name": "startAt",
+      "type": "int"
+    },
+    {
+      "name": "moveCost",
+      "type": "int"
+    },
+    {
+      "name": "pushCost",
+      "type": "int"
+    },
+    {
+      "name": "targetSeconds",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Define a separate function Cost(mm, ss) where 0 <= mm <= 99 and 0 <= ss <= 99. This function should calculate the cost of setting the cooking time to mm minutes and ss seconds",
+    "The range of the minutes is small (i.e., [0, 99]), how can you use that?",
+    "For every mm in [0, 99], calculate the needed ss to make mm:ss equal to targetSeconds and minimize the cost of setting the cooking time to mm:ss",
+    "Be careful in some cases when ss is not in the valid range [0, 99]."
+  ]
+}

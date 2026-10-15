@@ -1,0 +1,63 @@
+{
+  "id": "count-the-number-of-consistent-strings",
+  "title": "1684. Count the Number of Consistent Strings",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-the-number-of-consistent-strings/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "allowed = \"ab\", words = [\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "output": "2",
+      "explanation": "Strings \"aaab\" and \"baa\" are consistent since they only contain characters 'a' and 'b'."
+    },
+    {
+      "input": "allowed = \"abc\", words = [\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
+      "output": "7",
+      "explanation": "All strings are consistent."
+    },
+    {
+      "input": "allowed = \"cad\", words = [\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]",
+      "output": "4",
+      "explanation": "Strings \"cc\", \"acd\", \"ac\", and \"d\" are consistent."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countConsistentStrings(string allowed, vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countConsistentStrings(String allowed, String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countConsistentStrings(self, allowed: str, words: List[str]) -> int:\n        ",
+    "typescript": "function countConsistentStrings(allowed: string, words: string[]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int CountConsistentStrings(string allowed, string[] words) {\n        \n    }\n}",
+    "go": "func countConsistentStrings(allowed string, words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_consistent_strings(allowed: String, words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "allowed": "ab",
+      "words": "[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]"
+    },
+    {
+      "allowed": "abc",
+      "words": "[\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]"
+    },
+    {
+      "allowed": "cad",
+      "words": "[\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]"
+    }
+  ],
+  "functionName": "countConsistentStrings",
+  "params": [
+    {
+      "name": "allowed",
+      "type": "string"
+    },
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A string is incorrect if it contains a character that is not allowed",
+    "Constraints are small enough for brute force"
+  ]
+}

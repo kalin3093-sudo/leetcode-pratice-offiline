@@ -1,0 +1,49 @@
+{
+  "id": "find-maximum-area-of-a-triangle",
+  "title": "3588. Find Maximum Area of a Triangle",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-maximum-area-of-a-triangle/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "coords = [[1,1],[1,2],[3,2],[3,3]]",
+      "output": "2",
+      "explanation": "The triangle shown in the image has a base 1 and height 2. Hence its area is 1/2 * base * height = 1."
+    },
+    {
+      "input": "coords = [[1,1],[2,2],[3,3]]",
+      "output": "-1",
+      "explanation": "The only possible triangle has corners (1, 1), (2, 2), and (3, 3). None of its sides are parallel to the x-axis or the y-axis."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxArea(vector<vector<int>>& coords) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxArea(int[][] coords) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxArea(self, coords: List[List[int]]) -> int:\n        ",
+    "typescript": "function maxArea(coords: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxArea(int[][] coords) {\n        \n    }\n}",
+    "go": "func maxArea(coords [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_area(coords: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "coords": "[[1,1],[1,2],[3,2],[3,3]]"
+    },
+    {
+      "coords": "[[1,1],[2,2],[3,3]]"
+    }
+  ],
+  "functionName": "maxArea",
+  "params": [
+    {
+      "name": "coords",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<code>area * 2 = base * height</code>",
+    "Let the base be parallel to the x‑axis or y‑axis",
+    "Sort to find the maximum base for each fixed <code>x</code> (or <code>y</code>), then the maximum height comes from the extreme values of the other coordinate."
+  ]
+}

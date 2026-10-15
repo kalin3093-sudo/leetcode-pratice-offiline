@@ -1,0 +1,63 @@
+{
+  "id": "minimum-moves-to-clean-the-classroom",
+  "title": "3568. Minimum Moves to Clean the Classroom",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "classroom = [\"S.\", \"XL\"], energy = 2",
+      "output": "2",
+      "explanation": "The student starts at cell (0, 0) with 2 units of energy. Since cell (1, 0) contains an obstacle 'X', the student cannot move directly downward. A valid sequence of moves to collect all litter is as follows: Move 1: From (0, 0) &rarr; (0, 1) with 1 unit of energy and 1 unit remaining. Move 2: From (0, 1) &rarr; (1, 1) to collect the litter 'L'. The student collects all the litter using 2 moves. Thus, the output is 2."
+    },
+    {
+      "input": "classroom = [\"LS\", \"RL\"], energy = 4",
+      "output": "3",
+      "explanation": "The student starts at cell (0, 1) with 4 units of energy. A valid sequence of moves to collect all litter is as follows: Move 1: From (0, 1) &rarr; (0, 0) to collect the first litter 'L' with 1 unit of energy used and 3 units remaining. Move 2: From (0, 0) &rarr; (1, 0) to 'R' to reset and restore energy back to 4. Move 3: From (1, 0) &rarr; (1, 1) to collect the second litter 'L'. The student collects all the litter using 3 moves. Thus, the output is 3."
+    },
+    {
+      "input": "classroom = [\"L.S\", \"RXL\"], energy = 3",
+      "output": "-1",
+      "explanation": "No valid path collects all 'L'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minMoves(vector<string>& classroom, int energy) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minMoves(String[] classroom, int energy) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minMoves(self, classroom: List[str], energy: int) -> int:\n        ",
+    "typescript": "function minMoves(classroom: string[], energy: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinMoves(string[] classroom, int energy) {\n        \n    }\n}",
+    "go": "func minMoves(classroom []string, energy int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_moves(classroom: Vec<String>, energy: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "classroom": "[\"S.\", \"XL\"]",
+      "energy": 2
+    },
+    {
+      "classroom": "[\"LS\", \"RL\"]",
+      "energy": 4
+    },
+    {
+      "classroom": "[\"L.S\", \"RXL\"]",
+      "energy": 3
+    }
+  ],
+  "functionName": "minMoves",
+  "params": [
+    {
+      "name": "classroom",
+      "type": "string_array"
+    },
+    {
+      "name": "energy",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use BFS with states <code>(x, y, mask, e, steps)</code>, initializing with <code>(sx, sy, 0, energy, 0)</code>, and for each move update <code>e</code> (–1 per step), update <code>mask</code> on 'L', reset <code>e=energy</code> on 'R', and return <code>steps</code> when <code>mask == fullMask</code>.",
+    "Maintain a 3D array <code>bestEnergy[x][y][mask]</code> storing the maximum <code>e</code> seen for each <code>(x,y,mask)</code> and skip any new state with <code>e <= bestEnergy[x][y][mask]</code> to prune."
+  ]
+}

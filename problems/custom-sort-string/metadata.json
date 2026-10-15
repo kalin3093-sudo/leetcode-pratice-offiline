@@ -1,0 +1,51 @@
+{
+  "id": "custom-sort-string",
+  "title": "791. Custom Sort String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/custom-sort-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "order = \"cba\", s = \"abcd\"",
+      "output": "\"cbad\"",
+      "explanation": "\"a\", \"b\", \"c\" appear in order, so the order of \"a\", \"b\", \"c\" should be \"c\", \"b\", and \"a\". Since \"d\" does not appear in order, it can be at any position in the returned string. \"dcba\", \"cdba\", \"cbda\" are also valid outputs."
+    },
+    {
+      "input": "order = \"bcafg\", s = \"abcd\"",
+      "output": "\"bcad\"",
+      "explanation": "The characters \"b\", \"c\", and \"a\" from order dictate the order for the characters in s. The character \"d\" in s does not appear in order, so its position is flexible. Following the order of appearance in order, \"b\", \"c\", and \"a\" from s should be arranged as \"b\", \"c\", \"a\". \"d\" can be placed at any position since it's not in order. The output \"bcad\" correctly follows this rule. Other arrangements like \"dbca\" or \"bcda\" would also be valid, as long as \"b\", \"c\", \"a\" maintain their order."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string customSortString(string order, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String customSortString(String order, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def customSortString(self, order: str, s: str) -> str:\n        ",
+    "typescript": "function customSortString(order: string, s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string CustomSortString(string order, string s) {\n        \n    }\n}",
+    "go": "func customSortString(order string, s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn custom_sort_string(order: String, s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "order": "cba",
+      "s": "abcd"
+    },
+    {
+      "order": "bcafg",
+      "s": "abcd"
+    }
+  ],
+  "functionName": "customSortString",
+  "params": [
+    {
+      "name": "order",
+      "type": "string"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

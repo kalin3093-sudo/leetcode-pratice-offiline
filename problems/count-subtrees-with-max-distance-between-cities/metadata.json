@@ -1,0 +1,62 @@
+{
+  "id": "count-subtrees-with-max-distance-between-cities",
+  "title": "1617. Count Subtrees With Max Distance Between Cities",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 4, edges = [[1,2],[2,3],[2,4]]",
+      "output": "[3,4,0]",
+      "explanation": "The subtrees with subsets {1,2}, {2,3} and {2,4} have a max distance of 1. The subtrees with subsets {1,2,3}, {1,2,4}, {2,3,4} and {1,2,3,4} have a max distance of 2. No subtree has two nodes where the max distance between them is 3."
+    },
+    {
+      "input": "n = 2, edges = [[1,2]]",
+      "output": "[1]"
+    },
+    {
+      "input": "n = 3, edges = [[1,2],[2,3]]",
+      "output": "[2,1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> countSubgraphsForEachDiameter(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] countSubgraphsForEachDiameter(int n, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSubgraphsForEachDiameter(self, n: int, edges: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function countSubgraphsForEachDiameter(n: number, edges: number[][]): number[] {\n\n};",
+    "csharp": "public class Solution {\n    public int[] CountSubgraphsForEachDiameter(int n, int[][] edges) {\n        \n    }\n}",
+    "go": "func countSubgraphsForEachDiameter(n int, edges [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_subgraphs_for_each_diameter(n: i32, edges: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "edges": "[[1,2],[2,3],[2,4]]"
+    },
+    {
+      "n": 2,
+      "edges": "[[1,2]]"
+    },
+    {
+      "n": 3,
+      "edges": "[[1,2],[2,3]]"
+    }
+  ],
+  "functionName": "countSubgraphsForEachDiameter",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Iterate through every possible subtree by doing a bitmask on which vertices to include. How can you determine if a subtree is valid (all vertices are connected)?",
+    "To determine connectivity, count the number of reachable vertices starting from any included vertex and only traveling on edges connecting 2 vertices in the subtree. The count should be the same as the number of 1s in the bitmask.",
+    "The diameter is basically the maximum distance between any two nodes. Root the tree at a vertex. The answer is the max of the heights of the two largest subtrees or the longest diameter in any of the subtrees."
+  ]
+}

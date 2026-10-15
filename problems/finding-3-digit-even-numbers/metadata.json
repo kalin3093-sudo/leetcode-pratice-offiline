@@ -1,0 +1,55 @@
+{
+  "id": "finding-3-digit-even-numbers",
+  "title": "2094. Finding 3-Digit Even Numbers",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/finding-3-digit-even-numbers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "digits = [2,1,3,0]",
+      "output": "[102,120,130,132,210,230,302,310,312,320]",
+      "explanation": "All the possible integers that follow the requirements are in the output array. Notice that there are no odd integers or integers with leading zeros."
+    },
+    {
+      "input": "digits = [2,2,8,8,2]",
+      "output": "[222,228,282,288,822,828,882]",
+      "explanation": "The same digit can be used as many times as it appears in digits. In this example, the digit 8 is used twice each time in 288, 828, and 882."
+    },
+    {
+      "input": "digits = [3,7,5]",
+      "output": "[]",
+      "explanation": "No even integers can be formed using the given digits."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findEvenNumbers(vector<int>& digits) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findEvenNumbers(int[] digits) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findEvenNumbers(self, digits: list[int]) -> list[int]:\n        ",
+    "typescript": "function findEvenNumbers(digits: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindEvenNumbers(int[] digits) {\n        \n    }\n}",
+    "go": "func findEvenNumbers(digits []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_even_numbers(digits: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "digits": "[2,1,3,0]"
+    },
+    {
+      "digits": "[2,2,8,8,2]"
+    },
+    {
+      "digits": "[3,7,5]"
+    }
+  ],
+  "functionName": "findEvenNumbers",
+  "params": [
+    {
+      "name": "digits",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "The range of possible answers includes all even numbers between 100 and 999 inclusive. Could you check each possible answer to see if it could be formed from the digits in the array?"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "calculate-money-in-leetcode-bank",
+  "title": "1716. Calculate Money in Leetcode Bank",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/calculate-money-in-leetcode-bank/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "10",
+      "explanation": "After the 4th day, the total is 1 + 2 + 3 + 4 = 10."
+    },
+    {
+      "input": "n = 10",
+      "output": "37",
+      "explanation": "After the 10th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4) = 37. Notice that on the 2nd Monday, Hercy only puts in $2."
+    },
+    {
+      "input": "n = 20",
+      "output": "96",
+      "explanation": "After the 20th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4 + 5 + 6 + 7 + 8) + (3 + 4 + 5 + 6 + 7 + 8) = 96."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int totalMoney(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int totalMoney(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def totalMoney(self, n: int) -> int:\n        ",
+    "typescript": "function totalMoney(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TotalMoney(int n) {\n        \n    }\n}",
+    "go": "func totalMoney(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn total_money(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4
+    },
+    {
+      "n": 10
+    },
+    {
+      "n": 20
+    }
+  ],
+  "functionName": "totalMoney",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the process by keeping track of how much money Hercy is putting in and which day of the week it is, and use this information to deduce how much money Hercy will put in the next day."
+  ]
+}

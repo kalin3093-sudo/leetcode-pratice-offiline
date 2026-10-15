@@ -1,0 +1,48 @@
+{
+  "id": "second-largest-digit-in-a-string",
+  "title": "1796. Second Largest Digit in a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/second-largest-digit-in-a-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"dfa12321afd\"",
+      "output": "2",
+      "explanation": "The digits that appear in s are [1, 2, 3]. The second largest digit is 2."
+    },
+    {
+      "input": "s = \"abc1111\"",
+      "output": "-1",
+      "explanation": "The digits that appear in s are [1]. There is no second largest digit."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int secondHighest(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int secondHighest(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def secondHighest(self, s: str) -> int:\n        ",
+    "typescript": "function secondHighest(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SecondHighest(string s) {\n        \n    }\n}",
+    "go": "func secondHighest(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn second_highest(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "dfa12321afd"
+    },
+    {
+      "s": "abc1111"
+    }
+  ],
+  "functionName": "secondHighest",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "First of all, get the distinct characters since we are only interested in those",
+    "Let's note that there might not be any digits."
+  ]
+}

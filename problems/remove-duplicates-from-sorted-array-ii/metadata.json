@@ -1,0 +1,45 @@
+{
+  "id": "remove-duplicates-from-sorted-array-ii",
+  "title": "80. Remove Duplicates from Sorted Array II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,1,2,2,3]",
+      "output": "5",
+      "explanation": "Your function should return k = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively. It does not matter what you leave beyond the returned k (hence they are underscores)."
+    },
+    {
+      "input": "nums = [0,0,1,1,1,1,2,3,3]",
+      "output": "7",
+      "explanation": "Your function should return k = 7, with the first seven elements of nums being 0, 0, 1, 1, 2, 3 and 3 respectively. It does not matter what you leave beyond the returned k (hence they are underscores)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int removeDuplicates(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int removeDuplicates(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeDuplicates(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function removeDuplicates(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RemoveDuplicates(int[] nums) {\n        \n    }\n}",
+    "go": "func removeDuplicates(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,1,2,2,3]"
+    },
+    {
+      "nums": "[0,0,1,1,1,1,2,3,3]"
+    }
+  ],
+  "functionName": "removeDuplicates",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

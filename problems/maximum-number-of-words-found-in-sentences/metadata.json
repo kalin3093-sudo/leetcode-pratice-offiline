@@ -1,0 +1,47 @@
+{
+  "id": "maximum-number-of-words-found-in-sentences",
+  "title": "2114. Maximum Number of Words Found in Sentences",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "sentences = [\"alice and bob love leetcode\", \"i think so too\", \"this is great thanks very much\"]",
+      "output": "6",
+      "explanation": "- The first sentence, \"alice and bob love leetcode\", has 5 words in total. - The second sentence, \"i think so too\", has 4 words in total. - The third sentence, \"this is great thanks very much\", has 6 words in total. Thus, the maximum number of words in a single sentence comes from the third sentence, which has 6 words."
+    },
+    {
+      "input": "sentences = [\"please wait\", \"continue to fight\", \"continue to win\"]",
+      "output": "3",
+      "explanation": "It is possible that multiple sentences contain the same number of words. In this example, the second and third sentences (underlined) have the same number of words."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int mostWordsFound(vector<string>& sentences) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int mostWordsFound(String[] sentences) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mostWordsFound(self, sentences: list[str]) -> int:\n        ",
+    "typescript": "function mostWordsFound(sentences: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MostWordsFound(string[] sentences) {\n        \n    }\n}",
+    "go": "func mostWordsFound(sentences []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn most_words_found(sentences: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "sentences": "[\"alice and bob love leetcode\",\"i think so too\",\"this is great thanks very much\"]"
+    },
+    {
+      "sentences": "[\"please wait\",\"continue to fight\",\"continue to win\"]"
+    }
+  ],
+  "functionName": "mostWordsFound",
+  "params": [
+    {
+      "name": "sentences",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Process each sentence separately and count the number of words by looking for the number of space characters in the sentence and adding it by 1."
+  ]
+}

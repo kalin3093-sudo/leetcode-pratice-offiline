@@ -1,0 +1,49 @@
+{
+  "id": "minimum-number-of-moves-to-make-palindrome",
+  "title": "2193. Minimum Number of Moves to Make Palindrome",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"aabb\"",
+      "output": "2",
+      "explanation": "We can obtain two palindromes from s, \"abba\" and \"baab\". - We can obtain \"abba\" from s in 2 moves: \"aabb\" -> \"abab\" -> \"abba\". - We can obtain \"baab\" from s in 2 moves: \"aabb\" -> \"abab\" -> \"baab\". Thus, the minimum number of moves needed to make s a palindrome is 2."
+    },
+    {
+      "input": "s = \"letelt\"",
+      "output": "2",
+      "explanation": "One of the palindromes we can obtain from s in 2 moves is \"lettel\". One of the ways we can obtain it is \"letelt\" -> \"letetl\" -> \"lettel\". Other palindromes such as \"tleelt\" can also be obtained in 2 moves. It can be shown that it is not possible to obtain a palindrome in less than 2 moves."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minMovesToMakePalindrome(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minMovesToMakePalindrome(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minMovesToMakePalindrome(self, s: str) -> int:\n        ",
+    "typescript": "function minMovesToMakePalindrome(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinMovesToMakePalindrome(string s) {\n        \n    }\n}",
+    "go": "func minMovesToMakePalindrome(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_moves_to_make_palindrome(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aabb"
+    },
+    {
+      "s": "letelt"
+    }
+  ],
+  "functionName": "minMovesToMakePalindrome",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider a greedy strategy.",
+    "Let’s start by making the leftmost and rightmost characters match with some number of swaps.",
+    "If we figure out how to do that using the minimum number of swaps, then we can delete the leftmost and rightmost characters and solve the problem recursively."
+  ]
+}

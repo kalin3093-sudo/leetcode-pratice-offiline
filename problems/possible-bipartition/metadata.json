@@ -1,0 +1,51 @@
+{
+  "id": "possible-bipartition",
+  "title": "886. Possible Bipartition",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/possible-bipartition/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "n = 4, dislikes = [[1,2],[1,3],[2,4]]",
+      "output": "true",
+      "explanation": "The first group has [1,4], and the second group has [2,3]."
+    },
+    {
+      "input": "n = 3, dislikes = [[1,2],[1,3],[2,3]]",
+      "output": "false",
+      "explanation": "We need at least 3 groups to divide them. We cannot put them in two groups."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool possibleBipartition(int n, vector<vector<int>>& dislikes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean possibleBipartition(int n, int[][] dislikes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def possibleBipartition(self, n: int, dislikes: list[list[int]]) -> bool:\n        ",
+    "typescript": "function possibleBipartition(n: number, dislikes: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool PossibleBipartition(int n, int[][] dislikes) {\n        \n    }\n}",
+    "go": "func possibleBipartition(n int, dislikes [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn possible_bipartition(n: i32, dislikes: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "dislikes": "[[1,2],[1,3],[2,4]]"
+    },
+    {
+      "n": 3,
+      "dislikes": "[[1,2],[1,3],[2,3]]"
+    }
+  ],
+  "functionName": "possibleBipartition",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "dislikes",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

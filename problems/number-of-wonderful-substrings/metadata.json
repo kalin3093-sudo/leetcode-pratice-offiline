@@ -1,0 +1,56 @@
+{
+  "id": "number-of-wonderful-substrings",
+  "title": "1915. Number of Wonderful Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-wonderful-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"aba\"",
+      "output": "4",
+      "explanation": "The four wonderful substrings are underlined below: - \"aba\" -> \"a\" - \"aba\" -> \"b\" - \"aba\" -> \"a\" - \"aba\" -> \"aba\""
+    },
+    {
+      "input": "word = \"aabb\"",
+      "output": "9",
+      "explanation": "The nine wonderful substrings are underlined below: - \"aabb\" -> \"a\" - \"aabb\" -> \"aa\" - \"aabb\" -> \"aab\" - \"aabb\" -> \"aabb\" - \"aabb\" -> \"a\" - \"aabb\" -> \"abb\" - \"aabb\" -> \"b\" - \"aabb\" -> \"bb\" - \"aabb\" -> \"b\""
+    },
+    {
+      "input": "word = \"he\"",
+      "output": "2",
+      "explanation": "The two wonderful substrings are underlined below: - \"he\" -> \"h\" - \"he\" -> \"e\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\r\npublic:\r\n    long long wonderfulSubstrings(string word) {\r\n        \r\n    }\r\n};",
+    "java": "class Solution {\r\n    public long wonderfulSubstrings(String word) {\r\n        \r\n    }\r\n}",
+    "python": "class Solution:\r\n    def wonderfulSubstrings(self, word: str) -> int:",
+    "typescript": "function wonderfulSubstrings(word: string): number {\r\n\r\n};",
+    "csharp": "public class Solution {\r\n    public long WonderfulSubstrings(string word) {\r\n        \r\n    }\r\n}",
+    "go": "func wonderfulSubstrings(word string) int64 {\r\n    \r\n}",
+    "rust": "impl Solution {\r\n    pub fn wonderful_substrings(word: String) -> i64 {\r\n        \r\n    }\r\n}"
+  },
+  "testCases": [
+    {
+      "word": "aba"
+    },
+    {
+      "word": "aabb"
+    },
+    {
+      "word": "he"
+    }
+  ],
+  "functionName": "wonderfulSubstrings",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "For each prefix of the string, check which characters are of even frequency and which are not and represent it by a bitmask.",
+    "Find the other prefixes whose masks differs from the current prefix mask by at most one bit."
+  ]
+}

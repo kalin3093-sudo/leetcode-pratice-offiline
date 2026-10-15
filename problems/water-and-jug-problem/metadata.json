@@ -1,0 +1,56 @@
+{
+  "id": "water-and-jug-problem",
+  "title": "365. Water and Jug Problem",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/water-and-jug-problem/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "x = 3, y = 5, target = 4",
+      "output": "true",
+      "explanation": "Follow these steps to reach a total of 4 liters: Fill the 5-liter jug (0, 5). Pour from the 5-liter jug into the 3-liter jug, leaving 2 liters (3, 2). Empty the 3-liter jug (0, 2). Transfer the 2 liters from the 5-liter jug to the 3-liter jug (2, 0). Fill the 5-liter jug again (2, 5). Pour from the 5-liter jug into the 3-liter jug until the 3-liter jug is full. This leaves 4 liters in the 5-liter jug (3, 4). Empty the 3-liter jug. Now, you have exactly 4 liters in the 5-liter jug (0, 4). Reference: The Die Hard example."
+    },
+    {
+      "input": "x = 2, y = 6, target = 5",
+      "output": "false"
+    },
+    {
+      "input": "x = 1, y = 2, target = 3",
+      "output": "true",
+      "explanation": "Fill both jugs. The total amount of water in both jugs is equal to 3 now."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canMeasureWater(int x, int y, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canMeasureWater(int x, int y, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canMeasureWater(self, x: int, y: int, target: int) -> bool:\n        ",
+    "typescript": "function canMeasureWater(x: number, y: number, target: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanMeasureWater(int x, int y, int target) {\n        \n    }\n}",
+    "go": "func canMeasureWater(x int, y int, target int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_measure_water(x: i32, y: i32, target: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "x": 3,
+      "y": 5,
+      "target": 4
+    }
+  ],
+  "functionName": "canMeasureWater",
+  "params": [
+    {
+      "name": "x",
+      "type": "int"
+    },
+    {
+      "name": "y",
+      "type": "int"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

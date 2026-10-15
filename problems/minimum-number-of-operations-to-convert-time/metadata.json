@@ -1,0 +1,54 @@
+{
+  "id": "minimum-number-of-operations-to-convert-time",
+  "title": "2224. Minimum Number of Operations to Convert Time",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "current = \"02:30\", correct = \"04:35\"",
+      "output": "3",
+      "explanation": "We can convert current to correct in 3 operations as follows: - Add 60 minutes to current. current becomes \"03:30\". - Add 60 minutes to current. current becomes \"04:30\". - Add 5 minutes to current. current becomes \"04:35\". It can be proven that it is not possible to convert current to correct in fewer than 3 operations."
+    },
+    {
+      "input": "current = \"11:00\", correct = \"11:01\"",
+      "output": "1",
+      "explanation": "We only have to add one minute to current, so the minimum number of operations needed is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int convertTime(string current, string correct) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int convertTime(String current, String correct) {\n        \n    }\n}",
+    "python": "class Solution:\n    def convertTime(self, current: str, correct: str) -> int:\n        ",
+    "typescript": "function convertTime(current: string, correct: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ConvertTime(string current, string correct) {\n        \n    }\n}",
+    "go": "func convertTime(current string, correct string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn convert_time(current: String, correct: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "current": "02:30",
+      "correct": "04:35"
+    },
+    {
+      "current": "11:00",
+      "correct": "11:01"
+    }
+  ],
+  "functionName": "convertTime",
+  "params": [
+    {
+      "name": "current",
+      "type": "string"
+    },
+    {
+      "name": "correct",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Convert the times to minutes.",
+    "Use the operation with the biggest value possible at each step."
+  ]
+}

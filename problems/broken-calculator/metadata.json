@@ -1,0 +1,60 @@
+{
+  "id": "broken-calculator",
+  "title": "991. Broken Calculator",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/broken-calculator/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "startValue = 2, target = 3",
+      "output": "2",
+      "explanation": "Use double operation and then decrement operation {2 -> 4 -> 3}."
+    },
+    {
+      "input": "startValue = 5, target = 8",
+      "output": "2",
+      "explanation": "Use decrement and then double {5 -> 4 -> 8}."
+    },
+    {
+      "input": "startValue = 3, target = 10",
+      "output": "3",
+      "explanation": "Use double, decrement and double {3 -> 6 -> 5 -> 10}."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int brokenCalc(int startValue, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int brokenCalc(int startValue, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def brokenCalc(self, startValue: int, target: int) -> int:\n        ",
+    "typescript": "function brokenCalc(startValue: number, target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BrokenCalc(int startValue, int target) {\n        \n    }\n}",
+    "go": "func brokenCalc(startValue int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn broken_calc(start_value: i32, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "startValue": 2,
+      "target": 3
+    },
+    {
+      "startValue": 5,
+      "target": 8
+    },
+    {
+      "startValue": 3,
+      "target": 10
+    }
+  ],
+  "functionName": "brokenCalc",
+  "params": [
+    {
+      "name": "startValue",
+      "type": "int"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

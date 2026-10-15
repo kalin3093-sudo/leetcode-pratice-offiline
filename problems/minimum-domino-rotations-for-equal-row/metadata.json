@@ -1,0 +1,51 @@
+{
+  "id": "minimum-domino-rotations-for-equal-row",
+  "title": "1007. Minimum Domino Rotations For Equal Row",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tops = [2,1,2,4,2,2], bottoms = [5,2,6,2,3,2]",
+      "output": "2",
+      "explanation": "The first figure represents the dominoes as given by tops and bottoms: before we do any rotations. If we rotate the second and fourth dominoes, we can make every value in the top row equal to 2, as indicated by the second figure."
+    },
+    {
+      "input": "tops = [3,5,1,2,3], bottoms = [3,6,3,3,4]",
+      "output": "-1",
+      "explanation": "In this case, it is not possible to rotate the dominoes to make one row of values equal."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDominoRotations(vector<int>& tops, vector<int>& bottoms) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDominoRotations(int[] tops, int[] bottoms) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDominoRotations(self, tops: list[int], bottoms: list[int]) -> int:\n        ",
+    "typescript": "function minDominoRotations(tops: number[], bottoms: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDominoRotations(int[] tops, int[] bottoms) {\n        \n    }\n}",
+    "go": "func minDominoRotations(tops []int, bottoms []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_domino_rotations(tops: Vec<i32>, bottoms: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tops": "[2,1,2,4,2,2]",
+      "bottoms": "[5,2,6,2,3,2]"
+    },
+    {
+      "tops": "[3,5,1,2,3]",
+      "bottoms": "[3,6,3,3,4]"
+    }
+  ],
+  "functionName": "minDominoRotations",
+  "params": [
+    {
+      "name": "tops",
+      "type": "int_array"
+    },
+    {
+      "name": "bottoms",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "count-numbers-with-non-decreasing-digits",
+  "title": "3519. Count Numbers with Non-Decreasing Digits ",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "l = \"23\", r = \"28\", b = 8",
+      "output": "3",
+      "explanation": "The numbers from 23 to 28 in base 8 are: 27, 30, 31, 32, 33, and 34. Out of these, 27, 33, and 34 have non-decreasing digits. Hence, the output is 3."
+    },
+    {
+      "input": "l = \"2\", r = \"7\", b = 2",
+      "output": "2",
+      "explanation": "The numbers from 2 to 7 in base 2 are: 10, 11, 100, 101, 110, and 111. Out of these, 11 and 111 have non-decreasing digits. Hence, the output is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countNumbers(string l, string r, int b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countNumbers(String l, String r, int b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countNumbers(self, l: str, r: str, b: int) -> int:\n        ",
+    "typescript": "function countNumbers(l: string, r: string, b: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountNumbers(string l, string r, int b) {\n        \n    }\n}",
+    "go": "func countNumbers(l string, r string, b int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_numbers(l: String, r: String, b: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": "23",
+      "r": "28",
+      "b": 8
+    },
+    {
+      "l": "2",
+      "r": "7",
+      "b": 2
+    }
+  ],
+  "functionName": "countNumbers",
+  "params": [
+    {
+      "name": "l",
+      "type": "string"
+    },
+    {
+      "name": "r",
+      "type": "string"
+    },
+    {
+      "name": "b",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use digit dynamic programming."
+  ]
+}

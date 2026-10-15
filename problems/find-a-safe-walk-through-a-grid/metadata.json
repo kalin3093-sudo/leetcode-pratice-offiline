@@ -1,0 +1,62 @@
+{
+  "id": "find-a-safe-walk-through-a-grid",
+  "title": "3286. Find a Safe Walk Through a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]], health = 1",
+      "output": "true",
+      "explanation": "The final cell can be reached safely by walking along the gray cells below."
+    },
+    {
+      "input": "grid = [[0,1,1,0,0,0],[1,0,1,0,0,0],[0,1,1,1,0,1],[0,0,1,0,1,0]], health = 3",
+      "output": "false",
+      "explanation": "A minimum of 4 health points is needed to reach the final cell safely."
+    },
+    {
+      "input": "grid = [[1,1,1],[1,0,1],[1,1,1]], health = 5",
+      "output": "true",
+      "explanation": "The final cell can be reached safely by walking along the gray cells below. Any path that does not go through the cell (1, 1) is unsafe since your health will drop to 0 when reaching the final cell."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool findSafeWalk(vector<vector<int>>& grid, int health) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean findSafeWalk(List<List<Integer>> grid, int health) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findSafeWalk(self, grid: List[List[int]], health: int) -> bool:\n        ",
+    "typescript": "function findSafeWalk(grid: number[][], health: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool FindSafeWalk(IList<IList<int>> grid, int health) {\n        \n    }\n}",
+    "go": "func findSafeWalk(grid [][]int, health int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_safe_walk(grid: Vec<Vec<i32>>, health: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]",
+      "health": 1
+    },
+    {
+      "grid": "[[0,1,1,0,0,0],[1,0,1,0,0,0],[0,1,1,1,0,1],[0,0,1,0,1,0]]",
+      "health": 3
+    },
+    {
+      "grid": "[[1,1,1],[1,0,1],[1,1,1]]",
+      "health": 5
+    }
+  ],
+  "functionName": "findSafeWalk",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_list_2d"
+    },
+    {
+      "name": "health",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use 01 BFS."
+  ]
+}

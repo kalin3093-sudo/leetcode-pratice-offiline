@@ -1,0 +1,50 @@
+{
+  "id": "maximum-number-of-non-overlapping-substrings",
+  "title": "1520. Maximum Number of Non-Overlapping Substrings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"adefaddaccc\"",
+      "output": "[\"e\",\"f\",\"ccc\"]",
+      "explanation": "The following are all the possible substrings that meet the conditions: [ \"adefaddaccc\" \"adefadda\", \"ef\", \"e\", \"f\", \"ccc\", ] If we choose the first string, we cannot choose anything else and we'd get only 1. If we choose \"adefadda\", we are left with \"ccc\" which is the only one that doesn't overlap, thus obtaining 2 substrings. Notice also, that it's not optimal to choose \"ef\" since it can be split into two. Therefore, the optimal way is to choose [\"e\",\"f\",\"ccc\"] which gives us 3 substrings. No other solution of the same number of substrings exist."
+    },
+    {
+      "input": "s = \"abbaccd\"",
+      "output": "[\"d\",\"bb\",\"cc\"]",
+      "explanation": "Notice that while the set of substrings [\"d\",\"abba\",\"cc\"] also has length 3, it's considered incorrect since it has larger total length."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> maxNumOfSubstrings(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> maxNumOfSubstrings(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxNumOfSubstrings(self, s: str) -> list[str]:\n        ",
+    "typescript": "function maxNumOfSubstrings(s: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> MaxNumOfSubstrings(string s) {\n        \n    }\n}",
+    "go": "func maxNumOfSubstrings(s string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_num_of_substrings(s: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "adefaddaccc"
+    },
+    {
+      "s": "abbaccd"
+    }
+  ],
+  "functionName": "maxNumOfSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Notice that it's impossible for any two valid substrings to overlap unless one is inside another.",
+    "We can start by finding the starting and ending index for each character.",
+    "From these indices, we can form the substrings by expanding each character's range if necessary (if another character exists in the range with smaller/larger starting/ending index).",
+    "Sort the valid substrings by length and greedily take those with the smallest length, discarding the ones that overlap those we took."
+  ]
+}

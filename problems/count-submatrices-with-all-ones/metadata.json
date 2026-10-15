@@ -1,0 +1,48 @@
+{
+  "id": "count-submatrices-with-all-ones",
+  "title": "1504. Count Submatrices With All Ones",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-submatrices-with-all-ones/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[1,0,1],[1,1,0],[1,1,0]]",
+      "output": "13",
+      "explanation": "There are 6 rectangles of side 1x1. There are 2 rectangles of side 1x2. There are 3 rectangles of side 2x1. There is 1 rectangle of side 2x2. There is 1 rectangle of side 3x1. Total number of rectangles = 6 + 2 + 3 + 1 + 1 = 13."
+    },
+    {
+      "input": "mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
+      "output": "24",
+      "explanation": "There are 8 rectangles of side 1x1. There are 5 rectangles of side 1x2. There are 2 rectangles of side 1x3. There are 4 rectangles of side 2x1. There are 2 rectangles of side 2x2. There are 2 rectangles of side 3x1. There is 1 rectangle of side 3x2. Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSubmat(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSubmat(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSubmat(self, mat: list[list[int]]) -> int:\n        ",
+    "typescript": "function numSubmat(mat: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSubmat(int[][] mat) {\n        \n    }\n}",
+    "go": "func numSubmat(mat [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_submat(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[1,0,1],[1,1,0],[1,1,0]]"
+    },
+    {
+      "mat": "[[0,1,1,0],[0,1,1,1],[1,1,1,0]]"
+    }
+  ],
+  "functionName": "numSubmat",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each row i, create an array nums where:  if mat[i][j] == 0 then nums[j] = 0 else nums[j] = nums[j-1] +1.",
+    "In the row i, number of rectangles between column j and k(inclusive) and ends in row i, is equal to SUM(min(nums[j, .. idx])) where idx go from j to k.  Expected solution is O(n^3)."
+  ]
+}

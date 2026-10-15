@@ -1,0 +1,9 @@
+You are given a positive integer `k`.
+
+Find the **smallest** integer `n` divisible by `k` that consists of **only the digit 1** in its decimal representation (e.g., 1, 11, 111, ...).
+
+Return an integer denoting the **number of digits** in the decimal representation of `n`. If no such `n` exists, return `-1`.
+
+**Constraints:**
+
+-   `2 ≤ k ≤ 10^5`

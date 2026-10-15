@@ -1,0 +1,50 @@
+{
+  "id": "replace-question-marks-in-string-to-minimize-its-value",
+  "title": "3081. Replace Question Marks in String to Minimize Its Value",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"???\"",
+      "output": "\"abc\"",
+      "explanation": "In this example, we can replace the occurrences of '?' to make s equal to \"abc\". For \"abc\", cost(0) = 0, cost(1) = 0, and cost(2) = 0. The value of \"abc\" is 0. Some other modifications of s that have a value of 0 are \"cba\", \"abz\", and, \"hey\". Among all of them, we choose the lexicographically smallest."
+    },
+    {
+      "input": "s = \"a?a?\"",
+      "output": "\"abac\"",
+      "explanation": "In this example, the occurrences of '?' can be replaced to make s equal to \"abac\". For \"abac\", cost(0) = 0, cost(1) = 0, cost(2) = 1, and cost(3) = 0. The value of \"abac\" is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minimizeStringValue(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minimizeStringValue(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeStringValue(self, s: str) -> str:\n        ",
+    "typescript": "function minimizeStringValue(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinimizeStringValue(string s) {\n        \n    }\n}",
+    "go": "func minimizeStringValue(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_string_value(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "???"
+    },
+    {
+      "s": "a?a?"
+    }
+  ],
+  "functionName": "minimizeStringValue",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "<p>The cost does not depend on the order of characters. If a character <code>c</code> appears <code>x</code> times, the cost is exactly <code>0 + 1 + 2 + … + (x − 1) = x * (x − 1) / 2</code>.</p>",
+    "<p>We know the total number of question marks; for each one, we should select the letter with the minimum frequency to replace it.</p>",
+    "<p>The letter selection can be achieved by a min-heap (or even by brute-forcing the <code>26</code> possibilities).</p>",
+    "<p>So, we know the extra letters we need to replace finally. However, we must put those letters in order from left to right so that the resulting string is the lexicographically smallest one.</p>"
+  ]
+}

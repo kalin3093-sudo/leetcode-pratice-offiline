@@ -1,0 +1,45 @@
+{
+  "id": "maximum-width-ramp",
+  "title": "962. Maximum Width Ramp",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-width-ramp/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [6,0,8,2,1,5]",
+      "output": "4",
+      "explanation": "The maximum width ramp is achieved at (i, j) = (1, 5): nums[1] = 0 and nums[5] = 5."
+    },
+    {
+      "input": "nums = [9,8,1,0,1,9,4,0,4,1]",
+      "output": "7",
+      "explanation": "The maximum width ramp is achieved at (i, j) = (2, 9): nums[2] = 1 and nums[9] = 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxWidthRamp(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxWidthRamp(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxWidthRamp(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maxWidthRamp(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxWidthRamp(int[] nums) {\n        \n    }\n}",
+    "go": "func maxWidthRamp(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_width_ramp(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[6,0,8,2,1,5]"
+    },
+    {
+      "nums": "[9,8,1,0,1,9,4,0,4,1]"
+    }
+  ],
+  "functionName": "maxWidthRamp",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "dungeon-game",
+  "title": "174. Dungeon Game",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/dungeon-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]",
+      "output": "7",
+      "explanation": "The initial health of the knight must be at least 7 if he follows the optimal path: RIGHT-> RIGHT -> DOWN -> DOWN."
+    },
+    {
+      "input": "dungeon = [[0]]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int calculateMinimumHP(vector<vector<int>>& dungeon) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int calculateMinimumHP(int[][] dungeon) {\n        \n    }\n}",
+    "python": "class Solution:\n    def calculateMinimumHP(self, dungeon: list[list[int]]) -> int:\n        ",
+    "typescript": "function calculateMinimumHP(dungeon: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CalculateMinimumHP(int[][] dungeon) {\n        \n    }\n}",
+    "go": "func calculateMinimumHP(dungeon [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn calculate_minimum_hp(dungeon: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "dungeon": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]"
+    },
+    {
+      "dungeon": "[[0]]"
+    }
+  ],
+  "functionName": "calculateMinimumHP",
+  "params": [
+    {
+      "name": "dungeon",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

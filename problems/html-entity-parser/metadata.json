@@ -1,0 +1,47 @@
+{
+  "id": "html-entity-parser",
+  "title": "1410. HTML Entity Parser",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/html-entity-parser/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "text = \"&amp; is an HTML entity but &ambassador; is not.\"",
+      "output": "\"& is an HTML entity but &ambassador; is not.\"",
+      "explanation": "The parser will replace the &amp; entity by &"
+    },
+    {
+      "input": "text = \"and I quote: &quot;...&quot;\"",
+      "output": "\"and I quote: \\\"...\\\"\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string entityParser(string text) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String entityParser(String text) {\n        \n    }\n}",
+    "python": "class Solution:\n    def entityParser(self, text: str) -> str:\n        ",
+    "typescript": "function entityParser(text: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string EntityParser(string text) {\n        \n    }\n}",
+    "go": "func entityParser(text string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn entity_parser(text: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "&amp; is an HTML entity but &ambassador; is not."
+    },
+    {
+      "text": "and I quote: &quot;...&quot;"
+    }
+  ],
+  "functionName": "entityParser",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Search the string for all the occurrences of the character '&'.",
+    "For every '&' check if it matches an HTML entity by checking the ';' character and if entity found replace it in the answer."
+  ]
+}

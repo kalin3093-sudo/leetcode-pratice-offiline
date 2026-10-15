@@ -1,0 +1,48 @@
+{
+  "id": "map-of-highest-peak",
+  "title": "1765. Map of Highest Peak",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/map-of-highest-peak/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "isWater = [[0,1],[0,0]]",
+      "output": "[[1,0],[2,1]]",
+      "explanation": "The image shows the assigned heights of each cell. The blue cell is the water cell, and the green cells are the land cells."
+    },
+    {
+      "input": "isWater = [[0,0,1],[1,0,0],[0,0,0]]",
+      "output": "[[1,1,0],[0,1,1],[1,2,2]]",
+      "explanation": "A height of 2 is the maximum possible height of any assignment. Any height assignment that has a maximum height of 2 while still meeting the rules will also be accepted."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> highestPeak(vector<vector<int>>& isWater) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] highestPeak(int[][] isWater) {\n        \n    }\n}",
+    "python": "class Solution:\n    def highestPeak(self, isWater: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function highestPeak(isWater: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] HighestPeak(int[][] isWater) {\n        \n    }\n}",
+    "go": "func highestPeak(isWater [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn highest_peak(is_water: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "isWater": "[[0,1],[0,0]]"
+    },
+    {
+      "isWater": "[[0,0,1],[1,0,0],[0,0,0]]"
+    }
+  ],
+  "functionName": "highestPeak",
+  "params": [
+    {
+      "name": "isWater",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Set each water cell to be 0. The height of each cell is limited by its closest water cell.",
+    "Perform a multi-source BFS with all the water cells as sources."
+  ]
+}

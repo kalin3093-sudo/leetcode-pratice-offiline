@@ -1,0 +1,14 @@
+[
+  {
+    "ransomNote": "a",
+    "magazine": "b"
+  },
+  {
+    "ransomNote": "aa",
+    "magazine": "ab"
+  },
+  {
+    "ransomNote": "aa",
+    "magazine": "aab"
+  }
+]

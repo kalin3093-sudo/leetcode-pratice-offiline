@@ -1,0 +1,47 @@
+{
+  "id": "partition-string",
+  "title": "3597. Partition String ",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partition-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abbccccd\"",
+      "output": "[\"a\",\"b\",\"bc\",\"c\",\"cc\",\"d\"]",
+      "explanation": "Index Segment After Adding Seen Segments Current Segment Seen Before? New Segment Updated Seen Segments 0 \"a\" [] No \"\" [\"a\"] 1 \"b\" [\"a\"] No \"\" [\"a\", \"b\"] 2 \"b\" [\"a\", \"b\"] Yes \"b\" [\"a\", \"b\"] 3 \"bc\" [\"a\", \"b\"] No \"\" [\"a\", \"b\", \"bc\"] 4 \"c\" [\"a\", \"b\", \"bc\"] No \"\" [\"a\", \"b\", \"bc\", \"c\"] 5 \"c\" [\"a\", \"b\", \"bc\", \"c\"] Yes \"c\" [\"a\", \"b\", \"bc\", \"c\"] 6 \"cc\" [\"a\", \"b\", \"bc\", \"c\"] No \"\" [\"a\", \"b\", \"bc\", \"c\", \"cc\"] 7 \"d\" [\"a\", \"b\", \"bc\", \"c\", \"cc\"] No \"\" [\"a\", \"b\", \"bc\", \"c\", \"cc\", \"d\"] Hence, the final output is [\"a\", \"b\", \"bc\", \"c\", \"cc\", \"d\"]."
+    },
+    {
+      "input": "s = \"aaaa\"",
+      "output": "[\"a\",\"aa\"]",
+      "explanation": "Index Segment After Adding Seen Segments Current Segment Seen Before? New Segment Updated Seen Segments 0 \"a\" [] No \"\" [\"a\"] 1 \"a\" [\"a\"] Yes \"a\" [\"a\"] 2 \"aa\" [\"a\"] No \"\" [\"a\", \"aa\"] 3 \"a\" [\"a\", \"aa\"] Yes \"a\" [\"a\", \"aa\"] Hence, the final output is [\"a\", \"aa\"]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> partitionString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> partitionString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def partitionString(self, s: str) -> List[str]:\n        ",
+    "typescript": "function partitionString(s: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> PartitionString(string s) {\n        \n    }\n}",
+    "go": "func partitionString(s string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn partition_string(s: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abbccccd"
+    },
+    {
+      "s": "aaaa"
+    }
+  ],
+  "functionName": "partitionString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Simulate as described"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "kth-smallest-instructions",
+  "title": "1643. Kth Smallest Instructions",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/kth-smallest-instructions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "destination = [2,3], k = 1",
+      "output": "\"HHHVV\"",
+      "explanation": "All the instructions that reach (2, 3) in lexicographic order are as follows: [\"HHHVV\", \"HHVHV\", \"HHVVH\", \"HVHHV\", \"HVHVH\", \"HVVHH\", \"VHHHV\", \"VHHVH\", \"VHVHH\", \"VVHHH\"]."
+    },
+    {
+      "input": "destination = [2,3], k = 2",
+      "output": "\"HHVHV\""
+    },
+    {
+      "input": "destination = [2,3], k = 3",
+      "output": "\"HHVVH\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string kthSmallestPath(vector<int>& destination, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String kthSmallestPath(int[] destination, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kthSmallestPath(self, destination: list[int], k: int) -> str:\n        ",
+    "typescript": "function kthSmallestPath(destination: number[], k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string KthSmallestPath(int[] destination, int k) {\n        \n    }\n}",
+    "go": "func kthSmallestPath(destination []int, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn kth_smallest_path(destination: Vec<i32>, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "destination": "[2,3]",
+      "k": 1
+    },
+    {
+      "destination": "[2,3]",
+      "k": 2
+    },
+    {
+      "destination": "[2,3]",
+      "k": 3
+    }
+  ],
+  "functionName": "kthSmallestPath",
+  "params": [
+    {
+      "name": "destination",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "There are nCr(row + column, row) possible instructions to reach (row, column).",
+    "Try building the instructions one step at a time. How many instructions start with \"H\", and how does this compare with k?"
+  ]
+}

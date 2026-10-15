@@ -1,0 +1,55 @@
+{
+  "id": "valid-word",
+  "title": "3136. Valid Word",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/valid-word/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"234Adas\"",
+      "output": "true",
+      "explanation": "This word satisfies the conditions."
+    },
+    {
+      "input": "word = \"b3\"",
+      "output": "false",
+      "explanation": "The length of this word is fewer than 3, and does not have a vowel."
+    },
+    {
+      "input": "word = \"a3$e\"",
+      "output": "false",
+      "explanation": "This word contains a '$' character and does not have a consonant."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isValid(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isValid(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isValid(self, word: str) -> bool:\n        ",
+    "typescript": "function isValid(word: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsValid(string word) {\n        \n    }\n}",
+    "go": "func isValid(word string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_valid(word: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "234Adas"
+    },
+    {
+      "word": "b3"
+    },
+    {
+      "word": "a3$e"
+    }
+  ],
+  "functionName": "isValid",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use if-else to check all the conditions."
+  ]
+}

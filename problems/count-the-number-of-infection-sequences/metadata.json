@@ -1,0 +1,57 @@
+{
+  "id": "count-the-number-of-infection-sequences",
+  "title": "2954. Count the Number of Infection Sequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-the-number-of-infection-sequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, sick = [0,4]",
+      "output": "4",
+      "explanation": "There is a total of 6 different sequences overall. Valid infection sequences are [1,2,3], [1,3,2], [3,2,1] and [3,1,2]. [2,3,1] and [2,1,3] are not valid infection sequences because the person at index 2 cannot be infected at the first step."
+    },
+    {
+      "input": "n = 4, sick = [1]",
+      "output": "3",
+      "explanation": "There is a total of 6 different sequences overall. Valid infection sequences are [0,2,3], [2,0,3] and [2,3,0]. [3,2,0], [3,0,2], and [0,3,2] are not valid infection sequences because the infection starts at the person at index 1, then the order of infection is 2, then 3, and hence 3 cannot be infected earlier than 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSequence(int n, vector<int>& sick) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSequence(int n, int[] sick) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSequence(self, n: int, sick: List[int]) -> int:\n        ",
+    "typescript": "function numberOfSequence(n: number, sick: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSequence(int n, int[] sick) {\n        \n    }\n}",
+    "go": "func numberOfSequence(n int, sick []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_sequence(n: i32, sick: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "sick": "[0,4]"
+    },
+    {
+      "n": 4,
+      "sick": "[1]"
+    }
+  ],
+  "functionName": "numberOfSequence",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "sick",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider infected children as <code>0</code> and non-infected as <code>1</code>, then divide the array into segments with the same value.",
+    "For each segment of non-infected children whose indices are <code>[i, j]</code> and indices <code>(i - 1)</code> and <code>(j + 1)</code>, if they exist, are already infected. Then if <code>i == 0</code> or <code>j == n - 1</code>, each second there is only one kid that can be infected (which is at the other endpoint).",
+    "If <code>i > 0</code> and <code>j < n - 1</code>, we have two choices per second since the children at the two endpoints can both be the infect candidates. So there are <code>2<sup>j - i</sup></code> orders to infect all children in the segment.",
+    "Each second we can select a segment and select one endpoint from it.",
+    "The answer is: \r\n<code>S! / (len[1]! * len[2]! * ... * len[m]! * len<sub>start</sub>! * len<sub>end</sub>!) * 2<sup>k</sup></code> \r\nwhere <code>len[1], len[2], ..., len[m]</code> are the lengths of each segment of non-infected children that have an infected child at both endpoints, <code>len<sub>start</sub></code> and <code>len<sub>end</sub></code> denote the number of non-infected children with infected child at one endpoint, <code>S</code> is the total length of all segments of non-infected children, and <code>k = (len[1] - 1) + (len[2] - 1) + ... + (len[m] - 1)</code>."
+  ]
+}

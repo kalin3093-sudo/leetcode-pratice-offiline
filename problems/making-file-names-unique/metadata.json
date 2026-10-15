@@ -1,0 +1,57 @@
+{
+  "id": "making-file-names-unique",
+  "title": "1487. Making File Names Unique",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/making-file-names-unique/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "names = [\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]",
+      "output": "[\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]",
+      "explanation": "Let's see how the file system creates folder names: \"pes\" --> not assigned before, remains \"pes\" \"fifa\" --> not assigned before, remains \"fifa\" \"gta\" --> not assigned before, remains \"gta\" \"pes(2019)\" --> not assigned before, remains \"pes(2019)\""
+    },
+    {
+      "input": "names = [\"gta\",\"gta(1)\",\"gta\",\"avalon\"]",
+      "output": "[\"gta\",\"gta(1)\",\"gta(2)\",\"avalon\"]",
+      "explanation": "Let's see how the file system creates folder names: \"gta\" --> not assigned before, remains \"gta\" \"gta(1)\" --> not assigned before, remains \"gta(1)\" \"gta\" --> the name is reserved, system adds (k), since \"gta(1)\" is also reserved, systems put k = 2. it becomes \"gta(2)\" \"avalon\" --> not assigned before, remains \"avalon\""
+    },
+    {
+      "input": "names = [\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece\"]",
+      "output": "[\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece(4)\"]",
+      "explanation": "When the last folder is created, the smallest positive valid k is 4, and it becomes \"onepiece(4)\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> getFolderNames(vector<string>& names) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] getFolderNames(String[] names) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getFolderNames(self, names: list[str]) -> list[str]:\n        ",
+    "typescript": "function getFolderNames(names: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] GetFolderNames(string[] names) {\n        \n    }\n}",
+    "go": "func getFolderNames(names []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_folder_names(names: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "names": "[\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]"
+    },
+    {
+      "names": "[\"gta\",\"gta(1)\",\"gta\",\"avalon\"]"
+    },
+    {
+      "names": "[\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece\"]"
+    }
+  ],
+  "functionName": "getFolderNames",
+  "params": [
+    {
+      "name": "names",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": [
+    "Keep a map of each name and the smallest valid integer that can be appended as a suffix to it.",
+    "If the name is not present in the map, you can use it without adding any suffixes.",
+    "If the name is present in the map, append the smallest proper suffix, and add the new name to the map."
+  ]
+}

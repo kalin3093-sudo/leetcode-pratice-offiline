@@ -1,0 +1,71 @@
+{
+  "id": "valid-square",
+  "title": "593. Valid Square",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/valid-square/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,1]",
+      "output": "true"
+    },
+    {
+      "input": "p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,12]",
+      "output": "false"
+    },
+    {
+      "input": "p1 = [1,0], p2 = [-1,0], p3 = [0,1], p4 = [0,-1]",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool validSquare(vector<int>& p1, vector<int>& p2, vector<int>& p3, vector<int>& p4) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\n        \n    }\n}",
+    "python": "class Solution:\n    def validSquare(self, p1: list[int], p2: list[int], p3: list[int], p4: list[int]) -> bool:\n        ",
+    "typescript": "function validSquare(p1: number[], p2: number[], p3: number[], p4: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ValidSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\n        \n    }\n}",
+    "go": "func validSquare(p1 []int, p2 []int, p3 []int, p4 []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn valid_square(p1: Vec<i32>, p2: Vec<i32>, p3: Vec<i32>, p4: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "p1": "[0,0]",
+      "p2": "[1,1]",
+      "p3": "[1,0]",
+      "p4": "[0,1]"
+    },
+    {
+      "p1": "[0,0]",
+      "p2": "[1,1]",
+      "p3": "[1,0]",
+      "p4": "[0,12]"
+    },
+    {
+      "p1": "[1,0]",
+      "p2": "[-1,0]",
+      "p3": "[0,1]",
+      "p4": "[0,-1]"
+    }
+  ],
+  "functionName": "validSquare",
+  "params": [
+    {
+      "name": "p1",
+      "type": "int_array"
+    },
+    {
+      "name": "p2",
+      "type": "int_array"
+    },
+    {
+      "name": "p3",
+      "type": "int_array"
+    },
+    {
+      "name": "p4",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

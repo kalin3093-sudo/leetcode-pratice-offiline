@@ -1,0 +1,61 @@
+{
+  "id": "minimum-time-to-finish-the-race",
+  "title": "2188. Minimum Time to Finish the Race",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-time-to-finish-the-race/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tires = [[2,3],[3,4]], changeTime = 5, numLaps = 4",
+      "output": "21",
+      "explanation": "Lap 1: Start with tire 0 and finish the lap in 2 seconds. Lap 2: Continue with tire 0 and finish the lap in 2 * 3 = 6 seconds. Lap 3: Change tires to a new tire 0 for 5 seconds and then finish the lap in another 2 seconds. Lap 4: Continue with tire 0 and finish the lap in 2 * 3 = 6 seconds. Total time = 2 + 6 + 5 + 2 + 6 = 21 seconds. The minimum time to complete the race is 21 seconds."
+    },
+    {
+      "input": "tires = [[1,10],[2,2],[3,4]], changeTime = 6, numLaps = 5",
+      "output": "25",
+      "explanation": "Lap 1: Start with tire 1 and finish the lap in 2 seconds. Lap 2: Continue with tire 1 and finish the lap in 2 * 2 = 4 seconds. Lap 3: Change tires to a new tire 1 for 6 seconds and then finish the lap in another 2 seconds. Lap 4: Continue with tire 1 and finish the lap in 2 * 2 = 4 seconds. Lap 5: Change tires to tire 0 for 6 seconds then finish the lap in another 1 second. Total time = 2 + 4 + 6 + 2 + 4 + 6 + 1 = 25 seconds. The minimum time to complete the race is 25 seconds."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumFinishTime(vector<vector<int>>& tires, int changeTime, int numLaps) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumFinishTime(int[][] tires, int changeTime, int numLaps) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumFinishTime(self, tires: list[list[int]], changeTime: int, numLaps: int) -> int:\n        ",
+    "typescript": "function minimumFinishTime(tires: number[][], changeTime: number, numLaps: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumFinishTime(int[][] tires, int changeTime, int numLaps) {\n        \n    }\n}",
+    "go": "func minimumFinishTime(tires [][]int, changeTime int, numLaps int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_finish_time(tires: Vec<Vec<i32>>, change_time: i32, num_laps: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tires": "[[2,3],[3,4]]",
+      "changeTime": 5,
+      "numLaps": 4
+    },
+    {
+      "tires": "[[1,10],[2,2],[3,4]]",
+      "changeTime": 6,
+      "numLaps": 5
+    }
+  ],
+  "functionName": "minimumFinishTime",
+  "params": [
+    {
+      "name": "tires",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "changeTime",
+      "type": "int"
+    },
+    {
+      "name": "numLaps",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What is the maximum number of times we would want to go around the track without changing tires?",
+    "Can we precompute the minimum time to go around the track x times without changing tires?",
+    "Can we use dynamic programming to solve this efficiently using the precomputed values?"
+  ]
+}

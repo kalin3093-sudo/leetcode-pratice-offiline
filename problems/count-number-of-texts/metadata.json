@@ -1,0 +1,48 @@
+{
+  "id": "count-number-of-texts",
+  "title": "2266. Count Number of Texts",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-number-of-texts/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "pressedKeys = \"22233\"",
+      "output": "8",
+      "explanation": "The possible text messages Alice could have sent are: \"aaadd\", \"abdd\", \"badd\", \"cdd\", \"aaae\", \"abe\", \"bae\", and \"ce\". Since there are 8 possible messages, we return 8."
+    },
+    {
+      "input": "pressedKeys = \"222222222222222222222222222222222222\"",
+      "output": "82876089",
+      "explanation": "There are 2082876103 possible text messages Alice could have sent. Since we need to return the answer modulo 109 + 7, we return 2082876103 % (109 + 7) = 82876089."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countTexts(string pressedKeys) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countTexts(String pressedKeys) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countTexts(self, pressedKeys: str) -> int:\n        ",
+    "typescript": "function countTexts(pressedKeys: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountTexts(string pressedKeys) {\n        \n    }\n}",
+    "go": "func countTexts(pressedKeys string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_texts(pressed_keys: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "pressedKeys": "22233"
+    },
+    {
+      "pressedKeys": "222222222222222222222222222222222222"
+    }
+  ],
+  "functionName": "countTexts",
+  "params": [
+    {
+      "name": "pressedKeys",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For a substring consisting of the same digit, how can we count the number of texts it could have originally represented?",
+    "How can dynamic programming help us calculate the required answer?"
+  ]
+}

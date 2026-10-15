@@ -1,0 +1,56 @@
+{
+  "id": "smallest-integer-divisible-by-k",
+  "title": "1015. Smallest Integer Divisible by K",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/smallest-integer-divisible-by-k/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "k = 1",
+      "output": "1",
+      "explanation": "The smallest answer is n = 1, which has length 1."
+    },
+    {
+      "input": "k = 2",
+      "output": "-1",
+      "explanation": "There is no such positive integer n divisible by 2."
+    },
+    {
+      "input": "k = 3",
+      "output": "3",
+      "explanation": "The smallest answer is n = 111, which has length 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestRepunitDivByK(int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestRepunitDivByK(int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestRepunitDivByK(self, k: int) -> int:\n        ",
+    "typescript": "function smallestRepunitDivByK(k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestRepunitDivByK(int k) {\n        \n    }\n}",
+    "go": "func smallestRepunitDivByK(k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_repunit_div_by_k(k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 1
+    },
+    {
+      "k": 2
+    },
+    {
+      "k": 3
+    }
+  ],
+  "functionName": "smallestRepunitDivByK",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "11111 = 1111 * 10 + 1\r\nWe only need to store remainders modulo K.",
+    "If we never get a remainder of 0, why would that happen, and how would we know that?"
+  ]
+}

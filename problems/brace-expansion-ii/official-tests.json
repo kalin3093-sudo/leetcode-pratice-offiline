@@ -1,0 +1,8 @@
+[
+  {
+    "expression": "{a,b}{c,{d,e}}"
+  },
+  {
+    "expression": "{{a,z},a{b,c},{ab,z}}"
+  }
+]

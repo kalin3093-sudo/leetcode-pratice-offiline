@@ -1,0 +1,59 @@
+{
+  "id": "heaters",
+  "title": "475. Heaters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/heaters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "houses = [1,2,3], heaters = [2]",
+      "output": "1",
+      "explanation": "The only heater was placed in the position 2, and if we use the radius 1 standard, then all the houses can be warmed."
+    },
+    {
+      "input": "houses = [1,2,3,4], heaters = [1,4]",
+      "output": "1",
+      "explanation": "The two heaters were placed at positions 1 and 4. We need to use a radius 1 standard, then all the houses can be warmed."
+    },
+    {
+      "input": "houses = [1,5], heaters = [2]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findRadius(vector<int>& houses, vector<int>& heaters) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findRadius(int[] houses, int[] heaters) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findRadius(self, houses: list[int], heaters: list[int]) -> int:\n        ",
+    "typescript": "function findRadius(houses: number[], heaters: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindRadius(int[] houses, int[] heaters) {\n        \n    }\n}",
+    "go": "func findRadius(houses []int, heaters []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_radius(houses: Vec<i32>, heaters: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "houses": "[1,2,3]",
+      "heaters": "[2]"
+    },
+    {
+      "houses": "[1,2,3,4]",
+      "heaters": "[1,4]"
+    },
+    {
+      "houses": "[1,5]",
+      "heaters": "[2]"
+    }
+  ],
+  "functionName": "findRadius",
+  "params": [
+    {
+      "name": "houses",
+      "type": "int_array"
+    },
+    {
+      "name": "heaters",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

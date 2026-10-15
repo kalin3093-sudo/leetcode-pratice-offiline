@@ -1,0 +1,57 @@
+{
+  "id": "maximum-score-of-a-split",
+  "title": "3788. Maximum Score of a Split",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-score-of-a-split/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,-1,3,-4,-5]",
+      "output": "17",
+      "explanation": "The optimal split is at i = 2, score(2) = prefixSum(2) - suffixMin(2) = (10 + (-1) + 3) - (-5) = 17."
+    },
+    {
+      "input": "nums = [-7,-5,3]",
+      "output": "-2",
+      "explanation": "The optimal split is at i = 0, score(0) = prefixSum(0) - suffixMin(0) = (-7) - (-5) = -2."
+    },
+    {
+      "input": "nums = [1,1]",
+      "output": "0",
+      "explanation": "The only valid split is at i = 0, score(0) = prefixSum(0) - suffixMin(0) = 1 - 1 = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumScore(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumScore(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumScore(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maximumScore(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumScore(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumScore(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_score(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,-1,3,-4,-5]"
+    },
+    {
+      "nums": "[-7,-5,3]"
+    },
+    {
+      "nums": "[1,1]"
+    }
+  ],
+  "functionName": "maximumScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use prefix sum and suffix minimum arrays.",
+    "Precompute the prefix sums of <code>nums</code> and the suffix minimums for all valid split positions.",
+    "For each split index <code>i</code>, compute <code>score(i) = prefixSum(i) - suffixMin(i)</code> and keep track of the maximum value."
+  ]
+}

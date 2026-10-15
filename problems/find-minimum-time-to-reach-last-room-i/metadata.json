@@ -1,0 +1,54 @@
+{
+  "id": "find-minimum-time-to-reach-last-room-i",
+  "title": "3341. Find Minimum Time to Reach Last Room I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "moveTime = [[0,4],[4,4]]",
+      "output": "6",
+      "explanation": "The minimum time required is 6 seconds. At time t == 4, move from room (0, 0) to room (1, 0) in one second. At time t == 5, move from room (1, 0) to room (1, 1) in one second."
+    },
+    {
+      "input": "moveTime = [[0,0,0],[0,0,0]]",
+      "output": "3",
+      "explanation": "The minimum time required is 3 seconds. At time t == 0, move from room (0, 0) to room (1, 0) in one second. At time t == 1, move from room (1, 0) to room (1, 1) in one second. At time t == 2, move from room (1, 1) to room (1, 2) in one second."
+    },
+    {
+      "input": "moveTime = [[0,1],[1,2]]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minTimeToReach(vector<vector<int>>& moveTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minTimeToReach(int[][] moveTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minTimeToReach(self, moveTime: List[List[int]]) -> int:\n        ",
+    "typescript": "function minTimeToReach(moveTime: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinTimeToReach(int[][] moveTime) {\n        \n    }\n}",
+    "go": "func minTimeToReach(moveTime [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_time_to_reach(move_time: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "moveTime": "[[0,4],[4,4]]"
+    },
+    {
+      "moveTime": "[[0,0,0],[0,0,0]]"
+    },
+    {
+      "moveTime": "[[0,1],[1,2]]"
+    }
+  ],
+  "functionName": "minTimeToReach",
+  "params": [
+    {
+      "name": "moveTime",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use shortest path algorithms."
+  ]
+}

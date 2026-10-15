@@ -1,0 +1,48 @@
+{
+  "id": "maximize-expression-of-three-elements",
+  "title": "3745. Maximize Expression of Three Elements",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximize-expression-of-three-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,4,2,5]",
+      "output": "8",
+      "explanation": "We can choose a = 4, b = 5, and c = 1. The expression value is 4 + 5 - 1 = 8, which is the maximum possible."
+    },
+    {
+      "input": "nums = [-2,0,5,-2,4]",
+      "output": "11",
+      "explanation": "We can choose a = 5, b = 4, and c = -2. The expression value is 5 + 4 - (-2) = 11, which is the maximum possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximizeExpressionOfThree(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximizeExpressionOfThree(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximizeExpressionOfThree(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maximizeExpressionOfThree(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximizeExpressionOfThree(int[] nums) {\n        \n    }\n}",
+    "go": "func maximizeExpressionOfThree(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximize_expression_of_three(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,4,2,5]"
+    },
+    {
+      "nums": "[-2,0,5,-2,4]"
+    }
+  ],
+  "functionName": "maximizeExpressionOfThree",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<code>a</code> and <code>b</code> should be the two largest values in <code>nums</code>",
+    "<code>c</code> should be the smallest value in <code>nums</code>"
+  ]
+}

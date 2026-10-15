@@ -1,0 +1,50 @@
+{
+  "id": "as-far-from-land-as-possible",
+  "title": "1162. As Far from Land as Possible",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/as-far-from-land-as-possible/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,0,1],[0,0,0],[1,0,1]]",
+      "output": "2",
+      "explanation": "The cell (1, 1) is as far as possible from all the land with distance 2."
+    },
+    {
+      "input": "grid = [[1,0,0],[0,0,0],[0,0,0]]",
+      "output": "4",
+      "explanation": "The cell (2, 2) is as far as possible from all the land with distance 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDistance(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDistance(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDistance(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxDistance(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDistance(int[][] grid) {\n        \n    }\n}",
+    "go": "func maxDistance(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_distance(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,0,1],[0,0,0],[1,0,1]]"
+    },
+    {
+      "grid": "[[1,0,0],[0,0,0],[0,0,0]]"
+    }
+  ],
+  "functionName": "maxDistance",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can you think of this problem in a backwards way ?",
+    "Imagine expanding outward from each land cell. What kind of search does that ?",
+    "Use BFS starting from all land cells in the same time.",
+    "When do you reach the furthest water cell?"
+  ]
+}

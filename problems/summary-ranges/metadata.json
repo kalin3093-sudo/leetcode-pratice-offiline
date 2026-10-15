@@ -1,0 +1,45 @@
+{
+  "id": "summary-ranges",
+  "title": "228. Summary Ranges",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/summary-ranges/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,2,4,5,7]",
+      "output": "[\"0->2\",\"4->5\",\"7\"]",
+      "explanation": "The ranges are: [0,2] --> \"0->2\" [4,5] --> \"4->5\" [7,7] --> \"7\""
+    },
+    {
+      "input": "nums = [0,2,3,4,6,8,9]",
+      "output": "[\"0\",\"2->4\",\"6\",\"8->9\"]",
+      "explanation": "The ranges are: [0,0] --> \"0\" [2,4] --> \"2->4\" [6,6] --> \"6\" [8,9] --> \"8->9\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> summaryRanges(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> summaryRanges(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def summaryRanges(self, nums: list[int]) -> list[str]:\n        ",
+    "typescript": "function summaryRanges(nums: number[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> SummaryRanges(int[] nums) {\n        \n    }\n}",
+    "go": "func summaryRanges(nums []int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn summary_ranges(nums: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,2,4,5,7]"
+    },
+    {
+      "nums": "[0,2,3,4,6,8,9]"
+    }
+  ],
+  "functionName": "summaryRanges",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

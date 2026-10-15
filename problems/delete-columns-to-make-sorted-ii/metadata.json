@@ -1,0 +1,53 @@
+{
+  "id": "delete-columns-to-make-sorted-ii",
+  "title": "955. Delete Columns to Make Sorted II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/delete-columns-to-make-sorted-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "strs = [\"ca\",\"bb\",\"ac\"]",
+      "output": "1",
+      "explanation": "After deleting the first column, strs = [\"a\", \"b\", \"c\"]. Now strs is in lexicographic order (ie. strs[0] <= strs[1] <= strs[2]). We require at least 1 deletion since initially strs was not in lexicographic order, so the answer is 1."
+    },
+    {
+      "input": "strs = [\"xc\",\"yb\",\"za\"]",
+      "output": "0",
+      "explanation": "strs is already in lexicographic order, so we do not need to delete anything. Note that the rows of strs are not necessarily in lexicographic order: i.e., it is NOT necessarily true that (strs[0][0] <= strs[0][1] <= ...)"
+    },
+    {
+      "input": "strs = [\"zyx\",\"wvu\",\"tsr\"]",
+      "output": "3",
+      "explanation": "We have to delete every column."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDeletionSize(vector<string>& strs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDeletionSize(String[] strs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDeletionSize(self, strs: list[str]) -> int:\n        ",
+    "typescript": "function minDeletionSize(strs: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDeletionSize(string[] strs) {\n        \n    }\n}",
+    "go": "func minDeletionSize(strs []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_deletion_size(strs: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "strs": "[\"ca\",\"bb\",\"ac\"]"
+    },
+    {
+      "strs": "[\"xc\",\"yb\",\"za\"]"
+    },
+    {
+      "strs": "[\"zyx\",\"wvu\",\"tsr\"]"
+    }
+  ],
+  "functionName": "minDeletionSize",
+  "params": [
+    {
+      "name": "strs",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

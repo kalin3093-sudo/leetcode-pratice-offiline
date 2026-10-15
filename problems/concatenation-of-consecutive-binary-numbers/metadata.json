@@ -1,0 +1,55 @@
+{
+  "id": "concatenation-of-consecutive-binary-numbers",
+  "title": "1680. Concatenation of Consecutive Binary Numbers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "1",
+      "explanation": "\"1\" in binary corresponds to the decimal value 1."
+    },
+    {
+      "input": "n = 3",
+      "output": "27",
+      "explanation": "In binary, 1, 2, and 3 corresponds to \"1\", \"10\", and \"11\". After concatenating them, we have \"11011\", which corresponds to the decimal value 27."
+    },
+    {
+      "input": "n = 12",
+      "output": "505379714",
+      "explanation": "The concatenation results in \"1101110010111011110001001101010111100\". The decimal value of that is 118505380540. After modulo 109 + 7, the result is 505379714."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int concatenatedBinary(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int concatenatedBinary(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def concatenatedBinary(self, n: int) -> int:\n        ",
+    "typescript": "function concatenatedBinary(n: number): number {\n\n};",
+    "csharp": "public class Solution {\n    public int ConcatenatedBinary(int n) {\n        \n    }\n}",
+    "go": "func concatenatedBinary(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn concatenated_binary(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 3
+    },
+    {
+      "n": 12
+    }
+  ],
+  "functionName": "concatenatedBinary",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Express the nth number value in a recursion formula and think about how we can do a fast evaluation."
+  ]
+}

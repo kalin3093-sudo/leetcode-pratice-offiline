@@ -1,0 +1,56 @@
+{
+  "id": "building-boxes",
+  "title": "1739. Building Boxes",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/building-boxes/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "3",
+      "explanation": "The figure above is for the placement of the three boxes. These boxes are placed in the corner of the room, where the corner is on the left side."
+    },
+    {
+      "input": "n = 4",
+      "output": "3",
+      "explanation": "The figure above is for the placement of the four boxes. These boxes are placed in the corner of the room, where the corner is on the left side."
+    },
+    {
+      "input": "n = 10",
+      "output": "6",
+      "explanation": "The figure above is for the placement of the ten boxes. These boxes are placed in the corner of the room, where the corner is on the back side."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumBoxes(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumBoxes(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumBoxes(self, n: int) -> int:\n        ",
+    "typescript": "function minimumBoxes(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumBoxes(int n) {\n        \n    }\n}",
+    "go": "func minimumBoxes(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_boxes(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 4
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "minimumBoxes",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Suppose We can put m boxes on the floor, within all the ways to put the boxes, what’s the maximum number of boxes we can put in?",
+    "The first box should always start in the corner"
+  ]
+}

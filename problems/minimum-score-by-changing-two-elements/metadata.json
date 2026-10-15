@@ -1,0 +1,48 @@
+{
+  "id": "minimum-score-by-changing-two-elements",
+  "title": "2567. Minimum Score by Changing Two Elements",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,4,7,8,5]",
+      "output": "3",
+      "explanation": "Change nums[0] and nums[1] to be 6 so that nums becomes [6,6,7,8,5]. The low score is the minimum absolute difference: |6 - 6| = 0. The high score is the maximum absolute difference: |8 - 5| = 3. The sum of high and low score is 3."
+    },
+    {
+      "input": "nums = [1,4,3]",
+      "output": "0",
+      "explanation": "Change nums[1] and nums[2] to 1 so that nums becomes [1,1,1]. The sum of maximum absolute difference and minimum absolute difference is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizeSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizeSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeSum(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimizeSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizeSum(int[] nums) {\n        \n    }\n}",
+    "go": "func minimizeSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,4,7,8,5]"
+    },
+    {
+      "nums": "[1,4,3]"
+    }
+  ],
+  "functionName": "minimizeSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Changing the minimum or maximum values will only minimize the score.",
+    "Think about what all possible pairs of minimum and maximum values can be changed to form the minimum score."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "maximum-number-of-groups-with-increasing-length",
+  "title": "2790. Maximum Number of Groups With Increasing Length",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "usageLimits = [1,2,5]",
+      "output": "3",
+      "explanation": "In this example, we can use 0 at most once, 1 at most twice, and 2 at most five times. One way of creating the maximum number of groups while satisfying the conditions is: Group 1 contains the number [2]. Group 2 contains the numbers [1,2]. Group 3 contains the numbers [0,1,2]. It can be shown that the maximum number of groups is 3. So, the output is 3."
+    },
+    {
+      "input": "usageLimits = [2,1,2]",
+      "output": "2",
+      "explanation": "In this example, we can use 0 at most twice, 1 at most once, and 2 at most twice. One way of creating the maximum number of groups while satisfying the conditions is: Group 1 contains the number [0]. Group 2 contains the numbers [1,2]. It can be shown that the maximum number of groups is 2. So, the output is 2."
+    },
+    {
+      "input": "usageLimits = [1,1]",
+      "output": "1",
+      "explanation": "In this example, we can use both 0 and 1 at most once. One way of creating the maximum number of groups while satisfying the conditions is: Group 1 contains the number [0]. It can be shown that the maximum number of groups is 1. So, the output is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxIncreasingGroups(vector<int>& usageLimits) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxIncreasingGroups(List<Integer> usageLimits) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxIncreasingGroups(self, usageLimits: List[int]) -> int:\n        ",
+    "typescript": "function maxIncreasingGroups(usageLimits: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxIncreasingGroups(IList<int> usageLimits) {\n        \n    }\n}",
+    "go": "func maxIncreasingGroups(usageLimits []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_increasing_groups(usage_limits: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "usageLimits": "[1,2,5]"
+    },
+    {
+      "usageLimits": "[2,1,2]"
+    },
+    {
+      "usageLimits": "[1,1]"
+    }
+  ],
+  "functionName": "maxIncreasingGroups",
+  "params": [
+    {
+      "name": "usageLimits",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we solve this problem using sorting and binary search?",
+    "Sort the array in increasing order and run a binary search on the number of groups, x.",
+    "To determine if a value x is feasible, greedily distribute the numbers such that each group receives 1, 2, 3, ..., x numbers."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "knight-dialer",
+  "title": "935. Knight Dialer",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/knight-dialer/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "10",
+      "explanation": "We need to dial a number of length 1, so placing the knight over any numeric cell of the 10 cells is sufficient."
+    },
+    {
+      "input": "n = 2",
+      "output": "20",
+      "explanation": "All the valid number we can dial are [04, 06, 16, 18, 27, 29, 34, 38, 40, 43, 49, 60, 61, 67, 72, 76, 81, 83, 92, 94]"
+    },
+    {
+      "input": "n = 3131",
+      "output": "136006598",
+      "explanation": "Please take care of the mod."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int knightDialer(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int knightDialer(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def knightDialer(self, n: int) -> int:\n        ",
+    "typescript": "function knightDialer(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int KnightDialer(int n) {\n        \n    }\n}",
+    "go": "func knightDialer(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn knight_dialer(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    },
+    {
+      "n": 3131
+    }
+  ],
+  "functionName": "knightDialer",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

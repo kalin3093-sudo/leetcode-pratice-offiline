@@ -1,0 +1,61 @@
+{
+  "id": "minimum-operations-to-sort-a-permutation",
+  "title": "3942. Minimum Operations to Sort a Permutation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,2,1]",
+      "output": "2",
+      "explanation": "Rotate Left by one: [2, 1, 0] Reverse the array: [0, 1, 2] The array becomes sorted in 2 operations, which is minimal"
+    },
+    {
+      "input": "nums = [1,0,2]",
+      "output": "2",
+      "explanation": "Reverse the array: [2, 0, 1] Rotate Left by one: [0, 1, 2] The array becomes sorted in 2 operations, which is minimal."
+    },
+    {
+      "input": "nums = [2,0,1,3]",
+      "output": "-1",
+      "explanation": "It is impossible to reach [2, 0, 1, 3]. Thus, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,2,1]"
+    },
+    {
+      "nums": "[1,0,2]"
+    },
+    {
+      "nums": "[2,0,1,3]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<strong>1a. (Case Analysis)</strong>\r\n\r\nThe operations generate only rotations of <code>nums</code> and rotations of <code>reverse(nums)</code>.",
+    "<strong>1b. (Case Analysis)</strong>\r\n\r\nSo sorting is possible if and only if <code>nums</code> is a rotation of increasing order, or a rotation of decreasing order.",
+    "<strong>1c. (Case Analysis)</strong>\r\n\r\nIf <code>nums</code> is increasing cyclically and <code>nums[i] = 0</code>, then rotating left <code>i</code> times sorts the array, or we may reverse, rotate, then reverse again.\r\n\r\nTake the minimum between these possibilities.",
+    "<strong>1d. (Case Analysis)</strong>\r\n\r\nIf <code>nums</code> is decreasing cyclically, try both possibilities: reverse first, or rotate first and then reverse. Take the minimum valid cost.",
+    "<strong>2a. (Breadth-First Search)</strong>\r\n\r\nAs follows from Hint 1a and 1b, each reachable array can be represented as a state. Since all reachable arrays belong to one of two families, we can compress a state into <code>(type, shift)</code>.\r\n\r\n<code>type = 0</code>: a rotation of the original array.\r\n<code>type = 1</code>: a rotation of the reversed array.\r\n\r\n<code>shift</code> denotes the number of left rotations applied within that family.",
+    "<strong>2b. (Breadth-First Search)</strong>\r\n\r\nA left rotation changes <code>shift</code> to <code>(shift + 1) % n</code>.\r\n\r\nA reverse toggles <code>type</code>, while also changing the corresponding <code>shift</code> to <code>(n - shift) % n</code>.",
+    "<strong>2c. (Breadth-First Search)</strong>\r\n\r\nBuild a graph on these <code>2n</code> states using the two allowed operations, then run BFS from <code>(0, 0)</code> to the state representing the input array."
+  ]
+}

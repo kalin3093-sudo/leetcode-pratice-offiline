@@ -1,0 +1,54 @@
+{
+  "id": "count-sub-islands",
+  "title": "1905. Count Sub Islands",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-sub-islands/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid1 = [[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]], grid2 = [[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]",
+      "output": "3",
+      "explanation": "In the picture above, the grid on the left is grid1 and the grid on the right is grid2. The 1s colored red in grid2 are those considered to be part of a sub-island. There are three sub-islands."
+    },
+    {
+      "input": "grid1 = [[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]], grid2 = [[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]",
+      "output": "2",
+      "explanation": "In the picture above, the grid on the left is grid1 and the grid on the right is grid2. The 1s colored red in grid2 are those considered to be part of a sub-island. There are two sub-islands."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSubIslands(vector<vector<int>>& grid1, vector<vector<int>>& grid2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSubIslands(int[][] grid1, int[][] grid2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSubIslands(self, grid1: list[list[int]], grid2: list[list[int]]) -> int:\n        ",
+    "typescript": "function countSubIslands(grid1: number[][], grid2: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSubIslands(int[][] grid1, int[][] grid2) {\n        \n    }\n}",
+    "go": "func countSubIslands(grid1 [][]int, grid2 [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_sub_islands(grid1: Vec<Vec<i32>>, grid2: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid1": "[[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]]",
+      "grid2": "[[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]"
+    },
+    {
+      "grid1": "[[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]]",
+      "grid2": "[[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]"
+    }
+  ],
+  "functionName": "countSubIslands",
+  "params": [
+    {
+      "name": "grid1",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "grid2",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let's use floodfill to iterate over the islands of the second grid",
+    "Let's note that if all the cells in an island in the second grid if they are represented by land in the first grid then they are connected hence making that island a sub-island"
+  ]
+}

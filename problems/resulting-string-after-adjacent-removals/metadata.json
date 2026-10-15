@@ -1,0 +1,55 @@
+{
+  "id": "resulting-string-after-adjacent-removals",
+  "title": "3561. Resulting String After Adjacent Removals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/resulting-string-after-adjacent-removals/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "\"c\"",
+      "explanation": "Remove \"ab\" from the string, leaving \"c\" as the remaining string. No further operations are possible. Thus, the resulting string after all possible removals is \"c\"."
+    },
+    {
+      "input": "s = \"adcb\"",
+      "output": "\"\"",
+      "explanation": "Remove \"dc\" from the string, leaving \"ab\" as the remaining string. Remove \"ab\" from the string, leaving \"\" as the remaining string. No further operations are possible. Thus, the resulting string after all possible removals is \"\"."
+    },
+    {
+      "input": "s = \"zadb\"",
+      "output": "\"db\"",
+      "explanation": "Remove \"za\" from the string, leaving \"db\" as the remaining string. No further operations are possible. Thus, the resulting string after all possible removals is \"db\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string resultingString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String resultingString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def resultingString(self, s: str) -> str:\n        ",
+    "typescript": "function resultingString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ResultingString(string s) {\n        \n    }\n}",
+    "go": "func resultingString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn resulting_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc"
+    },
+    {
+      "s": "adcb"
+    },
+    {
+      "s": "zadb"
+    }
+  ],
+  "functionName": "resultingString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Traverse the string from left to right and use a stack to perform the removals."
+  ]
+}

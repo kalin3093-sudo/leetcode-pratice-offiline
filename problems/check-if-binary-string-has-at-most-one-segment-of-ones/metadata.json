@@ -1,0 +1,47 @@
+{
+  "id": "check-if-binary-string-has-at-most-one-segment-of-ones",
+  "title": "1784. Check if Binary String Has at Most One Segment of Ones",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1001\"",
+      "output": "false",
+      "explanation": "The string has two segments of size 1."
+    },
+    {
+      "input": "s = \"110\"",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkOnesSegment(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkOnesSegment(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkOnesSegment(self, s: str) -> bool:\n        ",
+    "typescript": "function checkOnesSegment(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckOnesSegment(string s) {\n        \n    }\n}",
+    "go": "func checkOnesSegment(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_ones_segment(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1001"
+    },
+    {
+      "s": "110"
+    }
+  ],
+  "functionName": "checkOnesSegment",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "It's guaranteed to have at least one segment",
+    "The string size is small so you can count all segments of ones with no that have no adjacent ones."
+  ]
+}

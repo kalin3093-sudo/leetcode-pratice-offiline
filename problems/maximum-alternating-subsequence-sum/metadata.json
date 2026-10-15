@@ -1,0 +1,56 @@
+{
+  "id": "maximum-alternating-subsequence-sum",
+  "title": "1911. Maximum Alternating Subsequence Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-alternating-subsequence-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,2,5,3]",
+      "output": "7",
+      "explanation": "It is optimal to choose the subsequence [4,2,5] with alternating sum (4 + 5) - 2 = 7."
+    },
+    {
+      "input": "nums = [5,6,7,8]",
+      "output": "8",
+      "explanation": "It is optimal to choose the subsequence [8] with alternating sum 8."
+    },
+    {
+      "input": "nums = [6,2,1,2,4,5]",
+      "output": "10",
+      "explanation": "It is optimal to choose the subsequence [6,1,5] with alternating sum (6 + 5) - 1 = 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\r\npublic:\r\n    long long maxAlternatingSum(vector<int>& nums) {\r\n        \r\n    }\r\n};",
+    "java": "class Solution {\r\n    public long maxAlternatingSum(int[] nums) {\r\n        \r\n    }\r\n}",
+    "python": "class Solution:\r\n    def maxAlternatingSum(self, nums: List[int]) -> int:",
+    "typescript": "function maxAlternatingSum(nums: number[]): number {\r\n\r\n};",
+    "csharp": "public class Solution {\r\n    public long MaxAlternatingSum(int[] nums) {\r\n        \r\n    }\r\n}",
+    "go": "func maxAlternatingSum(nums []int) int64 {\r\n    \r\n}",
+    "rust": "impl Solution {\r\n    pub fn max_alternating_sum(nums: Vec<i32>) -> i64 {\r\n        \r\n    }\r\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,2,5,3]"
+    },
+    {
+      "nums": "[5,6,7,8]"
+    },
+    {
+      "nums": "[6,2,1,2,4,5]"
+    }
+  ],
+  "functionName": "maxAlternatingSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Is only tracking a single sum enough to solve the problem?",
+    "How does tracking an odd sum and an even sum reduce the number of states?"
+  ]
+}

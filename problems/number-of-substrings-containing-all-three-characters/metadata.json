@@ -1,0 +1,55 @@
+{
+  "id": "number-of-substrings-containing-all-three-characters",
+  "title": "1358. Number of Substrings Containing All Three Characters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abcabc\"",
+      "output": "10",
+      "explanation": "The substrings containing at least one occurrence of the characters a, b and c are \"abc\", \"abca\", \"abcab\", \"abcabc\", \"bca\", \"bcab\", \"bcabc\", \"cab\", \"cabc\" and \"abc\" (again)."
+    },
+    {
+      "input": "s = \"aaacb\"",
+      "output": "3",
+      "explanation": "The substrings containing at least one occurrence of the characters a, b and c are \"aaacb\", \"aacb\" and \"acb\"."
+    },
+    {
+      "input": "s = \"abc\"",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSubstrings(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSubstrings(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSubstrings(self, s: str) -> int:\n        ",
+    "typescript": "function numberOfSubstrings(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSubstrings(string s) {\n        \n    }\n}",
+    "go": "func numberOfSubstrings(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_substrings(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcabc"
+    },
+    {
+      "s": "aaacb"
+    },
+    {
+      "s": "abc"
+    }
+  ],
+  "functionName": "numberOfSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each position we simply need to find the first occurrence of a/b/c on or after this position.",
+    "So we can pre-compute three link-list of indices of each a, b, and c."
+  ]
+}

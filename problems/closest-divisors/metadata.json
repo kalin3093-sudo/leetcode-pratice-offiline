@@ -1,0 +1,54 @@
+{
+  "id": "closest-divisors",
+  "title": "1362. Closest Divisors",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/closest-divisors/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 8",
+      "output": "[3,3]",
+      "explanation": "For num + 1 = 9, the closest divisors are 3 & 3, for num + 2 = 10, the closest divisors are 2 & 5, hence 3 & 3 is chosen."
+    },
+    {
+      "input": "num = 123",
+      "output": "[5,25]"
+    },
+    {
+      "input": "num = 999",
+      "output": "[40,25]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> closestDivisors(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] closestDivisors(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closestDivisors(self, num: int) -> list[int]:\n        ",
+    "typescript": "function closestDivisors(num: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ClosestDivisors(int num) {\n        \n    }\n}",
+    "go": "func closestDivisors(num int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn closest_divisors(num: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 8
+    },
+    {
+      "num": 123
+    },
+    {
+      "num": 999
+    }
+  ],
+  "functionName": "closestDivisors",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Find the divisors of n+1 and n+2.",
+    "To find the divisors of a number, you only need to iterate to the square root of that number."
+  ]
+}

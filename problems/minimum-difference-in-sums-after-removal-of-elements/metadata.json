@@ -1,0 +1,50 @@
+{
+  "id": "minimum-difference-in-sums-after-removal-of-elements",
+  "title": "2163. Minimum Difference in Sums After Removal of Elements",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,1,2]",
+      "output": "-1",
+      "explanation": "Here, nums has 3 elements, so n = 1. Thus we have to remove 1 element from nums and divide the array into two equal parts. - If we remove nums[0] = 3, the array will be [1,2]. The difference in sums of the two parts will be 1 - 2 = -1. - If we remove nums[1] = 1, the array will be [3,2]. The difference in sums of the two parts will be 3 - 2 = 1. - If we remove nums[2] = 2, the array will be [3,1]. The difference in sums of the two parts will be 3 - 1 = 2. The minimum difference between sums of the two parts is min(-1,1,2) = -1."
+    },
+    {
+      "input": "nums = [7,9,5,8,1,3]",
+      "output": "1",
+      "explanation": "Here n = 2. So we must remove 2 elements and divide the remaining array into two parts containing two elements each. If we remove nums[2] = 5 and nums[3] = 8, the resultant array will be [7,9,1,3]. The difference in sums will be (7+9) - (1+3) = 12. To obtain the minimum difference, we should remove nums[1] = 9 and nums[4] = 1. The resultant array becomes [7,5,8,3]. The difference in sums of the two parts is (7+5) - (8+3) = 1. It can be shown that it is not possible to obtain a difference smaller than 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumDifference(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minimumDifference(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumDifference(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_difference(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,1,2]"
+    },
+    {
+      "nums": "[7,9,5,8,1,3]"
+    }
+  ],
+  "functionName": "minimumDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "The lowest possible difference can be obtained when the sum of the first n elements in the resultant array is minimum, and the sum of the next n elements is maximum.",
+    "For every index i, think about how you can find the minimum possible sum of n elements with indices lesser or equal to i, if possible.",
+    "Similarly, for every index i, try to find the maximum possible sum of n elements with indices greater or equal to i, if possible.",
+    "Now for all indices, check if we can consider it as the partitioning index and hence find the answer."
+  ]
+}

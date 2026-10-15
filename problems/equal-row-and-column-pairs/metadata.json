@@ -1,0 +1,49 @@
+{
+  "id": "equal-row-and-column-pairs",
+  "title": "2352. Equal Row and Column Pairs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/equal-row-and-column-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[3,2,1],[1,7,6],[2,7,7]]",
+      "output": "1",
+      "explanation": "There is 1 equal row and column pair: - (Row 2, Column 1): [2,7,7]"
+    },
+    {
+      "input": "grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]",
+      "output": "3",
+      "explanation": "There are 3 equal row and column pairs: - (Row 0, Column 0): [3,1,2,2] - (Row 2, Column 2): [2,4,2,2] - (Row 3, Column 2): [2,4,2,2]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int equalPairs(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int equalPairs(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def equalPairs(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function equalPairs(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EqualPairs(int[][] grid) {\n        \n    }\n}",
+    "go": "func equalPairs(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn equal_pairs(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[3,2,1],[1,7,6],[2,7,7]]"
+    },
+    {
+      "grid": "[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]"
+    }
+  ],
+  "functionName": "equalPairs",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We can use nested loops to compare every row against every column.",
+    "Another loop is necessary to compare the row and column element by element.",
+    "It is also possible to hash the arrays and compare the hashed values instead."
+  ]
+}

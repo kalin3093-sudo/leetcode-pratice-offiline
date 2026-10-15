@@ -1,0 +1,51 @@
+{
+  "id": "find-all-anagrams-in-a-string",
+  "title": "438. Find All Anagrams in a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"cbaebabacd\", p = \"abc\"",
+      "output": "[0,6]",
+      "explanation": "The substring with start index = 0 is \"cba\", which is an anagram of \"abc\". The substring with start index = 6 is \"bac\", which is an anagram of \"abc\"."
+    },
+    {
+      "input": "s = \"abab\", p = \"ab\"",
+      "output": "[0,1,2]",
+      "explanation": "The substring with start index = 0 is \"ab\", which is an anagram of \"ab\". The substring with start index = 1 is \"ba\", which is an anagram of \"ab\". The substring with start index = 2 is \"ab\", which is an anagram of \"ab\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findAnagrams(string s, string p) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> findAnagrams(String s, String p) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findAnagrams(self, s: str, p: str) -> list[int]:\n        ",
+    "typescript": "function findAnagrams(s: string, p: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FindAnagrams(string s, string p) {\n        \n    }\n}",
+    "go": "func findAnagrams(s string, p string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_anagrams(s: String, p: String) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "cbaebabacd",
+      "p": "abc"
+    },
+    {
+      "s": "abab",
+      "p": "ab"
+    }
+  ],
+  "functionName": "findAnagrams",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "p",
+      "type": "string"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": []
+}

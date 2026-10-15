@@ -1,0 +1,55 @@
+{
+  "id": "mirror-frequency-distance",
+  "title": "3889. Mirror Frequency Distance",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/mirror-frequency-distance/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"ab1z9\"",
+      "output": "3",
+      "explanation": "For every mirror pair: c m freq(c) freq(m) |freq(c) - freq(m)| a z 1 1 0 b y 1 0 1 1 8 1 0 1 9 0 1 0 1 Thus, the answer is 0 + 1 + 1 + 1 = 3."
+    },
+    {
+      "input": "s = \"4m7n\"",
+      "output": "2",
+      "explanation": "c m freq(c) freq(m) |freq(c) - freq(m)| 4 5 1 0 1 m n 1 1 0 7 2 1 0 1 Thus, the answer is 1 + 0 + 1 = 2."
+    },
+    {
+      "input": "s = \"byby\"",
+      "output": "0",
+      "explanation": "c m freq(c) freq(m) |freq(c) - freq(m)| b y 2 2 0 Thus, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int mirrorFrequency(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int mirrorFrequency(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mirrorFrequency(self, s: str) -> int:\n        ",
+    "typescript": "function mirrorFrequency(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MirrorFrequency(string s) {\n        \n    }\n}",
+    "go": "func mirrorFrequency(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn mirror_frequency(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "ab1z9"
+    },
+    {
+      "s": "4m7n"
+    },
+    {
+      "s": "byby"
+    }
+  ],
+  "functionName": "mirrorFrequency",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate as described using two pointers"
+  ]
+}

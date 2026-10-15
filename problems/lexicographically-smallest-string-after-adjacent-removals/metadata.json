@@ -1,0 +1,58 @@
+{
+  "id": "lexicographically-smallest-string-after-adjacent-removals",
+  "title": "3563. Lexicographically Smallest String After Adjacent Removals",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "\"a\"",
+      "explanation": "Remove \"bc\" from the string, leaving \"a\" as the remaining string. No further operations are possible. Thus, the lexicographically smallest string after all possible removals is \"a\"."
+    },
+    {
+      "input": "s = \"bcda\"",
+      "output": "\"\"",
+      "explanation": "Remove \"cd\" from the string, leaving \"ba\" as the remaining string. Remove \"ba\" from the string, leaving \"\" as the remaining string. No further operations are possible. Thus, the lexicographically smallest string after all possible removals is \"\"."
+    },
+    {
+      "input": "s = \"zdce\"",
+      "output": "\"zdce\"",
+      "explanation": "Remove \"dc\" from the string, leaving \"ze\" as the remaining string. No further operations are possible on \"ze\". However, since \"zdce\" is lexicographically smaller than \"ze\", the smallest string after all possible removals is \"zdce\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lexicographicallySmallestString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lexicographicallySmallestString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lexicographicallySmallestString(self, s: str) -> str:\n        ",
+    "typescript": "function lexicographicallySmallestString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LexicographicallySmallestString(string s) {\n        \n    }\n}",
+    "go": "func lexicographicallySmallestString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn lexicographically_smallest_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc"
+    },
+    {
+      "s": "bcda"
+    },
+    {
+      "s": "zdce"
+    }
+  ],
+  "functionName": "lexicographicallySmallestString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "As a result of the operation, some of the substrings can be removed",
+    "Find out using DP, which substrings can we remove",
+    "Now, try to build the ans using this DP",
+    "Define ans[i] = lex smallest string that can be made in [i, n - 1], then ans[i] = lex_smallest of { choose one char s[j] in [i, n - 1] + ans[j + 1] }"
+  ]
+}

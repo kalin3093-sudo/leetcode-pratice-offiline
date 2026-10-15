@@ -1,0 +1,10 @@
+[
+  {
+    "queries": "[\"cbd\"]",
+    "words": "[\"zaaaz\"]"
+  },
+  {
+    "queries": "[\"bbb\",\"cc\"]",
+    "words": "[\"a\",\"aa\",\"aaa\",\"aaaa\"]"
+  }
+]

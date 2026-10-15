@@ -1,0 +1,13 @@
+You are given `n × m` grid and an integer `k`.
+
+A sensor placed on cell `(r, c)` covers all cells whose **Chebyshev distance** from `(r, c)` is **at most** `k`.
+
+The **Chebyshev distance** between two cells `(r1, c1)` and `(r2, c2)` is `max(|r1 − r2|,|c1 − c2|)`.
+
+Your task is to return the **minimum** number of sensors required to cover every cell of the grid.
+
+**Constraints:**
+
+-   `1 ≤ n ≤ 10^3`
+-   `1 ≤ m ≤ 10^3`
+-   `0 ≤ k ≤ 10^3`

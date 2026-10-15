@@ -1,0 +1,44 @@
+{
+  "id": "find-the-count-of-monotonic-pairs-ii",
+  "title": "3251. Find the Count of Monotonic Pairs II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,2]",
+      "output": "4",
+      "explanation": "The good pairs are: ([0, 1, 1], [2, 2, 1]) ([0, 1, 2], [2, 2, 0]) ([0, 2, 2], [2, 1, 0]) ([1, 2, 2], [1, 1, 0])"
+    },
+    {
+      "input": "nums = [5,5,5,5]",
+      "output": "126"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countOfPairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countOfPairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countOfPairs(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countOfPairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountOfPairs(int[] nums) {\n        \n    }\n}",
+    "go": "func countOfPairs(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_of_pairs(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,2]"
+    },
+    {
+      "nums": "[5,5,5,5]"
+    }
+  ],
+  "functionName": "countOfPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "day-of-the-year",
+  "title": "1154. Day of the Year",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/day-of-the-year/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "date = \"2019-01-09\"",
+      "output": "9",
+      "explanation": "Given date is the 9th day of the year in 2019."
+    },
+    {
+      "input": "date = \"2019-02-10\"",
+      "output": "41"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int dayOfYear(string date) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int dayOfYear(String date) {\n        \n    }\n}",
+    "python": "class Solution:\n    def dayOfYear(self, date: str) -> int:\n        ",
+    "typescript": "function dayOfYear(date: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DayOfYear(string date) {\n        \n    }\n}",
+    "go": "func dayOfYear(date string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn day_of_year(date: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "date": "2019-01-09"
+    },
+    {
+      "date": "2019-02-10"
+    }
+  ],
+  "functionName": "dayOfYear",
+  "params": [
+    {
+      "name": "date",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Have a integer array of how many days there are per month.  February gets one extra day if its a leap year.  Then, we can manually count the ordinal as day + (number of days in months before this one)."
+  ]
+}

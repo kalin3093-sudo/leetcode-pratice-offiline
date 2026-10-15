@@ -1,0 +1,47 @@
+{
+  "id": "find-champion-i",
+  "title": "2923. Find Champion I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-champion-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1],[0,0]]",
+      "output": "0",
+      "explanation": "There are two teams in this tournament. grid[0][1] == 1 means that team 0 is stronger than team 1. So team 0 will be the champion."
+    },
+    {
+      "input": "grid = [[0,0,1],[1,0,1],[0,0,0]]",
+      "output": "1",
+      "explanation": "There are three teams in this tournament. grid[1][0] == 1 means that team 1 is stronger than team 0. grid[1][2] == 1 means that team 1 is stronger than team 2. So team 1 will be the champion."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findChampion(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findChampion(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findChampion(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function findChampion(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindChampion(int[][] grid) {\n        \n    }\n}",
+    "go": "func findChampion(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_champion(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1],[0,0]]"
+    },
+    {
+      "grid": "[[0,0,1],[1,0,1],[0,0,0]]"
+    }
+  ],
+  "functionName": "findChampion",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The champion should be stronger than all the other teams."
+  ]
+}

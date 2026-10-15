@@ -1,0 +1,48 @@
+{
+  "id": "adjacent-increasing-subarrays-detection-ii",
+  "title": "3350. Adjacent Increasing Subarrays Detection II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,7,8,9,2,3,4,3,1]",
+      "output": "3",
+      "explanation": "The subarray starting at index 2 is [7, 8, 9], which is strictly increasing. The subarray starting at index 5 is [2, 3, 4], which is also strictly increasing. These two subarrays are adjacent, and 3 is the maximum possible value of k for which two such adjacent strictly increasing subarrays exist."
+    },
+    {
+      "input": "nums = [1,2,3,4,4,4,4,5,6,7]",
+      "output": "2",
+      "explanation": "The subarray starting at index 0 is [1, 2], which is strictly increasing. The subarray starting at index 2 is [3, 4], which is also strictly increasing. These two subarrays are adjacent, and 2 is the maximum possible value of k for which two such adjacent strictly increasing subarrays exist."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxIncreasingSubarrays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxIncreasingSubarrays(List<Integer> nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxIncreasingSubarrays(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxIncreasingSubarrays(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxIncreasingSubarrays(IList<int> nums) {\n        \n    }\n}",
+    "go": "func maxIncreasingSubarrays(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_increasing_subarrays(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,7,8,9,2,3,4,3,1]"
+    },
+    {
+      "nums": "[1,2,3,4,4,4,4,5,6,7]"
+    }
+  ],
+  "functionName": "maxIncreasingSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the boundaries between strictly increasing subarrays.",
+    "Can we use binary search?"
+  ]
+}

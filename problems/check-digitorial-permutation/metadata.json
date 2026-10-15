@@ -1,0 +1,48 @@
+{
+  "id": "check-digitorial-permutation",
+  "title": "3848. Check Digitorial Permutation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/check-digitorial-permutation/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 145",
+      "output": "true",
+      "explanation": "The number 145 itself is digitorial since 1! + 4! + 5! = 1 + 24 + 120 = 145. Thus, the answer is true."
+    },
+    {
+      "input": "n = 10",
+      "output": "false",
+      "explanation": "10 is not digitorial since 1! + 0! = 2 is not equal to 10, and the permutation \"01\" is invalid because it starts with zero."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isDigitorialPermutation(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isDigitorialPermutation(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isDigitorialPermutation(self, n: int) -> bool:\n        ",
+    "typescript": "function isDigitorialPermutation(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsDigitorialPermutation(int n) {\n        \n    }\n}",
+    "go": "func isDigitorialPermutation(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_digitorial_permutation(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 145
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "isDigitorialPermutation",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Precompute the factorial of digits <code>0</code> to <code>9</code> and compute the sum of factorials of the digits.",
+    "Check whether the digits of this sum can be formed using exactly the digits of <code>n</code> (no leading zero allowed)."
+  ]
+}

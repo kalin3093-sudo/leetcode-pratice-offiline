@@ -1,0 +1,55 @@
+{
+  "id": "divide-nodes-into-the-maximum-number-of-groups",
+  "title": "2493. Divide Nodes Into the Maximum Number of Groups",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "n = 6, edges = [[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]]",
+      "output": "4",
+      "explanation": "As shown in the image we: - Add node 5 to the first group. - Add node 1 to the second group. - Add nodes 2 and 4 to the third group. - Add nodes 3 and 6 to the fourth group. We can see that every edge is satisfied. It can be shown that that if we create a fifth group and move any node from the third or fourth group to it, at least on of the edges will not be satisfied."
+    },
+    {
+      "input": "n = 3, edges = [[1,2],[2,3],[3,1]]",
+      "output": "-1",
+      "explanation": "If we add node 1 to the first group, node 2 to the second group, and node 3 to the third group to satisfy the first two edges, we can see that the third edge will not be satisfied. It can be shown that no grouping is possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int magnificentSets(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int magnificentSets(int n, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def magnificentSets(self, n: int, edges: list[list[int]]) -> int:\n        ",
+    "typescript": "function magnificentSets(n: number, edges: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MagnificentSets(int n, int[][] edges) {\n        \n    }\n}",
+    "go": "func magnificentSets(n int, edges [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn magnificent_sets(n: i32, edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "edges": "[[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]]"
+    },
+    {
+      "n": 3,
+      "edges": "[[1,2],[2,3],[3,1]]"
+    }
+  ],
+  "functionName": "magnificentSets",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If the graph is not bipartite, it is not possible to group the nodes.",
+    "Notice that we can solve the problem for each connected component independently, and the final answer will be just the sum of the maximum number of groups in each component.",
+    "Finally, to solve the problem for each connected component, we can notice that if for some node v we fix its position to be in the leftmost group, then we can also evaluate the position of every other node. That position is the depth of the node in a bfs tree after rooting at node v."
+  ]
+}

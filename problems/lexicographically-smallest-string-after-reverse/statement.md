@@ -1,0 +1,13 @@
+You are given a string `s` of length `n` consisting of lowercase English letters.
+
+You must perform **exactly** one operation by choosing any integer `k` such that `1 ≤ k ≤ n` and either:
+
+-   reverse the **first** `k` characters of `s`, or
+-   reverse the **last** `k` characters of `s`.
+
+Return the **lexicographically smallest** string that can be obtained after **exactly** one such operation.
+
+**Constraints:**
+
+-   `1 ≤ n == s.length ≤ 1000`
+-   `s` consists of lowercase English letters.

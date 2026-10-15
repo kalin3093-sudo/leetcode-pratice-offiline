@@ -1,0 +1,10 @@
+[
+  {
+    "message": "[\"hello\",\"world\",\"leetcode\"]",
+    "bannedWords": "[\"world\",\"hello\"]"
+  },
+  {
+    "message": "[\"hello\",\"programming\",\"fun\"]",
+    "bannedWords": "[\"world\",\"programming\",\"leetcode\"]"
+  }
+]

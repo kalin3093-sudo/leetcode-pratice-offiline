@@ -1,0 +1,48 @@
+{
+  "id": "number-of-enclaves",
+  "title": "1020. Number of Enclaves",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-enclaves/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]",
+      "output": "3",
+      "explanation": "There are three 1s that are enclosed by 0s, and one 1 that is not enclosed because its on the boundary."
+    },
+    {
+      "input": "grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]",
+      "output": "0",
+      "explanation": "All 1s are either on the boundary or can reach the boundary."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numEnclaves(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numEnclaves(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numEnclaves(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function numEnclaves(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumEnclaves(int[][] grid) {\n        \n    }\n}",
+    "go": "func numEnclaves(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_enclaves(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]"
+    },
+    {
+      "grid": "[[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]"
+    }
+  ],
+  "functionName": "numEnclaves",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can you model this problem as a graph problem?  Create n * m + 1 nodes where n * m nodes represents each cell of the map and one extra node to represent the exterior of the map.",
+    "In the map add edges between neighbors on land cells. And add edges between the exterior and land nodes which are in the boundary.\r\nReturn as answer the number of nodes that are not reachable from the exterior node."
+  ]
+}

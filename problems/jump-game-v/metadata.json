@@ -1,0 +1,63 @@
+{
+  "id": "jump-game-v",
+  "title": "1340. Jump Game V",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/jump-game-v/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [6,4,14,6,8,13,9,7,10,6,12], d = 2",
+      "output": "4",
+      "explanation": "You can start at index 10. You can jump 10 --> 8 --> 6 --> 7 as shown. Note that if you start at index 6 you can only jump to index 7. You cannot jump to index 5 because 13 > 9. You cannot jump to index 4 because index 5 is between index 4 and 6 and 13 > 9. Similarly You cannot jump from index 3 to index 2 or index 1."
+    },
+    {
+      "input": "arr = [3,3,3,3,3], d = 3",
+      "output": "1",
+      "explanation": "You can start at any index. You always cannot jump to any index."
+    },
+    {
+      "input": "arr = [7,6,5,4,3,2,1], d = 1",
+      "output": "7",
+      "explanation": "Start at index 0. You can visit all the indicies."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxJumps(vector<int>& arr, int d) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxJumps(int[] arr, int d) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxJumps(self, arr: list[int], d: int) -> int:\n        ",
+    "typescript": "function maxJumps(arr: number[], d: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxJumps(int[] arr, int d) {\n        \n    }\n}",
+    "go": "func maxJumps(arr []int, d int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_jumps(arr: Vec<i32>, d: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[6,4,14,6,8,13,9,7,10,6,12]",
+      "d": 2
+    },
+    {
+      "arr": "[3,3,3,3,3]",
+      "d": 3
+    },
+    {
+      "arr": "[7,6,5,4,3,2,1]",
+      "d": 1
+    }
+  ],
+  "functionName": "maxJumps",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    },
+    {
+      "name": "d",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming. dp[i] is max jumps you can do starting from index i. Answer is max(dp[i]).",
+    "dp[i] = 1 + max (dp[j]) where j is all indices you can reach from i."
+  ]
+}

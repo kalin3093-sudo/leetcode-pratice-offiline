@@ -1,0 +1,63 @@
+{
+  "id": "check-array-formation-through-concatenation",
+  "title": "1640. Check Array Formation Through Concatenation",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-array-formation-through-concatenation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [15,88], pieces = [[88],[15]]",
+      "output": "true",
+      "explanation": "Concatenate [15] then [88]"
+    },
+    {
+      "input": "arr = [49,18,16], pieces = [[16,18,49]]",
+      "output": "false",
+      "explanation": "Even though the numbers match, we cannot reorder pieces[0]."
+    },
+    {
+      "input": "arr = [91,4,64,78], pieces = [[78],[4,64],[91]]",
+      "output": "true",
+      "explanation": "Concatenate [91] then [4,64] then [78]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canFormArray(vector<int>& arr, vector<vector<int>>& pieces) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canFormArray(int[] arr, int[][] pieces) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canFormArray(self, arr: list[int], pieces: list[list[int]]) -> bool:\n        ",
+    "typescript": "function canFormArray(arr: number[], pieces: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanFormArray(int[] arr, int[][] pieces) {\n        \n    }\n}",
+    "go": "func canFormArray(arr []int, pieces [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_form_array(arr: Vec<i32>, pieces: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[15,88]",
+      "pieces": "[[88],[15]]"
+    },
+    {
+      "arr": "[49,18,16]",
+      "pieces": "[[16,18,49]]"
+    },
+    {
+      "arr": "[91,4,64,78]",
+      "pieces": "[[78],[4,64],[91]]"
+    }
+  ],
+  "functionName": "canFormArray",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    },
+    {
+      "name": "pieces",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Note that the distinct part means that every position in the array belongs to only one piece",
+    "Note that you can get the piece every position belongs to naively"
+  ]
+}

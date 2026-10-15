@@ -1,0 +1,55 @@
+{
+  "id": "number-of-intersecting-interval-pairs-i",
+  "title": "4056. Number of Intersecting Interval Pairs I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-intersecting-interval-pairs-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "intervals = [[1,2],[2,3],[3,4]]",
+      "output": "2",
+      "explanation": "There are 2 intersecting interval pairs: Intervals [1, 2] and [2, 3] intersect at the point 2. Intervals [2, 3] and [3, 4] intersect at the point 3."
+    },
+    {
+      "input": "intervals = [[1,5],[2,4],[3,6]]",
+      "output": "3",
+      "explanation": "There are 3 intersecting interval pairs: The intersection of [1, 5] and [2, 4] is [2, 4]. The intersection of [1, 5] and [3, 6] is [3, 5]. The intersection of [2, 4] and [3, 6] is [3, 4]."
+    },
+    {
+      "input": "intervals = [[1,2],[3,4],[5,6]]",
+      "output": "0",
+      "explanation": "There are no intersecting interval pairs. Hence, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countIntersectingIntervals(vector<vector<int>>& intervals) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countIntersectingIntervals(int[][] intervals) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countIntersectingIntervals(self, intervals: list[list[int]]) -> int:\n        ",
+    "typescript": "function countIntersectingIntervals(intervals: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountIntersectingIntervals(int[][] intervals) {\n        \n    }\n}",
+    "go": "func countIntersectingIntervals(intervals [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_intersecting_intervals(intervals: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "intervals": "[[1,2],[2,3],[3,4]]"
+    },
+    {
+      "intervals": "[[1,5],[2,4],[3,6]]"
+    },
+    {
+      "intervals": "[[1,2],[3,4],[5,6]]"
+    }
+  ],
+  "functionName": "countIntersectingIntervals",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Check every pair of intervals. They intersect exactly when <code>max(start<sub>i</sub>, start<sub>j</sub>) &lt;= min(end<sub>i</sub>, end<sub>j</sub>)</code>.</p>"
+  ]
+}

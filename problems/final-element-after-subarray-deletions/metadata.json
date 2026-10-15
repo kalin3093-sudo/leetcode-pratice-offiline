@@ -1,0 +1,49 @@
+{
+  "id": "final-element-after-subarray-deletions",
+  "title": "3828. Final Element After Subarray Deletions",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/final-element-after-subarray-deletions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,5,2]",
+      "output": "2",
+      "explanation": "One valid optimal strategy: Alice removes [1], array becomes [5, 2]. Bob removes [5], array becomes [2]. Thus, the answer is 2."
+    },
+    {
+      "input": "nums = [3,7]",
+      "output": "7",
+      "explanation": "Alice removes [3], leaving the array [7]. Since Bob cannot play a turn now, the answer is 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int finalElement(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int finalElement(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def finalElement(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function finalElement(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FinalElement(int[] nums) {\n        \n    }\n}",
+    "go": "func finalElement(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn final_element(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,5,2]"
+    },
+    {
+      "nums": "[3,7]"
+    }
+  ],
+  "functionName": "finalElement",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Observe which positions Alice can force to survive her first move so that Bob cannot remove them afterward.",
+    "Any middle element can always be removed by Bob, so only the endpoints can be protected.",
+    "Alice chooses the better endpoint: the answer is <code>max(nums[0], nums[len(nums) - 1])</code>."
+  ]
+}

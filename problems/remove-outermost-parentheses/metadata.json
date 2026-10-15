@@ -1,0 +1,55 @@
+{
+  "id": "remove-outermost-parentheses",
+  "title": "1021. Remove Outermost Parentheses",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/remove-outermost-parentheses/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"(()())(())\"",
+      "output": "\"()()()\"",
+      "explanation": "The input string is \"(()())(())\", with primitive decomposition \"(()())\" + \"(())\". After removing outer parentheses of each part, this is \"()()\" + \"()\" = \"()()()\"."
+    },
+    {
+      "input": "s = \"(()())(())(()(()))\"",
+      "output": "\"()()()()(())\"",
+      "explanation": "The input string is \"(()())(())(()(()))\", with primitive decomposition \"(()())\" + \"(())\" + \"(()(()))\". After removing outer parentheses of each part, this is \"()()\" + \"()\" + \"()(())\" = \"()()()()(())\"."
+    },
+    {
+      "input": "s = \"()()\"",
+      "output": "\"\"",
+      "explanation": "The input string is \"()()\", with primitive decomposition \"()\" + \"()\". After removing outer parentheses of each part, this is \"\" + \"\" = \"\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string removeOuterParentheses(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String removeOuterParentheses(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeOuterParentheses(self, s: str) -> str:\n        ",
+    "typescript": "function removeOuterParentheses(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RemoveOuterParentheses(string s) {\n        \n    }\n}",
+    "go": "func removeOuterParentheses(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_outer_parentheses(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "(()())(())"
+    },
+    {
+      "s": "(()())(())(()(()))"
+    },
+    {
+      "s": "()()"
+    }
+  ],
+  "functionName": "removeOuterParentheses",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Can you find the primitive decomposition?  The number of ( and ) characters must be equal."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "maximize-spanning-tree-stability-with-upgrades",
+  "title": "3600. Maximize Spanning Tree Stability with Upgrades",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/",
+  "category": "binary-search",
+  "examples": [
+    {
+      "input": "n = 3, edges = [[0,1,2,1],[1,2,3,0]], k = 1",
+      "output": "2",
+      "explanation": "Edge [0,1] with strength = 2 must be included in the spanning tree. Edge [1,2] is optional and can be upgraded from 3 to 6 using one upgrade. The resulting spanning tree includes these two edges with strengths 2 and 6. The minimum strength in the spanning tree is 2, which is the maximum possible stability."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,4,0],[1,2,3,0],[0,2,1,0]], k = 2",
+      "output": "6",
+      "explanation": "Since all edges are optional and up to k = 2 upgrades are allowed. Upgrade edges [0,1] from 4 to 8 and [1,2] from 3 to 6. The resulting spanning tree includes these two edges with strengths 8 and 6. The minimum strength in the tree is 6, which is the maximum possible stability."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,1,1],[1,2,1,1],[2,0,1,1]], k = 0",
+      "output": "-1",
+      "explanation": "All edges are mandatory and form a cycle, which violates the spanning tree property of acyclicity. Thus, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxStability(int n, vector<vector<int>>& edges, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxStability(int n, int[][] edges, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxStability(self, n: int, edges: List[List[int]], k: int) -> int:\n        ",
+    "typescript": "function maxStability(n: number, edges: number[][], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxStability(int n, int[][] edges, int k) {\n        \n    }\n}",
+    "go": "func maxStability(n int, edges [][]int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_stability(n: i32, edges: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "edges": "[[0,1,2,1],[1,2,3,0]]",
+      "k": 1
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,4,0],[1,2,3,0],[0,2,1,0]]",
+      "k": 2
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,1,1],[1,2,1,1],[2,0,1,1]]",
+      "k": 0
+    }
+  ],
+  "functionName": "maxStability",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the <code>edges</code> array in descending order of weights.",
+    "Try using binary search on <code>ans</code>.",
+    "Implement a <code>chk</code> function which first adds all the edges with <code>must = 1</code>, and then adds the edges with <code>must = 0</code>, using any remaining upgrades greedily.",
+    "Use a <code>DSU</code> with path compression and union by size/rank to maintain connected components.",
+    "Don't forget the case where you cannot form an MST because more than one component remains after processing all edges."
+  ]
+}

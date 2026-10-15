@@ -1,0 +1,54 @@
+{
+  "id": "distribute-money-to-maximum-children",
+  "title": "2591. Distribute Money to Maximum Children",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/distribute-money-to-maximum-children/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "money = 20, children = 3",
+      "output": "1",
+      "explanation": "The maximum number of children with 8 dollars will be 1. One of the ways to distribute the money is: - 8 dollars to the first child. - 9 dollars to the second child. - 3 dollars to the third child. It can be proven that no distribution exists such that number of children getting 8 dollars is greater than 1."
+    },
+    {
+      "input": "money = 16, children = 2",
+      "output": "2",
+      "explanation": "Each child can be given 8 dollars."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distMoney(int money, int children) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distMoney(int money, int children) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distMoney(self, money: int, children: int) -> int:\n        ",
+    "typescript": "function distMoney(money: number, children: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DistMoney(int money, int children) {\n        \n    }\n}",
+    "go": "func distMoney(money int, children int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn dist_money(money: i32, children: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "money": 20,
+      "children": 3
+    },
+    {
+      "money": 16,
+      "children": 2
+    }
+  ],
+  "functionName": "distMoney",
+  "params": [
+    {
+      "name": "money",
+      "type": "int"
+    },
+    {
+      "name": "children",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we distribute the money according to the rules if we give 'k' children exactly 8 dollars?",
+    "Brute force to find the largest possible value of k, or return -1 if there doesn’t exist any such k."
+  ]
+}

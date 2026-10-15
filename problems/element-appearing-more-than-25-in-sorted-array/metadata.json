@@ -1,0 +1,47 @@
+{
+  "id": "element-appearing-more-than-25-in-sorted-array",
+  "title": "1287. Element Appearing More Than 25% In Sorted Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,2,2,6,6,6,6,7,10]",
+      "output": "6"
+    },
+    {
+      "input": "arr = [1,1]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findSpecialInteger(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findSpecialInteger(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findSpecialInteger(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function findSpecialInteger(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindSpecialInteger(int[] arr) {\n        \n    }\n}",
+    "go": "func findSpecialInteger(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_special_integer(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,2,2,6,6,6,6,7,10]"
+    },
+    {
+      "arr": "[1,1]"
+    }
+  ],
+  "functionName": "findSpecialInteger",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Divide the array in four parts [1 - 25%] [25 - 50 %] [50 - 75 %] [75% - 100%]",
+    "The answer should be in one of the ends of the intervals.",
+    "In order to check which is element is the answer we can count the frequency with binarySearch."
+  ]
+}

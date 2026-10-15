@@ -1,0 +1,63 @@
+{
+  "id": "find-and-replace-in-string",
+  "title": "833. Find And Replace in String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-and-replace-in-string/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"abcd\", indices = [0, 2], sources = [\"a\", \"cd\"], targets = [\"eee\", \"ffff\"]",
+      "output": "\"eeebffff\"",
+      "explanation": "\"a\" occurs at index 0 in s, so we replace it with \"eee\". \"cd\" occurs at index 2 in s, so we replace it with \"ffff\"."
+    },
+    {
+      "input": "s = \"abcd\", indices = [0, 2], sources = [\"ab\",\"ec\"], targets = [\"eee\",\"ffff\"]",
+      "output": "\"eeecd\"",
+      "explanation": "\"ab\" occurs at index 0 in s, so we replace it with \"eee\". \"ec\" does not occur at index 2 in s, so we do nothing."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string findReplaceString(string s, vector<int>& indices, vector<string>& sources, vector<string>& targets) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String findReplaceString(String s, int[] indices, String[] sources, String[] targets) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findReplaceString(self, s: str, indices: List[int], sources: List[str], targets: List[str]) -> str:\n        ",
+    "typescript": "function findReplaceString(s: string, indices: number[], sources: string[], targets: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FindReplaceString(string s, int[] indices, string[] sources, string[] targets) {\n        \n    }\n}",
+    "go": "func findReplaceString(s string, indices []int, sources []string, targets []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_replace_string(s: String, indices: Vec<i32>, sources: Vec<String>, targets: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcd",
+      "indices": "[0, 2]",
+      "sources": "[\"a\", \"cd\"]",
+      "targets": "[\"eee\", \"ffff\"]"
+    },
+    {
+      "s": "abcd",
+      "indices": "[0, 2]",
+      "sources": "[\"ab\",\"ec\"]",
+      "targets": "[\"eee\",\"ffff\"]"
+    }
+  ],
+  "functionName": "findReplaceString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "indices",
+      "type": "int_array"
+    },
+    {
+      "name": "sources",
+      "type": "string_array"
+    },
+    {
+      "name": "targets",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

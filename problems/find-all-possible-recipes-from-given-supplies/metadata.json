@@ -1,0 +1,70 @@
+{
+  "id": "find-all-possible-recipes-from-given-supplies",
+  "title": "2115. Find All Possible Recipes from Given Supplies",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "recipes = [\"bread\"], ingredients = [[\"yeast\",\"flour\"]], supplies = [\"yeast\",\"flour\",\"corn\"]",
+      "output": "[\"bread\"]",
+      "explanation": "We can create \"bread\" since we have the ingredients \"yeast\" and \"flour\"."
+    },
+    {
+      "input": "recipes = [\"bread\",\"sandwich\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
+      "output": "[\"bread\",\"sandwich\"]",
+      "explanation": "We can create \"bread\" since we have the ingredients \"yeast\" and \"flour\". We can create \"sandwich\" since we have the ingredient \"meat\" and can create the ingredient \"bread\"."
+    },
+    {
+      "input": "recipes = [\"bread\",\"sandwich\",\"burger\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
+      "output": "[\"bread\",\"sandwich\",\"burger\"]",
+      "explanation": "We can create \"bread\" since we have the ingredients \"yeast\" and \"flour\". We can create \"sandwich\" since we have the ingredient \"meat\" and can create the ingredient \"bread\". We can create \"burger\" since we have the ingredient \"meat\" and can create the ingredients \"bread\" and \"sandwich\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findAllRecipes(vector<string>& recipes, vector<vector<string>>& ingredients, vector<string>& supplies) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findAllRecipes(self, recipes: list[str], ingredients: list[list[str]], supplies: list[str]) -> list[str]:\n        ",
+    "typescript": "function findAllRecipes(recipes: string[], ingredients: string[][], supplies: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> FindAllRecipes(string[] recipes, IList<IList<string>> ingredients, string[] supplies) {\n        \n    }\n}",
+    "go": "func findAllRecipes(recipes []string, ingredients [][]string, supplies []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_all_recipes(recipes: Vec<String>, ingredients: Vec<Vec<String>>, supplies: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "recipes": "[\"bread\"]",
+      "ingredients": "[[\"yeast\",\"flour\"]]",
+      "supplies": "[\"yeast\",\"flour\",\"corn\"]"
+    },
+    {
+      "recipes": "[\"bread\",\"sandwich\"]",
+      "ingredients": "[[\"yeast\",\"flour\"],[\"bread\",\"meat\"]]",
+      "supplies": "[\"yeast\",\"flour\",\"meat\"]"
+    },
+    {
+      "recipes": "[\"bread\",\"sandwich\",\"burger\"]",
+      "ingredients": "[[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]]",
+      "supplies": "[\"yeast\",\"flour\",\"meat\"]"
+    }
+  ],
+  "functionName": "findAllRecipes",
+  "params": [
+    {
+      "name": "recipes",
+      "type": "string_array"
+    },
+    {
+      "name": "ingredients",
+      "type": "string_list_2d"
+    },
+    {
+      "name": "supplies",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Can we use a data structure to quickly query whether we have a certain ingredient?",
+    "Once we verify that we can make a recipe, we can add it to our ingredient data structure. We can then check if we can make more recipes as a result of this."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "minimum-subsequence-in-non-increasing-order",
+  "title": "1403. Minimum Subsequence in Non-Increasing Order",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,3,10,9,8]",
+      "output": "[10,9]",
+      "explanation": "The subsequences [10,9] and [10,8] are minimal such that the sum of their elements is strictly greater than the sum of elements not included. However, the subsequence [10,9] has the maximum total sum of its elements."
+    },
+    {
+      "input": "nums = [4,4,7,6,7]",
+      "output": "[7,7,6]",
+      "explanation": "The subsequence [7,7] has the sum of its elements equal to 14 which is not strictly greater than the sum of elements not included (14 = 4 + 4 + 6). Therefore, the subsequence [7,6,7] is the minimal satisfying the conditions. Note the subsequence has to be returned in non-increasing order."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minSubsequence(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> minSubsequence(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSubsequence(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function minSubsequence(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> MinSubsequence(int[] nums) {\n        \n    }\n}",
+    "go": "func minSubsequence(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_subsequence(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,3,10,9,8]"
+    },
+    {
+      "nums": "[4,4,7,6,7]"
+    }
+  ],
+  "functionName": "minSubsequence",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Sort elements and take each element from the largest until accomplish the conditions."
+  ]
+}

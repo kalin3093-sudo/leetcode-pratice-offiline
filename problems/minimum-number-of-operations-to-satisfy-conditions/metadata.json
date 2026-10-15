@@ -1,0 +1,53 @@
+{
+  "id": "minimum-number-of-operations-to-satisfy-conditions",
+  "title": "3122. Minimum Number of Operations to Satisfy Conditions",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,0,2],[1,0,2]]",
+      "output": "0",
+      "explanation": "All the cells in the matrix already satisfy the properties."
+    },
+    {
+      "input": "grid = [[1,1,1],[0,0,0]]",
+      "output": "3",
+      "explanation": "The matrix becomes [[1,0,1],[1,0,1]] which satisfies the properties, by doing these 3 operations: Change grid[1][0] to 1. Change grid[0][1] to 0. Change grid[1][2] to 1."
+    },
+    {
+      "input": "grid = [[1],[2],[3]]",
+      "output": "2",
+      "explanation": "There is a single column. We can change the value to 1 in each cell using 2 operations."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperations(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperations(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOperations(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function minimumOperations(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperations(int[][] grid) {\n        \n    }\n}",
+    "go": "func minimumOperations(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,0,2],[1,0,2]]"
+    },
+    {
+      "grid": "[[1,1,1],[0,0,0]]"
+    },
+    {
+      "grid": "[[1],[2],[3]]"
+    }
+  ],
+  "functionName": "minimumOperations",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

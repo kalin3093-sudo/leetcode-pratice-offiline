@@ -1,0 +1,57 @@
+{
+  "id": "minimum-deletions-to-make-character-frequencies-unique",
+  "title": "1647. Minimum Deletions to Make Character Frequencies Unique",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aab\"",
+      "output": "0",
+      "explanation": "s is already good."
+    },
+    {
+      "input": "s = \"aaabbbcc\"",
+      "output": "2",
+      "explanation": "You can delete two 'b's resulting in the good string \"aaabcc\". Another way it to delete one 'b' and one 'c' resulting in the good string \"aaabbc\"."
+    },
+    {
+      "input": "s = \"ceabaacb\"",
+      "output": "2",
+      "explanation": "You can delete both 'c's resulting in the good string \"eabaab\". Note that we only care about characters that are still in the string at the end (i.e. frequency of 0 is ignored)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDeletions(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDeletions(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDeletions(self, s: str) -> int:\n        ",
+    "typescript": "function minDeletions(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDeletions(string s) {\n        \n    }\n}",
+    "go": "func minDeletions(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_deletions(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aab"
+    },
+    {
+      "s": "aaabbbcc"
+    },
+    {
+      "s": "ceabaacb"
+    }
+  ],
+  "functionName": "minDeletions",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "As we can only delete characters, if we have multiple characters having the same frequency, we must decrease all the frequencies of them, except one.",
+    "Sort the alphabet characters by their frequencies non-increasingly.",
+    "Iterate on the alphabet characters, keep decreasing the frequency of the current character until it reaches a value that has not appeared before."
+  ]
+}

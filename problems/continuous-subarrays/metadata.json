@@ -1,0 +1,48 @@
+{
+  "id": "continuous-subarrays",
+  "title": "2762. Continuous Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/continuous-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,4,2,4]",
+      "output": "8",
+      "explanation": "Continuous subarray of size 1: [5], [4], [2], [4]. Continuous subarray of size 2: [5,4], [4,2], [2,4]. Continuous subarray of size 3: [4,2,4]. There are no subarrys of size 4. Total continuous subarrays = 4 + 3 + 1 = 8. It can be shown that there are no more continuous subarrays."
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "6",
+      "explanation": "Continuous subarray of size 1: [1], [2], [3]. Continuous subarray of size 2: [1,2], [2,3]. Continuous subarray of size 3: [1,2,3]. Total continuous subarrays = 3 + 2 + 1 = 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long continuousSubarrays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long continuousSubarrays(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def continuousSubarrays(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function continuousSubarrays(nums: number[]): number {\n\n};",
+    "csharp": "public class Solution {\n    public long ContinuousSubarrays(int[] nums) {\n        \n    }\n}",
+    "go": "func continuousSubarrays(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn continuous_subarrays(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,4,2,4]"
+    },
+    {
+      "nums": "[1,2,3]"
+    }
+  ],
+  "functionName": "continuousSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Try using the sliding window technique.",
+    "Use a set or map to keep track of the maximum and minimum of subarrays."
+  ]
+}

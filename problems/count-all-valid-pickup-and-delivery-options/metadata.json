@@ -1,0 +1,54 @@
+{
+  "id": "count-all-valid-pickup-and-delivery-options",
+  "title": "1359. Count All Valid Pickup and Delivery Options",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "1",
+      "explanation": "Unique order (P1, D1), Delivery 1 always is after of Pickup 1."
+    },
+    {
+      "input": "n = 2",
+      "output": "6",
+      "explanation": "All possible orders: (P1,P2,D1,D2), (P1,P2,D2,D1), (P1,D1,P2,D2), (P2,P1,D1,D2), (P2,P1,D2,D1) and (P2,D2,P1,D1). This is an invalid order (P1,D2,P2,D1) because Pickup 2 is after of Delivery 2."
+    },
+    {
+      "input": "n = 3",
+      "output": "90"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countOrders(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countOrders(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countOrders(self, n: int) -> int:\n        ",
+    "typescript": "function countOrders(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountOrders(int n) {\n        \n    }\n}",
+    "go": "func countOrders(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_orders(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    },
+    {
+      "n": 3
+    }
+  ],
+  "functionName": "countOrders",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use the permutation and combination theory to add one (P, D) pair each time until n pairs."
+  ]
+}

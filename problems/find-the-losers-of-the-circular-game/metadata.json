@@ -1,0 +1,53 @@
+{
+  "id": "find-the-losers-of-the-circular-game",
+  "title": "2682. Find the Losers of the Circular Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-losers-of-the-circular-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, k = 2",
+      "output": "[4,5]",
+      "explanation": "The game goes as follows: 1) Start at 1st friend and pass the ball to the friend who is 2 steps away from them - 3rd friend. 2) 3rd friend passes the ball to the friend who is 4 steps away from them - 2nd friend. 3) 2nd friend passes the ball to the friend who is 6 steps away from them  - 3rd friend. 4) The game ends as 3rd friend receives the ball for the second time."
+    },
+    {
+      "input": "n = 4, k = 4",
+      "output": "[2,3,4]",
+      "explanation": "The game goes as follows: 1) Start at the 1st friend and pass the ball to the friend who is 4 steps away from them - 1st friend. 2) The game ends as 1st friend receives the ball for the second time."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> circularGameLosers(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] circularGameLosers(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def circularGameLosers(self, n: int, k: int) -> List[int]:\n        ",
+    "typescript": "function circularGameLosers(n: number, k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] CircularGameLosers(int n, int k) {\n        \n    }\n}",
+    "go": "func circularGameLosers(n int, k int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn circular_game_losers(n: i32, k: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "k": 2
+    },
+    {
+      "n": 4,
+      "k": 4
+    }
+  ],
+  "functionName": "circularGameLosers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Simulate the whole game until a player receives the ball for the second time."
+  ]
+}

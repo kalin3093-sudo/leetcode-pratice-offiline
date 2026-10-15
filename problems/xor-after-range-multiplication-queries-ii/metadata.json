@@ -1,0 +1,54 @@
+{
+  "id": "xor-after-range-multiplication-queries-ii",
+  "title": "3655. XOR After Range Multiplication Queries II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,1], queries = [[0,2,1,4]]",
+      "output": "4",
+      "explanation": "A single query [0, 2, 1, 4] multiplies every element from index 0 through index 2 by 4. The array changes from [1, 1, 1] to [4, 4, 4]. The XOR of all elements is 4 ^ 4 ^ 4 = 4."
+    },
+    {
+      "input": "nums = [2,3,1,5,4], queries = [[1,4,2,3],[0,2,1,2]]",
+      "output": "31",
+      "explanation": "The first query [1, 4, 2, 3] multiplies the elements at indices 1 and 3 by 3, transforming the array to [2, 9, 1, 15, 4]. The second query [0, 2, 1, 2] multiplies the elements at indices 0, 1, and 2 by 2, resulting in [4, 18, 2, 15, 4]. Finally, the XOR of all elements is 4 ^ 18 ^ 2 ^ 15 ^ 4 = 31."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int xorAfterQueries(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int xorAfterQueries(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def xorAfterQueries(self, nums: List[int], queries: List[List[int]]) -> int:\n        ",
+    "typescript": "function xorAfterQueries(nums: number[], queries: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int XorAfterQueries(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func xorAfterQueries(nums []int, queries [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn xor_after_queries(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,1]",
+      "queries": "[[0,2,1,4]]"
+    },
+    {
+      "nums": "[2,3,1,5,4]",
+      "queries": "[[1,4,2,3],[0,2,1,2]]"
+    }
+  ],
+  "functionName": "xorAfterQueries",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For <code>k <= B</code> (where <code>B = sqrt(n)</code>): group queries by <code>(k, l mod k)</code>; for each group maintain a diff-array of length <code>ceil(n/k)</code> to record multiplier updates, then sweep each bucket to apply them to <code>nums</code>.",
+    "For <code>k > B</code>: for each query set <code>idx = l</code> and while <code>idx <= r</code> do <code>nums[idx] = (nums[idx] * v) mod (10^9+7)</code> and <code>idx += k</code>."
+  ]
+}

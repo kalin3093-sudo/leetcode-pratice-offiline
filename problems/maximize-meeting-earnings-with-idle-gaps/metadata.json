@@ -1,0 +1,53 @@
+{
+  "id": "maximize-meeting-earnings-with-idle-gaps",
+  "title": "4068. Maximize Meeting Earnings with Idle Gaps",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-meeting-earnings-with-idle-gaps/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "meetings = [[2,5,4],[6,8,3]]",
+      "output": "8",
+      "explanation": "Select both meetings. They do not overlap and earn 4 + 3 = 7 units of meeting revenue. The first meeting ends at time 5, and the second starts at time 6. This idle gap earns 6 - 5 = 1 additional unit. The maximum total earnings are 7 + 1 = 8."
+    },
+    {
+      "input": "meetings = [[3,5,4],[4,7,8],[8,10,3]]",
+      "output": "12",
+      "explanation": "Select the meetings at indices 1 and 2. They do not overlap and earn 8 + 3 = 11 units of meeting revenue. In chronological order, these meetings run from time 4 to 7 and from time 8 to 10. The idle gap earns 8 - 7 = 1 additional unit. The maximum total earnings are 11 + 1 = 12."
+    },
+    {
+      "input": "meetings = [[1,2,2],[4,5,2],[7,9,3]]",
+      "output": "11",
+      "explanation": "Select all three meetings. They do not overlap and earn 2 + 2 + 3 = 7 units of meeting revenue. The idle gap from time 2 to 4 earns 4 - 2 = 2 additional units. The idle gap from time 5 to 7 earns 7 - 5 = 2 additional units. The maximum total earnings are 7 + 2 + 2 = 11."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxEarnings(vector<vector<int>>& meetings) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxEarnings(int[][] meetings) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxEarnings(self, meetings: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxEarnings(meetings: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxEarnings(int[][] meetings) {\n        \n    }\n}",
+    "go": "func maxEarnings(meetings [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_earnings(meetings: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "meetings": "[[2,5,4],[6,8,3]]"
+    },
+    {
+      "meetings": "[[3,5,4],[4,7,8],[8,10,3]]"
+    },
+    {
+      "meetings": "[[1,2,2],[4,5,2],[7,9,3]]"
+    }
+  ],
+  "functionName": "maxEarnings",
+  "params": [
+    {
+      "name": "meetings",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": []
+}

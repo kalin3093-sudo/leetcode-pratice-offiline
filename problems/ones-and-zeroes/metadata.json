@@ -1,0 +1,57 @@
+{
+  "id": "ones-and-zeroes",
+  "title": "474. Ones and Zeroes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/ones-and-zeroes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "strs = [\"10\",\"0001\",\"111001\",\"1\",\"0\"], m = 5, n = 3",
+      "output": "4",
+      "explanation": "The largest subset with at most 5 0's and 3 1's is {\"10\", \"0001\", \"1\", \"0\"}, so the answer is 4. Other valid but smaller subsets include {\"0001\", \"1\"} and {\"10\", \"1\", \"0\"}. {\"111001\"} is an invalid subset because it contains 4 1's, greater than the maximum of 3."
+    },
+    {
+      "input": "strs = [\"10\",\"0\",\"1\"], m = 1, n = 1",
+      "output": "2",
+      "explanation": "The largest subset is {\"0\", \"1\"}, so the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMaxForm(vector<string>& strs, int m, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMaxForm(String[] strs, int m, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMaxForm(self, strs: list[str], m: int, n: int) -> int:\n        ",
+    "typescript": "function findMaxForm(strs: string[], m: number, n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMaxForm(string[] strs, int m, int n) {\n        \n    }\n}",
+    "go": "func findMaxForm(strs []string, m int, n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_max_form(strs: Vec<String>, m: i32, n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "strs": "[\"10\",\"0001\",\"111001\",\"1\",\"0\"]",
+      "m": 5,
+      "n": 3
+    },
+    {
+      "strs": "[\"10\",\"0\",\"1\"]",
+      "m": 1,
+      "n": 1
+    }
+  ],
+  "functionName": "findMaxForm",
+  "params": [
+    {
+      "name": "strs",
+      "type": "string_array"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

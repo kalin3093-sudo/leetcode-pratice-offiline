@@ -1,0 +1,57 @@
+{
+  "id": "longest-fibonacci-subarray",
+  "title": "3708. Longest Fibonacci Subarray",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-fibonacci-subarray/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,1,1,2,3,5,1]",
+      "output": "5",
+      "explanation": "The longest Fibonacci subarray is nums[2..6] = [1, 1, 2, 3, 5]. [1, 1, 2, 3, 5] is Fibonacci because 1 + 1 = 2, 1 + 2 = 3, and 2 + 3 = 5."
+    },
+    {
+      "input": "nums = [5,2,7,9,16]",
+      "output": "5",
+      "explanation": "The longest Fibonacci subarray is nums[0..4] = [5, 2, 7, 9, 16]. [5, 2, 7, 9, 16] is Fibonacci because 5 + 2 = 7, 2 + 7 = 9, and 7 + 9 = 16."
+    },
+    {
+      "input": "nums = [1000000000,1000000000,1000000000]",
+      "output": "2",
+      "explanation": "The longest Fibonacci subarray is nums[1..2] = [1000000000, 1000000000]. [1000000000, 1000000000] is Fibonacci because its length is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubarray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubarray(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function longestSubarray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubarray(int[] nums) {\n        \n    }\n}",
+    "go": "func longestSubarray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,1,1,2,3,5,1]"
+    },
+    {
+      "nums": "[5,2,7,9,16]"
+    },
+    {
+      "nums": "[1000000000,1000000000,1000000000]"
+    }
+  ],
+  "functionName": "longestSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Any subarray of <code>length <= 2</code> is valid. Start with length 2.",
+    "If <code>a[i] == a[i - 1] + a[i - 2]</code>, extend; otherwise reset length to 2.",
+    "Track the maximum length during one pass."
+  ]
+}

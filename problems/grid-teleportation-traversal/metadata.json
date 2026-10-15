@@ -1,0 +1,48 @@
+{
+  "id": "grid-teleportation-traversal",
+  "title": "3552. Grid Teleportation Traversal",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/grid-teleportation-traversal/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [\"A..\",\".A.\",\"...\"]",
+      "output": "2",
+      "explanation": "Before the first move, teleport from (0, 0) to (1, 1). In the first move, move from (1, 1) to (1, 2). In the second move, move from (1, 2) to (2, 2)."
+    },
+    {
+      "input": "matrix = [\".#...\",\".#.#.\",\".#.#.\",\"...#.\"]",
+      "output": "13"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minMoves(vector<string>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minMoves(String[] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minMoves(self, matrix: List[str]) -> int:\n        ",
+    "typescript": "function minMoves(matrix: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinMoves(string[] matrix) {\n        \n    }\n}",
+    "go": "func minMoves(matrix []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_moves(matrix: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[\"A..\",\".A.\",\"...\"]"
+    },
+    {
+      "matrix": "[\".#...\",\".#.#.\",\".#.#.\",\"...#.\"]"
+    }
+  ],
+  "functionName": "minMoves",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Treat all portals with the same letter as connected-like one big super-node.",
+    "Each portal letter is used at most once, but that doesn't affect correctness since we visit each cell only once in the shortest path.",
+    "Use Breadth-First Search to find the minimum number of moves."
+  ]
+}

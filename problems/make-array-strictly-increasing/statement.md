@@ -1,0 +1,10 @@
+Given two integer arrays `arr1` and `arr2`, return the minimum number of operations (possibly zero) needed to make `arr1` strictly increasing.
+
+In one operation, you can choose two indices `0 ≤ i < arr1.length` and `0 ≤ j < arr2.length` and do the assignment `arr1[i] = arr2[j]`.
+
+If there is no way to make `arr1` strictly increasing, return `-1`.
+
+**Constraints:**
+
+-   `1 ≤ arr1.length, arr2.length ≤ 2000`
+-   `0 ≤ arr1[i], arr2[i] ≤ 10^9`

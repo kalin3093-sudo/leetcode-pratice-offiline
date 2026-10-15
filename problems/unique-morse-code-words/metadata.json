@@ -1,0 +1,44 @@
+{
+  "id": "unique-morse-code-words",
+  "title": "804. Unique Morse Code Words",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/unique-morse-code-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"gin\",\"zen\",\"gig\",\"msg\"]",
+      "output": "2",
+      "explanation": "The transformation of each word is: \"gin\" -> \"--...-.\" \"zen\" -> \"--...-.\" \"gig\" -> \"--...--.\" \"msg\" -> \"--...--.\" There are 2 different transformations: \"--...-.\" and \"--...--.\"."
+    },
+    {
+      "input": "words = [\"a\"]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int uniqueMorseRepresentations(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int uniqueMorseRepresentations(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def uniqueMorseRepresentations(self, words: list[str]) -> int:\n        ",
+    "typescript": "function uniqueMorseRepresentations(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int UniqueMorseRepresentations(string[] words) {\n        \n    }\n}",
+    "go": "func uniqueMorseRepresentations(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn unique_morse_representations(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"gin\",\"zen\",\"gig\",\"msg\"]"
+    },
+    {
+      "words": "[\"a\"]"
+    }
+  ],
+  "functionName": "uniqueMorseRepresentations",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

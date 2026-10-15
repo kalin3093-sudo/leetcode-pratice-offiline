@@ -1,0 +1,47 @@
+{
+  "id": "trionic-array-i",
+  "title": "3637. Trionic Array I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/trionic-array-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,5,4,2,6]",
+      "output": "true",
+      "explanation": "Pick p = 2, q = 4: nums[0...2] = [1, 3, 5] is strictly increasing (1 < 3 < 5). nums[2...4] = [5, 4, 2] is strictly decreasing (5 > 4 > 2). nums[4...5] = [2, 6] is strictly increasing (2 < 6)."
+    },
+    {
+      "input": "nums = [2,1,3]",
+      "output": "false",
+      "explanation": "There is no way to pick p and q to form the required three segments."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isTrionic(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isTrionic(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isTrionic(self, nums: List[int]) -> bool:\n        ",
+    "typescript": "function isTrionic(nums: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsTrionic(int[] nums) {\n        \n    }\n}",
+    "go": "func isTrionic(nums []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_trionic(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,5,4,2,6]"
+    },
+    {
+      "nums": "[2,1,3]"
+    }
+  ],
+  "functionName": "isTrionic",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use brute force"
+  ]
+}

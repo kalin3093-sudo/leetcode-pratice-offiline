@@ -1,0 +1,14 @@
+[
+  {
+    "s": "(name)is(age)yearsold",
+    "knowledge": "[[\"name\",\"bob\"],[\"age\",\"two\"]]"
+  },
+  {
+    "s": "hi(name)",
+    "knowledge": "[[\"a\",\"b\"]]"
+  },
+  {
+    "s": "(a)(a)(a)aaa",
+    "knowledge": "[[\"a\",\"yes\"]]"
+  }
+]

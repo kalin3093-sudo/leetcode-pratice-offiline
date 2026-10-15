@@ -1,0 +1,47 @@
+{
+  "id": "lexicographically-largest-string-after-pair-transformations",
+  "title": "4036. Lexicographically Largest String After Pair Transformations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/lexicographically-largest-string-after-pair-transformations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,7]",
+      "output": "[\"b\",\"ca\",\"cba\"]",
+      "explanation": "nums[0] = 2: \"aa\" &rarr; \"b\". nums[1] = 5: \"aaaaa\" &rarr; \"baaa\" &rarr; \"bba\" &rarr; \"ca\". nums[2] = 7: \"aaaaaaa\" &rarr; \"baaaaa\" &rarr; \"bbaaa\" &rarr; \"bbba\" &rarr; \"cba\". Therefore, ans = [\"b\", \"ca\", \"cba\"]."
+    },
+    {
+      "input": "nums = [3,9,1]",
+      "output": "[\"ba\",\"da\",\"a\"]",
+      "explanation": "nums[0] = 3: \"aaa\" &rarr; \"ba\". nums[1] = 9: \"aaaaaaaaa\" &rarr; \"baaaaaaa\" &rarr; \"bbaaaaa\" &rarr; \"bbbaaa\" &rarr; \"bbbba\" &rarr; \"cbba\" &rarr; \"cca\" &rarr; \"da\". nums[2] = 1: No transformation can be applied, so the result is \"a\". Therefore, ans = [\"ba\", \"da\", \"a\"]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> largestString(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] largestString(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestString(self, nums: list[int]) -> list[str]:\n        ",
+    "typescript": "function largestString(nums: number[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] LargestString(int[] nums) {\n        \n    }\n}",
+    "go": "func largestString(nums []int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_string(nums: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,7]"
+    },
+    {
+      "nums": "[3,9,1]"
+    }
+  ],
+  "functionName": "largestString",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": [
+    "A letter that is <code>k</code> positions after <code>'a'</code> represents a block of <code>2<sup>k</sup></code> original <code>'a'</code> characters. To maximize the string lexicographically, greedily place the largest possible letter first. Remember that multiple <code>'z'</code> characters may be needed because <code>\"zz\"</code> cannot be merged further."
+  ]
+}

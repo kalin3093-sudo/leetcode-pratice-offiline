@@ -1,0 +1,49 @@
+{
+  "id": "count-the-number-of-square-free-subsets",
+  "title": "2572. Count the Number of Square-Free Subsets",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-the-number-of-square-free-subsets/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,4,4,5]",
+      "output": "3",
+      "explanation": "There are 3 square-free subsets in this example: - The subset consisting of the 0th element [3]. The product of its elements is 3, which is a square-free integer. - The subset consisting of the 3rd element [5]. The product of its elements is 5, which is a square-free integer. - The subset consisting of 0th and 3rd elements [3,5]. The product of its elements is 15, which is a square-free integer. It can be proven that there are no more than 3 square-free subsets in the given array."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "1",
+      "explanation": "There is 1 square-free subset in this example: - The subset consisting of the 0th element [1]. The product of its elements is 1, which is a square-free integer. It can be proven that there is no more than 1 square-free subset in the given array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int squareFreeSubsets(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int squareFreeSubsets(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def squareFreeSubsets(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function squareFreeSubsets(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SquareFreeSubsets(int[] nums) {\n        \n    }\n}",
+    "go": "func squareFreeSubsets(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn square_free_subsets(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,4,4,5]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "squareFreeSubsets",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There are 10 primes before number 30.",
+    "Label primes from {2, 3, … 29} with {0,1, … 9} and let DP(i, mask) denote the number of subsets before index: i with the subset of taken primes: mask.",
+    "If the mask and prime factorization of nums[i] have a common prime, then it is impossible to add to the current subset, otherwise, it is possible."
+  ]
+}

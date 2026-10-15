@@ -1,0 +1,54 @@
+{
+  "id": "minimum-division-operations-to-make-array-non-decreasing",
+  "title": "3326. Minimum Division Operations to Make Array Non Decreasing",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [25,7]",
+      "output": "1",
+      "explanation": "Using a single operation, 25 gets divided by 5 and nums becomes [5, 7]."
+    },
+    {
+      "input": "nums = [7,7,6]",
+      "output": "-1"
+    },
+    {
+      "input": "nums = [1,1,1,1]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[25,7]"
+    },
+    {
+      "nums": "[7,7,6]"
+    },
+    {
+      "nums": "[1,1,1,1]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate backward from the last index.",
+    "Each number can be divided by its largest proper divisor to yield its smallest prime divisor."
+  ]
+}

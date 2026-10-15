@@ -1,0 +1,63 @@
+{
+  "id": "split-strings-by-separator",
+  "title": "2788. Split Strings by Separator",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/split-strings-by-separator/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"one.two.three\",\"four.five\",\"six\"], separator = \".\"",
+      "output": "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]",
+      "explanation": "In this example we split as follows: \"one.two.three\" splits into \"one\", \"two\", \"three\" \"four.five\" splits into \"four\", \"five\" \"six\" splits into \"six\" Hence, the resulting array is [\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]."
+    },
+    {
+      "input": "words = [\"$easy$\",\"$problem$\"], separator = \"$\"",
+      "output": "[\"easy\",\"problem\"]",
+      "explanation": "In this example we split as follows: \"$easy$\" splits into \"easy\" (excluding empty strings) \"$problem$\" splits into \"problem\" (excluding empty strings) Hence, the resulting array is [\"easy\",\"problem\"]."
+    },
+    {
+      "input": "words = [\"|||\"], separator = \"|\"",
+      "output": "[]",
+      "explanation": "In this example the resulting split of \"|||\" will contain only empty strings, so we return an empty array []."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> splitWordsBySeparator(vector<string>& words, char separator) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> splitWordsBySeparator(List<String> words, char separator) {\n        \n    }\n}",
+    "python": "class Solution:\n    def splitWordsBySeparator(self, words: List[str], separator: str) -> List[str]:\n        ",
+    "typescript": "function splitWordsBySeparator(words: string[], separator: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> SplitWordsBySeparator(IList<string> words, char separator) {\n        \n    }\n}",
+    "go": "func splitWordsBySeparator(words []string, separator byte) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn split_words_by_separator(words: Vec<String>, separator: char) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"one.two.three\",\"four.five\",\"six\"]",
+      "separator": "."
+    },
+    {
+      "words": "[\"$easy$\",\"$problem$\"]",
+      "separator": "$"
+    },
+    {
+      "words": "[\"|||\"]",
+      "separator": "|"
+    }
+  ],
+  "functionName": "splitWordsBySeparator",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_list"
+    },
+    {
+      "name": "separator",
+      "type": "char"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Iterate over each string in the given array using a loop and perform string splitting based on the provided separator character.",
+    "Be sure not to return empty strings."
+  ]
+}

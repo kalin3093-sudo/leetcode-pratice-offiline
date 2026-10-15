@@ -1,0 +1,50 @@
+{
+  "id": "numbers-with-same-consecutive-differences",
+  "title": "967. Numbers With Same Consecutive Differences",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/numbers-with-same-consecutive-differences/",
+  "category": "backtracking",
+  "examples": [
+    {
+      "input": "n = 3, k = 7",
+      "output": "[181,292,707,818,929]",
+      "explanation": "Note that 070 is not a valid number, because it has leading zeroes."
+    },
+    {
+      "input": "n = 2, k = 1",
+      "output": "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> numsSameConsecDiff(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] numsSameConsecDiff(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numsSameConsecDiff(self, n: int, k: int) -> list[int]:\n        ",
+    "typescript": "function numsSameConsecDiff(n: number, k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] NumsSameConsecDiff(int n, int k) {\n        \n    }\n}",
+    "go": "func numsSameConsecDiff(n int, k int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn nums_same_consec_diff(n: i32, k: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "k": 7
+    },
+    {
+      "n": 2,
+      "k": 1
+    }
+  ],
+  "functionName": "numsSameConsecDiff",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

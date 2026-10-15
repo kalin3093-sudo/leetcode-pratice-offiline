@@ -1,0 +1,56 @@
+{
+  "id": "number-of-unique-good-subsequences",
+  "title": "1987. Number of Unique Good Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-unique-good-subsequences/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "binary = \"001\"",
+      "output": "2",
+      "explanation": "The good subsequences of binary are [\"0\", \"0\", \"1\"]. The unique good subsequences are \"0\" and \"1\"."
+    },
+    {
+      "input": "binary = \"11\"",
+      "output": "2",
+      "explanation": "The good subsequences of binary are [\"1\", \"1\", \"11\"]. The unique good subsequences are \"1\" and \"11\"."
+    },
+    {
+      "input": "binary = \"101\"",
+      "output": "5",
+      "explanation": "The good subsequences of binary are [\"1\", \"0\", \"1\", \"10\", \"11\", \"101\"]. The unique good subsequences are \"0\", \"1\", \"10\", \"11\", and \"101\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfUniqueGoodSubsequences(string binary) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfUniqueGoodSubsequences(String binary) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfUniqueGoodSubsequences(self, binary: str) -> int:\n        ",
+    "typescript": "function numberOfUniqueGoodSubsequences(binary: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfUniqueGoodSubsequences(string binary) {\n        \n    }\n}",
+    "go": "func numberOfUniqueGoodSubsequences(binary string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_unique_good_subsequences(binary: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "binary": "001"
+    },
+    {
+      "binary": "11"
+    },
+    {
+      "binary": "101"
+    }
+  ],
+  "functionName": "numberOfUniqueGoodSubsequences",
+  "params": [
+    {
+      "name": "binary",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The number of unique good subsequences is equal to the number of unique decimal values there are for all possible subsequences.",
+    "Find the answer at each index based on the previous indexes' answers."
+  ]
+}

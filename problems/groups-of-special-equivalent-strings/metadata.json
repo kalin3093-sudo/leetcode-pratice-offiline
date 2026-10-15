@@ -1,0 +1,44 @@
+{
+  "id": "groups-of-special-equivalent-strings",
+  "title": "893. Groups of Special-Equivalent Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/groups-of-special-equivalent-strings/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"abcd\",\"cdab\",\"cbad\",\"xyzz\",\"zzxy\",\"zzyx\"]",
+      "output": "3",
+      "explanation": "One group is [\"abcd\", \"cdab\", \"cbad\"], since they are all pairwise special equivalent, and none of the other strings is all pairwise special equivalent to these. The other two groups are [\"xyzz\", \"zzxy\"] and [\"zzyx\"]. Note that in particular, \"zzxy\" is not special equivalent to \"zzyx\"."
+    },
+    {
+      "input": "words = [\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSpecialEquivGroups(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSpecialEquivGroups(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSpecialEquivGroups(self, words: list[str]) -> int:\n        ",
+    "typescript": "function numSpecialEquivGroups(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSpecialEquivGroups(string[] words) {\n        \n    }\n}",
+    "go": "func numSpecialEquivGroups(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_special_equiv_groups(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abcd\",\"cdab\",\"cbad\",\"xyzz\",\"zzxy\",\"zzyx\"]"
+    },
+    {
+      "words": "[\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]"
+    }
+  ],
+  "functionName": "numSpecialEquivGroups",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

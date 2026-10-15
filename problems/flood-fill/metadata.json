@@ -1,0 +1,65 @@
+{
+  "id": "flood-fill",
+  "title": "733. Flood Fill",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/flood-fill/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2",
+      "output": "[[2,2,2],[2,2,0],[2,0,1]]",
+      "explanation": "From the center of the image with position (sr, sc) = (1, 1) (i.e., the red pixel), all pixels connected by a path of the same color as the starting pixel (i.e., the blue pixels) are colored with the new color. Note the bottom corner is not colored 2, because it is not horizontally or vertically connected to the starting pixel."
+    },
+    {
+      "input": "image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0",
+      "output": "[[0,0,0],[0,0,0]]",
+      "explanation": "The starting pixel is already colored with 0, which is the same as the target color. Therefore, no changes are made to the image."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] floodFill(int[][] image, int sr, int sc, int color) {\n        \n    }\n}",
+    "python": "class Solution:\n    def floodFill(self, image: list[list[int]], sr: int, sc: int, color: int) -> list[list[int]]:\n        ",
+    "typescript": "function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] FloodFill(int[][] image, int sr, int sc, int color) {\n        \n    }\n}",
+    "go": "func floodFill(image [][]int, sr int, sc int, color int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn flood_fill(image: Vec<Vec<i32>>, sr: i32, sc: i32, color: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "image": "[[1,1,1],[1,1,0],[1,0,1]]",
+      "sr": 1,
+      "sc": 1,
+      "color": 2
+    },
+    {
+      "image": "[[0,0,0],[0,0,0]]",
+      "sr": 0,
+      "sc": 0,
+      "color": 0
+    }
+  ],
+  "functionName": "floodFill",
+  "params": [
+    {
+      "name": "image",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "sr",
+      "type": "int"
+    },
+    {
+      "name": "sc",
+      "type": "int"
+    },
+    {
+      "name": "color",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Write a recursive function that paints the pixel if it's the correct color, then recurses on neighboring pixels."
+  ]
+}

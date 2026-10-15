@@ -1,0 +1,44 @@
+{
+  "id": "sum-of-square-numbers",
+  "title": "633. Sum of Square Numbers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-square-numbers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "c = 5",
+      "output": "true",
+      "explanation": "1 * 1 + 2 * 2 = 5"
+    },
+    {
+      "input": "c = 3",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool judgeSquareSum(int c) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean judgeSquareSum(int c) {\n        \n    }\n}",
+    "python": "class Solution:\n    def judgeSquareSum(self, c: int) -> bool:\n        ",
+    "typescript": "function judgeSquareSum(c: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool JudgeSquareSum(int c) {\n        \n    }\n}",
+    "go": "func judgeSquareSum(c int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn judge_square_sum(c: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "c": 5
+    },
+    {
+      "c": 3
+    }
+  ],
+  "functionName": "judgeSquareSum",
+  "params": [
+    {
+      "name": "c",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

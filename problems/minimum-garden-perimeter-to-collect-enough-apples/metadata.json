@@ -1,0 +1,54 @@
+{
+  "id": "minimum-garden-perimeter-to-collect-enough-apples",
+  "title": "1954. Minimum Garden Perimeter to Collect Enough Apples",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "neededApples = 1",
+      "output": "8",
+      "explanation": "A square plot of side length 1 does not contain any apples. However, a square plot of side length 2 has 12 apples inside (as depicted in the image above). The perimeter is 2 * 4 = 8."
+    },
+    {
+      "input": "neededApples = 13",
+      "output": "16"
+    },
+    {
+      "input": "neededApples = 1000000000",
+      "output": "5040"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumPerimeter(long long neededApples) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumPerimeter(long neededApples) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumPerimeter(self, neededApples: int) -> int:\n        ",
+    "typescript": "function minimumPerimeter(neededApples: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumPerimeter(long neededApples) {\n        \n    }\n}",
+    "go": "func minimumPerimeter(neededApples int64) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_perimeter(needed_apples: i64) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "neededApples": "1"
+    },
+    {
+      "neededApples": "13"
+    },
+    {
+      "neededApples": "1000000000"
+    }
+  ],
+  "functionName": "minimumPerimeter",
+  "params": [
+    {
+      "name": "neededApples",
+      "type": "long"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Find a formula for the number of apples inside a square with a side length L.",
+    "Iterate over the possible lengths of the square until enough apples are collected."
+  ]
+}

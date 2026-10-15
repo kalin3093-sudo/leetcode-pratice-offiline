@@ -1,0 +1,45 @@
+{
+  "id": "distant-barcodes",
+  "title": "1054. Distant Barcodes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/distant-barcodes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "barcodes = [1,1,1,2,2,2]",
+      "output": "[2,1,2,1,2,1]"
+    },
+    {
+      "input": "barcodes = [1,1,1,1,2,2,3,3]",
+      "output": "[1,3,1,3,1,2,1,2]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> rearrangeBarcodes(vector<int>& barcodes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] rearrangeBarcodes(int[] barcodes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rearrangeBarcodes(self, barcodes: list[int]) -> list[int]:\n        ",
+    "typescript": "function rearrangeBarcodes(barcodes: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] RearrangeBarcodes(int[] barcodes) {\n        \n    }\n}",
+    "go": "func rearrangeBarcodes(barcodes []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rearrange_barcodes(barcodes: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "barcodes": "[1,1,1,2,2,2]"
+    },
+    {
+      "barcodes": "[1,1,1,1,2,2,3,3]"
+    }
+  ],
+  "functionName": "rearrangeBarcodes",
+  "params": [
+    {
+      "name": "barcodes",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "We want to always choose the most common or second most common element to write next.  What data structure allows us to query this effectively?"
+  ]
+}

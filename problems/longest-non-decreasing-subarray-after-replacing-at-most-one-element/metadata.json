@@ -1,0 +1,51 @@
+{
+  "id": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+  "title": "3738. Longest Non-Decreasing Subarray After Replacing at Most One Element",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-non-decreasing-subarray-after-replacing-at-most-one-element/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,1,2]",
+      "output": "4",
+      "explanation": "Replacing nums[3] = 1 with 3 gives the array [1, 2, 3, 3, 2]. The longest non-decreasing subarray is [1, 2, 3, 3], which has a length of 4."
+    },
+    {
+      "input": "nums = [2,2,2,2,2]",
+      "output": "5",
+      "explanation": "All elements in nums are equal, so it is already non-decreasing and the entire nums forms a subarray of length 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubarray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubarray(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function longestSubarray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubarray(int[] nums) {\n        \n    }\n}",
+    "go": "func longestSubarray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,1,2]"
+    },
+    {
+      "nums": "[2,2,2,2,2]"
+    }
+  ],
+  "functionName": "longestSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use prefix and suffix arrays",
+    "Create a prefix array where <code>pref[i]</code> denotes the maximum-length non-decreasing subarray ending at <code>i</code>",
+    "Create a suffix array where <code>suff[i]</code> denotes the maximum-length non-decreasing subarray starting at <code>i</code>",
+    "Let the initial maximum be <code>max(max(pref), max(suff))</code>",
+    "For each index <code>i</code>, try to combine the prefix ending at <code>i - 1</code> and the suffix starting at <code>i + 1</code> if possible; also consider the maximum without combining them"
+  ]
+}

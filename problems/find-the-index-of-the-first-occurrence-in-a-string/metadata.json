@@ -1,0 +1,51 @@
+{
+  "id": "find-the-index-of-the-first-occurrence-in-a-string",
+  "title": "28. Find the Index of the First Occurrence in a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "haystack = \"sadbutsad\", needle = \"sad\"",
+      "output": "0",
+      "explanation": "\"sad\" occurs at index 0 and 6. The first occurrence is at index 0, so we return 0."
+    },
+    {
+      "input": "haystack = \"leetcode\", needle = \"leeto\"",
+      "output": "-1",
+      "explanation": "\"leeto\" did not occur in \"leetcode\", so we return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int strStr(string haystack, string needle) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int strStr(String haystack, String needle) {\n        \n    }\n}",
+    "python": "class Solution:\n    def strStr(self, haystack: str, needle: str) -> int:\n        ",
+    "typescript": "function strStr(haystack: string, needle: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int StrStr(string haystack, string needle) {\n        \n    }\n}",
+    "go": "func strStr(haystack string, needle string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn str_str(haystack: String, needle: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "haystack": "sadbutsad",
+      "needle": "sad"
+    },
+    {
+      "haystack": "leetcode",
+      "needle": "leeto"
+    }
+  ],
+  "functionName": "strStr",
+  "params": [
+    {
+      "name": "haystack",
+      "type": "string"
+    },
+    {
+      "name": "needle",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

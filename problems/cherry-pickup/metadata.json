@@ -1,0 +1,44 @@
+{
+  "id": "cherry-pickup",
+  "title": "741. Cherry Pickup",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/cherry-pickup/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,-1],[1,0,-1],[1,1,1]]",
+      "output": "5",
+      "explanation": "The player started at (0, 0) and went down, down, right right to reach (2, 2). 4 cherries were picked up during this single trip, and the matrix becomes [[0,1,-1],[0,0,-1],[0,0,0]]. Then, the player went left, up, up, left to return home, picking up one more cherry. The total number of cherries picked up is 5, and this is the maximum possible."
+    },
+    {
+      "input": "grid = [[1,1,-1],[1,-1,1],[-1,1,1]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int cherryPickup(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int cherryPickup(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def cherryPickup(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function cherryPickup(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CherryPickup(int[][] grid) {\n        \n    }\n}",
+    "go": "func cherryPickup(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn cherry_pickup(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,-1],[1,0,-1],[1,1,1]]"
+    },
+    {
+      "grid": "[[1,1,-1],[1,-1,1],[-1,1,1]]"
+    }
+  ],
+  "functionName": "cherryPickup",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

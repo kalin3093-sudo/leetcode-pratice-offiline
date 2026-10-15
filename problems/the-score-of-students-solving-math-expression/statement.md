@@ -1,0 +1,24 @@
+You are given a string `s` that contains digits `0-9`, addition symbols `'+'`, and multiplication symbols `'*'` **only**, representing a **valid** math expression of **single digit numbers** (e.g., `3+5*2`). This expression was given to `n` elementary school students. The students were instructed to get the answer of the expression by following this **order of operations**:
+
+1.  Compute **multiplication**, reading from **left to right**; Then,
+2.  Compute **addition**, reading from **left to right**.
+
+You are given an integer array `answers` of length `n`, which are the submitted answers of the students in no particular order. You are asked to grade the `answers`, by following these **rules**:
+
+-   If an answer **equals** the correct answer of the expression, this student will be rewarded `5` points;
+-   Otherwise, if the answer **could be interpreted** as if the student applied the operators **in the wrong order** but had **correct arithmetic**, this student will be rewarded `2` points;
+-   Otherwise, this student will be rewarded `0` points.
+
+Return *the sum of the points of the students*.
+
+**Constraints:**
+
+-   `3 ≤ s.length ≤ 31`
+-   `s` represents a valid expression that contains only digits `0-9`, `'+'`, and `'*'` only.
+-   All the integer operands in the expression are in the **inclusive** range `[0, 9]`.
+-   `1 ≤` The count of all operators (`'+'` and `'*'`) in the math expression `≤ 15`
+-   Test data are generated such that the correct answer of the expression is in the range of `[0, 1000]`.
+-   Test data are generated such that value never exceeds 10^9 in intermediate steps of multiplication.
+-   `n == answers.length`
+-   `1 ≤ n ≤ 10^4`
+-   `0 ≤ answers[i] ≤ 1000`

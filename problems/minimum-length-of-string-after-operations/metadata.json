@@ -1,0 +1,49 @@
+{
+  "id": "minimum-length-of-string-after-operations",
+  "title": "3223. Minimum Length of String After Operations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-length-of-string-after-operations/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abaacbcbb\"",
+      "output": "5",
+      "explanation": "We do the following operations: Choose index 2, then remove the characters at indices 0 and 3. The resulting string is s = \"bacbcbb\". Choose index 3, then remove the characters at indices 0 and 5. The resulting string is s = \"acbcb\"."
+    },
+    {
+      "input": "s = \"aa\"",
+      "output": "2",
+      "explanation": "We cannot perform any operations, so we return the length of the original string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumLength(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumLength(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumLength(self, s: str) -> int:\n        ",
+    "typescript": "function minimumLength(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumLength(string s) {\n        \n    }\n}",
+    "go": "func minimumLength(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_length(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abaacbcbb"
+    },
+    {
+      "s": "aa"
+    }
+  ],
+  "functionName": "minimumLength",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Only the frequency of each character matters in finding the final answer.",
+    "If a character occurs less than 3 times, we cannot perform any process with it.",
+    "Suppose there is a character that occurs at least 3 times in the string, we can repeatedly delete two of these characters until there are at most 2 occurrences left of it."
+  ]
+}

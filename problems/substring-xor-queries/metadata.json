@@ -1,0 +1,63 @@
+{
+  "id": "substring-xor-queries",
+  "title": "2564. Substring XOR Queries",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/substring-xor-queries/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"101101\", queries = [[0,5],[1,2]]",
+      "output": "[[0,2],[2,3]]",
+      "explanation": "For the first query the substring in range [0,2] is \"101\" which has a decimal value of 5, and 5 ^ 0 = 5, hence the answer to the first query is [0,2]. In the second query, the substring in range [2,3] is \"11\", and has a decimal value of 3, and 3 ^ 1 = 2. So, [2,3] is returned for the second query."
+    },
+    {
+      "input": "s = \"0101\", queries = [[12,8]]",
+      "output": "[[-1,-1]]",
+      "explanation": "In this example there is no substring that answers the query, hence [-1,-1] is returned."
+    },
+    {
+      "input": "s = \"1\", queries = [[4,5]]",
+      "output": "[[0,0]]",
+      "explanation": "For this example, the substring in range [0,0] has a decimal value of 1, and 1 ^ 4 = 5. So, the answer is [0,0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> substringXorQueries(string s, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] substringXorQueries(String s, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def substringXorQueries(self, s: str, queries: List[List[int]]) -> List[List[int]]:\n        ",
+    "typescript": "function substringXorQueries(s: string, queries: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] SubstringXorQueries(string s, int[][] queries) {\n        \n    }\n}",
+    "go": "func substringXorQueries(s string, queries [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn substring_xor_queries(s: String, queries: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "101101",
+      "queries": "[[0,5],[1,2]]"
+    },
+    {
+      "s": "0101",
+      "queries": "[[12,8]]"
+    },
+    {
+      "s": "1",
+      "queries": "[[4,5]]"
+    }
+  ],
+  "functionName": "substringXorQueries",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "You do not need to consider substrings having lengths greater than 30.",
+    "Pre-process all substrings with lengths not greater than 30, and add the best endpoints to a dictionary."
+  ]
+}

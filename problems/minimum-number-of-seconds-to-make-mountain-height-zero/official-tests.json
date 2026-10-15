@@ -1,0 +1,14 @@
+[
+  {
+    "mountainHeight": 4,
+    "workerTimes": "[2,1,1]"
+  },
+  {
+    "mountainHeight": 10,
+    "workerTimes": "[3,2,2,4]"
+  },
+  {
+    "mountainHeight": 5,
+    "workerTimes": "[1]"
+  }
+]

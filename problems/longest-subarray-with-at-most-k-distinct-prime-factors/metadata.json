@@ -1,0 +1,63 @@
+{
+  "id": "longest-subarray-with-at-most-k-distinct-prime-factors",
+  "title": "4032. Longest Subarray With at Most K Distinct Prime Factors",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-subarray-with-at-most-k-distinct-prime-factors/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [7,6,10,12,11], k = 3",
+      "output": "3",
+      "explanation": "Consider the subarray [6, 10, 12]: The distinct prime factors of 6 are {2, 3}. The distinct prime factors of 10 are {2, 5}. The distinct prime factors of 12 are {2, 3}. The union of these sets is {2, 3, 5}, which contains 3 distinct prime factors. No longer subarray satisfies the condition. Therefore, the answer is 3."
+    },
+    {
+      "input": "nums = [4,6,9,18], k = 4",
+      "output": "4",
+      "explanation": "Consider the entire array [4, 6, 9, 18]: The distinct prime factors of 4 are {2}. The distinct prime factors of 6 are {2, 3}. The distinct prime factors of 9 are {3}. The distinct prime factors of 18 are {2, 3}. The union of these sets is {2, 3}, which contains 2 distinct prime factors. Since 2 <= 4, the entire array is valid. Therefore, the answer is 4."
+    },
+    {
+      "input": "nums = [6,10,15], k = 2",
+      "output": "1",
+      "explanation": "Every subarray of length at least 2 has prime factor set {2, 3, 5}, which contains 3 distinct prime factors. Since 3 > 2, only subarrays of length 1 are valid. Therefore, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubarray(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubarray(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function longestSubarray(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubarray(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func longestSubarray(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[7,6,10,12,11]",
+      "k": 3
+    },
+    {
+      "nums": "[4,6,9,18]",
+      "k": 4
+    },
+    {
+      "nums": "[6,10,15]",
+      "k": 2
+    }
+  ],
+  "functionName": "longestSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Precompute the distinct prime factors of every value, for example using a smallest-prime-factor sieve.",
+    "Use a sliding window and maintain how many elements in the current window contain each prime factor. Shrink the window whenever the number of prime factors with a positive frequency exceeds <code>k</code>."
+  ]
+}

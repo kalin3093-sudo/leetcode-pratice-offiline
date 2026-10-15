@@ -1,0 +1,56 @@
+{
+  "id": "smallest-absent-positive-greater-than-average",
+  "title": "3678. Smallest Absent Positive Greater Than Average",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/smallest-absent-positive-greater-than-average/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,5]",
+      "output": "6",
+      "explanation": "The average of nums is (3 + 5) / 2 = 8 / 2 = 4. The smallest absent positive integer greater than 4 is 6."
+    },
+    {
+      "input": "nums = [-1,1,2]",
+      "output": "3",
+      "explanation": "The average of nums is (-1 + 1 + 2) / 3 = 2 / 3 = 0.667. The smallest absent positive integer greater than 0.667 is 3."
+    },
+    {
+      "input": "nums = [4,-1]",
+      "output": "2",
+      "explanation": "The average of nums is (4 + (-1)) / 2 = 3 / 2 = 1.50. The smallest absent positive integer greater than 1.50 is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestAbsent(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestAbsent(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestAbsent(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function smallestAbsent(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestAbsent(int[] nums) {\n        \n    }\n}",
+    "go": "func smallestAbsent(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_absent(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,5]"
+    },
+    {
+      "nums": "[-1,1,2]"
+    },
+    {
+      "nums": "[4,-1]"
+    }
+  ],
+  "functionName": "smallestAbsent",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Compute the average, set <code>x = floor(avg) + 1</code> (the smallest integer greater than the average).",
+    "Increment <code>x</code> until it's not in the array and return it."
+  ]
+}

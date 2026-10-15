@@ -1,0 +1,47 @@
+{
+  "id": "reverse-degree-of-a-string",
+  "title": "3498. Reverse Degree of a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "148",
+      "explanation": "Letter Index in Reversed Alphabet Index in String Product 'a' 26 1 26 'b' 25 2 50 'c' 24 3 72 The reversed degree is 26 + 50 + 72 = 148."
+    },
+    {
+      "input": "s = \"zaza\"",
+      "output": "160",
+      "explanation": "Letter Index in Reversed Alphabet Index in String Product 'z' 1 1 1 'a' 26 2 52 'z' 1 3 3 'a' 26 4 104 The reverse degree is 1 + 52 + 3 + 104 = 160."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int reverseDegree(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int reverseDegree(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reverseDegree(self, s: str) -> int:\n        ",
+    "typescript": "function reverseDegree(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ReverseDegree(string s) {\n        \n    }\n}",
+    "go": "func reverseDegree(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reverse_degree(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc"
+    },
+    {
+      "s": "zaza"
+    }
+  ],
+  "functionName": "reverseDegree",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the operations as described."
+  ]
+}

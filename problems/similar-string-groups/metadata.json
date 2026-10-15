@@ -1,0 +1,43 @@
+{
+  "id": "similar-string-groups",
+  "title": "839. Similar String Groups",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/similar-string-groups/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "strs = [\"tars\",\"rats\",\"arts\",\"star\"]",
+      "output": "2"
+    },
+    {
+      "input": "strs = [\"omv\",\"ovm\"]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSimilarGroups(vector<string>& strs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSimilarGroups(String[] strs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSimilarGroups(self, strs: list[str]) -> int:\n        ",
+    "typescript": "function numSimilarGroups(strs: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSimilarGroups(string[] strs) {\n        \n    }\n}",
+    "go": "func numSimilarGroups(strs []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_similar_groups(strs: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "strs": "[\"tars\",\"rats\",\"arts\",\"star\"]"
+    },
+    {
+      "strs": "[\"omv\",\"ovm\"]"
+    }
+  ],
+  "functionName": "numSimilarGroups",
+  "params": [
+    {
+      "name": "strs",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

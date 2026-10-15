@@ -1,0 +1,63 @@
+{
+  "id": "reverse-prefix-of-word",
+  "title": "2000. Reverse Prefix of Word",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/reverse-prefix-of-word/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "word = \"abcdefd\", ch = \"d\"",
+      "output": "\"dcbaefd\"",
+      "explanation": "The first occurrence of \"d\" is at index 3. Reverse the part of word from 0 to 3 (inclusive), the resulting string is \"dcbaefd\"."
+    },
+    {
+      "input": "word = \"xyxzxe\", ch = \"z\"",
+      "output": "\"zxyxxe\"",
+      "explanation": "The first and only occurrence of \"z\" is at index 3. Reverse the part of word from 0 to 3 (inclusive), the resulting string is \"zxyxxe\"."
+    },
+    {
+      "input": "word = \"abcd\", ch = \"z\"",
+      "output": "\"abcd\"",
+      "explanation": "\"z\" does not exist in word. You should not do any reverse operation, the resulting string is \"abcd\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reversePrefix(string word, char ch) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reversePrefix(String word, char ch) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reversePrefix(self, word: str, ch: str) -> str:\n        ",
+    "typescript": "function reversePrefix(word: string, ch: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReversePrefix(string word, char ch) {\n        \n    }\n}",
+    "go": "func reversePrefix(word string, ch byte) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reverse_prefix(word: String, ch: char) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "abcdefd",
+      "ch": "d"
+    },
+    {
+      "word": "xyxzxe",
+      "ch": "z"
+    },
+    {
+      "word": "abcd",
+      "ch": "z"
+    }
+  ],
+  "functionName": "reversePrefix",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    },
+    {
+      "name": "ch",
+      "type": "char"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Find the first index where ch appears.",
+    "Find a way to reverse a substring of word."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "minimum-cost-to-make-two-binary-strings-equal",
+  "title": "3800. Minimum Cost to Make Two Binary Strings Equal",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"01000\", t = \"10111\", flipCost = 10, swapCost = 2, crossCost = 2",
+      "output": "16",
+      "explanation": "We can perform the following operations: Swap s[0] and s[1] (swapCost = 2). After this operation, s = \"10000\" and t = \"10111\". Cross swap s[2] and t[2] (crossCost = 2). After this operation, s = \"10100\" and t = \"10011\". Swap s[2] and s[3] (swapCost = 2). After this operation, s = \"10010\" and t = \"10011\". Flip s[4] (flipCost = 10). After this operation, s = t = \"10011\". The total cost is 2 + 2 + 2 + 10 = 16."
+    },
+    {
+      "input": "s = \"001\", t = \"110\", flipCost = 2, swapCost = 100, crossCost = 100",
+      "output": "6",
+      "explanation": "Flipping all the bits of s makes the strings equal, and the total cost is 3 * flipCost = 3 * 2 = 6."
+    },
+    {
+      "input": "s = \"1010\", t = \"1010\", flipCost = 5, swapCost = 5, crossCost = 5",
+      "output": "0",
+      "explanation": "The strings are already equal, so no operations are required."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumCost(string s, string t, int flipCost, int swapCost, int crossCost) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumCost(String s, String t, int flipCost, int swapCost, int crossCost) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumCost(self, s: str, t: str, flipCost: int, swapCost: int, crossCost: int) -> int:\n        ",
+    "typescript": "function minimumCost(s: string, t: string, flipCost: number, swapCost: number, crossCost: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumCost(string s, string t, int flipCost, int swapCost, int crossCost) {\n        \n    }\n}",
+    "go": "func minimumCost(s string, t string, flipCost int, swapCost int, crossCost int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_cost(s: String, t: String, flip_cost: i32, swap_cost: i32, cross_cost: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "01000",
+      "t": "10111",
+      "flipCost": 10,
+      "swapCost": 2,
+      "crossCost": 2
+    },
+    {
+      "s": "001",
+      "t": "110",
+      "flipCost": 2,
+      "swapCost": 100,
+      "crossCost": 100
+    },
+    {
+      "s": "1010",
+      "t": "1010",
+      "flipCost": 5,
+      "swapCost": 5,
+      "crossCost": 5
+    }
+  ],
+  "functionName": "minimumCost",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    },
+    {
+      "name": "flipCost",
+      "type": "int"
+    },
+    {
+      "name": "swapCost",
+      "type": "int"
+    },
+    {
+      "name": "crossCost",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Count mismatches: <code>a</code> = #(s = '0' , t = '1' ) <code>, b</code> = #(s = '1' , t = '0').",
+    "Pair opposite mismatches: <code>p = min( a , b)</code>. Fix each pair with cost <code>min(swapCost , 2 * flipCost)</code>.",
+    "Update counts: <code>a = a - p</code>, <code>b = b - p</code>. Let <code>r = abs( a - b)</code>.",
+    "Fix remaining mismatches in pairs: each pair costs <code>min(crossCost + swapCost , 2 * flipCost)</code>.",
+    "If one mismatch remains (<code>r % 2 == 1</code>), pay <code>flipCost</code>.",
+    "Sum all costs for the answer."
+  ]
+}

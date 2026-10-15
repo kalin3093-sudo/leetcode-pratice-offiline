@@ -1,0 +1,59 @@
+{
+  "id": "find-occurrences-of-an-element-in-an-array",
+  "title": "3159. Find Occurrences of an Element in an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,1,7], queries = [1,3,2,4], x = 1",
+      "output": "[0,-1,2,-1]",
+      "explanation": "For the 1st query, the first occurrence of 1 is at index 0. For the 2nd query, there are only two occurrences of 1 in nums, so the answer is -1. For the 3rd query, the second occurrence of 1 is at index 2. For the 4th query, there are only two occurrences of 1 in nums, so the answer is -1."
+    },
+    {
+      "input": "nums = [1,2,3], queries = [10], x = 5",
+      "output": "[-1]",
+      "explanation": "For the 1st query, 5 doesn't exist in nums, so the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> occurrencesOfElement(vector<int>& nums, vector<int>& queries, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] occurrencesOfElement(int[] nums, int[] queries, int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def occurrencesOfElement(self, nums: List[int], queries: List[int], x: int) -> List[int]:\n        ",
+    "typescript": "function occurrencesOfElement(nums: number[], queries: number[], x: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] OccurrencesOfElement(int[] nums, int[] queries, int x) {\n        \n    }\n}",
+    "go": "func occurrencesOfElement(nums []int, queries []int, x int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn occurrences_of_element(nums: Vec<i32>, queries: Vec<i32>, x: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,1,7]",
+      "queries": "[1,3,2,4]",
+      "x": 1
+    },
+    {
+      "nums": "[1,2,3]",
+      "queries": "[10]",
+      "x": 5
+    }
+  ],
+  "functionName": "occurrencesOfElement",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Compress the array <code>nums</code> and save all the occurrences of each element in the separate arrays."
+  ]
+}

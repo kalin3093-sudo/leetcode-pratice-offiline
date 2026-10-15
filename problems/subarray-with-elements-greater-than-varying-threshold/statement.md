@@ -1,0 +1,12 @@
+You are given an integer array `nums` and an integer `threshold`.
+
+Find any subarray of `nums` of length `k` such that **every** element in the subarray is **greater** than `threshold / k`.
+
+Return *the **size** of **any** such subarray*. If there is no such subarray, return `-1`.
+
+A **subarray** is a contiguous non-empty sequence of elements within an array.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 10^5`
+-   `1 ≤ nums[i], threshold ≤ 10^9`

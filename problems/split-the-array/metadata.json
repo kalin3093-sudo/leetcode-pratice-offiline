@@ -1,0 +1,47 @@
+{
+  "id": "split-the-array",
+  "title": "3046. Split the Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/split-the-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,2,3,4]",
+      "output": "true",
+      "explanation": "One of the possible ways to split nums is nums1 = [1,2,3] and nums2 = [1,2,4]."
+    },
+    {
+      "input": "nums = [1,1,1,1]",
+      "output": "false",
+      "explanation": "The only possible way to split nums is nums1 = [1,1] and nums2 = [1,1]. Both nums1 and nums2 do not contain distinct elements. Therefore, we return false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isPossibleToSplit(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isPossibleToSplit(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isPossibleToSplit(self, nums: List[int]) -> bool:\n        ",
+    "typescript": "function isPossibleToSplit(nums: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsPossibleToSplit(int[] nums) {\n        \n    }\n}",
+    "go": "func isPossibleToSplit(nums []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_possible_to_split(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,2,2,3,4]"
+    },
+    {
+      "nums": "[1,1,1,1]"
+    }
+  ],
+  "functionName": "isPossibleToSplit",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "It’s impossible if the same number occurs more than twice. So just check the frequency of each value."
+  ]
+}

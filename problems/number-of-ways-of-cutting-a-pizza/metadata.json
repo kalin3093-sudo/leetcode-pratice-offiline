@@ -1,0 +1,63 @@
+{
+  "id": "number-of-ways-of-cutting-a-pizza",
+  "title": "1444. Number of Ways of Cutting a Pizza",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "pizza = [\"A..\",\"AAA\",\"...\"], k = 3",
+      "output": "3",
+      "explanation": "The figure above shows the three ways to cut the pizza. Note that pieces must contain at least one apple."
+    },
+    {
+      "input": "pizza = [\"A..\",\"AA.\",\"...\"], k = 3",
+      "output": "1"
+    },
+    {
+      "input": "pizza = [\"A..\",\"A..\",\"...\"], k = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int ways(vector<string>& pizza, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int ways(String[] pizza, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def ways(self, pizza: list[str], k: int) -> int:\n        ",
+    "typescript": "function ways(pizza: string[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int Ways(string[] pizza, int k) {\n        \n    }\n}",
+    "go": "func ways(pizza []string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn ways(pizza: Vec<String>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "pizza": "[\"A..\",\"AAA\",\"...\"]",
+      "k": 3
+    },
+    {
+      "pizza": "[\"A..\",\"AA.\",\"...\"]",
+      "k": 3
+    },
+    {
+      "pizza": "[\"A..\",\"A..\",\"...\"]",
+      "k": 1
+    }
+  ],
+  "functionName": "ways",
+  "params": [
+    {
+      "name": "pizza",
+      "type": "string_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Note that after each cut the remaining piece of pizza always has the lower right coordinate at (rows-1,cols-1).",
+    "Use dynamic programming approach with states (row1, col1, c) which computes the number of ways of cutting the pizza using \"c\" cuts where the current piece of pizza has upper left coordinate at (row1,col1) and lower right coordinate at (rows-1,cols-1).",
+    "For the transitions try all vertical and horizontal cuts such that the piece of pizza you have to give a person must contain at least one apple. The base case is when c=k-1.",
+    "Additionally use a 2D dynamic programming to respond in O(1) if a piece of pizza contains at least one apple."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+  "title": "1505. Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "num = \"4321\", k = 4",
+      "output": "\"1342\"",
+      "explanation": "The steps to obtain the minimum integer from 4321 with 4 adjacent swaps are shown."
+    },
+    {
+      "input": "num = \"100\", k = 1",
+      "output": "\"010\"",
+      "explanation": "It's ok for the output to have leading zeros, but the input is guaranteed not to have any leading zeros."
+    },
+    {
+      "input": "num = \"36789\", k = 1000",
+      "output": "\"36789\"",
+      "explanation": "We can keep the number without any swaps."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minInteger(string num, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minInteger(String num, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minInteger(self, num: str, k: int) -> str:\n        ",
+    "typescript": "function minInteger(num: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinInteger(string num, int k) {\n        \n    }\n}",
+    "go": "func minInteger(num string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_integer(num: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "4321",
+      "k": 4
+    },
+    {
+      "num": "100",
+      "k": 1
+    },
+    {
+      "num": "36789",
+      "k": 1000
+    }
+  ],
+  "functionName": "minInteger",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "We want to make the smaller digits the most significant digits in the number.",
+    "For each index i, check the smallest digit in a window of size k and append it to the answer. Update the indices of all digits in this range accordingly."
+  ]
+}

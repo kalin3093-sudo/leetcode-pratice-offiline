@@ -1,0 +1,73 @@
+{
+  "id": "minimum-weighted-subgraph-with-the-required-paths",
+  "title": "2203. Minimum Weighted Subgraph With the Required Paths",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/",
+  "category": "graph-theory",
+  "examples": [
+    {
+      "input": "n = 6, edges = [[0,2,2],[0,5,6],[1,0,3],[1,4,5],[2,1,1],[2,3,3],[2,3,4],[3,4,2],[4,5,1]], src1 = 0, src2 = 1, dest = 5",
+      "output": "9",
+      "explanation": "The above figure represents the input graph. The blue edges represent one of the subgraphs that yield the optimal answer. Note that the subgraph [[1,0,3],[0,5,6]] also yields the optimal answer. It is not possible to get a subgraph with less weight satisfying all the constraints."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,1],[2,1,1]], src1 = 0, src2 = 1, dest = 2",
+      "output": "-1",
+      "explanation": "The above figure represents the input graph. It can be seen that there does not exist any path from node 1 to node 2, hence there are no subgraphs satisfying all the constraints."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumWeight(int n, vector<vector<int>>& edges, int src1, int src2, int dest) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumWeight(int n, int[][] edges, int src1, int src2, int dest) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumWeight(self, n: int, edges: list[list[int]], src1: int, src2: int, dest: int) -> int:\n        ",
+    "typescript": "function minimumWeight(n: number, edges: number[][], src1: number, src2: number, dest: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumWeight(int n, int[][] edges, int src1, int src2, int dest) {\n        \n    }\n}",
+    "go": "func minimumWeight(n int, edges [][]int, src1 int, src2 int, dest int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_weight(n: i32, edges: Vec<Vec<i32>>, src1: i32, src2: i32, dest: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "edges": "[[0,2,2],[0,5,6],[1,0,3],[1,4,5],[2,1,1],[2,3,3],[2,3,4],[3,4,2],[4,5,1]]",
+      "src1": 0,
+      "src2": 1,
+      "dest": 5
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,1],[2,1,1]]",
+      "src1": 0,
+      "src2": 1,
+      "dest": 2
+    }
+  ],
+  "functionName": "minimumWeight",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "src1",
+      "type": "int"
+    },
+    {
+      "name": "src2",
+      "type": "int"
+    },
+    {
+      "name": "dest",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Consider what the paths from src1 to dest and src2 to dest would look like in the optimal solution.",
+    "It can be shown that in an optimal solution, the two paths from src1 and src2 will coincide at one node, and the remaining part to dest will be the same for both paths. Now consider how to find the node where the paths will coincide.",
+    "How can algorithms for finding the shortest path between two nodes help us?"
+  ]
+}

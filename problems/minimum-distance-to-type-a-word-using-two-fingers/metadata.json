@@ -1,0 +1,48 @@
+{
+  "id": "minimum-distance-to-type-a-word-using-two-fingers",
+  "title": "1320. Minimum Distance to Type a Word Using Two Fingers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"CAKE\"",
+      "output": "3",
+      "explanation": "Using two fingers, one optimal way to type \"CAKE\" is: Finger 1 on letter 'C' -> cost = 0 Finger 1 on letter 'A' -> cost = Distance from letter 'C' to letter 'A' = 2 Finger 2 on letter 'K' -> cost = 0 Finger 2 on letter 'E' -> cost = Distance from letter 'K' to letter 'E' = 1 Total distance = 3"
+    },
+    {
+      "input": "word = \"HAPPY\"",
+      "output": "6",
+      "explanation": "Using two fingers, one optimal way to type \"HAPPY\" is: Finger 1 on letter 'H' -> cost = 0 Finger 1 on letter 'A' -> cost = Distance from letter 'H' to letter 'A' = 2 Finger 2 on letter 'P' -> cost = 0 Finger 2 on letter 'P' -> cost = Distance from letter 'P' to letter 'P' = 0 Finger 1 on letter 'Y' -> cost = Distance from letter 'A' to letter 'Y' = 4 Total distance = 6"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumDistance(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumDistance(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumDistance(self, word: str) -> int:\n        ",
+    "typescript": "function minimumDistance(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumDistance(string word) {\n        \n    }\n}",
+    "go": "func minimumDistance(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_distance(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "CAKE"
+    },
+    {
+      "word": "HAPPY"
+    }
+  ],
+  "functionName": "minimumDistance",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "dp[i][j][k]: smallest movements when you have one finger on i-th char and the other one on j-th char already having written k first characters from word."
+  ]
+}

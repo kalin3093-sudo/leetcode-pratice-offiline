@@ -1,0 +1,56 @@
+{
+  "id": "sum-of-subarray-ranges",
+  "title": "2104. Sum of Subarray Ranges",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-subarray-ranges/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "4",
+      "explanation": "The 6 subarrays of nums are the following: [1], range = largest - smallest = 1 - 1 = 0 [2], range = 2 - 2 = 0 [3], range = 3 - 3 = 0 [1,2], range = 2 - 1 = 1 [2,3], range = 3 - 2 = 1 [1,2,3], range = 3 - 1 = 2 So the sum of all ranges is 0 + 0 + 0 + 1 + 1 + 2 = 4."
+    },
+    {
+      "input": "nums = [1,3,3]",
+      "output": "4",
+      "explanation": "The 6 subarrays of nums are the following: [1], range = largest - smallest = 1 - 1 = 0 [3], range = 3 - 3 = 0 [3], range = 3 - 3 = 0 [1,3], range = 3 - 1 = 2 [3,3], range = 3 - 3 = 0 [1,3,3], range = 3 - 1 = 2 So the sum of all ranges is 0 + 0 + 0 + 2 + 0 + 2 = 4."
+    },
+    {
+      "input": "nums = [4,-2,-3,4,1]",
+      "output": "59",
+      "explanation": "The sum of all subarray ranges of nums is 59."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long subArrayRanges(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long subArrayRanges(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def subArrayRanges(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function subArrayRanges(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SubArrayRanges(int[] nums) {\n        \n    }\n}",
+    "go": "func subArrayRanges(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sub_array_ranges(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[1,3,3]"
+    },
+    {
+      "nums": "[4,-2,-3,4,1]"
+    }
+  ],
+  "functionName": "subArrayRanges",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Can you get the max/min of a certain subarray by using the max/min of a smaller subarray within it?",
+    "Notice that the max of the subarray from index i to j is equal to max of (max of the subarray from index i to j-1) and nums[j]."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "minimum-queen-moves-to-reach-target",
+  "title": "4061. Minimum Queen Moves to Reach Target",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-queen-moves-to-reach-target/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "source = [8,1], target = [1,8]",
+      "output": "1",
+      "explanation": "A single diagonal move takes the queen straight from (8, 1) to (1, 8)."
+    },
+    {
+      "input": "source = [4,2], target = [1,3]",
+      "output": "2",
+      "explanation": "The queen moves from (4, 2) to (4, 3), then from (4, 3) to (1, 3), reaching the target in 2 moves."
+    },
+    {
+      "input": "source = [1,1], target = [1,1]",
+      "output": "0",
+      "explanation": "The queen is already at the target position, so no moves are needed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minQueenMoves(vector<int>& source, vector<int>& target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minQueenMoves(int[] source, int[] target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minQueenMoves(self, source: list[int], target: list[int]) -> int:\n        ",
+    "typescript": "function minQueenMoves(source: number[], target: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinQueenMoves(int[] source, int[] target) {\n        \n    }\n}",
+    "go": "func minQueenMoves(source []int, target []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_queen_moves(source: Vec<i32>, target: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "source": "[8,1]",
+      "target": "[1,8]"
+    },
+    {
+      "source": "[4,2]",
+      "target": "[1,3]"
+    },
+    {
+      "source": "[1,1]",
+      "target": "[1,1]"
+    }
+  ],
+  "functionName": "minQueenMoves",
+  "params": [
+    {
+      "name": "source",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "maximum-difference-score-in-a-grid",
+  "title": "3148. Maximum Difference Score in a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-difference-score-in-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[9,5,7,3],[8,9,6,1],[6,7,14,3],[2,5,3,1]]",
+      "output": "9",
+      "explanation": "We start at the cell (0, 1), and we perform the following moves: - Move from the cell (0, 1) to (2, 1) with a score of 7 - 5 = 2. - Move from the cell (2, 1) to (2, 2) with a score of 14 - 7 = 7. The total score is 2 + 7 = 9."
+    },
+    {
+      "input": "grid = [[4,3,2],[3,2,1]]",
+      "output": "-1",
+      "explanation": "We start at the cell (0, 0), and we perform one move: (0, 0) to (0, 1). The score is 3 - 4 = -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScore(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScore(List<List<Integer>> grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function maxScore(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScore(IList<IList<int>> grid) {\n        \n    }\n}",
+    "go": "func maxScore(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[9,5,7,3],[8,9,6,1],[6,7,14,3],[2,5,3,1]]"
+    },
+    {
+      "grid": "[[4,3,2],[3,2,1]]"
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Any path from a cell <code>(x1, y1)</code> to another cell <code>(x2, y2)</code> will always have a score of <code>grid[x2][y2] - grid[x1][y1]</code>.",
+    "Let’s say we fix the starting cell <code>(x1, y1)</code>, how to the find a cell <code>(x2, y2)</code> such that the value <code>grid[x2][y2] - grid[x1][y1]</code> is the maximum possible?"
+  ]
+}

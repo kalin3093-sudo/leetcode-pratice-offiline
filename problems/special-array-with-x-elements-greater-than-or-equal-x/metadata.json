@@ -1,0 +1,56 @@
+{
+  "id": "special-array-with-x-elements-greater-than-or-equal-x",
+  "title": "1608. Special Array With X Elements Greater Than or Equal X",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,5]",
+      "output": "2",
+      "explanation": "There are 2 values (3 and 5) that are greater than or equal to 2."
+    },
+    {
+      "input": "nums = [0,0]",
+      "output": "-1",
+      "explanation": "No numbers fit the criteria for x. If x = 0, there should be 0 numbers >= x, but there are 2. If x = 1, there should be 1 number >= x, but there are 0. If x = 2, there should be 2 numbers >= x, but there are 0. x cannot be greater since there are only 2 numbers in nums."
+    },
+    {
+      "input": "nums = [0,4,3,0,4]",
+      "output": "3",
+      "explanation": "There are 3 values that are greater than or equal to 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int specialArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int specialArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def specialArray(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function specialArray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SpecialArray(int[] nums) {\n        \n    }\n}",
+    "go": "func specialArray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn special_array(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,5]"
+    },
+    {
+      "nums": "[0,0]"
+    },
+    {
+      "nums": "[0,4,3,0,4]"
+    }
+  ],
+  "functionName": "specialArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the number of elements greater than or equal to x for each x in the range [0, nums.length].",
+    "If for any x, the condition satisfies, return that x. Otherwise, there is no answer."
+  ]
+}

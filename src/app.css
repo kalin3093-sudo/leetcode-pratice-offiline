@@ -1,0 +1,743 @@
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Sizing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 3rem;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --scrollbar-size: 10px;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-bg: #443835;
+  --color-second-bg: rgba(0,0,0,0.25);
+  --color-third-bg: rgba(0,0,0,0.1);
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-surface-hover: rgba(255, 255, 255, 0.1);
+
+  --color-highlight: #d48f43;
+
+  --color-text: #f0f0f0;
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: rgba(235, 235, 245, 0.7);
+
+  --color-primary: #42c882;
+  --color-primary-text: #000000;
+
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-active: rgba(255, 255, 255, 0);
+
+  --color-easy: #42c882;
+  --color-medium: #ffc107;
+  --color-hard: #dc3545;
+
+  --color-incorrect: lightcoral;
+  --color-correct: lightgreen;
+
+  --scrollbar-thumb: rgba(255, 255, 255, 0.28);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.45);
+  --scrollbar-track: rgba(255, 255, 255, 0.06);
+
+  --hl-comment: #8b949e;
+  --hl-keyword: #ff7b72;
+  --hl-string: #a5d6ff;
+  --hl-builtin: #d2a8ff;
+  --color-code-bg: #161b22;
+}
+
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --color-bg: #f8fafc;
+  --color-second-bg: rgba(0,0,0,0.05);
+  --color-third-bg: rgba(0,0,0,0.03);
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f5f9;
+
+  --color-highlight: #d48f43;
+
+  --color-text: #0f172a;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+
+  --color-primary: #42c882;
+  --color-primary-text: #1f2937;
+
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-active: rgba(0, 0, 0, 0.05);
+
+  --color-easy: #22c55e;
+  --color-medium: #f59e0b;
+  --color-hard: #dc2626;
+
+  --color-incorrect: #dc2626;
+  --color-correct: #16a34a;
+
+  --scrollbar-thumb: rgba(100, 116, 139, 0.45);
+  --scrollbar-thumb-hover: rgba(71, 85, 105, 0.55);
+  --scrollbar-track: rgba(148, 163, 184, 0.2);
+
+  --hl-comment: #6e7781;
+  --hl-keyword: #cf222e;
+  --hl-string: #0a3069;
+  --hl-builtin: #953800;
+  --color-code-bg: #f6f8fa;
+}
+
+/* Common Markdown/Prose Styles (GitHub-like) */
+.markdown-body {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body h1, .markdown-body h2 {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.3em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 { font-size: 2em; }
+.markdown-body h2 { font-size: 1.5em; }
+.markdown-body h3 { font-size: 1.25em; font-weight: 600; margin-top: 24px; margin-bottom: 16px; }
+
+.markdown-body p { margin-top: 0; margin-bottom: 16px; }
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* Image thumbnails: pasted images render small; click opens a full-size view */
+.markdown-body .md-thumb {
+  position: relative;
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Pasted images reference IndexedDB via a fake link (cojudge://image/<id>);
+   hide them until the payload is resolved into src (resolvePastedImages). */
+.markdown-body img[src^="cojudge://image/"] {
+  visibility: hidden;
+}
+
+.markdown-body .md-thumb img {
+  max-width: 240px;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: zoom-in;
+}
+
+.markdown-body .md-thumb-delete {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.markdown-body .md-thumb-delete:hover {
+  opacity: 1;
+  background: var(--color-hard);
+}
+
+/* Notion-style playground file mentions (icon + underlined label).
+   Always body-weight/size so bold/heading parents don't restyle them. */
+.markdown-body a.md-file-mention {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  vertical-align: baseline;
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0 0.15em;
+  margin: 0 -0.15em;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: none;
+  background: transparent;
+}
+
+.markdown-body a.md-file-mention:hover {
+  background: color-mix(in srgb, var(--color-text) 8%, transparent);
+  text-decoration: none;
+}
+
+.markdown-body a.md-file-mention .md-file-mention-icon {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.markdown-body a.md-file-mention .md-file-mention-label {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--color-text) 35%, transparent);
+  color: var(--color-text);
+  font-weight: 400;
+  font-style: normal;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.markdown-body a.md-file-mention:hover .md-file-mention-label {
+  text-decoration-color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+
+/*
+ * Inline code created by the WYSIWYG backtick auto-matching. The auto-matched
+ * code is a span whose inline background is the theme variable
+ * --color-second-bg (see INLINE_CODE_STYLE_MARKER in markdown.ts; the span is
+ * inserted with a concrete color because Chrome's execCommand sanitizer drops
+ * var() references, then rewritten). This global rule styles it like code.
+ * Must stay in app.css: the span is created at runtime, so Svelte drops the
+ * rule from component styles as "unused".
+ */
+.wysiwyg-editing span[style*="var(--color-second-bg)"] {
+  font-family: var(--font-mono);
+  font-size: 85%;
+  background-color: var(--color-second-bg);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+}
+
+.markdown-body pre {
+  background-color: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+
+.markdown-body code {
+  background-color: var(--color-second-bg);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  font-family: var(--font-mono);
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.markdown-body blockquote {
+  border-left: 0.25em solid var(--color-border);
+  color: var(--color-text-secondary);
+  padding: 0 1em;
+  margin: 0 0 16px 0;
+}
+
+.markdown-body ul, .markdown-body ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body li:has(> input[type="checkbox"]) {
+  list-style-type: none;
+}
+
+.markdown-body li:has(> input[type="checkbox"]:checked) {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.markdown-body li:has(> input[type="checkbox"]:checked) ul,
+.markdown-body li:has(> input[type="checkbox"]:checked) ol {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.markdown-body ul:has(> li > input[type="checkbox"]) {
+  padding-left: 0.4em;
+}
+
+.markdown-body li > input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem 0 0;
+  vertical-align: -0.15em;
+  border: 1.5px solid var(--color-text-secondary);
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.markdown-body li > input[type="checkbox"]:hover {
+  border-color: var(--color-highlight);
+  background-color: var(--color-surface-hover);
+}
+
+.markdown-body li > input[type="checkbox"]:checked {
+  background-color: var(--color-highlight);
+  border-color: var(--color-highlight);
+  opacity: 1;
+}
+
+.markdown-body li > input[type="checkbox"]:checked::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 16px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translate(-0.5px, -0.5px);
+}
+
+.markdown-body.wysiwyg-editing li > input[type="checkbox"] {
+  pointer-events: auto;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: block;
+  overflow: auto;
+}
+
+.markdown-body th, .markdown-body td {
+  border: 1px solid var(--color-border);
+  padding: 6px 13px;
+}
+
+.markdown-body tr:nth-child(2n) {
+  background-color: var(--color-third-bg);
+}
+
+/* Syntax Highlighting Classes */
+.hl-comment { color: var(--hl-comment); font-style: italic; }
+.hl-keyword { color: var(--hl-keyword); font-weight: 600; }
+.hl-string { color: var(--hl-string); }
+.hl-builtin { color: var(--hl-builtin); }
+.hl-number { color: var(--hl-builtin); }
+
+.code-block-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* WYSIWYG code blocks keep their language outside the editable <pre>. */
+.md-code-copy > pre {
+  padding-top: 36px;
+}
+
+.code-block-actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 4px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.code-block-wrapper:hover .code-block-actions,
+.code-block-wrapper:focus-within .code-block-actions,
+.code-block-wrapper.lang-picker-active .code-block-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.code-lang-picker {
+  display: inline-flex;
+  align-items: center;
+}
+
+.code-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 6px;
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.code-lang-btn:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.code-lang-chevron {
+  opacity: 0.7;
+}
+
+.code-action-divider {
+  width: 1px;
+  height: 14px;
+  background-color: var(--color-border);
+  margin: 0 2px;
+}
+
+.copy-code-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.copy-code-button:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.delete-code-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.delete-code-button:hover {
+  background-color: color-mix(in srgb, var(--color-hard) 14%, transparent);
+  color: var(--color-hard);
+}
+
+/* Notion-style Language Picker Popover */
+.lang-picker-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: transparent;
+}
+
+.lang-picker-popover {
+  position: fixed;
+  z-index: 10000;
+  width: 220px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lang-picker-search {
+  padding: 2px;
+}
+
+.lang-search-input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.lang-search-input:focus {
+  border-color: var(--color-highlight);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-highlight) 20%, transparent);
+}
+
+.lang-picker-list {
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lang-picker-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 10px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.lang-picker-option:hover,
+.lang-picker-option.focused {
+  background-color: var(--color-surface-hover);
+}
+
+.lang-picker-option.focused {
+  outline: none;
+}
+
+.lang-check-icon {
+  color: var(--color-text);
+}
+
+.code-block-lang-label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  line-height: 1.4;
+  font-family: var(--font-mono);
+  user-select: none;
+}
+
+.code-block-wrapper.collapsed {
+  background-color: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6px 8px;
+}
+
+.code-block-wrapper.collapsed .code-block-actions {
+  position: static;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.code-block-wrapper.collapsed .code-block-lang-label {
+  flex: 1;
+}
+
+.collapse-code-button {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.collapse-code-button:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+  border-color: var(--color-highlight);
+}
+
+.copy-code-button {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.copy-code-button:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+  border-color: var(--color-highlight);
+}
+
+
+/* Basic Reset and Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  /* Primary text for headings */
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/*
+  Modern, subtle scrollbars (applies app-wide)
+  - Firefox: uses scrollbar-color/width
+  - Chromium/WebKit: uses ::-webkit-scrollbar pseudos
+*/
+
+/* Prefer smoother, more stable page scrolling */
+html {
+  scroll-behavior: smooth;
+  /* Prevent layout shift when scrollbars appear */
+  scrollbar-gutter: stable;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* Chromium, Safari, Edge */
+*::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 999px;
+  /* Creates a slim pill with some air around */
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+/* Corner for both directions (e.g., pre blocks) */
+*::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track);
+}
+
+/* Make common scroll areas feel consistent */
+body,
+pre,
+textarea {
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Optional: slightly reveal track on hover to hint scrollability */
+.problem-pane:hover,
+.editor-pane:hover,
+pre:hover,
+textarea:hover {
+  /* Firefox hover color */
+  scrollbar-color: var(--scrollbar-thumb-hover) var(--scrollbar-track);
+}
+
+.problem-pane:hover::-webkit-scrollbar-thumb,
+.editor-pane:hover::-webkit-scrollbar-thumb,
+pre:hover::-webkit-scrollbar-thumb,
+textarea:hover::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-hover);
+}

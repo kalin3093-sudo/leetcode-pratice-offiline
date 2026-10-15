@@ -1,0 +1,56 @@
+{
+  "id": "count-stepping-numbers-in-range",
+  "title": "2801. Count Stepping Numbers in Range",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-stepping-numbers-in-range/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "low = \"1\", high = \"11\"",
+      "output": "10",
+      "explanation": "The stepping numbers in the range [1,11] are 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10. There are a total of 10 stepping numbers in the range. Hence, the output is 10."
+    },
+    {
+      "input": "low = \"90\", high = \"101\"",
+      "output": "2",
+      "explanation": "The stepping numbers in the range [90,101] are 98 and 101. There are a total of 2 stepping numbers in the range. Hence, the output is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSteppingNumbers(string low, string high) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSteppingNumbers(String low, String high) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSteppingNumbers(self, low: str, high: str) -> int:\n        ",
+    "typescript": "function countSteppingNumbers(low: string, high: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSteppingNumbers(string low, string high) {\n        \n    }\n}",
+    "go": "func countSteppingNumbers(low string, high string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_stepping_numbers(low: String, high: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "low": "1",
+      "high": "11"
+    },
+    {
+      "low": "90",
+      "high": "101"
+    }
+  ],
+  "functionName": "countSteppingNumbers",
+  "params": [
+    {
+      "name": "low",
+      "type": "string"
+    },
+    {
+      "name": "high",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Calculate the number of stepping numbers in the range [1, high] and subtract the number of stepping numbers in the range [1, low - 1].",
+    "The main problem is calculating the number of stepping numbers in the range [1, x].",
+    "First, calculate the number of stepping numbers shorter than x in length, which can be done using dynamic programming. (dp[i][j] is the number of i-digit stepping numbers ending with digit j).",
+    "Finally, calculate the number of stepping numbers that have the same length as x similarly. However, this time we need to maintain whether the prefix (in string) is smaller than or equal to x in the DP state."
+  ]
+}

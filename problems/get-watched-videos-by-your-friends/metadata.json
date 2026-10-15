@@ -1,0 +1,66 @@
+{
+  "id": "get-watched-videos-by-your-friends",
+  "title": "1311. Get Watched Videos by Your Friends",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/get-watched-videos-by-your-friends/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1",
+      "output": "[\"B\",\"C\"]",
+      "explanation": "You have id = 0 (green color in the figure) and your friends are (yellow color in the figure): Person with id = 1 -> watchedVideos = [\"C\"] Person with id = 2 -> watchedVideos = [\"B\",\"C\"] The frequencies of watchedVideos by your friends are: B -> 1 C -> 2"
+    },
+    {
+      "input": "watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2",
+      "output": "[\"D\"]",
+      "explanation": "You have id = 0 (green color in the figure) and the only friend of your friends is the person with id = 3 (yellow color in the figure)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> watchedVideosByFriends(vector<vector<string>>& watchedVideos, vector<vector<int>>& friends, int id, int level) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> watchedVideosByFriends(List<List<String>> watchedVideos, int[][] friends, int id, int level) {\n        \n    }\n}",
+    "python": "class Solution:\n    def watchedVideosByFriends(self, watchedVideos: list[list[str]], friends: list[list[int]], id: int, level: int) -> list[str]:\n        ",
+    "typescript": "function watchedVideosByFriends(watchedVideos: string[][], friends: number[][], id: number, level: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> WatchedVideosByFriends(IList<IList<string>> watchedVideos, int[][] friends, int id, int level) {\n        \n    }\n}",
+    "go": "func watchedVideosByFriends(watchedVideos [][]string, friends [][]int, id int, level int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn watched_videos_by_friends(watched_videos: Vec<Vec<String>>, friends: Vec<Vec<i32>>, id: i32, level: i32) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "watchedVideos": "[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]",
+      "friends": "[[1,2],[0,3],[0,3],[1,2]]",
+      "id": 0,
+      "level": 1
+    },
+    {
+      "watchedVideos": "[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]",
+      "friends": "[[1,2],[0,3],[0,3],[1,2]]",
+      "id": 0,
+      "level": 2
+    }
+  ],
+  "functionName": "watchedVideosByFriends",
+  "params": [
+    {
+      "name": "watchedVideos",
+      "type": "string_list_2d"
+    },
+    {
+      "name": "friends",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "level",
+      "type": "int"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Do BFS to find the kth level friends.",
+    "Then collect movies saw by kth level friends and sort them accordingly."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "reverse-words-with-same-vowel-count",
+  "title": "3775. Reverse Words With Same Vowel Count",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/reverse-words-with-same-vowel-count/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"cat and mice\"",
+      "output": "\"cat dna mice\"",
+      "explanation": "The first word \"cat\" has 1 vowel. \"and\" has 1 vowel, so it is reversed to form \"dna\". \"mice\" has 2 vowels, so it remains unchanged. Thus, the resulting string is \"cat dna mice\"."
+    },
+    {
+      "input": "s = \"book is nice\"",
+      "output": "\"book is ecin\"",
+      "explanation": "The first word \"book\" has 2 vowels. \"is\" has 1 vowel, so it remains unchanged. \"nice\" has 2 vowels, so it is reversed to form \"ecin\". Thus, the resulting string is \"book is ecin\"."
+    },
+    {
+      "input": "s = \"banana healthy\"",
+      "output": "\"banana healthy\"",
+      "explanation": "The first word \"banana\" has 3 vowels. \"healthy\" has 2 vowels, so it remains unchanged. Thus, the resulting string is \"banana healthy\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reverseWords(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reverseWords(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reverseWords(self, s: str) -> str:\n        ",
+    "typescript": "function reverseWords(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReverseWords(string s) {\n        \n    }\n}",
+    "go": "func reverseWords(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reverse_words(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "cat and mice"
+    },
+    {
+      "s": "book is nice"
+    },
+    {
+      "s": "banana healthy"
+    }
+  ],
+  "functionName": "reverseWords",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Simulate as described"
+  ]
+}

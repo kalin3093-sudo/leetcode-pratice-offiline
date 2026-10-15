@@ -1,0 +1,63 @@
+{
+  "id": "minimum-number-of-steps-to-make-two-strings-anagram",
+  "title": "1347. Minimum Number of Steps to Make Two Strings Anagram",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"bab\", t = \"aba\"",
+      "output": "1",
+      "explanation": "Replace the first 'a' in t with b, t = \"bba\" which is anagram of s."
+    },
+    {
+      "input": "s = \"leetcode\", t = \"practice\"",
+      "output": "5",
+      "explanation": "Replace 'p', 'r', 'a', 'i' and 'c' from t with proper characters to make t anagram of s."
+    },
+    {
+      "input": "s = \"anagram\", t = \"mangaar\"",
+      "output": "0",
+      "explanation": "\"anagram\" and \"mangaar\" are anagrams."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSteps(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSteps(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSteps(self, s: str, t: str) -> int:\n        ",
+    "typescript": "function minSteps(s: string, t: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSteps(string s, string t) {\n        \n    }\n}",
+    "go": "func minSteps(s string, t string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_steps(s: String, t: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "bab",
+      "t": "aba"
+    },
+    {
+      "s": "leetcode",
+      "t": "practice"
+    },
+    {
+      "s": "anagram",
+      "t": "mangaar"
+    }
+  ],
+  "functionName": "minSteps",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the frequency of characters of each string.",
+    "Loop over all characters if the frequency of a character in t is less than the frequency of the same character in s then add the difference between the frequencies to the answer."
+  ]
+}

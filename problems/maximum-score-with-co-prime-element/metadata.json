@@ -1,0 +1,64 @@
+{
+  "id": "maximum-score-with-co-prime-element",
+  "title": "3953. Maximum Score with Co-Prime Element",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-score-with-co-prime-element/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,4,6], maxVal = 5",
+      "output": "4",
+      "explanation": "Change nums[2] from 6 to 5, which costs 1. Choose nums[2] = 5, since it is co-prime with 3 and 4. selectedValue = 5 modificationCost = 1 The score is 5 - 1 = 4"
+    },
+    {
+      "input": "nums = [1,2,3], maxVal = 4",
+      "output": "3",
+      "explanation": "No modifications are required. Choose nums[2] = 3, since it is co-prime with 1 and 2. selectedValue = 3 modificationCost = 0 The score is 3 - 0 = 3"
+    },
+    {
+      "input": "nums = [2,2], maxVal = 1",
+      "output": "1",
+      "explanation": "Change nums[0] from 2 to 1, which costs 1. Choose nums[1] = 2, since it is co-prime with 1. selectedValue = 2 modificationCost = 1 The score is 2 - 1 = 1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScore(vector<int>& nums, int maxVal) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScore(int[] nums, int maxVal) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, nums: List[int], maxVal: int) -> int:\n        ",
+    "typescript": "function maxScore(nums: number[], maxVal: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScore(int[] nums, int maxVal) {\n        \n    }\n}",
+    "go": "func maxScore(nums []int, maxVal int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(nums: Vec<i32>, max_val: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,4,6]",
+      "maxVal": 5
+    },
+    {
+      "nums": "[1,2,3]",
+      "maxVal": 4
+    },
+    {
+      "nums": "[2,2]",
+      "maxVal": 1
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "maxVal",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For a fixed chosen value <code>x</code>, every other element not co-prime with <code>x</code> must be changed.",
+    "Precompute how many numbers in <code>nums</code> are divisible by each value, then use inclusion-exclusion over the prime factors of <code>x</code> to count elements sharing a common factor with <code>x</code>.",
+    "Try all possible selected values: existing values in <code>nums</code>, and values up to <code>maxVal</code> that can be created by changing the selected element."
+  ]
+}

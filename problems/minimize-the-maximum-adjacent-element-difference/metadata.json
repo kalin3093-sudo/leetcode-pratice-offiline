@@ -1,0 +1,58 @@
+{
+  "id": "minimize-the-maximum-adjacent-element-difference",
+  "title": "3357. Minimize the Maximum Adjacent Element Difference",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,-1,10,8]",
+      "output": "4",
+      "explanation": "By choosing the pair as (6, 7), nums can be changed to [1, 2, 6, 10, 8]. The absolute differences between adjacent elements are: |1 - 2| == 1 |2 - 6| == 4 |6 - 10| == 4 |10 - 8| == 2"
+    },
+    {
+      "input": "nums = [-1,-1,-1]",
+      "output": "0",
+      "explanation": "By choosing the pair as (4, 4), nums can be changed to [4, 4, 4]."
+    },
+    {
+      "input": "nums = [-1,10,-1,8]",
+      "output": "1",
+      "explanation": "By choosing the pair as (11, 9), nums can be changed to [11, 10, 9, 8]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDifference(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minDifference(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func minDifference(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_difference(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,-1,10,8]"
+    },
+    {
+      "nums": "[-1,-1,-1]"
+    },
+    {
+      "nums": "[-1,10,-1,8]"
+    }
+  ],
+  "functionName": "minDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "More than 2 occurrences of -1 can be ignored.",
+    "We can add the first positive number to the beginning and the last positive number to the end so that any consecutive of -1s are surrounded by positive numbers.",
+    "Suppose the answer is <code>d</code>, it can be proved that for the optimal case we'll replace -1s with values <code>0 < x <= y</code> and it's always optimal to select <code>x = min(a) + d</code>. So we only need to select <code>y</code>.",
+    "Binary search on <code>d</code>."
+  ]
+}

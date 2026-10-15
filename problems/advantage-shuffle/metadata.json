@@ -1,0 +1,49 @@
+{
+  "id": "advantage-shuffle",
+  "title": "870. Advantage Shuffle",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/advantage-shuffle/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [2,7,11,15], nums2 = [1,10,4,11]",
+      "output": "[2,11,7,15]"
+    },
+    {
+      "input": "nums1 = [12,24,8,32], nums2 = [13,25,32,11]",
+      "output": "[24,32,8,12]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> advantageCount(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] advantageCount(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def advantageCount(self, nums1: list[int], nums2: list[int]) -> list[int]:\n        ",
+    "typescript": "function advantageCount(nums1: number[], nums2: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] AdvantageCount(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func advantageCount(nums1 []int, nums2 []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn advantage_count(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[2,7,11,15]",
+      "nums2": "[1,10,4,11]"
+    },
+    {
+      "nums1": "[12,24,8,32]",
+      "nums2": "[13,25,32,11]"
+    }
+  ],
+  "functionName": "advantageCount",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

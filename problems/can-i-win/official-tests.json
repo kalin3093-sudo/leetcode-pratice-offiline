@@ -1,0 +1,14 @@
+[
+  {
+    "maxChoosableInteger": 10,
+    "desiredTotal": 11
+  },
+  {
+    "maxChoosableInteger": 10,
+    "desiredTotal": 0
+  },
+  {
+    "maxChoosableInteger": 10,
+    "desiredTotal": 1
+  }
+]

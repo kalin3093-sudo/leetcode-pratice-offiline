@@ -1,0 +1,45 @@
+{
+  "id": "button-with-longest-push-time",
+  "title": "3386. Button with Longest Push Time",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/button-with-longest-push-time/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "events = [[1,2],[2,5],[3,9],[1,15]]",
+      "output": "1",
+      "explanation": "Button with index 1 is pressed at time 2. Button with index 2 is pressed at time 5, so it took 5 - 2 = 3 units of time. Button with index 3 is pressed at time 9, so it took 9 - 5 = 4 units of time. Button with index 1 is pressed again at time 15, so it took 15 - 9 = 6 units of time."
+    },
+    {
+      "input": "events = [[10,5],[1,7]]",
+      "output": "10",
+      "explanation": "Button with index 10 is pressed at time 5. Button with index 1 is pressed at time 7, so it took 7 - 5 = 2 units of time."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int buttonWithLongestTime(vector<vector<int>>& events) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int buttonWithLongestTime(int[][] events) {\n        \n    }\n}",
+    "python": "class Solution:\n    def buttonWithLongestTime(self, events: List[List[int]]) -> int:\n        ",
+    "typescript": "function buttonWithLongestTime(events: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ButtonWithLongestTime(int[][] events) {\n        \n    }\n}",
+    "go": "func buttonWithLongestTime(events [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn button_with_longest_time(events: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "events": "[[1,2],[2,5],[3,9],[1,15]]"
+    },
+    {
+      "events": "[[10,5],[1,7]]"
+    }
+  ],
+  "functionName": "buttonWithLongestTime",
+  "params": [
+    {
+      "name": "events",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

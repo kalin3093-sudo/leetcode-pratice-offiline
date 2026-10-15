@@ -1,0 +1,56 @@
+{
+  "id": "peaks-in-array",
+  "title": "3187. Peaks in Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/peaks-in-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,1,4,2,5], queries = [[2,3,4],[1,0,4]]",
+      "output": "[0]",
+      "explanation": "First query: We change nums[3] to 4 and nums becomes [3,1,4,4,5]. Second query: The number of peaks in the [3,1,4,4,5] is 0."
+    },
+    {
+      "input": "nums = [4,1,4,2,1,5], queries = [[2,2,4],[1,0,2],[1,0,4]]",
+      "output": "[0,1]",
+      "explanation": "First query: nums[2] should become 4, but it is already set to 4. Second query: The number of peaks in the [4,1,4] is 0. Third query: The second 4 is a peak in the [4,1,4,2,1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> countOfPeaks(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> countOfPeaks(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countOfPeaks(self, nums: List[int], queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function countOfPeaks(nums: number[], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> CountOfPeaks(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func countOfPeaks(nums []int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_of_peaks(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,1,4,2,5]",
+      "queries": "[[2,3,4],[1,0,4]]"
+    },
+    {
+      "nums": "[4,1,4,2,1,5]",
+      "queries": "[[2,2,4],[1,0,2],[1,0,4]]"
+    }
+  ],
+  "functionName": "countOfPeaks",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Let <code>p[i]</code> be whether <code>nums[i]</code> is a peak in the original array. Namely <code>p[i] = nums[i] > nums[i - 1] && nums[i] > nums[i + 1]</code>.",
+    "Updating <code>nums[i]</code>, only affects <code>p[i]</code>, <code>p[i - 1]</code> and <code>p[i + 1]</code>. We can recalculate the 3 values in constant time.",
+    "The answer for <code>[l<sub>i</sub>, r<sub>i</sub>]</code> is <code>p[l<sub>i</sub> + 1] + p[l<sub>i</sub> + 2] + … + p[r<sub>i</sub> - 1]</code> (note that <code>l<sub>i</sub></code> and <code>r<sub>i</sub></code> are not included).",
+    "Use some data structures (i.e. segment tree or binary indexed tree) to maintain the subarray sum efficiently."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "minimum-consecutive-cards-to-pick-up",
+  "title": "2260. Minimum Consecutive Cards to Pick Up",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cards = [3,4,2,3,4,7]",
+      "output": "4",
+      "explanation": "We can pick up the cards [3,4,2,3] which contain a matching pair of cards with value 3. Note that picking up the cards [4,2,3,4] is also optimal."
+    },
+    {
+      "input": "cards = [1,0,5,3]",
+      "output": "-1",
+      "explanation": "There is no way to pick up a set of consecutive cards that contain a pair of matching cards."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumCardPickup(vector<int>& cards) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumCardPickup(int[] cards) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumCardPickup(self, cards: list[int]) -> int:\n        ",
+    "typescript": "function minimumCardPickup(cards: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumCardPickup(int[] cards) {\n        \n    }\n}",
+    "go": "func minimumCardPickup(cards []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_card_pickup(cards: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cards": "[3,4,2,3,4,7]"
+    },
+    {
+      "cards": "[1,0,5,3]"
+    }
+  ],
+  "functionName": "minimumCardPickup",
+  "params": [
+    {
+      "name": "cards",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate through the cards and store the location of the last occurrence of each number.",
+    "What data structure could you use to get the last occurrence of a number in O(1) or O(log n)?"
+  ]
+}

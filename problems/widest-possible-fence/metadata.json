@@ -1,0 +1,50 @@
+{
+  "id": "widest-possible-fence",
+  "title": "4007. Widest Possible Fence",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/widest-possible-fence/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "planks = [1,3,2,5,7,5,4,2,1]",
+      "output": "4",
+      "explanation": "We can have four planks of height 5. planks[3] = 5 planks[5] = 5 planks[0] + planks[6] = 1 + 4 = 5 planks[1] + planks[2] = 3 + 2 = 5 Hence, the maximum width is 4."
+    },
+    {
+      "input": "planks = [2,3,7]",
+      "output": "1",
+      "explanation": "It is impossible to form two planks of the same height, even after combining two distinct original planks. Since not all original planks need to be used, we can choose any one plank as the fence. Therefore, the maximum possible width is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumWidth(vector<int>& planks) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumWidth(int[] planks) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumWidth(self, planks: list[int]) -> int:\n        ",
+    "typescript": "function maximumWidth(planks: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumWidth(int[] planks) {\n        \n    }\n}",
+    "go": "func maximumWidth(planks []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_width(planks: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "planks": "[1,3,2,5,7,5,4,2,1]"
+    },
+    {
+      "planks": "[2,3,7]"
+    }
+  ],
+  "functionName": "maximumWidth",
+  "params": [
+    {
+      "name": "planks",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Fix the common fence height <code>h</code>. Every original plank of height <code>h</code> can be used by itself.</p>",
+    "<p>Any remaining plank of height <code>x &lt; h</code> can only be used by pairing it with a plank of height <code>h - x</code>.</p>",
+    "<p>Using the frequency of each height, count these disjoint pairs with <code>min(freq[x], freq[h - x])</code>; when <code>x == h - x</code>, use <code>freq[x] / 2</code>.</p>",
+    "<p>It is enough to try heights that occur as an original plank height or as the sum of two original plank heights. Take the maximum number of single planks and pairs over all such heights.</p>"
+  ]
+}

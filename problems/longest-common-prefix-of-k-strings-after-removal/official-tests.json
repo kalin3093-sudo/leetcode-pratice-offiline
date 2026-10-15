@@ -1,0 +1,10 @@
+[
+  {
+    "words": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]",
+    "k": 2
+  },
+  {
+    "words": "[\"dog\",\"racer\",\"car\"]",
+    "k": 2
+  }
+]

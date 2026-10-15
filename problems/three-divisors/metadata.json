@@ -1,0 +1,46 @@
+{
+  "id": "three-divisors",
+  "title": "1952. Three Divisors",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/three-divisors/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "false"
+    },
+    {
+      "input": "n = 4",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isThree(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isThree(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isThree(self, n: int) -> bool:\n        ",
+    "typescript": "function isThree(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsThree(int n) {\n        \n    }\n}",
+    "go": "func isThree(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_three(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "isThree",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "You can count the number of divisors and just check that they are 3",
+    "Beware of the case of n equal 1 as some solutions might fail in it"
+  ]
+}

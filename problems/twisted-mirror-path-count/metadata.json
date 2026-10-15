@@ -1,0 +1,57 @@
+{
+  "id": "twisted-mirror-path-count",
+  "title": "3665. Twisted Mirror Path Count",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/twisted-mirror-path-count/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,0],[0,0,1],[1,0,0]]",
+      "output": "5",
+      "explanation": "Number Full Path 1 (0, 0) &rarr; (0, 1) [M] &rarr; (1, 1) &rarr; (1, 2) [M] &rarr; (2, 2) 2 (0, 0) &rarr; (0, 1) [M] &rarr; (1, 1) &rarr; (2, 1) &rarr; (2, 2) 3 (0, 0) &rarr; (1, 0) &rarr; (1, 1) &rarr; (1, 2) [M] &rarr; (2, 2) 4 (0, 0) &rarr; (1, 0) &rarr; (1, 1) &rarr; (2, 1) &rarr; (2, 2) 5 (0, 0) &rarr; (1, 0) &rarr; (2, 0) [M] &rarr; (2, 1) &rarr; (2, 2) [M] indicates the robot attempted to enter a mirror cell and instead reflected."
+    },
+    {
+      "input": "grid = [[0,0],[0,0]]",
+      "output": "2",
+      "explanation": "Number Full Path 1 (0, 0) &rarr; (0, 1) &rarr; (1, 1) 2 (0, 0) &rarr; (1, 0) &rarr; (1, 1)"
+    },
+    {
+      "input": "grid = [[0,1,1],[1,1,0]]",
+      "output": "1",
+      "explanation": "Number Full Path 1 (0, 0) &rarr; (0, 1) [M] &rarr; (1, 1) [M] &rarr; (1, 2) (0, 0) &rarr; (1, 0) [M] &rarr; (1, 1) [M] &rarr; (2, 1) goes out of bounds, so it is invalid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int uniquePaths(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int uniquePaths(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def uniquePaths(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function uniquePaths(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int UniquePaths(int[][] grid) {\n        \n    }\n}",
+    "go": "func uniquePaths(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn unique_paths(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,0],[0,0,1],[1,0,0]]"
+    },
+    {
+      "grid": "[[0,0],[0,0]]"
+    },
+    {
+      "grid": "[[0,1,1],[1,1,0]]"
+    }
+  ],
+  "functionName": "uniquePaths",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Precompute, for each cell and each move (right/down), where you actually land if there’s a mirror next—store these \"jump\" targets in a <code>go[i][j][0/1]</code> table.",
+    "Let <code>dp[i][j]</code> = number of ways to reach (i,j); set <code>dp[0][0] = 1</code>, then scan cells in row‑major order and for each <code>dp[i][j] > 0</code> add <code>dp[i][j]</code> into <code>dp[x][y]</code> for both precomputed moves.",
+    "Always take additions modulo <code>10<sup>9</sup>+7</code>, and skip any jump target that falls outside the grid."
+  ]
+}

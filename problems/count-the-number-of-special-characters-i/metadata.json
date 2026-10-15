@@ -1,0 +1,55 @@
+{
+  "id": "count-the-number-of-special-characters-i",
+  "title": "3120. Count the Number of Special Characters I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-the-number-of-special-characters-i/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"aaAbcBC\"",
+      "output": "3",
+      "explanation": "The special characters in word are 'a', 'b', and 'c'."
+    },
+    {
+      "input": "word = \"abc\"",
+      "output": "0",
+      "explanation": "No character in word appears in uppercase."
+    },
+    {
+      "input": "word = \"abBCab\"",
+      "output": "1",
+      "explanation": "The only special character in word is 'b'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSpecialChars(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSpecialChars(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSpecialChars(self, word: str) -> int:\n        ",
+    "typescript": "function numberOfSpecialChars(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSpecialChars(string word) {\n        \n    }\n}",
+    "go": "func numberOfSpecialChars(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_special_chars(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "aaAbcBC"
+    },
+    {
+      "word": "abc"
+    },
+    {
+      "word": "abBCab"
+    }
+  ],
+  "functionName": "numberOfSpecialChars",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The constraints are small. For all 52 characters, check if they are present in <code>word</code>."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+  "title": "3754. Concatenate Non-Zero Digits and Multiply by Sum I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 10203004",
+      "output": "12340",
+      "explanation": "The non-zero digits are 1, 2, 3, and 4. Thus, x = 1234. The sum of digits is sum = 1 + 2 + 3 + 4 = 10. Therefore, the answer is x * sum = 1234 * 10 = 12340."
+    },
+    {
+      "input": "n = 1000",
+      "output": "1",
+      "explanation": "The non-zero digit is 1, so x = 1 and sum = 1. Therefore, the answer is x * sum = 1 * 1 = 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long sumAndMultiply(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long sumAndMultiply(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumAndMultiply(self, n: int) -> int:\n        ",
+    "typescript": "function sumAndMultiply(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SumAndMultiply(int n) {\n        \n    }\n}",
+    "go": "func sumAndMultiply(n int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_and_multiply(n: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10203004
+    },
+    {
+      "n": 1000
+    }
+  ],
+  "functionName": "sumAndMultiply",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Simulate as described"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sort-vowels-in-a-string",
+  "title": "2785. Sort Vowels in a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sort-vowels-in-a-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"lEetcOde\"",
+      "output": "\"lEOtcede\"",
+      "explanation": "'E', 'O', and 'e' are the vowels in s; 'l', 't', 'c', and 'd' are all consonants. The vowels are sorted according to their ASCII values, and the consonants remain in the same places."
+    },
+    {
+      "input": "s = \"lYmpH\"",
+      "output": "\"lYmpH\"",
+      "explanation": "There are no vowels in s (all characters in s are consonants), so we return \"lYmpH\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string sortVowels(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String sortVowels(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortVowels(self, s: str) -> str:\n        ",
+    "typescript": "function sortVowels(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SortVowels(string s) {\n        \n    }\n}",
+    "go": "func sortVowels(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_vowels(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "lEetcOde"
+    },
+    {
+      "s": "lYmpH"
+    }
+  ],
+  "functionName": "sortVowels",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Add all the vowels in an array and sort the array.",
+    "Replace characters in string s if it's a vowel from the new array."
+  ]
+}

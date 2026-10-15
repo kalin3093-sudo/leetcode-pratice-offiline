@@ -1,0 +1,45 @@
+{
+  "id": "remove-duplicate-letters",
+  "title": "316. Remove Duplicate Letters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-duplicate-letters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"bcabc\"",
+      "output": "\"abc\""
+    },
+    {
+      "input": "s = \"cbacdcbc\"",
+      "output": "\"acdb\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string removeDuplicateLetters(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String removeDuplicateLetters(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeDuplicateLetters(self, s: str) -> str:\n        ",
+    "typescript": "function removeDuplicateLetters(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RemoveDuplicateLetters(string s) {\n        \n    }\n}",
+    "go": "func removeDuplicateLetters(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_duplicate_letters(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "bcabc"
+    },
+    {
+      "s": "cbacdcbc"
+    }
+  ],
+  "functionName": "removeDuplicateLetters",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Greedily try to add one missing character. How to check if adding some character will not cause problems ? Use bit-masks to check whether you will be able to complete the sub-sequence if you add the character at some index i."
+  ]
+}

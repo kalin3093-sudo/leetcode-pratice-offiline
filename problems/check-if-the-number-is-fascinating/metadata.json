@@ -1,0 +1,48 @@
+{
+  "id": "check-if-the-number-is-fascinating",
+  "title": "2729. Check if The Number is Fascinating",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-the-number-is-fascinating/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "n = 192",
+      "output": "true",
+      "explanation": "We concatenate the numbers n = 192 and 2 * n = 384 and 3 * n = 576. The resulting number is 192384576. This number contains all the digits from 1 to 9 exactly once."
+    },
+    {
+      "input": "n = 100",
+      "output": "false",
+      "explanation": "We concatenate the numbers n = 100 and 2 * n = 200 and 3 * n = 300. The resulting number is 100200300. This number does not satisfy any of the conditions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isFascinating(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isFascinating(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isFascinating(self, n: int) -> bool:\n        ",
+    "typescript": "function isFascinating(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsFascinating(int n) {\n        \n    }\n}",
+    "go": "func isFascinating(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_fascinating(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 192
+    },
+    {
+      "n": 100
+    }
+  ],
+  "functionName": "isFascinating",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Consider changing the number to the way it is described in the statement.",
+    "Check if the resulting number contains all the digits from 1 to 9 exactly once."
+  ]
+}

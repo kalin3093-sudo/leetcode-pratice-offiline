@@ -1,0 +1,10 @@
+[
+  {
+    "words": "[\"acca\",\"bbbb\",\"caca\"]",
+    "target": "aba"
+  },
+  {
+    "words": "[\"abba\",\"baab\"]",
+    "target": "bab"
+  }
+]

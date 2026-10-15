@@ -1,0 +1,45 @@
+{
+  "id": "longest-palindrome",
+  "title": "409. Longest Palindrome",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/longest-palindrome/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abccccdd\"",
+      "output": "7",
+      "explanation": "One longest palindrome that can be built is \"dccaccd\", whose length is 7."
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "1",
+      "explanation": "The longest palindrome that can be built is \"a\", whose length is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestPalindrome(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestPalindrome(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestPalindrome(self, s: str) -> int:\n        ",
+    "typescript": "function longestPalindrome(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestPalindrome(string s) {\n        \n    }\n}",
+    "go": "func longestPalindrome(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_palindrome(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abccccdd"
+    },
+    {
+      "s": "a"
+    }
+  ],
+  "functionName": "longestPalindrome",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

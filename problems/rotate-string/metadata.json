@@ -1,0 +1,49 @@
+{
+  "id": "rotate-string",
+  "title": "796. Rotate String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/rotate-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abcde\", goal = \"cdeab\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"abcde\", goal = \"abced\"",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool rotateString(string s, string goal) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean rotateString(String s, String goal) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rotateString(self, s: str, goal: str) -> bool:\n        ",
+    "typescript": "function rotateString(s: string, goal: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool RotateString(string s, string goal) {\n        \n    }\n}",
+    "go": "func rotateString(s string, goal string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rotate_string(s: String, goal: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "m",
+      "goal": "f"
+    },
+    {
+      "s": "c",
+      "goal": "w"
+    }
+  ],
+  "functionName": "rotateString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "goal",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

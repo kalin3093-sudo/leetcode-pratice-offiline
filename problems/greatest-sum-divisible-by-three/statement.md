@@ -1,0 +1,6 @@
+Given an integer array `nums`, return *the **maximum possible sum** of elements of the array such that it is divisible by three*.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 4 * 10^4`
+-   `1 ≤ nums[i] ≤ 10^4`

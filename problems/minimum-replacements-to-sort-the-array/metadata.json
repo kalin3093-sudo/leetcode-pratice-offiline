@@ -1,0 +1,48 @@
+{
+  "id": "minimum-replacements-to-sort-the-array",
+  "title": "2366. Minimum Replacements to Sort the Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-replacements-to-sort-the-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,9,3]",
+      "output": "2",
+      "explanation": "Here are the steps to sort the array in non-decreasing order: - From [3,9,3], replace the 9 with 3 and 6 so the array becomes [3,3,6,3] - From [3,3,6,3], replace the 6 with 3 and 3 so the array becomes [3,3,3,3,3] There are 2 steps to sort the array in non-decreasing order. Therefore, we return 2."
+    },
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "0",
+      "explanation": "The array is already in non-decreasing order. Therefore, we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumReplacement(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumReplacement(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumReplacement(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minimumReplacement(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumReplacement(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumReplacement(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_replacement(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,9,3]"
+    },
+    {
+      "nums": "[1,2,3,4,5]"
+    }
+  ],
+  "functionName": "minimumReplacement",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "It is optimal to never make an operation to the last element of the array.",
+    "You can iterate from the second last element to the first. If the current value is greater than the previous bound, we want to break it into pieces so that the smaller one is as large as possible but not larger than the previous one."
+  ]
+}

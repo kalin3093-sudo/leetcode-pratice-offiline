@@ -1,0 +1,63 @@
+{
+  "id": "add-edges-to-make-degrees-of-all-nodes-even",
+  "title": "2508. Add Edges to Make Degrees of All Nodes Even",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "n = 5, edges = [[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]",
+      "output": "true",
+      "explanation": "The above diagram shows a valid way of adding an edge. Every node in the resulting graph is connected to an even number of edges."
+    },
+    {
+      "input": "n = 4, edges = [[1,2],[3,4]]",
+      "output": "true",
+      "explanation": "The above diagram shows a valid way of adding two edges."
+    },
+    {
+      "input": "n = 4, edges = [[1,2],[1,3],[1,4]]",
+      "output": "false",
+      "explanation": "It is not possible to obtain a valid graph with adding at most 2 edges."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isPossible(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isPossible(int n, List<List<Integer>> edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isPossible(self, n: int, edges: list[list[int]]) -> bool:\n        ",
+    "typescript": "function isPossible(n: number, edges: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsPossible(int n, IList<IList<int>> edges) {\n        \n    }\n}",
+    "go": "func isPossible(n int, edges [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_possible(n: i32, edges: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "edges": "[[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]"
+    },
+    {
+      "n": 4,
+      "edges": "[[1,2],[3,4]]"
+    },
+    {
+      "n": 4,
+      "edges": "[[1,2],[1,3],[1,4]]"
+    }
+  ],
+  "functionName": "isPossible",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Notice that each edge that we add changes the degree of exactly 2 nodes.",
+    "The number of nodes with an odd degree in the original graph should be either 0, 2, or 4. Try to work on each of these cases."
+  ]
+}

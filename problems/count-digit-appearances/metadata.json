@@ -1,0 +1,53 @@
+{
+  "id": "count-digit-appearances",
+  "title": "3895. Count Digit Appearances",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-digit-appearances/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [12,54,32,22], digit = 2",
+      "output": "4",
+      "explanation": "The digit 2 appears once in 12 and 32, and twice in 22. Thus, the total number of times digit 2 appears is 4."
+    },
+    {
+      "input": "nums = [1,34,7], digit = 9",
+      "output": "0",
+      "explanation": "The digit 9 does not appear in the decimal representation of any element in nums, so the total number of times digit 9 appears is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countDigitOccurrences(vector<int>& nums, int digit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countDigitOccurrences(int[] nums, int digit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countDigitOccurrences(self, nums: list[int], digit: int) -> int:\n        ",
+    "typescript": "function countDigitOccurrences(nums: number[], digit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountDigitOccurrences(int[] nums, int digit) {\n        \n    }\n}",
+    "go": "func countDigitOccurrences(nums []int, digit int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_digit_occurrences(nums: Vec<i32>, digit: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[12,54,32,22]",
+      "digit": 2
+    },
+    {
+      "nums": "[1,34,7]",
+      "digit": 9
+    }
+  ],
+  "functionName": "countDigitOccurrences",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "digit",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Parse and simulate as described"
+  ]
+}

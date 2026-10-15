@@ -1,0 +1,55 @@
+{
+  "id": "smallest-missing-non-negative-integer-after-operations",
+  "title": "2598. Smallest Missing Non-negative Integer After Operations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,-10,7,13,6,8], value = 5",
+      "output": "4",
+      "explanation": "One can achieve this result by applying the following operations: - Add value to nums[1] twice to make nums = [1,0,7,13,6,8] - Subtract value from nums[2] once to make nums = [1,0,2,13,6,8] - Subtract value from nums[3] twice to make nums = [1,0,2,3,6,8] The MEX of nums is 4. It can be shown that 4 is the maximum MEX we can achieve."
+    },
+    {
+      "input": "nums = [1,-10,7,13,6,8], value = 7",
+      "output": "2",
+      "explanation": "One can achieve this result by applying the following operation: - subtract value from nums[2] once to make nums = [1,-10,0,13,6,8] The MEX of nums is 2. It can be shown that 2 is the maximum MEX we can achieve."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findSmallestInteger(vector<int>& nums, int value) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findSmallestInteger(int[] nums, int value) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findSmallestInteger(self, nums: list[int], value: int) -> int:\n        ",
+    "typescript": "function findSmallestInteger(nums: number[], value: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindSmallestInteger(int[] nums, int value) {\n        \n    }\n}",
+    "go": "func findSmallestInteger(nums []int, value int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_smallest_integer(nums: Vec<i32>, value: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,-10,7,13,6,8]",
+      "value": 5
+    },
+    {
+      "nums": "[1,-10,7,13,6,8]",
+      "value": 7
+    }
+  ],
+  "functionName": "findSmallestInteger",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "value",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think about using modular arithmetic.",
+    "if x = nums[i] (mod value), then we can make nums[i] equal to x  after some number of operations",
+    "How does finding the frequency of (nums[i] mod value) help?"
+  ]
+}

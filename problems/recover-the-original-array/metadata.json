@@ -1,0 +1,58 @@
+{
+  "id": "recover-the-original-array",
+  "title": "2122. Recover the Original Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/recover-the-original-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,10,6,4,8,12]",
+      "output": "[3,7,11]",
+      "explanation": "If arr = [3,7,11] and k = 1, we get lower = [2,6,10] and higher = [4,8,12]. Combining lower and higher gives us [2,6,10,4,8,12], which is a permutation of nums. Another valid possibility is that arr = [5,7,9] and k = 3. In that case, lower = [2,4,6] and higher = [8,10,12]."
+    },
+    {
+      "input": "nums = [1,1,3,3]",
+      "output": "[2,2]",
+      "explanation": "If arr = [2,2] and k = 1, we get lower = [1,1] and higher = [3,3]. Combining lower and higher gives us [1,1,3,3], which is equal to nums. Note that arr cannot be [1,3] because in that case, the only possible way to obtain [1,1,3,3] is with k = 0. This is invalid since k must be positive."
+    },
+    {
+      "input": "nums = [5,435]",
+      "output": "[220]",
+      "explanation": "The only possible combination is arr = [220] and k = 215. Using them, we get lower = [5] and higher = [435]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> recoverArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] recoverArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def recoverArray(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function recoverArray(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] RecoverArray(int[] nums) {\n        \n    }\n}",
+    "go": "func recoverArray(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn recover_array(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,10,6,4,8,12]"
+    },
+    {
+      "nums": "[1,1,3,3]"
+    },
+    {
+      "nums": "[5,435]"
+    }
+  ],
+  "functionName": "recoverArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "If we fix the value of k, how can we check if an original array exists for the fixed k?",
+    "The smallest value of nums is obtained by subtracting k from the smallest value of the original array. How can we use this to reduce the search space for finding a valid k?",
+    "You can compute every possible k by using the smallest value of nums (as lower[i]) against every other value in nums (as the corresponding higher[i]).",
+    "For every computed k, greedily pair up the values in nums. This can be done sorting nums, then using a map to store previous values and searching that map for a corresponding lower[i] for the current nums[j] (as higher[i])."
+  ]
+}

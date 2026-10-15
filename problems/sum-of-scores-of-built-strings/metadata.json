@@ -1,0 +1,48 @@
+{
+  "id": "sum-of-scores-of-built-strings",
+  "title": "2223. Sum of Scores of Built Strings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-scores-of-built-strings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"babab\"",
+      "output": "9",
+      "explanation": "For s1 == \"b\", the longest common prefix is \"b\" which has a score of 1. For s2 == \"ab\", there is no common prefix so the score is 0. For s3 == \"bab\", the longest common prefix is \"bab\" which has a score of 3. For s4 == \"abab\", there is no common prefix so the score is 0. For s5 == \"babab\", the longest common prefix is \"babab\" which has a score of 5. The sum of the scores is 1 + 0 + 3 + 0 + 5 = 9, so we return 9."
+    },
+    {
+      "input": "s = \"azbazbzaz\"",
+      "output": "14",
+      "explanation": "For s2 == \"az\", the longest common prefix is \"az\" which has a score of 2. For s6 == \"azbzaz\", the longest common prefix is \"azb\" which has a score of 3. For s9 == \"azbazbzaz\", the longest common prefix is \"azbazbzaz\" which has a score of 9. For all other si, the score is 0. The sum of the scores is 2 + 3 + 9 = 14, so we return 14."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long sumScores(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long sumScores(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumScores(self, s: str) -> int:\n        ",
+    "typescript": "function sumScores(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SumScores(string s) {\n        \n    }\n}",
+    "go": "func sumScores(s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_scores(s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "babab"
+    },
+    {
+      "s": "azbazbzaz"
+    }
+  ],
+  "functionName": "sumScores",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Each s_i is a suffix of the string s, so consider algorithms that can determine the longest prefix that is also a suffix.",
+    "Could you use the Z array from the Z algorithm to find the score of each s_i?"
+  ]
+}

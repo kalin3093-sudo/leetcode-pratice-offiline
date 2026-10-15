@@ -1,0 +1,61 @@
+{
+  "id": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+  "title": "2400. Number of Ways to Reach a Position After Exactly k Steps",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "startPos = 1, endPos = 2, k = 3",
+      "output": "3",
+      "explanation": "We can reach position 2 from 1 in exactly 3 steps in three ways: - 1 -> 2 -> 3 -> 2. - 1 -> 2 -> 1 -> 2. - 1 -> 0 -> 1 -> 2. It can be proven that no other way is possible, so we return 3."
+    },
+    {
+      "input": "startPos = 2, endPos = 5, k = 10",
+      "output": "0",
+      "explanation": "It is impossible to reach position 5 from position 2 in exactly 10 steps."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfWays(int startPos, int endPos, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfWays(int startPos, int endPos, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfWays(self, startPos: int, endPos: int, k: int) -> int:\n        ",
+    "typescript": "function numberOfWays(startPos: number, endPos: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfWays(int startPos, int endPos, int k) {\n        \n    }\n}",
+    "go": "func numberOfWays(startPos int, endPos int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_ways(start_pos: i32, end_pos: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "startPos": 1,
+      "endPos": 2,
+      "k": 3
+    },
+    {
+      "startPos": 2,
+      "endPos": 5,
+      "k": 10
+    }
+  ],
+  "functionName": "numberOfWays",
+  "params": [
+    {
+      "name": "startPos",
+      "type": "int"
+    },
+    {
+      "name": "endPos",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How many steps to the left and to the right do you need to make exactly?",
+    "Does the order of the steps matter?",
+    "Use combinatorics to find the number of ways to order the steps."
+  ]
+}

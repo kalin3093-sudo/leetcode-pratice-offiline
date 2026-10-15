@@ -1,0 +1,48 @@
+{
+  "id": "number-of-strings-which-can-be-rearranged-to-contain-substring",
+  "title": "2930. Number of Strings Which Can Be Rearranged to Contain Substring",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "12",
+      "explanation": "The 12 strings which can be rearranged to have \"leet\" as a substring are: \"eelt\", \"eetl\", \"elet\", \"elte\", \"etel\", \"etle\", \"leet\", \"lete\", \"ltee\", \"teel\", \"tele\", and \"tlee\"."
+    },
+    {
+      "input": "n = 10",
+      "output": "83943898",
+      "explanation": "The number of strings with length 10 which can be rearranged to have \"leet\" as a substring is 526083947580. Hence the answer is 526083947580 % (109 + 7) = 83943898."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int stringCount(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int stringCount(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def stringCount(self, n: int) -> int:\n        ",
+    "typescript": "function stringCount(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int StringCount(int n) {\n        \n    }\n}",
+    "go": "func stringCount(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn string_count(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "stringCount",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A good string must contain at least one <code>l</code>, one <code>t</code>, and two <code>e</code>.",
+    "Divide the problem into subproblems and use Dynamic Programming."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "shortest-common-supersequence",
+  "title": "1092. Shortest Common Supersequence ",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/shortest-common-supersequence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "str1 = \"abac\", str2 = \"cab\"",
+      "output": "\"cabac\"",
+      "explanation": "str1 = \"abac\" is a subsequence of \"cabac\" because we can delete the first \"c\". str2 = \"cab\" is a subsequence of \"cabac\" because we can delete the last \"ac\". The answer provided is the shortest such string that satisfies these properties."
+    },
+    {
+      "input": "str1 = \"aaaaaaaa\", str2 = \"aaaaaaaa\"",
+      "output": "\"aaaaaaaa\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string shortestCommonSupersequence(string str1, string str2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String shortestCommonSupersequence(String str1, String str2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestCommonSupersequence(self, str1: str, str2: str) -> str:\n        ",
+    "typescript": "function shortestCommonSupersequence(str1: string, str2: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ShortestCommonSupersequence(string str1, string str2) {\n        \n    }\n}",
+    "go": "func shortestCommonSupersequence(str1 string, str2 string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_common_supersequence(str1: String, str2: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "str1": "abac",
+      "str2": "cab"
+    },
+    {
+      "str1": "aaaaaaaa",
+      "str2": "aaaaaaaa"
+    }
+  ],
+  "functionName": "shortestCommonSupersequence",
+  "params": [
+    {
+      "name": "str1",
+      "type": "string"
+    },
+    {
+      "name": "str2",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "We can find the length of the longest common subsequence between str1[i:] and str2[j:] (for all (i, j)) by using dynamic programming.",
+    "We can use this information to recover the shortest common supersequence."
+  ]
+}

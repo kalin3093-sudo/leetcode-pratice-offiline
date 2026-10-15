@@ -1,0 +1,47 @@
+{
+  "id": "harshad-number",
+  "title": "3099. Harshad Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/harshad-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "x = 18",
+      "output": "9",
+      "explanation": "The sum of digits of x is 9. 18 is divisible by 9. So 18 is a Harshad number and the answer is 9."
+    },
+    {
+      "input": "x = 23",
+      "output": "-1",
+      "explanation": "The sum of digits of x is 5. 23 is not divisible by 5. So 23 is not a Harshad number and the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfTheDigitsOfHarshadNumber(int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfTheDigitsOfHarshadNumber(int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfTheDigitsOfHarshadNumber(self, x: int) -> int:\n        ",
+    "typescript": "function sumOfTheDigitsOfHarshadNumber(x: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfTheDigitsOfHarshadNumber(int x) {\n        \n    }\n}",
+    "go": "func sumOfTheDigitsOfHarshadNumber(x int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_the_digits_of_harshad_number(x: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "x": 18
+    },
+    {
+      "x": 23
+    }
+  ],
+  "functionName": "sumOfTheDigitsOfHarshadNumber",
+  "params": [
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a while loop and divide <code>x</code> by <code>10</code> to find the sum of the digits of <code>x</code>."
+  ]
+}

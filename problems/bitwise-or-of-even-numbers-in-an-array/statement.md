@@ -1,0 +1,10 @@
+You are given an integer array `nums`.
+
+Return the bitwise **OR** of all **even** numbers in the array.
+
+If there are no even numbers in `nums`, return 0.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 100`
+-   `1 ≤ nums[i] ≤ 100`

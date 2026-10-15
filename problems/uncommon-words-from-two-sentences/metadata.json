@@ -1,0 +1,50 @@
+{
+  "id": "uncommon-words-from-two-sentences",
+  "title": "884. Uncommon Words from Two Sentences",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/uncommon-words-from-two-sentences/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s1 = \"this apple is sweet\", s2 = \"this apple is sour\"",
+      "output": "[\"sweet\",\"sour\"]",
+      "explanation": "The word \"sweet\" appears only in s1, while the word \"sour\" appears only in s2."
+    },
+    {
+      "input": "s1 = \"apple apple\", s2 = \"banana\"",
+      "output": "[\"banana\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> uncommonFromSentences(string s1, string s2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] uncommonFromSentences(String s1, String s2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def uncommonFromSentences(self, s1: str, s2: str) -> list[str]:\n        ",
+    "typescript": "function uncommonFromSentences(s1: string, s2: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] UncommonFromSentences(string s1, string s2) {\n        \n    }\n}",
+    "go": "func uncommonFromSentences(s1 string, s2 string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn uncommon_from_sentences(s1: String, s2: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s1": "this apple is sweet",
+      "s2": "this apple is sour"
+    },
+    {
+      "s1": "apple apple",
+      "s2": "banana"
+    }
+  ],
+  "functionName": "uncommonFromSentences",
+  "params": [
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": []
+}

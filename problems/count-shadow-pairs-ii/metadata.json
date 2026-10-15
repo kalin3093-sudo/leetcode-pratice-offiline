@@ -1,0 +1,50 @@
+{
+  "id": "count-shadow-pairs-ii",
+  "title": "4055. Count Shadow Pairs II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-shadow-pairs-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,1,4,2,5]",
+      "output": "5",
+      "explanation": "(i, j) nums[i] nums[j] Shadow Pair (0, 2) 3 4 nums[1] = 1 is not strictly between 3 and 4 (1, 2) 1 4 No index k exists such that 1 < k < 2 (1, 3) 1 2 nums[2] = 4 is not strictly between 1 and 2 (2, 4) 4 5 nums[3] = 2 is not strictly between 4 and 5 (3, 4) 2 5 No index k exists such that 3 < k < 4 Thus, the answer is 5."
+    },
+    {
+      "input": "nums = [6,7,8,9]",
+      "output": "3",
+      "explanation": "(i, j) nums[i] nums[j] Shadow Pair (0, 1) 6 7 No index k exists such that 0 < k < 1 (1, 2) 7 8 No index k exists such that 1 < k < 2 (2, 3) 8 9 No index k exists such that 2 < k < 3 Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shadowPairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shadowPairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shadowPairs(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function shadowPairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShadowPairs(int[] nums) {\n        \n    }\n}",
+    "go": "func shadowPairs(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shadow_pairs(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,1,4,2,5]"
+    },
+    {
+      "nums": "[6,7,8,9]"
+    }
+  ],
+  "functionName": "shadowPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Divide the array into two halves. Recursively count pairs within each half, then count pairs whose endpoints lie in different halves.</p>",
+    "<p>For each left endpoint <code>i</code>, let <code>b[i]</code> be the smallest value greater than <code>nums[i]</code> appearing after <code>i</code> in the left half, or positive infinity if none exists. For each right endpoint <code>j</code>, let <code>c[j]</code> be the largest value smaller than <code>nums[j]</code> appearing before <code>j</code> in the right half, or negative infinity if none exists. Compute these bounds using ordered sets.</p>",
+    "<p>A pair crossing the split is valid exactly when <code>c[j] &lt;= nums[i] &lt; nums[j] &lt;= b[i]</code>.</p>",
+    "<p>Process right endpoints in increasing order of <code>nums[j]</code>. Use a Fenwick tree over compressed values to maintain left endpoints satisfying <code>nums[i] &lt; nums[j] &lt;= b[i]</code>, then count those with <code>nums[i] &gt;= c[j]</code>. This gives an overall <code>O(n log<sup>2</sup> n)</code> solution.</p>"
+  ]
+}

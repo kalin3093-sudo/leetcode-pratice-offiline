@@ -1,0 +1,62 @@
+{
+  "id": "count-substrings-that-satisfy-k-constraint-i",
+  "title": "3258. Count Substrings That Satisfy K-Constraint I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"10101\", k = 1",
+      "output": "12",
+      "explanation": "Every substring of s except the substrings \"1010\", \"10101\", and \"0101\" satisfies the k-constraint."
+    },
+    {
+      "input": "s = \"1010101\", k = 2",
+      "output": "25",
+      "explanation": "Every substring of s except the substrings with a length greater than 5 satisfies the k-constraint."
+    },
+    {
+      "input": "s = \"11111\", k = 1",
+      "output": "15",
+      "explanation": "All substrings of s satisfy the k-constraint."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countKConstraintSubstrings(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countKConstraintSubstrings(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countKConstraintSubstrings(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function countKConstraintSubstrings(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountKConstraintSubstrings(string s, int k) {\n        \n    }\n}",
+    "go": "func countKConstraintSubstrings(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_k_constraint_substrings(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "10101",
+      "k": 1
+    },
+    {
+      "s": "1010101",
+      "k": 2
+    },
+    {
+      "s": "11111",
+      "k": 1
+    }
+  ],
+  "functionName": "countKConstraintSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Using a brute force approach, check each index until a substring satisfying the k-constraint is found, then increment."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "contain-virus",
+  "title": "749. Contain Virus",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/contain-virus/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "isInfected = [[0,1,0,0,0,0,0,1],[0,1,0,0,0,0,0,1],[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0]]",
+      "output": "10",
+      "explanation": "There are 2 contaminated regions. On the first day, add 5 walls to quarantine the viral region on the left. The board after the virus spreads is: On the second day, add 5 walls to quarantine the viral region on the right. The virus is fully contained."
+    },
+    {
+      "input": "isInfected = [[1,1,1],[1,0,1],[1,1,1]]",
+      "output": "4",
+      "explanation": "Even though there is only one cell saved, there are 4 walls built. Notice that walls are only built on the shared boundary of two different cells."
+    },
+    {
+      "input": "isInfected = [[1,1,1,0,0,0,0,0,0],[1,0,1,0,1,1,1,1,1],[1,1,1,0,0,0,0,0,0]]",
+      "output": "13",
+      "explanation": "The region on the left only builds two new walls."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int containVirus(vector<vector<int>>& isInfected) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int containVirus(int[][] isInfected) {\n        \n    }\n}",
+    "python": "class Solution:\n    def containVirus(self, isInfected: list[list[int]]) -> int:\n        ",
+    "typescript": "function containVirus(isInfected: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ContainVirus(int[][] isInfected) {\n        \n    }\n}",
+    "go": "func containVirus(isInfected [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn contain_virus(is_infected: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "isInfected": "[[0,1,0,0,0,0,0,1],[0,1,0,0,0,0,0,1],[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0]]"
+    },
+    {
+      "isInfected": "[[1,1,1],[1,0,1],[1,1,1]]"
+    },
+    {
+      "isInfected": "[[1,1,1,0,0,0,0,0,0],[1,0,1,0,1,1,1,1,1],[1,1,1,0,0,0,0,0,0]]"
+    }
+  ],
+  "functionName": "containVirus",
+  "params": [
+    {
+      "name": "isInfected",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The implementation is long - we want to perfrom the following steps:\r\n\r\n* Find all viral regions (connected components), additionally for each region keeping track of the frontier (neighboring uncontaminated cells), and the perimeter of the region.\r\n\r\n* Disinfect the most viral region, adding it's perimeter to the answer.\r\n\r\n* Spread the virus in the remaining regions outward by 1 square."
+  ]
+}

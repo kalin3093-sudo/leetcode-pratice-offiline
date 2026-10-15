@@ -1,0 +1,55 @@
+{
+  "id": "minimum-moves-to-move-a-box-to-their-target-location",
+  "title": "1263. Minimum Moves to Move a Box to Their Target Location",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"], [\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"], [\"#\",\".\",\".\",\"B\",\".\",\"#\"], [\"#\",\".\",\"#\",\"#\",\".\",\"#\"], [\"#\",\".\",\".\",\".\",\"S\",\"#\"], [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
+      "output": "3",
+      "explanation": "We return only the number of times the box is pushed."
+    },
+    {
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"], [\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"], [\"#\",\".\",\".\",\"B\",\".\",\"#\"], [\"#\",\"#\",\"#\",\"#\",\".\",\"#\"], [\"#\",\".\",\".\",\".\",\"S\",\"#\"], [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
+      "output": "-1"
+    },
+    {
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"], [\"#\",\"T\",\".\",\".\",\"#\",\"#\"], [\"#\",\".\",\"#\",\"B\",\".\",\"#\"], [\"#\",\".\",\".\",\".\",\".\",\"#\"], [\"#\",\".\",\".\",\".\",\"S\",\"#\"], [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
+      "output": "5",
+      "explanation": "push the box down, left, left, up and up."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minPushBox(vector<vector<char>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minPushBox(char[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minPushBox(self, grid: list[list[str]]) -> int:\n        ",
+    "typescript": "function minPushBox(grid: string[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinPushBox(char[][] grid) {\n        \n    }\n}",
+    "go": "func minPushBox(grid [][]byte) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_push_box(grid: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\".\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]"
+    },
+    {
+      "grid": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]"
+    },
+    {
+      "grid": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\".\",\".\",\"#\",\"#\"],[\"#\",\".\",\"#\",\"B\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]"
+    }
+  ],
+  "functionName": "minPushBox",
+  "params": [
+    {
+      "name": "grid",
+      "type": "char_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We represent the search state as (player_row, player_col, box_row, box_col).",
+    "You need to count only the number of pushes. Then inside of your BFS check if the box could be pushed (in any direction) given the current position of the player."
+  ]
+}

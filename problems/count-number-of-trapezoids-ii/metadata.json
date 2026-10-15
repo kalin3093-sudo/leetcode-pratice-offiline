@@ -1,0 +1,51 @@
+{
+  "id": "count-number-of-trapezoids-ii",
+  "title": "3625. Count Number of Trapezoids II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-number-of-trapezoids-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[-3,2],[3,0],[2,3],[3,2],[2,-3]]",
+      "output": "2",
+      "explanation": "There are two distinct ways to pick four points that form a trapezoid: The points [-3,2], [2,3], [3,2], [2,-3] form one trapezoid. The points [2,3], [3,2], [3,0], [2,-3] form another trapezoid."
+    },
+    {
+      "input": "points = [[0,0],[1,0],[0,1],[2,1]]",
+      "output": "1",
+      "explanation": "There is only one trapezoid which can be formed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countTrapezoids(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countTrapezoids(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countTrapezoids(self, points: List[List[int]]) -> int:\n        ",
+    "typescript": "function countTrapezoids(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountTrapezoids(int[][] points) {\n        \n    }\n}",
+    "go": "func countTrapezoids(points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_trapezoids(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[-3,2],[3,0],[2,3],[3,2],[2,-3]]"
+    },
+    {
+      "points": "[[0,0],[1,0],[0,1],[2,1]]"
+    }
+  ],
+  "functionName": "countTrapezoids",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Hash every point-pair by its reduced slope <code>(dy,dx)</code> (normalize with GCD and fix signs).",
+    "In each slope-bucket of size <code>k</code>, there are <code>C(k,2)</code> ways to pick two segments as the trapezoid's parallel bases.",
+    "Skip any base-pair that shares an endpoint since it would not form a quadrilateral.",
+    "Subtract one count for each parallelogram. Each parallelogram was counted once for each of its two parallel-side pairs, so after subtracting once, every quadrilateral with at least one pair of parallel sides, including parallelograms, contributes exactly one to the final total.",
+    "Final answer = total valid base-pairs minus parallelogram overcounts."
+  ]
+}

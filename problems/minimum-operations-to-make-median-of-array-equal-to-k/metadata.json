@@ -1,0 +1,64 @@
+{
+  "id": "minimum-operations-to-make-median-of-array-equal-to-k",
+  "title": "3107. Minimum Operations to Make Median of Array Equal to K",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-median-of-array-equal-to-k/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,6,8,5], k = 4",
+      "output": "2",
+      "explanation": "We can subtract one from nums[1] and nums[4] to obtain [2, 4, 6, 8, 4]. The median of the resulting array is equal to k."
+    },
+    {
+      "input": "nums = [2,5,6,8,5], k = 7",
+      "output": "3",
+      "explanation": "We can add one to nums[1] twice and add one to nums[2] once to obtain [2, 7, 7, 8, 5]."
+    },
+    {
+      "input": "nums = [1,2,3,4,5,6], k = 4",
+      "output": "0",
+      "explanation": "The median of the array is already equal to k."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minOperationsToMakeMedianK(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minOperationsToMakeMedianK(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperationsToMakeMedianK(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function minOperationsToMakeMedianK(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinOperationsToMakeMedianK(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minOperationsToMakeMedianK(nums []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations_to_make_median_k(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,6,8,5]",
+      "k": 4
+    },
+    {
+      "nums": "[2,5,6,8,5]",
+      "k": 7
+    },
+    {
+      "nums": "[1,2,3,4,5,6]",
+      "k": 4
+    }
+  ],
+  "functionName": "minOperationsToMakeMedianK",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Sort <code>nums</code> in non-descending order.",
+    "For all the smaller values on the left side of the median, change them to <code>k</code> if they are larger than <code>k</code>.",
+    "For all the larger values on the right side of the median, change them to <code>k</code> if they are smaller than <code>k</code>."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "minimum-score-after-removals-on-a-tree",
+  "title": "2322. Minimum Score After Removals on a Tree",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,5,5,4,11], edges = [[0,1],[1,2],[1,3],[3,4]]",
+      "output": "9",
+      "explanation": "The diagram above shows a way to make a pair of removals. - The 1st component has nodes [1,3,4] with values [5,4,11]. Its XOR value is 5 ^ 4 ^ 11 = 10. - The 2nd component has node [0] with value [1]. Its XOR value is 1 = 1. - The 3rd component has node [2] with value [5]. Its XOR value is 5 = 5. The score is the difference between the largest and smallest XOR value which is 10 - 1 = 9. It can be shown that no other pair of removals will obtain a smaller score than 9."
+    },
+    {
+      "input": "nums = [5,5,2,4,4,2], edges = [[0,1],[1,2],[5,2],[4,3],[1,3]]",
+      "output": "0",
+      "explanation": "The diagram above shows a way to make a pair of removals. - The 1st component has nodes [3,4] with values [4,4]. Its XOR value is 4 ^ 4 = 0. - The 2nd component has nodes [1,0] with values [5,5]. Its XOR value is 5 ^ 5 = 0. - The 3rd component has nodes [2,5] with values [2,2]. Its XOR value is 2 ^ 2 = 0. The score is the difference between the largest and smallest XOR value which is 0 - 0 = 0. We cannot obtain a smaller score than 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumScore(vector<int>& nums, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumScore(int[] nums, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumScore(self, nums: list[int], edges: list[list[int]]) -> int:\n        ",
+    "typescript": "function minimumScore(nums: number[], edges: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumScore(int[] nums, int[][] edges) {\n        \n    }\n}",
+    "go": "func minimumScore(nums []int, edges [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_score(nums: Vec<i32>, edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,5,5,4,11]",
+      "edges": "[[0,1],[1,2],[1,3],[3,4]]"
+    },
+    {
+      "nums": "[5,5,2,4,4,2]",
+      "edges": "[[0,1],[1,2],[5,2],[4,3],[1,3]]"
+    }
+  ],
+  "functionName": "minimumScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider iterating over the first edge to remove, and then doing some precalculations on the 2 resulting connected components.",
+    "Will calculating the XOR of each subtree help?"
+  ]
+}

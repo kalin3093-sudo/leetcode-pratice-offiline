@@ -1,0 +1,55 @@
+{
+  "id": "maximum-product-after-k-increments",
+  "title": "2233. Maximum Product After K Increments",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-product-after-k-increments/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,4], k = 5",
+      "output": "20",
+      "explanation": "Increment the first number 5 times. Now nums = [5, 4], with a product of 5 * 4 = 20. It can be shown that 20 is maximum product possible, so we return 20. Note that there may be other ways to increment nums to have the maximum product."
+    },
+    {
+      "input": "nums = [6,3,3,2], k = 2",
+      "output": "216",
+      "explanation": "Increment the second number 1 time and increment the fourth number 1 time. Now nums = [6, 4, 3, 3], with a product of 6 * 4 * 3 * 3 = 216. It can be shown that 216 is maximum product possible, so we return 216. Note that there may be other ways to increment nums to have the maximum product."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumProduct(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumProduct(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumProduct(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function maximumProduct(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumProduct(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func maximumProduct(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_product(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,4]",
+      "k": 5
+    },
+    {
+      "nums": "[6,3,3,2]",
+      "k": 2
+    }
+  ],
+  "functionName": "maximumProduct",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If you can increment only once, which number should you increment?",
+    "We should always prioritize the smallest number. What kind of data structure could we use?",
+    "Use a min heap to hold all the numbers. Each time we do an operation, replace the top of the heap x by x + 1."
+  ]
+}

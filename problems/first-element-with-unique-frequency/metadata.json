@@ -1,0 +1,58 @@
+{
+  "id": "first-element-with-unique-frequency",
+  "title": "3843. First Element with Unique Frequency",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/first-element-with-unique-frequency/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [20,10,30,30]",
+      "output": "30",
+      "explanation": "20 appears once. 10 appears once. 30 appears twice. The frequency of 30 is unique because no other integer appears exactly twice."
+    },
+    {
+      "input": "nums = [20,20,10,30,30,30]",
+      "output": "20",
+      "explanation": "20 appears twice. 10 appears once. 30 appears 3 times. The frequency of 20, 10, and 30 are unique. The first element that has unique frequency is 20."
+    },
+    {
+      "input": "nums = [10,10,20,20]",
+      "output": "-1",
+      "explanation": "10 appears twice. 20 appears twice. No element has a unique frequency."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int firstUniqueFreq(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int firstUniqueFreq(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def firstUniqueFreq(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function firstUniqueFreq(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FirstUniqueFreq(int[] nums) {\n        \n    }\n}",
+    "go": "func firstUniqueFreq(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn first_unique_freq(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[20,10,30,30]"
+    },
+    {
+      "nums": "[20,20,10,30,30,30]"
+    },
+    {
+      "nums": "[10,10,20,20]"
+    }
+  ],
+  "functionName": "firstUniqueFreq",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use two hash maps: one <code>freq</code> and one <code>freqCount</code>",
+    "First pass: for each <code>x</code> in <code>nums</code> do <code>freq[x] += 1</code>",
+    "Build counts of frequencies: for each <code>f</code> in values of <code>freq</code> do <code>freqCount[f] += 1</code>",
+    "Scan <code>nums</code> from left to right and return the first <code>x</code> with <code>freqCount[freq[x]] == 1</code>; return <code>-1</code> if none"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "concatenated-divisibility",
+  "title": "3533. Concatenated Divisibility",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/concatenated-divisibility/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,12,45], k = 5",
+      "output": "[3,12,45]",
+      "explanation": "Permutation Concatenated Value Divisible by 5 [3, 12, 45] 31245 Yes [3, 45, 12] 34512 No [12, 3, 45] 12345 Yes [12, 45, 3] 12453 No [45, 3, 12] 45312 No [45, 12, 3] 45123 No The lexicographically smallest permutation that forms a divisible concatenation is [3,12,45]."
+    },
+    {
+      "input": "nums = [10,5], k = 10",
+      "output": "[5,10]",
+      "explanation": "Permutation Concatenated Value Divisible by 10 [5, 10] 510 Yes [10, 5] 105 No The lexicographically smallest permutation that forms a divisible concatenation is [5,10]."
+    },
+    {
+      "input": "nums = [1,2,3], k = 5",
+      "output": "[]",
+      "explanation": "Since no permutation of nums forms a valid divisible concatenation, return an empty list."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> concatenatedDivisibility(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] concatenatedDivisibility(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def concatenatedDivisibility(self, nums: List[int], k: int) -> List[int]:\n        ",
+    "typescript": "function concatenatedDivisibility(nums: number[], k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ConcatenatedDivisibility(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func concatenatedDivisibility(nums []int, k int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn concatenated_divisibility(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,12,45]",
+      "k": 5
+    },
+    {
+      "nums": "[10,5]",
+      "k": 10
+    },
+    {
+      "nums": "[1,2,3]",
+      "k": 5
+    }
+  ],
+  "functionName": "concatenatedDivisibility",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Can we write a recursive solution for this?",
+    "Can we use bitmasks with dynamic programming to optimize the above recursion?",
+    "Use the idea of bitmask-based dynamic programming.",
+    "Use the idea to reconstruct the answer from the dynamic programming table using the state variables, such as <code>mask</code> and <code>remainder</code>."
+  ]
+}

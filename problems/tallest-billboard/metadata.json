@@ -1,0 +1,53 @@
+{
+  "id": "tallest-billboard",
+  "title": "956. Tallest Billboard",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/tallest-billboard/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rods = [1,2,3,6]",
+      "output": "6",
+      "explanation": "We have two disjoint subsets {1,2,3} and {6}, which have the same sum = 6."
+    },
+    {
+      "input": "rods = [1,2,3,4,5,6]",
+      "output": "10",
+      "explanation": "We have two disjoint subsets {2,3,5} and {4,6}, which have the same sum = 10."
+    },
+    {
+      "input": "rods = [1,2]",
+      "output": "0",
+      "explanation": "The billboard cannot be supported, so we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int tallestBillboard(vector<int>& rods) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int tallestBillboard(int[] rods) {\n        \n    }\n}",
+    "python": "class Solution:\n    def tallestBillboard(self, rods: list[int]) -> int:\n        ",
+    "typescript": "function tallestBillboard(rods: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TallestBillboard(int[] rods) {\n        \n    }\n}",
+    "go": "func tallestBillboard(rods []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn tallest_billboard(rods: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rods": "[1,2,3,6]"
+    },
+    {
+      "rods": "[1,2,3,4,5,6]"
+    },
+    {
+      "rods": "[1,2]"
+    }
+  ],
+  "functionName": "tallestBillboard",
+  "params": [
+    {
+      "name": "rods",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

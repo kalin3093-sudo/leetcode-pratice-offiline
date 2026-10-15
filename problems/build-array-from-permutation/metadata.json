@@ -1,0 +1,48 @@
+{
+  "id": "build-array-from-permutation",
+  "title": "1920. Build Array from Permutation",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/build-array-from-permutation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,2,1,5,3,4]",
+      "output": "[0,1,2,4,5,3]",
+      "explanation": "The array ans is built as follows: ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]] = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]] = [0,1,2,4,5,3]"
+    },
+    {
+      "input": "nums = [5,0,1,2,3,4]",
+      "output": "[4,5,0,1,2,3]",
+      "explanation": "The array ans is built as follows: ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]] = [nums[5], nums[0], nums[1], nums[2], nums[3], nums[4]] = [4,5,0,1,2,3]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> buildArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] buildArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def buildArray(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function buildArray(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] BuildArray(int[] nums) {\n        \n    }\n}",
+    "go": "func buildArray(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn build_array(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,2,1,5,3,4]"
+    },
+    {
+      "nums": "[5,0,1,2,3,4]"
+    }
+  ],
+  "functionName": "buildArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Just apply what's said in the statement.",
+    "Notice that you can't apply it on the same array directly since some elements will change after application"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "increasing-decreasing-string",
+  "title": "1370. Increasing Decreasing String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/increasing-decreasing-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aaaabbbbcccc\"",
+      "output": "\"abccbaabccba\"",
+      "explanation": "After steps 1, 2 and 3 of the first iteration, result = \"abc\" After steps 4, 5 and 6 of the first iteration, result = \"abccba\" First iteration is done. Now s = \"aabbcc\" and we go back to step 1 After steps 1, 2 and 3 of the second iteration, result = \"abccbaabc\" After steps 4, 5 and 6 of the second iteration, result = \"abccbaabccba\""
+    },
+    {
+      "input": "s = \"rat\"",
+      "output": "\"art\"",
+      "explanation": "The word \"rat\" becomes \"art\" after re-ordering it with the mentioned algorithm."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string sortString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String sortString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortString(self, s: str) -> str:\n        ",
+    "typescript": "function sortString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SortString(string s) {\n        \n    }\n}",
+    "go": "func sortString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaaabbbbcccc"
+    },
+    {
+      "s": "rat"
+    }
+  ],
+  "functionName": "sortString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Count the frequency of each character.",
+    "Loop over all character from 'a' to 'z' and append the character if it exists and decrease frequency by 1. Do the same from 'z' to 'a'.",
+    "Keep repeating until the frequency of all characters is zero."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "find-the-number-of-subsequences-with-equal-gcd",
+  "title": "3336. Find the Number of Subsequences With Equal GCD",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "10",
+      "explanation": "The subsequence pairs which have the GCD of their elements equal to 1 are: ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4]) ([1, 2, 3, 4], [1, 2, 3, 4])"
+    },
+    {
+      "input": "nums = [10,20,30]",
+      "output": "2",
+      "explanation": "The subsequence pairs which have the GCD of their elements equal to 10 are: ([10, 20, 30], [10, 20, 30]) ([10, 20, 30], [10, 20, 30])"
+    },
+    {
+      "input": "nums = [1,1,1,1]",
+      "output": "50"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int subsequencePairCount(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int subsequencePairCount(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def subsequencePairCount(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function subsequencePairCount(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SubsequencePairCount(int[] nums) {\n        \n    }\n}",
+    "go": "func subsequencePairCount(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn subsequence_pair_count(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]"
+    },
+    {
+      "nums": "[10,20,30]"
+    },
+    {
+      "nums": "[1,1,1,1]"
+    }
+  ],
+  "functionName": "subsequencePairCount",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming to store number of subsequences up till index <code>i</code> with GCD <code>g1</code> and <code>g2</code>."
+  ]
+}

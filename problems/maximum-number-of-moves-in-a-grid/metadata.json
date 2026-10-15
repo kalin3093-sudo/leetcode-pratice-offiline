@@ -1,0 +1,48 @@
+{
+  "id": "maximum-number-of-moves-in-a-grid",
+  "title": "2684. Maximum Number of Moves in a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]",
+      "output": "3",
+      "explanation": "We can start at the cell (0, 0) and make the following moves: - (0, 0) -> (0, 1). - (0, 1) -> (1, 2). - (1, 2) -> (2, 3). It can be shown that it is the maximum number of moves that can be made."
+    },
+    {
+      "input": "grid = [[3,2,4],[2,1,9],[1,1,7]]",
+      "output": "0",
+      "explanation": "Starting from any cell in the first column we cannot perform any moves."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxMoves(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxMoves(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxMoves(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function maxMoves(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxMoves(int[][] grid) {\n        \n    }\n}",
+    "go": "func maxMoves(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_moves(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]"
+    },
+    {
+      "grid": "[[3,2,4],[2,1,9],[1,1,7]]"
+    }
+  ],
+  "functionName": "maxMoves",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider using dynamic programming to find the maximum number of moves that can be made from each cell.",
+    "The final answer will be the maximum value in cells of the first column."
+  ]
+}

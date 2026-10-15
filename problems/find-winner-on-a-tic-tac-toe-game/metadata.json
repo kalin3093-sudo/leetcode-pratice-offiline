@@ -1,0 +1,56 @@
+{
+  "id": "find-winner-on-a-tic-tac-toe-game",
+  "title": "1275. Find Winner on a Tic Tac Toe Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "moves = [[0,0],[2,0],[1,1],[2,1],[2,2]]",
+      "output": "\"A\"",
+      "explanation": "A wins, they always play first."
+    },
+    {
+      "input": "moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]",
+      "output": "\"B\"",
+      "explanation": "B wins."
+    },
+    {
+      "input": "moves = [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]",
+      "output": "\"Draw\"",
+      "explanation": "The game ends in a draw since there are no moves to make."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string tictactoe(vector<vector<int>>& moves) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String tictactoe(int[][] moves) {\n        \n    }\n}",
+    "python": "class Solution:\n    def tictactoe(self, moves: list[list[int]]) -> str:\n        ",
+    "typescript": "function tictactoe(moves: number[][]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string Tictactoe(int[][] moves) {\n        \n    }\n}",
+    "go": "func tictactoe(moves [][]int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn tictactoe(moves: Vec<Vec<i32>>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "moves": "[[0,0],[2,0],[1,1],[2,1],[2,2]]"
+    },
+    {
+      "moves": "[[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]"
+    },
+    {
+      "moves": "[[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]"
+    }
+  ],
+  "functionName": "tictactoe",
+  "params": [
+    {
+      "name": "moves",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "It's straightforward to check if A or B won or not, check for each row/column/diag if all the three are the same.",
+    "Then if no one wins, the game is a draw iff the board is full, i.e. moves.length = 9 otherwise is pending."
+  ]
+}

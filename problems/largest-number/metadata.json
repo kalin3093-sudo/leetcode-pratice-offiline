@@ -1,0 +1,43 @@
+{
+  "id": "largest-number",
+  "title": "179. Largest Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-number/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,2]",
+      "output": "\"210\""
+    },
+    {
+      "input": "nums = [3,30,34,5,9]",
+      "output": "\"9534330\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestNumber(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestNumber(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestNumber(self, nums: list[int]) -> str:\n        ",
+    "typescript": "function largestNumber(nums: number[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestNumber(int[] nums) {\n        \n    }\n}",
+    "go": "func largestNumber(nums []int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_number(nums: Vec<i32>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,2]"
+    },
+    {
+      "nums": "[3,30,34,5,9]"
+    }
+  ],
+  "functionName": "largestNumber",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

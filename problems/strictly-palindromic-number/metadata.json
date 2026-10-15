@@ -1,0 +1,48 @@
+{
+  "id": "strictly-palindromic-number",
+  "title": "2396. Strictly Palindromic Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/strictly-palindromic-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 9",
+      "output": "false",
+      "explanation": "In base 2: 9 = 1001 (base 2), which is palindromic. In base 3: 9 = 100 (base 3), which is not palindromic. Therefore, 9 is not strictly palindromic so we return false. Note that in bases 4, 5, 6, and 7, n = 9 is also not palindromic."
+    },
+    {
+      "input": "n = 4",
+      "output": "false",
+      "explanation": "We only consider base 2: 4 = 100 (base 2), which is not palindromic. Therefore, we return false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isStrictlyPalindromic(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isStrictlyPalindromic(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isStrictlyPalindromic(self, n: int) -> bool:\n        ",
+    "typescript": "function isStrictlyPalindromic(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsStrictlyPalindromic(int n) {\n        \n    }\n}",
+    "go": "func isStrictlyPalindromic(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_strictly_palindromic(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 9
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "isStrictlyPalindromic",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Consider the representation of the given number in the base n - 2.",
+    "The number n in base (n - 2) is always 12, which is not palindromic."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "minimum-rounds-to-complete-all-tasks",
+  "title": "2244. Minimum Rounds to Complete All Tasks",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tasks = [2,2,3,3,2,4,4,4,4,4]",
+      "output": "4",
+      "explanation": "To complete all the tasks, a possible plan is: - In the first round, you complete 3 tasks of difficulty level 2. - In the second round, you complete 2 tasks of difficulty level 3. - In the third round, you complete 3 tasks of difficulty level 4. - In the fourth round, you complete 2 tasks of difficulty level 4. It can be shown that all the tasks cannot be completed in fewer than 4 rounds, so the answer is 4."
+    },
+    {
+      "input": "tasks = [2,3,3]",
+      "output": "-1",
+      "explanation": "There is only 1 task of difficulty level 2, but in each round, you can only complete either 2 or 3 tasks of the same difficulty level. Hence, you cannot complete all the tasks, and the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumRounds(vector<int>& tasks) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumRounds(int[] tasks) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumRounds(self, tasks: list[int]) -> int:\n        ",
+    "typescript": "function minimumRounds(tasks: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumRounds(int[] tasks) {\n        \n    }\n}",
+    "go": "func minimumRounds(tasks []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_rounds(tasks: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tasks": "[2,2,3,3,2,4,4,4,4,4]"
+    },
+    {
+      "tasks": "[2,3,3]"
+    }
+  ],
+  "functionName": "minimumRounds",
+  "params": [
+    {
+      "name": "tasks",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Which data structure can you use to store the number of tasks of each difficulty level?",
+    "For any particular difficulty level, what can be the optimal strategy to complete the tasks using minimum rounds?",
+    "When can we not complete all tasks of a difficulty level?"
+  ]
+}

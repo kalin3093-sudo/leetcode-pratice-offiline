@@ -1,0 +1,73 @@
+{
+  "id": "check-if-a-parentheses-string-can-be-valid",
+  "title": "2116. Check if a Parentheses String Can Be Valid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"))()))\", locked = \"010100\"",
+      "output": "true",
+      "explanation": "locked[1] == '1' and locked[3] == '1', so we cannot change s[1] or s[3]. We change s[0] and s[4] to '(' while leaving s[2] and s[5] unchanged to make s valid."
+    },
+    {
+      "input": "s = \"()()\", locked = \"0000\"",
+      "output": "true",
+      "explanation": "We do not need to make any changes because s is already valid."
+    },
+    {
+      "input": "s = \")\", locked = \"0\"",
+      "output": "false",
+      "explanation": "locked permits us to change s[0]. Changing s[0] to either '(' or ')' will not make s valid."
+    },
+    {
+      "input": "s = \"(((())(((())\", locked = \"111111010111\"",
+      "output": "true",
+      "explanation": "locked permits us to change s[6] and s[8]. We change s[6] and s[8] to ')' to make s valid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canBeValid(string s, string locked) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canBeValid(String s, String locked) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canBeValid(self, s: str, locked: str) -> bool:\n        ",
+    "typescript": "function canBeValid(s: string, locked: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanBeValid(string s, string locked) {\n        \n    }\n}",
+    "go": "func canBeValid(s string, locked string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_be_valid(s: String, locked: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "))()))",
+      "locked": "010100"
+    },
+    {
+      "s": "()()",
+      "locked": "0000"
+    },
+    {
+      "s": ")",
+      "locked": "0"
+    },
+    {
+      "s": "(((())(((())",
+      "locked": "111111010111"
+    }
+  ],
+  "functionName": "canBeValid",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "locked",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Can an odd length string ever be valid?",
+    "From left to right, if a locked ')' is encountered, it must be balanced with either a locked '(' or an unlocked index on its left. If neither exist, what conclusion can be drawn? If both exist, which one is more preferable to use?",
+    "After the above, we may have locked indices of '(' and additional unlocked indices. How can you balance out the locked '(' now? What if you cannot balance any locked '('?"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "smallest-pair-with-different-frequencies",
+  "title": "3852. Smallest Pair With Different Frequencies",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/smallest-pair-with-different-frequencies/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,2,3,4]",
+      "output": "[1,3]",
+      "explanation": "The smallest value is 1 with a frequency of 2, and the smallest value greater than 1 that has a different frequency from 1 is 3 with a frequency of 1. Thus, the answer is [1, 3]."
+    },
+    {
+      "input": "nums = [1,5]",
+      "output": "[-1,-1]",
+      "explanation": "Both values have the same frequency, so no valid pair exists. Return [-1, -1]."
+    },
+    {
+      "input": "nums = [7]",
+      "output": "[-1,-1]",
+      "explanation": "There is only one value in the array, so no valid pair exists. Return [-1, -1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minDistinctFreqPair(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] minDistinctFreqPair(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDistinctFreqPair(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function minDistinctFreqPair(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MinDistinctFreqPair(int[] nums) {\n        \n    }\n}",
+    "go": "func minDistinctFreqPair(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_distinct_freq_pair(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,2,2,3,4]"
+    },
+    {
+      "nums": "[1,5]"
+    },
+    {
+      "nums": "[7]"
+    }
+  ],
+  "functionName": "minDistinctFreqPair",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Calculate the frequency of each element in the array using a hash map or frequency array.",
+    "Find the smallest element that has a different frequency from the smallest element."
+  ]
+}

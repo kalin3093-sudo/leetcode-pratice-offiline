@@ -1,0 +1,63 @@
+{
+  "id": "zero-array-transformation-iii",
+  "title": "3362. Zero Array Transformation III",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/zero-array-transformation-iii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,0,2], queries = [[0,2],[0,2],[1,1]]",
+      "output": "1",
+      "explanation": "After removing queries[2], nums can still be converted to a zero array. Using queries[0], decrement nums[0] and nums[2] by 1 and nums[1] by 0. Using queries[1], decrement nums[0] and nums[2] by 1 and nums[1] by 0."
+    },
+    {
+      "input": "nums = [1,1,1,1], queries = [[1,3],[0,2],[1,3],[1,2]]",
+      "output": "2",
+      "explanation": "We can remove queries[2] and queries[3]."
+    },
+    {
+      "input": "nums = [1,2,3,4], queries = [[0,3]]",
+      "output": "-1",
+      "explanation": "nums cannot be converted to a zero array even after using all the queries."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxRemoval(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxRemoval(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxRemoval(self, nums: List[int], queries: List[List[int]]) -> int:\n        ",
+    "typescript": "function maxRemoval(nums: number[], queries: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxRemoval(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func maxRemoval(nums []int, queries [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_removal(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,0,2]",
+      "queries": "[[0,2],[0,2],[1,1]]"
+    },
+    {
+      "nums": "[1,1,1,1]",
+      "queries": "[[1,3],[0,2],[1,3],[1,2]]"
+    },
+    {
+      "nums": "[1,2,3,4]",
+      "queries": "[[0,3]]"
+    }
+  ],
+  "functionName": "maxRemoval",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the queries.",
+    "We need to greedily pick the queries with farthest ending point first."
+  ]
+}

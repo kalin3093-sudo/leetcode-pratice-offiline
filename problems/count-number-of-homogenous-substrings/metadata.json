@@ -1,0 +1,55 @@
+{
+  "id": "count-number-of-homogenous-substrings",
+  "title": "1759. Count Number of Homogenous Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-number-of-homogenous-substrings/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"abbcccaa\"",
+      "output": "13",
+      "explanation": "The homogenous substrings are listed as below: \"a\"   appears 3 times. \"aa\"  appears 1 time. \"b\"   appears 2 times. \"bb\"  appears 1 time. \"c\"   appears 3 times. \"cc\"  appears 2 times. \"ccc\" appears 1 time. 3 + 1 + 2 + 1 + 3 + 2 + 1 = 13."
+    },
+    {
+      "input": "s = \"xy\"",
+      "output": "2",
+      "explanation": "The homogenous substrings are \"x\" and \"y\"."
+    },
+    {
+      "input": "s = \"zzzzz\"",
+      "output": "15"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countHomogenous(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countHomogenous(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countHomogenous(self, s: str) -> int:\n        ",
+    "typescript": "function countHomogenous(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountHomogenous(string s) {\n        \n    }\n}",
+    "go": "func countHomogenous(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_homogenous(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abbcccaa"
+    },
+    {
+      "s": "xy"
+    },
+    {
+      "s": "zzzzz"
+    }
+  ],
+  "functionName": "countHomogenous",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A string of only 'a's of length k contains k + 1 choose 2 homogenous substrings.",
+    "Split the string into substrings where each substring contains only one letter, and apply the formula on each substring's length."
+  ]
+}

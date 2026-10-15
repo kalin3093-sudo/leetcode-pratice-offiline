@@ -1,0 +1,44 @@
+{
+  "id": "valid-triangle-number",
+  "title": "611. Valid Triangle Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/valid-triangle-number/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,2,3,4]",
+      "output": "3",
+      "explanation": "Valid combinations are: 2,3,4 (using the first 2) 2,3,4 (using the second 2) 2,2,3"
+    },
+    {
+      "input": "nums = [4,2,3,4]",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int triangleNumber(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int triangleNumber(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def triangleNumber(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function triangleNumber(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TriangleNumber(int[] nums) {\n        \n    }\n}",
+    "go": "func triangleNumber(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn triangle_number(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,2,3,4]"
+    },
+    {
+      "nums": "[4,2,3,4]"
+    }
+  ],
+  "functionName": "triangleNumber",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

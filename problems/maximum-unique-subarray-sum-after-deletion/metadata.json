@@ -1,0 +1,56 @@
+{
+  "id": "maximum-unique-subarray-sum-after-deletion",
+  "title": "3487. Maximum Unique Subarray Sum After Deletion",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "15",
+      "explanation": "Select the entire array without deleting any element to obtain the maximum sum."
+    },
+    {
+      "input": "nums = [1,1,0,1,1]",
+      "output": "1",
+      "explanation": "Delete the element nums[0] == 1, nums[1] == 1, nums[2] == 0, and nums[3] == 1. Select the entire array [1] to obtain the maximum sum."
+    },
+    {
+      "input": "nums = [1,2,-1,-2,1,0,-1]",
+      "output": "3",
+      "explanation": "Delete the elements nums[2] == -1 and nums[3] == -2, and select the subarray [2, 1] from [1, 2, 1, 0, -1] to obtain the maximum sum."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSum(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSum(int[] nums) {\n        \n    }\n}",
+    "go": "func maxSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[1,1,0,1,1]"
+    },
+    {
+      "nums": "[1,2,-1,-2,1,0,-1]"
+    }
+  ],
+  "functionName": "maxSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If the maximum element in the array is less than zero, the answer is the maximum element.",
+    "Otherwise, the answer is the sum of all unique values that are greater than or equal to zero."
+  ]
+}

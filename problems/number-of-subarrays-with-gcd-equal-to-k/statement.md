@@ -1,0 +1,10 @@
+Given an integer array `nums` and an integer `k`, return *the number of **subarrays** of* `nums` *where the greatest common divisor of the subarray's elements is* `k`.
+
+A **subarray** is a contiguous non-empty sequence of elements within an array.
+
+The **greatest common divisor of an array** is the largest integer that evenly divides all the array elements.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 1000`
+-   `1 ≤ nums[i], k ≤ 10^9`

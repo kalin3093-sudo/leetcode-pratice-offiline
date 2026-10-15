@@ -1,0 +1,77 @@
+{
+  "id": "palindromic-subarray-sum",
+  "title": "3985. Palindromic Subarray Sum",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/palindromic-subarray-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,10]",
+      "output": "20",
+      "explanation": "The whole array [10,10] is a palindrome. Therefore, the maximum sum is 10 + 10 = 20."
+    },
+    {
+      "input": "nums = [1,2,3,2,1,5,6]",
+      "output": "9",
+      "explanation": "The contiguous subarray [1,2,3,2,1] is a palindrome. Its sum is 1 + 2 + 3 + 2 + 1 = 9 and it is the maximum sum."
+    },
+    {
+      "input": "nums = [7,1,2,1,7,3,4,3,4]",
+      "output": "18",
+      "explanation": "The contiguous subarray [7,1,2,1,7] is a palindrome. Its sum is 7 + 1 + 2 + 1 + 7 = 18 and it is the maximum sum."
+    },
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "5",
+      "explanation": "No subarray with length greater than 1 is a palindrome. The largest element in the array is 5. Therefore, the answer is 5."
+    },
+    {
+      "input": "nums = [1000]",
+      "output": "1000",
+      "explanation": "The subarray with only one element is a palindrome. Therefore, the answer is 1000."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long getSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long getSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getSum(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function getSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long GetSum(int[] nums) {\n        \n    }\n}",
+    "go": "func getSum(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_sum(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,10]"
+    },
+    {
+      "nums": "[1,2,3,2,1,5,6]"
+    },
+    {
+      "nums": "[7,1,2,1,7,3,4,3,4]"
+    },
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[1000]"
+    }
+  ],
+  "functionName": "getSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<p><strong>1a (Manacher).</strong> Since all elements are positive, for any fixed center, the best palindromic subarray is the longest one around that center.</p>",
+    "<p><strong>1b (Manacher).</strong> Use Manacher's algorithm adapted to arrays to compute the maximum odd-length and even-length palindrome radius for every center.</p>",
+    "<p><strong>1c (Manacher).</strong> Use prefix sums to compute the sum of each longest palindromic subarray in constant time, and take the maximum.</p>",
+    "<p><strong>2a (Binary Search + Hashing).</strong> Build rolling hashes for <code>nums</code> and for the reversed array. A subarray <code>nums[l..r]</code> is a palindrome if its hash equals the hash of the corresponding segment in the reversed array.</p>",
+    "<p><strong>2b (Binary Search + Hashing).</strong> For each odd and even center, binary search the largest palindrome radius around that center. The check is monotonic because if a larger radius is a palindrome, then every smaller radius around the same center is also a palindrome.</p>",
+    "<p><strong>2c (Binary Search + Hashing).</strong> After finding the largest radius for a center, use prefix sums to get the sum of that palindromic subarray in constant time.</p>",
+    "<p><strong>2d (Binary Search + Hashing).</strong> Take the maximum sum over all centers.</p>"
+  ]
+}

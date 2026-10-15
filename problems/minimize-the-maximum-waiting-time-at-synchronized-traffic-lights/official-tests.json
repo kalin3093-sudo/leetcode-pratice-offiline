@@ -1,0 +1,17 @@
+[
+  {
+    "period": 8,
+    "lights": "[2,3]",
+    "arrivalTime": "[2,5,8,11]"
+  },
+  {
+    "period": 10,
+    "lights": "[3,6,8]",
+    "arrivalTime": "[4,9,15]"
+  },
+  {
+    "period": 5,
+    "lights": "[2]",
+    "arrivalTime": "[2,3,4,5,6]"
+  }
+]

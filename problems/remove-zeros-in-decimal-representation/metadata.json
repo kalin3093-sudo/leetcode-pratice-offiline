@@ -1,0 +1,47 @@
+{
+  "id": "remove-zeros-in-decimal-representation",
+  "title": "3726. Remove Zeros in Decimal Representation",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/remove-zeros-in-decimal-representation/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1020030",
+      "output": "123",
+      "explanation": "After removing all zeros from 1020030, we get 123."
+    },
+    {
+      "input": "n = 1",
+      "output": "1",
+      "explanation": "1 has no zero in its decimal representation. Therefore, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long removeZeros(long long n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long removeZeros(long n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeZeros(self, n: int) -> int:\n        ",
+    "typescript": "function removeZeros(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long RemoveZeros(long n) {\n        \n    }\n}",
+    "go": "func removeZeros(n int64) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_zeros(n: i64) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "1020030"
+    },
+    {
+      "n": "1"
+    }
+  ],
+  "functionName": "removeZeros",
+  "params": [
+    {
+      "name": "n",
+      "type": "long"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Convert to a string and filter out the <code>'0'</code> characters."
+  ]
+}

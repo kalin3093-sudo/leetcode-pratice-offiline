@@ -1,0 +1,46 @@
+{
+  "id": "diagonal-traverse-ii",
+  "title": "1424. Diagonal Traverse II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/diagonal-traverse-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [[1,2,3],[4,5,6],[7,8,9]]",
+      "output": "[1,4,2,7,5,3,8,6,9]"
+    },
+    {
+      "input": "nums = [[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]",
+      "output": "[1,6,2,8,7,3,9,4,12,10,5,13,11,14,15,16]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findDiagonalOrder(vector<vector<int>>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findDiagonalOrder(List<List<Integer>> nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findDiagonalOrder(self, nums: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function findDiagonalOrder(nums: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindDiagonalOrder(IList<IList<int>> nums) {\n        \n    }\n}",
+    "go": "func findDiagonalOrder(nums [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_diagonal_order(nums: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[[1,2,3],[4,5,6],[7,8,9]]"
+    },
+    {
+      "nums": "[[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]"
+    }
+  ],
+  "functionName": "findDiagonalOrder",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Notice that numbers with equal sums of row and column indexes belong to the same diagonal.",
+    "Store them in tuples (sum, row, val), sort them, and then regroup the answer."
+  ]
+}

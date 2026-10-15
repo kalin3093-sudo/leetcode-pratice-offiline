@@ -1,0 +1,49 @@
+{
+  "id": "minimum-money-required-before-transactions",
+  "title": "2412. Minimum Money Required Before Transactions",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-money-required-before-transactions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "transactions = [[2,1],[5,0],[4,2]]",
+      "output": "10",
+      "explanation": "Starting with money = 10, the transactions can be performed in any order. It can be shown that starting with money < 10 will fail to complete all transactions in some order."
+    },
+    {
+      "input": "transactions = [[3,0],[0,3]]",
+      "output": "3",
+      "explanation": "- If transactions are in the order [[3,0],[0,3]], the minimum money required to complete the transactions is 3. - If transactions are in the order [[0,3],[3,0]], the minimum money required to complete the transactions is 0. Thus, starting with money = 3, the transactions can be performed in any order."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumMoney(vector<vector<int>>& transactions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumMoney(int[][] transactions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumMoney(self, transactions: list[list[int]]) -> int:\n        ",
+    "typescript": "function minimumMoney(transactions: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumMoney(int[][] transactions) {\n        \n    }\n}",
+    "go": "func minimumMoney(transactions [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_money(transactions: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "transactions": "[[2,1],[5,0],[4,2]]"
+    },
+    {
+      "transactions": "[[3,0],[0,3]]"
+    }
+  ],
+  "functionName": "minimumMoney",
+  "params": [
+    {
+      "name": "transactions",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Split transactions that have cashback greater or equal to cost apart from transactions that have cashback less than cost. You will always <strong>earn</strong> money in the first scenario.",
+    "For transactions that have cashback greater or equal to cost, sort them by cost in descending order.",
+    "For transactions that have cashback less than cost, sort them by cashback in ascending order."
+  ]
+}

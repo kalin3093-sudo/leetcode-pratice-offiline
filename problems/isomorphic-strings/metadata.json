@@ -1,0 +1,59 @@
+{
+  "id": "isomorphic-strings",
+  "title": "205. Isomorphic Strings",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/isomorphic-strings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"egg\", t = \"add\"",
+      "output": "true",
+      "explanation": "The strings s and t can be made identical by: Mapping 'e' to 'a'. Mapping 'g' to 'd'."
+    },
+    {
+      "input": "s = \"f11\", t = \"b23\"",
+      "output": "false",
+      "explanation": "The strings s and t can not be made identical as '1' needs to be mapped to both '2' and '3'."
+    },
+    {
+      "input": "s = \"paper\", t = \"title\"",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isIsomorphic(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isIsomorphic(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isIsomorphic(self, s: str, t: str) -> bool:\n        ",
+    "typescript": "function isIsomorphic(s: string, t: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsIsomorphic(string s, string t) {\n        \n    }\n}",
+    "go": "func isIsomorphic(s string, t string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_isomorphic(s: String, t: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "egg",
+      "t": "add"
+    },
+    {
+      "s": "foo",
+      "t": "bar"
+    },
+    {
+      "s": "paper",
+      "t": "title"
+    }
+  ],
+  "functionName": "isIsomorphic",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

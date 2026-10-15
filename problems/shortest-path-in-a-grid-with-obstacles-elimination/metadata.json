@@ -1,0 +1,54 @@
+{
+  "id": "shortest-path-in-a-grid-with-obstacles-elimination",
+  "title": "1293. Shortest Path in a Grid with Obstacles Elimination",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1",
+      "output": "6",
+      "explanation": "The shortest path without eliminating any obstacle is 10. The shortest path with one obstacle elimination at position (3,2) is 6. Such path is (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2) -> (3,2) -> (4,2)."
+    },
+    {
+      "input": "grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1",
+      "output": "-1",
+      "explanation": "We need to eliminate at least two obstacles to find such a walk."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestPath(vector<vector<int>>& grid, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestPath(int[][] grid, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestPath(self, grid: list[list[int]], k: int) -> int:\n        ",
+    "typescript": "function shortestPath(grid: number[][], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestPath(int[][] grid, int k) {\n        \n    }\n}",
+    "go": "func shortestPath(grid [][]int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_path(grid: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]]",
+      "k": 1
+    },
+    {
+      "grid": "[[0,1,1],[1,1,1],[1,0,0]]",
+      "k": 1
+    }
+  ],
+  "functionName": "shortestPath",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use BFS.",
+    "BFS on (x,y,r) x,y is coordinate, r is remain number of obstacles you can remove."
+  ]
+}

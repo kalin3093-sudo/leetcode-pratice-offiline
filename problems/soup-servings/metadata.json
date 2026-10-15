@@ -1,0 +1,48 @@
+{
+  "id": "soup-servings",
+  "title": "808. Soup Servings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/soup-servings/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 50",
+      "output": "0.62500",
+      "explanation": "If we perform either of the first two serving operations, soup A will become empty first. If we perform the third operation, A and B will become empty at the same time. If we perform the fourth operation, B will become empty first. So the total probability of A becoming empty first plus half the probability that A and B become empty at the same time, is 0.25 * (1 + 1 + 0.5 + 0) = 0.625."
+    },
+    {
+      "input": "n = 100",
+      "output": "0.71875",
+      "explanation": "If we perform the first serving operation, soup A will become empty first. If we perform the second serving operations, A will become empty on performing operation [1, 2, 3], and both A and B become empty on performing operation 4. If we perform the third operation, A will become empty on performing operation [1, 2], and both A and B become empty on performing operation 3. If we perform the fourth operation, A will become empty on performing operation 1, and both A and B become empty on performing operation 2. So the total probability of A becoming empty first plus half the probability that A and B become empty at the same time, is 0.71875."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double soupServings(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double soupServings(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def soupServings(self, n: int) -> float:\n        ",
+    "typescript": "function soupServings(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double SoupServings(int n) {\n        \n    }\n}",
+    "go": "func soupServings(n int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn soup_servings(n: i32) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 50
+    },
+    {
+      "n": 100
+    }
+  ],
+  "functionName": "soupServings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "double",
+  "hints": [
+    "For large <code>n</code>, the answer approaches a constant value.",
+    "Which soup is more likely to deplete first if we are allowed to perform many operations without bias?"
+  ]
+}

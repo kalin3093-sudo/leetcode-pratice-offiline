@@ -1,0 +1,55 @@
+{
+  "id": "hash-divided-string",
+  "title": "3271. Hash Divided String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/hash-divided-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abcd\", k = 2",
+      "output": "\"bf\"",
+      "explanation": "First substring: \"ab\", 0 + 1 = 1, 1 % 26 = 1, result[0] = 'b'. Second substring: \"cd\", 2 + 3 = 5, 5 % 26 = 5, result[1] = 'f'."
+    },
+    {
+      "input": "s = \"mxz\", k = 3",
+      "output": "\"i\"",
+      "explanation": "The only substring: \"mxz\", 12 + 23 + 25 = 60, 60 % 26 = 8, result[0] = 'i'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string stringHash(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String stringHash(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def stringHash(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function stringHash(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string StringHash(string s, int k) {\n        \n    }\n}",
+    "go": "func stringHash(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn string_hash(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcd",
+      "k": 2
+    },
+    {
+      "s": "mxz",
+      "k": 3
+    }
+  ],
+  "functionName": "stringHash",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Try to find each substring.",
+    "Use a for loop to find <code>hashedChar</code> of each substring.",
+    "Find the answer using <code>hashedChar</code> of each substring."
+  ]
+}

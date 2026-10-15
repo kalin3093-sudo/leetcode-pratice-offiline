@@ -1,0 +1,56 @@
+{
+  "id": "find-subarrays-with-equal-sum",
+  "title": "2395. Find Subarrays With Equal Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-subarrays-with-equal-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,2,4]",
+      "output": "true",
+      "explanation": "The subarrays with elements [4,2] and [2,4] have the same sum of 6."
+    },
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "false",
+      "explanation": "No two subarrays of size 2 have the same sum."
+    },
+    {
+      "input": "nums = [0,0,0]",
+      "output": "true",
+      "explanation": "The subarrays [nums[0],nums[1]] and [nums[1],nums[2]] have the same sum of 0. Note that even though the subarrays have the same content, the two subarrays are considered different because they are in different positions in the original array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool findSubarrays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean findSubarrays(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findSubarrays(self, nums: list[int]) -> bool:\n        ",
+    "typescript": "function findSubarrays(nums: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool FindSubarrays(int[] nums) {\n        \n    }\n}",
+    "go": "func findSubarrays(nums []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_subarrays(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,2,4]"
+    },
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[0,0,0]"
+    }
+  ],
+  "functionName": "findSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use a counter to keep track of the subarray sums.",
+    "Use a hashset to check if any two sums are equal."
+  ]
+}

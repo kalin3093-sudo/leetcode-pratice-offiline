@@ -1,0 +1,48 @@
+{
+  "id": "count-square-sum-triples",
+  "title": "1925. Count Square Sum Triples",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-square-sum-triples/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "2",
+      "explanation": "The square triples are (3,4,5) and (4,3,5)."
+    },
+    {
+      "input": "n = 10",
+      "output": "4",
+      "explanation": "The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countTriples(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countTriples(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countTriples(self, n: int) -> int:\n        ",
+    "typescript": "function countTriples(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountTriples(int n) {\n        \n    }\n}",
+    "go": "func countTriples(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_triples(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "countTriples",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate over all possible pairs (a,b) and check that the square root of a * a + b * b is an integers less than or equal n",
+    "You can check that the square root of an integer is an integer using binary seach or a builtin function like sqrt"
+  ]
+}

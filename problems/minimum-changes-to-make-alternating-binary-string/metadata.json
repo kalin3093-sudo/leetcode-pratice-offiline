@@ -1,0 +1,57 @@
+{
+  "id": "minimum-changes-to-make-alternating-binary-string",
+  "title": "1758. Minimum Changes To Make Alternating Binary String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"0100\"",
+      "output": "1",
+      "explanation": "If you change the last character to '1', s will be \"0101\", which is alternating."
+    },
+    {
+      "input": "s = \"10\"",
+      "output": "0",
+      "explanation": "s is already alternating."
+    },
+    {
+      "input": "s = \"1111\"",
+      "output": "2",
+      "explanation": "You need two operations to reach \"0101\" or \"1010\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, s: str) -> int:\n        ",
+    "typescript": "function minOperations(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(string s) {\n        \n    }\n}",
+    "go": "func minOperations(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "0100"
+    },
+    {
+      "s": "10"
+    },
+    {
+      "s": "1111"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think about how the final string will look like.",
+    "It will either start with a '0' and be like '010101010..' or with a '1' and be like '10101010..'",
+    "Try both ways, and check for each way, the number of changes needed to reach it from the given string. The answer is the minimum of both ways."
+  ]
+}

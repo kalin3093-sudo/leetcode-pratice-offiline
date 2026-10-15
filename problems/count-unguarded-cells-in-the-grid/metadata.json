@@ -1,0 +1,66 @@
+{
+  "id": "count-unguarded-cells-in-the-grid",
+  "title": "2257. Count Unguarded Cells in the Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-unguarded-cells-in-the-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "m = 4, n = 6, guards = [[0,0],[1,1],[2,3]], walls = [[0,1],[2,2],[1,4]]",
+      "output": "7",
+      "explanation": "The guarded and unguarded cells are shown in red and green respectively in the above diagram. There are a total of 7 unguarded cells, so we return 7."
+    },
+    {
+      "input": "m = 3, n = 3, guards = [[1,1]], walls = [[0,1],[1,0],[2,1],[1,2]]",
+      "output": "4",
+      "explanation": "The unguarded cells are shown in green in the above diagram. There are a total of 4 unguarded cells, so we return 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countUnguarded(int m, int n, vector<vector<int>>& guards, vector<vector<int>>& walls) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countUnguarded(int m, int n, int[][] guards, int[][] walls) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countUnguarded(self, m: int, n: int, guards: list[list[int]], walls: list[list[int]]) -> int:\n        ",
+    "typescript": "function countUnguarded(m: number, n: number, guards: number[][], walls: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountUnguarded(int m, int n, int[][] guards, int[][] walls) {\n        \n    }\n}",
+    "go": "func countUnguarded(m int, n int, guards [][]int, walls [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_unguarded(m: i32, n: i32, guards: Vec<Vec<i32>>, walls: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "m": 4,
+      "n": 6,
+      "guards": "[[0,0],[1,1],[2,3]]",
+      "walls": "[[0,1],[2,2],[1,4]]"
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "guards": "[[1,1]]",
+      "walls": "[[0,1],[1,0],[2,1],[1,2]]"
+    }
+  ],
+  "functionName": "countUnguarded",
+  "params": [
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "guards",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "walls",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Create a 2D array to represent the grid. Can you mark the tiles that can be seen by a guard?",
+    "Iterate over the guards, and for each of the 4 directions, advance the current tile and mark the tile. When should you stop advancing?"
+  ]
+}

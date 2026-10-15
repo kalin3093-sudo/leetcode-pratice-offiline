@@ -1,0 +1,48 @@
+{
+  "id": "find-numbers-with-even-number-of-digits",
+  "title": "1295. Find Numbers with Even Number of Digits",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [12,345,2,6,7896]",
+      "output": "2",
+      "explanation": "12 contains 2 digits (even number of digits). 345 contains 3 digits (odd number of digits). 2 contains 1 digit (odd number of digits). 6 contains 1 digit (odd number of digits). 7896 contains 4 digits (even number of digits). Therefore only 12 and 7896 contain an even number of digits."
+    },
+    {
+      "input": "nums = [555,901,482,1771]",
+      "output": "1",
+      "explanation": "Only 1771 contains an even number of digits."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findNumbers(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findNumbers(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findNumbers(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function findNumbers(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindNumbers(int[] nums) {\n        \n    }\n}",
+    "go": "func findNumbers(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_numbers(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[12,345,2,6,7896]"
+    },
+    {
+      "nums": "[555,901,482,1771]"
+    }
+  ],
+  "functionName": "findNumbers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How to compute the number of digits of a number ?",
+    "Divide the number by 10 again and again to get the number of digits."
+  ]
+}

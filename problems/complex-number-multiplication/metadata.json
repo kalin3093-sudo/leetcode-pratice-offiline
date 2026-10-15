@@ -1,0 +1,51 @@
+{
+  "id": "complex-number-multiplication",
+  "title": "537. Complex Number Multiplication",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/complex-number-multiplication/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num1 = \"1+1i\", num2 = \"1+1i\"",
+      "output": "\"0+2i\"",
+      "explanation": "(1 + i) * (1 + i) = 1 + i2 + 2 * i = 2i, and you need convert it to the form of 0+2i."
+    },
+    {
+      "input": "num1 = \"1+-1i\", num2 = \"1+-1i\"",
+      "output": "\"0+-2i\"",
+      "explanation": "(1 - i) * (1 - i) = 1 + i2 - 2 * i = -2i, and you need convert it to the form of 0+-2i."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string complexNumberMultiply(string num1, string num2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String complexNumberMultiply(String num1, String num2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def complexNumberMultiply(self, num1: str, num2: str) -> str:\n        ",
+    "typescript": "function complexNumberMultiply(num1: string, num2: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ComplexNumberMultiply(string num1, string num2) {\n        \n    }\n}",
+    "go": "func complexNumberMultiply(num1 string, num2 string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn complex_number_multiply(num1: String, num2: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num1": "1+1i",
+      "num2": "1+1i"
+    },
+    {
+      "num1": "1+-1i",
+      "num2": "1+-1i"
+    }
+  ],
+  "functionName": "complexNumberMultiply",
+  "params": [
+    {
+      "name": "num1",
+      "type": "string"
+    },
+    {
+      "name": "num2",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

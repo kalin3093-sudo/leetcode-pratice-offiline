@@ -1,0 +1,64 @@
+{
+  "id": "number-of-subsequences-that-satisfy-the-given-sum-condition",
+  "title": "1498. Number of Subsequences That Satisfy the Given Sum Condition",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,5,6,7], target = 9",
+      "output": "4",
+      "explanation": "There are 4 subsequences that satisfy the condition. [3] -> Min value + max value <= target (3 + 3 <= 9) [3,5] -> (3 + 5 <= 9) [3,5,6] -> (3 + 6 <= 9) [3,6] -> (3 + 6 <= 9)"
+    },
+    {
+      "input": "nums = [3,3,6,8], target = 10",
+      "output": "6",
+      "explanation": "There are 6 subsequences that satisfy the condition. (nums can have repeated numbers). [3] , [3] , [3,3], [3,6] , [3,6] , [3,3,6]"
+    },
+    {
+      "input": "nums = [2,3,3,4,6,7], target = 12",
+      "output": "61",
+      "explanation": "There are 63 non-empty subsequences, two of them do not satisfy the condition ([6,7], [7]). Number of valid subsequences (63 - 2 = 61)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSubseq(vector<int>& nums, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSubseq(int[] nums, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSubseq(self, nums: list[int], target: int) -> int:\n        ",
+    "typescript": "function numSubseq(nums: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSubseq(int[] nums, int target) {\n        \n    }\n}",
+    "go": "func numSubseq(nums []int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_subseq(nums: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,5,6,7]",
+      "target": 9
+    },
+    {
+      "nums": "[3,3,6,8]",
+      "target": 10
+    },
+    {
+      "nums": "[2,3,3,4,6,7]",
+      "target": 12
+    }
+  ],
+  "functionName": "numSubseq",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the array nums.",
+    "Use two pointers approach: Given an index i (choose it as the minimum in a subsequence) find the maximum j where j ≥ i and nums[i] +nums[j] ≤ target.",
+    "Count the number of subsequences."
+  ]
+}

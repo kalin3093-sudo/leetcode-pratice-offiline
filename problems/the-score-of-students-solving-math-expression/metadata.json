@@ -1,0 +1,64 @@
+{
+  "id": "the-score-of-students-solving-math-expression",
+  "title": "2019. The Score of Students Solving Math Expression",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/the-score-of-students-solving-math-expression/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"7+3*1*2\", answers = [20,13,42]",
+      "output": "7",
+      "explanation": "As illustrated above, the correct answer of the expression is 13, therefore one student is rewarded 5 points: [20,13,42] A student might have applied the operators in this wrong order: ((7+3)*1)*2 = 20. Therefore one student is rewarded 2 points: [20,13,42] The points for the students are: [2,5,0]. The sum of the points is 2+5+0=7."
+    },
+    {
+      "input": "s = \"3+5*2\", answers = [13,0,10,13,13,16,16]",
+      "output": "19",
+      "explanation": "The correct answer of the expression is 13, therefore three students are rewarded 5 points each: [13,0,10,13,13,16,16] A student might have applied the operators in this wrong order: ((3+5)*2 = 16. Therefore two students are rewarded 2 points: [13,0,10,13,13,16,16] The points for the students are: [5,0,0,5,5,2,2]. The sum of the points is 5+0+0+5+5+2+2=19."
+    },
+    {
+      "input": "s = \"6+0*1\", answers = [12,9,6,4,8,6]",
+      "output": "10",
+      "explanation": "The correct answer of the expression is 6. If a student had incorrectly done (6+0)*1, the answer would also be 6. By the rules of grading, the students will still be rewarded 5 points (as they got the correct answer), not 2 points. The points for the students are: [0,0,5,0,0,5]. The sum of the points is 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int scoreOfStudents(string s, vector<int>& answers) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int scoreOfStudents(String s, int[] answers) {\n        \n    }\n}",
+    "python": "class Solution:\n    def scoreOfStudents(self, s: str, answers: list[int]) -> int:\n        ",
+    "typescript": "function scoreOfStudents(s: string, answers: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ScoreOfStudents(string s, int[] answers) {\n        \n    }\n}",
+    "go": "func scoreOfStudents(s string, answers []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn score_of_students(s: String, answers: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "7+3*1*2",
+      "answers": "[20,13,42]"
+    },
+    {
+      "s": "3+5*2",
+      "answers": "[13,0,10,13,13,16,16]"
+    },
+    {
+      "s": "6+0*1",
+      "answers": "[12,9,6,4,8,6]"
+    }
+  ],
+  "functionName": "scoreOfStudents",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "answers",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The number of operators in the equation is less. Could you find the right answer then generate all possible answers using different orders of operations?",
+    "Divide the equation into blocks separated by the operators, and use memoization on the results of blocks for optimization.",
+    "Use set and the max limit of the answer for further optimization."
+  ]
+}

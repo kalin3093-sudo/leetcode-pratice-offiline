@@ -1,0 +1,64 @@
+{
+  "id": "sum-of-k-mirror-numbers",
+  "title": "2081. Sum of k-Mirror Numbers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-k-mirror-numbers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "k = 2, n = 5",
+      "output": "25",
+      "explanation": "The 5 smallest 2-mirror numbers and their representations in base-2 are listed as follows: base-10    base-2 1          1 3          11 5          101 7          111 9          1001 Their sum = 1 + 3 + 5 + 7 + 9 = 25."
+    },
+    {
+      "input": "k = 3, n = 7",
+      "output": "499",
+      "explanation": "The 7 smallest 3-mirror numbers are and their representations in base-3 are listed as follows: base-10    base-3 1          1 2          2 4          11 8          22 121        11111 151        12121 212        21212 Their sum = 1 + 2 + 4 + 8 + 121 + 151 + 212 = 499."
+    },
+    {
+      "input": "k = 7, n = 17",
+      "output": "20379000",
+      "explanation": "The 17 smallest 7-mirror numbers are: 1, 2, 3, 4, 5, 6, 8, 121, 171, 242, 292, 16561, 65656, 2137312, 4602064, 6597956, 6958596"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long kMirror(int k, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long kMirror(int k, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kMirror(self, k: int, n: int) -> int:\n        ",
+    "typescript": "function kMirror(k: number, n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long KMirror(int k, int n) {\n        \n    }\n}",
+    "go": "func kMirror(k int, n int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn k_mirror(k: i32, n: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 2,
+      "n": 5
+    },
+    {
+      "k": 3,
+      "n": 7
+    },
+    {
+      "k": 7,
+      "n": 17
+    }
+  ],
+  "functionName": "kMirror",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Since we need to reduce search space, instead of checking if every number is a palindrome in base-10, can we try to \"generate\" the palindromic numbers?",
+    "If you are provided with a d digit number, how can you generate a palindrome with 2*d or 2*d - 1 digit?",
+    "Try brute-forcing and checking if the palindrome you generated is a \"k-Mirror\" number."
+  ]
+}

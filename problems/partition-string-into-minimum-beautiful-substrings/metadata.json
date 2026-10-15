@@ -1,0 +1,56 @@
+{
+  "id": "partition-string-into-minimum-beautiful-substrings",
+  "title": "2767. Partition String Into Minimum Beautiful Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partition-string-into-minimum-beautiful-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"1011\"",
+      "output": "2",
+      "explanation": "We can paritition the given string into [\"101\", \"1\"]. - The string \"101\" does not contain leading zeros and is the binary representation of integer 51 = 5. - The string \"1\" does not contain leading zeros and is the binary representation of integer 50 = 1. It can be shown that 2 is the minimum number of beautiful substrings that s can be partitioned into."
+    },
+    {
+      "input": "s = \"111\"",
+      "output": "3",
+      "explanation": "We can paritition the given string into [\"1\", \"1\", \"1\"]. - The string \"1\" does not contain leading zeros and is the binary representation of integer 50 = 1. It can be shown that 3 is the minimum number of beautiful substrings that s can be partitioned into."
+    },
+    {
+      "input": "s = \"0\"",
+      "output": "-1",
+      "explanation": "We can not partition the given string into beautiful substrings."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumBeautifulSubstrings(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumBeautifulSubstrings(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumBeautifulSubstrings(self, s: str) -> int:\n        ",
+    "typescript": "function minimumBeautifulSubstrings(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumBeautifulSubstrings(string s) {\n        \n    }\n}",
+    "go": "func minimumBeautifulSubstrings(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_beautiful_substrings(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1011"
+    },
+    {
+      "s": "111"
+    },
+    {
+      "s": "0"
+    }
+  ],
+  "functionName": "minimumBeautifulSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "To check if number x is a power of 5 or not, we will divide x by 5 while x > 1 and x mod 5 == 0. After iteration if x == 1, then it was a power of 5.",
+    "Since the constraint of s.length is small, we can use recursion to find all the partitions."
+  ]
+}

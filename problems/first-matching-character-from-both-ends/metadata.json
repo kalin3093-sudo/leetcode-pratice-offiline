@@ -1,0 +1,55 @@
+{
+  "id": "first-matching-character-from-both-ends",
+  "title": "3884. First Matching Character From Both Ends",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/first-matching-character-from-both-ends/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"abcacbd\"",
+      "output": "1",
+      "explanation": "At index i = 1, s[1] and s[5] are both 'b'. No smaller index satisfies the condition, so the answer is 1."
+    },
+    {
+      "input": "s = \"abc\"",
+      "output": "1",
+      "explanation": "At index i = 1, the two compared positions coincide, so both characters are 'b'. No smaller index satisfies the condition, so the answer is 1."
+    },
+    {
+      "input": "s = \"abcdab\"",
+      "output": "-1",
+      "explanation": "For every index i, the characters at positions i and n - i - 1 are different. Therefore, no valid index exists, so the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int firstMatchingIndex(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int firstMatchingIndex(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def firstMatchingIndex(self, s: str) -> int:\n        ",
+    "typescript": "function firstMatchingIndex(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FirstMatchingIndex(string s) {\n        \n    }\n}",
+    "go": "func firstMatchingIndex(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn first_matching_index(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcacbd"
+    },
+    {
+      "s": "abc"
+    },
+    {
+      "s": "abcdab"
+    }
+  ],
+  "functionName": "firstMatchingIndex",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use two pointers"
+  ]
+}

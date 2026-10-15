@@ -1,0 +1,63 @@
+{
+  "id": "determine-if-two-events-have-conflict",
+  "title": "2446. Determine if Two Events Have Conflict",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/determine-if-two-events-have-conflict/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "event1 = [\"01:15\",\"02:00\"], event2 = [\"02:00\",\"03:00\"]",
+      "output": "true",
+      "explanation": "The two events intersect at time 2:00."
+    },
+    {
+      "input": "event1 = [\"01:00\",\"02:00\"], event2 = [\"01:20\",\"03:00\"]",
+      "output": "true",
+      "explanation": "The two events intersect starting from 01:20 to 02:00."
+    },
+    {
+      "input": "event1 = [\"10:00\",\"11:00\"], event2 = [\"14:00\",\"15:00\"]",
+      "output": "false",
+      "explanation": "The two events do not intersect."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool haveConflict(vector<string>& event1, vector<string>& event2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean haveConflict(String[] event1, String[] event2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def haveConflict(self, event1: list[str], event2: list[str]) -> bool:\n        ",
+    "typescript": "function haveConflict(event1: string[], event2: string[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HaveConflict(string[] event1, string[] event2) {\n        \n    }\n}",
+    "go": "func haveConflict(event1 []string, event2 []string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn have_conflict(event1: Vec<String>, event2: Vec<String>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "event1": "[\"01:15\",\"02:00\"]",
+      "event2": "[\"02:00\",\"03:00\"]"
+    },
+    {
+      "event1": "[\"01:00\",\"02:00\"]",
+      "event2": "[\"01:20\",\"03:00\"]"
+    },
+    {
+      "event1": "[\"10:00\",\"11:00\"]",
+      "event2": "[\"14:00\",\"15:00\"]"
+    }
+  ],
+  "functionName": "haveConflict",
+  "params": [
+    {
+      "name": "event1",
+      "type": "string_array"
+    },
+    {
+      "name": "event2",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Parse time format to some integer interval first",
+    "How would you determine if two intervals overlap?"
+  ]
+}

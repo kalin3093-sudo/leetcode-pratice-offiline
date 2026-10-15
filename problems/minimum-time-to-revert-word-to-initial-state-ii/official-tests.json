@@ -1,0 +1,14 @@
+[
+  {
+    "word": "abacaba",
+    "k": 3
+  },
+  {
+    "word": "abacaba",
+    "k": 4
+  },
+  {
+    "word": "abcbabcd",
+    "k": 2
+  }
+]

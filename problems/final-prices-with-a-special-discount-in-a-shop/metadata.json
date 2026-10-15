@@ -1,0 +1,54 @@
+{
+  "id": "final-prices-with-a-special-discount-in-a-shop",
+  "title": "1475. Final Prices With a Special Discount in a Shop",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "prices = [8,4,6,2,3]",
+      "output": "[4,2,4,2,3]",
+      "explanation": "For item 0 with price[0]=8 you will receive a discount equivalent to prices[1]=4, therefore, the final price you will pay is 8 - 4 = 4. For item 1 with price[1]=4 you will receive a discount equivalent to prices[3]=2, therefore, the final price you will pay is 4 - 2 = 2. For item 2 with price[2]=6 you will receive a discount equivalent to prices[3]=2, therefore, the final price you will pay is 6 - 2 = 4. For items 3 and 4 you will not receive any discount at all."
+    },
+    {
+      "input": "prices = [1,2,3,4,5]",
+      "output": "[1,2,3,4,5]",
+      "explanation": "In this case, for all items, you will not receive any discount at all."
+    },
+    {
+      "input": "prices = [10,1,1,6]",
+      "output": "[9,0,1,6]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> finalPrices(vector<int>& prices) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] finalPrices(int[] prices) {\n        \n    }\n}",
+    "python": "class Solution:\n    def finalPrices(self, prices: list[int]) -> list[int]:\n        ",
+    "typescript": "function finalPrices(prices: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FinalPrices(int[] prices) {\n        \n    }\n}",
+    "go": "func finalPrices(prices []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn final_prices(prices: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "prices": "[8,4,6,2,3]"
+    },
+    {
+      "prices": "[1,2,3,4,5]"
+    },
+    {
+      "prices": "[10,1,1,6]"
+    }
+  ],
+  "functionName": "finalPrices",
+  "params": [
+    {
+      "name": "prices",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use brute force: For the ith item in the shop with a loop find the first position j satisfying the conditions and apply the discount, otherwise, the discount is 0."
+  ]
+}

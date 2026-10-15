@@ -1,0 +1,46 @@
+{
+  "id": "difference-of-number-of-distinct-values-on-diagonals",
+  "title": "2711. Difference of Number of Distinct Values on Diagonals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2,3],[3,1,5],[3,2,1]]",
+      "output": "[[1,1,0],[1,0,1],[0,1,1]]",
+      "explanation": "To calculate the answer cells: answer left-above elements leftAbove right-below elements rightBelow |leftAbove - rightBelow| [0][0] [] 0 [grid[1][1], grid[2][2]] |{1, 1}| = 1 1 [0][1] [] 0 [grid[1][2]] |{5}| = 1 1 [0][2] [] 0 [] 0 0 [1][0] [] 0 [grid[2][1]] |{2}| = 1 1 [1][1] [grid[0][0]] |{1}| = 1 [grid[2][2]] |{1}| = 1 0 [1][2] [grid[0][1]] |{2}| = 1 [] 0 1 [2][0] [] 0 [] 0 0 [2][1] [grid[1][0]] |{3}| = 1 [] 0 1 [2][2] [grid[0][0], grid[1][1]] |{1, 1}| = 1 [] 0 1"
+    },
+    {
+      "input": "grid = [[1]]",
+      "output": "[[0]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> differenceOfDistinctValues(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] differenceOfDistinctValues(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def differenceOfDistinctValues(self, grid: List[List[int]]) -> List[List[int]]:\n        ",
+    "typescript": "function differenceOfDistinctValues(grid: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] DifferenceOfDistinctValues(int[][] grid) {\n        \n    }\n}",
+    "go": "func differenceOfDistinctValues(grid [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn difference_of_distinct_values(grid: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2,3],[3,1,5],[3,2,1]]"
+    },
+    {
+      "grid": "[[1]]"
+    }
+  ],
+  "functionName": "differenceOfDistinctValues",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Use the set to count the number of distinct elements on diagonals."
+  ]
+}

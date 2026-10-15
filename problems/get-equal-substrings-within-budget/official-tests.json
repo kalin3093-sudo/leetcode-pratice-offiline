@@ -1,0 +1,17 @@
+[
+  {
+    "s": "abcd",
+    "t": "bcdf",
+    "maxCost": 3
+  },
+  {
+    "s": "abcd",
+    "t": "cdef",
+    "maxCost": 3
+  },
+  {
+    "s": "abcd",
+    "t": "acde",
+    "maxCost": 0
+  }
+]

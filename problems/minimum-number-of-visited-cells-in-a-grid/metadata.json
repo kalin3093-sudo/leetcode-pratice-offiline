@@ -1,0 +1,57 @@
+{
+  "id": "minimum-number-of-visited-cells-in-a-grid",
+  "title": "2617. Minimum Number of Visited Cells in a Grid",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[3,4,2,1],[4,2,3,1],[2,1,0,0],[2,4,0,0]]",
+      "output": "4",
+      "explanation": "The image above shows one of the paths that visits exactly 4 cells."
+    },
+    {
+      "input": "grid = [[3,4,2,1],[4,2,1,1],[2,1,1,0],[3,4,1,0]]",
+      "output": "3",
+      "explanation": "The image above shows one of the paths that visits exactly 3 cells."
+    },
+    {
+      "input": "grid = [[2,1,0],[1,0,0]]",
+      "output": "-1",
+      "explanation": "It can be proven that no path exists."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumVisitedCells(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumVisitedCells(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumVisitedCells(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function minimumVisitedCells(grid: number[][]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int MinimumVisitedCells(int[][] grid) {\n        \n    }\n}",
+    "go": "func minimumVisitedCells(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_visited_cells(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[3,4,2,1],[4,2,3,1],[2,1,0,0],[2,4,0,0]]"
+    },
+    {
+      "grid": "[[3,4,2,1],[4,2,1,1],[2,1,1,0],[3,4,1,0]]"
+    },
+    {
+      "grid": "[[2,1,0],[1,0,0]]"
+    }
+  ],
+  "functionName": "minimumVisitedCells",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each cell (i,j), it is critical to find out the minimum number of steps to reach (i,j), denoted dis[i][j], quickly, given the tight constraint.",
+    "Calculate dis[i][j] going left to right, top to bottom.",
+    "Suppose we want to calculate dis[i][j], keep track of a priority queue that stores (dis[i][k], i, k) for all k ≤ j, and another priority queue that stores (dis[k][j], k, j) for all k ≤ i."
+  ]
+}

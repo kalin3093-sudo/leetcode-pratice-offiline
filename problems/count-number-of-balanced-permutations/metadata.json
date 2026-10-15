@@ -1,0 +1,58 @@
+{
+  "id": "count-number-of-balanced-permutations",
+  "title": "3343. Count Number of Balanced Permutations",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-number-of-balanced-permutations/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = \"123\"",
+      "output": "2",
+      "explanation": "The distinct permutations of num are \"123\", \"132\", \"213\", \"231\", \"312\" and \"321\". Among them, \"132\" and \"231\" are balanced. Thus, the answer is 2."
+    },
+    {
+      "input": "num = \"112\"",
+      "output": "1",
+      "explanation": "The distinct permutations of num are \"112\", \"121\", and \"211\". Only \"121\" is balanced. Thus, the answer is 1."
+    },
+    {
+      "input": "num = \"12345\"",
+      "output": "0",
+      "explanation": "None of the permutations of num are balanced, so the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countBalancedPermutations(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countBalancedPermutations(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countBalancedPermutations(self, num: str) -> int:\n        ",
+    "typescript": "function countBalancedPermutations(num: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountBalancedPermutations(string num) {\n        \n    }\n}",
+    "go": "func countBalancedPermutations(num string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_balanced_permutations(num: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "123"
+    },
+    {
+      "num": "112"
+    },
+    {
+      "num": "12345"
+    }
+  ],
+  "functionName": "countBalancedPermutations",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count frequency of each character in the string.",
+    "Use dynamic programming.",
+    "The states are the characters, sum of even index numbers, and the number of digits used.",
+    "Calculate the sum of odd index numbers without using a state for it."
+  ]
+}

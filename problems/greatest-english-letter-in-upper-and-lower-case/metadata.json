@@ -1,0 +1,56 @@
+{
+  "id": "greatest-english-letter-in-upper-and-lower-case",
+  "title": "2309. Greatest English Letter in Upper and Lower Case",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"lEeTcOdE\"",
+      "output": "\"E\"",
+      "explanation": "The letter 'E' is the only letter to appear in both lower and upper case."
+    },
+    {
+      "input": "s = \"arRAzFif\"",
+      "output": "\"R\"",
+      "explanation": "The letter 'R' is the greatest letter to appear in both lower and upper case. Note that 'A' and 'F' also appear in both lower and upper case, but 'R' is greater than 'F' or 'A'."
+    },
+    {
+      "input": "s = \"AbCdEfGhIjK\"",
+      "output": "\"\"",
+      "explanation": "There is no letter that appears in both lower and upper case."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string greatestLetter(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String greatestLetter(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def greatestLetter(self, s: str) -> str:\n        ",
+    "typescript": "function greatestLetter(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GreatestLetter(string s) {\n        \n    }\n}",
+    "go": "func greatestLetter(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn greatest_letter(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "lEeTcOdE"
+    },
+    {
+      "s": "arRAzFif"
+    },
+    {
+      "s": "AbCdEfGhIjK"
+    }
+  ],
+  "functionName": "greatestLetter",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Consider iterating through the string and storing each unique character that occurs in a set.",
+    "From Z to A, check whether both the uppercase and lowercase version occur in the set."
+  ]
+}

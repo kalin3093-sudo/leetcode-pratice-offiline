@@ -1,0 +1,48 @@
+{
+  "id": "minimum-cost-to-split-into-ones",
+  "title": "3857. Minimum Cost to Split into Ones",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-cost-to-split-into-ones/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "3",
+      "explanation": "One optimal set of operations is: x a b a + b a * b Cost 3 1 2 3 2 2 2 1 1 2 1 1 Thus, the minimum total cost is 2 + 1 = 3."
+    },
+    {
+      "input": "n = 4",
+      "output": "6",
+      "explanation": "One optimal set of operations is: x a b a + b a * b Cost 4 2 2 4 4 4 2 1 1 2 1 1 2 1 1 2 1 1 Thus, the minimum total cost is 4 + 1 + 1 = 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCost(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCost(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, n: int) -> int:\n        ",
+    "typescript": "function minCost(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCost(int n) {\n        \n    }\n}",
+    "go": "func minCost(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming or math.",
+    "It is always optimal to split the current integer <code>x</code> into <code>1</code> and <code>x - 1</code>."
+  ]
+}

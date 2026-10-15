@@ -1,0 +1,49 @@
+{
+  "id": "substring-with-largest-variance",
+  "title": "2272. Substring With Largest Variance",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/substring-with-largest-variance/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aababbb\"",
+      "output": "3",
+      "explanation": "All possible variances along with their respective substrings are listed below: - Variance 0 for substrings \"a\", \"aa\", \"ab\", \"abab\", \"aababb\", \"ba\", \"b\", \"bb\", and \"bbb\". - Variance 1 for substrings \"aab\", \"aba\", \"abb\", \"aabab\", \"ababb\", \"aababbb\", and \"bab\". - Variance 2 for substrings \"aaba\", \"ababbb\", \"abbb\", and \"babb\". - Variance 3 for substring \"babbb\". Since the largest possible variance is 3, we return it."
+    },
+    {
+      "input": "s = \"abcde\"",
+      "output": "0",
+      "explanation": "No letter occurs more than once in s, so the variance of every substring is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestVariance(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestVariance(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestVariance(self, s: str) -> int:\n        ",
+    "typescript": "function largestVariance(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestVariance(string s) {\n        \n    }\n}",
+    "go": "func largestVariance(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_variance(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aababbb"
+    },
+    {
+      "s": "abcde"
+    }
+  ],
+  "functionName": "largestVariance",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think about how to solve the problem if the string had only two distinct characters.",
+    "If we replace all occurrences of the first character by +1 and those of the second character by -1, can we efficiently calculate the largest possible variance of a string with only two distinct characters?",
+    "Now, try finding the optimal answer by taking all possible pairs of characters into consideration."
+  ]
+}

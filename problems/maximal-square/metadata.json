@@ -1,0 +1,50 @@
+{
+  "id": "maximal-square",
+  "title": "221. Maximal Square",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximal-square/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
+      "output": "4"
+    },
+    {
+      "input": "matrix = [[\"0\",\"1\"],[\"1\",\"0\"]]",
+      "output": "1"
+    },
+    {
+      "input": "matrix = [[\"0\"]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximalSquare(vector<vector<char>>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximalSquare(char[][] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximalSquare(self, matrix: list[list[str]]) -> int:\n        ",
+    "typescript": "function maximalSquare(matrix: string[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximalSquare(char[][] matrix) {\n        \n    }\n}",
+    "go": "func maximalSquare(matrix [][]byte) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximal_square(matrix: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]"
+    },
+    {
+      "matrix": "[[\"0\",\"1\"],[\"1\",\"0\"]]"
+    },
+    {
+      "matrix": "[[\"0\"]]"
+    }
+  ],
+  "functionName": "maximalSquare",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "char_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

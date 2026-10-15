@@ -1,0 +1,56 @@
+{
+  "id": "sum-game",
+  "title": "1927. Sum Game",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-game/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = \"5023\"",
+      "output": "false",
+      "explanation": "There are no moves to be made. The sum of the first half is equal to the sum of the second half: 5 + 0 = 2 + 3."
+    },
+    {
+      "input": "num = \"25??\"",
+      "output": "true",
+      "explanation": "Alice can replace one of the '?'s with '9' and it will be impossible for Bob to make the sums equal."
+    },
+    {
+      "input": "num = \"?3295???\"",
+      "output": "false",
+      "explanation": "It can be proven that Bob will always win. One possible outcome is: - Alice replaces the first '?' with '9'. num = \"93295???\". - Bob replaces one of the '?' in the right half with '9'. num = \"932959??\". - Alice replaces one of the '?' in the right half with '2'. num = \"9329592?\". - Bob replaces the last '?' in the right half with '7'. num = \"93295927\". Bob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool sumGame(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean sumGame(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumGame(self, num: str) -> bool:\n        ",
+    "typescript": "function sumGame(num: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool SumGame(string num) {\n        \n    }\n}",
+    "go": "func sumGame(num string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_game(num: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "5023"
+    },
+    {
+      "num": "25??"
+    },
+    {
+      "num": "?3295???"
+    }
+  ],
+  "functionName": "sumGame",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Bob can always make the total sum of both sides equal in mod 9.",
+    "Why does the difference between the number of question marks on the left and right side matter?"
+  ]
+}

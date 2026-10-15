@@ -1,0 +1,44 @@
+{
+  "id": "next-greater-element-ii",
+  "title": "503. Next Greater Element II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/next-greater-element-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,1]",
+      "output": "[2,-1,2]",
+      "explanation": "The first 1's next greater number is 2; The number 2 can't find next greater number. The second 1's next greater number needs to search circularly, which is also 2."
+    },
+    {
+      "input": "nums = [1,2,3,4,3]",
+      "output": "[2,3,4,-1,4]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> nextGreaterElements(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] nextGreaterElements(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nextGreaterElements(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function nextGreaterElements(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] NextGreaterElements(int[] nums) {\n        \n    }\n}",
+    "go": "func nextGreaterElements(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn next_greater_elements(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,1]"
+    },
+    {
+      "nums": "[1,2,3,4,3]"
+    }
+  ],
+  "functionName": "nextGreaterElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

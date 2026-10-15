@@ -1,0 +1,64 @@
+{
+  "id": "minimum-subarray-length-with-distinct-sum-at-least-k",
+  "title": "3795. Minimum Subarray Length With Distinct Sum At Least K",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-subarray-length-with-distinct-sum-at-least-k/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,2,3,1], k = 4",
+      "output": "2",
+      "explanation": "The subarray [2, 3] has distinct elements {2, 3} whose sum is 2 + 3 = 5, which is at least k = 4. Thus, the answer is 2."
+    },
+    {
+      "input": "nums = [3,2,3,4], k = 5",
+      "output": "2",
+      "explanation": "The subarray [3, 2] has distinct elements {3, 2} whose sum is 3 + 2 = 5, which is at least k = 5. Thus, the answer is 2."
+    },
+    {
+      "input": "nums = [5,5,4], k = 5",
+      "output": "1",
+      "explanation": "The subarray [5] has distinct elements {5} whose sum is 5, which is at least k = 5. Thus, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minLength(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minLength(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minLength(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function minLength(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinLength(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minLength(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_length(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,2,3,1]",
+      "k": 4
+    },
+    {
+      "nums": "[3,2,3,4]",
+      "k": 5
+    },
+    {
+      "nums": "[5,5,4]",
+      "k": 5
+    }
+  ],
+  "functionName": "minLength",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a two-pointer sliding window that expands the right end until the window's sum of values that occur exactly once reaches at least <code>k</code>.",
+    "When that happens, greedily advance the left pointer to shrink the window as much as possible while keeping the unique-sum <code>>= k</code>, updating the minimum length.",
+    "Maintain a frequency counter to update the unique-sum when an element's count flips between unique and non-unique"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "longest-unequal-adjacent-groups-subsequence-ii",
+  "title": "2901. Longest Unequal Adjacent Groups Subsequence II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"bab\",\"dab\",\"cab\"], groups = [1,2,2]",
+      "output": "[\"bab\",\"cab\"]",
+      "explanation": "A subsequence that can be selected is [0,2]. groups[0] != groups[2] words[0].length == words[2].length, and the hamming distance between them is 1. So, a valid answer is [words[0],words[2]] = [\"bab\",\"cab\"]. Another subsequence that can be selected is [0,1]. groups[0] != groups[1] words[0].length == words[1].length, and the hamming distance between them is 1. So, another valid answer is [words[0],words[1]] = [\"bab\",\"dab\"]. It can be shown that the length of the longest subsequence of indices that satisfies the conditions is 2."
+    },
+    {
+      "input": "words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,2,3,4]",
+      "output": "[\"a\",\"b\",\"c\",\"d\"]",
+      "explanation": "We can select the subsequence [0,1,2,3]. It satisfies both conditions. Hence, the answer is [words[0],words[1],words[2],words[3]] = [\"a\",\"b\",\"c\",\"d\"]. It has the longest length among all subsequences of indices that satisfy the conditions. Hence, it is the only answer."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> getWordsInLongestSubsequence(vector<string>& words, vector<int>& groups) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> getWordsInLongestSubsequence(String[] words, int[] groups) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getWordsInLongestSubsequence(self, words: List[str], groups: List[int]) -> List[str]:\n        ",
+    "typescript": "function getWordsInLongestSubsequence(words: string[], groups: number[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> GetWordsInLongestSubsequence(string[] words, int[] groups) {\n        \n    }\n}",
+    "go": "func getWordsInLongestSubsequence(words []string, groups []int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_words_in_longest_subsequence(words: Vec<String>, groups: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"bab\",\"dab\",\"cab\"]",
+      "groups": "[1,2,2]"
+    },
+    {
+      "words": "[\"a\",\"b\",\"c\",\"d\"]",
+      "groups": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "getWordsInLongestSubsequence",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "groups",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Let <code>dp[i]</code> represent the length of the longest subsequence ending with <code>words[i]</code> that satisfies the conditions.",
+    "<code>dp[i] =</code> (maximum value of <code>dp[j]</code>) <code>+ 1</code> for indices <code>j < i</code>, where <code>groups[i] != groups[j]</code>, <code>words[i]</code> and <code>words[j]</code> are equal in length, and the hamming distance between <code>words[i]</code> and <code>words[j]</code> is exactly <code>1</code>.",
+    "Keep track of the <code>j</code> values used to achieve the maximum <code>dp[i]</code> for each index <code>i</code>.",
+    "The expected array's length is <code>max(dp[0:n])</code>, and starting from the index having the maximum value in <code>dp</code>, we can trace backward to get the words."
+  ]
+}

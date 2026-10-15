@@ -1,0 +1,63 @@
+{
+  "id": "minimum-size-subarray-in-infinite-array",
+  "title": "2875. Minimum Size Subarray in Infinite Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], target = 5",
+      "output": "2",
+      "explanation": "In this example infinite_nums = [1,2,3,1,2,3,1,2,...]. The subarray in the range [1,2], has the sum equal to target = 5 and length = 2. It can be proven that 2 is the shortest length of a subarray with sum equal to target = 5."
+    },
+    {
+      "input": "nums = [1,1,1,2,3], target = 4",
+      "output": "2",
+      "explanation": "In this example infinite_nums = [1,1,1,2,3,1,1,1,2,3,1,1,...]. The subarray in the range [4,5], has the sum equal to target = 4 and length = 2. It can be proven that 2 is the shortest length of a subarray with sum equal to target = 4."
+    },
+    {
+      "input": "nums = [2,4,6,8], target = 3",
+      "output": "-1",
+      "explanation": "In this example infinite_nums = [2,4,6,8,2,4,6,8,...]. It can be proven that there is no subarray with sum equal to target = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSizeSubarray(vector<int>& nums, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSizeSubarray(int[] nums, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSizeSubarray(self, nums: List[int], target: int) -> int:\n        ",
+    "typescript": "function minSizeSubarray(nums: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSizeSubarray(int[] nums, int target) {\n        \n    }\n}",
+    "go": "func minSizeSubarray(nums []int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_size_subarray(nums: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]",
+      "target": 5
+    },
+    {
+      "nums": "[1,1,1,2,3]",
+      "target": 4
+    },
+    {
+      "nums": "[2,4,6,8]",
+      "target": 3
+    }
+  ],
+  "functionName": "minSizeSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Notice that, <code>target</code> is either: A subarray of <code>nums</code>, or <code>prefix_sum[i]</code> + <code> k * sum(nums) </code> + <code>suffix_sum[j]</code> for some <code>i, j, k</code>.",
+    "You can solve the problem for those two separate cases using hash map and prefix sums."
+  ]
+}

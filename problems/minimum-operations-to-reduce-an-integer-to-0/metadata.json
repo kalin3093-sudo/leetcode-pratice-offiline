@@ -1,0 +1,49 @@
+{
+  "id": "minimum-operations-to-reduce-an-integer-to-0",
+  "title": "2571. Minimum Operations to Reduce an Integer to 0",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 39",
+      "output": "3",
+      "explanation": "We can do the following operations: - Add 20 = 1 to n, so now n = 40. - Subtract 23 = 8 from n, so now n = 32. - Subtract 25 = 32 from n, so now n = 0. It can be shown that 3 is the minimum number of operations we need to make n equal to 0."
+    },
+    {
+      "input": "n = 54",
+      "output": "3",
+      "explanation": "We can do the following operations: - Add 21 = 2 to n, so now n = 56. - Add 23 = 8 to n, so now n = 64. - Subtract 26 = 64 from n, so now n = 0. So the minimum number of operations is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, n: int) -> int:\n        ",
+    "typescript": "function minOperations(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int n) {\n        \n    }\n}",
+    "go": "func minOperations(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 39
+    },
+    {
+      "n": 54
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we set/unset the bits in binary representation?",
+    "If there are multiple adjacent ones, how can we optimally add and subtract in 2 operations such that all ones get unset?",
+    "Bonus: Try to solve the problem with higher constraints: n ≤ 10^18."
+  ]
+}

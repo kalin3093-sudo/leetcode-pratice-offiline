@@ -1,0 +1,57 @@
+{
+  "id": "palindrome-pairs",
+  "title": "336. Palindrome Pairs",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/palindrome-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"abcd\",\"dcba\",\"lls\",\"s\",\"sssll\"]",
+      "output": "[[0,1],[1,0],[3,2],[2,4]]",
+      "explanation": "The palindromes are [\"abcddcba\",\"dcbaabcd\",\"slls\",\"llssssll\"]"
+    },
+    {
+      "input": "words = [\"bat\",\"tab\",\"cat\"]",
+      "output": "[[0,1],[1,0]]",
+      "explanation": "The palindromes are [\"battab\",\"tabbat\"]"
+    },
+    {
+      "input": "words = [\"a\",\"\"]",
+      "output": "[[0,1],[1,0]]",
+      "explanation": "The palindromes are [\"a\",\"a\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> palindromePairs(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> palindromePairs(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def palindromePairs(self, words: list[str]) -> list[list[int]]:\n        ",
+    "typescript": "function palindromePairs(words: string[]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> PalindromePairs(string[] words) {\n        \n    }\n}",
+    "go": "func palindromePairs(words []string) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn palindrome_pairs(words: Vec<String>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abcd\",\"dcba\",\"lls\",\"s\",\"sssll\"]"
+    },
+    {
+      "words": "[\"bat\",\"tab\",\"cat\"]"
+    },
+    {
+      "words": "[\"a\",\"\"]"
+    }
+  ],
+  "functionName": "palindromePairs",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": [
+    "Checking every two pairs will exceed the time limit. It will be O(n^2 * k). We need a faster way.",
+    "If we hash every string in the array, how can we check if two pairs form a palindrome after the concatenation?",
+    "We can check every string in words and consider it as words[j] (i.e., the suffix of the target palindrome). We can check if there is a hash of string that can be the prefix to make it a palindrome."
+  ]
+}

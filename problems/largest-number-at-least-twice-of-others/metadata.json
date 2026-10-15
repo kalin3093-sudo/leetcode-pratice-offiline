@@ -1,0 +1,47 @@
+{
+  "id": "largest-number-at-least-twice-of-others",
+  "title": "747. Largest Number At Least Twice of Others",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-number-at-least-twice-of-others/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,6,1,0]",
+      "output": "1",
+      "explanation": "6 is the largest integer. For every other number in the array x, 6 is at least twice as big as x. The index of value 6 is 1, so we return 1."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "-1",
+      "explanation": "4 is less than twice the value of 3, so we return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int dominantIndex(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int dominantIndex(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def dominantIndex(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function dominantIndex(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DominantIndex(int[] nums) {\n        \n    }\n}",
+    "go": "func dominantIndex(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn dominant_index(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,6,1,0]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "dominantIndex",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Scan through the array to find the unique largest element `m`, keeping track of it's index `maxIndex`.\r\n\r\nScan through the array again.  If we find some `x != m` with `m < 2*x`, we should return `-1`.\r\n\r\nOtherwise, we should return `maxIndex`."
+  ]
+}

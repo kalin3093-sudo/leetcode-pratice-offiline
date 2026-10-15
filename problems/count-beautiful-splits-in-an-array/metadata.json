@@ -1,0 +1,47 @@
+{
+  "id": "count-beautiful-splits-in-an-array",
+  "title": "3388. Count Beautiful Splits in an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-beautiful-splits-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,1]",
+      "output": "2",
+      "explanation": "The beautiful splits are: A split with nums1 = [1], nums2 = [1,2], nums3 = [1]. A split with nums1 = [1], nums2 = [1], nums3 = [2,1]."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "0",
+      "explanation": "There are 0 beautiful splits."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int beautifulSplits(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int beautifulSplits(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def beautifulSplits(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function beautifulSplits(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BeautifulSplits(int[] nums) {\n        \n    }\n}",
+    "go": "func beautifulSplits(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn beautiful_splits(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,2,1]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "beautifulSplits",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use 2D dynamic programming to find the maximum matching prefix."
+  ]
+}

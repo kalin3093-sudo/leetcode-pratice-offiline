@@ -1,0 +1,71 @@
+{
+  "id": "shortest-distance-to-target-string-in-a-circular-array",
+  "title": "2515. Shortest Distance to Target String in a Circular Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"], target = \"hello\", startIndex = 1",
+      "output": "1",
+      "explanation": "We start from index 1 and can reach \"hello\" by - moving 3 units to the right to reach index 4. - moving 2 units to the left to reach index 4. - moving 4 units to the right to reach index 0. - moving 1 unit to the left to reach index 0. The shortest distance to reach \"hello\" is 1."
+    },
+    {
+      "input": "words = [\"a\",\"b\",\"leetcode\"], target = \"leetcode\", startIndex = 0",
+      "output": "1",
+      "explanation": "We start from index 0 and can reach \"leetcode\" by - moving 2 units to the right to reach index 2. - moving 1 unit to the left to reach index 2. The shortest distance to reach \"leetcode\" is 1."
+    },
+    {
+      "input": "words = [\"i\",\"eat\",\"leetcode\"], target = \"ate\", startIndex = 0",
+      "output": "-1",
+      "explanation": "Since \"ate\" does not exist in words, we return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int closestTarget(vector<string>& words, string target, int startIndex) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int closestTarget(String[] words, String target, int startIndex) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closestTarget(self, words: list[str], target: str, startIndex: int) -> int:\n        ",
+    "typescript": "function closestTarget(words: string[], target: string, startIndex: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ClosestTarget(string[] words, string target, int startIndex) {\n        \n    }\n}",
+    "go": "func closestTarget(words []string, target string, startIndex int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn closest_target(words: Vec<String>, target: String, start_index: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]",
+      "target": "hello",
+      "startIndex": 1
+    },
+    {
+      "words": "[\"a\",\"b\",\"leetcode\"]",
+      "target": "leetcode",
+      "startIndex": 0
+    },
+    {
+      "words": "[\"i\",\"eat\",\"leetcode\"]",
+      "target": "ate",
+      "startIndex": 0
+    }
+  ],
+  "functionName": "closestTarget",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    },
+    {
+      "name": "startIndex",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "You have two options, either move straight to the left or move straight to the right.",
+    "Find the first target word and record the distance.",
+    "Choose the one with the minimum distance."
+  ]
+}

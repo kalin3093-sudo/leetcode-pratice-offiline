@@ -1,0 +1,11 @@
+You are given a **non-negative** integer `n`.
+
+A **non-negative** integer is called **binary-palindromic** if its binary representation (written without leading zeros) reads the same forward and backward.
+
+Return the number of integers `k` such that `0 ≤ k ≤ n` and the binary representation of `k` is a palindrome.
+
+**Note:** The number 0 is considered binary-palindromic, and its representation is `"0"`.
+
+**Constraints:**
+
+-   `0 ≤ n ≤ 10^15`

@@ -1,0 +1,56 @@
+{
+  "id": "compare-sums-of-bitonic-parts",
+  "title": "3909. Compare Sums of Bitonic Parts",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/compare-sums-of-bitonic-parts/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,2,1]",
+      "output": "1",
+      "explanation": "Peak element is nums[1] = 3 Ascending part = [1, 3], sum is 1 + 3 = 4 Descending part = [3, 2, 1], sum is 3 + 2 + 1 = 6 Since the descending part has a larger sum, return 1."
+    },
+    {
+      "input": "nums = [2,4,5,2]",
+      "output": "0",
+      "explanation": "Peak element is nums[2] = 5 Ascending part = [2, 4, 5], sum is 2 + 4 + 5 = 11 Descending part = [5, 2], sum is 5 + 2 = 7 Since the ascending part has a larger sum, return 0."
+    },
+    {
+      "input": "nums = [1,2,4,3]",
+      "output": "-1",
+      "explanation": "Peak element is nums[2] = 4 Ascending part = [1, 2, 4], sum is 1 + 2 + 4 = 7 Descending part = [4, 3], sum is 4 + 3 = 7 Since both parts have equal sums, return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int compareBitonicSums(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int compareBitonicSums(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def compareBitonicSums(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function compareBitonicSums(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CompareBitonicSums(int[] nums) {\n        \n    }\n}",
+    "go": "func compareBitonicSums(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn compare_bitonic_sums(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,2,1]"
+    },
+    {
+      "nums": "[2,4,5,2]"
+    },
+    {
+      "nums": "[1,2,4,3]"
+    }
+  ],
+  "functionName": "compareBitonicSums",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the peak (maximum element) in one pass.",
+    "Compute total sum, then derive ascending and descending sums using the peak index."
+  ]
+}

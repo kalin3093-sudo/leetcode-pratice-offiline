@@ -1,0 +1,12 @@
+[
+  {
+    "occupiedIntervals": "[[2,6],[4,8],[10,10],[10,12],[14,16]]",
+    "freeStart": 7,
+    "freeEnd": 11
+  },
+  {
+    "occupiedIntervals": "[[1,5],[2,3]]",
+    "freeStart": 3,
+    "freeEnd": 8
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "id": "expressive-words",
+  "title": "809. Expressive Words",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/expressive-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"heeellooo\", words = [\"hello\", \"hi\", \"helo\"]",
+      "output": "1",
+      "explanation": "We can extend \"e\" and \"o\" in the word \"hello\" to get \"heeellooo\". We can't extend \"helo\" to get \"heeellooo\" because the group \"ll\" is not size 3 or more."
+    },
+    {
+      "input": "s = \"zzzzzyyyyy\", words = [\"zzyy\",\"zy\",\"zyy\"]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int expressiveWords(string s, vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int expressiveWords(String s, String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def expressiveWords(self, s: str, words: list[str]) -> int:\n        ",
+    "typescript": "function expressiveWords(s: string, words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ExpressiveWords(string s, string[] words) {\n        \n    }\n}",
+    "go": "func expressiveWords(s string, words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn expressive_words(s: String, words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "heeellooo",
+      "words": "[\"hello\", \"hi\", \"helo\"]"
+    },
+    {
+      "s": "zzzzzyyyyy",
+      "words": "[\"zzyy\",\"zy\",\"zyy\"]"
+    }
+  ],
+  "functionName": "expressiveWords",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

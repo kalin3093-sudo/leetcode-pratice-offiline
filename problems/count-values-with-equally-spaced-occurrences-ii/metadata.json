@@ -1,0 +1,55 @@
+{
+  "id": "count-values-with-equally-spaced-occurrences-ii",
+  "title": "4049. Count Values With Equally Spaced Occurrences II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,8,1,5,1,5,8,5]",
+      "output": "2",
+      "explanation": "1 is special because it occurs at equally spaced indices 0, 2, and 4. 5 is special because it occurs at equally spaced indices 3, 5, and 7. 8 is not special because it occurs only twice. Therefore, the answer is 2."
+    },
+    {
+      "input": "nums = [8,8,8,8]",
+      "output": "1",
+      "explanation": "8 is special because it occurs at equally spaced indices 0, 1, 2, and 3. Therefore, the answer is 1."
+    },
+    {
+      "input": "nums = [8,6,6,8,8]",
+      "output": "0",
+      "explanation": "8 occurs at indices 0, 3, and 4, which are not equally spaced. 6 occurs only twice. Therefore, no integer is special."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSpecialIntegers(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSpecialIntegers(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSpecialIntegers(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countSpecialIntegers(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSpecialIntegers(int[] nums) {\n        \n    }\n}",
+    "go": "func countSpecialIntegers(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_special_integers(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,8,1,5,1,5,8,5]\r"
+    },
+    {
+      "nums": "[8,8,8,8]\r"
+    },
+    {
+      "nums": "[8,6,6,8,8]\r"
+    }
+  ],
+  "functionName": "countSpecialIntegers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Use a hash map to group occurrence indices by value. A value is special if its group contains at least three indices and every consecutive gap equals the first gap.</p>"
+  ]
+}

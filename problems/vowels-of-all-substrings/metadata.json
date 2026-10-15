@@ -1,0 +1,56 @@
+{
+  "id": "vowels-of-all-substrings",
+  "title": "2063. Vowels of All Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/vowels-of-all-substrings/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "word = \"aba\"",
+      "output": "6",
+      "explanation": "All possible substrings are: \"a\", \"ab\", \"aba\", \"b\", \"ba\", and \"a\". - \"b\" has 0 vowels in it - \"a\", \"ab\", \"ba\", and \"a\" have 1 vowel each - \"aba\" has 2 vowels in it Hence, the total sum of vowels = 0 + 1 + 1 + 1 + 1 + 2 = 6."
+    },
+    {
+      "input": "word = \"abc\"",
+      "output": "3",
+      "explanation": "All possible substrings are: \"a\", \"ab\", \"abc\", \"b\", \"bc\", and \"c\". - \"a\", \"ab\", and \"abc\" have 1 vowel each - \"b\", \"bc\", and \"c\" have 0 vowels each Hence, the total sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3."
+    },
+    {
+      "input": "word = \"ltcd\"",
+      "output": "0",
+      "explanation": "There are no vowels in any substring of \"ltcd\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countVowels(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countVowels(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countVowels(self, word: str) -> int:\n        ",
+    "typescript": "function countVowels(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountVowels(string word) {\n        \n    }\n}",
+    "go": "func countVowels(word string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_vowels(word: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "aba"
+    },
+    {
+      "word": "abc"
+    },
+    {
+      "word": "ltcd"
+    }
+  ],
+  "functionName": "countVowels",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Since generating substrings is not an option, can we count the number of substrings a vowel appears in?",
+    "How much does each vowel contribute to the total sum?"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "palindrome-number",
+  "title": "9. Palindrome Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/palindrome-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "x = 121",
+      "output": "true",
+      "explanation": "121 reads as 121 from left to right and from right to left."
+    },
+    {
+      "input": "x = -121",
+      "output": "false",
+      "explanation": "From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome."
+    },
+    {
+      "input": "x = 10",
+      "output": "false",
+      "explanation": "Reads 01 from right to left. Therefore it is not a palindrome."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isPalindrome(int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isPalindrome(int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isPalindrome(self, x: int) -> bool:\n        ",
+    "typescript": "function isPalindrome(x: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsPalindrome(int x) {\n        \n    }\n}",
+    "go": "func isPalindrome(x int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_palindrome(x: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "x": 121
+    },
+    {
+      "x": -121
+    },
+    {
+      "x": 10
+    }
+  ],
+  "functionName": "isPalindrome",
+  "params": [
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Beware of overflow when you reverse the integer."
+  ]
+}

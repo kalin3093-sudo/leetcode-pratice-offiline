@@ -1,0 +1,56 @@
+{
+  "id": "minimize-result-by-adding-parentheses-to-expression",
+  "title": "2232. Minimize Result by Adding Parentheses to Expression",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "expression = \"247+38\"",
+      "output": "\"2(47+38)\"",
+      "explanation": "The expression evaluates to 2 * (47 + 38) = 2 * 85 = 170. Note that \"2(4)7+38\" is invalid because the right parenthesis must be to the right of the '+'. It can be shown that 170 is the smallest possible value."
+    },
+    {
+      "input": "expression = \"12+34\"",
+      "output": "\"1(2+3)4\"",
+      "explanation": "The expression evaluates to 1 * (2 + 3) * 4 = 1 * 5 * 4 = 20."
+    },
+    {
+      "input": "expression = \"999+999\"",
+      "output": "\"(999+999)\"",
+      "explanation": "The expression evaluates to 999 + 999 = 1998."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minimizeResult(string expression) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minimizeResult(String expression) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeResult(self, expression: str) -> str:\n        ",
+    "typescript": "function minimizeResult(expression: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinimizeResult(string expression) {\n        \n    }\n}",
+    "go": "func minimizeResult(expression string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_result(expression: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "expression": "247+38"
+    },
+    {
+      "expression": "12+34"
+    },
+    {
+      "expression": "999+999"
+    }
+  ],
+  "functionName": "minimizeResult",
+  "params": [
+    {
+      "name": "expression",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "The maximum length of expression is very low. We can try every possible spot to place the parentheses.",
+    "Every possibility of expression is of the form a * (b + c) * d where a, b, c, d represent integers. Note the edge cases where a and/or d do not exist, in which case use 1 instead of them."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "robot-bounded-in-circle",
+  "title": "1041. Robot Bounded In Circle",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/robot-bounded-in-circle/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "instructions = \"GGLLGG\"",
+      "output": "true",
+      "explanation": "The robot is initially at (0, 0) facing the north direction. \"G\": move one step. Position: (0, 1). Direction: North. \"G\": move one step. Position: (0, 2). Direction: North. \"L\": turn 90 degrees anti-clockwise. Position: (0, 2). Direction: West. \"L\": turn 90 degrees anti-clockwise. Position: (0, 2). Direction: South. \"G\": move one step. Position: (0, 1). Direction: South. \"G\": move one step. Position: (0, 0). Direction: South. Repeating the instructions, the robot goes into the cycle: (0, 0) --> (0, 1) --> (0, 2) --> (0, 1) --> (0, 0). Based on that, we return true."
+    },
+    {
+      "input": "instructions = \"GG\"",
+      "output": "false",
+      "explanation": "The robot is initially at (0, 0) facing the north direction. \"G\": move one step. Position: (0, 1). Direction: North. \"G\": move one step. Position: (0, 2). Direction: North. Repeating the instructions, keeps advancing in the north direction and does not go into cycles. Based on that, we return false."
+    },
+    {
+      "input": "instructions = \"GL\"",
+      "output": "true",
+      "explanation": "The robot is initially at (0, 0) facing the north direction. \"G\": move one step. Position: (0, 1). Direction: North. \"L\": turn 90 degrees anti-clockwise. Position: (0, 1). Direction: West. \"G\": move one step. Position: (-1, 1). Direction: West. \"L\": turn 90 degrees anti-clockwise. Position: (-1, 1). Direction: South. \"G\": move one step. Position: (-1, 0). Direction: South. \"L\": turn 90 degrees anti-clockwise. Position: (-1, 0). Direction: East. \"G\": move one step. Position: (0, 0). Direction: East. \"L\": turn 90 degrees anti-clockwise. Position: (0, 0). Direction: North. Repeating the instructions, the robot goes into the cycle: (0, 0) --> (0, 1) --> (-1, 1) --> (-1, 0) --> (0, 0). Based on that, we return true."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isRobotBounded(string instructions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isRobotBounded(String instructions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isRobotBounded(self, instructions: str) -> bool:\n        ",
+    "typescript": "function isRobotBounded(instructions: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsRobotBounded(string instructions) {\n        \n    }\n}",
+    "go": "func isRobotBounded(instructions string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_robot_bounded(instructions: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "instructions": "GGLLGG"
+    },
+    {
+      "instructions": "GG"
+    },
+    {
+      "instructions": "GL"
+    }
+  ],
+  "functionName": "isRobotBounded",
+  "params": [
+    {
+      "name": "instructions",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Calculate the final vector of how the robot travels after executing all instructions once - it consists of a change in position plus a change in direction.",
+    "The robot stays in the circle if and only if (looking at the final vector) it changes direction (ie. doesn't stay pointing north), or it moves 0."
+  ]
+}

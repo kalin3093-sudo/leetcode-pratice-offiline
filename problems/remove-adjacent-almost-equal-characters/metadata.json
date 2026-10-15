@@ -1,0 +1,56 @@
+{
+  "id": "remove-adjacent-almost-equal-characters",
+  "title": "2957. Remove Adjacent Almost-Equal Characters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-adjacent-almost-equal-characters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"aaaaa\"",
+      "output": "2",
+      "explanation": "We can change word into \"acaca\" which does not have any adjacent almost-equal characters. It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
+    },
+    {
+      "input": "word = \"abddez\"",
+      "output": "2",
+      "explanation": "We can change word into \"ybdoez\" which does not have any adjacent almost-equal characters. It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
+    },
+    {
+      "input": "word = \"zyxyxyz\"",
+      "output": "3",
+      "explanation": "We can change word into \"zaxaxaz\" which does not have any adjacent almost-equal characters. It can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int removeAlmostEqualCharacters(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int removeAlmostEqualCharacters(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeAlmostEqualCharacters(self, word: str) -> int:\n        ",
+    "typescript": "function removeAlmostEqualCharacters(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RemoveAlmostEqualCharacters(string word) {\n        \n    }\n}",
+    "go": "func removeAlmostEqualCharacters(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_almost_equal_characters(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "aaaaa"
+    },
+    {
+      "word": "abddez"
+    },
+    {
+      "word": "zyxyxyz"
+    }
+  ],
+  "functionName": "removeAlmostEqualCharacters",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For <code>i > 0</code>, if <code>word[i]</code> and <code>word[i - 1]</code> are adjacent, we will change <code>word[i]</code> to another character. Which character should we change it to?",
+    "We will change <code>word[i]</code> to some character that is not adjacent to <code>word[i - 1]</code> nor <code>word[i + 1]</code> (if it exists). Such a character always exists. However, since the problem does not ask for the final state of the string, It is enough to prove that the character exists and we do not need to find it."
+  ]
+}

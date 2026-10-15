@@ -1,0 +1,23 @@
+[
+  {
+    "cost1": 3,
+    "cost2": 2,
+    "costBoth": 1,
+    "need1": 3,
+    "need2": 2
+  },
+  {
+    "cost1": 5,
+    "cost2": 4,
+    "costBoth": 15,
+    "need1": 2,
+    "need2": 3
+  },
+  {
+    "cost1": 5,
+    "cost2": 4,
+    "costBoth": 15,
+    "need1": 0,
+    "need2": 0
+  }
+]

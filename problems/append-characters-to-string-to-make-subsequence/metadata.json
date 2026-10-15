@@ -1,0 +1,64 @@
+{
+  "id": "append-characters-to-string-to-make-subsequence",
+  "title": "2486. Append Characters to String to Make Subsequence",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"coaching\", t = \"coding\"",
+      "output": "4",
+      "explanation": "Append the characters \"ding\" to the end of s so that s = \"coachingding\". Now, t is a subsequence of s (\"coachingding\"). It can be shown that appending any 3 characters to the end of s will never make t a subsequence."
+    },
+    {
+      "input": "s = \"abcde\", t = \"a\"",
+      "output": "0",
+      "explanation": "t is already a subsequence of s (\"abcde\")."
+    },
+    {
+      "input": "s = \"z\", t = \"abcde\"",
+      "output": "5",
+      "explanation": "Append the characters \"abcde\" to the end of s so that s = \"zabcde\". Now, t is a subsequence of s (\"zabcde\"). It can be shown that appending any 4 characters to the end of s will never make t a subsequence."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int appendCharacters(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int appendCharacters(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def appendCharacters(self, s: str, t: str) -> int:\n        ",
+    "typescript": "function appendCharacters(s: string, t: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AppendCharacters(string s, string t) {\n        \n    }\n}",
+    "go": "func appendCharacters(s string, t string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn append_characters(s: String, t: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "coaching",
+      "t": "coding"
+    },
+    {
+      "s": "abcde",
+      "t": "a"
+    },
+    {
+      "s": "z",
+      "t": "abcde"
+    }
+  ],
+  "functionName": "appendCharacters",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the longest prefix of t that is a subsequence of s.",
+    "Use two variables to keep track of your location in s and t. If the characters match, increment both variables. Otherwise, only increment the variable for s.",
+    "The remaining characters in t must be appended to the end of s."
+  ]
+}

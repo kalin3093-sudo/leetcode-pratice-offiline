@@ -1,0 +1,66 @@
+{
+  "id": "new-21-game",
+  "title": "837. New 21 Game",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/new-21-game/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 10, k = 1, maxPts = 10",
+      "output": "1.00000",
+      "explanation": "Alice gets a single card, then stops."
+    },
+    {
+      "input": "n = 6, k = 1, maxPts = 10",
+      "output": "0.60000",
+      "explanation": "Alice gets a single card, then stops. In 6 out of 10 possibilities, she is at or below 6 points."
+    },
+    {
+      "input": "n = 21, k = 17, maxPts = 10",
+      "output": "0.73278"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double new21Game(int n, int k, int maxPts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double new21Game(int n, int k, int maxPts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def new21Game(self, n: int, k: int, maxPts: int) -> float:\n        ",
+    "typescript": "function new21Game(n: number, k: number, maxPts: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double New21Game(int n, int k, int maxPts) {\n        \n    }\n}",
+    "go": "func new21Game(n int, k int, maxPts int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn new21_game(n: i32, k: i32, max_pts: i32) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10,
+      "k": 1,
+      "maxPts": 10
+    },
+    {
+      "n": 6,
+      "k": 1,
+      "maxPts": 10
+    },
+    {
+      "n": 21,
+      "k": 17,
+      "maxPts": 10
+    }
+  ],
+  "functionName": "new21Game",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "maxPts",
+      "type": "int"
+    }
+  ],
+  "outputType": "double",
+  "hints": []
+}

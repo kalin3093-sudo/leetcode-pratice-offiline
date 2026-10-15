@@ -1,0 +1,58 @@
+{
+  "id": "minimum-cost-to-make-array-equalindromic",
+  "title": "2967. Minimum Cost to Make Array Equalindromic",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "6",
+      "explanation": "Increment nums[0] twice and nums[1] once, then decrement nums[3] once and nums[4] twice. After 6 operations, nums becomes [3,3,3,3,3], and 3 is a positive palindromic integer. It can be shown that this is the minimum number of operations required."
+    },
+    {
+      "input": "nums = [10,12,13,14,15]",
+      "output": "11",
+      "explanation": "Increment nums[0] once, then decrement nums[1], nums[2], nums[3], and nums[4] by 1, 2, 3, and 4, respectively. After 11 operations, nums becomes [11,11,11,11,11], and 11 is a positive palindromic integer. It can be shown that this is the minimum number of operations required."
+    },
+    {
+      "input": "nums = [22,33,22,33,22]",
+      "output": "22",
+      "explanation": "Decrement nums[1] and nums[3] by 11 each. After 22 operations, nums becomes [22,22,22,22,22], and 22 is a positive palindromic integer. It can be shown that this is the minimum number of operations required."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumCost(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumCost(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumCost(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimumCost(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumCost(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumCost(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_cost(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[10,12,13,14,15]"
+    },
+    {
+      "nums": "[22,33,22,33,22]"
+    }
+  ],
+  "functionName": "minimumCost",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Find the median of <code>nums</code> after sorting it (if the length is even, we can select any number from the two in the middle). Let’s call it <code>m</code>.",
+    "Try the smallest palindromic number that is larger than or equal to <code>m</code> (if any) and the largest palindromic number that is smaller than or equal to <code>m</code> (if any). These two values are the candidate palindromic numbers for values of all indices.",
+    "We can use math constructions to construct the two palindromic numbers in <code>O(log(m) / 2)</code> time or we can do it using brute-force by starting from m and checking smaller and larger values in <code>O(sqrt(10<sup>log(m)</sup>))</code>.",
+    "It is also possible to just generate all palindromic numbers using recursion in <code>O(sqrt(10<sup>9</sup>log(10<sup>9</sup>))</code>."
+  ]
+}

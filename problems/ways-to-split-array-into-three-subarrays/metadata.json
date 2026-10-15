@@ -1,0 +1,57 @@
+{
+  "id": "ways-to-split-array-into-three-subarrays",
+  "title": "1712. Ways to Split Array Into Three Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,1]",
+      "output": "1",
+      "explanation": "The only good way to split nums is [1] [1] [1]."
+    },
+    {
+      "input": "nums = [1,2,2,2,5,0]",
+      "output": "3",
+      "explanation": "There are three good ways of splitting nums: [1] [2] [2,2,5,0] [1] [2,2] [2,5,0] [1,2] [2,2] [5,0]"
+    },
+    {
+      "input": "nums = [3,2,1]",
+      "output": "0",
+      "explanation": "There is no good way to split nums."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int waysToSplit(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int waysToSplit(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def waysToSplit(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function waysToSplit(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int WaysToSplit(int[] nums) {\n        \n    }\n}",
+    "go": "func waysToSplit(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn ways_to_split(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,1]"
+    },
+    {
+      "nums": "[1,2,2,2,5,0]"
+    },
+    {
+      "nums": "[3,2,1]"
+    }
+  ],
+  "functionName": "waysToSplit",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Create a prefix array to efficiently find the sum of subarrays.",
+    "As we are dividing the array into three subarrays, there are two \"walls\". Iterate over the right wall positions and find where the left wall could be for each right wall position.",
+    "Use binary search to find the left-most position and right-most position the left wall could be."
+  ]
+}

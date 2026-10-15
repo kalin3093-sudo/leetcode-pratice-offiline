@@ -1,0 +1,54 @@
+{
+  "id": "maximum-value-of-k-coins-from-piles",
+  "title": "2218. Maximum Value of K Coins From Piles",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "piles = [[1,100,3],[7,8,9]], k = 2",
+      "output": "101",
+      "explanation": "The above diagram shows the different ways we can choose k coins. The maximum total we can obtain is 101."
+    },
+    {
+      "input": "piles = [[100],[100],[100],[100],[100],[100],[1,1,1,1,1,1,700]], k = 7",
+      "output": "706",
+      "explanation": "The maximum total can be obtained if we choose all coins from the last pile."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxValueOfCoins(vector<vector<int>>& piles, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxValueOfCoins(List<List<Integer>> piles, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxValueOfCoins(self, piles: list[list[int]], k: int) -> int:\n        ",
+    "typescript": "function maxValueOfCoins(piles: number[][], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxValueOfCoins(IList<IList<int>> piles, int k) {\n        \n    }\n}",
+    "go": "func maxValueOfCoins(piles [][]int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_value_of_coins(piles: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "piles": "[[1,100,3],[7,8,9]]",
+      "k": 2
+    },
+    {
+      "piles": "[[100],[100],[100],[100],[100],[100],[1,1,1,1,1,1,700]]",
+      "k": 7
+    }
+  ],
+  "functionName": "maxValueOfCoins",
+  "params": [
+    {
+      "name": "piles",
+      "type": "int_list_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each pile i, what will be the total value of coins we can collect if we choose the first j coins?",
+    "How can we use dynamic programming to combine the results from different piles to find the most optimal answer?"
+  ]
+}

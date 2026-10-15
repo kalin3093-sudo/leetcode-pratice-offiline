@@ -1,0 +1,56 @@
+{
+  "id": "subsequences-with-a-unique-middle-mode-i",
+  "title": "3395. Subsequences with a Unique Middle Mode I",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,1,1,1,1]",
+      "output": "6",
+      "explanation": "[1, 1, 1, 1, 1] is the only subsequence of size 5 that can be formed, and it has a unique middle mode of 1. This subsequence can be formed in 6 different ways, so the output is 6."
+    },
+    {
+      "input": "nums = [1,2,2,3,3,4]",
+      "output": "4",
+      "explanation": "[1, 2, 2, 3, 4] and [1, 2, 3, 3, 4] each have a unique middle mode because the number at index 2 has the greatest frequency in the subsequence. [1, 2, 2, 3, 3] does not have a unique middle mode because 2 and 3 appear twice."
+    },
+    {
+      "input": "nums = [0,1,2,3,4,5,6,7,8]",
+      "output": "0",
+      "explanation": "There is no subsequence of length 5 with a unique middle mode."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int subsequencesWithMiddleMode(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int subsequencesWithMiddleMode(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def subsequencesWithMiddleMode(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function subsequencesWithMiddleMode(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SubsequencesWithMiddleMode(int[] nums) {\n        \n    }\n}",
+    "go": "func subsequencesWithMiddleMode(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn subsequences_with_middle_mode(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,1,1,1,1]"
+    },
+    {
+      "nums": "[1,2,2,3,3,4]"
+    },
+    {
+      "nums": "[0,1,2,3,4,5,6,7,8]"
+    }
+  ],
+  "functionName": "subsequencesWithMiddleMode",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each index, find the number of subsequences for which it is the unique middle mode. What combinations of values can the two numbers on the left and the right take?",
+    "For example, we can have exactly 1 element on the left equal to the middle and all other elements differ. What other combinations are acceptable?"
+  ]
+}

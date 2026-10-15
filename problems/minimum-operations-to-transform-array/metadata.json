@@ -1,0 +1,66 @@
+{
+  "id": "minimum-operations-to-transform-array",
+  "title": "3724. Minimum Operations to Transform Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-transform-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [2,8], nums2 = [1,7,3]",
+      "output": "4",
+      "explanation": "Step i Operation nums1[i] Updated nums1 1 0 Append - [2, 8, 2] 2 0 Decrement Decreases to 1 [1, 8, 2] 3 1 Decrement Decreases to 7 [1, 7, 2] 4 2 Increment Increases to 3 [1, 7, 3] Thus, after 4 operations nums1 is transformed into nums2."
+    },
+    {
+      "input": "nums1 = [1,3,6], nums2 = [2,4,5,3]",
+      "output": "4",
+      "explanation": "Step i Operation nums1[i] Updated nums1 1 1 Append - [1, 3, 6, 3] 2 0 Increment Increases to 2 [2, 3, 6, 3] 3 1 Increment Increases to 4 [2, 4, 6, 3] 4 2 Decrement Decreases to 5 [2, 4, 5, 3] Thus, after 4 operations nums1 is transformed into nums2."
+    },
+    {
+      "input": "nums1 = [2], nums2 = [3,4]",
+      "output": "3",
+      "explanation": "Step i Operation nums1[i] Updated nums1 1 0 Increment Increases to 3 [3] 2 0 Append - [3, 3] 3 1 Increment Increases to 4 [3, 4] Thus, after 3 operations nums1 is transformed into nums2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minOperations(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minOperations(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinOperations(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func minOperations(nums1 []int, nums2 []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums1: Vec<i32>, nums2: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[2,8]",
+      "nums2": "[1,7,3]"
+    },
+    {
+      "nums1": "[1,3,6]",
+      "nums2": "[2,4,5,3]"
+    },
+    {
+      "nums1": "[2]",
+      "nums2": "[3,4]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Notice that <code>nums2</code> has exactly one extra element compared to <code>nums1</code>. That extra element must be produced by an append operation.",
+    "Suppose we choose index <code>j</code> in <code>nums1</code> to append. Then <code>nums1[j]</code> must eventually become both <code>nums2[j]</code> and <code>nums2.back()</code>.",
+    "The cost for index <code>j</code> is: adjust <code>nums1[j]</code> so that one copy matches <code>nums2[j]</code> and the appended copy matches <code>nums2.back()</code>.",
+    "For each <code>j</code>, compute this adjustment cost, add the cost of transforming all other positions, and take the minimum.",
+    "Use prefix sums."
+  ]
+}

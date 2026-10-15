@@ -1,0 +1,43 @@
+{
+  "id": "set-mismatch",
+  "title": "645. Set Mismatch",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/set-mismatch/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,2,4]",
+      "output": "[2,3]"
+    },
+    {
+      "input": "nums = [1,1]",
+      "output": "[1,2]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findErrorNums(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findErrorNums(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findErrorNums(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function findErrorNums(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindErrorNums(int[] nums) {\n        \n    }\n}",
+    "go": "func findErrorNums(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_error_nums(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,2,4]"
+    },
+    {
+      "nums": "[1,1]"
+    }
+  ],
+  "functionName": "findErrorNums",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

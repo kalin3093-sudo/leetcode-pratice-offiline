@@ -1,0 +1,63 @@
+{
+  "id": "minimum-number-of-seconds-to-make-mountain-height-zero",
+  "title": "3296. Minimum Number of Seconds to Make Mountain Height Zero",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mountainHeight = 4, workerTimes = [2,1,1]",
+      "output": "3",
+      "explanation": "One way the height of the mountain can be reduced to 0 is: Worker 0 reduces the height by 1, taking workerTimes[0] = 2 seconds. Worker 1 reduces the height by 2, taking workerTimes[1] + workerTimes[1] * 2 = 3 seconds. Worker 2 reduces the height by 1, taking workerTimes[2] = 1 second. Since they work simultaneously, the minimum time needed is max(2, 3, 1) = 3 seconds."
+    },
+    {
+      "input": "mountainHeight = 10, workerTimes = [3,2,2,4]",
+      "output": "12",
+      "explanation": "Worker 0 reduces the height by 2, taking workerTimes[0] + workerTimes[0] * 2 = 9 seconds. Worker 1 reduces the height by 3, taking workerTimes[1] + workerTimes[1] * 2 + workerTimes[1] * 3 = 12 seconds. Worker 2 reduces the height by 3, taking workerTimes[2] + workerTimes[2] * 2 + workerTimes[2] * 3 = 12 seconds. Worker 3 reduces the height by 2, taking workerTimes[3] + workerTimes[3] * 2 = 12 seconds. The number of seconds needed is max(9, 12, 12, 12) = 12 seconds."
+    },
+    {
+      "input": "mountainHeight = 5, workerTimes = [1]",
+      "output": "15",
+      "explanation": "There is only one worker in this example, so the answer is workerTimes[0] + workerTimes[0] * 2 + workerTimes[0] * 3 + workerTimes[0] * 4 + workerTimes[0] * 5 = 15."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minNumberOfSeconds(int mountainHeight, vector<int>& workerTimes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minNumberOfSeconds(int mountainHeight, int[] workerTimes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minNumberOfSeconds(self, mountainHeight: int, workerTimes: List[int]) -> int:\n        ",
+    "typescript": "function minNumberOfSeconds(mountainHeight: number, workerTimes: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinNumberOfSeconds(int mountainHeight, int[] workerTimes) {\n        \n    }\n}",
+    "go": "func minNumberOfSeconds(mountainHeight int, workerTimes []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_number_of_seconds(mountain_height: i32, worker_times: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mountainHeight": 4,
+      "workerTimes": "[2,1,1]"
+    },
+    {
+      "mountainHeight": 10,
+      "workerTimes": "[3,2,2,4]"
+    },
+    {
+      "mountainHeight": 5,
+      "workerTimes": "[1]"
+    }
+  ],
+  "functionName": "minNumberOfSeconds",
+  "params": [
+    {
+      "name": "mountainHeight",
+      "type": "int"
+    },
+    {
+      "name": "workerTimes",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Can we use binary search to solve this problem?",
+    "Do a binary search on the number of seconds to check if it's enough to reduce the mountain height to 0 or less with all workers working simultaneously."
+  ]
+}

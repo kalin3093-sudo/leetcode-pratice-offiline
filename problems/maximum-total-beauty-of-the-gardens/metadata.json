@@ -1,0 +1,74 @@
+{
+  "id": "maximum-total-beauty-of-the-gardens",
+  "title": "2234. Maximum Total Beauty of the Gardens",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "flowers = [1,3,1,1], newFlowers = 7, target = 6, full = 12, partial = 1",
+      "output": "14",
+      "explanation": "Alice can plant - 2 flowers in the 0th garden - 3 flowers in the 1st garden - 1 flower in the 2nd garden - 1 flower in the 3rd garden The gardens will then be [3,6,2,2]. She planted a total of 2 + 3 + 1 + 1 = 7 flowers. There is 1 garden that is complete. The minimum number of flowers in the incomplete gardens is 2. Thus, the total beauty is 1 * 12 + 2 * 1 = 12 + 2 = 14. No other way of planting flowers can obtain a total beauty higher than 14."
+    },
+    {
+      "input": "flowers = [2,4,5,3], newFlowers = 10, target = 5, full = 2, partial = 6",
+      "output": "30",
+      "explanation": "Alice can plant - 3 flowers in the 0th garden - 0 flowers in the 1st garden - 0 flowers in the 2nd garden - 2 flowers in the 3rd garden The gardens will then be [5,4,5,5]. She planted a total of 3 + 0 + 0 + 2 = 5 flowers. There are 3 gardens that are complete. The minimum number of flowers in the incomplete gardens is 4. Thus, the total beauty is 3 * 2 + 4 * 6 = 6 + 24 = 30. No other way of planting flowers can obtain a total beauty higher than 30. Note that Alice could make all the gardens complete but in this case, she would obtain a lower total beauty."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full, int partial) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumBeauty(int[] flowers, long newFlowers, int target, int full, int partial) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumBeauty(self, flowers: list[int], newFlowers: int, target: int, full: int, partial: int) -> int:\n        ",
+    "typescript": "function maximumBeauty(flowers: number[], newFlowers: number, target: number, full: number, partial: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumBeauty(int[] flowers, long newFlowers, int target, int full, int partial) {\n        \n    }\n}",
+    "go": "func maximumBeauty(flowers []int, newFlowers int64, target int, full int, partial int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_beauty(flowers: Vec<i32>, new_flowers: i64, target: i32, full: i32, partial: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "flowers": "[1,3,1,1]",
+      "newFlowers": "7",
+      "target": 6,
+      "full": 12,
+      "partial": 1
+    },
+    {
+      "flowers": "[2,4,5,3]",
+      "newFlowers": "10",
+      "target": 5,
+      "full": 2,
+      "partial": 6
+    }
+  ],
+  "functionName": "maximumBeauty",
+  "params": [
+    {
+      "name": "flowers",
+      "type": "int_array"
+    },
+    {
+      "name": "newFlowers",
+      "type": "long"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    },
+    {
+      "name": "full",
+      "type": "int"
+    },
+    {
+      "name": "partial",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Say we choose k gardens to be complete, is there an optimal way of choosing which gardens to plant more flowers to achieve this?",
+    "For a given k, we should greedily fill-up the k gardens with the most flowers planted already. This gives us the most remaining flowers to fill up the other gardens.",
+    "After sorting flowers, we can thus try every possible k and what is left is to find the highest minimum flowers we can obtain by planting the remaining flowers in the other gardens.",
+    "To find the highest minimum in the other gardens, we can use binary search to find the most optimal way of planting."
+  ]
+}

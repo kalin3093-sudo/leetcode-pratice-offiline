@@ -1,0 +1,60 @@
+{
+  "id": "3sum-with-multiplicity",
+  "title": "923. 3Sum With Multiplicity",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/3sum-with-multiplicity/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,1,2,2,3,3,4,4,5,5], target = 8",
+      "output": "20",
+      "explanation": "Enumerating by the values (arr[i], arr[j], arr[k]): (1, 2, 5) occurs 8 times; (1, 3, 4) occurs 8 times; (2, 2, 4) occurs 2 times; (2, 3, 3) occurs 2 times."
+    },
+    {
+      "input": "arr = [1,1,2,2,2,2], target = 5",
+      "output": "12",
+      "explanation": "arr[i] = 1, arr[j] = arr[k] = 2 occurs 12 times: We choose one 1 from [1,1] in 2 ways, and two 2s from [2,2,2,2] in 6 ways."
+    },
+    {
+      "input": "arr = [2,1,3], target = 6",
+      "output": "1",
+      "explanation": "(1, 2, 3) occured one time in the array so we return 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int threeSumMulti(vector<int>& arr, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int threeSumMulti(int[] arr, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def threeSumMulti(self, arr: list[int], target: int) -> int:\n        ",
+    "typescript": "function threeSumMulti(arr: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ThreeSumMulti(int[] arr, int target) {\n        \n    }\n}",
+    "go": "func threeSumMulti(arr []int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn three_sum_multi(arr: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,1,2,2,3,3,4,4,5,5]",
+      "target": 8
+    },
+    {
+      "arr": "[1,1,2,2,2,2]",
+      "target": 5
+    },
+    {
+      "arr": "[2,1,3]",
+      "target": 6
+    }
+  ],
+  "functionName": "threeSumMulti",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

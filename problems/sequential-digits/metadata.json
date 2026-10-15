@@ -1,0 +1,52 @@
+{
+  "id": "sequential-digits",
+  "title": "1291. Sequential Digits",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sequential-digits/",
+  "category": "enumeration",
+  "examples": [
+    {
+      "input": "low = 100, high = 300",
+      "output": "[123,234]"
+    },
+    {
+      "input": "low = 1000, high = 13000",
+      "output": "[1234,2345,3456,4567,5678,6789,12345]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> sequentialDigits(int low, int high) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> sequentialDigits(int low, int high) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sequentialDigits(self, low: int, high: int) -> list[int]:\n        ",
+    "typescript": "function sequentialDigits(low: number, high: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> SequentialDigits(int low, int high) {\n        \n    }\n}",
+    "go": "func sequentialDigits(low int, high int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sequential_digits(low: i32, high: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "low": 100,
+      "high": 300
+    },
+    {
+      "low": 1000,
+      "high": 13000
+    }
+  ],
+  "functionName": "sequentialDigits",
+  "params": [
+    {
+      "name": "low",
+      "type": "int"
+    },
+    {
+      "name": "high",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Generate all numbers with sequential digits and check if they are in the given range.",
+    "Fix the starting digit then do a recursion that tries to append all valid digits."
+  ]
+}

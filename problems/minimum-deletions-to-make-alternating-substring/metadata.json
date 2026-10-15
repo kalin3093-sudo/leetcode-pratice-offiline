@@ -1,0 +1,65 @@
+{
+  "id": "minimum-deletions-to-make-alternating-substring",
+  "title": "3777. Minimum Deletions to Make Alternating Substring",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"ABA\", queries = [[2,1,2],[1,1],[2,0,2]]",
+      "output": "[0,2]",
+      "explanation": "i queries[i] j l r s before query s[l..r] Result Answer 0 [2, 1, 2] - 1 2 \"ABA\" \"BA\" Already alternating 0 1 [1, 1] 1 - - \"ABA\" - Flip s[1] from 'B' to 'A' - 2 [2, 0, 2] - 0 2 \"AAA\" \"AAA\" Delete any two 'A's to get \"A\" 2 Thus, the answer is [0, 2]."
+    },
+    {
+      "input": "s = \"ABB\", queries = [[2,0,2],[1,2],[2,0,2]]",
+      "output": "[1,0]",
+      "explanation": "i queries[i] j l r s before query s[l..r] Result Answer 0 [2, 0, 2] - 0 2 \"ABB\" \"ABB\" Delete one 'B' to get \"AB\" 1 1 [1, 2] 2 - - \"ABB\" - Flip s[2] from 'B' to 'A' - 2 [2, 0, 2] - 0 2 \"ABA\" \"ABA\" Already alternating 0 Thus, the answer is [1, 0]."
+    },
+    {
+      "input": "s = \"BABA\", queries = [[2,0,3],[1,1],[2,1,3]]",
+      "output": "[0,1]",
+      "explanation": "i queries[i] j l r s before query s[l..r] Result Answer 0 [2, 0, 3] - 0 3 \"BABA\" \"BABA\" Already alternating 0 1 [1, 1] 1 - - \"BABA\" - Flip s[1] from 'A' to 'B' - 2 [2, 1, 3] - 1 3 \"BBBA\" \"BBA\" Delete one 'B' to get \"BA\" 1 Thus, the answer is [0, 1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minDeletions(string s, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] minDeletions(String s, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDeletions(self, s: str, queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function minDeletions(s: string, queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MinDeletions(string s, int[][] queries) {\n        \n    }\n}",
+    "go": "func minDeletions(s string, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_deletions(s: String, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "ABA",
+      "queries": "[[2,1,2],[1,1],[2,0,2]]"
+    },
+    {
+      "s": "ABB",
+      "queries": "[[2,0,2],[1,2],[2,0,2]]"
+    },
+    {
+      "s": "BABA",
+      "queries": "[[2,0,3],[1,1],[2,1,3]]"
+    }
+  ],
+  "functionName": "minDeletions",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use a Fenwick tree (BIT) over an auxiliary array <code>eq</code>.",
+    "Define <code>eq[i] = 1</code> if <code>i >= 1</code> and <code>s[i] == s[i - 1]</code>, otherwise <code>eq[i] = 0</code>.",
+    "For a type-2 query <code>[2, l, r]</code> the answer is <code>sum(eq[l+1..r])</code> (count of equal adjacent pairs in the substring).",
+    "For a flip <code>[1, j]</code>, recompute and update <code>eq[j]</code> and <code>eq[j + 1]</code>; each flip changes at most two <code>eq</code> values."
+  ]
+}

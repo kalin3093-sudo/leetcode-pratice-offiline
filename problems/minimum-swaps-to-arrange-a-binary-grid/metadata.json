@@ -1,0 +1,55 @@
+{
+  "id": "minimum-swaps-to-arrange-a-binary-grid",
+  "title": "1536. Minimum Swaps to Arrange a Binary Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,0,1],[1,1,0],[1,0,0]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]",
+      "output": "-1",
+      "explanation": "All rows are similar, swaps have no effect on the grid."
+    },
+    {
+      "input": "grid = [[1,0,0],[1,1,0],[1,1,1]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSwaps(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSwaps(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSwaps(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function minSwaps(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSwaps(int[][] grid) {\n        \n    }\n}",
+    "go": "func minSwaps(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_swaps(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,0,1],[1,1,0],[1,0,0]]"
+    },
+    {
+      "grid": "[[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]"
+    },
+    {
+      "grid": "[[1,0,0],[1,1,0],[1,1,1]]"
+    }
+  ],
+  "functionName": "minSwaps",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each row of the grid calculate the most right 1 in the grid in the array maxRight.",
+    "To check if there exist answer, sort maxRight and check if maxRight[i] ≤ i for all possible i's.",
+    "If there exist an answer, simulate the swaps."
+  ]
+}

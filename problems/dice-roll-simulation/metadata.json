@@ -1,0 +1,61 @@
+{
+  "id": "dice-roll-simulation",
+  "title": "1223. Dice Roll Simulation",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/dice-roll-simulation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 2, rollMax = [1,1,2,2,2,3]",
+      "output": "34",
+      "explanation": "There will be 2 rolls of die, if there are no constraints on the die, there are 6 * 6 = 36 possible combinations. In this case, looking at rollMax array, the numbers 1 and 2 appear at most once consecutively, therefore sequences (1,1) and (2,2) cannot occur, so the final answer is 36-2 = 34."
+    },
+    {
+      "input": "n = 2, rollMax = [1,1,1,1,1,1]",
+      "output": "30"
+    },
+    {
+      "input": "n = 3, rollMax = [1,1,1,2,2,3]",
+      "output": "181"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int dieSimulator(int n, vector<int>& rollMax) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int dieSimulator(int n, int[] rollMax) {\n        \n    }\n}",
+    "python": "class Solution:\n    def dieSimulator(self, n: int, rollMax: list[int]) -> int:\n        ",
+    "typescript": "function dieSimulator(n: number, rollMax: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DieSimulator(int n, int[] rollMax) {\n        \n    }\n}",
+    "go": "func dieSimulator(n int, rollMax []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn die_simulator(n: i32, roll_max: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "rollMax": "[1,1,2,2,2,3]"
+    },
+    {
+      "n": 2,
+      "rollMax": "[1,1,1,1,1,1]"
+    },
+    {
+      "n": 3,
+      "rollMax": "[1,1,1,2,2,3]"
+    }
+  ],
+  "functionName": "dieSimulator",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "rollMax",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think on Dynamic Programming.",
+    "DP(pos, last) which means we are at the position pos having as last the last character seen."
+  ]
+}

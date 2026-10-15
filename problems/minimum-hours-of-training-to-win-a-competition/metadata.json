@@ -1,0 +1,66 @@
+{
+  "id": "minimum-hours-of-training-to-win-a-competition",
+  "title": "2383. Minimum Hours of Training to Win a Competition",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-hours-of-training-to-win-a-competition/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "initialEnergy = 5, initialExperience = 3, energy = [1,4,3,2], experience = [2,6,3,1]",
+      "output": "8",
+      "explanation": "You can increase your energy to 11 after 6 hours of training, and your experience to 5 after 2 hours of training. You face the opponents in the following order: - You have more energy and experience than the 0th opponent so you win. Your energy becomes 11 - 1 = 10, and your experience becomes 5 + 2 = 7. - You have more energy and experience than the 1st opponent so you win. Your energy becomes 10 - 4 = 6, and your experience becomes 7 + 6 = 13. - You have more energy and experience than the 2nd opponent so you win. Your energy becomes 6 - 3 = 3, and your experience becomes 13 + 3 = 16. - You have more energy and experience than the 3rd opponent so you win. Your energy becomes 3 - 2 = 1, and your experience becomes 16 + 1 = 17. You did a total of 6 + 2 = 8 hours of training before the competition, so we return 8. It can be proven that no smaller answer exists."
+    },
+    {
+      "input": "initialEnergy = 2, initialExperience = 4, energy = [1], experience = [3]",
+      "output": "0",
+      "explanation": "You do not need any additional energy or experience to win the competition, so we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minNumberOfHours(int initialEnergy, int initialExperience, vector<int>& energy, vector<int>& experience) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minNumberOfHours(int initialEnergy, int initialExperience, int[] energy, int[] experience) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minNumberOfHours(self, initialEnergy: int, initialExperience: int, energy: list[int], experience: list[int]) -> int:\n        ",
+    "typescript": "function minNumberOfHours(initialEnergy: number, initialExperience: number, energy: number[], experience: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinNumberOfHours(int initialEnergy, int initialExperience, int[] energy, int[] experience) {\n        \n    }\n}",
+    "go": "func minNumberOfHours(initialEnergy int, initialExperience int, energy []int, experience []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_number_of_hours(initial_energy: i32, initial_experience: i32, energy: Vec<i32>, experience: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "initialEnergy": 5,
+      "initialExperience": 3,
+      "energy": "[1,4,3,2]",
+      "experience": "[2,6,3,1]"
+    },
+    {
+      "initialEnergy": 2,
+      "initialExperience": 4,
+      "energy": "[1]",
+      "experience": "[3]"
+    }
+  ],
+  "functionName": "minNumberOfHours",
+  "params": [
+    {
+      "name": "initialEnergy",
+      "type": "int"
+    },
+    {
+      "name": "initialExperience",
+      "type": "int"
+    },
+    {
+      "name": "energy",
+      "type": "int_array"
+    },
+    {
+      "name": "experience",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the minimum number of training hours needed for the energy and experience separately, and sum the results.",
+    "Try to increase the energy and experience until you find how much is enough to win the competition."
+  ]
+}

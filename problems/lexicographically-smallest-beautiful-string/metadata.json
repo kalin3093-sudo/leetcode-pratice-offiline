@@ -1,0 +1,56 @@
+{
+  "id": "lexicographically-smallest-beautiful-string",
+  "title": "2663. Lexicographically Smallest Beautiful String",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-beautiful-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abcz\", k = 26",
+      "output": "\"abda\"",
+      "explanation": "The string \"abda\" is beautiful and lexicographically larger than the string \"abcz\". It can be proven that there is no string that is lexicographically larger than the string \"abcz\", beautiful, and lexicographically smaller than the string \"abda\"."
+    },
+    {
+      "input": "s = \"dc\", k = 4",
+      "output": "\"\"",
+      "explanation": "It can be proven that there is no string that is lexicographically larger than the string \"dc\" and is beautiful."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestBeautifulString(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestBeautifulString(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestBeautifulString(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function smallestBeautifulString(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestBeautifulString(string s, int k) {\n        \n    }\n}",
+    "go": "func smallestBeautifulString(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_beautiful_string(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcz",
+      "k": 26
+    },
+    {
+      "s": "dc",
+      "k": 4
+    }
+  ],
+  "functionName": "smallestBeautifulString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "If the string does not contain any palindromic substrings of lengths 2 and 3, then the string does not contain any palindromic substrings at all.",
+    "Iterate from right to left and if it is possible to increase character at index i without creating any palindromic substrings of lengths 2 and 3, then increase it.",
+    "After increasing the character at index i, set every character after index i equal to character a. With this, we will ensure that we have created a lexicographically larger string than s, which does not contain any palindromes before index i and is lexicographically the smallest.",
+    "Finally, we are just left with a case to fix palindromic substrings, which come after index i. This can be done with a similar method mentioned in the second hint."
+  ]
+}

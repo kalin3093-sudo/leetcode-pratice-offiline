@@ -1,0 +1,48 @@
+{
+  "id": "count-number-of-distinct-integers-after-reverse-operations",
+  "title": "2442. Count Number of Distinct Integers After Reverse Operations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,13,10,12,31]",
+      "output": "6",
+      "explanation": "After including the reverse of each number, the resulting array is [1,13,10,12,31,1,31,1,21,13]. The reversed integers that were added to the end of the array are underlined. Note that for the integer 10, after reversing it, it becomes 01 which is just 1. The number of distinct integers in this array is 6 (The numbers 1, 10, 12, 13, 21, and 31)."
+    },
+    {
+      "input": "nums = [2,2,2]",
+      "output": "1",
+      "explanation": "After including the reverse of each number, the resulting array is [2,2,2,2,2,2]. The number of distinct integers in this array is 1 (The number 2)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countDistinctIntegers(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countDistinctIntegers(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countDistinctIntegers(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countDistinctIntegers(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountDistinctIntegers(int[] nums) {\n        \n    }\n}",
+    "go": "func countDistinctIntegers(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_distinct_integers(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,13,10,12,31]"
+    },
+    {
+      "nums": "[2,2,2]"
+    }
+  ],
+  "functionName": "countDistinctIntegers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What data structure allows us to insert numbers and find the number of distinct numbers in it?",
+    "Try using a set, insert all the numbers and their reverse into it, and return its size."
+  ]
+}

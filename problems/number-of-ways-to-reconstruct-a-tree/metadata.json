@@ -1,0 +1,58 @@
+{
+  "id": "number-of-ways-to-reconstruct-a-tree",
+  "title": "1719. Number Of Ways To Reconstruct A Tree",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "pairs = [[1,2],[2,3]]",
+      "output": "1",
+      "explanation": "There is exactly one valid rooted tree, which is shown in the above figure."
+    },
+    {
+      "input": "pairs = [[1,2],[2,3],[1,3]]",
+      "output": "2",
+      "explanation": "There are multiple valid rooted trees. Three of them are shown in the above figures."
+    },
+    {
+      "input": "pairs = [[1,2],[2,3],[2,4],[1,5]]",
+      "output": "0",
+      "explanation": "There are no valid rooted trees."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int checkWays(vector<vector<int>>& pairs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int checkWays(int[][] pairs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkWays(self, pairs: list[list[int]]) -> int:\n        ",
+    "typescript": "function checkWays(pairs: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CheckWays(int[][] pairs) {\n        \n    }\n}",
+    "go": "func checkWays(pairs [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_ways(pairs: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "pairs": "[[1,2],[2,3]]"
+    },
+    {
+      "pairs": "[[1,2],[2,3],[1,3]]"
+    },
+    {
+      "pairs": "[[1,2],[2,3],[2,4],[1,5]]"
+    }
+  ],
+  "functionName": "checkWays",
+  "params": [
+    {
+      "name": "pairs",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think inductively. The first step is to get the root. Obviously, the root should be in pairs with all the nodes. If there isn't exactly one such node, then there are 0 ways.",
+    "The number of pairs involving a node must be less than or equal to that number of its parent.",
+    "Actually, if it's equal, then there is not exactly 1 way, because they can be swapped.",
+    "Recursively, given a set of nodes, get the node with the most pairs, then this must be a root and have no parents in the current set of nodes."
+  ]
+}

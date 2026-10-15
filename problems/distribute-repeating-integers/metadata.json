@@ -1,0 +1,64 @@
+{
+  "id": "distribute-repeating-integers",
+  "title": "1655. Distribute Repeating Integers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/distribute-repeating-integers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4], quantity = [2]",
+      "output": "false",
+      "explanation": "The 0th customer cannot be given two different integers."
+    },
+    {
+      "input": "nums = [1,2,3,3], quantity = [2]",
+      "output": "true",
+      "explanation": "The 0th customer is given [3,3]. The integers [1,2] are not used."
+    },
+    {
+      "input": "nums = [1,1,2,2], quantity = [2,2]",
+      "output": "true",
+      "explanation": "The 0th customer is given [1,1], and the 1st customer is given [2,2]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canDistribute(vector<int>& nums, vector<int>& quantity) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canDistribute(int[] nums, int[] quantity) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canDistribute(self, nums: list[int], quantity: list[int]) -> bool:\n        ",
+    "typescript": "function canDistribute(nums: number[], quantity: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanDistribute(int[] nums, int[] quantity) {\n        \n    }\n}",
+    "go": "func canDistribute(nums []int, quantity []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_distribute(nums: Vec<i32>, quantity: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]",
+      "quantity": "[2]"
+    },
+    {
+      "nums": "[1,2,3,3]",
+      "quantity": "[2]"
+    },
+    {
+      "nums": "[1,1,2,2]",
+      "quantity": "[2,2]"
+    }
+  ],
+  "functionName": "canDistribute",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "quantity",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Count the frequencies of each number. For example, if nums = [4,4,5,5,5], frequencies = [2,3].",
+    "Each customer wants all of their numbers to be the same. This means that each customer will be assigned to one number.",
+    "Use dynamic programming. Iterate through the numbers' frequencies, and choose some subset of customers to be assigned to this number."
+  ]
+}

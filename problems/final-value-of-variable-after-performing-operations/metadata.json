@@ -1,0 +1,56 @@
+{
+  "id": "final-value-of-variable-after-performing-operations",
+  "title": "2011. Final Value of Variable After Performing Operations",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/final-value-of-variable-after-performing-operations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "operations = [\"--X\",\"X++\",\"X++\"]",
+      "output": "1",
+      "explanation": "The operations are performed as follows: Initially, X = 0. --X: X is decremented by 1, X =  0 - 1 = -1. X++: X is incremented by 1, X = -1 + 1 =  0. X++: X is incremented by 1, X =  0 + 1 =  1."
+    },
+    {
+      "input": "operations = [\"++X\",\"++X\",\"X++\"]",
+      "output": "3",
+      "explanation": "The operations are performed as follows: Initially, X = 0. ++X: X is incremented by 1, X = 0 + 1 = 1. ++X: X is incremented by 1, X = 1 + 1 = 2. X++: X is incremented by 1, X = 2 + 1 = 3."
+    },
+    {
+      "input": "operations = [\"X++\",\"++X\",\"--X\",\"X--\"]",
+      "output": "0",
+      "explanation": "The operations are performed as follows: Initially, X = 0. X++: X is incremented by 1, X = 0 + 1 = 1. ++X: X is incremented by 1, X = 1 + 1 = 2. --X: X is decremented by 1, X = 2 - 1 = 1. X--: X is decremented by 1, X = 1 - 1 = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int finalValueAfterOperations(vector<string>& operations) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int finalValueAfterOperations(String[] operations) {\n        \n    }\n}",
+    "python": "class Solution:\n    def finalValueAfterOperations(self, operations: list[str]) -> int:\n        ",
+    "typescript": "function finalValueAfterOperations(operations: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FinalValueAfterOperations(string[] operations) {\n        \n    }\n}",
+    "go": "func finalValueAfterOperations(operations []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn final_value_after_operations(operations: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "operations": "[\"--X\",\"X++\",\"X++\"]"
+    },
+    {
+      "operations": "[\"++X\",\"++X\",\"X++\"]"
+    },
+    {
+      "operations": "[\"X++\",\"++X\",\"--X\",\"X--\"]"
+    }
+  ],
+  "functionName": "finalValueAfterOperations",
+  "params": [
+    {
+      "name": "operations",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There are only two operations to keep track of.",
+    "Use a variable to store the value after each operation."
+  ]
+}

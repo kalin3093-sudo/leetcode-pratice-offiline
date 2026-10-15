@@ -1,0 +1,54 @@
+{
+  "id": "closest-room",
+  "title": "1847. Closest Room",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/closest-room/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rooms = [[2,2],[1,2],[3,2]], queries = [[3,1],[3,3],[5,2]]",
+      "output": "[3,-1,3]",
+      "explanation": "The answers to the queries are as follows: Query = [3,1]: Room number 3 is the closest as abs(3 - 3) = 0, and its size of 2 is at least 1. The answer is 3. Query = [3,3]: There are no rooms with a size of at least 3, so the answer is -1. Query = [5,2]: Room number 3 is the closest as abs(3 - 5) = 2, and its size of 2 is at least 2. The answer is 3."
+    },
+    {
+      "input": "rooms = [[1,4],[2,3],[3,5],[4,1],[5,2]], queries = [[2,3],[2,4],[2,5]]",
+      "output": "[2,1,3]",
+      "explanation": "The answers to the queries are as follows: Query = [2,3]: Room number 2 is the closest as abs(2 - 2) = 0, and its size of 3 is at least 3. The answer is 2. Query = [2,4]: Room numbers 1 and 3 both have sizes of at least 4. The answer is 1 since it is smaller. Query = [2,5]: Room number 3 is the only room with a size of at least 5. The answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> closestRoom(vector<vector<int>>& rooms, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] closestRoom(int[][] rooms, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closestRoom(self, rooms: list[list[int]], queries: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function closestRoom(rooms: number[][], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ClosestRoom(int[][] rooms, int[][] queries) {\n        \n    }\n}",
+    "go": "func closestRoom(rooms [][]int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn closest_room(rooms: Vec<Vec<i32>>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rooms": "[[2,2],[1,2],[3,2]]",
+      "queries": "[[3,1],[3,3],[5,2]]"
+    },
+    {
+      "rooms": "[[1,4],[2,3],[3,5],[4,1],[5,2]]",
+      "queries": "[[2,3],[2,4],[2,5]]"
+    }
+  ],
+  "functionName": "closestRoom",
+  "params": [
+    {
+      "name": "rooms",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Is there a way to sort the queries so it's easier to search the closest room larger than the size?",
+    "Use binary search to speed up the search time."
+  ]
+}

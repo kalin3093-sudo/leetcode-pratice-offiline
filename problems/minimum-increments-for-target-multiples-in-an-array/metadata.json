@@ -1,0 +1,62 @@
+{
+  "id": "minimum-increments-for-target-multiples-in-an-array",
+  "title": "3444. Minimum Increments for Target Multiples in an Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-increments-for-target-multiples-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], target = [4]",
+      "output": "1",
+      "explanation": "The minimum number of operations required to satisfy the condition is 1. Increment 3 to 4 with just one operation, making 4 a multiple of itself."
+    },
+    {
+      "input": "nums = [8,4], target = [10,5]",
+      "output": "2",
+      "explanation": "The minimum number of operations required to satisfy the condition is 2. Increment 8 to 10 with 2 operations, making 10 a multiple of both 5 and 10."
+    },
+    {
+      "input": "nums = [7,9,10], target = [7]",
+      "output": "0",
+      "explanation": "Target 7 already has a multiple in nums, so no additional operations are needed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumIncrements(vector<int>& nums, vector<int>& target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumIncrements(int[] nums, int[] target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumIncrements(self, nums: List[int], target: List[int]) -> int:\n        ",
+    "typescript": "function minimumIncrements(nums: number[], target: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumIncrements(int[] nums, int[] target) {\n        \n    }\n}",
+    "go": "func minimumIncrements(nums []int, target []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_increments(nums: Vec<i32>, target: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]",
+      "target": "[4]"
+    },
+    {
+      "nums": "[8,4]",
+      "target": "[10,5]"
+    },
+    {
+      "nums": "[7,9,10]",
+      "target": "[7]"
+    }
+  ],
+  "functionName": "minimumIncrements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use bitmask dynamic programming."
+  ]
+}

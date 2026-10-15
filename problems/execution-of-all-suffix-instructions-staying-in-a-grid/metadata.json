@@ -1,0 +1,70 @@
+{
+  "id": "execution-of-all-suffix-instructions-staying-in-a-grid",
+  "title": "2120. Execution of All Suffix Instructions Staying in a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 3, startPos = [0,1], s = \"RRDDLU\"",
+      "output": "[1,5,4,3,1,0]",
+      "explanation": "Starting from startPos and beginning execution from the ith instruction: - 0th: \"RRDDLU\". Only one instruction \"R\" can be executed before it moves off the grid. - 1st:  \"RDDLU\". All five instructions can be executed while it stays in the grid and ends at (1, 1). - 2nd:   \"DDLU\". All four instructions can be executed while it stays in the grid and ends at (1, 0). - 3rd:    \"DLU\". All three instructions can be executed while it stays in the grid and ends at (0, 0). - 4th:     \"LU\". Only one instruction \"L\" can be executed before it moves off the grid. - 5th:      \"U\". If moving up, it would move off the grid."
+    },
+    {
+      "input": "n = 2, startPos = [1,1], s = \"LURD\"",
+      "output": "[4,1,0,0]",
+      "explanation": "- 0th: \"LURD\". - 1st:  \"URD\". - 2nd:   \"RD\". - 3rd:    \"D\"."
+    },
+    {
+      "input": "n = 1, startPos = [0,0], s = \"LRUD\"",
+      "output": "[0,0,0,0]",
+      "explanation": "No matter which instruction the robot begins execution from, it would move off the grid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> executeInstructions(int n, vector<int>& startPos, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] executeInstructions(int n, int[] startPos, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def executeInstructions(self, n: int, startPos: list[int], s: str) -> list[int]:\n        ",
+    "typescript": "function executeInstructions(n: number, startPos: number[], s: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ExecuteInstructions(int n, int[] startPos, string s) {\n        \n    }\n}",
+    "go": "func executeInstructions(n int, startPos []int, s string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn execute_instructions(n: i32, start_pos: Vec<i32>, s: String) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "startPos": "[0,1]",
+      "s": "RRDDLU"
+    },
+    {
+      "n": 2,
+      "startPos": "[1,1]",
+      "s": "LURD"
+    },
+    {
+      "n": 1,
+      "startPos": "[0,0]",
+      "s": "LRUD"
+    }
+  ],
+  "functionName": "executeInstructions",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "startPos",
+      "type": "int_array"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "The constraints are not very large. Can we simulate the execution by starting from each index of s?",
+    "Before any of the stopping conditions is met, stop the simulation for that index and set the answer for that index."
+  ]
+}

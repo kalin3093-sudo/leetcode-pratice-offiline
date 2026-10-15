@@ -1,0 +1,65 @@
+{
+  "id": "minimum-steps-to-convert-string-with-operations",
+  "title": "3579. Minimum Steps to Convert String with Operations",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word1 = \"abcdf\", word2 = \"dacbe\"",
+      "output": "4",
+      "explanation": "Divide word1 into \"ab\", \"c\", and \"df\". The operations are: For the substring \"ab\", Perform operation of type 3 on \"ab\" -> \"ba\". Perform operation of type 1 on \"ba\" -> \"da\". For the substring \"c\" do no operations. For the substring \"df\", Perform operation of type 1 on \"df\" -> \"bf\". Perform operation of type 1 on \"bf\" -> \"be\"."
+    },
+    {
+      "input": "word1 = \"abceded\", word2 = \"baecfef\"",
+      "output": "4",
+      "explanation": "Divide word1 into \"ab\", \"ce\", and \"ded\". The operations are: For the substring \"ab\", Perform operation of type 2 on \"ab\" -> \"ba\". For the substring \"ce\", Perform operation of type 2 on \"ce\" -> \"ec\". For the substring \"ded\", Perform operation of type 1 on \"ded\" -> \"fed\". Perform operation of type 1 on \"fed\" -> \"fef\"."
+    },
+    {
+      "input": "word1 = \"abcdef\", word2 = \"fedabc\"",
+      "output": "2",
+      "explanation": "Divide word1 into \"abcdef\". The operations are: For the substring \"abcdef\", Perform operation of type 3 on \"abcdef\" -> \"fedcba\". Perform operation of type 2 on \"fedcba\" -> \"fedabc\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(string word1, string word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(String word1, String word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, word1: str, word2: str) -> int:\n        ",
+    "typescript": "function minOperations(word1: string, word2: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(string word1, string word2) {\n        \n    }\n}",
+    "go": "func minOperations(word1 string, word2 string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(word1: String, word2: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "abcdf",
+      "word2": "dacbe"
+    },
+    {
+      "word1": "abceded",
+      "word2": "baecfef"
+    },
+    {
+      "word1": "abcdef",
+      "word2": "fedabc"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming",
+    "Do DP on disjoint substrings of <code>word1</code>. For the DP, we try both the substring and its reversed version (just add one extra operation)",
+    "First we swap pairs like (<code>word1[i]</code>, <code>word2[i]</code>) and (<code>word1[j]</code>, <code>word2[j]</code>) where <code>word1[i] == word2[j]</code> and <code>word2[i] == word1[j]</code>",
+    "For the remaining characters, we use replace operations"
+  ]
+}

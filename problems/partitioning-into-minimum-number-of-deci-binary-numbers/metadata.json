@@ -1,0 +1,55 @@
+{
+  "id": "partitioning-into-minimum-number-of-deci-binary-numbers",
+  "title": "1689. Partitioning Into Minimum Number Of Deci-Binary Numbers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = \"32\"",
+      "output": "3",
+      "explanation": "10 + 11 + 11 = 32"
+    },
+    {
+      "input": "n = \"82734\"",
+      "output": "8"
+    },
+    {
+      "input": "n = \"27346209830709182346\"",
+      "output": "9"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minPartitions(string n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minPartitions(String n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minPartitions(self, n: str) -> int:\n        ",
+    "typescript": "function minPartitions(n: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinPartitions(string n) {\n        \n    }\n}",
+    "go": "func minPartitions(n string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_partitions(n: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "32"
+    },
+    {
+      "n": "82734"
+    },
+    {
+      "n": "27346209830709182346"
+    }
+  ],
+  "functionName": "minPartitions",
+  "params": [
+    {
+      "name": "n",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think about if the input was only one digit. Then you need to add up as many ones as the value of this digit.",
+    "If the input has multiple digits, then you can solve for each digit independently, and merge the answers to form numbers that add up to that input.",
+    "Thus the answer is equal to the max digit."
+  ]
+}

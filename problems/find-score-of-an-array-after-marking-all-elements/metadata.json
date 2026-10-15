@@ -1,0 +1,48 @@
+{
+  "id": "find-score-of-an-array-after-marking-all-elements",
+  "title": "2593. Find Score of an Array After Marking All Elements",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,3,4,5,2]",
+      "output": "7",
+      "explanation": "We mark the elements as follows: - 1 is the smallest unmarked element, so we mark it and its two adjacent elements: [2,1,3,4,5,2]. - 2 is the smallest unmarked element, so we mark it and its left adjacent element: [2,1,3,4,5,2]. - 4 is the only remaining unmarked element, so we mark it: [2,1,3,4,5,2]. Our score is 1 + 2 + 4 = 7."
+    },
+    {
+      "input": "nums = [2,3,5,1,3,2]",
+      "output": "5",
+      "explanation": "We mark the elements as follows: - 1 is the smallest unmarked element, so we mark it and its two adjacent elements: [2,3,5,1,3,2]. - 2 is the smallest unmarked element, since there are two of them, we choose the left-most one, so we mark the one at index 0 and its right adjacent element: [2,3,5,1,3,2]. - 2 is the only remaining unmarked element, so we mark it: [2,3,5,1,3,2]. Our score is 1 + 2 + 2 = 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long findScore(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long findScore(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findScore(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function findScore(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long FindScore(int[] nums) {\n        \n    }\n}",
+    "go": "func findScore(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_score(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,3,4,5,2]"
+    },
+    {
+      "nums": "[2,3,5,1,3,2]"
+    }
+  ],
+  "functionName": "findScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Try simulating the process of marking the elements and their adjacent.",
+    "If there is an element that was already marked, then you skip it."
+  ]
+}

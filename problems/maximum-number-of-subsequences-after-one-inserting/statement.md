@@ -1,0 +1,10 @@
+You are given a string `s` consisting of uppercase English letters.
+
+You are allowed to insert **at most one** uppercase English letter at **any** position (including the beginning or end) of the string.
+
+Return the **maximum** number of `"LCT"` subsequences that can be formed in the resulting string after **at most one insertion**.
+
+**Constraints:**
+
+-   `1 ≤ s.length ≤ 10^5`
+-   `s` consists of uppercase English letters.

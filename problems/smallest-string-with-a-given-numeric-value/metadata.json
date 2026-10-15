@@ -1,0 +1,53 @@
+{
+  "id": "smallest-string-with-a-given-numeric-value",
+  "title": "1663. Smallest String With A Given Numeric Value",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 3, k = 27",
+      "output": "\"aay\"",
+      "explanation": "The numeric value of the string is 1 + 1 + 25 = 27, and it is the smallest string with such a value and length equal to 3."
+    },
+    {
+      "input": "n = 5, k = 73",
+      "output": "\"aaszz\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string getSmallestString(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String getSmallestString(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getSmallestString(self, n: int, k: int) -> str:\n        ",
+    "typescript": "function getSmallestString(n: number, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GetSmallestString(int n, int k) {\n        \n    }\n}",
+    "go": "func getSmallestString(n int, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_smallest_string(n: i32, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "k": 27
+    },
+    {
+      "n": 5,
+      "k": 73
+    }
+  ],
+  "functionName": "getSmallestString",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Think greedily.",
+    "If you build the string from the end to the beginning, it will always be optimal to put the highest possible character at the current index."
+  ]
+}

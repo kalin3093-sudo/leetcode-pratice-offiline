@@ -1,0 +1,54 @@
+{
+  "id": "minimum-absolute-difference",
+  "title": "1200. Minimum Absolute Difference",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-absolute-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [4,2,1,3]",
+      "output": "[[1,2],[2,3],[3,4]]",
+      "explanation": "The minimum absolute difference is 1. List all pairs with difference equal to 1 in ascending order."
+    },
+    {
+      "input": "arr = [1,3,6,10,15]",
+      "output": "[[1,3]]"
+    },
+    {
+      "input": "arr = [3,8,-10,23,19,-4,-14,27]",
+      "output": "[[-14,-10],[19,23],[23,27]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> minimumAbsDifference(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> minimumAbsDifference(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumAbsDifference(self, arr: list[int]) -> list[list[int]]:\n        ",
+    "typescript": "function minimumAbsDifference(arr: number[]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> MinimumAbsDifference(int[] arr) {\n        \n    }\n}",
+    "go": "func minimumAbsDifference(arr []int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_abs_difference(arr: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[4,2,1,3]"
+    },
+    {
+      "arr": "[1,3,6,10,15]"
+    },
+    {
+      "arr": "[3,8,-10,23,19,-4,-14,27]"
+    }
+  ],
+  "functionName": "minimumAbsDifference",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": [
+    "Find the minimum absolute difference between two elements in the array.",
+    "The minimum absolute difference must be a difference between two consecutive elements in the sorted array."
+  ]
+}

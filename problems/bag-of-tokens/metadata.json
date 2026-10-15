@@ -1,0 +1,60 @@
+{
+  "id": "bag-of-tokens",
+  "title": "948. Bag of Tokens",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/bag-of-tokens/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tokens = [100], power = 50",
+      "output": "0",
+      "explanation": "Since your score is 0 initially, you cannot play the token face-down. You also cannot play it face-up since your power (50) is less than tokens[0] (100)."
+    },
+    {
+      "input": "tokens = [200,100], power = 150",
+      "output": "1",
+      "explanation": "Play token1 (100) face-up, reducing your power to 50 and increasing your score to 1. There is no need to play token0, since you cannot play it face-up to add to your score. The maximum score achievable is 1."
+    },
+    {
+      "input": "tokens = [100,200,300,400], power = 200",
+      "output": "2",
+      "explanation": "Play the tokens in this order to get a score of 2: Play token0 (100) face-up, reducing power to 100 and increasing score to 1. Play token3 (400) face-down, increasing power to 500 and reducing score to 0. Play token1 (200) face-up, reducing power to 300 and increasing score to 1. Play token2 (300) face-up, reducing power to 0 and increasing score to 2. The maximum score achievable is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int bagOfTokensScore(vector<int>& tokens, int power) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int bagOfTokensScore(int[] tokens, int power) {\n        \n    }\n}",
+    "python": "class Solution:\n    def bagOfTokensScore(self, tokens: list[int], power: int) -> int:\n        ",
+    "typescript": "function bagOfTokensScore(tokens: number[], power: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BagOfTokensScore(int[] tokens, int power) {\n        \n    }\n}",
+    "go": "func bagOfTokensScore(tokens []int, power int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn bag_of_tokens_score(tokens: Vec<i32>, power: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tokens": "[100]",
+      "power": 50
+    },
+    {
+      "tokens": "[200,100]",
+      "power": 150
+    },
+    {
+      "tokens": "[100,200,300,400]",
+      "power": 200
+    }
+  ],
+  "functionName": "bagOfTokensScore",
+  "params": [
+    {
+      "name": "tokens",
+      "type": "int_array"
+    },
+    {
+      "name": "power",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

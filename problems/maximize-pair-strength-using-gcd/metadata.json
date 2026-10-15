@@ -1,0 +1,56 @@
+{
+  "id": "maximize-pair-strength-using-gcd",
+  "title": "4010. Maximize Pair Strength Using GCD",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximize-pair-strength-using-gcd/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,5]",
+      "output": "15",
+      "explanation": "Choosing i = 1 and j = 2 gives strength (3 * 5) / gcd(3, 5)2 = 15 / 1 = 15, which is the maximum over all pairs."
+    },
+    {
+      "input": "nums = [4,6,8]",
+      "output": "12",
+      "explanation": "Choosing i = 1 and j = 2 gives strength (6 * 8) / gcd(6, 8)2 = 48 / 4 = 12, which is the maximum over all pairs."
+    },
+    {
+      "input": "nums = [3,3]",
+      "output": "1",
+      "explanation": "Choosing i = 0 and j = 1 gives strength (3 * 3) / gcd(3, 3)2 = 9 / 9 = 1, the maximum over all pairs."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxPairStrength(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxPairStrength(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPairStrength(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maxPairStrength(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxPairStrength(int[] nums) {\n        \n    }\n}",
+    "go": "func maxPairStrength(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_pair_strength(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,5]"
+    },
+    {
+      "nums": "[4,6,8]"
+    },
+    {
+      "nums": "[3,3]"
+    }
+  ],
+  "functionName": "maxPairStrength",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<p>Try every pair of distinct indices and compute its strength directly.</p>",
+    "<p>Use 64-bit integers when multiplying the two values.</p>"
+  ]
+}

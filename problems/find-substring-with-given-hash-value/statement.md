@@ -1,0 +1,19 @@
+The hash of a **0-indexed** string `s` of length `k`, given integers `p` and `m`, is computed using the following function:
+
+-   `hash(s, p, m) = (val(s[0]) * p^0 + val(s[1]) * p^1 + ... + val(s[k-1]) * p^k-1) mod m`.
+
+Where `val(s[i])` represents the index of `s[i]` in the alphabet from `val('a') = 1` to `val('z') = 26`.
+
+You are given a string `s` and the integers `power`, `modulo`, `k`, and `hashValue.` Return `sub`, *the **first** **substring** of* `s` *of length* `k` *such that* `hash(sub, power, modulo) == hashValue`.
+
+The test cases will be generated such that an answer always **exists**.
+
+A **substring** is a contiguous non-empty sequence of characters within a string.
+
+**Constraints:**
+
+-   `1 ≤ k ≤ s.length ≤ 2 * 10^4`
+-   `1 ≤ power, modulo ≤ 10^9`
+-   `0 ≤ hashValue < modulo`
+-   `s` consists of lowercase English letters only.
+-   The test cases are generated such that an answer always **exists**.

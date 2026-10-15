@@ -1,0 +1,46 @@
+{
+  "id": "longest-duplicate-substring",
+  "title": "1044. Longest Duplicate Substring",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-duplicate-substring/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"banana\"",
+      "output": "\"ana\""
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "\"\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string longestDupSubstring(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String longestDupSubstring(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestDupSubstring(self, s: str) -> str:\n        ",
+    "typescript": "function longestDupSubstring(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LongestDupSubstring(string s) {\n        \n    }\n}",
+    "go": "func longestDupSubstring(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_dup_substring(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "banana"
+    },
+    {
+      "s": "abcd"
+    }
+  ],
+  "functionName": "longestDupSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Binary search for the length of the answer.  (If there's an answer of length 10, then there are answers of length 9, 8, 7, ...)",
+    "To check whether an answer of length K exists, we can use Rabin-Karp 's algorithm."
+  ]
+}

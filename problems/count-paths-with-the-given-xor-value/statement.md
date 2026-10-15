@@ -1,0 +1,17 @@
+You are given a 2D integer array `grid` with size `m x n`. You are also given an integer `k`.
+
+Your task is to calculate the number of paths you can take from the top-left cell `(0, 0)` to the bottom-right cell `(m - 1, n - 1)` satisfying the following **constraints**:
+
+-   You can either move to the right or down. Formally, from the cell `(i, j)` you may move to the cell `(i, j + 1)` or to the cell `(i + 1, j)` if the target cell *exists*.
+-   The `XOR` of all the numbers on the path must be **equal** to `k`.
+
+Return the total number of such paths.
+
+Since the answer can be very large, return the result **modulo** `10^9 + 7`.
+
+**Constraints:**
+
+-   `1 ≤ m == grid.length ≤ 300`
+-   `1 ≤ n == grid[r].length ≤ 300`
+-   `0 ≤ grid[r][c] < 16`
+-   `0 ≤ k < 16`

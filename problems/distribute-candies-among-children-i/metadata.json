@@ -1,0 +1,53 @@
+{
+  "id": "distribute-candies-among-children-i",
+  "title": "2928. Distribute Candies Among Children I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/distribute-candies-among-children-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5, limit = 2",
+      "output": "3",
+      "explanation": "There are 3 ways to distribute 5 candies such that no child gets more than 2 candies: (1, 2, 2), (2, 1, 2) and (2, 2, 1)."
+    },
+    {
+      "input": "n = 3, limit = 3",
+      "output": "10",
+      "explanation": "There are 10 ways to distribute 3 candies such that no child gets more than 3 candies: (0, 0, 3), (0, 1, 2), (0, 2, 1), (0, 3, 0), (1, 0, 2), (1, 1, 1), (1, 2, 0), (2, 0, 1), (2, 1, 0) and (3, 0, 0)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distributeCandies(int n, int limit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distributeCandies(int n, int limit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distributeCandies(self, n: int, limit: int) -> int:\n        ",
+    "typescript": "function distributeCandies(n: number, limit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DistributeCandies(int n, int limit) {\n        \n    }\n}",
+    "go": "func distributeCandies(n int, limit int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distribute_candies(n: i32, limit: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "limit": 2
+    },
+    {
+      "n": 3,
+      "limit": 3
+    }
+  ],
+  "functionName": "distributeCandies",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "limit",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use three nested for loops to check all the triplets."
+  ]
+}

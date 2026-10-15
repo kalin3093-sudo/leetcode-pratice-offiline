@@ -1,0 +1,8 @@
+You are given a **0-indexed** integer array `nums`. In one step, **remove** all elements `nums[i]` where `nums[i - 1] > nums[i]` for all `0 < i < nums.length`.
+
+Return *the number of steps performed until* `nums` *becomes a **non-decreasing** array*.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 10^5`
+-   `1 ≤ nums[i] ≤ 10^9`

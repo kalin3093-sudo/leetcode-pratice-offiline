@@ -1,0 +1,56 @@
+{
+  "id": "destroying-asteroids",
+  "title": "2126. Destroying Asteroids",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/destroying-asteroids/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mass = 10, asteroids = [3,9,19,5,21]",
+      "output": "true",
+      "explanation": "One way to order the asteroids is [9,19,5,3,21]: - The planet collides with the asteroid with a mass of 9. New planet mass: 10 + 9 = 19 - The planet collides with the asteroid with a mass of 19. New planet mass: 19 + 19 = 38 - The planet collides with the asteroid with a mass of 5. New planet mass: 38 + 5 = 43 - The planet collides with the asteroid with a mass of 3. New planet mass: 43 + 3 = 46 - The planet collides with the asteroid with a mass of 21. New planet mass: 46 + 21 = 67 All asteroids are destroyed."
+    },
+    {
+      "input": "mass = 5, asteroids = [4,9,23,4]",
+      "output": "false",
+      "explanation": "The planet cannot ever gain enough mass to destroy the asteroid with a mass of 23. After the planet destroys the other asteroids, it will have a mass of 5 + 4 + 9 + 4 = 22. This is less than 23, so a collision would not destroy the last asteroid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool asteroidsDestroyed(int mass, vector<int>& asteroids) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean asteroidsDestroyed(int mass, int[] asteroids) {\n        \n    }\n}",
+    "python": "class Solution:\n    def asteroidsDestroyed(self, mass: int, asteroids: list[int]) -> bool:\n        ",
+    "typescript": "function asteroidsDestroyed(mass: number, asteroids: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool AsteroidsDestroyed(int mass, int[] asteroids) {\n        \n    }\n}",
+    "go": "func asteroidsDestroyed(mass int, asteroids []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn asteroids_destroyed(mass: i32, asteroids: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mass": 10,
+      "asteroids": "[3,9,19,5,21]"
+    },
+    {
+      "mass": 5,
+      "asteroids": "[4,9,23,4]"
+    }
+  ],
+  "functionName": "asteroidsDestroyed",
+  "params": [
+    {
+      "name": "mass",
+      "type": "int"
+    },
+    {
+      "name": "asteroids",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Choosing the asteroid to collide with can be done greedily.",
+    "If an asteroid will destroy the planet, then every bigger asteroid will also destroy the planet.",
+    "You only need to check the smallest asteroid at each collision. If it will destroy the planet, then every other asteroid will also destroy the planet.",
+    "Sort the asteroids in non-decreasing order by mass, then greedily try to collide with the asteroids in that order."
+  ]
+}

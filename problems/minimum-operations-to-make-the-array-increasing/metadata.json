@@ -1,0 +1,55 @@
+{
+  "id": "minimum-operations-to-make-the-array-increasing",
+  "title": "1827. Minimum Operations to Make the Array Increasing",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,1]",
+      "output": "3",
+      "explanation": "You can do the following operations: 1) Increment nums[2], so nums becomes [1,1,2]. 2) Increment nums[1], so nums becomes [1,2,2]. 3) Increment nums[2], so nums becomes [1,2,3]."
+    },
+    {
+      "input": "nums = [1,5,2,4,1]",
+      "output": "14"
+    },
+    {
+      "input": "nums = [8]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,1]"
+    },
+    {
+      "nums": "[1,5,2,4,1]"
+    },
+    {
+      "nums": "[8]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "nums[i+1] must be at least equal to nums[i] + 1.",
+    "Think greedily. You don't have to increase nums[i+1] beyond nums[i]+1.",
+    "Iterate on i and set nums[i] = max(nums[i-1]+1, nums[i]) ."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "2-keys-keyboard",
+  "title": "650. 2 Keys Keyboard",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/2-keys-keyboard/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "3",
+      "explanation": "Initially, we have one character 'A'. In step 1, we use Copy All operation. In step 2, we use Paste operation to get 'AA'. In step 3, we use Paste operation to get 'AAA'."
+    },
+    {
+      "input": "n = 1",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSteps(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSteps(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSteps(self, n: int) -> int:\n        ",
+    "typescript": "function minSteps(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSteps(int n) {\n        \n    }\n}",
+    "go": "func minSteps(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_steps(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "minSteps",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How many characters may be there in the clipboard at the last step if n = 3? n = 7? n = 10? n = 24?"
+  ]
+}

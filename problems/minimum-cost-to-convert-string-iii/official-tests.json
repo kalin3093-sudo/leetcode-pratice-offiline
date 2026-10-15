@@ -1,0 +1,26 @@
+[
+  {
+    "source": "hello",
+    "target": "world",
+    "rules": "[[\"he\",\"wo\"],[\"llo\",\"rld\"]]",
+    "costs": "[3,4]"
+  },
+  {
+    "source": "cat",
+    "target": "dog",
+    "rules": "[[\"c*t\",\"dog\"]]",
+    "costs": "[2]"
+  },
+  {
+    "source": "test",
+    "target": "next",
+    "rules": "[[\"*e*t\",\"next\"]]",
+    "costs": "[4]"
+  },
+  {
+    "source": "ab",
+    "target": "bc",
+    "rules": "[[\"a*\",\"bd\"]]",
+    "costs": "[9]"
+  }
+]

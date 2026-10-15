@@ -1,0 +1,63 @@
+{
+  "id": "minimum-total-price-after-applying-discounts",
+  "title": "4014. Minimum Total Price After Applying Discounts",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-total-price-after-applying-discounts/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "prices = [10,30,21], discounts = [50,60]",
+      "output": "32.50000",
+      "explanation": "Apply discounts[1] = 60 to prices[1] = 30, thus 30 * (100 - 60) / 100 = 12. Apply discounts[0] = 50 to prices[2] = 21, thus 21 * (100 - 50) / 100 = 10.5. prices[0] = 10 receives no discount, so it stays 10. The total is 12 + 10.5 + 10 = 32.50000, which is the minimum possible."
+    },
+    {
+      "input": "prices = [100,70], discounts = [10,40,50]",
+      "output": "92.00000",
+      "explanation": "Apply discounts[2] = 50 to prices[0] = 100, thus 100 * (100 - 50) / 100 = 50. Apply discounts[1] = 40 to prices[1] = 70, thus 70 * (100 - 40) / 100 = 42. The total is 50 + 42 = 92.00000, which is the minimum possible."
+    },
+    {
+      "input": "prices = [7,3,9], discounts = [100,100]",
+      "output": "3.00000",
+      "explanation": "Apply discounts[0] = 100 to prices[2] = 9, thus 9 * (100 - 100) / 100 = 0. Apply discounts[1] = 100 to prices[0] = 7, thus 7 * (100 - 100) / 100 = 0. prices[1] = 3 receives no discount, so it stays 3. The total is 0 + 0 + 3 = 3.00000, which is the minimum possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double minPrice(vector<int>& prices, vector<int>& discounts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double minPrice(int[] prices, int[] discounts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minPrice(self, prices: list[int], discounts: list[int]) -> float:\n        ",
+    "typescript": "function minPrice(prices: number[], discounts: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double MinPrice(int[] prices, int[] discounts) {\n        \n    }\n}",
+    "go": "func minPrice(prices []int, discounts []int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_price(prices: Vec<i32>, discounts: Vec<i32>) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "prices": "[10,30,21]",
+      "discounts": "[50,60]"
+    },
+    {
+      "prices": "[100,70]",
+      "discounts": "[10,40,50]"
+    },
+    {
+      "prices": "[7,3,9]",
+      "discounts": "[100,100]"
+    }
+  ],
+  "functionName": "minPrice",
+  "params": [
+    {
+      "name": "prices",
+      "type": "int_array"
+    },
+    {
+      "name": "discounts",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "double",
+  "hints": [
+    "For an item with price <code>p</code> and a discount <code>d</code>, the amount saved is <code>p * d / 100</code>.",
+    "To minimize the total final price, maximize the total amount saved. Consider sorting both arrays and pairing larger prices with larger discounts."
+  ]
+}

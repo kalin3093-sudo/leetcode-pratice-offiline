@@ -1,0 +1,64 @@
+{
+  "id": "smallest-divisible-digit-product-ii",
+  "title": "3348. Smallest Divisible Digit Product II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = \"1234\", t = 256",
+      "output": "\"1488\"",
+      "explanation": "The smallest zero-free number that is greater than 1234 and has the product of its digits divisible by 256 is 1488, with the product of its digits equal to 256."
+    },
+    {
+      "input": "num = \"12355\", t = 50",
+      "output": "\"12355\"",
+      "explanation": "12355 is already zero-free and has the product of its digits divisible by 50, with the product of its digits equal to 150."
+    },
+    {
+      "input": "num = \"11111\", t = 26",
+      "output": "\"-1\"",
+      "explanation": "No number greater than 11111 has the product of its digits divisible by 26."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestNumber(string num, long long t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestNumber(String num, long t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestNumber(self, num: str, t: int) -> str:\n        ",
+    "typescript": "function smallestNumber(num: string, t: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestNumber(string num, long t) {\n        \n    }\n}",
+    "go": "func smallestNumber(num string, t int64) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_number(num: String, t: i64) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "1234",
+      "t": "256"
+    },
+    {
+      "num": "12355",
+      "t": "50"
+    },
+    {
+      "num": "11111",
+      "t": "26"
+    }
+  ],
+  "functionName": "smallestNumber",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "long"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "<code>t</code> should only have 2, 3, 5 and 7 as prime factors.",
+    "Find the shortest suffix that must be changed.",
+    "Try to form the string greedily."
+  ]
+}

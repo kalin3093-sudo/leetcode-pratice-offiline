@@ -1,0 +1,57 @@
+{
+  "id": "super-pow",
+  "title": "372. Super Pow",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/super-pow/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "a = 2, b = [3]",
+      "output": "8"
+    },
+    {
+      "input": "a = 2, b = [1,0]",
+      "output": "1024"
+    },
+    {
+      "input": "a = 1, b = [4,3,3,8,5,2]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int superPow(int a, vector<int>& b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int superPow(int a, int[] b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def superPow(self, a: int, b: list[int]) -> int:\n        ",
+    "typescript": "function superPow(a: number, b: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SuperPow(int a, int[] b) {\n        \n    }\n}",
+    "go": "func superPow(a int, b []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn super_pow(a: i32, b: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": 2,
+      "b": "[3]"
+    },
+    {
+      "a": 2,
+      "b": "[1,0]"
+    },
+    {
+      "a": 1,
+      "b": "[4,3,3,8,5,2]"
+    }
+  ],
+  "functionName": "superPow",
+  "params": [
+    {
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "stamping-the-grid",
+  "title": "2132. Stamping the Grid",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/stamping-the-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]], stampHeight = 4, stampWidth = 3",
+      "output": "true",
+      "explanation": "We have two overlapping stamps (labeled 1 and 2 in the image) that are able to cover all the empty cells."
+    },
+    {
+      "input": "grid = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]], stampHeight = 2, stampWidth = 2",
+      "output": "false",
+      "explanation": "There is no way to fit the stamps onto all the empty cells without the stamps going outside the grid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool possibleToStamp(vector<vector<int>>& grid, int stampHeight, int stampWidth) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean possibleToStamp(int[][] grid, int stampHeight, int stampWidth) {\n        \n    }\n}",
+    "python": "class Solution:\n    def possibleToStamp(self, grid: list[list[int]], stampHeight: int, stampWidth: int) -> bool:\n        ",
+    "typescript": "function possibleToStamp(grid: number[][], stampHeight: number, stampWidth: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool PossibleToStamp(int[][] grid, int stampHeight, int stampWidth) {\n        \n    }\n}",
+    "go": "func possibleToStamp(grid [][]int, stampHeight int, stampWidth int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn possible_to_stamp(grid: Vec<Vec<i32>>, stamp_height: i32, stamp_width: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]]",
+      "stampHeight": 4,
+      "stampWidth": 3
+    },
+    {
+      "grid": "[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]",
+      "stampHeight": 2,
+      "stampWidth": 2
+    }
+  ],
+  "functionName": "possibleToStamp",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "stampHeight",
+      "type": "int"
+    },
+    {
+      "name": "stampWidth",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Can we use prefix sums here?"
+  ]
+}

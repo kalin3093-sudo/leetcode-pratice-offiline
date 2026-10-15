@@ -1,0 +1,69 @@
+{
+  "id": "find-all-numbers-disappeared-in-an-array-ii",
+  "title": "4031. Find All Numbers Disappeared in an Array II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,9,7], lower = 1, upper = 12",
+      "output": "[[1,2],[4,6],[8,8],[10,12]]",
+      "explanation": "The missing integers are [1, 2, 4, 5, 6, 8, 10, 11, 12]. Grouping the missing integers into the minimum number of contiguous ranges, we get [1, 2], [4, 6], [8, 8], and [10, 12]. Therefore, the answer is [[1, 2], [4, 6], [8, 8], [10, 12]]."
+    },
+    {
+      "input": "nums = [1,1], lower = 5, upper = 7",
+      "output": "[[5,7]]",
+      "explanation": "The missing integers are [5, 6, 7]. Grouping the missing integers into the minimum number of contiguous ranges, we get [5, 7]. Therefore, the answer is [[5, 7]]."
+    },
+    {
+      "input": "nums = [2,3,5], lower = 2, upper = 3",
+      "output": "[]",
+      "explanation": "There are no missing integers. Therefore, the answer is []."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> findDisappearedNumbers(vector<int>& nums, int lower, int upper) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> findDisappearedNumbers(int[] nums, int lower, int upper) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findDisappearedNumbers(self, nums: list[int], lower: int, upper: int) -> list[list[int]]:\n        ",
+    "typescript": "function findDisappearedNumbers(nums: number[], lower: number, upper: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> FindDisappearedNumbers(int[] nums, int lower, int upper) {\n        \n    }\n}",
+    "go": "func findDisappearedNumbers(nums []int, lower int, upper int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_disappeared_numbers(nums: Vec<i32>, lower: i32, upper: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,9,7]\r",
+      "lower": 1,
+      "upper": 12
+    },
+    {
+      "nums": "[1,1]\r",
+      "lower": 5,
+      "upper": 7
+    },
+    {
+      "nums": "[2,3,5]\r",
+      "lower": 2,
+      "upper": 3
+    }
+  ],
+  "functionName": "findDisappearedNumbers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "lower",
+      "type": "int"
+    },
+    {
+      "name": "upper",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": [
+    "Mark which integers in <code>[lower, upper]</code> appear in <code>nums</code>, then scan the range and group each maximal consecutive sequence of unmarked integers."
+  ]
+}

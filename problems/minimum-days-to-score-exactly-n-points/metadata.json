@@ -1,0 +1,57 @@
+{
+  "id": "minimum-days-to-score-exactly-n-points",
+  "title": "4050. Minimum Days to Score Exactly N Points",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-days-to-score-exactly-n-points/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "3",
+      "explanation": "Day 1: earn 1 point. Score is 1. Day 2: skip, which resets the streak. Earning here would add 2 points and take the score past n = 2. Day 3: the streak has reset, so earning gives 1 point. Score is exactly n = 2 in 3 days."
+    },
+    {
+      "input": "n = 9",
+      "output": "6",
+      "explanation": "Days 1 to 3: earn 1, 2, and 3 points. Score is 1 + 2 + 3 = 6. Day 4: skip, which resets the streak. Days 5 and 6: earn 1 and 2 points. Score is exactly 6 + 1 + 2 = 9 in 6 days."
+    },
+    {
+      "input": "n = 12",
+      "output": "7",
+      "explanation": "Days 1 to 3: earn 1, 2, and 3 points. Score is 1 + 2 + 3 = 6. Day 4: skip, which resets the streak. Days 5 to 7: earn 1, 2, and 3 points. Score is exactly 6 + 1 + 2 + 3 = 12 in 7 days."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDays(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDays(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDays(self, n: int) -> int:\n        ",
+    "typescript": "function minDays(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDays(int n) {\n        \n    }\n}",
+    "go": "func minDays(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_days(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2
+    },
+    {
+      "n": 9
+    },
+    {
+      "n": 12
+    }
+  ],
+  "functionName": "minDays",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>A streak of length <code>L</code> earns <code>L * (L + 1) / 2</code> points. An optimal schedule has exactly one skipped day between consecutive streaks.</p>",
+    "<p>Temporarily charge each streak <code>L + 1</code> days, including a skipped day after it. Use dynamic programming over the total score, treating each streak length as a reusable option with this cost.</p>",
+    "<p>Subtract one from the result because no skipped day is needed after the final streak. Only <code>O(sqrt(n))</code> streak lengths need to be considered.</p>"
+  ]
+}

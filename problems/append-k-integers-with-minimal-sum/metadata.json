@@ -1,0 +1,55 @@
+{
+  "id": "append-k-integers-with-minimal-sum",
+  "title": "2195. Append K Integers With Minimal Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/append-k-integers-with-minimal-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,4,25,10,25], k = 2",
+      "output": "5",
+      "explanation": "The two unique positive integers that do not appear in nums which we append are 2 and 3. The resulting sum of nums is 1 + 4 + 25 + 10 + 25 + 2 + 3 = 70, which is the minimum. The sum of the two integers appended is 2 + 3 = 5, so we return 5."
+    },
+    {
+      "input": "nums = [5,6], k = 6",
+      "output": "25",
+      "explanation": "The six unique positive integers that do not appear in nums which we append are 1, 2, 3, 4, 7, and 8. The resulting sum of nums is 5 + 6 + 1 + 2 + 3 + 4 + 7 + 8 = 36, which is the minimum. The sum of the six integers appended is 1 + 2 + 3 + 4 + 7 + 8 = 25, so we return 25."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimalKSum(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimalKSum(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimalKSum(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function minimalKSum(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimalKSum(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minimalKSum(nums []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimal_k_sum(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,4,25,10,25]",
+      "k": 2
+    },
+    {
+      "nums": "[5,6]",
+      "k": 6
+    }
+  ],
+  "functionName": "minimalKSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "The k smallest numbers that do not appear in nums will result in the minimum sum.",
+    "Recall that the sum of the first n positive numbers is equal to n * (n+1) / 2.",
+    "Initialize the answer as the sum of 1 to k. Then, adjust the answer depending on the values in nums."
+  ]
+}

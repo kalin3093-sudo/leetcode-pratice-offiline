@@ -1,0 +1,56 @@
+{
+  "id": "largest-substring-between-two-equal-characters",
+  "title": "1624. Largest Substring Between Two Equal Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-substring-between-two-equal-characters/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aa\"",
+      "output": "0",
+      "explanation": "The optimal substring here is an empty substring between the two 'a's."
+    },
+    {
+      "input": "s = \"abca\"",
+      "output": "2",
+      "explanation": "The optimal substring here is \"bc\"."
+    },
+    {
+      "input": "s = \"cbzxy\"",
+      "output": "-1",
+      "explanation": "There are no characters that appear twice in s."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxLengthBetweenEqualCharacters(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxLengthBetweenEqualCharacters(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxLengthBetweenEqualCharacters(self, s: str) -> int:\n        ",
+    "typescript": "function maxLengthBetweenEqualCharacters(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxLengthBetweenEqualCharacters(string s) {\n        \n    }\n}",
+    "go": "func maxLengthBetweenEqualCharacters(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_length_between_equal_characters(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aa"
+    },
+    {
+      "s": "abca"
+    },
+    {
+      "s": "cbzxy"
+    }
+  ],
+  "functionName": "maxLengthBetweenEqualCharacters",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try saving the first and last position of each character",
+    "Try finding every pair of indexes with equal characters"
+  ]
+}

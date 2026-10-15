@@ -1,0 +1,55 @@
+{
+  "id": "maximum-number-of-non-overlapping-palindrome-substrings",
+  "title": "2472. Maximum Number of Non-overlapping Palindrome Substrings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"abaccdbbd\", k = 3",
+      "output": "2",
+      "explanation": "We can select the substrings underlined in s = \"abaccdbbd\". Both \"aba\" and \"dbbd\" are palindromes and have a length of at least k = 3. It can be shown that we cannot find a selection with more than two valid substrings."
+    },
+    {
+      "input": "s = \"adbcda\", k = 2",
+      "output": "0",
+      "explanation": "There is no palindrome substring of length at least 2 in the string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxPalindromes(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxPalindromes(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPalindromes(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function maxPalindromes(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxPalindromes(string s, int k) {\n        \n    }\n}",
+    "go": "func maxPalindromes(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_palindromes(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abaccdbbd",
+      "k": 3
+    },
+    {
+      "s": "adbcda",
+      "k": 2
+    }
+  ],
+  "functionName": "maxPalindromes",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to use dynamic programming to solve the problem.",
+    "let dp[i] be the answer for the prefix s[0…i].",
+    "The final answer to the problem will be dp[n-1]. How do you compute this dp?"
+  ]
+}

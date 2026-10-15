@@ -1,0 +1,55 @@
+{
+  "id": "find-the-longest-semi-repetitive-substring",
+  "title": "2730. Find the Longest Semi-Repetitive Substring",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"52233\"",
+      "output": "4",
+      "explanation": "The longest semi-repetitive substring is \"5223\". Picking the whole string \"52233\" has two adjacent same digit pairs 22 and 33, but at most one is allowed."
+    },
+    {
+      "input": "s = \"5494\"",
+      "output": "4",
+      "explanation": "s is a semi-repetitive string."
+    },
+    {
+      "input": "s = \"1111111\"",
+      "output": "2",
+      "explanation": "The longest semi-repetitive substring is \"11\". Picking the substring \"111\" has two adjacent same digit pairs, but at most one is allowed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSemiRepetitiveSubstring(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSemiRepetitiveSubstring(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSemiRepetitiveSubstring(self, s: str) -> int:\n        ",
+    "typescript": "function longestSemiRepetitiveSubstring(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSemiRepetitiveSubstring(string s) {\n        \n    }\n}",
+    "go": "func longestSemiRepetitiveSubstring(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_semi_repetitive_substring(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "52233"
+    },
+    {
+      "s": "5494"
+    },
+    {
+      "s": "1111111"
+    }
+  ],
+  "functionName": "longestSemiRepetitiveSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Since n is small, we can just check every substring, and if the substring is semi-repetitive, maximize the answer with its length."
+  ]
+}

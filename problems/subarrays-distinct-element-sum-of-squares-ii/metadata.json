@@ -1,0 +1,48 @@
+{
+  "id": "subarrays-distinct-element-sum-of-squares-ii",
+  "title": "2916. Subarrays Distinct Element Sum of Squares II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,1]",
+      "output": "15",
+      "explanation": "Six possible subarrays are: [1]: 1 distinct value [2]: 1 distinct value [1]: 1 distinct value [1,2]: 2 distinct values [2,1]: 2 distinct values [1,2,1]: 2 distinct values The sum of the squares of the distinct counts in all subarrays is equal to 12 + 12 + 12 + 22 + 22 + 22 = 15."
+    },
+    {
+      "input": "nums = [2,2]",
+      "output": "3",
+      "explanation": "Three possible subarrays are: [2]: 1 distinct value [2]: 1 distinct value [2,2]: 1 distinct value The sum of the squares of the distinct counts in all subarrays is equal to 12 + 12 + 12 = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumCounts(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumCounts(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumCounts(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function sumCounts(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumCounts(int[] nums) {\n        \n    }\n}",
+    "go": "func sumCounts(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_counts(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,1]"
+    },
+    {
+      "nums": "[2,2]"
+    }
+  ],
+  "functionName": "sumCounts",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider the sum of the count of distinct values of subarrays ending with index <code>i</code>, let’s call it <code>sum</code>. Now if you need the sum of all subarrays ending with index <code>i + 1</code> think how it can be related to <code>sum</code> and what extra will be needed to add to this.",
+    "You can find that extra sum using the segment tree."
+  ]
+}

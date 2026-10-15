@@ -1,0 +1,17 @@
+[
+  {
+    "plants": "[2,2,3,3]",
+    "capacityA": 5,
+    "capacityB": 5
+  },
+  {
+    "plants": "[2,2,3,3]",
+    "capacityA": 3,
+    "capacityB": 4
+  },
+  {
+    "plants": "[5]",
+    "capacityA": 10,
+    "capacityB": 8
+  }
+]

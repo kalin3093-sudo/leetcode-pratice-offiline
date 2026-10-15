@@ -1,0 +1,55 @@
+{
+  "id": "number-of-adjacent-elements-with-the-same-color",
+  "title": "2672. Number of Adjacent Elements With the Same Color",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 4, queries = [[0,2],[1,2],[3,1],[1,1],[2,1]]",
+      "output": "[0,1,1,0,2]",
+      "explanation": "Initially array colors = [0,0,0,0], where 0 denotes uncolored elements of the array. After the 1st query colors = [2,0,0,0]. The count of adjacent pairs with the same color is 0. After the 2nd query colors = [2,2,0,0]. The count of adjacent pairs with the same color is 1. After the 3rd query colors = [2,2,0,1]. The count of adjacent pairs with the same color is 1. After the 4th query colors = [2,1,0,1]. The count of adjacent pairs with the same color is 0. After the 5th query colors = [2,1,1,1]. The count of adjacent pairs with the same color is 2."
+    },
+    {
+      "input": "n = 1, queries = [[0,100000]]",
+      "output": "[0]",
+      "explanation": "After the 1st query colors = [100000]. The count of adjacent pairs with the same color is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> colorTheArray(int n, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] colorTheArray(int n, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def colorTheArray(self, n: int, queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function colorTheArray(n: number, queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ColorTheArray(int n, int[][] queries) {\n        \n    }\n}",
+    "go": "func colorTheArray(n int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn color_the_array(n: i32, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "queries": "[[0,2],[1,2],[3,1],[1,1],[2,1]]"
+    },
+    {
+      "n": 1,
+      "queries": "[[0,100000]]"
+    }
+  ],
+  "functionName": "colorTheArray",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Since at each query, only one element is being recolored, we just need to focus on its neighbors.",
+    "If an element that is changed on the i-th query had the same color as its right element answer decreases by 1. Similarly contributes its left element too.",
+    "After changing the color, if the element has the same color as its right element answer increases by 1. Similarly contributes its left element too."
+  ]
+}

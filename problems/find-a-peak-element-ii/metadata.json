@@ -1,0 +1,52 @@
+{
+  "id": "find-a-peak-element-ii",
+  "title": "1901. Find a Peak Element II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-a-peak-element-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[1,4],[3,2]]",
+      "output": "[0,1]",
+      "explanation": "Both 3 and 4 are peak elements so [1,0] and [0,1] are both acceptable answers."
+    },
+    {
+      "input": "mat = [[10,20,15],[21,30,14],[7,16,32]]",
+      "output": "[1,1]",
+      "explanation": "Both 30 and 32 are peak elements so [1,1] and [2,2] are both acceptable answers."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findPeakGrid(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findPeakGrid(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findPeakGrid(self, mat: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function findPeakGrid(mat: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindPeakGrid(int[][] mat) {\n        \n    }\n}",
+    "go": "func findPeakGrid(mat [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_peak_grid(mat: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[1,4],[3,2]]"
+    },
+    {
+      "mat": "[[10,20,15],[21,30,14],[7,16,32]]"
+    }
+  ],
+  "functionName": "findPeakGrid",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Let's assume that the width of the array is bigger than the height, otherwise, we will split in another direction.",
+    "Split the array into three parts: central column left side and right side.",
+    "Go through the central column and two neighbor columns and look for maximum.",
+    "If it's in the central column - this is our peak.",
+    "If it's on the left side, run this algorithm on subarray left_side + central_column.",
+    "If it's on the right side, run this algorithm on subarray right_side + central_column"
+  ]
+}

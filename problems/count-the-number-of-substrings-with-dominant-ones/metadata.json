@@ -1,0 +1,49 @@
+{
+  "id": "count-the-number-of-substrings-with-dominant-ones",
+  "title": "3234. Count the Number of Substrings With Dominant Ones",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"00011\"",
+      "output": "5",
+      "explanation": "The substrings with dominant ones are shown in the table below. i j s[i..j] Number of Zeros Number of Ones 3 3 1 0 1 4 4 1 0 1 2 3 01 1 1 3 4 11 0 2 2 4 011 1 2"
+    },
+    {
+      "input": "s = \"101101\"",
+      "output": "16",
+      "explanation": "The substrings with non-dominant ones are shown in the table below. Since there are 21 substrings total and 5 of them have non-dominant ones, it follows that there are 16 substrings with dominant ones. i j s[i..j] Number of Zeros Number of Ones 1 1 0 1 0 4 4 0 1 0 1 4 0110 2 2 0 4 10110 2 3 1 5 01101 2 3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSubstrings(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSubstrings(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSubstrings(self, s: str) -> int:\n        ",
+    "typescript": "function numberOfSubstrings(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSubstrings(string s) {\n        \n    }\n}",
+    "go": "func numberOfSubstrings(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_substrings(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "00011"
+    },
+    {
+      "s": "101101"
+    }
+  ],
+  "functionName": "numberOfSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let us fix the starting index <code>l</code> of the substring and count the number of indices <code>r</code> such that <code>l <= r</code> and the substring <code>s[l..r]</code> has dominant ones.",
+    "A substring with dominant ones has at most <code>sqrt(n)</code> zeros.",
+    "We cannot iterate over every <code>r</code> and check if the  <code>s[l..r]</code> has dominant ones. Instead, we iterate over the next <code>sqrt(n)</code> zeros to the left of <code>l</code> and count the number of substrings with dominant ones where the current zero is the rightmost zero of the substring."
+  ]
+}

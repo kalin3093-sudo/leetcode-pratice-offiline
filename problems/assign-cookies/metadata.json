@@ -1,0 +1,51 @@
+{
+  "id": "assign-cookies",
+  "title": "455. Assign Cookies",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/assign-cookies/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "g = [1,2,3], s = [1,1]",
+      "output": "1",
+      "explanation": "You have 3 children and 2 cookies. The greed factors of 3 children are 1, 2, 3. And even though you have 2 cookies, since their size is both 1, you could only make the child whose greed factor is 1 content. You need to output 1."
+    },
+    {
+      "input": "g = [1,2], s = [1,2,3]",
+      "output": "2",
+      "explanation": "You have 2 children and 3 cookies. The greed factors of 2 children are 1, 2. You have 3 cookies and their sizes are big enough to gratify all of the children, You need to output 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findContentChildren(vector<int>& g, vector<int>& s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findContentChildren(int[] g, int[] s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findContentChildren(self, g: list[int], s: list[int]) -> int:\n        ",
+    "typescript": "function findContentChildren(g: number[], s: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindContentChildren(int[] g, int[] s) {\n        \n    }\n}",
+    "go": "func findContentChildren(g []int, s []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_content_children(g: Vec<i32>, s: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "g": "[1,2,3]",
+      "s": "[1,1]"
+    },
+    {
+      "g": "[1,2]",
+      "s": "[1,2,3]"
+    }
+  ],
+  "functionName": "findContentChildren",
+  "params": [
+    {
+      "name": "g",
+      "type": "int_array"
+    },
+    {
+      "name": "s",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

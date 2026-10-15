@@ -1,0 +1,55 @@
+{
+  "id": "number-of-different-integers-in-a-string",
+  "title": "1805. Number of Different Integers in a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-different-integers-in-a-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"a123bc34d8ef34\"",
+      "output": "3",
+      "explanation": "The three different integers are \"123\", \"34\", and \"8\". Notice that \"34\" is only counted once."
+    },
+    {
+      "input": "word = \"leet1234code234\"",
+      "output": "2"
+    },
+    {
+      "input": "word = \"a1b01c001\"",
+      "output": "1",
+      "explanation": "The three integers \"1\", \"01\", and \"001\" all represent the same integer because the leading zeros are ignored when comparing their decimal values."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numDifferentIntegers(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numDifferentIntegers(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numDifferentIntegers(self, word: str) -> int:\n        ",
+    "typescript": "function numDifferentIntegers(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumDifferentIntegers(string word) {\n        \n    }\n}",
+    "go": "func numDifferentIntegers(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_different_integers(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "a123bc34d8ef34"
+    },
+    {
+      "word": "leet1234code234"
+    },
+    {
+      "word": "a1b01c001"
+    }
+  ],
+  "functionName": "numDifferentIntegers",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to split the string so that each integer is in a different string.",
+    "Try to remove each integer's leading zeroes and compare the strings to find how many of them are unique."
+  ]
+}

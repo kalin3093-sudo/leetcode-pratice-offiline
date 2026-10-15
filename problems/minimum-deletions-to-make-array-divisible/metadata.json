@@ -1,0 +1,54 @@
+{
+  "id": "minimum-deletions-to-make-array-divisible",
+  "title": "2344. Minimum Deletions to Make Array Divisible",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,2,4,3], numsDivide = [9,6,9,3,15]",
+      "output": "2",
+      "explanation": "The smallest element in [2,3,2,4,3] is 2, which does not divide all the elements of numsDivide. We use 2 deletions to delete the elements in nums that are equal to 2 which makes nums = [3,4,3]. The smallest element in [3,4,3] is 3, which divides all the elements of numsDivide. It can be shown that 2 is the minimum number of deletions needed."
+    },
+    {
+      "input": "nums = [4,3,6], numsDivide = [8,2,6,10]",
+      "output": "-1",
+      "explanation": "We want the smallest element in nums to divide all the elements of numsDivide. There is no way to delete elements from nums to allow this."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, vector<int>& numsDivide) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums, int[] numsDivide) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: list[int], numsDivide: list[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[], numsDivide: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums, int[] numsDivide) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int, numsDivide []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>, nums_divide: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,2,4,3]",
+      "numsDivide": "[9,6,9,3,15]"
+    },
+    {
+      "nums": "[4,3,6]",
+      "numsDivide": "[8,2,6,10]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "numsDivide",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How can we find an integer x that divides all the elements of numsDivide?",
+    "Will finding GCD (Greatest Common Divisor) help here?"
+  ]
+}

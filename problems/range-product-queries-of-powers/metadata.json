@@ -1,0 +1,54 @@
+{
+  "id": "range-product-queries-of-powers",
+  "title": "2438. Range Product Queries of Powers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/range-product-queries-of-powers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 15, queries = [[0,1],[2,2],[0,3]]",
+      "output": "[2,4,64]",
+      "explanation": "For n = 15, powers = [1,2,4,8]. It can be shown that powers cannot be a smaller size. Answer to 1st query: powers[0] * powers[1] = 1 * 2 = 2. Answer to 2nd query: powers[2] = 4. Answer to 3rd query: powers[0] * powers[1] * powers[2] * powers[3] = 1 * 2 * 4 * 8 = 64. Each answer modulo 109 + 7 yields the same answer, so [2,4,64] is returned."
+    },
+    {
+      "input": "n = 2, queries = [[0,0]]",
+      "output": "[2]",
+      "explanation": "For n = 2, powers = [2]. The answer to the only query is powers[0] = 2. The answer modulo 109 + 7 is the same, so [2] is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> productQueries(int n, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] productQueries(int n, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def productQueries(self, n: int, queries: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function productQueries(n: number, queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ProductQueries(int n, int[][] queries) {\n        \n    }\n}",
+    "go": "func productQueries(n int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn product_queries(n: i32, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 15,
+      "queries": "[[0,1],[2,2],[0,3]]"
+    },
+    {
+      "n": 2,
+      "queries": "[[0,0]]"
+    }
+  ],
+  "functionName": "productQueries",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "The <code>powers</code> array can be created using the binary representation of <code>n</code>.",
+    "Once <code>powers</code> is formed, the products can be taken using brute force."
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "maximize-area-of-square-hole-in-grid",
+  "title": "2943. Maximize Area of Square Hole in Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 2, m = 1, hBars = [2,3], vBars = [2]",
+      "output": "4",
+      "explanation": "The left image shows the initial grid formed by the bars. The horizontal bars are [1,2,3,4], and the vertical bars are [1,2,3]. One way to get the maximum square-shaped hole is by removing horizontal bar 2 and vertical bar 2."
+    },
+    {
+      "input": "n = 1, m = 1, hBars = [2], vBars = [2]",
+      "output": "4",
+      "explanation": "To get the maximum square-shaped hole, we remove horizontal bar 2 and vertical bar 2."
+    },
+    {
+      "input": "n = 2, m = 3, hBars = [2,3], vBars = [2,4]",
+      "output": "4",
+      "explanation": "One way to get the maximum square-shaped hole is by removing horizontal bar 3, and vertical bar 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximizeSquareHoleArea(int n, int m, vector<int>& hBars, vector<int>& vBars) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximizeSquareHoleArea(int n, int m, int[] hBars, int[] vBars) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximizeSquareHoleArea(self, n: int, m: int, hBars: List[int], vBars: List[int]) -> int:\n        ",
+    "typescript": "function maximizeSquareHoleArea(n: number, m: number, hBars: number[], vBars: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximizeSquareHoleArea(int n, int m, int[] hBars, int[] vBars) {\n        \n    }\n}",
+    "go": "func maximizeSquareHoleArea(n int, m int, hBars []int, vBars []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximize_square_hole_area(n: i32, m: i32, h_bars: Vec<i32>, v_bars: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "m": 1,
+      "hBars": "[2,3]",
+      "vBars": "[2]"
+    },
+    {
+      "n": 1,
+      "m": 1,
+      "hBars": "[2]",
+      "vBars": "[2]"
+    },
+    {
+      "n": 2,
+      "m": 3,
+      "hBars": "[2,3]",
+      "vBars": "[2,4]"
+    }
+  ],
+  "functionName": "maximizeSquareHoleArea",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "hBars",
+      "type": "int_array"
+    },
+    {
+      "name": "vBars",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort <code>hBars</code> and <code>vBars</code> and consider them separately.",
+    "Compute the longest sequence of consecutive integer values in each array, denoted as <code>[hx, hy]</code> and <code>[vx, vy]</code>, respectively.",
+    "The maximum square length we can get is <code>min(hy - hx + 2, vy - vx + 2)</code>.",
+    "Square the maximum square length to get the area."
+  ]
+}

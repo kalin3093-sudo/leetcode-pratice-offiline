@@ -1,0 +1,10 @@
+You are given a **0-indexed** integer array `nums` representing the strength of some heroes. The **power** of a group of heroes is defined as follows:
+
+-   Let `i0`, `i1`, ... ,`ik` be the indices of the heroes in a group. Then, the power of this group is `max(nums[i0], nums[i1], ... ,nums[ik])^2 * min(nums[i0], nums[i1], ... ,nums[ik])`.
+
+Return *the sum of the **power** of all **non-empty** groups of heroes possible.* Since the sum could be very large, return it **modulo** `10^9 + 7`.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 10^5`
+-   `1 ≤ nums[i] ≤ 10^9`

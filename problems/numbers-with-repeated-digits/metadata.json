@@ -1,0 +1,55 @@
+{
+  "id": "numbers-with-repeated-digits",
+  "title": "1012. Numbers With Repeated Digits",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/numbers-with-repeated-digits/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 20",
+      "output": "1",
+      "explanation": "The only positive number (<= 20) with at least 1 repeated digit is 11."
+    },
+    {
+      "input": "n = 100",
+      "output": "10",
+      "explanation": "The positive numbers (<= 100) with atleast 1 repeated digit are 11, 22, 33, 44, 55, 66, 77, 88, 99, and 100."
+    },
+    {
+      "input": "n = 1000",
+      "output": "262"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numDupDigitsAtMostN(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numDupDigitsAtMostN(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numDupDigitsAtMostN(self, n: int) -> int:\n        ",
+    "typescript": "function numDupDigitsAtMostN(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumDupDigitsAtMostN(int n) {\n        \n    }\n}",
+    "go": "func numDupDigitsAtMostN(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_dup_digits_at_most_n(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 20
+    },
+    {
+      "n": 100
+    },
+    {
+      "n": 1000
+    }
+  ],
+  "functionName": "numDupDigitsAtMostN",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How many numbers with no duplicate digits?  How many numbers with K digits and no duplicates?",
+    "How many numbers with same length as N?  How many numbers with same prefix as N?"
+  ]
+}

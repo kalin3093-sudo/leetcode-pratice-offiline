@@ -1,0 +1,62 @@
+{
+  "id": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+  "title": "1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [8,2,4,7], limit = 4",
+      "output": "2",
+      "explanation": "All subarrays are: [8] with maximum absolute diff |8-8| = 0 <= 4. [8,2] with maximum absolute diff |8-2| = 6 > 4. [8,2,4] with maximum absolute diff |8-2| = 6 > 4. [8,2,4,7] with maximum absolute diff |8-2| = 6 > 4. [2] with maximum absolute diff |2-2| = 0 <= 4. [2,4] with maximum absolute diff |2-4| = 2 <= 4. [2,4,7] with maximum absolute diff |2-7| = 5 > 4. [4] with maximum absolute diff |4-4| = 0 <= 4. [4,7] with maximum absolute diff |4-7| = 3 <= 4. [7] with maximum absolute diff |7-7| = 0 <= 4. Therefore, the size of the longest subarray is 2."
+    },
+    {
+      "input": "nums = [10,1,2,4,7,2], limit = 5",
+      "output": "4",
+      "explanation": "The subarray [2,4,7,2] is the longest since the maximum absolute diff is |2-7| = 5 <= 5."
+    },
+    {
+      "input": "nums = [4,2,2,2,4,4,2,2], limit = 0",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubarray(vector<int>& nums, int limit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubarray(int[] nums, int limit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubarray(self, nums: list[int], limit: int) -> int:\n        ",
+    "typescript": "function longestSubarray(nums: number[], limit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubarray(int[] nums, int limit) {\n        \n    }\n}",
+    "go": "func longestSubarray(nums []int, limit int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subarray(nums: Vec<i32>, limit: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[8,2,4,7]",
+      "limit": 4
+    },
+    {
+      "nums": "[10,1,2,4,7,2]",
+      "limit": 5
+    },
+    {
+      "nums": "[4,2,2,2,4,4,2,2]",
+      "limit": 0
+    }
+  ],
+  "functionName": "longestSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "limit",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a sliding window approach keeping the maximum and minimum value using a data structure like a multiset from STL in C++.",
+    "More specifically, use the two pointer technique, moving the right pointer as far as possible to the right until the subarray is not valid (maxValue - minValue > limit), then moving the left pointer until the subarray is valid again (maxValue - minValue <= limit). Keep repeating this process."
+  ]
+}

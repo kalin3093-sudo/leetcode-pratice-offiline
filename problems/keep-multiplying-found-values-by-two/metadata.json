@@ -1,0 +1,56 @@
+{
+  "id": "keep-multiplying-found-values-by-two",
+  "title": "2154. Keep Multiplying Found Values by Two",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/keep-multiplying-found-values-by-two/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,3,6,1,12], original = 3",
+      "output": "24",
+      "explanation": "- 3 is found in nums. 3 is multiplied by 2 to obtain 6. - 6 is found in nums. 6 is multiplied by 2 to obtain 12. - 12 is found in nums. 12 is multiplied by 2 to obtain 24. - 24 is not found in nums. Thus, 24 is returned."
+    },
+    {
+      "input": "nums = [2,7,9], original = 4",
+      "output": "4",
+      "explanation": "- 4 is not found in nums. Thus, 4 is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findFinalValue(vector<int>& nums, int original) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findFinalValue(int[] nums, int original) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findFinalValue(self, nums: list[int], original: int) -> int:\n        ",
+    "typescript": "function findFinalValue(nums: number[], original: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindFinalValue(int[] nums, int original) {\n        \n    }\n}",
+    "go": "func findFinalValue(nums []int, original int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_final_value(nums: Vec<i32>, original: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,3,6,1,12]",
+      "original": 3
+    },
+    {
+      "nums": "[2,7,9]",
+      "original": 4
+    }
+  ],
+  "functionName": "findFinalValue",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "original",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Repeatedly iterate through the array and check if the current value of original is in the array.",
+    "If original is not found, stop and return its current value.",
+    "Otherwise, multiply original by 2 and repeat the process.",
+    "Use set data structure to check the existence faster."
+  ]
+}

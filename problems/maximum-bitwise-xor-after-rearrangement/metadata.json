@@ -1,0 +1,64 @@
+{
+  "id": "maximum-bitwise-xor-after-rearrangement",
+  "title": "3849. Maximum Bitwise XOR After Rearrangement",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-bitwise-xor-after-rearrangement/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"101\", t = \"011\"",
+      "output": "\"110\"",
+      "explanation": "One optimal rearrangement of t is \"011\". The bitwise XOR of s and rearranged t is \"101\" XOR \"011\" = \"110\", which is the maximum possible."
+    },
+    {
+      "input": "s = \"0110\", t = \"1110\"",
+      "output": "\"1101\"",
+      "explanation": "One optimal rearrangement of t is \"1011\". The bitwise XOR of s and rearranged t is \"0110\" XOR \"1011\" = \"1101\", which is the maximum possible."
+    },
+    {
+      "input": "s = \"0101\", t = \"1001\"",
+      "output": "\"1111\"",
+      "explanation": "One optimal rearrangement of t is \"1010\". The bitwise XOR of s and rearranged t is \"0101\" XOR \"1010\" = \"1111\", which is the maximum possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string maximumXor(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String maximumXor(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumXor(self, s: str, t: str) -> str:\n        ",
+    "typescript": "function maximumXor(s: string, t: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MaximumXor(string s, string t) {\n        \n    }\n}",
+    "go": "func maximumXor(s string, t string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_xor(s: String, t: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "101",
+      "t": "011"
+    },
+    {
+      "s": "0110",
+      "t": "1110"
+    },
+    {
+      "s": "0101",
+      "t": "1001"
+    }
+  ],
+  "functionName": "maximumXor",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Count how many <code>'0'</code> and <code>'1'</code> characters exist in <code>t</code>.",
+    "To maximize XOR, try to place opposite bits: match <code>'1'</code> in <code>s</code> with <code>'0'</code> from <code>t</code>, and <code>'0'</code> in <code>s</code> with <code>'1'</code>.",
+    "Greedily build the result from left to right, using available counts while maximizing each XOR bit."
+  ]
+}

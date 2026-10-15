@@ -1,0 +1,74 @@
+{
+  "id": "merge-operations-for-minimum-travel-time",
+  "title": "3538. Merge Operations for Minimum Travel Time",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/merge-operations-for-minimum-travel-time/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "l = 10, n = 4, k = 1, position = [0,3,8,10], time = [5,8,3,6]",
+      "output": "62",
+      "explanation": "Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 8 + 3 = 11. After the merge: position array: [0, 8, 10] time array: [5, 11, 6] Segment Distance (km) Time per km (min) Segment Travel Time (min) 0 &rarr; 8 8 5 8 &times; 5 = 40 8 &rarr; 10 2 11 2 &times; 11 = 22 Total Travel Time: 40 + 22 = 62, which is the minimum possible time after exactly 1 merge."
+    },
+    {
+      "input": "l = 5, n = 5, k = 1, position = [0,1,2,3,5], time = [8,3,9,3,3]",
+      "output": "34",
+      "explanation": "Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 3 + 9 = 12. After the merge: position array: [0, 2, 3, 5] time array: [8, 12, 3, 3] Segment Distance (km) Time per km (min) Segment Travel Time (min) 0 &rarr; 2 2 8 2 &times; 8 = 16 2 &rarr; 3 1 12 1 &times; 12 = 12 3 &rarr; 5 2 3 2 &times; 3 = 6 Total Travel Time: 16 + 12 + 6 = 34, which is the minimum possible time after exactly 1 merge."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minTravelTime(int l, int n, int k, vector<int>& position, vector<int>& time) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minTravelTime(int l, int n, int k, int[] position, int[] time) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minTravelTime(self, l: int, n: int, k: int, position: List[int], time: List[int]) -> int:\n        ",
+    "typescript": "function minTravelTime(l: number, n: number, k: number, position: number[], time: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinTravelTime(int l, int n, int k, int[] position, int[] time) {\n        \n    }\n}",
+    "go": "func minTravelTime(l int, n int, k int, position []int, time []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_travel_time(l: i32, n: i32, k: i32, position: Vec<i32>, time: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": 10,
+      "n": 4,
+      "k": 1,
+      "position": "[0,3,8,10]",
+      "time": "[5,8,3,6]"
+    },
+    {
+      "l": 5,
+      "n": 5,
+      "k": 1,
+      "position": "[0,1,2,3,5]",
+      "time": "[8,3,9,3,3]"
+    }
+  ],
+  "functionName": "minTravelTime",
+  "params": [
+    {
+      "name": "l",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "position",
+      "type": "int_array"
+    },
+    {
+      "name": "time",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "After <code>k</code> merges, you’ll have <code>n-k</code> signs left.",
+    "Define <code>DP[i][j][s]</code> as the minimum travel time for positions <code>0..i</code> when <code>i</code> is kept, <code>j</code> deletions are done overall, and <code>s</code> consecutive deletions occurred immediately before <code>i</code>.",
+    "Update the DP by either merging (increment <code>s</code> and <code>j</code>) or not merging (reset <code>s</code>) and adding the appropriate travel time."
+  ]
+}

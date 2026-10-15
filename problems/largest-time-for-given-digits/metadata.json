@@ -1,0 +1,45 @@
+{
+  "id": "largest-time-for-given-digits",
+  "title": "949. Largest Time for Given Digits",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-time-for-given-digits/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,2,3,4]",
+      "output": "\"23:41\"",
+      "explanation": "The valid 24-hour times are \"12:34\", \"12:43\", \"13:24\", \"13:42\", \"14:23\", \"14:32\", \"21:34\", \"21:43\", \"23:14\", and \"23:41\". Of these times, \"23:41\" is the latest."
+    },
+    {
+      "input": "arr = [5,5,5,5]",
+      "output": "\"\"",
+      "explanation": "There are no valid 24-hour times as \"55:55\" is not valid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestTimeFromDigits(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestTimeFromDigits(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestTimeFromDigits(self, arr: list[int]) -> str:\n        ",
+    "typescript": "function largestTimeFromDigits(arr: number[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestTimeFromDigits(int[] arr) {\n        \n    }\n}",
+    "go": "func largestTimeFromDigits(arr []int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_time_from_digits(arr: Vec<i32>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,2,3,4]"
+    },
+    {
+      "arr": "[5,5,5,5]"
+    }
+  ],
+  "functionName": "largestTimeFromDigits",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

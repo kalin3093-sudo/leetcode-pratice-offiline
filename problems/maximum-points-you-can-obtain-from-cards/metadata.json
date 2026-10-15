@@ -1,0 +1,63 @@
+{
+  "id": "maximum-points-you-can-obtain-from-cards",
+  "title": "1423. Maximum Points You Can Obtain from Cards",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cardPoints = [1,2,3,4,5,6,1], k = 3",
+      "output": "12",
+      "explanation": "After the first step, your score will always be 1. However, choosing the rightmost card first will maximize your total score. The optimal strategy is to take the three cards on the right, giving a final score of 1 + 6 + 5 = 12."
+    },
+    {
+      "input": "cardPoints = [2,2,2], k = 2",
+      "output": "4",
+      "explanation": "Regardless of which two cards you take, your score will always be 4."
+    },
+    {
+      "input": "cardPoints = [9,7,7,9,7,7,9], k = 7",
+      "output": "55",
+      "explanation": "You have to take all the cards. Your score is the sum of points of all cards."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScore(vector<int>& cardPoints, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScore(int[] cardPoints, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, cardPoints: list[int], k: int) -> int:\n        ",
+    "typescript": "function maxScore(cardPoints: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScore(int[] cardPoints, int k) {\n        \n    }\n}",
+    "go": "func maxScore(cardPoints []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(card_points: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cardPoints": "[1,2,3,4,5,6,1]",
+      "k": 3
+    },
+    {
+      "cardPoints": "[2,2,2]",
+      "k": 2
+    },
+    {
+      "cardPoints": "[9,7,7,9,7,7,9]",
+      "k": 7
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "cardPoints",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let the sum of all points be total_pts. You need to remove a sub-array from cardPoints with length n - k.",
+    "Keep a window of size n - k over the array. The answer is max(answer, total_pts - sumOfCurrentWindow)"
+  ]
+}

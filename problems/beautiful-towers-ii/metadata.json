@@ -1,0 +1,59 @@
+{
+  "id": "beautiful-towers-ii",
+  "title": "2866. Beautiful Towers II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/beautiful-towers-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "maxHeights = [5,3,4,1,1]",
+      "output": "13",
+      "explanation": "One beautiful configuration with a maximum sum is heights = [5,3,3,1,1]. This configuration is beautiful since: - 1 <= heights[i] <= maxHeights[i] - heights is a mountain of peak i = 0. It can be shown that there exists no other beautiful configuration with a sum of heights greater than 13."
+    },
+    {
+      "input": "maxHeights = [6,5,3,9,2,7]",
+      "output": "22",
+      "explanation": "One beautiful configuration with a maximum sum is heights = [3,3,3,9,2,2]. This configuration is beautiful since: - 1 <= heights[i] <= maxHeights[i] - heights is a mountain of peak i = 3. It can be shown that there exists no other beautiful configuration with a sum of heights greater than 22."
+    },
+    {
+      "input": "maxHeights = [3,2,5,5,2,3]",
+      "output": "18",
+      "explanation": "One beautiful configuration with a maximum sum is heights = [2,2,5,5,2,2]. This configuration is beautiful since: - 1 <= heights[i] <= maxHeights[i] - heights is a mountain of peak i = 2. Note that, for this configuration, i = 3 can also be considered a peak. It can be shown that there exists no other beautiful configuration with a sum of heights greater than 18."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumSumOfHeights(vector<int>& maxHeights) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumSumOfHeights(List<Integer> maxHeights) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumSumOfHeights(self, maxHeights: List[int]) -> int:\n        ",
+    "typescript": "function maximumSumOfHeights(maxHeights: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumSumOfHeights(IList<int> maxHeights) {\n        \n    }\n}",
+    "go": "func maximumSumOfHeights(maxHeights []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_sum_of_heights(max_heights: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "maxHeights": "[5,3,4,1,1]"
+    },
+    {
+      "maxHeights": "[6,5,3,9,2,7]"
+    },
+    {
+      "maxHeights": "[3,2,5,5,2,3]"
+    }
+  ],
+  "functionName": "maximumSumOfHeights",
+  "params": [
+    {
+      "name": "maxHeights",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Try all the possible indices <code>i</code> as the peak.",
+    "Let <code>left[i]</code> be the maximum sum of heights for the prefix <code>0, …, i</code> when index <code>i</code> is the peak.",
+    "Let <code>right[i]</code> be the maximum sum of heights for suffix <code>i, …, (n - 1)</code> when <code>i</code> is the peak",
+    "Compute values of <code>left[i]</code> from left to right using DP.\r\nFor each <code>i</code> from <code>0</code> to <code>n - 1</code>, <code>left[i] = maxHeights * (i - j) + answer[j]</code>, where <code>j</code> is the rightmost index to the left of <code>i</code> such that <code>maxHeights[j] < maxHeights[i] </code>.",
+    "For each <code>i</code> from <code>n - 1</code> to <code>0</code>, <code>right[i] = maxHeights * (j - i) + answer[j]</code>, where <code>j</code> is the leftmost index to the right of <code>i</code> such that <code>maxHeights[j] < maxHeights[i] </code>."
+  ]
+}

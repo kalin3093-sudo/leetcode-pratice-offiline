@@ -1,0 +1,57 @@
+{
+  "id": "find-a-good-subset-of-the-matrix",
+  "title": "2732. Find a Good Subset of the Matrix",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-a-good-subset-of-the-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
+      "output": "[0,1]",
+      "explanation": "We can choose the 0th and 1st rows to create a good subset of rows. The length of the chosen subset is 2. - The sum of the 0th column is 0 + 0 = 0, which is at most half of the length of the subset. - The sum of the 1st column is 1 + 0 = 1, which is at most half of the length of the subset. - The sum of the 2nd column is 1 + 0 = 1, which is at most half of the length of the subset. - The sum of the 3rd column is 0 + 1 = 1, which is at most half of the length of the subset."
+    },
+    {
+      "input": "grid = [[0]]",
+      "output": "[0]",
+      "explanation": "We can choose the 0th row to create a good subset of rows. The length of the chosen subset is 1. - The sum of the 0th column is 0, which is at most half of the length of the subset."
+    },
+    {
+      "input": "grid = [[1,1,1],[1,1,1]]",
+      "output": "[]",
+      "explanation": "It is impossible to choose any subset of rows to create a good subset."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> goodSubsetofBinaryMatrix(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> goodSubsetofBinaryMatrix(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def goodSubsetofBinaryMatrix(self, grid: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function goodSubsetofBinaryMatrix(grid: number[][]): number[] {\n\n};",
+    "csharp": "public class Solution {\n    public IList<int> GoodSubsetofBinaryMatrix(int[][] grid) {\n        \n    }\n}",
+    "go": "func goodSubsetofBinaryMatrix(grid [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn good_subsetof_binary_matrix(grid: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,1,0],[0,0,0,1],[1,1,1,1]]"
+    },
+    {
+      "grid": "[[0]]"
+    },
+    {
+      "grid": "[[1,1,1],[1,1,1]]"
+    }
+  ],
+  "functionName": "goodSubsetofBinaryMatrix",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "It can be proven, that if there exists a good subset of rows then there exists a good subset of rows with the size of either 1 or 2.",
+    "To check if there exists a good subset of rows of size 1, we check if there exists a row containing only zeros, if it does, we return its index as a good subset.",
+    "To check if there exists a good subset of rows of size 2, we iterate over two bit-masks, check if both are presented in the array and if they form a good subset, if they do, return their indices as a good subset."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "lexicographically-smallest-string-after-reverse",
+  "title": "3722. Lexicographically Smallest String After Reverse",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"dcab\"",
+      "output": "\"acdb\"",
+      "explanation": "Choose k = 3, reverse the first 3 characters. Reverse \"dca\" to \"acd\", resulting string s = \"acdb\", which is the lexicographically smallest string achievable."
+    },
+    {
+      "input": "s = \"abba\"",
+      "output": "\"aabb\"",
+      "explanation": "Choose k = 3, reverse the last 3 characters. Reverse \"bba\" to \"abb\", so the resulting string is \"aabb\", which is the lexicographically smallest string achievable."
+    },
+    {
+      "input": "s = \"zxy\"",
+      "output": "\"xzy\"",
+      "explanation": "Choose k = 2, reverse the first 2 characters. Reverse \"zx\" to \"xz\", so the resulting string is \"xzy\", which is the lexicographically smallest string achievable."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lexSmallest(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lexSmallest(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lexSmallest(self, s: str) -> str:\n        ",
+    "typescript": "function lexSmallest(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LexSmallest(string s) {\n        \n    }\n}",
+    "go": "func lexSmallest(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn lex_smallest(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "dcab"
+    },
+    {
+      "s": "abba"
+    },
+    {
+      "s": "zxy"
+    }
+  ],
+  "functionName": "lexSmallest",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Use bruteforce"
+  ]
+}

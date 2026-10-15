@@ -1,0 +1,56 @@
+{
+  "id": "minimum-length-of-string-after-deleting-similar-ends",
+  "title": "1750. Minimum Length of String After Deleting Similar Ends",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"ca\"",
+      "output": "2",
+      "explanation": "You can't remove any characters, so the string stays as is."
+    },
+    {
+      "input": "s = \"cabaabac\"",
+      "output": "0",
+      "explanation": "An optimal sequence of operations is: - Take prefix = \"c\" and suffix = \"c\" and remove them, s = \"abaaba\". - Take prefix = \"a\" and suffix = \"a\" and remove them, s = \"baab\". - Take prefix = \"b\" and suffix = \"b\" and remove them, s = \"aa\". - Take prefix = \"a\" and suffix = \"a\" and remove them, s = \"\"."
+    },
+    {
+      "input": "s = \"aabccabba\"",
+      "output": "3",
+      "explanation": "An optimal sequence of operations is: - Take prefix = \"aa\" and suffix = \"a\" and remove them, s = \"bccabb\". - Take prefix = \"b\" and suffix = \"bb\" and remove them, s = \"cca\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumLength(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumLength(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumLength(self, s: str) -> int:\n        ",
+    "typescript": "function minimumLength(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumLength(string s) {\n        \n    }\n}",
+    "go": "func minimumLength(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_length(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "ca"
+    },
+    {
+      "s": "cabaabac"
+    },
+    {
+      "s": "aabccabba"
+    }
+  ],
+  "functionName": "minimumLength",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If both ends have distinct characters, no more operations can be made. Otherwise, the only operation is to remove all of the same characters from both ends. We will do this as many times as we can.",
+    "Note that if the length is equal 1 the answer is 1"
+  ]
+}

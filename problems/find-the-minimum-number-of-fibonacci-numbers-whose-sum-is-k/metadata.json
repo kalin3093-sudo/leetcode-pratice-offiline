@@ -1,0 +1,56 @@
+{
+  "id": "find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k",
+  "title": "1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "k = 7",
+      "output": "2",
+      "explanation": "The Fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13, ... For k = 7 we can use 2 + 5 = 7."
+    },
+    {
+      "input": "k = 10",
+      "output": "2",
+      "explanation": "For k = 10 we can use 2 + 8 = 10."
+    },
+    {
+      "input": "k = 19",
+      "output": "3",
+      "explanation": "For k = 19 we can use 1 + 5 + 13 = 19."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMinFibonacciNumbers(int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMinFibonacciNumbers(int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMinFibonacciNumbers(self, k: int) -> int:\n        ",
+    "typescript": "function findMinFibonacciNumbers(k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMinFibonacciNumbers(int k) {\n        \n    }\n}",
+    "go": "func findMinFibonacciNumbers(k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_min_fibonacci_numbers(k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 7
+    },
+    {
+      "k": 10
+    },
+    {
+      "k": 19
+    }
+  ],
+  "functionName": "findMinFibonacciNumbers",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Generate all Fibonacci numbers up to the limit (they are few).",
+    "Use greedy solution, taking at every time the greatest Fibonacci number which is smaller than or equal to the current number. Subtract this Fibonacci number from the current number and repeat again the process."
+  ]
+}

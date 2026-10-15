@@ -1,0 +1,54 @@
+{
+  "id": "maximize-the-topmost-element-after-k-moves",
+  "title": "2202. Maximize the Topmost Element After K Moves",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,2,2,4,0,6], k = 4",
+      "output": "5",
+      "explanation": "One of the ways we can end with 5 at the top of the pile after 4 moves is as follows: - Step 1: Remove the topmost element = 5. The pile becomes [2,2,4,0,6]. - Step 2: Remove the topmost element = 2. The pile becomes [2,4,0,6]. - Step 3: Remove the topmost element = 2. The pile becomes [4,0,6]. - Step 4: Add 5 back onto the pile. The pile becomes [5,4,0,6]. Note that this is not the only way to end with 5 at the top of the pile. It can be shown that 5 is the largest answer possible after 4 moves."
+    },
+    {
+      "input": "nums = [2], k = 1",
+      "output": "-1",
+      "explanation": "In the first move, our only option is to pop the topmost element of the pile. Since it is not possible to obtain a non-empty pile after one move, we return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumTop(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumTop(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumTop(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function maximumTop(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumTop(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func maximumTop(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_top(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,2,2,4,0,6]",
+      "k": 4
+    },
+    {
+      "nums": "[2]",
+      "k": 1
+    }
+  ],
+  "functionName": "maximumTop",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each index i, how can we check if nums[i] can be present at the top of the pile or not after k moves?",
+    "For which conditions will we end up with an empty pile?"
+  ]
+}

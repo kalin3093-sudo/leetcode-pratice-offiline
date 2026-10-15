@@ -1,0 +1,53 @@
+{
+  "id": "find-the-smallest-divisor-given-a-threshold",
+  "title": "1283. Find the Smallest Divisor Given a Threshold",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,5,9], threshold = 6",
+      "output": "5",
+      "explanation": "We can get a sum to 17 (1+2+5+9) if the divisor is 1. If the divisor is 4 we can get a sum of 7 (1+1+2+3) and if the divisor is 5 the sum will be 5 (1+1+1+2)."
+    },
+    {
+      "input": "nums = [44,22,33,11,1], threshold = 5",
+      "output": "44"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestDivisor(vector<int>& nums, int threshold) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestDivisor(int[] nums, int threshold) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestDivisor(self, nums: list[int], threshold: int) -> int:\n        ",
+    "typescript": "function smallestDivisor(nums: number[], threshold: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestDivisor(int[] nums, int threshold) {\n        \n    }\n}",
+    "go": "func smallestDivisor(nums []int, threshold int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,5,9]",
+      "threshold": 6
+    },
+    {
+      "nums": "[44,22,33,11,1]",
+      "threshold": 5
+    }
+  ],
+  "functionName": "smallestDivisor",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "threshold",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Examine every possible number for solution. Choose the largest of them.",
+    "Use binary search to reduce the time complexity."
+  ]
+}

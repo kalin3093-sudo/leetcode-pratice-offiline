@@ -1,0 +1,53 @@
+{
+  "id": "alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
+  "title": "1604. Alert Using Same Key-Card Three or More Times in a One Hour Period",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "keyName = [\"daniel\",\"daniel\",\"daniel\",\"luis\",\"luis\",\"luis\",\"luis\"], keyTime = [\"10:00\",\"10:40\",\"11:00\",\"09:00\",\"11:00\",\"13:00\",\"15:00\"]",
+      "output": "[\"daniel\"]",
+      "explanation": "\"daniel\" used the keycard 3 times in a one-hour period (\"10:00\",\"10:40\", \"11:00\")."
+    },
+    {
+      "input": "keyName = [\"alice\",\"alice\",\"alice\",\"bob\",\"bob\",\"bob\",\"bob\"], keyTime = [\"12:01\",\"12:00\",\"18:00\",\"21:00\",\"21:20\",\"21:30\",\"23:00\"]",
+      "output": "[\"bob\"]",
+      "explanation": "\"bob\" used the keycard 3 times in a one-hour period (\"21:00\",\"21:20\", \"21:30\")."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> alertNames(vector<string>& keyName, vector<string>& keyTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> alertNames(String[] keyName, String[] keyTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def alertNames(self, keyName: list[str], keyTime: list[str]) -> list[str]:\n        ",
+    "typescript": "function alertNames(keyName: string[], keyTime: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> AlertNames(string[] keyName, string[] keyTime) {\n        \n    }\n}",
+    "go": "func alertNames(keyName []string, keyTime []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn alert_names(key_name: Vec<String>, key_time: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "keyName": "[\"daniel\",\"daniel\",\"daniel\",\"luis\",\"luis\",\"luis\",\"luis\"]",
+      "keyTime": "[\"10:00\",\"10:40\",\"11:00\",\"09:00\",\"11:00\",\"13:00\",\"15:00\"]"
+    },
+    {
+      "keyName": "[\"alice\",\"alice\",\"alice\",\"bob\",\"bob\",\"bob\",\"bob\"]",
+      "keyTime": "[\"12:01\",\"12:00\",\"18:00\",\"21:00\",\"21:20\",\"21:30\",\"23:00\"]"
+    }
+  ],
+  "functionName": "alertNames",
+  "params": [
+    {
+      "name": "keyName",
+      "type": "string_array"
+    },
+    {
+      "name": "keyTime",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Group the times by the name of the card user, then sort each group"
+  ]
+}

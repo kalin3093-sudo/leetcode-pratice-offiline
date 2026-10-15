@@ -1,0 +1,57 @@
+{
+  "id": "longest-common-prefix-of-k-strings-after-removal",
+  "title": "3485. Longest Common Prefix of K Strings After Removal",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"jump\",\"run\",\"run\",\"jump\",\"run\"], k = 2",
+      "output": "[3,4,4,3,4]",
+      "explanation": "Removing index 0 (\"jump\"): words becomes: [\"run\", \"run\", \"jump\", \"run\"]. \"run\" occurs 3 times. Choosing any two gives the longest common prefix \"run\" (length 3). Removing index 1 (\"run\"): words becomes: [\"jump\", \"run\", \"jump\", \"run\"]. \"jump\" occurs twice. Choosing these two gives the longest common prefix \"jump\" (length 4). Removing index 2 (\"run\"): words becomes: [\"jump\", \"run\", \"jump\", \"run\"]. \"jump\" occurs twice. Choosing these two gives the longest common prefix \"jump\" (length 4). Removing index 3 (\"jump\"): words becomes: [\"jump\", \"run\", \"run\", \"run\"]. \"run\" occurs 3 times. Choosing any two gives the longest common prefix \"run\" (length 3). Removing index 4 (\"run\"): words becomes: [\"jump\", \"run\", \"run\", \"jump\"]. \"jump\" occurs twice. Choosing these two gives the longest common prefix \"jump\" (length 4)."
+    },
+    {
+      "input": "words = [\"dog\",\"racer\",\"car\"], k = 2",
+      "output": "[0,0,0]",
+      "explanation": "Removing any index results in an answer of 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> longestCommonPrefix(vector<string>& words, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] longestCommonPrefix(String[] words, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestCommonPrefix(self, words: List[str], k: int) -> List[int]:\n        ",
+    "typescript": "function longestCommonPrefix(words: string[], k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] LongestCommonPrefix(string[] words, int k) {\n        \n    }\n}",
+    "go": "func longestCommonPrefix(words []string, k int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_common_prefix(words: Vec<String>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]",
+      "k": 2
+    },
+    {
+      "words": "[\"dog\",\"racer\",\"car\"]",
+      "k": 2
+    }
+  ],
+  "functionName": "longestCommonPrefix",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use a trie to store all the strings initially.",
+    "For each node in the trie, maintain the count of paths ending there.",
+    "For each <code>arr[i]</code>, remove it from the trie and update the counts.",
+    "During evaluation, find the innermost node with at least <code>k</code> paths ending there.",
+    "Use a multiset or similar structure to handle updates efficiently."
+  ]
+}

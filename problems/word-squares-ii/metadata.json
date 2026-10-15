@@ -1,0 +1,47 @@
+{
+  "id": "word-squares-ii",
+  "title": "3799. Word Squares II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/word-squares-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"able\",\"area\",\"echo\",\"also\"]",
+      "output": "[[\"able\",\"area\",\"echo\",\"also\"],[\"area\",\"able\",\"also\",\"echo\"]]",
+      "explanation": "There are exactly two valid 4-word squares that satisfy all corner constraints: \"able\" (top), \"area\" (left), \"echo\" (right), \"also\" (bottom) top[0] == left[0] == 'a' top[3] == right[0] == 'e' bottom[0] == left[3] == 'a' bottom[3] == right[3] == 'o' \"area\" (top), \"able\" (left), \"also\" (right), \"echo\" (bottom) All corner constraints are satisfied. Thus, the answer is [[\"able\",\"area\",\"echo\",\"also\"],[\"area\",\"able\",\"also\",\"echo\"]]."
+    },
+    {
+      "input": "words = [\"code\",\"cafe\",\"eden\",\"edge\"]",
+      "output": "[]",
+      "explanation": "No combination of four words satisfies all four corner constraints. Thus, the answer is empty array []."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<string>> wordSquares(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<String>> wordSquares(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def wordSquares(self, words: List[str]) -> List[List[str]]:\n        ",
+    "typescript": "function wordSquares(words: string[]): string[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<string>> WordSquares(string[] words) {\n        \n    }\n}",
+    "go": "func wordSquares(words []string) [][]string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn word_squares(words: Vec<String>) -> Vec<Vec<String>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"able\",\"area\",\"echo\",\"also\"]"
+    },
+    {
+      "words": "[\"code\",\"cafe\",\"eden\",\"edge\"]"
+    }
+  ],
+  "functionName": "wordSquares",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_list_2d",
+  "hints": [
+    "Use bruteforce"
+  ]
+}

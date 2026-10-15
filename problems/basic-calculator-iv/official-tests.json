@@ -1,0 +1,17 @@
+[
+  {
+    "expression": "e + 8 - a + 5",
+    "evalvars": "[\"e\"]",
+    "evalints": "[1]"
+  },
+  {
+    "expression": "e - 8 + temperature - pressure",
+    "evalvars": "[\"e\", \"temperature\"]",
+    "evalints": "[1, 12]"
+  },
+  {
+    "expression": "(e + 8) * (e - 8)",
+    "evalvars": "[]",
+    "evalints": "[]"
+  }
+]

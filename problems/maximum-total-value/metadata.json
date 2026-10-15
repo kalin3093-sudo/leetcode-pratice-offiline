@@ -1,0 +1,73 @@
+{
+  "id": "maximum-total-value",
+  "title": "3971. Maximum Total Value",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-total-value/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "value = [6,5,4], decay = [2,1,1], m = 4",
+      "output": "19",
+      "explanation": "One optimal sequence of selections is as follows: By selecting index 0, the value gained is 6. By selecting index 1, the value gained is 5. By selecting index 2, the value gained is 4. By selecting index 0 again, the value gained is 6 - 2 = 4. The total value is 6 + 5 + 4 + 4 = 19. No other sequence of at most 4 selections gives a higher total value."
+    },
+    {
+      "input": "value = [7,2,2], decay = [3,2,1], m = 2",
+      "output": "11",
+      "explanation": "One optimal sequence of selections is as follows: By selecting index 0, the value gained is 7. By selecting index 0 again, the value gained is 7 - 3 = 4. The total value is 7 + 4 = 11."
+    },
+    {
+      "input": "value = [4,3], decay = [5,4], m = 5",
+      "output": "7",
+      "explanation": "One optimal sequence of selections is as follows: By selecting index 0, the value gained is 4. By selecting index 1, the value gained is 3. The total value is 4 + 3 = 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxTotalValue(vector<int>& value, vector<int>& decay, int m) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxTotalValue(int[] value, int[] decay, int m) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxTotalValue(self, value: list[int], decay: list[int], m: int) -> int:\n        ",
+    "typescript": "function maxTotalValue(value: number[], decay: number[], m: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxTotalValue(int[] value, int[] decay, int m) {\n        \n    }\n}",
+    "go": "func maxTotalValue(value []int, decay []int, m int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_total_value(value: Vec<i32>, decay: Vec<i32>, m: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "value": "[6,5,4]",
+      "decay": "[2,1,1]",
+      "m": 4
+    },
+    {
+      "value": "[7,2,2]",
+      "decay": "[3,2,1]",
+      "m": 2
+    },
+    {
+      "value": "[4,3]",
+      "decay": "[5,4]",
+      "m": 5
+    }
+  ],
+  "functionName": "maxTotalValue",
+  "params": [
+    {
+      "name": "value",
+      "type": "int_array"
+    },
+    {
+      "name": "decay",
+      "type": "int_array"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each index, the gained values form a decreasing arithmetic sequence: <code>value[i]</code>, <code>value[i] - decay[i]</code>, <code>value[i] - 2 * decay[i]</code>, and so on.",
+    "Since you may use fewer than <code>m</code> selections, never take a non-positive gain.",
+    "Binary search the minimum gain threshold that should be included among the selected values.",
+    "For a fixed threshold <code>g</code>, compute how many terms in each arithmetic sequence are at least <code>g</code>, and also compute their sum using the arithmetic progression formula.",
+    "If more than <code>m</code> terms are counted at the final threshold, subtract the extra copies of that threshold value."
+  ]
+}

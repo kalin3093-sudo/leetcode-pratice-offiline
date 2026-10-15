@@ -1,0 +1,55 @@
+{
+  "id": "minimum-genetic-mutation",
+  "title": "433. Minimum Genetic Mutation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-genetic-mutation/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "startGene = \"AACCGGTT\", endGene = \"AACCGGTA\", bank = [\"AACCGGTA\"]",
+      "output": "1"
+    },
+    {
+      "input": "startGene = \"AACCGGTT\", endGene = \"AAACGGTA\", bank = [\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]",
+      "output": "2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minMutation(string startGene, string endGene, vector<string>& bank) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minMutation(String startGene, String endGene, String[] bank) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minMutation(self, startGene: str, endGene: str, bank: list[str]) -> int:\n        ",
+    "typescript": "function minMutation(startGene: string, endGene: string, bank: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinMutation(string startGene, string endGene, string[] bank) {\n        \n    }\n}",
+    "go": "func minMutation(startGene string, endGene string, bank []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_mutation(start_gene: String, end_gene: String, bank: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "startGene": "AACCGGTT",
+      "endGene": "AACCGGTA",
+      "bank": "[\"AACCGGTA\"]"
+    },
+    {
+      "startGene": "AACCGGTT",
+      "endGene": "AAACGGTA",
+      "bank": "[\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]"
+    }
+  ],
+  "functionName": "minMutation",
+  "params": [
+    {
+      "name": "startGene",
+      "type": "string"
+    },
+    {
+      "name": "endGene",
+      "type": "string"
+    },
+    {
+      "name": "bank",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

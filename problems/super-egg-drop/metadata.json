@@ -1,0 +1,58 @@
+{
+  "id": "super-egg-drop",
+  "title": "887. Super Egg Drop",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/super-egg-drop/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "k = 1, n = 2",
+      "output": "2",
+      "explanation": "Drop the egg from floor 1. If it breaks, we know that f = 0. Otherwise, drop the egg from floor 2. If it breaks, we know that f = 1. If it does not break, then we know f = 2. Hence, we need at minimum 2 moves to determine with certainty what the value of f is."
+    },
+    {
+      "input": "k = 2, n = 6",
+      "output": "3"
+    },
+    {
+      "input": "k = 3, n = 14",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int superEggDrop(int k, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int superEggDrop(int k, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def superEggDrop(self, k: int, n: int) -> int:\n        ",
+    "typescript": "function superEggDrop(k: number, n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SuperEggDrop(int k, int n) {\n        \n    }\n}",
+    "go": "func superEggDrop(k int, n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn super_egg_drop(k: i32, n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 1,
+      "n": 2
+    },
+    {
+      "k": 2,
+      "n": 6
+    },
+    {
+      "k": 3,
+      "n": 14
+    }
+  ],
+  "functionName": "superEggDrop",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

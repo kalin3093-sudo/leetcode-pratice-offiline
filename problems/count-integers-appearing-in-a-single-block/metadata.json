@@ -1,0 +1,47 @@
+{
+  "id": "count-integers-appearing-in-a-single-block",
+  "title": "4038. Count Integers Appearing in a Single Block",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-integers-appearing-in-a-single-block/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,2,1]",
+      "output": "1",
+      "explanation": "1 appears at indices 0 and 3, forming two separate blocks, so it is not special. 2 appears in a single contiguous block at indices [1, 2], so it is special. Therefore, there is one special integer."
+    },
+    {
+      "input": "nums = [3,3,1,2,2,1]",
+      "output": "2",
+      "explanation": "3 appears in a single contiguous block at indices [0, 1], so it is special. 1 appears at indices 2 and 5, forming two separate blocks, so it is not special. 2 appears in a single contiguous block at indices [3, 4], so it is special. Therefore, there are two special integers."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSpecialIntegers(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSpecialIntegers(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSpecialIntegers(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countSpecialIntegers(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSpecialIntegers(int[] nums) {\n        \n    }\n}",
+    "go": "func countSpecialIntegers(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_special_integers(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,2,1]"
+    },
+    {
+      "nums": "[3,3,1,2,2,1]"
+    }
+  ],
+  "functionName": "countSpecialIntegers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each distinct value <code>x</code>, let <code>l</code> and <code>r</code> be its first and last positions. All occurrences of <code>x</code> form one contiguous block exactly when <code>r - l + 1</code> equals the frequency of <code>x</code>."
+  ]
+}

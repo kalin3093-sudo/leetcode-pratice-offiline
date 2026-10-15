@@ -1,0 +1,53 @@
+{
+  "id": "third-maximum-number",
+  "title": "414. Third Maximum Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/third-maximum-number/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,2,1]",
+      "output": "1",
+      "explanation": "The first distinct maximum is 3. The second distinct maximum is 2. The third distinct maximum is 1."
+    },
+    {
+      "input": "nums = [1,2]",
+      "output": "2",
+      "explanation": "The first distinct maximum is 2. The second distinct maximum is 1. The third distinct maximum does not exist, so the maximum (2) is returned instead."
+    },
+    {
+      "input": "nums = [2,2,3,1]",
+      "output": "1",
+      "explanation": "The first distinct maximum is 3. The second distinct maximum is 2 (both 2's are counted together since they have the same value). The third distinct maximum is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int thirdMax(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int thirdMax(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def thirdMax(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function thirdMax(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ThirdMax(int[] nums) {\n        \n    }\n}",
+    "go": "func thirdMax(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn third_max(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,2,1]"
+    },
+    {
+      "nums": "[1,2]"
+    },
+    {
+      "nums": "[2,2,3,1]"
+    }
+  ],
+  "functionName": "thirdMax",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

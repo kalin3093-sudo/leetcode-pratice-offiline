@@ -1,0 +1,55 @@
+{
+  "id": "complete-prime-number",
+  "title": "3765. Complete Prime Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/complete-prime-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 23",
+      "output": "true",
+      "explanation": "Prefixes of num = 23 are 2 and 23, both are prime. Suffixes of num = 23 are 3 and 23, both are prime. All prefixes and suffixes are prime, so 23 is a Complete Prime Number and the answer is true."
+    },
+    {
+      "input": "num = 39",
+      "output": "false",
+      "explanation": "Prefixes of num = 39 are 3 and 39. 3 is prime, but 39 is not prime. Suffixes of num = 39 are 9 and 39. Both 9 and 39 are not prime. At least one prefix or suffix is not prime, so 39 is not a Complete Prime Number and the answer is false."
+    },
+    {
+      "input": "num = 7",
+      "output": "true",
+      "explanation": "7 is prime, so all its prefixes and suffixes are prime and the answer is true."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool completePrime(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean completePrime(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def completePrime(self, num: int) -> bool:\n        ",
+    "typescript": "function completePrime(num: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CompletePrime(int num) {\n        \n    }\n}",
+    "go": "func completePrime(num int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn complete_prime(num: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 23
+    },
+    {
+      "num": 39
+    },
+    {
+      "num": 7
+    }
+  ],
+  "functionName": "completePrime",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Check primality for all prefixes and all suffixes of <code>num</code> and return true only if every one is prime."
+  ]
+}

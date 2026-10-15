@@ -1,0 +1,53 @@
+{
+  "id": "nim-game",
+  "title": "292. Nim Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/nim-game/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "false",
+      "explanation": "These are the possible outcomes: 1. You remove 1 stone. Your friend removes 3 stones, including the last stone. Your friend wins. 2. You remove 2 stones. Your friend removes 2 stones, including the last stone. Your friend wins. 3. You remove 3 stones. Your friend removes the last stone. Your friend wins. In all outcomes, your friend wins."
+    },
+    {
+      "input": "n = 1",
+      "output": "true"
+    },
+    {
+      "input": "n = 2",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canWinNim(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canWinNim(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canWinNim(self, n: int) -> bool:\n        ",
+    "typescript": "function canWinNim(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanWinNim(int n) {\n        \n    }\n}",
+    "go": "func canWinNim(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_win_nim(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4
+    },
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "canWinNim",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?"
+  ]
+}

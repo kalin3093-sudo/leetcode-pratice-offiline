@@ -1,0 +1,54 @@
+{
+  "id": "minimum-common-value",
+  "title": "2540. Minimum Common Value",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-common-value/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,2,3], nums2 = [2,4]",
+      "output": "2",
+      "explanation": "The smallest element common to both arrays is 2, so we return 2."
+    },
+    {
+      "input": "nums1 = [1,2,3,6], nums2 = [2,3,4,5]",
+      "output": "2",
+      "explanation": "There are two common elements in the array 2 and 3 out of which 2 is the smallest, so 2 is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getCommon(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getCommon(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getCommon(self, nums1: list[int], nums2: list[int]) -> int:\n        ",
+    "typescript": "function getCommon(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetCommon(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func getCommon(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_common(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,2,3]",
+      "nums2": "[2,4]"
+    },
+    {
+      "nums1": "[1,2,3,6]",
+      "nums2": "[2,3,4,5]"
+    }
+  ],
+  "functionName": "getCommon",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to use a set.",
+    "Otherwise, try to use a two-pointer approach."
+  ]
+}

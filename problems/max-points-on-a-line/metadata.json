@@ -1,0 +1,43 @@
+{
+  "id": "max-points-on-a-line",
+  "title": "149. Max Points on a Line",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/max-points-on-a-line/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[1,1],[2,2],[3,3]]",
+      "output": "3"
+    },
+    {
+      "input": "points = [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxPoints(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxPoints(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPoints(self, points: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxPoints(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxPoints(int[][] points) {\n        \n    }\n}",
+    "go": "func maxPoints(points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_points(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[1,1],[2,2],[3,3]]"
+    },
+    {
+      "points": "[[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]"
+    }
+  ],
+  "functionName": "maxPoints",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "minimum-moves-to-equal-array-elements-ii",
+  "title": "462. Minimum Moves to Equal Array Elements II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "2",
+      "explanation": "Only two moves are needed (remember each move increments or decrements one element): [1,2,3]  =>  [2,2,3]  =>  [2,2,2]"
+    },
+    {
+      "input": "nums = [1,10,2,9]",
+      "output": "16"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minMoves2(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minMoves2(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minMoves2(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minMoves2(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinMoves2(int[] nums) {\n        \n    }\n}",
+    "go": "func minMoves2(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_moves2(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[1,10,2,9]"
+    }
+  ],
+  "functionName": "minMoves2",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

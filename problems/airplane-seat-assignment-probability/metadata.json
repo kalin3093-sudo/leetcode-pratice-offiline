@@ -1,0 +1,49 @@
+{
+  "id": "airplane-seat-assignment-probability",
+  "title": "1227. Airplane Seat Assignment Probability",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/airplane-seat-assignment-probability/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "1.00000",
+      "explanation": "The first person can only get the first seat."
+    },
+    {
+      "input": "n = 2",
+      "output": "0.50000",
+      "explanation": "The second person has a probability of 0.5 to get the second seat (when first person gets the first seat)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double nthPersonGetsNthSeat(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double nthPersonGetsNthSeat(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nthPersonGetsNthSeat(self, n: int) -> float:\n        ",
+    "typescript": "function nthPersonGetsNthSeat(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double NthPersonGetsNthSeat(int n) {\n        \n    }\n}",
+    "go": "func nthPersonGetsNthSeat(n int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn nth_person_gets_nth_seat(n: i32) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "nthPersonGetsNthSeat",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "double",
+  "hints": [
+    "Let f(n) denote the probability of the n-th person getting correct seat in n-person case, then:\r\n\r\nf(1) = 1 (base case, trivial)\r\nf(2) = 1/2 (also trivial)",
+    "Try to calculate f(3), f(4), and f(5) using the base cases. What is the value of them?\r\nf(i) for i >= 2 will also be 1/2.",
+    "Try to proof why f(i) = 1/2 for i >= 2."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "count-largest-group",
+  "title": "1399. Count Largest Group",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-largest-group/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "n = 13",
+      "output": "4",
+      "explanation": "There are 9 groups in total, they are grouped according sum of its digits of numbers from 1 to 13: [1,10], [2,11], [3,12], [4,13], [5], [6], [7], [8], [9]. There are 4 groups with largest size."
+    },
+    {
+      "input": "n = 2",
+      "output": "2",
+      "explanation": "There are 2 groups [1], [2] of size 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countLargestGroup(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countLargestGroup(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countLargestGroup(self, n: int) -> int:\n        ",
+    "typescript": "function countLargestGroup(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountLargestGroup(int n) {\n        \n    }\n}",
+    "go": "func countLargestGroup(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_largest_group(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 13
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "countLargestGroup",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the digit sum for each integer in the range and find out the largest groups."
+  ]
+}

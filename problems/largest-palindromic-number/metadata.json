@@ -1,0 +1,50 @@
+{
+  "id": "largest-palindromic-number",
+  "title": "2384. Largest Palindromic Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-palindromic-number/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "num = \"444947137\"",
+      "output": "\"7449447\"",
+      "explanation": "Use the digits \"4449477\" from \"444947137\" to form the palindromic integer \"7449447\". It can be shown that \"7449447\" is the largest palindromic integer that can be formed."
+    },
+    {
+      "input": "num = \"00009\"",
+      "output": "\"9\"",
+      "explanation": "It can be shown that \"9\" is the largest palindromic integer that can be formed. Note that the integer returned should not contain leading zeroes."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestPalindromic(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestPalindromic(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestPalindromic(self, num: str) -> str:\n        ",
+    "typescript": "function largestPalindromic(num: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestPalindromic(string num) {\n        \n    }\n}",
+    "go": "func largestPalindromic(num string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_palindromic(num: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "444947137"
+    },
+    {
+      "num": "00009"
+    }
+  ],
+  "functionName": "largestPalindromic",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "In order to form a valid palindrome, other than the middle digit in an odd-length palindrome, every digit needs to exist on both sides.",
+    "A longer palindrome implies a larger valued palindrome. For palindromes of the same length, the larger digits should occur first.",
+    "We can count the occurrences of each digit and build the palindrome starting from the ends. Starting from the larger digits, if there are still at least 2 occurrences of a digit, we can place these digits on each side.",
+    "Make sure to consider the special case for the center digit (if any) and zeroes. There should not be leading zeroes."
+  ]
+}

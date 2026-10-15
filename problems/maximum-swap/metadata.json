@@ -1,0 +1,45 @@
+{
+  "id": "maximum-swap",
+  "title": "670. Maximum Swap",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-swap/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 2736",
+      "output": "7236",
+      "explanation": "Swap the number 2 and the number 7."
+    },
+    {
+      "input": "num = 9973",
+      "output": "9973",
+      "explanation": "No swap."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumSwap(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumSwap(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumSwap(self, num: int) -> int:\n        ",
+    "typescript": "function maximumSwap(num: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumSwap(int num) {\n        \n    }\n}",
+    "go": "func maximumSwap(num int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_swap(num: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 2736
+    },
+    {
+      "num": 9973
+    }
+  ],
+  "functionName": "maximumSwap",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "find-longest-awesome-substring",
+  "title": "1542. Find Longest Awesome Substring",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-longest-awesome-substring/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"3242415\"",
+      "output": "5",
+      "explanation": "\"24241\" is the longest awesome substring, we can form the palindrome \"24142\" with some swaps."
+    },
+    {
+      "input": "s = \"12345678\"",
+      "output": "1"
+    },
+    {
+      "input": "s = \"213123\"",
+      "output": "6",
+      "explanation": "\"213123\" is the longest awesome substring, we can form the palindrome \"231132\" with some swaps."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestAwesome(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestAwesome(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestAwesome(self, s: str) -> int:\n        ",
+    "typescript": "function longestAwesome(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestAwesome(string s) {\n        \n    }\n}",
+    "go": "func longestAwesome(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_awesome(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "3242415"
+    },
+    {
+      "s": "12345678"
+    },
+    {
+      "s": "213123"
+    }
+  ],
+  "functionName": "longestAwesome",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Given the character counts, under what conditions can a palindrome be formed ?",
+    "From left to right, use bitwise xor-operation to compute for any prefix the number of times modulo 2 of each digit.  (mask ^= (1<<(s[i]-'0')).",
+    "Expected complexity is O(n*A) where A is the alphabet (10)."
+  ]
+}

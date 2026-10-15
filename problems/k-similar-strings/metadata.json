@@ -1,0 +1,51 @@
+{
+  "id": "k-similar-strings",
+  "title": "854. K-Similar Strings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/k-similar-strings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s1 = \"ab\", s2 = \"ba\"",
+      "output": "1",
+      "explanation": "The two string are 1-similar because we can use one swap to change s1 to s2: \"ab\" --> \"ba\"."
+    },
+    {
+      "input": "s1 = \"abc\", s2 = \"bca\"",
+      "output": "2",
+      "explanation": "The two strings are 2-similar because we can use two swaps to change s1 to s2: \"abc\" --> \"bac\" --> \"bca\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int kSimilarity(string s1, string s2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int kSimilarity(String s1, String s2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kSimilarity(self, s1: str, s2: str) -> int:\n        ",
+    "typescript": "function kSimilarity(s1: string, s2: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int KSimilarity(string s1, string s2) {\n        \n    }\n}",
+    "go": "func kSimilarity(s1 string, s2 string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn k_similarity(s1: String, s2: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s1": "ab",
+      "s2": "ba"
+    },
+    {
+      "s1": "abc",
+      "s2": "bca"
+    }
+  ],
+  "functionName": "kSimilarity",
+  "params": [
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

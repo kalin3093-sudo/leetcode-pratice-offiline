@@ -1,0 +1,51 @@
+{
+  "id": "binary-string-with-substrings-representing-1-to-n",
+  "title": "1016. Binary String With Substrings Representing 1 To N",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"0110\", n = 3",
+      "output": "true"
+    },
+    {
+      "input": "s = \"0110\", n = 4",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool queryString(string s, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean queryString(String s, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def queryString(self, s: str, n: int) -> bool:\n        ",
+    "typescript": "function queryString(s: string, n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool QueryString(string s, int n) {\n        \n    }\n}",
+    "go": "func queryString(s string, n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn query_string(s: String, n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "0110",
+      "n": 3
+    },
+    {
+      "s": "0110",
+      "n": 4
+    }
+  ],
+  "functionName": "queryString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "We only need to check substrings of length at most 30, because 10^9 has 30 bits."
+  ]
+}

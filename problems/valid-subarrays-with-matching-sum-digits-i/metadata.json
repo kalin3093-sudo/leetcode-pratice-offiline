@@ -1,0 +1,55 @@
+{
+  "id": "valid-subarrays-with-matching-sum-digits-i",
+  "title": "3969. Valid Subarrays With Matching Sum Digits I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,100,1], x = 1",
+      "output": "4",
+      "explanation": "The valid subarrays are: nums[0..0]: sum = 1 nums[0..1]: sum = 1 + 100 = 101 nums[1..2]: sum = 100 + 1 = 101 nums[2..2]: sum = 1 Thus, the answer is 4."
+    },
+    {
+      "input": "nums = [1], x = 2",
+      "output": "0",
+      "explanation": "The only subarray is nums[0..0] with a sum of 1, which does not satisfy the conditions. Thus, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countValidSubarrays(vector<int>& nums, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countValidSubarrays(int[] nums, int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countValidSubarrays(self, nums: list[int], x: int) -> int:\n        ",
+    "typescript": "function countValidSubarrays(nums: number[], x: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountValidSubarrays(int[] nums, int x) {\n        \n    }\n}",
+    "go": "func countValidSubarrays(nums []int, x int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_valid_subarrays(nums: Vec<i32>, x: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,100,1]",
+      "x": 1
+    },
+    {
+      "nums": "[1]",
+      "x": 2
+    }
+  ],
+  "functionName": "countValidSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Enumerate all subarrays with two loops. Since <code>nums.length <= 1500</code>, checking all <code>O(n<sup>2</sup>)</code> subarrays is acceptable.",
+    "You can use prefix sums so the sum of any <code>nums[l..r]</code> can be computed in constant time. Alternatively, you can enumerate the starting index <code>i</code>, then extend the ending index <code>j</code> while maintaining the running sum of <code>nums[i..j]</code>.",
+    "For each subarray sum, check whether its last digit is <code>x</code>, then repeatedly divide by 10 to get its first digit."
+  ]
+}

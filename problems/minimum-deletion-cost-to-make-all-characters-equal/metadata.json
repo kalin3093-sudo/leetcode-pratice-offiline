@@ -1,0 +1,62 @@
+{
+  "id": "minimum-deletion-cost-to-make-all-characters-equal",
+  "title": "3784. Minimum Deletion Cost to Make All Characters Equal",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-deletion-cost-to-make-all-characters-equal/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"aabaac\", cost = [1,2,3,4,1,10]",
+      "output": "11",
+      "explanation": "Deleting the characters at indices 0, 1, 2, 3, 4 results in the string \"c\", which consists of equal characters, and the total cost is cost[0] + cost[1] + cost[2] + cost[3] + cost[4] = 1 + 2 + 3 + 4 + 1 = 11."
+    },
+    {
+      "input": "s = \"abc\", cost = [10,5,8]",
+      "output": "13",
+      "explanation": "Deleting the characters at indices 1 and 2 results in the string \"a\", which consists of equal characters, and the total cost is cost[1] + cost[2] = 5 + 8 = 13."
+    },
+    {
+      "input": "s = \"zzzzz\", cost = [67,67,67,67,67]",
+      "output": "0",
+      "explanation": "All characters in s are equal, so the deletion cost is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minCost(string s, vector<int>& cost) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minCost(String s, int[] cost) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, s: str, cost: List[int]) -> int:\n        ",
+    "typescript": "function minCost(s: string, cost: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinCost(string s, int[] cost) {\n        \n    }\n}",
+    "go": "func minCost(s string, cost []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(s: String, cost: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aabaac",
+      "cost": "[1,2,3,4,1,10]"
+    },
+    {
+      "s": "abc",
+      "cost": "[10,5,8]"
+    },
+    {
+      "s": "zzzzz",
+      "cost": "[67,67,67,67,67]"
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "cost",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Keep the character whose total deletion cost is maximum"
+  ]
+}

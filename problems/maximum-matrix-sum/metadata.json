@@ -1,0 +1,48 @@
+{
+  "id": "maximum-matrix-sum",
+  "title": "1975. Maximum Matrix Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-matrix-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[1,-1],[-1,1]]",
+      "output": "4",
+      "explanation": "We can follow the following steps to reach sum equals 4: - Multiply the 2 elements in the first row by -1. - Multiply the 2 elements in the first column by -1."
+    },
+    {
+      "input": "matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]",
+      "output": "16",
+      "explanation": "We can follow the following step to reach sum equals 16: - Multiply the 2 last elements in the second row by -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxMatrixSum(vector<vector<int>>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxMatrixSum(int[][] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxMatrixSum(self, matrix: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxMatrixSum(matrix: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxMatrixSum(int[][] matrix) {\n        \n    }\n}",
+    "go": "func maxMatrixSum(matrix [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_matrix_sum(matrix: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[1,-1],[-1,1]]"
+    },
+    {
+      "matrix": "[[1,2,3],[-1,-2,-3],[1,2,3]]"
+    }
+  ],
+  "functionName": "maxMatrixSum",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Try to use the operation so that each row has only one negative number.",
+    "If you have only one negative element you cannot convert it to positive."
+  ]
+}

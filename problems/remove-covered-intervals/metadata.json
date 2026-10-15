@@ -1,0 +1,47 @@
+{
+  "id": "remove-covered-intervals",
+  "title": "1288. Remove Covered Intervals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-covered-intervals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "intervals = [[1,4],[3,6],[2,8]]",
+      "output": "2",
+      "explanation": "Interval [3,6] is covered by [2,8], therefore it is removed."
+    },
+    {
+      "input": "intervals = [[1,4],[2,3]]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int removeCoveredIntervals(vector<vector<int>>& intervals) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int removeCoveredIntervals(int[][] intervals) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeCoveredIntervals(self, intervals: list[list[int]]) -> int:\n        ",
+    "typescript": "function removeCoveredIntervals(intervals: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RemoveCoveredIntervals(int[][] intervals) {\n        \n    }\n}",
+    "go": "func removeCoveredIntervals(intervals [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_covered_intervals(intervals: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "intervals": "[[52141,92589],[52991,93486],[46321,59199],[51955,78788],[18533,23127]]"
+    },
+    {
+      "intervals": "[[14041,32641],[24914,51477],[4983,81235],[62018,77987],[31523,32192],[74196,96194],[16126,52652],[59901,67707],[36502,51366],[56437,86744]]"
+    }
+  ],
+  "functionName": "removeCoveredIntervals",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How to check if an interval is covered by another?",
+    "Compare each interval to all others and check if it is covered by any interval."
+  ]
+}

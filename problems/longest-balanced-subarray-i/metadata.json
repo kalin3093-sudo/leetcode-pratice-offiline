@@ -1,0 +1,56 @@
+{
+  "id": "longest-balanced-subarray-i",
+  "title": "3719. Longest Balanced Subarray I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-balanced-subarray-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,4,3]",
+      "output": "4",
+      "explanation": "The longest balanced subarray is [2, 5, 4, 3]. It has 2 distinct even numbers [2, 4] and 2 distinct odd numbers [5, 3]. Thus, the answer is 4."
+    },
+    {
+      "input": "nums = [3,2,2,5,4]",
+      "output": "5",
+      "explanation": "The longest balanced subarray is [3, 2, 2, 5, 4]. It has 2 distinct even numbers [2, 4] and 2 distinct odd numbers [3, 5]. Thus, the answer is 5."
+    },
+    {
+      "input": "nums = [1,2,3,2]",
+      "output": "3",
+      "explanation": "The longest balanced subarray is [2, 3, 2]. It has 1 distinct even number [2] and 1 distinct odd number [3]. Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestBalanced(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestBalanced(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestBalanced(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function longestBalanced(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestBalanced(int[] nums) {\n        \n    }\n}",
+    "go": "func longestBalanced(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_balanced(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,4,3]"
+    },
+    {
+      "nums": "[3,2,2,5,4]"
+    },
+    {
+      "nums": "[1,2,3,2]"
+    }
+  ],
+  "functionName": "longestBalanced",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use brute force",
+    "Try every subarray and use a map/set data structure to track the distinct even and odd numbers"
+  ]
+}

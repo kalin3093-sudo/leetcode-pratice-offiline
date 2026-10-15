@@ -1,0 +1,51 @@
+{
+  "id": "corporate-flight-bookings",
+  "title": "1109. Corporate Flight Bookings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/corporate-flight-bookings/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5",
+      "output": "[10,55,45,25,25]",
+      "explanation": "Flight labels:        1   2   3   4   5 Booking 1 reserved:  10  10 Booking 2 reserved:      20  20 Booking 3 reserved:      25  25  25  25 Total seats:         10  55  45  25  25 Hence, answer = [10,55,45,25,25]"
+    },
+    {
+      "input": "bookings = [[1,2,10],[2,2,15]], n = 2",
+      "output": "[10,25]",
+      "explanation": "Flight labels:        1   2 Booking 1 reserved:  10  10 Booking 2 reserved:      15 Total seats:         10  25 Hence, answer = [10,25]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] corpFlightBookings(int[][] bookings, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def corpFlightBookings(self, bookings: list[list[int]], n: int) -> list[int]:\n        ",
+    "typescript": "function corpFlightBookings(bookings: number[][], n: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] CorpFlightBookings(int[][] bookings, int n) {\n        \n    }\n}",
+    "go": "func corpFlightBookings(bookings [][]int, n int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn corp_flight_bookings(bookings: Vec<Vec<i32>>, n: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "bookings": "[[1,2,10],[2,3,20],[2,5,25]]",
+      "n": 5
+    },
+    {
+      "bookings": "[[1,2,10],[2,2,15]]",
+      "n": 2
+    }
+  ],
+  "functionName": "corpFlightBookings",
+  "params": [
+    {
+      "name": "bookings",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

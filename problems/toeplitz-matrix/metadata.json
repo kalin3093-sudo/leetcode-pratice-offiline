@@ -1,0 +1,47 @@
+{
+  "id": "toeplitz-matrix",
+  "title": "766. Toeplitz Matrix",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/toeplitz-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
+      "output": "true",
+      "explanation": "In the above grid, the diagonals are: \"[9]\", \"[5, 5]\", \"[1, 1, 1]\", \"[2, 2, 2]\", \"[3, 3]\", \"[4]\". In each diagonal all elements are the same, so the answer is True."
+    },
+    {
+      "input": "matrix = [[1,2],[2,2]]",
+      "output": "false",
+      "explanation": "The diagonal \"[1, 2]\" has different elements."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isToeplitzMatrix(vector<vector<int>>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isToeplitzMatrix(int[][] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isToeplitzMatrix(self, matrix: list[list[int]]) -> bool:\n        ",
+    "typescript": "function isToeplitzMatrix(matrix: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsToeplitzMatrix(int[][] matrix) {\n        \n    }\n}",
+    "go": "func isToeplitzMatrix(matrix [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_toeplitz_matrix(matrix: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[1,2,3,4],[5,1,2,3],[9,5,1,2]]"
+    },
+    {
+      "matrix": "[[1,2],[2,2]]"
+    }
+  ],
+  "functionName": "isToeplitzMatrix",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Check whether each value is equal to the value of it's top-left neighbor."
+  ]
+}

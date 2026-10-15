@@ -1,0 +1,60 @@
+{
+  "id": "shuffle-the-array",
+  "title": "1470. Shuffle the Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/shuffle-the-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,1,3,4,7], n = 3",
+      "output": "[2,3,5,4,1,7]",
+      "explanation": "Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7]."
+    },
+    {
+      "input": "nums = [1,2,3,4,4,3,2,1], n = 4",
+      "output": "[1,4,2,3,3,2,4,1]"
+    },
+    {
+      "input": "nums = [1,1,2,2], n = 2",
+      "output": "[1,2,1,2]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> shuffle(vector<int>& nums, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] shuffle(int[] nums, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shuffle(self, nums: List[int], n: int) -> List[int]:\n        ",
+    "typescript": "function shuffle(nums: number[], n: number): number[] {\n\n};",
+    "csharp": "public class Solution {\n    public int[] Shuffle(int[] nums, int n) {\n        \n    }\n}",
+    "go": "func shuffle(nums []int, n int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shuffle(nums: Vec<i32>, n: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,1,3,4,7]",
+      "n": 3
+    },
+    {
+      "nums": "[1,2,3,4,4,3,2,1]",
+      "n": 4
+    },
+    {
+      "nums": "[1,1,2,2]",
+      "n": 2
+    }
+  ],
+  "functionName": "shuffle",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use two pointers to create the new array of 2n elements. The first starting at the beginning and the other starting at (n+1)th position. Alternate between them and create the new array."
+  ]
+}

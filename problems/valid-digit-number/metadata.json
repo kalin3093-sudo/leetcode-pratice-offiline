@@ -1,0 +1,62 @@
+{
+  "id": "valid-digit-number",
+  "title": "3908. Valid Digit Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/valid-digit-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 101, x = 0",
+      "output": "true",
+      "explanation": "The number contains digit 0 at index 1. It does not start with 0, so it satisfies both conditions. Thus, the answer is true."
+    },
+    {
+      "input": "n = 232, x = 2",
+      "output": "false",
+      "explanation": "The number starts with 2, which violates the condition. Thus, the answer is false."
+    },
+    {
+      "input": "n = 5, x = 1",
+      "output": "false",
+      "explanation": "The number does not contain digit 1. Thus, the answer is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool validDigit(int n, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean validDigit(int n, int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def validDigit(self, n: int, x: int) -> bool:\n        ",
+    "typescript": "function validDigit(n: number, x: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ValidDigit(int n, int x) {\n        \n    }\n}",
+    "go": "func validDigit(n int, x int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn valid_digit(n: i32, x: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 101,
+      "x": 0
+    },
+    {
+      "n": 232,
+      "x": 2
+    },
+    {
+      "n": 5,
+      "x": 1
+    }
+  ],
+  "functionName": "validDigit",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Perform the checks as described"
+  ]
+}

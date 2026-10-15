@@ -1,0 +1,69 @@
+{
+  "id": "find-nearest-point-that-has-the-same-x-or-y-coordinate",
+  "title": "1779. Find Nearest Point That Has the Same X or Y Coordinate",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "x = 3, y = 4, points = [[1,2],[3,1],[2,4],[2,3],[4,4]]",
+      "output": "2",
+      "explanation": "Of all the points, only [3,1], [2,4] and [4,4] are valid. Of the valid points, [2,4] and [4,4] have the smallest Manhattan distance from your current location, with a distance of 1. [2,4] has the smallest index, so return 2."
+    },
+    {
+      "input": "x = 3, y = 4, points = [[3,4]]",
+      "output": "0",
+      "explanation": "The answer is allowed to be on the same location as your current location."
+    },
+    {
+      "input": "x = 3, y = 4, points = [[2,3]]",
+      "output": "-1",
+      "explanation": "There are no valid points."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int nearestValidPoint(int x, int y, vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int nearestValidPoint(int x, int y, int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nearestValidPoint(self, x: int, y: int, points: list[list[int]]) -> int:\n        ",
+    "typescript": "function nearestValidPoint(x: number, y: number, points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NearestValidPoint(int x, int y, int[][] points) {\n        \n    }\n}",
+    "go": "func nearestValidPoint(x int, y int, points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn nearest_valid_point(x: i32, y: i32, points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "x": 3,
+      "y": 4,
+      "points": "[[1,2],[3,1],[2,4],[2,3],[4,4]]"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "points": "[[3,4]]"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "points": "[[2,3]]"
+    }
+  ],
+  "functionName": "nearestValidPoint",
+  "params": [
+    {
+      "name": "x",
+      "type": "int"
+    },
+    {
+      "name": "y",
+      "type": "int"
+    },
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate through each point, and keep track of the current point with the smallest Manhattan distance from your current location."
+  ]
+}

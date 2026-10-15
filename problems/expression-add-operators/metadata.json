@@ -1,0 +1,66 @@
+{
+  "id": "expression-add-operators",
+  "title": "282. Expression Add Operators",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/expression-add-operators/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = \"123\", target = 6",
+      "output": "[\"1*2*3\",\"1+2+3\"]",
+      "explanation": "Both \"1*2*3\" and \"1+2+3\" evaluate to 6."
+    },
+    {
+      "input": "num = \"232\", target = 8",
+      "output": "[\"2*3+2\",\"2+3*2\"]",
+      "explanation": "Both \"2*3+2\" and \"2+3*2\" evaluate to 8."
+    },
+    {
+      "input": "num = \"3456237490\", target = 9191",
+      "output": "[]",
+      "explanation": "There are no expressions that can be created from \"3456237490\" to evaluate to 9191."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> addOperators(string num, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> addOperators(String num, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def addOperators(self, num: str, target: int) -> list[str]:\n        ",
+    "typescript": "function addOperators(num: string, target: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> AddOperators(string num, int target) {\n        \n    }\n}",
+    "go": "func addOperators(num string, target int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn add_operators(num: String, target: i32) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "123",
+      "target": 6
+    },
+    {
+      "num": "232",
+      "target": 8
+    },
+    {
+      "num": "3456237490",
+      "target": 9191
+    }
+  ],
+  "functionName": "addOperators",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Note that a number can contain multiple digits.",
+    "Since the question asks us to find <b>all</b> of the valid expressions, we need a way to iterate over all of them. (<b>Hint:</b> Recursion!)",
+    "We can keep track of the expression string and evaluate it at the very end. But that would take a lot of time. Can we keep track of the expression's value as well so as to avoid the evaluation at the very end of recursion?",
+    "Think carefully about the multiply operator. It has a higher precedence than the addition and subtraction operators. \r\n\r\n<br> 1 + 2 = 3  <br>\r\n1 + 2 - 4 --> 3 - 4 --> -1 <br>\r\n1 + 2 - 4 * 12 --> -1 * 12 --> -12 (WRONG!) <br>\r\n1 + 2 - 4 * 12 --> -1 - (-4) + (-4 * 12) --> 3 + (-48) --> -45 (CORRECT!)",
+    "We simply need to keep track of the last operand in our expression and reverse it's effect on the expression's value while considering the multiply operator."
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "startPos": 1,
+    "endPos": 2,
+    "k": 3
+  },
+  {
+    "startPos": 2,
+    "endPos": 5,
+    "k": 10
+  }
+]

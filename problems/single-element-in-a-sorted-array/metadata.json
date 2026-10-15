@@ -1,0 +1,43 @@
+{
+  "id": "single-element-in-a-sorted-array",
+  "title": "540. Single Element in a Sorted Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/single-element-in-a-sorted-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,3,3,4,4,8,8]",
+      "output": "2"
+    },
+    {
+      "input": "nums = [3,3,7,7,10,11,11]",
+      "output": "10"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int singleNonDuplicate(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int singleNonDuplicate(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def singleNonDuplicate(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function singleNonDuplicate(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SingleNonDuplicate(int[] nums) {\n        \n    }\n}",
+    "go": "func singleNonDuplicate(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn single_non_duplicate(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,2,3,3,4,4,8,8]"
+    },
+    {
+      "nums": "[3,3,7,7,10,11,11]"
+    }
+  ],
+  "functionName": "singleNonDuplicate",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,67 @@
+{
+  "id": "k-items-with-the-maximum-sum",
+  "title": "2600. K Items With the Maximum Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/k-items-with-the-maximum-sum/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2",
+      "output": "2",
+      "explanation": "We have a bag of items with numbers written on them {1, 1, 1, 0, 0}. We take 2 items with 1 written on them and get a sum in a total of 2. It can be proven that 2 is the maximum possible sum."
+    },
+    {
+      "input": "numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4",
+      "output": "3",
+      "explanation": "We have a bag of items with numbers written on them {1, 1, 1, 0, 0}. We take 3 items with 1 written on them, and 1 item with 0 written on it, and get a sum in a total of 3. It can be proven that 3 is the maximum possible sum."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kItemsWithMaximumSum(self, numOnes: int, numZeros: int, numNegOnes: int, k: int) -> int:\n        ",
+    "typescript": "function kItemsWithMaximumSum(numOnes: number, numZeros: number, numNegOnes: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int KItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {\n        \n    }\n}",
+    "go": "func kItemsWithMaximumSum(numOnes int, numZeros int, numNegOnes int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "numOnes": 3,
+      "numZeros": 2,
+      "numNegOnes": 0,
+      "k": 2
+    },
+    {
+      "numOnes": 3,
+      "numZeros": 2,
+      "numNegOnes": 0,
+      "k": 4
+    }
+  ],
+  "functionName": "kItemsWithMaximumSum",
+  "params": [
+    {
+      "name": "numOnes",
+      "type": "int"
+    },
+    {
+      "name": "numZeros",
+      "type": "int"
+    },
+    {
+      "name": "numNegOnes",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "It is always optimal to take items with the number 1 written on them as much as possible.",
+    "If k > numOnes, after taking all items with the number 1, it is always optimal to take items with the number 0 written on them as much as possible.",
+    "If k > numOnes + numZeroes we are forced to take k - numOnes - numZeroes -1s."
+  ]
+}

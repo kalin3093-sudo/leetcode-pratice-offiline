@@ -1,0 +1,60 @@
+{
+  "id": "zuma-game",
+  "title": "488. Zuma Game",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/zuma-game/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "board = \"WRRBBW\", hand = \"RB\"",
+      "output": "-1",
+      "explanation": "It is impossible to clear all the balls. The best you can do is: - Insert 'R' so the board becomes WRRRBBW. WRRRBBW -> WBBW. - Insert 'B' so the board becomes WBBBW. WBBBW -> WW. There are still balls remaining on the board, and you are out of balls to insert."
+    },
+    {
+      "input": "board = \"WWRRBBWW\", hand = \"WRBRW\"",
+      "output": "2",
+      "explanation": "To make the board empty: - Insert 'R' so the board becomes WWRRRBBWW. WWRRRBBWW -> WWBBWW. - Insert 'B' so the board becomes WWBBBWW. WWBBBWW -> WWWW -> empty. 2 balls from your hand were needed to clear the board."
+    },
+    {
+      "input": "board = \"G\", hand = \"GGGGG\"",
+      "output": "2",
+      "explanation": "To make the board empty: - Insert 'G' so the board becomes GG. - Insert 'G' so the board becomes GGG. GGG -> empty. 2 balls from your hand were needed to clear the board."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMinStep(string board, string hand) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMinStep(String board, String hand) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMinStep(self, board: str, hand: str) -> int:\n        ",
+    "typescript": "function findMinStep(board: string, hand: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMinStep(string board, string hand) {\n        \n    }\n}",
+    "go": "func findMinStep(board string, hand string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_min_step(board: String, hand: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "board": "WRRBBW",
+      "hand": "RB"
+    },
+    {
+      "board": "WWRRBBWW",
+      "hand": "WRBRW"
+    },
+    {
+      "board": "G",
+      "hand": "GGGGG"
+    }
+  ],
+  "functionName": "findMinStep",
+  "params": [
+    {
+      "name": "board",
+      "type": "string"
+    },
+    {
+      "name": "hand",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

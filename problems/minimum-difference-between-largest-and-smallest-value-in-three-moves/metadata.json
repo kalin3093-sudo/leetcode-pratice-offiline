@@ -1,0 +1,55 @@
+{
+  "id": "minimum-difference-between-largest-and-smallest-value-in-three-moves",
+  "title": "1509. Minimum Difference Between Largest and Smallest Value in Three Moves",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,3,2,4]",
+      "output": "0",
+      "explanation": "We can make at most 3 moves. In the first move, change 2 to 3. nums becomes [5,3,3,4]. In the second move, change 4 to 3. nums becomes [5,3,3,3]. In the third move, change 5 to 3. nums becomes [3,3,3,3]. After performing 3 moves, the difference between the minimum and maximum is 3 - 3 = 0."
+    },
+    {
+      "input": "nums = [1,5,0,10,14]",
+      "output": "1",
+      "explanation": "We can make at most 3 moves. In the first move, change 5 to 0. nums becomes [1,0,0,10,14]. In the second move, change 10 to 0. nums becomes [1,0,0,0,14]. In the third move, change 14 to 1. nums becomes [1,0,0,0,1]. After performing 3 moves, the difference between the minimum and maximum is 1 - 0 = 1. It can be shown that there is no way to make the difference 0 in 3 moves."
+    },
+    {
+      "input": "nums = [3,100,20]",
+      "output": "0",
+      "explanation": "We can make at most 3 moves. In the first move, change 100 to 7. nums becomes [3,7,20]. In the second move, change 20 to 7. nums becomes [3,7,7]. In the third move, change 3 to 7. nums becomes [7,7,7]. After performing 3 moves, the difference between the minimum and maximum is 7 - 7 = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDifference(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minDifference(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func minDifference(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_difference(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,3,2,4]"
+    },
+    {
+      "nums": "[1,5,0,10,14]"
+    },
+    {
+      "nums": "[3,100,20]"
+    }
+  ],
+  "functionName": "minDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The minimum difference possible is obtained by removing three elements between the three smallest and three largest values in the array."
+  ]
+}

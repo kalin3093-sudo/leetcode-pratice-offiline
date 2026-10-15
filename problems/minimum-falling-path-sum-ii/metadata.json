@@ -1,0 +1,48 @@
+{
+  "id": "minimum-falling-path-sum-ii",
+  "title": "1289. Minimum Falling Path Sum II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-falling-path-sum-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2,3],[4,5,6],[7,8,9]]",
+      "output": "13",
+      "explanation": "The possible falling paths are: [1,5,9], [1,5,7], [1,6,7], [1,6,8], [2,4,8], [2,4,9], [2,6,7], [2,6,8], [3,4,8], [3,4,9], [3,5,7], [3,5,9] The falling path with the smallest sum is [1,5,7], so the answer is 13."
+    },
+    {
+      "input": "grid = [[7]]",
+      "output": "7"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minFallingPathSum(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minFallingPathSum(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minFallingPathSum(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function minFallingPathSum(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinFallingPathSum(int[][] grid) {\n        \n    }\n}",
+    "go": "func minFallingPathSum(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_falling_path_sum(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2,3],[4,5,6],[7,8,9]]"
+    },
+    {
+      "grid": "[[7]]"
+    }
+  ],
+  "functionName": "minFallingPathSum",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "Let dp[i][j] be the answer for the first i rows such that column j is chosen from row i.",
+    "Use the concept of cumulative array to optimize the complexity of the solution."
+  ]
+}

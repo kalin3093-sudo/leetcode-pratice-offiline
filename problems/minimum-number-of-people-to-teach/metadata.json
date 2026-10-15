@@ -1,0 +1,60 @@
+{
+  "id": "minimum-number-of-people-to-teach",
+  "title": "1733. Minimum Number of People to Teach",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-people-to-teach/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 2, languages = [[1],[2],[1,2]], friendships = [[1,2],[1,3],[2,3]]",
+      "output": "1",
+      "explanation": "You can either teach user 1 the second language or user 2 the first language."
+    },
+    {
+      "input": "n = 3, languages = [[2],[1,3],[1,2],[3]], friendships = [[1,4],[1,2],[3,4],[2,3]]",
+      "output": "2",
+      "explanation": "Teach the third language to users 1 and 3, yielding two users to teach."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumTeachings(int n, vector<vector<int>>& languages, vector<vector<int>>& friendships) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumTeachings(int n, int[][] languages, int[][] friendships) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumTeachings(self, n: int, languages: list[list[int]], friendships: list[list[int]]) -> int:\n        ",
+    "typescript": "function minimumTeachings(n: number, languages: number[][], friendships: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumTeachings(int n, int[][] languages, int[][] friendships) {\n        \n    }\n}",
+    "go": "func minimumTeachings(n int, languages [][]int, friendships [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_teachings(n: i32, languages: Vec<Vec<i32>>, friendships: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "languages": "[[1],[2],[1,2]]",
+      "friendships": "[[1,2],[1,3],[2,3]]"
+    },
+    {
+      "n": 3,
+      "languages": "[[2],[1,3],[1,2],[3]]",
+      "friendships": "[[1,4],[1,2],[3,4],[2,3]]"
+    }
+  ],
+  "functionName": "minimumTeachings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "languages",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "friendships",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "You can just use brute force and find out for each language the number of users you need to teach",
+    "Note that a user can appear in multiple friendships but you need to teach that user only once"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "maximum-deletions-on-a-string",
+  "title": "2430. Maximum Deletions on a String",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-deletions-on-a-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abcabcdabc\"",
+      "output": "2",
+      "explanation": "- Delete the first 3 letters (\"abc\") since the next 3 letters are equal. Now, s = \"abcdabc\". - Delete all the letters. We used 2 operations so return 2. It can be proven that 2 is the maximum number of operations needed. Note that in the second operation we cannot delete \"abc\" again because the next occurrence of \"abc\" does not happen in the next 3 letters."
+    },
+    {
+      "input": "s = \"aaabaab\"",
+      "output": "4",
+      "explanation": "- Delete the first letter (\"a\") since the next letter is equal. Now, s = \"aabaab\". - Delete the first 3 letters (\"aab\") since the next 3 letters are equal. Now, s = \"aab\". - Delete the first letter (\"a\") since the next letter is equal. Now, s = \"ab\". - Delete all the letters. We used 4 operations so return 4. It can be proven that 4 is the maximum number of operations needed."
+    },
+    {
+      "input": "s = \"aaaaa\"",
+      "output": "5",
+      "explanation": "In each operation, we can delete the first letter of s."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int deleteString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int deleteString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def deleteString(self, s: str) -> int:\n        ",
+    "typescript": "function deleteString(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DeleteString(string s) {\n        \n    }\n}",
+    "go": "func deleteString(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn delete_string(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcabcdabc"
+    },
+    {
+      "s": "aaabaab"
+    },
+    {
+      "s": "aaaaa"
+    }
+  ],
+  "functionName": "deleteString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We can use dynamic programming to find the answer. Create a 0-indexed dp array where dp[i] represents the maximum number of moves needed to remove the first i + 1 letters from s.",
+    "What should we do if there is an i where it is impossible to remove the first i + 1 letters?",
+    "Use a sentinel value such as -1 to show that it is impossible.",
+    "How can we quickly determine if two substrings of s are equal? We can use hashing."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
+  "title": "3509. Maximum Product of Subsequences With an Alternating Sum Equal to K",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], k = 2, limit = 10",
+      "output": "6",
+      "explanation": "The subsequences with an alternating sum of 2 are: [1, 2, 3] Alternating Sum: 1 - 2 + 3 = 2 Product: 1 * 2 * 3 = 6 [2] Alternating Sum: 2 Product: 2 The maximum product within the limit is 6."
+    },
+    {
+      "input": "nums = [0,2,3], k = -5, limit = 12",
+      "output": "-1",
+      "explanation": "A subsequence with an alternating sum of exactly -5 does not exist."
+    },
+    {
+      "input": "nums = [2,2,3,3], k = 0, limit = 9",
+      "output": "9",
+      "explanation": "The subsequences with an alternating sum of 0 are: [2, 2] Alternating Sum: 2 - 2 = 0 Product: 2 * 2 = 4 [3, 3] Alternating Sum: 3 - 3 = 0 Product: 3 * 3 = 9 [2, 2, 3, 3] Alternating Sum: 2 - 2 + 3 - 3 = 0 Product: 2 * 2 * 3 * 3 = 36 The subsequence [2, 2, 3, 3] has the greatest product with an alternating sum equal to k, but 36 > 9. The next greatest product is 9, which is within the limit."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProduct(vector<int>& nums, int k, int limit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProduct(int[] nums, int k, int limit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProduct(self, nums: List[int], k: int, limit: int) -> int:\n        ",
+    "typescript": "function maxProduct(nums: number[], k: number, limit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProduct(int[] nums, int k, int limit) {\n        \n    }\n}",
+    "go": "func maxProduct(nums []int, k int, limit int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_product(nums: Vec<i32>, k: i32, limit: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]",
+      "k": 2,
+      "limit": 10
+    },
+    {
+      "nums": "[0,2,3]",
+      "k": -5,
+      "limit": 12
+    },
+    {
+      "nums": "[2,2,3,3]",
+      "k": 0,
+      "limit": 9
+    }
+  ],
+  "functionName": "maxProduct",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "limit",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "Save all possible products with a particular sum.",
+    "Handle the case where a subsequence has a product of <code>0</code> and an alternating sum of <code>k</code>."
+  ]
+}

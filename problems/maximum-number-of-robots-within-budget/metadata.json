@@ -1,0 +1,61 @@
+{
+  "id": "maximum-number-of-robots-within-budget",
+  "title": "2398. Maximum Number of Robots Within Budget",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-number-of-robots-within-budget/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "chargeTimes = [3,6,1,3,4], runningCosts = [2,1,3,4,5], budget = 25",
+      "output": "3",
+      "explanation": "It is possible to run all individual and consecutive pairs of robots within budget. To obtain answer 3, consider the first 3 robots. The total cost will be max(3,6,1) + 3 * sum(2,1,3) = 6 + 3 * 6 = 24 which is less than 25. It can be shown that it is not possible to run more than 3 consecutive robots within budget, so we return 3."
+    },
+    {
+      "input": "chargeTimes = [11,12,19], runningCosts = [10,8,7], budget = 19",
+      "output": "0",
+      "explanation": "No robot can be run that does not exceed the budget, so we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumRobots(vector<int>& chargeTimes, vector<int>& runningCosts, long long budget) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumRobots(int[] chargeTimes, int[] runningCosts, long budget) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumRobots(self, chargeTimes: list[int], runningCosts: list[int], budget: int) -> int:\n        ",
+    "typescript": "function maximumRobots(chargeTimes: number[], runningCosts: number[], budget: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumRobots(int[] chargeTimes, int[] runningCosts, long budget) {\n        \n    }\n}",
+    "go": "func maximumRobots(chargeTimes []int, runningCosts []int, budget int64) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_robots(charge_times: Vec<i32>, running_costs: Vec<i32>, budget: i64) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "chargeTimes": "[3,6,1,3,4]",
+      "runningCosts": "[2,1,3,4,5]",
+      "budget": "25"
+    },
+    {
+      "chargeTimes": "[11,12,19]",
+      "runningCosts": "[10,8,7]",
+      "budget": "19"
+    }
+  ],
+  "functionName": "maximumRobots",
+  "params": [
+    {
+      "name": "chargeTimes",
+      "type": "int_array"
+    },
+    {
+      "name": "runningCosts",
+      "type": "int_array"
+    },
+    {
+      "name": "budget",
+      "type": "long"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use binary search to convert the problem into checking if we can find a specific number of consecutive robots within the budget.",
+    "Maintain a sliding window of the consecutive robots being considered.",
+    "Use either a map, deque, or heap to find the maximum charge times in the window efficiently."
+  ]
+}

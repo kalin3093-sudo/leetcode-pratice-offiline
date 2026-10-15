@@ -1,0 +1,49 @@
+{
+  "id": "steps-to-make-array-non-decreasing",
+  "title": "2289. Steps to Make Array Non-decreasing",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/steps-to-make-array-non-decreasing/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,3,4,4,7,3,6,11,8,5,11]",
+      "output": "3",
+      "explanation": "The following are the steps performed: - Step 1: [5,3,4,4,7,3,6,11,8,5,11] becomes [5,4,4,7,6,11,11] - Step 2: [5,4,4,7,6,11,11] becomes [5,4,7,11,11] - Step 3: [5,4,7,11,11] becomes [5,7,11,11] [5,7,11,11] is a non-decreasing array. Therefore, we return 3."
+    },
+    {
+      "input": "nums = [4,5,7,7,13]",
+      "output": "0",
+      "explanation": "nums is already a non-decreasing array. Therefore, we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int totalSteps(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int totalSteps(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def totalSteps(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function totalSteps(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TotalSteps(int[] nums) {\n        \n    }\n}",
+    "go": "func totalSteps(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn total_steps(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,3,4,4,7,3,6,11,8,5,11]"
+    },
+    {
+      "nums": "[4,5,7,7,13]"
+    }
+  ],
+  "functionName": "totalSteps",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Notice that an element will be removed if and only if there exists a strictly greater element to the left of it in the array.",
+    "For each element, we need to find the number of rounds it will take for it to be removed. The answer is the maximum number of rounds for all elements. Build an array dp to hold this information where the answer is the maximum value of dp.",
+    "Use a stack of the indices. While processing element nums[i], remove from the stack all the indices of elements that are smaller than nums[i]. dp[i] should be set to the maximum of dp[i] + 1 and dp[removed index]."
+  ]
+}

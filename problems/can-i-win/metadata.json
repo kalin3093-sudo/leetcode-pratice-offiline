@@ -1,0 +1,58 @@
+{
+  "id": "can-i-win",
+  "title": "464. Can I Win",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/can-i-win/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "maxChoosableInteger = 10, desiredTotal = 11",
+      "output": "false",
+      "explanation": "No matter which integer the first player choose, the first player will lose. The first player can choose an integer from 1 up to 10. If the first player choose 1, the second player can only choose integers from 2 up to 10. The second player will win by choosing 10 and get a total = 11, which is >= desiredTotal. Same with other integers chosen by the first player, the second player will always win."
+    },
+    {
+      "input": "maxChoosableInteger = 10, desiredTotal = 0",
+      "output": "true"
+    },
+    {
+      "input": "maxChoosableInteger = 10, desiredTotal = 1",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canIWin(self, maxChoosableInteger: int, desiredTotal: int) -> bool:\n        ",
+    "typescript": "function canIWin(maxChoosableInteger: number, desiredTotal: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n}",
+    "go": "func canIWin(maxChoosableInteger int, desiredTotal int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_i_win(max_choosable_integer: i32, desired_total: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "maxChoosableInteger": 10,
+      "desiredTotal": 11
+    },
+    {
+      "maxChoosableInteger": 10,
+      "desiredTotal": 0
+    },
+    {
+      "maxChoosableInteger": 10,
+      "desiredTotal": 1
+    }
+  ],
+  "functionName": "canIWin",
+  "params": [
+    {
+      "name": "maxChoosableInteger",
+      "type": "int"
+    },
+    {
+      "name": "desiredTotal",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,11 @@
+You are given an array of integers `start` and an integer `d`, representing `n` intervals `[start[i], start[i] + d]`.
+
+You are asked to choose `n` integers where the `i^th` integer must belong to the `i^th` interval. The **score** of the chosen integers is defined as the **minimum** absolute difference between any two integers that have been chosen.
+
+Return the **maximum** *possible score* of the chosen integers.
+
+**Constraints:**
+
+-   `2 ≤ start.length ≤ 10^5`
+-   `0 ≤ start[i] ≤ 10^9`
+-   `0 ≤ d ≤ 10^9`

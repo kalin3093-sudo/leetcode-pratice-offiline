@@ -1,0 +1,54 @@
+{
+  "id": "number-of-elapsed-seconds-between-two-times",
+  "title": "3986. Number of Elapsed Seconds Between Two Times",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "startTime = \"01:00:00\", endTime = \"01:00:25\"",
+      "output": "25",
+      "explanation": "endTime is 25 seconds ahead of startTime."
+    },
+    {
+      "input": "startTime = \"12:34:56\", endTime = \"13:00:00\"",
+      "output": "1504",
+      "explanation": "endTime is 25 minutes and 4 seconds ahead of startTime, which equals 1504 seconds."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int secondsBetweenTimes(string startTime, string endTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int secondsBetweenTimes(String startTime, String endTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def secondsBetweenTimes(self, startTime: str, endTime: str) -> int:\n        ",
+    "typescript": "function secondsBetweenTimes(startTime: string, endTime: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SecondsBetweenTimes(string startTime, string endTime) {\n        \n    }\n}",
+    "go": "func secondsBetweenTimes(startTime string, endTime string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn seconds_between_times(start_time: String, end_time: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "startTime": "01:00:00",
+      "endTime": "01:00:25"
+    },
+    {
+      "startTime": "12:34:56",
+      "endTime": "13:00:00"
+    }
+  ],
+  "functionName": "secondsBetweenTimes",
+  "params": [
+    {
+      "name": "startTime",
+      "type": "string"
+    },
+    {
+      "name": "endTime",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Convert each time into the total number of seconds since <code>00:00:00</code>.</p>",
+    "<p>The answer is the difference between the two converted values.</p>"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "largest-triangle-area",
+  "title": "812. Largest Triangle Area",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-triangle-area/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[0,0],[0,1],[1,0],[0,2],[2,0]]",
+      "output": "2.00000",
+      "explanation": "The five points are shown in the above figure. The red triangle is the largest."
+    },
+    {
+      "input": "points = [[1,0],[0,0],[0,1]]",
+      "output": "0.50000"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double largestTriangleArea(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double largestTriangleArea(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestTriangleArea(self, points: list[list[int]]) -> float:\n        ",
+    "typescript": "function largestTriangleArea(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double LargestTriangleArea(int[][] points) {\n        \n    }\n}",
+    "go": "func largestTriangleArea(points [][]int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_triangle_area(points: Vec<Vec<i32>>) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[0,0],[0,1],[1,0],[0,2],[2,0]]"
+    },
+    {
+      "points": "[[1,0],[0,0],[0,1]]"
+    }
+  ],
+  "functionName": "largestTriangleArea",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "double",
+  "hints": []
+}

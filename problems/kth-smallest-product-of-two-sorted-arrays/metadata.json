@@ -1,0 +1,70 @@
+{
+  "id": "kth-smallest-product-of-two-sorted-arrays",
+  "title": "2040. Kth Smallest Product of Two Sorted Arrays",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [2,5], nums2 = [3,4], k = 2",
+      "output": "8",
+      "explanation": "The 2 smallest products are: - nums1[0] * nums2[0] = 2 * 3 = 6 - nums1[0] * nums2[1] = 2 * 4 = 8 The 2nd smallest product is 8."
+    },
+    {
+      "input": "nums1 = [-4,-2,0,3], nums2 = [2,4], k = 6",
+      "output": "0",
+      "explanation": "The 6 smallest products are: - nums1[0] * nums2[1] = (-4) * 4 = -16 - nums1[0] * nums2[0] = (-4) * 2 = -8 - nums1[1] * nums2[1] = (-2) * 4 = -8 - nums1[1] * nums2[0] = (-2) * 2 = -4 - nums1[2] * nums2[0] = 0 * 2 = 0 - nums1[2] * nums2[1] = 0 * 4 = 0 The 6th smallest product is 0."
+    },
+    {
+      "input": "nums1 = [-2,-1,0,1,2], nums2 = [-3,-1,2,4,5], k = 3",
+      "output": "-6",
+      "explanation": "The 3 smallest products are: - nums1[0] * nums2[4] = (-2) * 5 = -10 - nums1[0] * nums2[3] = (-2) * 4 = -8 - nums1[4] * nums2[0] = 2 * (-3) = -6 The 3rd smallest product is -6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long kthSmallestProduct(vector<int>& nums1, vector<int>& nums2, long long k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long kthSmallestProduct(int[] nums1, int[] nums2, long k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kthSmallestProduct(self, nums1: list[int], nums2: list[int], k: int) -> int:\n        ",
+    "typescript": "function kthSmallestProduct(nums1: number[], nums2: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long KthSmallestProduct(int[] nums1, int[] nums2, long k) {\n        \n    }\n}",
+    "go": "func kthSmallestProduct(nums1 []int, nums2 []int, k int64) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn kth_smallest_product(nums1: Vec<i32>, nums2: Vec<i32>, k: i64) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[2,5]",
+      "nums2": "[3,4]",
+      "k": "2"
+    },
+    {
+      "nums1": "[-4,-2,0,3]",
+      "nums2": "[2,4]",
+      "k": "6"
+    },
+    {
+      "nums1": "[-2,-1,0,1,2]",
+      "nums2": "[-3,-1,2,4,5]",
+      "k": "3"
+    }
+  ],
+  "functionName": "kthSmallestProduct",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "long"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Can we split this problem into four cases depending on the sign of the numbers?",
+    "Can we binary search the value?"
+  ]
+}

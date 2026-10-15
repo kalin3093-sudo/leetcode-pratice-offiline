@@ -1,0 +1,63 @@
+{
+  "id": "minimum-fuel-cost-to-report-to-the-capital",
+  "title": "2477. Minimum Fuel Cost to Report to the Capital",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/",
+  "category": "tree",
+  "examples": [
+    {
+      "input": "roads = [[0,1],[0,2],[0,3]], seats = 5",
+      "output": "3",
+      "explanation": "- Representative1 goes directly to the capital with 1 liter of fuel. - Representative2 goes directly to the capital with 1 liter of fuel. - Representative3 goes directly to the capital with 1 liter of fuel. It costs 3 liters of fuel at minimum. It can be proven that 3 is the minimum number of liters of fuel needed."
+    },
+    {
+      "input": "roads = [[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]], seats = 2",
+      "output": "7",
+      "explanation": "- Representative2 goes directly to city 3 with 1 liter of fuel. - Representative2 and representative3 go together to city 1 with 1 liter of fuel. - Representative2 and representative3 go together to the capital with 1 liter of fuel. - Representative1 goes directly to the capital with 1 liter of fuel. - Representative5 goes directly to the capital with 1 liter of fuel. - Representative6 goes directly to city 4 with 1 liter of fuel. - Representative4 and representative6 go together to the capital with 1 liter of fuel. It costs 7 liters of fuel at minimum. It can be proven that 7 is the minimum number of liters of fuel needed."
+    },
+    {
+      "input": "roads = [], seats = 1",
+      "output": "0",
+      "explanation": "No representatives need to travel to the capital city."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumFuelCost(vector<vector<int>>& roads, int seats) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumFuelCost(int[][] roads, int seats) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumFuelCost(self, roads: list[list[int]], seats: int) -> int:\n        ",
+    "typescript": "function minimumFuelCost(roads: number[][], seats: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumFuelCost(int[][] roads, int seats) {\n        \n    }\n}",
+    "go": "func minimumFuelCost(roads [][]int, seats int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_fuel_cost(roads: Vec<Vec<i32>>, seats: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "roads": "[[0,1],[0,2],[0,3]]",
+      "seats": 5
+    },
+    {
+      "roads": "[[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]]",
+      "seats": 2
+    },
+    {
+      "roads": "[]",
+      "seats": 1
+    }
+  ],
+  "functionName": "minimumFuelCost",
+  "params": [
+    {
+      "name": "roads",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "seats",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Can you record the size of each subtree?",
+    "If n people meet on the same node, what is the minimum number of cars needed?"
+  ]
+}

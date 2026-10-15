@@ -1,0 +1,54 @@
+{
+  "id": "minimum-recolors-to-get-k-consecutive-black-blocks",
+  "title": "2379. Minimum Recolors to Get K Consecutive Black Blocks",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "blocks = \"WBBWWBBWBW\", k = 7",
+      "output": "3",
+      "explanation": "One way to achieve 7 consecutive black blocks is to recolor the 0th, 3rd, and 4th blocks so that blocks = \"BBBBBBBWBW\". It can be shown that there is no way to achieve 7 consecutive black blocks in less than 3 operations. Therefore, we return 3."
+    },
+    {
+      "input": "blocks = \"WBWBBBW\", k = 2",
+      "output": "0",
+      "explanation": "No changes need to be made, since 2 consecutive black blocks already exist. Therefore, we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumRecolors(string blocks, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumRecolors(String blocks, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumRecolors(self, blocks: str, k: int) -> int:\n        ",
+    "typescript": "function minimumRecolors(blocks: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumRecolors(string blocks, int k) {\n        \n    }\n}",
+    "go": "func minimumRecolors(blocks string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_recolors(blocks: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "blocks": "WBBWWBBWBW",
+      "k": 7
+    },
+    {
+      "blocks": "WBWBBBW",
+      "k": 2
+    }
+  ],
+  "functionName": "minimumRecolors",
+  "params": [
+    {
+      "name": "blocks",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate through all possible consecutive substrings of k characters.",
+    "Find the number of changes for each substring to make all blocks black, and return the minimum of these."
+  ]
+}

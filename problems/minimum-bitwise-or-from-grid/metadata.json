@@ -1,0 +1,57 @@
+{
+  "id": "minimum-bitwise-or-from-grid",
+  "title": "3858. Minimum Bitwise OR From Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-bitwise-or-from-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,5],[2,4]]",
+      "output": "3",
+      "explanation": "Choose 1 from the first row and 2 from the second row. The bitwise OR of 1 | 2 = 3, which is the minimum possible."
+    },
+    {
+      "input": "grid = [[3,5],[6,4]]",
+      "output": "5",
+      "explanation": "Choose 5 from the first row and 4 from the second row. The bitwise OR of 5 | 4 = 5, which is the minimum possible."
+    },
+    {
+      "input": "grid = [[7,9,8]]",
+      "output": "7",
+      "explanation": "Choosing 7 gives the minimum bitwise OR."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOR(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOR(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOR(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function minimumOR(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOR(int[][] grid) {\n        \n    }\n}",
+    "go": "func minimumOR(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_or(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,5],[2,4]]"
+    },
+    {
+      "grid": "[[3,5],[6,4]]"
+    },
+    {
+      "grid": "[[7,9,8]]"
+    }
+  ],
+  "functionName": "minimumOR",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Solve greedily, bit by bit from the most significant to the least significant",
+    "For a bit, check whether it is possible to exclude it from the OR by choosing, in every row, at least one number with that bit unset",
+    "Accumulate all bits that cannot be excluded; the final value is the minimum possible bitwise OR"
+  ]
+}

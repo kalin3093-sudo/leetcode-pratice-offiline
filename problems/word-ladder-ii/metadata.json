@@ -1,0 +1,57 @@
+{
+  "id": "word-ladder-ii",
+  "title": "126. Word Ladder II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/word-ladder-ii/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "output": "[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]",
+      "explanation": "There are 2 shortest transformation sequences: \"hit\" -> \"hot\" -> \"dot\" -> \"dog\" -> \"cog\" \"hit\" -> \"hot\" -> \"lot\" -> \"log\" -> \"cog\""
+    },
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+      "output": "[]",
+      "explanation": "The endWord \"cog\" is not in wordList, therefore there is no valid transformation sequence."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLadders(self, beginWord: str, endWord: str, wordList: list[str]) -> list[list[str]]:\n        ",
+    "typescript": "function findLadders(beginWord: string, endWord: string, wordList: string[]): string[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<string>> FindLadders(string beginWord, string endWord, IList<string> wordList) {\n        \n    }\n}",
+    "go": "func findLadders(beginWord string, endWord string, wordList []string) [][]string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_ladders(begin_word: String, end_word: String, word_list: Vec<String>) -> Vec<Vec<String>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "beginWord": "hit",
+      "endWord": "cog",
+      "wordList": "[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]"
+    },
+    {
+      "beginWord": "hit",
+      "endWord": "cog",
+      "wordList": "[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]"
+    }
+  ],
+  "functionName": "findLadders",
+  "params": [
+    {
+      "name": "beginWord",
+      "type": "string"
+    },
+    {
+      "name": "endWord",
+      "type": "string"
+    },
+    {
+      "name": "wordList",
+      "type": "string_list"
+    }
+  ],
+  "outputType": "string_list_2d",
+  "hints": []
+}

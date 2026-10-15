@@ -1,0 +1,47 @@
+{
+  "id": "check-if-it-is-a-straight-line",
+  "title": "1232. Check If It Is a Straight Line",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-it-is-a-straight-line/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
+      "output": "true"
+    },
+    {
+      "input": "coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkStraightLine(vector<vector<int>>& coordinates) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkStraightLine(int[][] coordinates) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkStraightLine(self, coordinates: list[list[int]]) -> bool:\n        ",
+    "typescript": "function checkStraightLine(coordinates: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckStraightLine(int[][] coordinates) {\n        \n    }\n}",
+    "go": "func checkStraightLine(coordinates [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_straight_line(coordinates: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "coordinates": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]"
+    },
+    {
+      "coordinates": "[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]"
+    }
+  ],
+  "functionName": "checkStraightLine",
+  "params": [
+    {
+      "name": "coordinates",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "If there're only 2 points, return true.",
+    "Check if all other points lie on the line defined by the first 2 points.",
+    "Use cross product to check collinearity."
+  ]
+}

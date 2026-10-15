@@ -1,0 +1,24 @@
+You are given a straight road of length `l` km, an integer `n`, an integer `k`**,** and **two** integer arrays, `position` and `time`, each of length `n`.
+
+The array `position` lists the positions (in km) of signs in **strictly** increasing order (with `position[0] = 0` and `position[n - 1] = l`).
+
+Each `time[i]` represents the time (in minutes) required to travel 1 km between `position[i]` and `position[i + 1]`.
+
+You **must** perform **exactly** `k` merge operations. In one merge, you can choose any **two** adjacent signs at indices `i` and `i + 1` (with `i > 0` and `i + 1 < n`) and:
+
+-   Update the sign at index `i + 1` so that its time becomes `time[i] + time[i + 1]`.
+-   Remove the sign at index `i`.
+
+Return the **minimum** **total** **travel time** (in minutes) to travel from 0 to `l` after **exactly** `k` merges.
+
+**Constraints:**
+
+-   `1 ≤ l ≤ 10^5`
+-   `2 ≤ n ≤ min(l + 1, 50)`
+-   `0 ≤ k ≤ min(n - 2, 10)`
+-   `position.length == n`
+-   `position[0] = 0` and `position[n - 1] = l`
+-   `position` is sorted in strictly increasing order.
+-   `time.length == n`
+-   `1 ≤ time[i] ≤ 100`
+-   `1 ≤ sum(time) ≤ 100`

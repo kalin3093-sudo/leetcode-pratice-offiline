@@ -1,0 +1,64 @@
+{
+  "id": "count-the-number-of-inversions",
+  "title": "3193. Count the Number of Inversions",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-the-number-of-inversions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 3, requirements = [[2,2],[0,0]]",
+      "output": "2",
+      "explanation": "The two permutations are: [2, 0, 1] Prefix [2, 0, 1] has inversions (0, 1) and (0, 2). Prefix [2] has 0 inversions. [1, 2, 0] Prefix [1, 2, 0] has inversions (0, 2) and (1, 2). Prefix [1] has 0 inversions."
+    },
+    {
+      "input": "n = 3, requirements = [[2,2],[1,1],[0,0]]",
+      "output": "1",
+      "explanation": "The only satisfying permutation is [2, 0, 1]: Prefix [2, 0, 1] has inversions (0, 1) and (0, 2). Prefix [2, 0] has an inversion (0, 1). Prefix [2] has 0 inversions."
+    },
+    {
+      "input": "n = 2, requirements = [[0,0],[1,0]]",
+      "output": "1",
+      "explanation": "The only satisfying permutation is [0, 1]: Prefix [0] has 0 inversions. Prefix [0, 1] has no inversions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfPermutations(int n, vector<vector<int>>& requirements) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfPermutations(int n, int[][] requirements) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfPermutations(self, n: int, requirements: List[List[int]]) -> int:\n        ",
+    "typescript": "function numberOfPermutations(n: number, requirements: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfPermutations(int n, int[][] requirements) {\n        \n    }\n}",
+    "go": "func numberOfPermutations(n int, requirements [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_permutations(n: i32, requirements: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "requirements": "[[2,2],[0,0]]"
+    },
+    {
+      "n": 3,
+      "requirements": "[[2,2],[1,1],[0,0]]"
+    },
+    {
+      "n": 2,
+      "requirements": "[[0,0],[1,0]]"
+    }
+  ],
+  "functionName": "numberOfPermutations",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "requirements",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let <code>dp[i][j]</code> denote the number of arrays of length <code>i</code> with <code>j</code> inversions.",
+    "<code>dp[i][j] = dp[i - 1][j] + dp[i - 1][j - 1] + … + dp[i - 1][0]</code>.",
+    "<code>dp[i][j] = 0</code> if for some <code>x</code>, <code>requirements[x][0] == i</code> and <code>requirements[x][1] != j</code>."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "number-of-ways-to-wear-different-hats-to-each-other",
+  "title": "1434. Number of Ways to Wear Different Hats to Each Other",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "hats = [[3,4],[4,5],[5]]",
+      "output": "1",
+      "explanation": "There is only one way to choose hats given the conditions. First person chooses hat 3, Second person chooses hat 4 and last one hat 5."
+    },
+    {
+      "input": "hats = [[3,5,1],[3,5]]",
+      "output": "4",
+      "explanation": "There are 4 ways to choose hats: (3,5), (5,3), (1,3) and (1,5)"
+    },
+    {
+      "input": "hats = [[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]",
+      "output": "24",
+      "explanation": "Each person can choose hats labeled from 1 to 4. Number of Permutations of (1,2,3,4) = 24."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberWays(vector<vector<int>>& hats) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberWays(List<List<Integer>> hats) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberWays(self, hats: list[list[int]]) -> int:\n        ",
+    "typescript": "function numberWays(hats: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberWays(IList<IList<int>> hats) {\n        \n    }\n}",
+    "go": "func numberWays(hats [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_ways(hats: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "hats": "[[3,4],[4,5],[5]]"
+    },
+    {
+      "hats": "[[3,5,1],[3,5]]"
+    },
+    {
+      "hats": "[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]"
+    }
+  ],
+  "functionName": "numberWays",
+  "params": [
+    {
+      "name": "hats",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Dynamic programming + bitmask.",
+    "dp(peopleMask, idHat) number of ways to wear different hats given a bitmask (people visited) and used hats from 1 to idHat-1."
+  ]
+}

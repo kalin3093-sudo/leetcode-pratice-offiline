@@ -1,0 +1,43 @@
+{
+  "id": "minimum-time-difference",
+  "title": "539. Minimum Time Difference",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-time-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "timePoints = [\"23:59\",\"00:00\"]",
+      "output": "1"
+    },
+    {
+      "input": "timePoints = [\"00:00\",\"23:59\",\"00:00\"]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMinDifference(vector<string>& timePoints) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMinDifference(List<String> timePoints) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMinDifference(self, timePoints: list[str]) -> int:\n        ",
+    "typescript": "function findMinDifference(timePoints: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMinDifference(IList<string> timePoints) {\n        \n    }\n}",
+    "go": "func findMinDifference(timePoints []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_min_difference(time_points: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "timePoints": "[\"23:59\",\"00:00\"]"
+    },
+    {
+      "timePoints": "[\"00:00\",\"23:59\",\"00:00\"]"
+    }
+  ],
+  "functionName": "findMinDifference",
+  "params": [
+    {
+      "name": "timePoints",
+      "type": "string_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

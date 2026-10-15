@@ -1,0 +1,64 @@
+{
+  "id": "make-number-of-distinct-characters-equal",
+  "title": "2531. Make Number of Distinct Characters Equal",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/make-number-of-distinct-characters-equal/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word1 = \"ac\", word2 = \"b\"",
+      "output": "false",
+      "explanation": "Any pair of swaps would yield two distinct characters in the first string, and one in the second string."
+    },
+    {
+      "input": "word1 = \"abcc\", word2 = \"aab\"",
+      "output": "true",
+      "explanation": "We swap index 2 of the first string with index 0 of the second string. The resulting strings are word1 = \"abac\" and word2 = \"cab\", which both have 3 distinct characters."
+    },
+    {
+      "input": "word1 = \"abcde\", word2 = \"fghij\"",
+      "output": "true",
+      "explanation": "Both resulting strings will have 5 distinct characters, regardless of which indices we swap."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isItPossible(string word1, string word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isItPossible(String word1, String word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isItPossible(self, word1: str, word2: str) -> bool:\n        ",
+    "typescript": "function isItPossible(word1: string, word2: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsItPossible(string word1, string word2) {\n        \n    }\n}",
+    "go": "func isItPossible(word1 string, word2 string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_it_possible(word1: String, word2: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "ac",
+      "word2": "b"
+    },
+    {
+      "word1": "abcc",
+      "word2": "aab"
+    },
+    {
+      "word1": "abcde",
+      "word2": "fghij"
+    }
+  ],
+  "functionName": "isItPossible",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Create a frequency array of the letters of each string.",
+    "There are 26*26 possible pairs of letters to swap. Can we try them all?",
+    "Iterate over all possible pairs of letters and check if swapping them will yield two strings that have the same number of distinct characters. Use the frequency array for the check."
+  ]
+}

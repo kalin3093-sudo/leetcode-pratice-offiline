@@ -1,0 +1,63 @@
+{
+  "id": "equal-sum-arrays-with-minimum-number-of-operations",
+  "title": "1775. Equal Sum Arrays With Minimum Number of Operations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,2,3,4,5,6], nums2 = [1,1,2,2,2,2]",
+      "output": "3",
+      "explanation": "You can make the sums of nums1 and nums2 equal with 3 operations. All indices are 0-indexed. - Change nums2[0] to 6. nums1 = [1,2,3,4,5,6], nums2 = [6,1,2,2,2,2]. - Change nums1[5] to 1. nums1 = [1,2,3,4,5,1], nums2 = [6,1,2,2,2,2]. - Change nums1[2] to 2. nums1 = [1,2,2,4,5,1], nums2 = [6,1,2,2,2,2]."
+    },
+    {
+      "input": "nums1 = [1,1,1,1,1,1,1], nums2 = [6]",
+      "output": "-1",
+      "explanation": "There is no way to decrease the sum of nums1 or to increase the sum of nums2 to make them equal."
+    },
+    {
+      "input": "nums1 = [6,6], nums2 = [1]",
+      "output": "3",
+      "explanation": "You can make the sums of nums1 and nums2 equal with 3 operations. All indices are 0-indexed. - Change nums1[0] to 2. nums1 = [2,6], nums2 = [1]. - Change nums1[1] to 2. nums1 = [2,2], nums2 = [1]. - Change nums2[0] to 4. nums1 = [2,2], nums2 = [4]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums1: list[int], nums2: list[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func minOperations(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,2,3,4,5,6]",
+      "nums2": "[1,1,2,2,2,2]"
+    },
+    {
+      "nums1": "[1,1,1,1,1,1,1]",
+      "nums2": "[6]"
+    },
+    {
+      "nums1": "[6,6]",
+      "nums2": "[1]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let's note that we want to either decrease the sum of the array with a larger sum or increase the array's sum with the smaller sum.",
+    "You can maintain the largest increase or decrease you can make in a binary search tree and each time get the maximum one."
+  ]
+}

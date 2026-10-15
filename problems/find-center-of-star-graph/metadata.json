@@ -1,0 +1,48 @@
+{
+  "id": "find-center-of-star-graph",
+  "title": "1791. Find Center of Star Graph",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-center-of-star-graph/",
+  "category": "graph-theory",
+  "examples": [
+    {
+      "input": "edges = [[1,2],[2,3],[4,2]]",
+      "output": "2",
+      "explanation": "As shown in the figure above, node 2 is connected to every other node, so 2 is the center."
+    },
+    {
+      "input": "edges = [[1,2],[5,1],[1,3],[1,4]]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findCenter(vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findCenter(int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findCenter(self, edges: list[list[int]]) -> int:\n        ",
+    "typescript": "function findCenter(edges: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindCenter(int[][] edges) {\n        \n    }\n}",
+    "go": "func findCenter(edges [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_center(edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "edges": "[[1,2],[2,3],[4,2]]"
+    },
+    {
+      "edges": "[[1,2],[5,1],[1,3],[1,4]]"
+    }
+  ],
+  "functionName": "findCenter",
+  "params": [
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The center is the only node that has more than one edge.",
+    "The center is also connected to all other nodes.",
+    "Any two edges must have a common node, which is the center."
+  ]
+}

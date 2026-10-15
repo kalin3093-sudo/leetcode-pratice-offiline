@@ -1,0 +1,12 @@
+A **no-zero** integer is a **positive** integer that **does not contain the digit** 0 in its decimal representation.
+
+Given an integer `n`, count the number of pairs `(a, b)` where:
+
+-   `a` and `b` are **no-zero** integers.
+-   `a + b = n`
+
+Return an integer denoting the number of such pairs.
+
+**Constraints:**
+
+-   `2 ≤ n ≤ 10^15`

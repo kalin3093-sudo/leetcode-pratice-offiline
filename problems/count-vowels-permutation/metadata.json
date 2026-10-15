@@ -1,0 +1,49 @@
+{
+  "id": "count-vowels-permutation",
+  "title": "1220. Count Vowels Permutation",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-vowels-permutation/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "5",
+      "explanation": "All possible strings are: \"a\", \"e\", \"i\" , \"o\" and \"u\"."
+    },
+    {
+      "input": "n = 5",
+      "output": "68",
+      "explanation": "All possible strings are: \"ae\", \"ea\", \"ei\", \"ia\", \"ie\", \"io\", \"iu\", \"oi\", \"ou\" and \"ua\". Example 3:"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countVowelPermutation(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countVowelPermutation(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countVowelPermutation(self, n: int) -> int:\n        ",
+    "typescript": "function countVowelPermutation(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountVowelPermutation(int n) {\n        \n    }\n}",
+    "go": "func countVowelPermutation(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_vowel_permutation(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "countVowelPermutation",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "Let dp[i][j] be the number of strings of length i that ends with the j-th vowel.",
+    "Deduce the recurrence from the given relations between vowels."
+  ]
+}

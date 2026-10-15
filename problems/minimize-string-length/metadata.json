@@ -1,0 +1,56 @@
+{
+  "id": "minimize-string-length",
+  "title": "2716. Minimize String Length",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimize-string-length/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aaabc\"",
+      "output": "3",
+      "explanation": "Operation 2: we choose i = 1 so c is 'a', then we remove s[2] as it is closest 'a' character to the right of s[1]. s becomes \"aabc\" after this. Operation 1: we choose i = 1 so c is 'a', then we remove s[0] as it is closest 'a' character to the left of s[1]. s becomes \"abc\" after this."
+    },
+    {
+      "input": "s = \"cbbd\"",
+      "output": "3",
+      "explanation": "Operation 1: we choose i = 2 so c is 'b', then we remove s[1] as it is closest 'b' character to the left of s[1]. s becomes \"cbd\" after this."
+    },
+    {
+      "input": "s = \"baadccab\"",
+      "output": "4",
+      "explanation": "Operation 1: we choose i = 6 so c is 'a', then we remove s[2] as it is closest 'a' character to the left of s[6]. s becomes \"badccab\" after this. Operation 2: we choose i = 0 so c is 'b', then we remove s[6] as it is closest 'b' character to the right of s[0]. s becomes \"badcca\" fter this. Operation 2: we choose i = 3 so c is 'c', then we remove s[4] as it is closest 'c' character to the right of s[3]. s becomes \"badca\" after this. Operation 1: we choose i = 4 so c is 'a', then we remove s[1] as it is closest 'a' character to the left of s[4]. s becomes \"bdca\" after this."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizedStringLength(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizedStringLength(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizedStringLength(self, s: str) -> int:\n        ",
+    "typescript": "function minimizedStringLength(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizedStringLength(string s) {\n        \n    }\n}",
+    "go": "func minimizedStringLength(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimized_string_length(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaabc"
+    },
+    {
+      "s": "cbbd"
+    },
+    {
+      "s": "baadccab"
+    }
+  ],
+  "functionName": "minimizedStringLength",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The minimized string will not contain duplicate characters.",
+    "The minimized string will contain all distinct characters of the original string."
+  ]
+}

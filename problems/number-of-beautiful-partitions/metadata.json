@@ -1,0 +1,70 @@
+{
+  "id": "number-of-beautiful-partitions",
+  "title": "2478. Number of Beautiful Partitions",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-beautiful-partitions/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"23542185131\", k = 3, minLength = 2",
+      "output": "3",
+      "explanation": "There exists three ways to create a beautiful partition: \"2354 | 218 | 5131\" \"2354 | 21851 | 31\" \"2354218 | 51 | 31\""
+    },
+    {
+      "input": "s = \"23542185131\", k = 3, minLength = 3",
+      "output": "1",
+      "explanation": "There exists one way to create a beautiful partition: \"2354 | 218 | 5131\"."
+    },
+    {
+      "input": "s = \"3312958\", k = 3, minLength = 1",
+      "output": "1",
+      "explanation": "There exists one way to create a beautiful partition: \"331 | 29 | 58\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int beautifulPartitions(string s, int k, int minLength) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int beautifulPartitions(String s, int k, int minLength) {\n        \n    }\n}",
+    "python": "class Solution:\n    def beautifulPartitions(self, s: str, k: int, minLength: int) -> int:\n        ",
+    "typescript": "function beautifulPartitions(s: string, k: number, minLength: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BeautifulPartitions(string s, int k, int minLength) {\n        \n    }\n}",
+    "go": "func beautifulPartitions(s string, k int, minLength int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn beautiful_partitions(s: String, k: i32, min_length: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "23542185131",
+      "k": 3,
+      "minLength": 2
+    },
+    {
+      "s": "23542185131",
+      "k": 3,
+      "minLength": 3
+    },
+    {
+      "s": "3312958",
+      "k": 3,
+      "minLength": 1
+    }
+  ],
+  "functionName": "beautifulPartitions",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "minLength",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try using a greedy approach where you take as many digits as possible from the left of the string for each partition.",
+    "You can also use a dynamic programming approach, let an array dp where dp[i] is the solution of the problem for the prefix of the string ending at index i, the answer of the problem will be dp[n-1]. What are the transitions of this dp?"
+  ]
+}

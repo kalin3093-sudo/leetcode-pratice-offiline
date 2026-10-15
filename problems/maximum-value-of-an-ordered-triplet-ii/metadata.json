@@ -1,0 +1,57 @@
+{
+  "id": "maximum-value-of-an-ordered-triplet-ii",
+  "title": "2874. Maximum Value of an Ordered Triplet II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [12,6,1,2,7]",
+      "output": "77",
+      "explanation": "The value of the triplet (0, 2, 4) is (nums[0] - nums[2]) * nums[4] = 77. It can be shown that there are no ordered triplets of indices with a value greater than 77."
+    },
+    {
+      "input": "nums = [1,10,3,4,19]",
+      "output": "133",
+      "explanation": "The value of the triplet (1, 2, 4) is (nums[1] - nums[2]) * nums[4] = 133. It can be shown that there are no ordered triplets of indices with a value greater than 133."
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "0",
+      "explanation": "The only ordered triplet of indices (0, 1, 2) has a negative value of (nums[0] - nums[1]) * nums[2] = -3. Hence, the answer would be 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumTripletValue(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumTripletValue(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumTripletValue(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maximumTripletValue(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumTripletValue(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumTripletValue(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_triplet_value(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[12,6,1,2,7]"
+    },
+    {
+      "nums": "[1,10,3,4,19]"
+    },
+    {
+      "nums": "[1,2,3]"
+    }
+  ],
+  "functionName": "maximumTripletValue",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Preprocess the prefix maximum array, <code>prefix_max[i] = max(nums[0], nums[1], …, nums[i])</code> and the suffix maximum array, <code>suffix_max[i] = max(nums[i], nums[i + 1], …, nums[n - 1])</code>.",
+    "For each index <code>j</code>, find two indices <code>i</code> and <code>k</code> such that <code>i < j < k</code> and <code>(nums[i] - nums[j]) * nums[k]</code> is the maximum, using the prefix and suffix maximum arrays.",
+    "For index <code>j</code>, the maximum triplet value is <code>(prefix_max[j - 1] - nums[j]) * suffix_max[j + 1]</code>."
+  ]
+}

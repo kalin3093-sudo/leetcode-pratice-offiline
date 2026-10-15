@@ -1,0 +1,51 @@
+{
+  "id": "teemo-attacking",
+  "title": "495. Teemo Attacking",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/teemo-attacking/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "timeSeries = [1,4], duration = 2",
+      "output": "4",
+      "explanation": "Teemo's attacks on Ashe go as follows: - At second 1, Teemo attacks, and Ashe is poisoned for seconds 1 and 2. - At second 4, Teemo attacks, and Ashe is poisoned for seconds 4 and 5. Ashe is poisoned for seconds 1, 2, 4, and 5, which is 4 seconds in total."
+    },
+    {
+      "input": "timeSeries = [1,2], duration = 2",
+      "output": "3",
+      "explanation": "Teemo's attacks on Ashe go as follows: - At second 1, Teemo attacks, and Ashe is poisoned for seconds 1 and 2. - At second 2 however, Teemo attacks again and resets the poison timer. Ashe is poisoned for seconds 2 and 3. Ashe is poisoned for seconds 1, 2, and 3, which is 3 seconds in total."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findPoisonedDuration(vector<int>& timeSeries, int duration) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findPoisonedDuration(int[] timeSeries, int duration) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findPoisonedDuration(self, timeSeries: list[int], duration: int) -> int:\n        ",
+    "typescript": "function findPoisonedDuration(timeSeries: number[], duration: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindPoisonedDuration(int[] timeSeries, int duration) {\n        \n    }\n}",
+    "go": "func findPoisonedDuration(timeSeries []int, duration int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_poisoned_duration(time_series: Vec<i32>, duration: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "timeSeries": "[1,4]",
+      "duration": 2
+    },
+    {
+      "timeSeries": "[1,2]",
+      "duration": 2
+    }
+  ],
+  "functionName": "findPoisonedDuration",
+  "params": [
+    {
+      "name": "timeSeries",
+      "type": "int_array"
+    },
+    {
+      "name": "duration",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

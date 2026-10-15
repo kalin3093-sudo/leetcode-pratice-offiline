@@ -1,0 +1,59 @@
+{
+  "id": "minimum-operations-to-transform-array-into-alternating-prime",
+  "title": "3896. Minimum Operations to Transform Array into Alternating Prime",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-transform-array-into-alternating-prime/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "3",
+      "explanation": "The element at index 0 must be prime. Increment nums[0] = 1 to 2, using 1 operation. The element at index 1 must be non-prime. Increment nums[1] = 2 to 4, using 2 operations. The element at index 2 is already prime. The element at index 3 is already non-prime. Total operations = 1 + 2 = 3."
+    },
+    {
+      "input": "nums = [5,6,7,8]",
+      "output": "0",
+      "explanation": "The elements at indices 0 and 2 are already prime. The elements at indices 1 and 3 are already non-prime. No operations are needed."
+    },
+    {
+      "input": "nums = [4,4]",
+      "output": "1",
+      "explanation": "The element at index 0 must be prime. Increment nums[0] = 4 to 5, using 1 operation. The element at index 1 is already non-prime. Total operations = 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]"
+    },
+    {
+      "nums": "[5,6,7,8]"
+    },
+    {
+      "nums": "[4,4]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Each index can be handled independently. Focus on making each element valid with the minimum increments.",
+    "For even indices, find the smallest prime <code>>= nums[i]</code>.",
+    "For odd indices, find the smallest non-prime <code>>= nums[i]</code>.",
+    "Precompute primes efficiently (e.g., Sieve of Eratosthenes) to quickly check or jump to the next valid number.",
+    "For odd indices, note that any number > 2 becomes non-prime after at most 1 increment (except 2)."
+  ]
+}

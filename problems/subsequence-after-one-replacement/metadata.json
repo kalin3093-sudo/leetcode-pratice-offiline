@@ -1,0 +1,56 @@
+{
+  "id": "subsequence-after-one-replacement",
+  "title": "3983. Subsequence After One Replacement",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/subsequence-after-one-replacement/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"cat\", t = \"chat\"",
+      "output": "true",
+      "explanation": "Replace s[1] from 'a' to 'h'. The resulting string is \"cht\". \"cht\" is a subsequence of \"chat\" because we can match 'c', 'h', and 't' in order."
+    },
+    {
+      "input": "s = \"plane\", t = \"apple\"",
+      "output": "false",
+      "explanation": "The characters 'p', 'l', and 'e' can be matched in t, but the remaining characters cannot be matched while preserving the required order. Even after replacing any one character in s, it is impossible to make s a subsequence of t."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canMakeSubsequence(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canMakeSubsequence(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canMakeSubsequence(self, s: str, t: str) -> bool:\n        ",
+    "typescript": "function canMakeSubsequence(s: string, t: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanMakeSubsequence(string s, string t) {\n        \n    }\n}",
+    "go": "func canMakeSubsequence(s string, t string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_make_subsequence(s: String, t: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "cat",
+      "t": "chat"
+    },
+    {
+      "s": "plane",
+      "t": "apple"
+    }
+  ],
+  "functionName": "canMakeSubsequence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "<p>If <code>s.length &gt; t.length</code>, the answer is <code>false</code>.</p>",
+    "<p>First check whether <code>s</code> is already a subsequence of <code>t</code>.</p>",
+    "<p>For each index <code>i</code> in <code>s</code>, compute the earliest position in <code>t</code> after matching <code>s[0..i-1]</code>, and the latest position in <code>t</code> before matching <code>s[i+1..s.length - 1]</code>.</p>",
+    "<p>Try each index <code>i</code> of <code>s</code> as the character to replace. The characters before <code>i</code> and after <code>i</code> must still be matchable in order inside <code>t</code>, with at least one unused position between them for the replaced character.</p>"
+  ]
+}

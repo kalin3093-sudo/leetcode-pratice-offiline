@@ -1,0 +1,45 @@
+{
+  "id": "erect-the-fence",
+  "title": "587. Erect the Fence",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/erect-the-fence/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "trees = [[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]]",
+      "output": "[[1,1],[2,0],[4,2],[3,3],[2,4]]",
+      "explanation": "All the trees will be on the perimeter of the fence except the tree at [2, 2], which will be inside the fence."
+    },
+    {
+      "input": "trees = [[1,2],[2,2],[4,2]]",
+      "output": "[[4,2],[2,2],[1,2]]",
+      "explanation": "The fence forms a line that passes through all the trees."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> outerTrees(vector<vector<int>>& trees) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] outerTrees(int[][] trees) {\n        \n    }\n}",
+    "python": "class Solution:\n    def outerTrees(self, trees: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function outerTrees(trees: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] OuterTrees(int[][] trees) {\n        \n    }\n}",
+    "go": "func outerTrees(trees [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn outer_trees(trees: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "trees": "[[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]]"
+    },
+    {
+      "trees": "[[1,2],[2,2],[4,2]]"
+    }
+  ],
+  "functionName": "outerTrees",
+  "params": [
+    {
+      "name": "trees",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": []
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "s": "babacc",
+    "queryCharacters": "bcb",
+    "queryIndices": "[1,3,3]"
+  },
+  {
+    "s": "abyzz",
+    "queryCharacters": "aa",
+    "queryIndices": "[2,1]"
+  }
+]

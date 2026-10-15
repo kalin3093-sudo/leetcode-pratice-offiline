@@ -1,0 +1,56 @@
+{
+  "id": "sort-matrix-by-diagonals",
+  "title": "3446. Sort Matrix by Diagonals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sort-matrix-by-diagonals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,7,3],[9,8,2],[4,5,6]]",
+      "output": "[[8,2,3],[9,6,7],[4,5,1]]",
+      "explanation": "The diagonals with a black arrow (bottom-left triangle) should be sorted in non-increasing order: [1, 8, 6] becomes [8, 6, 1]. [9, 5] and [4] remain unchanged. The diagonals with a blue arrow (top-right triangle) should be sorted in non-decreasing order: [7, 2] becomes [2, 7]. [3] remains unchanged."
+    },
+    {
+      "input": "grid = [[0,1],[1,2]]",
+      "output": "[[2,1],[1,0]]",
+      "explanation": "The diagonals with a black arrow must be non-increasing, so [0, 2] is changed to [2, 0]. The other diagonals are already in the correct order."
+    },
+    {
+      "input": "grid = [[1]]",
+      "output": "[[1]]",
+      "explanation": "Diagonals with exactly one element are already in order, so no changes are needed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] sortMatrix(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortMatrix(self, grid: List[List[int]]) -> List[List[int]]:\n        ",
+    "typescript": "function sortMatrix(grid: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] SortMatrix(int[][] grid) {\n        \n    }\n}",
+    "go": "func sortMatrix(grid [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_matrix(grid: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,7,3],[9,8,2],[4,5,6]]"
+    },
+    {
+      "grid": "[[0,1],[1,2]]"
+    },
+    {
+      "grid": "[[1]]"
+    }
+  ],
+  "functionName": "sortMatrix",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Use a data structure to store all values in each diagonal.",
+    "Sort and replace them in the matrix."
+  ]
+}

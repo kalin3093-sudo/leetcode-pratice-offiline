@@ -1,0 +1,14 @@
+[
+  {
+    "s": "abc",
+    "target": "bba"
+  },
+  {
+    "s": "leet",
+    "target": "code"
+  },
+  {
+    "s": "baba",
+    "target": "bbaa"
+  }
+]

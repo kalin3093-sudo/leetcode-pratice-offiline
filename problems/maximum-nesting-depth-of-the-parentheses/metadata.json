@@ -1,0 +1,54 @@
+{
+  "id": "maximum-nesting-depth-of-the-parentheses",
+  "title": "1614. Maximum Nesting Depth of the Parentheses",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"(1+(2*3)+((8)/4))+1\"",
+      "output": "3",
+      "explanation": "Digit 8 is inside of 3 nested parentheses in the string."
+    },
+    {
+      "input": "s = \"(1)+((2))+(((3)))\"",
+      "output": "3",
+      "explanation": "Digit 3 is inside of 3 nested parentheses in the string."
+    },
+    {
+      "input": "s = \"()(())((()()))\"",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDepth(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDepth(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDepth(self, s: str) -> int:\n        ",
+    "typescript": "function maxDepth(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDepth(string s) {\n        \n    }\n}",
+    "go": "func maxDepth(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_depth(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "(1+(2*3)+((8)/4))+1"
+    },
+    {
+      "s": "(1)+((2))+(((3)))"
+    },
+    {
+      "s": "()(())((()()))"
+    }
+  ],
+  "functionName": "maxDepth",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The depth of any character in the VPS is the ( number of left brackets before it ) - ( number of right brackets before it )"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "shortest-and-lexicographically-smallest-beautiful-string",
+  "title": "2904. Shortest and Lexicographically Smallest Beautiful String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"100011001\", k = 3",
+      "output": "\"11001\"",
+      "explanation": "There are 7 beautiful substrings in this example: 1. The substring \"100011001\". 2. The substring \"100011001\". 3. The substring \"100011001\". 4. The substring \"100011001\". 5. The substring \"100011001\". 6. The substring \"100011001\". 7. The substring \"100011001\". The length of the shortest beautiful substring is 5. The lexicographically smallest beautiful substring with length 5 is the substring \"11001\"."
+    },
+    {
+      "input": "s = \"1011\", k = 2",
+      "output": "\"11\"",
+      "explanation": "There are 3 beautiful substrings in this example: 1. The substring \"1011\". 2. The substring \"1011\". 3. The substring \"1011\". The length of the shortest beautiful substring is 2. The lexicographically smallest beautiful substring with length 2 is the substring \"11\"."
+    },
+    {
+      "input": "s = \"000\", k = 1",
+      "output": "\"\"",
+      "explanation": "There are no beautiful substrings in this example."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string shortestBeautifulSubstring(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String shortestBeautifulSubstring(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestBeautifulSubstring(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function shortestBeautifulSubstring(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ShortestBeautifulSubstring(string s, int k) {\n        \n    }\n}",
+    "go": "func shortestBeautifulSubstring(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_beautiful_substring(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "100011001",
+      "k": 3
+    },
+    {
+      "s": "1011",
+      "k": 2
+    },
+    {
+      "s": "000",
+      "k": 1
+    }
+  ],
+  "functionName": "shortestBeautifulSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Notice that if we consider that index <code>i</code> is the leftmost index of a beautiful substring, it has only one candidate <code>j</code>, such that <code>s[i:j]</code> is beautiful and shortest too.",
+    "We can iterate over all possibilities of leftmost index <code>i</code> take <code>s[i:j]</code> and compare with the shortest and the lexicographically smallest beautiful string we could get before index <code>i</code>."
+  ]
+}

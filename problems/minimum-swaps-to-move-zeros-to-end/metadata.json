@@ -1,0 +1,56 @@
+{
+  "id": "minimum-swaps-to-move-zeros-to-end",
+  "title": "3936. Minimum Swaps to Move Zeros to End",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,0,3,12]",
+      "output": "2",
+      "explanation": "We perform the following swap operations: Swap nums[0] and nums[3], giving nums = [3, 1, 0, 0, 12]. Swap nums[2] and nums[4], giving nums = [3, 1, 12, 0, 0]. Thus, the answer is 2."
+    },
+    {
+      "input": "nums = [0,1,0,2]",
+      "output": "1",
+      "explanation": "We perform the following swap operations: Swap nums[0] and nums[3], giving nums = [2, 1, 0, 0]. Thus, the answer is 1."
+    },
+    {
+      "input": "nums = [1,2,0]",
+      "output": "0",
+      "explanation": "The array already satisfies the condition. Therefore, no swap operations are needed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumSwaps(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumSwaps(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumSwaps(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minimumSwaps(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumSwaps(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumSwaps(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_swaps(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,0,3,12]"
+    },
+    {
+      "nums": "[0,1,0,2]"
+    },
+    {
+      "nums": "[1,2,0]"
+    }
+  ],
+  "functionName": "minimumSwaps",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The values of non-zero elements do not matter.\r\nConvert the array to zeros and ones.",
+    "All ones that are in positions where a zero should be must be swapped out."
+  ]
+}

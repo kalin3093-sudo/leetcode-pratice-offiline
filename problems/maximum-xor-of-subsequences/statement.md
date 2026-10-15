@@ -1,0 +1,15 @@
+You are given an integer array `nums` of length `n` where each element is a non-negative integer.
+
+Select **two** subsequences of `nums` (they may be empty and are **allowed** to **overlap**), each preserving the original order of elements, and let:
+
+-   `X` be the bitwise XOR of all elements in the first subsequence.
+-   `Y` be the bitwise XOR of all elements in the second subsequence.
+
+Return the **maximum** possible value of `X XOR Y`.
+
+**Note:** The XOR of an **empty** subsequence is 0.
+
+**Constraints:**
+
+-   `2 ≤ nums.length ≤ 10^5`
+-   `0 ≤ nums[i] ≤ 10^9`

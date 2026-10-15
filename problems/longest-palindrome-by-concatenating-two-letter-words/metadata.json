@@ -1,0 +1,57 @@
+{
+  "id": "longest-palindrome-by-concatenating-two-letter-words",
+  "title": "2131. Longest Palindrome by Concatenating Two Letter Words",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"lc\",\"cl\",\"gg\"]",
+      "output": "6",
+      "explanation": "One longest palindrome is \"lc\" + \"gg\" + \"cl\" = \"lcggcl\", of length 6. Note that \"clgglc\" is another longest palindrome that can be created."
+    },
+    {
+      "input": "words = [\"ab\",\"ty\",\"yt\",\"lc\",\"cl\",\"ab\"]",
+      "output": "8",
+      "explanation": "One longest palindrome is \"ty\" + \"lc\" + \"cl\" + \"yt\" = \"tylcclyt\", of length 8. Note that \"lcyttycl\" is another longest palindrome that can be created."
+    },
+    {
+      "input": "words = [\"cc\",\"ll\",\"xx\"]",
+      "output": "2",
+      "explanation": "One longest palindrome is \"cc\", of length 2. Note that \"ll\" is another longest palindrome that can be created, and so is \"xx\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestPalindrome(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestPalindrome(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestPalindrome(self, words: list[str]) -> int:\n        ",
+    "typescript": "function longestPalindrome(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestPalindrome(string[] words) {\n        \n    }\n}",
+    "go": "func longestPalindrome(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_palindrome(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"lc\",\"cl\",\"gg\"]"
+    },
+    {
+      "words": "[\"ab\",\"ty\",\"yt\",\"lc\",\"cl\",\"ab\"]"
+    },
+    {
+      "words": "[\"cc\",\"ll\",\"xx\"]"
+    }
+  ],
+  "functionName": "longestPalindrome",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A palindrome must be mirrored over the center. Suppose we have a palindrome. If we prepend the word \"ab\" on the left, what must we append on the right to keep it a palindrome?",
+    "We must append \"ba\" on the right. The number of times we can do this is the minimum of (occurrences of \"ab\") and (occurrences of \"ba\").",
+    "For words that are already palindromes, e.g. \"aa\", we can prepend and append these in pairs as described in the previous hint. We can also use exactly one in the middle to form an even longer palindrome."
+  ]
+}

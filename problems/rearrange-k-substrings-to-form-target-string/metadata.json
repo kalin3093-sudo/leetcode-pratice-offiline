@@ -1,0 +1,69 @@
+{
+  "id": "rearrange-k-substrings-to-form-target-string",
+  "title": "3365. Rearrange K Substrings to Form Target String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abcd\", t = \"cdab\", k = 2",
+      "output": "true",
+      "explanation": "Split s into 2 substrings of length 2: [\"ab\", \"cd\"]. Rearranging these substrings as [\"cd\", \"ab\"], and then concatenating them results in \"cdab\", which matches t."
+    },
+    {
+      "input": "s = \"aabbcc\", t = \"bbaacc\", k = 3",
+      "output": "true",
+      "explanation": "Split s into 3 substrings of length 2: [\"aa\", \"bb\", \"cc\"]. Rearranging these substrings as [\"bb\", \"aa\", \"cc\"], and then concatenating them results in \"bbaacc\", which matches t."
+    },
+    {
+      "input": "s = \"aabbcc\", t = \"bbaacc\", k = 2",
+      "output": "false",
+      "explanation": "Split s into 2 substrings of length 3: [\"aab\", \"bcc\"]. These substrings cannot be rearranged to form t = \"bbaacc\", so the output is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isPossibleToRearrange(string s, string t, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isPossibleToRearrange(String s, String t, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isPossibleToRearrange(self, s: str, t: str, k: int) -> bool:\n        ",
+    "typescript": "function isPossibleToRearrange(s: string, t: string, k: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsPossibleToRearrange(string s, string t, int k) {\n        \n    }\n}",
+    "go": "func isPossibleToRearrange(s string, t string, k int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_possible_to_rearrange(s: String, t: String, k: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcd",
+      "t": "cdab",
+      "k": 2
+    },
+    {
+      "s": "aabbcc",
+      "t": "bbaacc",
+      "k": 3
+    },
+    {
+      "s": "aabbcc",
+      "t": "bbaacc",
+      "k": 2
+    }
+  ],
+  "functionName": "isPossibleToRearrange",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Split <code>s</code> into <code>k</code> equal-sized substrings, use a map to track frequencies, and check if rearranging them can form <code>t</code>."
+  ]
+}

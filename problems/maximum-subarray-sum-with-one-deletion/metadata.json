@@ -1,0 +1,57 @@
+{
+  "id": "maximum-subarray-sum-with-one-deletion",
+  "title": "1186. Maximum Subarray Sum with One Deletion",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,-2,0,3]",
+      "output": "4",
+      "explanation": "Because we can choose [1, -2, 0, 3] and drop -2, thus the subarray [1, 0, 3] becomes the maximum value."
+    },
+    {
+      "input": "arr = [1,-2,-2,3]",
+      "output": "3",
+      "explanation": "We just choose [3] and it's the maximum sum."
+    },
+    {
+      "input": "arr = [-1,-1,-1,-1]",
+      "output": "-1",
+      "explanation": "The final subarray needs to be non-empty. You can't choose [-1] and delete -1 from it, then get an empty subarray to make the sum equals to 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumSum(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumSum(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumSum(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function maximumSum(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumSum(int[] arr) {\n        \n    }\n}",
+    "go": "func maximumSum(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_sum(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,-2,0,3]"
+    },
+    {
+      "arr": "[1,-2,-2,3]"
+    },
+    {
+      "arr": "[-1,-1,-1,-1]"
+    }
+  ],
+  "functionName": "maximumSum",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How to solve this problem if no deletions are allowed ?",
+    "Try deleting each element and find the maximum subarray sum to both sides of that element.",
+    "To do that efficiently, use the idea of Kadane's algorithm."
+  ]
+}

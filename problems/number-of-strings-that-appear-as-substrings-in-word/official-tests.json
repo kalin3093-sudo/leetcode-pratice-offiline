@@ -1,0 +1,14 @@
+[
+  {
+    "patterns": "[\"a\",\"abc\",\"bc\",\"d\"]",
+    "word": "abc"
+  },
+  {
+    "patterns": "[\"a\",\"b\",\"c\"]",
+    "word": "aaaaabbbbb"
+  },
+  {
+    "patterns": "[\"a\",\"a\",\"a\"]",
+    "word": "ab"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "id": "determine-if-two-strings-are-close",
+  "title": "1657. Determine if Two Strings Are Close",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word1 = \"abc\", word2 = \"bca\"",
+      "output": "true",
+      "explanation": "You can attain word2 from word1 in 2 operations. Apply Operation 1: \"abc\" -> \"acb\" Apply Operation 1: \"acb\" -> \"bca\""
+    },
+    {
+      "input": "word1 = \"a\", word2 = \"aa\"",
+      "output": "false",
+      "explanation": "It is impossible to attain word2 from word1, or vice versa, in any number of operations."
+    },
+    {
+      "input": "word1 = \"cabbba\", word2 = \"abbccc\"",
+      "output": "true",
+      "explanation": "You can attain word2 from word1 in 3 operations. Apply Operation 1: \"cabbba\" -> \"caabbb\" Apply Operation 2: \"caabbb\" -> \"baaccc\" Apply Operation 2: \"baaccc\" -> \"abbccc\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool closeStrings(string word1, string word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean closeStrings(String word1, String word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closeStrings(self, word1: str, word2: str) -> bool:\n        ",
+    "typescript": "function closeStrings(word1: string, word2: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CloseStrings(string word1, string word2) {\n        \n    }\n}",
+    "go": "func closeStrings(word1 string, word2 string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn close_strings(word1: String, word2: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "abc",
+      "word2": "bca"
+    },
+    {
+      "word1": "a",
+      "word2": "aa"
+    },
+    {
+      "word1": "cabbba",
+      "word2": "abbccc"
+    }
+  ],
+  "functionName": "closeStrings",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Operation 1 allows you to freely reorder the string.",
+    "Operation 2 allows you to freely reassign the letters' frequencies."
+  ]
+}

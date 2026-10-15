@@ -1,0 +1,63 @@
+{
+  "id": "digit-operations-to-make-two-integers-equal",
+  "title": "3377. Digit Operations to Make Two Integers Equal",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 10, m = 12",
+      "output": "85",
+      "explanation": "We perform the following operations: Increase the first digit, now n = 20. Increase the second digit, now n = 21. Increase the second digit, now n = 22. Decrease the first digit, now n = 12."
+    },
+    {
+      "input": "n = 4, m = 8",
+      "output": "-1",
+      "explanation": "It is impossible to make n equal to m."
+    },
+    {
+      "input": "n = 6, m = 2",
+      "output": "-1",
+      "explanation": "Since 2 is already a prime, we can't make n equal to m."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(int n, int m) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int n, int m) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, n: int, m: int) -> int:\n        ",
+    "typescript": "function minOperations(n: number, m: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int n, int m) {\n        \n    }\n}",
+    "go": "func minOperations(n int, m int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(n: i32, m: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10,
+      "m": 12
+    },
+    {
+      "n": 4,
+      "m": 8
+    },
+    {
+      "n": 6,
+      "m": 2
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider a directed, weighted graph where an edge exists from a node <code>x</code> to a node <code>y</code> if and only if <code>x</code> can be transformed into <code>y</code> through a single operation.",
+    "Apply a shortest path algorithm on this graph to find the shortest path from <code>n</code> to <code>m</code>."
+  ]
+}

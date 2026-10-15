@@ -1,0 +1,48 @@
+{
+  "id": "minimum-one-bit-operations-to-make-integers-zero",
+  "title": "1611. Minimum One Bit Operations to Make Integers Zero",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "2",
+      "explanation": "The binary representation of 3 is \"11\". \"11\" -> \"01\" with the 2nd operation since the 0th bit is 1. \"01\" -> \"00\" with the 1st operation."
+    },
+    {
+      "input": "n = 6",
+      "output": "4",
+      "explanation": "The binary representation of 6 is \"110\". \"110\" -> \"010\" with the 2nd operation since the 1st bit is 1 and 0th through 0th bits are 0. \"010\" -> \"011\" with the 1st operation. \"011\" -> \"001\" with the 2nd operation since the 0th bit is 1. \"001\" -> \"000\" with the 1st operation."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOneBitOperations(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOneBitOperations(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOneBitOperations(self, n: int) -> int:\n        ",
+    "typescript": "function minimumOneBitOperations(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOneBitOperations(int n) {\n        \n    }\n}",
+    "go": "func minimumOneBitOperations(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_one_bit_operations(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 6
+    }
+  ],
+  "functionName": "minimumOneBitOperations",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The fastest way to convert n to zero is to remove all set bits starting from the leftmost one. Try some simple examples to learn the rule of how many steps are needed to remove one set bit.",
+    "consider n=2^k case first, then solve for all n."
+  ]
+}

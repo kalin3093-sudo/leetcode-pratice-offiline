@@ -1,0 +1,49 @@
+{
+  "id": "minimum-operations-to-make-a-rotated-palindrome-i",
+  "title": "4021. Minimum Operations to Make a Rotated Palindrome I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "2",
+      "explanation": "One optimal solution: Left rotate the string: \"abc\" -> \"bca\". Increment 'a' to 'b': \"bca\" -> \"bcb\". \"bcb\" is a palindrome. Thus, the answer is 2."
+    },
+    {
+      "input": "s = \"yb\"",
+      "output": "3",
+      "explanation": "Increment the first character three times: \"yb\" -> \"zb\" -> \"ab\" -> \"bb\". \"bb\" is a palindrome. Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, s: str) -> int:\n        ",
+    "typescript": "function minOperations(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(string s) {\n        \n    }\n}",
+    "go": "func minOperations(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc"
+    },
+    {
+      "s": "yb"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>It is enough to consider performing <code>r</code> left rotations, where <code>0 &lt;= r &lt; s.length</code>. The increment operations can then be considered independently for each mirrored pair.</p>",
+    "<p>For two letters <code>a</code> and <code>b</code>, the minimum number of increments needed to make them equal is <code>min(abs(a - b), 26 - abs(a - b))</code>.</p>",
+    "<p>Try every rotation. For each one, sum this cost over all mirrored pairs and add the number of rotations. This gives an <code>O(n^2)</code> solution.</p>"
+  ]
+}

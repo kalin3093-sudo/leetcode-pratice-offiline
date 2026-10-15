@@ -1,0 +1,56 @@
+{
+  "id": "minimum-insertions-to-balance-a-parentheses-string",
+  "title": "1541. Minimum Insertions to Balance a Parentheses String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"(()))\"",
+      "output": "1",
+      "explanation": "The second '(' has two matching '))', but the first '(' has only ')' matching. We need to add one more ')' at the end of the string to be \"(())))\" which is balanced."
+    },
+    {
+      "input": "s = \"())\"",
+      "output": "0",
+      "explanation": "The string is already balanced."
+    },
+    {
+      "input": "s = \"))())(\"",
+      "output": "3",
+      "explanation": "Add '(' to match the first '))', Add '))' to match the last '('."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minInsertions(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minInsertions(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        ",
+    "typescript": "function minInsertions(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinInsertions(string s) {\n        \n    }\n}",
+    "go": "func minInsertions(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_insertions(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "(()))"
+    },
+    {
+      "s": "())"
+    },
+    {
+      "s": "))())("
+    }
+  ],
+  "functionName": "minInsertions",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a stack to keep opening brackets. If you face single closing ')' add 1 to the answer and consider it as '))'.",
+    "If you have '))' with empty stack, add 1 to the answer, If after finishing you have x opening remaining in the stack, add 2x to the answer."
+  ]
+}

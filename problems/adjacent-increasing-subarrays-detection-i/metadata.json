@@ -1,0 +1,52 @@
+{
+  "id": "adjacent-increasing-subarrays-detection-i",
+  "title": "3349. Adjacent Increasing Subarrays Detection I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,7,8,9,2,3,4,3,1], k = 3",
+      "output": "true",
+      "explanation": "The subarray starting at index 2 is [7, 8, 9], which is strictly increasing. The subarray starting at index 5 is [2, 3, 4], which is also strictly increasing. These two subarrays are adjacent, so the result is true."
+    },
+    {
+      "input": "nums = [1,2,3,4,4,4,4,5,6,7], k = 5",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool hasIncreasingSubarrays(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean hasIncreasingSubarrays(List<Integer> nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hasIncreasingSubarrays(self, nums: List[int], k: int) -> bool:\n        ",
+    "typescript": "function hasIncreasingSubarrays(nums: number[], k: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HasIncreasingSubarrays(IList<int> nums, int k) {\n        \n    }\n}",
+    "go": "func hasIncreasingSubarrays(nums []int, k int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn has_increasing_subarrays(nums: Vec<i32>, k: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,7,8,9,2,3,4,3,1]",
+      "k": 3
+    },
+    {
+      "nums": "[1,2,3,4,4,4,4,5,6,7]",
+      "k": 5
+    }
+  ],
+  "functionName": "hasIncreasingSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Store the longest increasing subarray starting and ending at an index."
+  ]
+}

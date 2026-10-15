@@ -1,0 +1,12 @@
+You are given an array of strings `nums` and an integer `k`. Each string in `nums` represents an integer without leading zeros.
+
+Return *the string that represents the* `k^th` ***largest integer** in* `nums`.
+
+**Note**: Duplicate numbers should be counted distinctly. For example, if `nums` is `["1","2","2"]`, `"2"` is the first largest integer, `"2"` is the second-largest integer, and `"1"` is the third-largest integer.
+
+**Constraints:**
+
+-   `1 ≤ k ≤ nums.length ≤ 10^4`
+-   `1 ≤ nums[i].length ≤ 100`
+-   `nums[i]` consists of only digits.
+-   `nums[i]` will not have any leading zeros.

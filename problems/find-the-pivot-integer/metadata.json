@@ -1,0 +1,56 @@
+{
+  "id": "find-the-pivot-integer",
+  "title": "2485. Find the Pivot Integer",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-pivot-integer/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 8",
+      "output": "6",
+      "explanation": "6 is the pivot integer since: 1 + 2 + 3 + 4 + 5 + 6 = 6 + 7 + 8 = 21."
+    },
+    {
+      "input": "n = 1",
+      "output": "1",
+      "explanation": "1 is the pivot integer since: 1 = 1."
+    },
+    {
+      "input": "n = 4",
+      "output": "-1",
+      "explanation": "It can be proved that no such integer exist."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int pivotInteger(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int pivotInteger(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def pivotInteger(self, n: int) -> int:\n        ",
+    "typescript": "function pivotInteger(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PivotInteger(int n) {\n        \n    }\n}",
+    "go": "func pivotInteger(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn pivot_integer(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 8
+    },
+    {
+      "n": 1
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "pivotInteger",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can you use brute force to check every number from 1 to n if any of them is the pivot integer?",
+    "If you know the sum of [1: pivot], how can you efficiently calculate the sum of the other parts?"
+  ]
+}

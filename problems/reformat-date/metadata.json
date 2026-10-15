@@ -1,0 +1,53 @@
+{
+  "id": "reformat-date",
+  "title": "1507. Reformat Date",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/reformat-date/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "date = \"20th Oct 2052\"",
+      "output": "\"2052-10-20\""
+    },
+    {
+      "input": "date = \"6th Jun 1933\"",
+      "output": "\"1933-06-06\""
+    },
+    {
+      "input": "date = \"26th May 1960\"",
+      "output": "\"1960-05-26\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reformatDate(string date) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reformatDate(String date) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reformatDate(self, date: str) -> str:\n        ",
+    "typescript": "function reformatDate(date: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReformatDate(string date) {\n        \n    }\n}",
+    "go": "func reformatDate(date string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reformat_date(date: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "date": "20th Oct 2052"
+    },
+    {
+      "date": "6th Jun 1933"
+    },
+    {
+      "date": "26th May 1960"
+    }
+  ],
+  "functionName": "reformatDate",
+  "params": [
+    {
+      "name": "date",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Handle the conversions of day, month and year separately.",
+    "Notice that days always have a two-word ending, so if you erase the last two characters of this days you'll get the number."
+  ]
+}

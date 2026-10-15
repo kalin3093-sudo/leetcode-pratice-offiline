@@ -1,0 +1,58 @@
+{
+  "id": "word-pattern",
+  "title": "290. Word Pattern",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/word-pattern/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "pattern = \"abba\", s = \"dog cat cat dog\"",
+      "output": "true",
+      "explanation": "The bijection can be established as: 'a' maps to \"dog\". 'b' maps to \"cat\"."
+    },
+    {
+      "input": "pattern = \"abba\", s = \"dog cat cat fish\"",
+      "output": "false"
+    },
+    {
+      "input": "pattern = \"aaaa\", s = \"dog cat cat dog\"",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool wordPattern(string pattern, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean wordPattern(String pattern, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def wordPattern(self, pattern: str, s: str) -> bool:\n        ",
+    "typescript": "function wordPattern(pattern: string, s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool WordPattern(string pattern, string s) {\n        \n    }\n}",
+    "go": "func wordPattern(pattern string, s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn word_pattern(pattern: String, s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "pattern": "abba",
+      "s": "dog cat cat dog"
+    },
+    {
+      "pattern": "abba",
+      "s": "dog cat cat fish"
+    },
+    {
+      "pattern": "aaaa",
+      "s": "dog cat cat dog"
+    }
+  ],
+  "functionName": "wordPattern",
+  "params": [
+    {
+      "name": "pattern",
+      "type": "string"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

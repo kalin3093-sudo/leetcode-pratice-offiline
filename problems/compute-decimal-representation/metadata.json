@@ -1,0 +1,57 @@
+{
+  "id": "compute-decimal-representation",
+  "title": "3697. Compute Decimal Representation",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/compute-decimal-representation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 537",
+      "output": "[500,30,7]",
+      "explanation": "We can express 537 as 500 + 30 + 7. It is impossible to express 537 as a sum using fewer than 3 base-10 components."
+    },
+    {
+      "input": "n = 102",
+      "output": "[100,2]",
+      "explanation": "We can express 102 as 100 + 2. 102 is not a base-10 component, which means 2 base-10 components are needed."
+    },
+    {
+      "input": "n = 6",
+      "output": "[6]",
+      "explanation": "6 is a base-10 component."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> decimalRepresentation(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] decimalRepresentation(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def decimalRepresentation(self, n: int) -> List[int]:\n        ",
+    "typescript": "function decimalRepresentation(n: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] DecimalRepresentation(int n) {\n        \n    }\n}",
+    "go": "func decimalRepresentation(n int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn decimal_representation(n: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 537
+    },
+    {
+      "n": 102
+    },
+    {
+      "n": 6
+    }
+  ],
+  "functionName": "decimalRepresentation",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Break the number down digit by digit starting from the ones place.",
+    "Each nonzero digit contributes a base-10 component.",
+    "Collect all components and return them in descending order."
+  ]
+}

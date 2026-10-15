@@ -1,0 +1,48 @@
+{
+  "id": "find-the-highest-altitude",
+  "title": "1732. Find the Highest Altitude",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-highest-altitude/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "gain = [-5,1,5,0,-7]",
+      "output": "1",
+      "explanation": "The altitudes are [0,-5,-4,1,1,-6]. The highest is 1."
+    },
+    {
+      "input": "gain = [-4,-3,-2,-1,4,3,2]",
+      "output": "0",
+      "explanation": "The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestAltitude(vector<int>& gain) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestAltitude(int[] gain) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestAltitude(self, gain: list[int]) -> int:\n        ",
+    "typescript": "function largestAltitude(gain: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestAltitude(int[] gain) {\n        \n    }\n}",
+    "go": "func largestAltitude(gain []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_altitude(gain: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "gain": "[-5,1,5,0,-7]"
+    },
+    {
+      "gain": "[-4,-3,-2,-1,4,3,2]"
+    }
+  ],
+  "functionName": "largestAltitude",
+  "params": [
+    {
+      "name": "gain",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let's note that the altitude of an element is the sum of gains of all the elements behind it",
+    "Getting the altitudes can be done by getting the prefix sum array of the given array"
+  ]
+}

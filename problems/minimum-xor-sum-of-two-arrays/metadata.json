@@ -1,0 +1,54 @@
+{
+  "id": "minimum-xor-sum-of-two-arrays",
+  "title": "1879. Minimum XOR Sum of Two Arrays",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,2], nums2 = [2,3]",
+      "output": "2",
+      "explanation": "Rearrange nums2 so that it becomes [3,2]. The XOR sum is (1 XOR 3) + (2 XOR 2) = 2 + 0 = 2."
+    },
+    {
+      "input": "nums1 = [1,0,3], nums2 = [5,3,4]",
+      "output": "8",
+      "explanation": "Rearrange nums2 so that it becomes [5,4,3]. The XOR sum is (1 XOR 5) + (0 XOR 4) + (3 XOR 3) = 4 + 4 + 0 = 8."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumXORSum(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumXORSum(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumXORSum(self, nums1: list[int], nums2: list[int]) -> int:\n        ",
+    "typescript": "function minimumXORSum(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumXORSum(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func minimumXORSum(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_xor_sum(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,2]",
+      "nums2": "[2,3]"
+    },
+    {
+      "nums1": "[1,0,3]",
+      "nums2": "[5,3,4]"
+    }
+  ],
+  "functionName": "minimumXORSum",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Since n <= 14, we can consider every subset of nums2.",
+    "We can represent every subset of nums2 using bitmasks."
+  ]
+}

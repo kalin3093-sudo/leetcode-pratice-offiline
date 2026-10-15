@@ -1,0 +1,56 @@
+{
+  "id": "split-a-string-in-balanced-strings",
+  "title": "1221. Split a String in Balanced Strings",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/split-a-string-in-balanced-strings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"RLRRLLRLRL\"",
+      "output": "4",
+      "explanation": "s can be split into \"RL\", \"RRLL\", \"RL\", \"RL\", each substring contains same number of 'L' and 'R'."
+    },
+    {
+      "input": "s = \"RLRRRLLRLL\"",
+      "output": "2",
+      "explanation": "s can be split into \"RL\", \"RRRLLRLL\", each substring contains same number of 'L' and 'R'. Note that s cannot be split into \"RL\", \"RR\", \"RL\", \"LR\", \"LL\", because the 2nd and 5th substrings are not balanced."
+    },
+    {
+      "input": "s = \"LLLLRRRR\"",
+      "output": "1",
+      "explanation": "s can be split into \"LLLLRRRR\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int balancedStringSplit(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int balancedStringSplit(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def balancedStringSplit(self, s: str) -> int:\n        ",
+    "typescript": "function balancedStringSplit(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BalancedStringSplit(string s) {\n        \n    }\n}",
+    "go": "func balancedStringSplit(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn balanced_string_split(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "RLRRLLRLRL"
+    },
+    {
+      "s": "RLRRRLLRLL"
+    },
+    {
+      "s": "LLLLRRRR"
+    }
+  ],
+  "functionName": "balancedStringSplit",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Loop from left to right maintaining a balance variable when it gets an L increase it by one otherwise decrease it by one.",
+    "Whenever the balance variable reaches zero then we increase the answer by one."
+  ]
+}

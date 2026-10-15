@@ -1,0 +1,50 @@
+{
+  "id": "maximum-average-subarray-i",
+  "title": "643. Maximum Average Subarray I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-average-subarray-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,12,-5,-6,50,3], k = 4",
+      "output": "12.75000",
+      "explanation": "Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75"
+    },
+    {
+      "input": "nums = [5], k = 1",
+      "output": "5.00000"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double findMaxAverage(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double findMaxAverage(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMaxAverage(self, nums: list[int], k: int) -> float:\n        ",
+    "typescript": "function findMaxAverage(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double FindMaxAverage(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func findMaxAverage(nums []int, k int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_max_average(nums: Vec<i32>, k: i32) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,12,-5,-6,50,3]",
+      "k": 4
+    },
+    {
+      "nums": "[5]",
+      "k": 1
+    }
+  ],
+  "functionName": "findMaxAverage",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "double",
+  "hints": []
+}

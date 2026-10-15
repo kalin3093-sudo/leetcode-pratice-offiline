@@ -1,0 +1,47 @@
+{
+  "id": "check-good-integer",
+  "title": "3959. Check Good Integer",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-good-integer/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1000",
+      "output": "false",
+      "explanation": "The digits of 1000 are 1, 0, 0, and 0. The digitSum is 1 + 0 + 0 + 0 = 1. The squareSum is 12 + 02 + 02 + 02 = 1. The squareSum - digitSum is 1 - 1 = 0. As 0 is not greater than or equal to 50, the output is false."
+    },
+    {
+      "input": "n = 19",
+      "output": "true",
+      "explanation": "The digits of 19 are 1 and 9. The digitSum is 1 + 9 = 10. The squareSum is 12 + 92 = 1 + 81 = 82. The squareSum - digitSum is 82 - 10 = 72. As 72 is greater than or equal to 50, the output is true."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkGoodInteger(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkGoodInteger(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkGoodInteger(self, n: int) -> bool:\n        ",
+    "typescript": "function checkGoodInteger(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckGoodInteger(int n) {\n        \n    }\n}",
+    "go": "func checkGoodInteger(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_good_integer(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1000
+    },
+    {
+      "n": 19
+    }
+  ],
+  "functionName": "checkGoodInteger",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Pure simulation problem."
+  ]
+}

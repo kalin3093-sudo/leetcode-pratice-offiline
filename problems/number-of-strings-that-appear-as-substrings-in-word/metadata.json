@@ -1,0 +1,63 @@
+{
+  "id": "number-of-strings-that-appear-as-substrings-in-word",
+  "title": "1967. Number of Strings That Appear as Substrings in Word",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "patterns = [\"a\",\"abc\",\"bc\",\"d\"], word = \"abc\"",
+      "output": "3",
+      "explanation": "- \"a\" appears as a substring in \"abc\". - \"abc\" appears as a substring in \"abc\". - \"bc\" appears as a substring in \"abc\". - \"d\" does not appear as a substring in \"abc\". 3 of the strings in patterns appear as a substring in word."
+    },
+    {
+      "input": "patterns = [\"a\",\"b\",\"c\"], word = \"aaaaabbbbb\"",
+      "output": "2",
+      "explanation": "- \"a\" appears as a substring in \"aaaaabbbbb\". - \"b\" appears as a substring in \"aaaaabbbbb\". - \"c\" does not appear as a substring in \"aaaaabbbbb\". 2 of the strings in patterns appear as a substring in word."
+    },
+    {
+      "input": "patterns = [\"a\",\"a\",\"a\"], word = \"ab\"",
+      "output": "3",
+      "explanation": "Each of the patterns appears as a substring in word \"ab\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numOfStrings(vector<string>& patterns, string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numOfStrings(String[] patterns, String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numOfStrings(self, patterns: list[str], word: str) -> int:\n        ",
+    "typescript": "function numOfStrings(patterns: string[], word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumOfStrings(string[] patterns, string word) {\n        \n    }\n}",
+    "go": "func numOfStrings(patterns []string, word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_of_strings(patterns: Vec<String>, word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "patterns": "[\"a\",\"abc\",\"bc\",\"d\"]",
+      "word": "abc"
+    },
+    {
+      "patterns": "[\"a\",\"b\",\"c\"]",
+      "word": "aaaaabbbbb"
+    },
+    {
+      "patterns": "[\"a\",\"a\",\"a\"]",
+      "word": "ab"
+    }
+  ],
+  "functionName": "numOfStrings",
+  "params": [
+    {
+      "name": "patterns",
+      "type": "string_array"
+    },
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Deal with each of the patterns individually.",
+    "Use the built-in function in the language you are using to find if the pattern exists as a substring in <code>word</code>."
+  ]
+}

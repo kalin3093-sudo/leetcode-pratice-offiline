@@ -1,0 +1,48 @@
+{
+  "id": "minimum-operations-to-make-binary-palindrome",
+  "title": "3766. Minimum Operations to Make Binary Palindrome",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,4]",
+      "output": "[0,1,1]",
+      "explanation": "One optimal set of operations: nums[i] Binary(nums[i]) Nearest Palindrome Binary (Palindrome) Operations Required ans[i] 1 1 1 1 Already palindrome 0 2 10 3 11 Increase by 1 1 4 100 3 11 Decrease by 1 1 Thus, ans = [0, 1, 1]."
+    },
+    {
+      "input": "nums = [6,7,12]",
+      "output": "[1,0,3]",
+      "explanation": "One optimal set of operations: nums[i] Binary(nums[i]) Nearest Palindrome Binary (Palindrome) Operations Required ans[i] 6 110 5 101 Decrease by 1 1 7 111 7 111 Already palindrome 0 12 1100 15 1111 Increase by 3 3 Thus, ans = [1, 0, 3]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function minOperations(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,4]"
+    },
+    {
+      "nums": "[6,7,12]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Preprocess the binary palindromes",
+    "For each <code>nums[i]</code> find the closest binary palindrome from the preprocessed values"
+  ]
+}

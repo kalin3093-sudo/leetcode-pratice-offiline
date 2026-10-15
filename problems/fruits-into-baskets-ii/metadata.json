@@ -1,0 +1,53 @@
+{
+  "id": "fruits-into-baskets-ii",
+  "title": "3477. Fruits Into Baskets II",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/fruits-into-baskets-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "fruits = [4,2,5], baskets = [3,5,4]",
+      "output": "1",
+      "explanation": "fruits[0] = 4 is placed in baskets[1] = 5. fruits[1] = 2 is placed in baskets[0] = 3. fruits[2] = 5 cannot be placed in baskets[2] = 4. Since one fruit type remains unplaced, we return 1."
+    },
+    {
+      "input": "fruits = [3,6,1], baskets = [6,4,7]",
+      "output": "0",
+      "explanation": "fruits[0] = 3 is placed in baskets[0] = 6. fruits[1] = 6 cannot be placed in baskets[1] = 4 (insufficient capacity) but can be placed in the next available basket, baskets[2] = 7. fruits[2] = 1 is placed in baskets[1] = 4. Since all fruits are successfully placed, we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numOfUnplacedFruits(vector<int>& fruits, vector<int>& baskets) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numOfUnplacedFruits(int[] fruits, int[] baskets) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numOfUnplacedFruits(self, fruits: List[int], baskets: List[int]) -> int:\n        ",
+    "typescript": "function numOfUnplacedFruits(fruits: number[], baskets: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumOfUnplacedFruits(int[] fruits, int[] baskets) {\n        \n    }\n}",
+    "go": "func numOfUnplacedFruits(fruits []int, baskets []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_of_unplaced_fruits(fruits: Vec<i32>, baskets: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "fruits": "[4,2,5]",
+      "baskets": "[3,5,4]"
+    },
+    {
+      "fruits": "[3,6,1]",
+      "baskets": "[6,4,7]"
+    }
+  ],
+  "functionName": "numOfUnplacedFruits",
+  "params": [
+    {
+      "name": "fruits",
+      "type": "int_array"
+    },
+    {
+      "name": "baskets",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the operations for each fruit as described"
+  ]
+}

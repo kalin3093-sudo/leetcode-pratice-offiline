@@ -1,0 +1,65 @@
+{
+  "id": "earliest-second-to-mark-indices-i",
+  "title": "3048. Earliest Second to Mark Indices I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/earliest-second-to-mark-indices-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,2,0], changeIndices = [2,2,2,2,3,2,2,1]",
+      "output": "8",
+      "explanation": "In this example, we have 8 seconds. The following operations can be performed to mark all indices: Second 1: Choose index 1 and decrement nums[1] by one. nums becomes [1,2,0]. Second 2: Choose index 1 and decrement nums[1] by one. nums becomes [0,2,0]. Second 3: Choose index 2 and decrement nums[2] by one. nums becomes [0,1,0]. Second 4: Choose index 2 and decrement nums[2] by one. nums becomes [0,0,0]. Second 5: Mark the index changeIndices[5], which is marking index 3, since nums[3] is equal to 0. Second 6: Mark the index changeIndices[6], which is marking index 2, since nums[2] is equal to 0. Second 7: Do nothing. Second 8: Mark the index changeIndices[8], which is marking index 1, since nums[1] is equal to 0. Now all indices have been marked. It can be shown that it is not possible to mark all indices earlier than the 8th second. Hence, the answer is 8."
+    },
+    {
+      "input": "nums = [1,3], changeIndices = [1,1,1,2,1,1,1]",
+      "output": "6",
+      "explanation": "In this example, we have 7 seconds. The following operations can be performed to mark all indices: Second 1: Choose index 2 and decrement nums[2] by one. nums becomes [1,2]. Second 2: Choose index 2 and decrement nums[2] by one. nums becomes [1,1]. Second 3: Choose index 2 and decrement nums[2] by one. nums becomes [1,0]. Second 4: Mark the index changeIndices[4], which is marking index 2, since nums[2] is equal to 0. Second 5: Choose index 1 and decrement nums[1] by one. nums becomes [0,0]. Second 6: Mark the index changeIndices[6], which is marking index 1, since nums[1] is equal to 0. Now all indices have been marked. It can be shown that it is not possible to mark all indices earlier than the 6th second. Hence, the answer is 6."
+    },
+    {
+      "input": "nums = [0,1], changeIndices = [2,2,2]",
+      "output": "-1",
+      "explanation": "In this example, it is impossible to mark all indices because index 1 isn't in changeIndices. Hence, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int earliestSecondToMarkIndices(vector<int>& nums, vector<int>& changeIndices) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int earliestSecondToMarkIndices(int[] nums, int[] changeIndices) {\n        \n    }\n}",
+    "python": "class Solution:\n    def earliestSecondToMarkIndices(self, nums: List[int], changeIndices: List[int]) -> int:\n        ",
+    "typescript": "function earliestSecondToMarkIndices(nums: number[], changeIndices: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EarliestSecondToMarkIndices(int[] nums, int[] changeIndices) {\n        \n    }\n}",
+    "go": "func earliestSecondToMarkIndices(nums []int, changeIndices []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn earliest_second_to_mark_indices(nums: Vec<i32>, change_indices: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,2,0]",
+      "changeIndices": "[2,2,2,2,3,2,2,1]"
+    },
+    {
+      "nums": "[1,3]",
+      "changeIndices": "[1,1,1,2,1,1,1]"
+    },
+    {
+      "nums": "[0,1]",
+      "changeIndices": "[2,2,2]"
+    }
+  ],
+  "functionName": "earliestSecondToMarkIndices",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "changeIndices",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider using binary search.",
+    "Suppose the <code>answer <= x</code>; we can mark each index as late as possible. Namely, mark each index at the last occurrence in the array <code>changeIndices[1..x]</code>.",
+    "When marking an index, which is the last occurrence at the second <code>i</code>, we check whether we have a sufficient number of decrement operations to mark all the previous indices whose last occurrences have already been marked, and the current index, i.e., <code>i - sum_of_marked_indices_values - cnt_of_marked_indices >= nums[changeIndices[i]]</code>.",
+    "The answer is the earliest second when all indices can be marked after running the binary search or <code>-1</code> if there is no such second."
+  ]
+}

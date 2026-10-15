@@ -1,0 +1,49 @@
+{
+  "id": "count-number-of-ways-to-place-houses",
+  "title": "2320. Count Number of Ways to Place Houses",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-number-of-ways-to-place-houses/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "4",
+      "explanation": "Possible arrangements: 1. All plots are empty. 2. A house is placed on one side of the street. 3. A house is placed on the other side of the street. 4. Two houses are placed, one on each side of the street."
+    },
+    {
+      "input": "n = 2",
+      "output": "9",
+      "explanation": "The 9 possible arrangements are shown in the diagram above."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countHousePlacements(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countHousePlacements(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countHousePlacements(self, n: int) -> int:\n        ",
+    "typescript": "function countHousePlacements(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountHousePlacements(int n) {\n        \n    }\n}",
+    "go": "func countHousePlacements(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_house_placements(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "countHousePlacements",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try coming up with a DP solution for one side of the street.",
+    "The DP for one side of the street will bear resemblance to the Fibonacci sequence.",
+    "The number of different arrangements on both side of the street is the same."
+  ]
+}

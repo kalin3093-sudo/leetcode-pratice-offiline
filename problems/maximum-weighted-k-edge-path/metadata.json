@@ -1,0 +1,78 @@
+{
+  "id": "maximum-weighted-k-edge-path",
+  "title": "3543. Maximum Weighted K-Edge Path",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-weighted-k-edge-path/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "n = 3, edges = [[0,1,1],[1,2,2]], k = 2, t = 4",
+      "output": "3",
+      "explanation": "The only path with k = 2 edges is 0 -> 1 -> 2 with weight 1 + 2 = 3 < t. Thus, the maximum possible sum of weights less than t is 3."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,2],[0,2,3]], k = 1, t = 3",
+      "output": "2",
+      "explanation": "There are two paths with k = 1 edge: 0 -> 1 with weight 2 < t. 0 -> 2 with weight 3 = t, which is not strictly less than t. Thus, the maximum possible sum of weights less than t is 2."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,6],[1,2,8]], k = 1, t = 6",
+      "output": "-1",
+      "explanation": "There are two paths with k = 1 edge: 0 -> 1 with weight 6 = t, which is not strictly less than t. 1 -> 2 with weight 8 > t, which is not strictly less than t. Since there is no path with sum of weights strictly less than t, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxWeight(int n, vector<vector<int>>& edges, int k, int t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxWeight(int n, int[][] edges, int k, int t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxWeight(self, n: int, edges: List[List[int]], k: int, t: int) -> int:\n        ",
+    "typescript": "function maxWeight(n: number, edges: number[][], k: number, t: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxWeight(int n, int[][] edges, int k, int t) {\n        \n    }\n}",
+    "go": "func maxWeight(n int, edges [][]int, k int, t int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_weight(n: i32, edges: Vec<Vec<i32>>, k: i32, t: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "edges": "[[0,1,1],[1,2,2]]",
+      "k": 2,
+      "t": 4
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,2],[0,2,3]]",
+      "k": 1,
+      "t": 3
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,6],[1,2,8]]",
+      "k": 1,
+      "t": 6
+    }
+  ],
+  "functionName": "maxWeight",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "t",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use Dynamic Programming",
+    "How many paths and path sums are possible? Can we maintain the pathSums for a given path length ending at a particular node in a set?",
+    "The set <code>dp[i][j]</code> contains all possible path weights that end at node <code>i</code>, have total weight less than <code>T</code>, and consist of exactly <code>j</code> edges"
+  ]
+}

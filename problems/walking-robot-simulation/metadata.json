@@ -1,0 +1,60 @@
+{
+  "id": "walking-robot-simulation",
+  "title": "874. Walking Robot Simulation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/walking-robot-simulation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "commands = [4,-1,3], obstacles = []",
+      "output": "25",
+      "explanation": "The robot starts at (0, 0): Move north 4 units to (0, 4). Turn right. Move east 3 units to (3, 4). The furthest point the robot ever gets from the origin is (3, 4), which squared is 32 + 42 = 25 units away."
+    },
+    {
+      "input": "commands = [4,-1,4,-2,4], obstacles = [[2,4]]",
+      "output": "65",
+      "explanation": "The robot starts at (0, 0): Move north 4 units to (0, 4). Turn right. Move east 1 unit and get blocked by the obstacle at (2, 4), robot is at (1, 4). Turn left. Move north 4 units to (1, 8). The furthest point the robot ever gets from the origin is (1, 8), which squared is 12 + 82 = 65 units away."
+    },
+    {
+      "input": "commands = [6,-1,-1,6], obstacles = [[0,0]]",
+      "output": "36",
+      "explanation": "The robot starts at (0, 0): Move north 6 units to (0, 6). Turn right. Turn right. Move south 5 units and get blocked by the obstacle at (0,0), robot is at (0, 1). The furthest point the robot ever gets from the origin is (0, 6), which squared is 62 = 36 units away."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int robotSim(int[] commands, int[][] obstacles) {\n        \n    }\n}",
+    "python": "class Solution:\n    def robotSim(self, commands: list[int], obstacles: list[list[int]]) -> int:\n        ",
+    "typescript": "function robotSim(commands: number[], obstacles: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RobotSim(int[] commands, int[][] obstacles) {\n        \n    }\n}",
+    "go": "func robotSim(commands []int, obstacles [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn robot_sim(commands: Vec<i32>, obstacles: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "commands": "[4,-1,3]",
+      "obstacles": "[]"
+    },
+    {
+      "commands": "[4,-1,4,-2,4]",
+      "obstacles": "[[2,4]]"
+    },
+    {
+      "commands": "[-1,9]",
+      "obstacles": "[[5,0],[2,0]]"
+    }
+  ],
+  "functionName": "robotSim",
+  "params": [
+    {
+      "name": "commands",
+      "type": "int_array"
+    },
+    {
+      "name": "obstacles",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

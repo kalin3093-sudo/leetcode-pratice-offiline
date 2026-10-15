@@ -1,0 +1,57 @@
+{
+  "id": "right-triangles",
+  "title": "3128. Right Triangles",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/right-triangles/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,0],[0,1,1],[0,1,0]]",
+      "output": "2",
+      "explanation": "There are two right triangles with elements of the value 1. Notice that the blue ones do not form a right triangle because the 3 elements are in the same column."
+    },
+    {
+      "input": "grid = [[1,0,0,0],[0,1,0,1],[1,0,0,0]]",
+      "output": "0",
+      "explanation": "There are no right triangles with elements of the value 1.  Notice that the blue ones do not form a right triangle."
+    },
+    {
+      "input": "grid = [[1,0,1],[1,0,0],[1,0,0]]",
+      "output": "2",
+      "explanation": "There are two right triangles with elements of the value 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long numberOfRightTriangles(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long numberOfRightTriangles(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfRightTriangles(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function numberOfRightTriangles(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long NumberOfRightTriangles(int[][] grid) {\n        \n    }\n}",
+    "go": "func numberOfRightTriangles(grid [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_right_triangles(grid: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,0],[0,1,1],[0,1,0]]"
+    },
+    {
+      "grid": "[[1,0,0,0],[0,1,0,1],[1,0,0,0]]"
+    },
+    {
+      "grid": "[[1,0,1],[1,0,0],[1,0,0]]"
+    }
+  ],
+  "functionName": "numberOfRightTriangles",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "If <code>grid[x][y]</code> is 1, it can form a right triangle with an element of <code>grid</code> with value 1 in the same row and an element of <code>grid</code> with value 1 in the same column.",
+    "So we just need to count the number of 1s in each row and column.",
+    "For each <code>x, y</code> with <code>grid[x][y] = 1</code> if there are <code>row[x]</code> 1s in the row <code>x</code> and <code>col[y]</code> 1s in column <code>y</code>, the answer should be added by <code>(row[x] - 1) * (col[y] - 1)</code>."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "calculate-amount-paid-in-taxes",
+  "title": "2303. Calculate Amount Paid in Taxes",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/calculate-amount-paid-in-taxes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "brackets = [[3,50],[7,10],[12,25]], income = 10",
+      "output": "2.65000",
+      "explanation": "Based on your income, you have 3 dollars in the 1st tax bracket, 4 dollars in the 2nd tax bracket, and 3 dollars in the 3rd tax bracket. The tax rate for the three tax brackets is 50%, 10%, and 25%, respectively. In total, you pay $3 * 50% + $4 * 10% + $3 * 25% = $2.65 in taxes."
+    },
+    {
+      "input": "brackets = [[1,0],[4,25],[5,50]], income = 2",
+      "output": "0.25000",
+      "explanation": "Based on your income, you have 1 dollar in the 1st tax bracket and 1 dollar in the 2nd tax bracket. The tax rate for the two tax brackets is 0% and 25%, respectively. In total, you pay $1 * 0% + $1 * 25% = $0.25 in taxes."
+    },
+    {
+      "input": "brackets = [[2,50]], income = 0",
+      "output": "0.00000",
+      "explanation": "You have no income to tax, so you have to pay a total of $0 in taxes."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double calculateTax(vector<vector<int>>& brackets, int income) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double calculateTax(int[][] brackets, int income) {\n        \n    }\n}",
+    "python": "class Solution:\n    def calculateTax(self, brackets: list[list[int]], income: int) -> float:\n        ",
+    "typescript": "function calculateTax(brackets: number[][], income: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double CalculateTax(int[][] brackets, int income) {\n        \n    }\n}",
+    "go": "func calculateTax(brackets [][]int, income int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn calculate_tax(brackets: Vec<Vec<i32>>, income: i32) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "brackets": "[[3,50],[7,10],[12,25]]",
+      "income": 10
+    },
+    {
+      "brackets": "[[1,0],[4,25],[5,50]]",
+      "income": 2
+    },
+    {
+      "brackets": "[[2,50]]",
+      "income": 0
+    }
+  ],
+  "functionName": "calculateTax",
+  "params": [
+    {
+      "name": "brackets",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "income",
+      "type": "int"
+    }
+  ],
+  "outputType": "double",
+  "hints": [
+    "As you iterate through the tax brackets, keep track of the previous tax bracket’s upper bound in a variable called prev. If there is no previous tax bracket, use 0 instead.",
+    "The amount of money in the ith tax bracket is min(income, upperi) - prev."
+  ]
+}

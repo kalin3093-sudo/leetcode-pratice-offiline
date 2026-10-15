@@ -1,0 +1,51 @@
+{
+  "id": "projection-area-of-3d-shapes",
+  "title": "883. Projection Area of 3D Shapes",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/projection-area-of-3d-shapes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2],[3,4]]",
+      "output": "17",
+      "explanation": "Here are the three projections (\"shadows\") of the shape made with each axis-aligned plane."
+    },
+    {
+      "input": "grid = [[2]]",
+      "output": "5"
+    },
+    {
+      "input": "grid = [[1,0],[0,2]]",
+      "output": "8"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int projectionArea(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int projectionArea(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def projectionArea(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function projectionArea(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ProjectionArea(int[][] grid) {\n        \n    }\n}",
+    "go": "func projectionArea(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn projection_area(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2],[3,4]]"
+    },
+    {
+      "grid": "[[2]]"
+    },
+    {
+      "grid": "[[1,0],[0,2]]"
+    }
+  ],
+  "functionName": "projectionArea",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

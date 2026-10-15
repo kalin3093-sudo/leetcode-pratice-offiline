@@ -1,0 +1,14 @@
+[
+  {
+    "startAt": 1,
+    "moveCost": 2,
+    "pushCost": 1,
+    "targetSeconds": 600
+  },
+  {
+    "startAt": 0,
+    "moveCost": 1,
+    "pushCost": 2,
+    "targetSeconds": 76
+  }
+]

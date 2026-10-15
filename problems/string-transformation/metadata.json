@@ -1,0 +1,61 @@
+{
+  "id": "string-transformation",
+  "title": "2851. String Transformation",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/string-transformation/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"abcd\", t = \"cdab\", k = 2",
+      "output": "2",
+      "explanation": "First way: In first operation, choose suffix from index = 3, so resulting s = \"dabc\". In second operation, choose suffix from index = 3, so resulting s = \"cdab\". Second way: In first operation, choose suffix from index = 1, so resulting s = \"bcda\". In second operation, choose suffix from index = 1, so resulting s = \"cdab\"."
+    },
+    {
+      "input": "s = \"ababab\", t = \"ababab\", k = 1",
+      "output": "2",
+      "explanation": "First way: Choose suffix from index = 2, so resulting s = \"ababab\". Second way: Choose suffix from index = 4, so resulting s = \"ababab\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfWays(string s, string t, long long k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfWays(String s, String t, long k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfWays(self, s: str, t: str, k: int) -> int:\n        ",
+    "typescript": "function numberOfWays(s: string, t: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfWays(string s, string t, long k) {\n        \n    }\n}",
+    "go": "func numberOfWays(s string, t string, k int64) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_ways(s: String, t: String, k: i64) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcd",
+      "t": "cdab",
+      "k": "2"
+    },
+    {
+      "s": "ababab",
+      "t": "ababab",
+      "k": "1"
+    }
+  ],
+  "functionName": "numberOfWays",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "long"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "String <code>t</code> can be only constructed if it is a rotated version of string <code>s</code>.",
+    "Use KMP algorithm or Z algorithm to find the number of indices from where <code>s</code> is equal to <code>t</code>.",
+    "Use Dynamic Programming to count the number of ways."
+  ]
+}

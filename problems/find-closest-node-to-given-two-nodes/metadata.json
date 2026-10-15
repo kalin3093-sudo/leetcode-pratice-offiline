@@ -1,0 +1,60 @@
+{
+  "id": "find-closest-node-to-given-two-nodes",
+  "title": "2359. Find Closest Node to Given Two Nodes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-closest-node-to-given-two-nodes/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "edges = [2,2,3,-1], node1 = 0, node2 = 1",
+      "output": "2",
+      "explanation": "The distance from node 0 to node 2 is 1, and the distance from node 1 to node 2 is 1. The maximum of those two distances is 1. It can be proven that we cannot get a node with a smaller maximum distance than 1, so we return node 2."
+    },
+    {
+      "input": "edges = [1,2,-1], node1 = 0, node2 = 2",
+      "output": "2",
+      "explanation": "The distance from node 0 to node 2 is 2, and the distance from node 2 to itself is 0. The maximum of those two distances is 2. It can be proven that we cannot get a node with a smaller maximum distance than 2, so we return node 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int closestMeetingNode(vector<int>& edges, int node1, int node2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int closestMeetingNode(int[] edges, int node1, int node2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closestMeetingNode(self, edges: list[int], node1: int, node2: int) -> int:\n        ",
+    "typescript": "function closestMeetingNode(edges: number[], node1: number, node2: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ClosestMeetingNode(int[] edges, int node1, int node2) {\n        \n    }\n}",
+    "go": "func closestMeetingNode(edges []int, node1 int, node2 int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn closest_meeting_node(edges: Vec<i32>, node1: i32, node2: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "edges": "[2,2,3,-1]",
+      "node1": 0,
+      "node2": 1
+    },
+    {
+      "edges": "[1,2,-1]",
+      "node1": 0,
+      "node2": 2
+    }
+  ],
+  "functionName": "closestMeetingNode",
+  "params": [
+    {
+      "name": "edges",
+      "type": "int_array"
+    },
+    {
+      "name": "node1",
+      "type": "int"
+    },
+    {
+      "name": "node2",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How can you find the shortest distance from one node to all nodes in the graph?",
+    "Use BFS to find the shortest distance from both node1 and node2 to all nodes in the graph. Then iterate over all nodes, and find the node with the minimum max distance."
+  ]
+}

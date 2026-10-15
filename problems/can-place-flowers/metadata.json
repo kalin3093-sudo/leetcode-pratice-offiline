@@ -1,0 +1,49 @@
+{
+  "id": "can-place-flowers",
+  "title": "605. Can Place Flowers",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/can-place-flowers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "flowerbed = [1,0,0,0,1], n = 1",
+      "output": "true"
+    },
+    {
+      "input": "flowerbed = [1,0,0,0,1], n = 2",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canPlaceFlowers(vector<int>& flowerbed, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canPlaceFlowers(int[] flowerbed, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canPlaceFlowers(self, flowerbed: list[int], n: int) -> bool:\n        ",
+    "typescript": "function canPlaceFlowers(flowerbed: number[], n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanPlaceFlowers(int[] flowerbed, int n) {\n        \n    }\n}",
+    "go": "func canPlaceFlowers(flowerbed []int, n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_place_flowers(flowerbed: Vec<i32>, n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "flowerbed": "[1,0,0,0,1]",
+      "n": 1
+    },
+    {
+      "flowerbed": "[1,0,0,0,1]",
+      "n": 2
+    }
+  ],
+  "functionName": "canPlaceFlowers",
+  "params": [
+    {
+      "name": "flowerbed",
+      "type": "int_array"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "node-with-highest-edge-score",
+  "title": "2374. Node With Highest Edge Score",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/node-with-highest-edge-score/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "edges = [1,0,0,0,0,7,7,5]",
+      "output": "7",
+      "explanation": "- The nodes 1, 2, 3 and 4 have an edge pointing to node 0. The edge score of node 0 is 1 + 2 + 3 + 4 = 10. - The node 0 has an edge pointing to node 1. The edge score of node 1 is 0. - The node 7 has an edge pointing to node 5. The edge score of node 5 is 7. - The nodes 5 and 6 have an edge pointing to node 7. The edge score of node 7 is 5 + 6 = 11. Node 7 has the highest edge score so return 7."
+    },
+    {
+      "input": "edges = [2,0,0,2]",
+      "output": "0",
+      "explanation": "- The nodes 1 and 2 have an edge pointing to node 0. The edge score of node 0 is 1 + 2 = 3. - The nodes 0 and 3 have an edge pointing to node 2. The edge score of node 2 is 0 + 3 = 3. Nodes 0 and 2 both have an edge score of 3. Since node 0 has a smaller index, we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int edgeScore(vector<int>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int edgeScore(int[] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def edgeScore(self, edges: list[int]) -> int:\n        ",
+    "typescript": "function edgeScore(edges: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EdgeScore(int[] edges) {\n        \n    }\n}",
+    "go": "func edgeScore(edges []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn edge_score(edges: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "edges": "[1,0,0,0,0,7,7,5]"
+    },
+    {
+      "edges": "[2,0,0,2]"
+    }
+  ],
+  "functionName": "edgeScore",
+  "params": [
+    {
+      "name": "edges",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Create an array arr where arr[i] is the edge score for node i.",
+    "How does the edge score for node edges[i] change? It increases by i.",
+    "The edge score may not fit within a standard 32-bit integer."
+  ]
+}

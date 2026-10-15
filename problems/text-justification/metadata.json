@@ -1,0 +1,58 @@
+{
+  "id": "text-justification",
+  "title": "68. Text Justification",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/text-justification/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"], maxWidth = 16",
+      "output": "[\"This    is    an\",\"example  of text\",'\"justification.  \"']"
+    },
+    {
+      "input": "words = [\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"], maxWidth = 16",
+      "output": "[\"What   must   be\",'\"acknowledgment  \"','\"shall be        \"']",
+      "explanation": "Note that the last line is \"shall be    \" instead of \"shall     be\", because the last line must be left-justified instead of fully-justified. Note that the second line is also left-justified because it contains only one word."
+    },
+    {
+      "input": "words = [\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"], maxWidth = 20",
+      "output": "[\"Science  is  what we\",\"understand      well\",\"enough to explain to\",\"a  computer.  Art is\",\"everything  else  we\",'\"do                  \"']"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> fullJustify(vector<string>& words, int maxWidth) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> fullJustify(String[] words, int maxWidth) {\n        \n    }\n}",
+    "python": "class Solution:\n    def fullJustify(self, words: list[str], maxWidth: int) -> list[str]:\n        ",
+    "typescript": "function fullJustify(words: string[], maxWidth: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> FullJustify(string[] words, int maxWidth) {\n        \n    }\n}",
+    "go": "func fullJustify(words []string, maxWidth int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn full_justify(words: Vec<String>, max_width: i32) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"]",
+      "maxWidth": 16
+    },
+    {
+      "words": "[\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"]",
+      "maxWidth": 16
+    },
+    {
+      "words": "[\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]",
+      "maxWidth": 20
+    }
+  ],
+  "functionName": "fullJustify",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "maxWidth",
+      "type": "int"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

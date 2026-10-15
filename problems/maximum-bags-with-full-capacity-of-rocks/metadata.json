@@ -1,0 +1,60 @@
+{
+  "id": "maximum-bags-with-full-capacity-of-rocks",
+  "title": "2279. Maximum Bags With Full Capacity of Rocks",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "capacity = [2,3,4,5], rocks = [1,2,4,4], additionalRocks = 2",
+      "output": "3",
+      "explanation": "Place 1 rock in bag 0 and 1 rock in bag 1. The number of rocks in each bag are now [2,3,4,4]. Bags 0, 1, and 2 have full capacity. There are 3 bags at full capacity, so we return 3. It can be shown that it is not possible to have more than 3 bags at full capacity. Note that there may be other ways of placing the rocks that result in an answer of 3."
+    },
+    {
+      "input": "capacity = [10,2,2], rocks = [2,2,0], additionalRocks = 100",
+      "output": "3",
+      "explanation": "Place 8 rocks in bag 0 and 2 rocks in bag 2. The number of rocks in each bag are now [10,2,2]. Bags 0, 1, and 2 have full capacity. There are 3 bags at full capacity, so we return 3. It can be shown that it is not possible to have more than 3 bags at full capacity. Note that we did not use all of the additional rocks."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumBags(vector<int>& capacity, vector<int>& rocks, int additionalRocks) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumBags(int[] capacity, int[] rocks, int additionalRocks) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumBags(self, capacity: list[int], rocks: list[int], additionalRocks: int) -> int:\n        ",
+    "typescript": "function maximumBags(capacity: number[], rocks: number[], additionalRocks: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumBags(int[] capacity, int[] rocks, int additionalRocks) {\n        \n    }\n}",
+    "go": "func maximumBags(capacity []int, rocks []int, additionalRocks int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_bags(capacity: Vec<i32>, rocks: Vec<i32>, additional_rocks: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "capacity": "[2,3,4,5]",
+      "rocks": "[1,2,4,4]",
+      "additionalRocks": 2
+    },
+    {
+      "capacity": "[10,2,2]",
+      "rocks": "[2,2,0]",
+      "additionalRocks": 100
+    }
+  ],
+  "functionName": "maximumBags",
+  "params": [
+    {
+      "name": "capacity",
+      "type": "int_array"
+    },
+    {
+      "name": "rocks",
+      "type": "int_array"
+    },
+    {
+      "name": "additionalRocks",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Which bag should you fill completely first?",
+    "Can you think of a greedy solution?"
+  ]
+}

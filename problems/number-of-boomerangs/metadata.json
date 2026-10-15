@@ -1,0 +1,51 @@
+{
+  "id": "number-of-boomerangs",
+  "title": "447. Number of Boomerangs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-boomerangs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[0,0],[1,0],[2,0]]",
+      "output": "2",
+      "explanation": "The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]."
+    },
+    {
+      "input": "points = [[1,1],[2,2],[3,3]]",
+      "output": "2"
+    },
+    {
+      "input": "points = [[1,1]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfBoomerangs(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfBoomerangs(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfBoomerangs(self, points: list[list[int]]) -> int:\n        ",
+    "typescript": "function numberOfBoomerangs(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfBoomerangs(int[][] points) {\n        \n    }\n}",
+    "go": "func numberOfBoomerangs(points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_boomerangs(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[0,0],[1,0],[2,0]]"
+    },
+    {
+      "points": "[[1,1],[2,2],[3,3]]"
+    },
+    {
+      "points": "[[1,1]]"
+    }
+  ],
+  "functionName": "numberOfBoomerangs",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

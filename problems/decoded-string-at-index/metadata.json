@@ -1,0 +1,60 @@
+{
+  "id": "decoded-string-at-index",
+  "title": "880. Decoded String at Index",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/decoded-string-at-index/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leet2code3\", k = 10",
+      "output": "\"o\"",
+      "explanation": "The decoded string is \"leetleetcodeleetleetcodeleetleetcode\". The 10th letter in the string is \"o\"."
+    },
+    {
+      "input": "s = \"ha22\", k = 5",
+      "output": "\"h\"",
+      "explanation": "The decoded string is \"hahahaha\". The 5th letter is \"h\"."
+    },
+    {
+      "input": "s = \"a2345678999999999999999\", k = 1",
+      "output": "\"a\"",
+      "explanation": "The decoded string is \"a\" repeated 8301530446056247680 times. The 1st letter is \"a\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string decodeAtIndex(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String decodeAtIndex(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def decodeAtIndex(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function decodeAtIndex(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string DecodeAtIndex(string s, int k) {\n        \n    }\n}",
+    "go": "func decodeAtIndex(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn decode_at_index(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leet2code3",
+      "k": 10
+    },
+    {
+      "s": "ha22",
+      "k": 5
+    },
+    {
+      "s": "a2345678999999999999999",
+      "k": 1
+    }
+  ],
+  "functionName": "decodeAtIndex",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

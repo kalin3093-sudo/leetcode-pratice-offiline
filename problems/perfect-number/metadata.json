@@ -1,0 +1,44 @@
+{
+  "id": "perfect-number",
+  "title": "507. Perfect Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/perfect-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 28",
+      "output": "true",
+      "explanation": "28 = 1 + 2 + 4 + 7 + 14 1, 2, 4, 7, and 14 are all divisors of 28."
+    },
+    {
+      "input": "num = 7",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkPerfectNumber(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkPerfectNumber(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkPerfectNumber(self, num: int) -> bool:\n        ",
+    "typescript": "function checkPerfectNumber(num: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckPerfectNumber(int num) {\n        \n    }\n}",
+    "go": "func checkPerfectNumber(num int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_perfect_number(num: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 28
+    },
+    {
+      "num": 7
+    }
+  ],
+  "functionName": "checkPerfectNumber",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

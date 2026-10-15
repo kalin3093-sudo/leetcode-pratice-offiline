@@ -1,0 +1,49 @@
+{
+  "id": "reverse-string-ii",
+  "title": "541. Reverse String II",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/reverse-string-ii/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"abcdefg\", k = 2",
+      "output": "\"bacdfeg\""
+    },
+    {
+      "input": "s = \"abcd\", k = 2",
+      "output": "\"bacd\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reverseStr(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reverseStr(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reverseStr(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function reverseStr(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReverseStr(string s, int k) {\n        \n    }\n}",
+    "go": "func reverseStr(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reverse_str(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcdefg",
+      "k": 2
+    },
+    {
+      "s": "abcd",
+      "k": 2
+    }
+  ],
+  "functionName": "reverseStr",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

@@ -1,0 +1,50 @@
+{
+  "id": "power-of-heroes",
+  "title": "2681. Power of Heroes",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/power-of-heroes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,4]",
+      "output": "141",
+      "explanation": "1st group: [2] has power = 22 * 2 = 8. 2nd group: [1] has power = 12 * 1 = 1. 3rd group: [4] has power = 42 * 4 = 64. 4th group: [2,1] has power = 22 * 1 = 4. 5th group: [2,4] has power = 42 * 2 = 32. 6th group: [1,4] has power = 42 * 1 = 16. 7th group: [2,1,4] has power = 42 * 1 = 16. The sum of powers of all groups is 8 + 1 + 64 + 4 + 32 + 16 + 16 = 141."
+    },
+    {
+      "input": "nums = [1,1,1]",
+      "output": "7",
+      "explanation": "A total of 7 groups are possible, and the power of each group will be 1. Therefore, the sum of the powers of all groups is 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfPower(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfPower(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfPower(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function sumOfPower(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfPower(int[] nums) {\n        \n    }\n}",
+    "go": "func sumOfPower(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_power(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,4]"
+    },
+    {
+      "nums": "[1,1,1]"
+    }
+  ],
+  "functionName": "sumOfPower",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try something with sorting the array.",
+    "For a pair of array elements nums[i] and nums[j] (i < j), the power would be nums[i]*nums[j]^2 regardless of how many elements in between are included.",
+    "The number of subsets with the above as power will correspond to 2^(j-i-1).",
+    "Try collecting the terms for nums[0], nums[1], …, nums[j-1] when computing the power of heroes ending at index j to get the power in a single pass."
+  ]
+}

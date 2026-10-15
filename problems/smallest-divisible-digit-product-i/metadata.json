@@ -1,0 +1,54 @@
+{
+  "id": "smallest-divisible-digit-product-i",
+  "title": "3345. Smallest Divisible Digit Product I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 10, t = 2",
+      "output": "10",
+      "explanation": "The digit product of 10 is 0, which is divisible by 2, making it the smallest number greater than or equal to 10 that satisfies the condition."
+    },
+    {
+      "input": "n = 15, t = 3",
+      "output": "16",
+      "explanation": "The digit product of 16 is 6, which is divisible by 3, making it the smallest number greater than or equal to 15 that satisfies the condition."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestNumber(int n, int t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestNumber(int n, int t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestNumber(self, n: int, t: int) -> int:\n        ",
+    "typescript": "function smallestNumber(n: number, t: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestNumber(int n, int t) {\n        \n    }\n}",
+    "go": "func smallestNumber(n int, t int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_number(n: i32, t: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10,
+      "t": 2
+    },
+    {
+      "n": 15,
+      "t": 3
+    }
+  ],
+  "functionName": "smallestNumber",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "t",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "You have to check at most 10 numbers.",
+    "Apply a brute-force approach by checking each possible number."
+  ]
+}

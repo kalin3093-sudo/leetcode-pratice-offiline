@@ -1,0 +1,10 @@
+[
+  {
+    "words": "[\"cat\",\"bt\",\"hat\",\"tree\"]",
+    "chars": "atach"
+  },
+  {
+    "words": "[\"hello\",\"world\",\"leetcode\"]",
+    "chars": "welldonehoneyr"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "id": "sort-even-and-odd-indices-independently",
+  "title": "2164. Sort Even and Odd Indices Independently",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/sort-even-and-odd-indices-independently/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,1,2,3]",
+      "output": "[2,3,4,1]",
+      "explanation": "First, we sort the values present at odd indices (1 and 3) in non-increasing order. So, nums changes from [4,1,2,3] to [4,3,2,1]. Next, we sort the values present at even indices (0 and 2) in non-decreasing order. So, nums changes from [4,1,2,3] to [2,3,4,1]. Thus, the array formed after rearranging the values is [2,3,4,1]."
+    },
+    {
+      "input": "nums = [2,1]",
+      "output": "[2,1]",
+      "explanation": "Since there is exactly one odd index and one even index, no rearrangement of values takes place. The resultant array formed is [2,1], which is the same as the initial array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> sortEvenOdd(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] sortEvenOdd(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortEvenOdd(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function sortEvenOdd(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SortEvenOdd(int[] nums) {\n        \n    }\n}",
+    "go": "func sortEvenOdd(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_even_odd(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,1,2,3]"
+    },
+    {
+      "nums": "[2,1]"
+    }
+  ],
+  "functionName": "sortEvenOdd",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Try to separate the elements at odd indices from the elements at even indices.",
+    "Sort the two groups of elements individually.",
+    "Combine them to form the resultant array."
+  ]
+}

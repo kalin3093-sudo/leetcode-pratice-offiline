@@ -1,0 +1,43 @@
+{
+  "id": "shortest-palindrome",
+  "title": "214. Shortest Palindrome",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/shortest-palindrome/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aacecaaa\"",
+      "output": "\"aaacecaaa\""
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "\"dcbabcd\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string shortestPalindrome(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String shortestPalindrome(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestPalindrome(self, s: str) -> str:\n        ",
+    "typescript": "function shortestPalindrome(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ShortestPalindrome(string s) {\n        \n    }\n}",
+    "go": "func shortestPalindrome(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_palindrome(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aacecaaa"
+    },
+    {
+      "s": "abcd"
+    }
+  ],
+  "functionName": "shortestPalindrome",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "count-the-number-of-incremovable-subarrays-i",
+  "title": "2970. Count the Number of Incremovable Subarrays I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "10",
+      "explanation": "The 10 incremovable subarrays are: [1], [2], [3], [4], [1,2], [2,3], [3,4], [1,2,3], [2,3,4], and [1,2,3,4], because on removing any one of these subarrays nums becomes strictly increasing. Note that you cannot select an empty subarray."
+    },
+    {
+      "input": "nums = [6,5,7,8]",
+      "output": "7",
+      "explanation": "The 7 incremovable subarrays are: [5], [6], [5,7], [6,5], [5,7,8], [6,5,7] and [6,5,7,8]. It can be shown that there are only 7 incremovable subarrays in nums."
+    },
+    {
+      "input": "nums = [8,7,6,6]",
+      "output": "3",
+      "explanation": "The 3 incremovable subarrays are: [8,7,6], [7,6,6], and [8,7,6,6]. Note that [8,7] is not an incremovable subarray because after removing [8,7] nums becomes [6,6], which is sorted in ascending order but not strictly increasing."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int incremovableSubarrayCount(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int incremovableSubarrayCount(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def incremovableSubarrayCount(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function incremovableSubarrayCount(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int IncremovableSubarrayCount(int[] nums) {\n        \n    }\n}",
+    "go": "func incremovableSubarrayCount(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn incremovable_subarray_count(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]"
+    },
+    {
+      "nums": "[6,5,7,8]"
+    },
+    {
+      "nums": "[8,7,6,6]"
+    }
+  ],
+  "functionName": "incremovableSubarrayCount",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use two loops to check all the subarrays."
+  ]
+}

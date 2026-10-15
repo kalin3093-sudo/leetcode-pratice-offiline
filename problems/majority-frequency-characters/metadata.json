@@ -1,0 +1,59 @@
+{
+  "id": "majority-frequency-characters",
+  "title": "3692. Majority Frequency Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/majority-frequency-characters/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aaabbbccdddde\"",
+      "output": "\"ab\"",
+      "explanation": "Frequency (k) Distinct characters in group Group size Majority? 4 {d} 1 No 3 {a, b} 2 Yes 2 {c} 1 No 1 {e} 1 No Both characters 'a' and 'b' share the same frequency 3, they are in the majority frequency group. \"ba\" is also a valid answer."
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "\"abcd\"",
+      "explanation": "Frequency (k) Distinct characters in group Group size Majority? 1 {a, b, c, d} 4 Yes All characters share the same frequency 1, they are all in the majority frequency group."
+    },
+    {
+      "input": "s = \"pfpfgi\"",
+      "output": "\"fp\"",
+      "explanation": "Frequency (k) Distinct characters in group Group size Majority? 2 {p, f} 2 Yes 1 {g, i} 2 No (tied size, lower frequency) Both characters 'p' and 'f' share the same frequency 2, they are in the majority frequency group. There is a tie in group size with frequency 1, but we pick the higher frequency: 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string majorityFrequencyGroup(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String majorityFrequencyGroup(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def majorityFrequencyGroup(self, s: str) -> str:\n        ",
+    "typescript": "function majorityFrequencyGroup(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MajorityFrequencyGroup(string s) {\n        \n    }\n}",
+    "go": "func majorityFrequencyGroup(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn majority_frequency_group(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaabbbccdddde"
+    },
+    {
+      "s": "abcd"
+    },
+    {
+      "s": "pfpfgi"
+    }
+  ],
+  "functionName": "majorityFrequencyGroup",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Start by counting the frequency of each character in the string.",
+    "Group characters based on their frequencies.",
+    "Identify the group with the largest number of distinct characters.",
+    "If multiple groups tie, select the one with the higher frequency value.",
+    "Construct the answer string using all characters from that chosen group."
+  ]
+}

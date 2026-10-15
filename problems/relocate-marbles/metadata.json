@@ -1,0 +1,60 @@
+{
+  "id": "relocate-marbles",
+  "title": "2766. Relocate Marbles",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/relocate-marbles/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,6,7,8], moveFrom = [1,7,2], moveTo = [2,9,5]",
+      "output": "[5,6,8,9]",
+      "explanation": "Initially, the marbles are at positions 1,6,7,8. At the i = 0th step, we move the marbles at position 1 to position 2. Then, positions 2,6,7,8 are occupied. At the i = 1st step, we move the marbles at position 7 to position 9. Then, positions 2,6,8,9 are occupied. At the i = 2nd step, we move the marbles at position 2 to position 5. Then, positions 5,6,8,9 are occupied. At the end, the final positions containing at least one marbles are [5,6,8,9]."
+    },
+    {
+      "input": "nums = [1,1,3,3], moveFrom = [1,3], moveTo = [2,2]",
+      "output": "[2]",
+      "explanation": "Initially, the marbles are at positions [1,1,3,3]. At the i = 0th step, we move all the marbles at position 1 to position 2. Then, the marbles are at positions [2,2,3,3]. At the i = 1st step, we move all the marbles at position 3 to position 2. Then, the marbles are at positions [2,2,2,2]. Since 2 is the only occupied position, we return [2]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> relocateMarbles(vector<int>& nums, vector<int>& moveFrom, vector<int>& moveTo) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> relocateMarbles(int[] nums, int[] moveFrom, int[] moveTo) {\n        \n    }\n}",
+    "python": "class Solution:\n    def relocateMarbles(self, nums: List[int], moveFrom: List[int], moveTo: List[int]) -> List[int]:\n        ",
+    "typescript": "function relocateMarbles(nums: number[], moveFrom: number[], moveTo: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> RelocateMarbles(int[] nums, int[] moveFrom, int[] moveTo) {\n        \n    }\n}",
+    "go": "func relocateMarbles(nums []int, moveFrom []int, moveTo []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn relocate_marbles(nums: Vec<i32>, move_from: Vec<i32>, move_to: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,6,7,8]",
+      "moveFrom": "[1,7,2]",
+      "moveTo": "[2,9,5]"
+    },
+    {
+      "nums": "[1,1,3,3]",
+      "moveFrom": "[1,3]",
+      "moveTo": "[2,2]"
+    }
+  ],
+  "functionName": "relocateMarbles",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "moveFrom",
+      "type": "int_array"
+    },
+    {
+      "name": "moveTo",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Can we solve this problem using a set or map?",
+    "Sequentially process pairs from moveFrom[i] and moveTo[i]. In each step, remove the occurrence of moveFrom[i] and add moveTo[i] into the set."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "shortest-bridge",
+  "title": "934. Shortest Bridge",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-bridge/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1],[1,0]]",
+      "output": "1"
+    },
+    {
+      "input": "grid = [[0,1,0],[0,0,0],[0,0,1]]",
+      "output": "2"
+    },
+    {
+      "input": "grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestBridge(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestBridge(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestBridge(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function shortestBridge(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestBridge(int[][] grid) {\n        \n    }\n}",
+    "go": "func shortestBridge(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_bridge(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1],[1,0]]"
+    },
+    {
+      "grid": "[[0,1,0],[0,0,0],[0,0,1]]"
+    },
+    {
+      "grid": "[[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]"
+    }
+  ],
+  "functionName": "shortestBridge",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "divide-two-integers",
+  "title": "29. Divide Two Integers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/divide-two-integers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "dividend = 10, divisor = 3",
+      "output": "3",
+      "explanation": "10/3 = 3.33333.. which is truncated to 3."
+    },
+    {
+      "input": "dividend = 7, divisor = -3",
+      "output": "-2",
+      "explanation": "7/-3 = -2.33333.. which is truncated to -2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int divide(int dividend, int divisor) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int divide(int dividend, int divisor) {\n        \n    }\n}",
+    "python": "class Solution:\n    def divide(self, dividend: int, divisor: int) -> int:\n        ",
+    "typescript": "function divide(dividend: number, divisor: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int Divide(int dividend, int divisor) {\n        \n    }\n}",
+    "go": "func divide(dividend int, divisor int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn divide(dividend: i32, divisor: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "dividend": 10,
+      "divisor": 3
+    },
+    {
+      "dividend": 7,
+      "divisor": -3
+    }
+  ],
+  "functionName": "divide",
+  "params": [
+    {
+      "name": "dividend",
+      "type": "int"
+    },
+    {
+      "name": "divisor",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

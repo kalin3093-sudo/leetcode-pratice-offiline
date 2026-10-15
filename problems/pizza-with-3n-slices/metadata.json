@@ -1,0 +1,48 @@
+{
+  "id": "pizza-with-3n-slices",
+  "title": "1388. Pizza With 3n Slices",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/pizza-with-3n-slices/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "slices = [1,2,3,4,5,6]",
+      "output": "10",
+      "explanation": "Pick pizza slice of size 4, Alice and Bob will pick slices with size 3 and 5 respectively. Then Pick slices with size 6, finally Alice and Bob will pick slice of size 2 and 1 respectively. Total = 4 + 6."
+    },
+    {
+      "input": "slices = [8,9,8,6,1,1]",
+      "output": "16",
+      "explanation": "Pick pizza slice of size 8 in each turn. If you pick slice with size 9 your partners will pick slices of size 8."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSizeSlices(vector<int>& slices) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSizeSlices(int[] slices) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSizeSlices(self, slices: list[int]) -> int:\n        ",
+    "typescript": "function maxSizeSlices(slices: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSizeSlices(int[] slices) {\n        \n    }\n}",
+    "go": "func maxSizeSlices(slices []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_size_slices(slices: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "slices": "[1,2,3,4,5,6]"
+    },
+    {
+      "slices": "[8,9,8,6,1,1]"
+    }
+  ],
+  "functionName": "maxSizeSlices",
+  "params": [
+    {
+      "name": "slices",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "By studying the pattern of the operations, we can find out that the problem is equivalent to: Given an integer array with size 3N, select N integers with maximum sum and any selected integers are not next to each other in the array.",
+    "The first one in the array is considered next to the last one in the array. Use Dynamic Programming to solve it."
+  ]
+}

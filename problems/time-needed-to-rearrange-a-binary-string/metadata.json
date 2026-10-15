@@ -1,0 +1,48 @@
+{
+  "id": "time-needed-to-rearrange-a-binary-string",
+  "title": "2380. Time Needed to Rearrange a Binary String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"0110101\"",
+      "output": "4",
+      "explanation": "After one second, s becomes \"1011010\". After another second, s becomes \"1101100\". After the third second, s becomes \"1110100\". After the fourth second, s becomes \"1111000\". No occurrence of \"01\" exists any longer, and the process needed 4 seconds to complete, so we return 4."
+    },
+    {
+      "input": "s = \"11100\"",
+      "output": "0",
+      "explanation": "No occurrence of \"01\" exists in s, and the processes needed 0 seconds to complete, so we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int secondsToRemoveOccurrences(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int secondsToRemoveOccurrences(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def secondsToRemoveOccurrences(self, s: str) -> int:\n        ",
+    "typescript": "function secondsToRemoveOccurrences(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SecondsToRemoveOccurrences(string s) {\n        \n    }\n}",
+    "go": "func secondsToRemoveOccurrences(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn seconds_to_remove_occurrences(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "0110101"
+    },
+    {
+      "s": "11100"
+    }
+  ],
+  "functionName": "secondsToRemoveOccurrences",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try replicating the steps from the problem statement.",
+    "Perform the replacements simultaneously, and return the number of times the process repeats."
+  ]
+}

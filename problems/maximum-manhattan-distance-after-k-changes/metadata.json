@@ -1,0 +1,54 @@
+{
+  "id": "maximum-manhattan-distance-after-k-changes",
+  "title": "3443. Maximum Manhattan Distance After K Changes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"NWSE\", k = 1",
+      "output": "3",
+      "explanation": "Change s[2] from 'S' to 'N'. The string s becomes \"NWNE\". Movement Position (x, y) Manhattan Distance Maximum s[0] == 'N' (0, 1) 0 + 1 = 1 1 s[1] == 'W' (-1, 1) 1 + 1 = 2 2 s[2] == 'N' (-1, 2) 1 + 2 = 3 3 s[3] == 'E' (0, 2) 0 + 2 = 2 3 The maximum Manhattan distance from the origin that can be achieved is 3. Hence, 3 is the output."
+    },
+    {
+      "input": "s = \"NSWWEW\", k = 3",
+      "output": "6",
+      "explanation": "Change s[1] from 'S' to 'N', and s[4] from 'E' to 'W'. The string s becomes \"NNWWWW\". The maximum Manhattan distance from the origin that can be achieved is 6. Hence, 6 is the output."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDistance(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDistance(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDistance(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function maxDistance(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDistance(string s, int k) {\n        \n    }\n}",
+    "go": "func maxDistance(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_distance(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "NWSE",
+      "k": 1
+    },
+    {
+      "s": "NSWWEW",
+      "k": 3
+    }
+  ],
+  "functionName": "maxDistance",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We can brute force all the possible directions (NE, NW, SE, SW).",
+    "Change up to <code>k</code> characters to maximize the distance in the chosen direction."
+  ]
+}

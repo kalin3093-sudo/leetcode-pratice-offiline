@@ -1,0 +1,53 @@
+{
+  "id": "smallest-good-base",
+  "title": "483. Smallest Good Base",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-good-base/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = \"13\"",
+      "output": "\"3\"",
+      "explanation": "13 base 3 is 111."
+    },
+    {
+      "input": "n = \"4681\"",
+      "output": "\"8\"",
+      "explanation": "4681 base 8 is 11111."
+    },
+    {
+      "input": "n = \"1000000000000000000\"",
+      "output": "\"999999999999999999\"",
+      "explanation": "1000000000000000000 base 999999999999999999 is 11."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestGoodBase(string n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestGoodBase(String n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestGoodBase(self, n: str) -> str:\n        ",
+    "typescript": "function smallestGoodBase(n: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestGoodBase(string n) {\n        \n    }\n}",
+    "go": "func smallestGoodBase(n string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_good_base(n: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "13"
+    },
+    {
+      "n": "4681"
+    },
+    {
+      "n": "1000000000000000000"
+    }
+  ],
+  "functionName": "smallestGoodBase",
+  "params": [
+    {
+      "name": "n",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

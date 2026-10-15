@@ -1,0 +1,57 @@
+{
+  "id": "minimum-cost-to-hire-k-workers",
+  "title": "857. Minimum Cost to Hire K Workers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "quality = [10,20,5], wage = [70,50,30], k = 2",
+      "output": "105.00000",
+      "explanation": "We pay 70 to 0th worker and 35 to 2nd worker."
+    },
+    {
+      "input": "quality = [3,1,10,10,1], wage = [4,8,2,2,7], k = 3",
+      "output": "30.66667",
+      "explanation": "We pay 4 to 0th worker, 13.33333 to 2nd and 3rd workers separately."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double mincostToHireWorkers(vector<int>& quality, vector<int>& wage, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double mincostToHireWorkers(int[] quality, int[] wage, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mincostToHireWorkers(self, quality: list[int], wage: list[int], k: int) -> float:\n        ",
+    "typescript": "function mincostToHireWorkers(quality: number[], wage: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double MincostToHireWorkers(int[] quality, int[] wage, int k) {\n        \n    }\n}",
+    "go": "func mincostToHireWorkers(quality []int, wage []int, k int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "quality": "[10,20,5]",
+      "wage": "[70,50,30]",
+      "k": 2
+    },
+    {
+      "quality": "[3,1,10,10,1]",
+      "wage": "[4,8,2,2,7]",
+      "k": 3
+    }
+  ],
+  "functionName": "mincostToHireWorkers",
+  "params": [
+    {
+      "name": "quality",
+      "type": "int_array"
+    },
+    {
+      "name": "wage",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "double",
+  "hints": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "maximum-binary-string-after-change",
+  "title": "1702. Maximum Binary String After Change",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-binary-string-after-change/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "binary = \"000110\"",
+      "output": "\"111011\"",
+      "explanation": "A valid transformation sequence can be: \"000110\" -> \"000101\" \"000101\" -> \"100101\" \"100101\" -> \"110101\" \"110101\" -> \"110011\" \"110011\" -> \"111011\""
+    },
+    {
+      "input": "binary = \"01\"",
+      "output": "\"01\"",
+      "explanation": "\"01\" cannot be transformed any further."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string maximumBinaryString(string binary) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String maximumBinaryString(String binary) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumBinaryString(self, binary: str) -> str:\n        ",
+    "typescript": "function maximumBinaryString(binary: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MaximumBinaryString(string binary) {\n        \n    }\n}",
+    "go": "func maximumBinaryString(binary string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_binary_string(binary: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "binary": "000110"
+    },
+    {
+      "binary": "01"
+    }
+  ],
+  "functionName": "maximumBinaryString",
+  "params": [
+    {
+      "name": "binary",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Note that with the operations, you can always make the string only contain at most 1 zero."
+  ]
+}

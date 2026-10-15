@@ -1,0 +1,14 @@
+[
+  {
+    "sequence": "ababc",
+    "word": "ab"
+  },
+  {
+    "sequence": "ababc",
+    "word": "ba"
+  },
+  {
+    "sequence": "ababc",
+    "word": "ac"
+  }
+]

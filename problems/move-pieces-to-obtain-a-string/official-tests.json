@@ -1,0 +1,14 @@
+[
+  {
+    "start": "_L__R__R_",
+    "target": "L______RR"
+  },
+  {
+    "start": "R_L_",
+    "target": "__LR"
+  },
+  {
+    "start": "_R",
+    "target": "R_"
+  }
+]

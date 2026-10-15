@@ -1,0 +1,56 @@
+{
+  "id": "valid-elements-in-an-array",
+  "title": "3912. Valid Elements in an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/valid-elements-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,4,2,3,2]",
+      "output": "[1,2,4,3,2]",
+      "explanation": "nums[0] and nums[5] are always valid. nums[1] and nums[2] are strictly greater than every element to their left. nums[4] is strictly greater than every element to its right. Thus, the answer is [1, 2, 4, 3, 2]."
+    },
+    {
+      "input": "nums = [5,5,5,5]",
+      "output": "[5,5]",
+      "explanation": "The first and last elements are always valid. No other elements are strictly greater than all elements to their left or to their right. Thus, the answer is [5, 5]."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "[1]",
+      "explanation": "Since there is only one element, it is always valid. Thus, the answer is [1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findValidElements(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> findValidElements(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findValidElements(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function findValidElements(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FindValidElements(int[] nums) {\n        \n    }\n}",
+    "go": "func findValidElements(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_valid_elements(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,4,2,3,2]"
+    },
+    {
+      "nums": "[5,5,5,5]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "findValidElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Precompute the maximum left and right for each index.",
+    "The first and last are always valid."
+  ]
+}

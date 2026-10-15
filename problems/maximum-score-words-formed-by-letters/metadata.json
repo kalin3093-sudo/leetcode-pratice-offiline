@@ -1,0 +1,69 @@
+{
+  "id": "maximum-score-words-formed-by-letters",
+  "title": "1255. Maximum Score Words Formed by Letters",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-score-words-formed-by-letters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"dog\",\"cat\",\"dad\",\"good\"], letters = [\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "output": "23",
+      "explanation": "Score  a=1, c=9, d=5, g=3, o=2 Given letters, we can form the words \"dad\" (5+1+5) and \"good\" (3+2+2+5) with a score of 23. Words \"dad\" and \"dog\" only get a score of 21."
+    },
+    {
+      "input": "words = [\"xxxz\",\"ax\",\"bx\",\"cx\"], letters = [\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "output": "27",
+      "explanation": "Score  a=4, b=4, c=4, x=5, z=10 Given letters, we can form the words \"ax\" (4+5), \"bx\" (4+5) and \"cx\" (4+5) with a score of 27. Word \"xxxz\" only get a score of 25."
+    },
+    {
+      "input": "words = [\"leetcode\"], letters = [\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "output": "0",
+      "explanation": "Letter \"e\" can only be used once."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScoreWords(vector<string>& words, vector<char>& letters, vector<int>& score) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScoreWords(String[] words, char[] letters, int[] score) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScoreWords(self, words: list[str], letters: list[str], score: list[int]) -> int:\n        ",
+    "typescript": "function maxScoreWords(words: string[], letters: string[], score: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScoreWords(string[] words, char[] letters, int[] score) {\n        \n    }\n}",
+    "go": "func maxScoreWords(words []string, letters []byte, score []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score_words(words: Vec<String>, letters: Vec<char>, score: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"dog\",\"cat\",\"dad\",\"good\"]",
+      "letters": "[\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"]",
+      "score": "[1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]"
+    },
+    {
+      "words": "[\"xxxz\",\"ax\",\"bx\",\"cx\"]",
+      "letters": "[\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"]",
+      "score": "[4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]"
+    },
+    {
+      "words": "[\"leetcode\"]",
+      "letters": "[\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"]",
+      "score": "[0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]"
+    }
+  ],
+  "functionName": "maxScoreWords",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "letters",
+      "type": "char_array"
+    },
+    {
+      "name": "score",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Note that words.length is small. This means you can iterate over every subset of words (2^N)."
+  ]
+}

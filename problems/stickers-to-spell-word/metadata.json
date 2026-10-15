@@ -1,0 +1,53 @@
+{
+  "id": "stickers-to-spell-word",
+  "title": "691. Stickers to Spell Word",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/stickers-to-spell-word/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stickers = [\"with\",\"example\",\"science\"], target = \"thehat\"",
+      "output": "3",
+      "explanation": "We can use 2 \"with\" stickers, and 1 \"example\" sticker. After cutting and rearrange the letters of those stickers, we can form the target \"thehat\". Also, this is the minimum number of stickers necessary to form the target string."
+    },
+    {
+      "input": "stickers = [\"notice\",\"possible\"], target = \"basicbasic\"",
+      "output": "-1",
+      "explanation": "We cannot form the target \"basicbasic\" from cutting letters from the given stickers."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minStickers(vector<string>& stickers, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minStickers(String[] stickers, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minStickers(self, stickers: list[str], target: str) -> int:\n        ",
+    "typescript": "function minStickers(stickers: string[], target: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinStickers(string[] stickers, string target) {\n        \n    }\n}",
+    "go": "func minStickers(stickers []string, target string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stickers": "[\"with\",\"example\",\"science\"]",
+      "target": "thehat"
+    },
+    {
+      "stickers": "[\"notice\",\"possible\"]",
+      "target": "basicbasic"
+    }
+  ],
+  "functionName": "minStickers",
+  "params": [
+    {
+      "name": "stickers",
+      "type": "string_array"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We want to perform an exhaustive search, but we need to speed it up based on the input data being random.  \r\n\r\nFor all stickers, we can ignore any letters that are not in the target word.  \r\n\r\nWhen our candidate answer won't be smaller than an answer we have already found, we can stop searching this path.  \r\n\r\nWhen a sticker dominates another, we shouldn't include the dominated sticker in our sticker collection.  [Here, we say a sticker `A` dominates `B` if `A.count(letter) >= B.count(letter)` for all letters.]"
+  ]
+}

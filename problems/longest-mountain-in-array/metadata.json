@@ -1,0 +1,45 @@
+{
+  "id": "longest-mountain-in-array",
+  "title": "845. Longest Mountain in Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-mountain-in-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [2,1,4,7,3,2,5]",
+      "output": "5",
+      "explanation": "The largest mountain is [1,4,7,3,2] which has length 5."
+    },
+    {
+      "input": "arr = [2,2,2]",
+      "output": "0",
+      "explanation": "There is no mountain."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestMountain(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestMountain(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestMountain(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function longestMountain(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestMountain(int[] arr) {\n        \n    }\n}",
+    "go": "func longestMountain(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_mountain(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[2,1,4,7,3,2,5]"
+    },
+    {
+      "arr": "[2,2,2]"
+    }
+  ],
+  "functionName": "longestMountain",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

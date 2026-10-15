@@ -1,0 +1,51 @@
+{
+  "id": "first-unique-character-in-a-string",
+  "title": "387. First Unique Character in a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"leetcode\"",
+      "output": "0",
+      "explanation": "The character 'l' at index 0 is the first character that does not occur at any other index."
+    },
+    {
+      "input": "s = \"loveleetcode\"",
+      "output": "2"
+    },
+    {
+      "input": "s = \"aabb\"",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int firstUniqChar(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int firstUniqChar(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def firstUniqChar(self, s: str) -> int:\n        ",
+    "typescript": "function firstUniqChar(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FirstUniqChar(string s) {\n        \n    }\n}",
+    "go": "func firstUniqChar(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn first_uniq_char(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcode"
+    },
+    {
+      "s": "loveleetcode"
+    },
+    {
+      "s": "aabb"
+    }
+  ],
+  "functionName": "firstUniqChar",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

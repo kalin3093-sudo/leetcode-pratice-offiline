@@ -1,0 +1,55 @@
+{
+  "id": "mirror-distance-of-an-integer",
+  "title": "3783. Mirror Distance of an Integer",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/mirror-distance-of-an-integer/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 25",
+      "output": "27",
+      "explanation": "reverse(25) = 52. Thus, the answer is abs(25 - 52) = 27."
+    },
+    {
+      "input": "n = 10",
+      "output": "9",
+      "explanation": "reverse(10) = 01 which is 1. Thus, the answer is abs(10 - 1) = 9."
+    },
+    {
+      "input": "n = 7",
+      "output": "0",
+      "explanation": "reverse(7) = 7. Thus, the answer is abs(7 - 7) = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int mirrorDistance(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int mirrorDistance(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mirrorDistance(self, n: int) -> int:\n        ",
+    "typescript": "function mirrorDistance(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MirrorDistance(int n) {\n        \n    }\n}",
+    "go": "func mirrorDistance(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn mirror_distance(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 25
+    },
+    {
+      "n": 10
+    },
+    {
+      "n": 7
+    }
+  ],
+  "functionName": "mirrorDistance",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate as described"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  { "head": "[]", "pos": -1, "_note": "empty list, no cycle" },
+  { "head": "[1]", "pos": -1, "_note": "single node, no cycle" },
+  { "head": "[1]", "pos": 0, "_note": "single node, self-loop" },
+  { "head": "[1,2]", "pos": -1, "_note": "two nodes, no cycle" },
+  { "head": "[1,2]", "pos": 0, "_note": "two nodes, cycle at head" },
+  { "head": "[1,2]", "pos": 1, "_note": "two nodes, cycle at tail" },
+  { "head": "[3,2,0,-4]", "pos": 1, "_note": "example 1, cycle at index 1" },
+  { "head": "[1,2,3,4,5]", "pos": -1, "_note": "longer list, no cycle" },
+  { "head": "[1,2,3,4,5]", "pos": 0, "_note": "longer list, cycle at head" },
+  { "head": "[1,2,3,4,5]", "pos": 2, "_note": "longer list, cycle in middle" },
+  { "head": "[1,1,1,1,1]", "pos": -1, "_note": "duplicate values, no cycle" },
+  { "head": "[1,1,1,1,1]", "pos": 2, "_note": "duplicate values, cycle" }
+]

@@ -1,0 +1,45 @@
+{
+  "id": "relative-ranks",
+  "title": "506. Relative Ranks",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/relative-ranks/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "score = [5,4,3,2,1]",
+      "output": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]",
+      "explanation": "The placements are [1st, 2nd, 3rd, 4th, 5th]."
+    },
+    {
+      "input": "score = [10,3,8,9,4]",
+      "output": "[\"Gold Medal\",\"5\",\"Bronze Medal\",\"Silver Medal\",\"4\"]",
+      "explanation": "The placements are [1st, 5th, 3rd, 2nd, 4th]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findRelativeRanks(vector<int>& score) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] findRelativeRanks(int[] score) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findRelativeRanks(self, score: list[int]) -> list[str]:\n        ",
+    "typescript": "function findRelativeRanks(score: number[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] FindRelativeRanks(int[] score) {\n        \n    }\n}",
+    "go": "func findRelativeRanks(score []int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_relative_ranks(score: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "score": "[5,4,3,2,1]"
+    },
+    {
+      "score": "[10,3,8,9,4]"
+    }
+  ],
+  "functionName": "findRelativeRanks",
+  "params": [
+    {
+      "name": "score",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": []
+}

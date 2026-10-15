@@ -1,0 +1,57 @@
+{
+  "id": "check-if-numbers-are-ascending-in-a-sentence",
+  "title": "2042. Check if Numbers Are Ascending in a Sentence",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1 box has 3 blue 4 red 6 green and 12 yellow marbles\"",
+      "output": "true",
+      "explanation": "The numbers in s are: 1, 3, 4, 6, 12. They are strictly increasing from left to right: 1 < 3 < 4 < 6 < 12."
+    },
+    {
+      "input": "s = \"hello world 5 x 5\"",
+      "output": "false",
+      "explanation": "The numbers in s are: 5, 5. They are not strictly increasing."
+    },
+    {
+      "input": "s = \"sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s\"",
+      "output": "false",
+      "explanation": "The numbers in s are: 7, 51, 50, 60. They are not strictly increasing."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool areNumbersAscending(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean areNumbersAscending(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def areNumbersAscending(self, s: str) -> bool:\n        ",
+    "typescript": "function areNumbersAscending(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool AreNumbersAscending(string s) {\n        \n    }\n}",
+    "go": "func areNumbersAscending(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn are_numbers_ascending(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1 box has 3 blue 4 red 6 green and 12 yellow marbles"
+    },
+    {
+      "s": "hello world 5 x 5"
+    },
+    {
+      "s": "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"
+    }
+  ],
+  "functionName": "areNumbersAscending",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use string tokenization of your language to extract all the tokens of the string easily.",
+    "For each token extracted, how can you tell if it is a number? Does the first letter being a digit mean something?",
+    "Compare the number with the previously occurring number to check if ascending order is maintained."
+  ]
+}

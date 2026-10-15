@@ -1,0 +1,72 @@
+{
+  "id": "maximum-walls-destroyed-by-robots",
+  "title": "3661. Maximum Walls Destroyed by Robots",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-walls-destroyed-by-robots/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "robots = [4], distance = [3], walls = [1,10]",
+      "output": "1",
+      "explanation": "robots[0] = 4 fires left with distance[0] = 3, covering [1, 4] and destroys walls[0] = 1. Thus, the answer is 1."
+    },
+    {
+      "input": "robots = [10,2], distance = [5,1], walls = [5,2,7]",
+      "output": "3",
+      "explanation": "robots[0] = 10 fires left with distance[0] = 5, covering [5, 10] and destroys walls[0] = 5 and walls[2] = 7. robots[1] = 2 fires left with distance[1] = 1, covering [1, 2] and destroys walls[1] = 2. Thus, the answer is 3."
+    },
+    {
+      "input": "robots = [1,2], distance = [100,1], walls = [10]",
+      "output": "0",
+      "explanation": "In this example, only robots[0] can reach the wall, but its shot to the right is blocked by robots[1]; thus the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxWalls(vector<int>& robots, vector<int>& distance, vector<int>& walls) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxWalls(int[] robots, int[] distance, int[] walls) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxWalls(self, robots: List[int], distance: List[int], walls: List[int]) -> int:\n        ",
+    "typescript": "function maxWalls(robots: number[], distance: number[], walls: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxWalls(int[] robots, int[] distance, int[] walls) {\n        \n    }\n}",
+    "go": "func maxWalls(robots []int, distance []int, walls []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_walls(robots: Vec<i32>, distance: Vec<i32>, walls: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "robots": "[4]",
+      "distance": "[3]",
+      "walls": "[1,10]"
+    },
+    {
+      "robots": "[10,2]",
+      "distance": "[5,1]",
+      "walls": "[5,2,7]"
+    },
+    {
+      "robots": "[1,2]",
+      "distance": "[100,1]",
+      "walls": "[10]"
+    }
+  ],
+  "functionName": "maxWalls",
+  "params": [
+    {
+      "name": "robots",
+      "type": "int_array"
+    },
+    {
+      "name": "distance",
+      "type": "int_array"
+    },
+    {
+      "name": "walls",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort both the robots and walls arrays. This will help in efficiently processing positions and performing range queries.",
+    "Each robot can shoot either left or right. However, if a robot fires and another robot is in its path, the bullet stops. You need to use the positions of neighboring robots to limit the shooting range.",
+    "Use binary search (lower_bound and upper_bound) to count how many walls fall within a certain range.",
+    "You can use dynamic programming to keep track of the maximum number of walls destroyed so far, depending on the direction the previous robot shot."
+  ]
+}

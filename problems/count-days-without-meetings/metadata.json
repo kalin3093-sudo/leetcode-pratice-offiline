@@ -1,0 +1,63 @@
+{
+  "id": "count-days-without-meetings",
+  "title": "3169. Count Days Without Meetings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-days-without-meetings/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "days = 10, meetings = [[5,7],[1,3],[9,10]]",
+      "output": "2",
+      "explanation": "There is no meeting scheduled on the 4th and 8th days."
+    },
+    {
+      "input": "days = 5, meetings = [[2,4],[1,3]]",
+      "output": "1",
+      "explanation": "There is no meeting scheduled on the 5th day."
+    },
+    {
+      "input": "days = 6, meetings = [[1,6]]",
+      "output": "0",
+      "explanation": "Meetings are scheduled for all working days."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countDays(int days, vector<vector<int>>& meetings) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countDays(int days, int[][] meetings) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countDays(self, days: int, meetings: List[List[int]]) -> int:\n        ",
+    "typescript": "function countDays(days: number, meetings: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountDays(int days, int[][] meetings) {\n        \n    }\n}",
+    "go": "func countDays(days int, meetings [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_days(days: i32, meetings: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "days": 10,
+      "meetings": "[[5,7],[1,3],[9,10]]"
+    },
+    {
+      "days": 5,
+      "meetings": "[[2,4],[1,3]]"
+    },
+    {
+      "days": 6,
+      "meetings": "[[1,6]]"
+    }
+  ],
+  "functionName": "countDays",
+  "params": [
+    {
+      "name": "days",
+      "type": "int"
+    },
+    {
+      "name": "meetings",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Merge the overlapping meetings and sort the new meetings timings.",
+    "Return the sum of difference between the end time of a meeting and the start time of the next meeting for all adjacent pairs."
+  ]
+}

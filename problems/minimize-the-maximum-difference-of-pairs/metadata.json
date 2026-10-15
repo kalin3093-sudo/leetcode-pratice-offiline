@@ -1,0 +1,54 @@
+{
+  "id": "minimize-the-maximum-difference-of-pairs",
+  "title": "2616. Minimize the Maximum Difference of Pairs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,1,2,7,1,3], p = 2",
+      "output": "1",
+      "explanation": "The first pair is formed from the indices 1 and 4, and the second pair is formed from the indices 2 and 5. The maximum difference is max(|nums[1] - nums[4]|, |nums[2] - nums[5]|) = max(0, 1) = 1. Therefore, we return 1."
+    },
+    {
+      "input": "nums = [4,2,1,2], p = 1",
+      "output": "0",
+      "explanation": "Let the indices 1 and 3 form a pair. The difference of that pair is |2 - 2| = 0, which is the minimum we can attain."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizeMax(vector<int>& nums, int p) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizeMax(int[] nums, int p) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeMax(self, nums: List[int], p: int) -> int:\n        ",
+    "typescript": "function minimizeMax(nums: number[], p: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizeMax(int[] nums, int p) {\n        \n    }\n}",
+    "go": "func minimizeMax(nums []int, p int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_max(nums: Vec<i32>, p: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,1,2,7,1,3]",
+      "p": 2
+    },
+    {
+      "nums": "[4,2,1,2]",
+      "p": 1
+    }
+  ],
+  "functionName": "minimizeMax",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "p",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "To minimize the answer, the array should be sorted first.",
+    "Can we use binary search here?"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "bulls-and-cows",
+  "title": "299. Bulls and Cows",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/bulls-and-cows/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "secret = \"1807\", guess = \"7810\"",
+      "output": "\"1A3B\"",
+      "explanation": "Bulls are connected with a '|' and cows are underlined: \"1807\" | \"7810\""
+    },
+    {
+      "input": "secret = \"1123\", guess = \"0111\"",
+      "output": "\"1A1B\"",
+      "explanation": "Bulls are connected with a '|' and cows are underlined: \"1123\"        \"1123\" |      or     | \"0111\"        \"0111\" Note that only one of the two unmatched 1s is counted as a cow since the non-bull digits can only be rearranged to allow one 1 to be a bull."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string getHint(string secret, string guess) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String getHint(String secret, String guess) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getHint(self, secret: str, guess: str) -> str:\n        ",
+    "typescript": "function getHint(secret: string, guess: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GetHint(string secret, string guess) {\n        \n    }\n}",
+    "go": "func getHint(secret string, guess string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_hint(secret: String, guess: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "secret": "1807",
+      "guess": "7810"
+    },
+    {
+      "secret": "1123",
+      "guess": "0111"
+    }
+  ],
+  "functionName": "getHint",
+  "params": [
+    {
+      "name": "secret",
+      "type": "string"
+    },
+    {
+      "name": "guess",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

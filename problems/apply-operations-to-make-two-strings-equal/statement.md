@@ -1,0 +1,16 @@
+You are given two **0-indexed** binary strings `s1` and `s2`, both of length `n`, and a positive integer `x`.
+
+You can perform any of the following operations on the string `s1` **any** number of times:
+
+-   Choose two indices `i` and `j`, and flip both `s1[i]` and `s1[j]`. The cost of this operation is `x`.
+-   Choose an index `i` such that `i < n - 1` and flip both `s1[i]` and `s1[i + 1]`. The cost of this operation is `1`.
+
+Return *the **minimum** cost needed to make the strings* `s1` *and* `s2` *equal, or return* `-1` *if it is impossible.*
+
+**Note** that flipping a character means changing it from `0` to `1` or vice-versa.
+
+**Constraints:**
+
+-   `n == s1.length == s2.length`
+-   `1 ≤ n, x ≤ 500`
+-   `s1` and `s2` consist only of the characters `'0'` and `'1'`.

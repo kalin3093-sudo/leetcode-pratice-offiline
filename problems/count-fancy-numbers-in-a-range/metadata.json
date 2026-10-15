@@ -1,0 +1,65 @@
+{
+  "id": "count-fancy-numbers-in-a-range",
+  "title": "3869. Count Fancy Numbers in a Range",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-fancy-numbers-in-a-range/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "l = 8, r = 10",
+      "output": "3",
+      "explanation": "8 and 9 are single-digit integers, so they are good and therefore fancy. 10 has digits [1, 0], which form a strictly decreasing sequence, so 10 is good and thus fancy. Therefore, the answer is 3."
+    },
+    {
+      "input": "l = 12340, r = 12341",
+      "output": "1",
+      "explanation": "12340 12340 is not good because [1, 2, 3, 4, 0] is not strictly monotone. The digit sum is 1 + 2 + 3 + 4 + 0 = 10. 10 is good as it has digits [1, 0], which is strictly decreasing. Therefore, 12340 is fancy. 12341 12341 is not good because [1, 2, 3, 4, 1] is not strictly monotone. The digit sum is 1 + 2 + 3 + 4 + 1 = 11. 11 is not good as it has digits [1, 1], which is not strictly monotone. Therefore, 12341 is not fancy. Therefore, the answer is 1."
+    },
+    {
+      "input": "l = 123456788, r = 123456788",
+      "output": "0",
+      "explanation": "123456788 is not good because its digits are not strictly monotone. The digit sum is 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 8 = 44. 44 is not good as it has digits [4, 4], which is not strictly monotone. Therefore, 123456788 is not fancy. Therefore, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countFancy(long long l, long long r) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countFancy(long l, long r) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countFancy(self, l: int, r: int) -> int:\n        ",
+    "typescript": "function countFancy(l: number, r: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountFancy(long l, long r) {\n        \n    }\n}",
+    "go": "func countFancy(l int64, r int64) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_fancy(l: i64, r: i64) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": "8",
+      "r": "10"
+    },
+    {
+      "l": "12340",
+      "r": "12341"
+    },
+    {
+      "l": "123456788",
+      "r": "123456788"
+    }
+  ],
+  "functionName": "countFancy",
+  "params": [
+    {
+      "name": "l",
+      "type": "long"
+    },
+    {
+      "name": "r",
+      "type": "long"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Precompute <code>goods</code>: all strictly increasing numbers made from digits <code>1-9</code> and all strictly decreasing numbers made from digits <code>0-9</code>, remove duplicates.",
+    "Precompute <code>good_sums</code>: all integers in <code>[1, 144]</code> whose decimal digits are strictly increasing or strictly decreasing (single-digit counts).",
+    "Implement digit DP <code>cnt(bound)</code> that counts numbers <= <code>bound</code> whose digit sum is in <code>good_sums</code>.",
+    "Answer = <code>cnt(r) - cnt(l - 1) + count(goods in [l, r]) - count(g in goods where l <= g <= r and sum(g) in good_sums)</code>."
+  ]
+}

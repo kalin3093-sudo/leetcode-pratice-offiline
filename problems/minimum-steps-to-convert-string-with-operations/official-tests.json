@@ -1,0 +1,14 @@
+[
+  {
+    "word1": "abcdf",
+    "word2": "dacbe"
+  },
+  {
+    "word1": "abceded",
+    "word2": "baecfef"
+  },
+  {
+    "word1": "abcdef",
+    "word2": "fedabc"
+  }
+]

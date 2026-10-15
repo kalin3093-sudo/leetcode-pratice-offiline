@@ -1,0 +1,55 @@
+{
+  "id": "maximum-substrings-with-distinct-start",
+  "title": "3760. Maximum Substrings With Distinct Start",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-substrings-with-distinct-start/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abab\"",
+      "output": "2",
+      "explanation": "Split \"abab\" into \"a\" and \"bab\". Each substring starts with a distinct character i.e 'a' and 'b'. Thus, the answer is 2."
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "4",
+      "explanation": "Split \"abcd\" into \"a\", \"b\", \"c\", and \"d\". Each substring starts with a distinct character. Thus, the answer is 4."
+    },
+    {
+      "input": "s = \"aaaa\"",
+      "output": "1",
+      "explanation": "All characters in \"aaaa\" are 'a'. Only one substring can start with 'a'. Thus, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDistinct(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDistinct(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDistinct(self, s: str) -> int:\n        ",
+    "typescript": "function maxDistinct(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDistinct(string s) {\n        \n    }\n}",
+    "go": "func maxDistinct(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_distinct(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abab"
+    },
+    {
+      "s": "abcd"
+    },
+    {
+      "s": "aaaa"
+    }
+  ],
+  "functionName": "maxDistinct",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the number of distinct characters in <code>s</code>"
+  ]
+}

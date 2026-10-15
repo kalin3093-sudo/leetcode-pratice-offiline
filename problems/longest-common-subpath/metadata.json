@@ -1,0 +1,64 @@
+{
+  "id": "longest-common-subpath",
+  "title": "1923. Longest Common Subpath",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-common-subpath/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, paths = [[0,1,2,3,4], [2,3,4], [4,0,1,2,3]]",
+      "output": "2",
+      "explanation": "The longest common subpath is [2,3]."
+    },
+    {
+      "input": "n = 3, paths = [[0],[1],[2]]",
+      "output": "0",
+      "explanation": "There is no common subpath shared by the three paths."
+    },
+    {
+      "input": "n = 5, paths = [[0,1,2,3,4], [4,3,2,1,0]]",
+      "output": "1",
+      "explanation": "The possible longest common subpaths are [0], [1], [2], [3], and [4]. All have a length of 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestCommonSubpath(int n, vector<vector<int>>& paths) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestCommonSubpath(int n, int[][] paths) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestCommonSubpath(self, n: int, paths: list[list[int]]) -> int:\n        ",
+    "typescript": "function longestCommonSubpath(n: number, paths: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestCommonSubpath(int n, int[][] paths) {\n        \n    }\n}",
+    "go": "func longestCommonSubpath(n int, paths [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_common_subpath(n: i32, paths: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "paths": "[[0,1,2,3,4],[2,3,4],[4,0,1,2,3]]"
+    },
+    {
+      "n": 3,
+      "paths": "[[0],[1],[2]]"
+    },
+    {
+      "n": 5,
+      "paths": "[[0,1,2,3,4],[4,3,2,1,0]]"
+    }
+  ],
+  "functionName": "longestCommonSubpath",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "paths",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If there is a common path with length x, there is for sure a common path of length y where y < x.",
+    "We can use binary search over the answer with the range [0, min(path[i].length)].",
+    "Using binary search, we want to verify if we have a common path of length m. We can achieve this using hashing."
+  ]
+}

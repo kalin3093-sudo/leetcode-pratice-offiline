@@ -1,0 +1,54 @@
+{
+  "id": "plates-between-candles",
+  "title": "2055. Plates Between Candles",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/plates-between-candles/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"**|**|***|\", queries = [[2,5],[5,9]]",
+      "output": "[2,3]",
+      "explanation": "- queries[0] has two plates between candles. - queries[1] has three plates between candles."
+    },
+    {
+      "input": "s = \"***|**|*****|**||**|*\", queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]",
+      "output": "[9,0,0,0,0]",
+      "explanation": "- queries[0] has nine plates between candles. - The other queries have zero plates between candles."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> platesBetweenCandles(string s, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] platesBetweenCandles(String s, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def platesBetweenCandles(self, s: str, queries: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function platesBetweenCandles(s: string, queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] PlatesBetweenCandles(string s, int[][] queries) {\n        \n    }\n}",
+    "go": "func platesBetweenCandles(s string, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn plates_between_candles(s: String, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "**|**|***|",
+      "queries": "[[2,5],[5,9]]"
+    },
+    {
+      "s": "***|**|*****|**||**|*",
+      "queries": "[[1,17],[4,5],[14,17],[5,11],[15,16]]"
+    }
+  ],
+  "functionName": "platesBetweenCandles",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Can you find the indices of the most left and right candles for a given substring, perhaps by using binary search (or better) over an array of indices of all the bars?",
+    "Once the indices of the most left and right bars are determined, how can you efficiently count the number of plates within the range? Prefix sums?"
+  ]
+}

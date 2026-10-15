@@ -1,0 +1,65 @@
+{
+  "id": "minimum-array-length-after-pair-removals",
+  "title": "2856. Minimum Array Length After Pair Removals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-array-length-after-pair-removals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "0"
+    },
+    {
+      "input": "nums = [1,1,2,2,3,3]",
+      "output": "0"
+    },
+    {
+      "input": "nums = [1000000000,1000000000]",
+      "output": "2",
+      "explanation": "Since both numbers are equal, they cannot be removed."
+    },
+    {
+      "input": "nums = [2,3,4,4,4]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minLengthAfterRemovals(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minLengthAfterRemovals(List<Integer> nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minLengthAfterRemovals(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minLengthAfterRemovals(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinLengthAfterRemovals(IList<int> nums) {\n        \n    }\n}",
+    "go": "func minLengthAfterRemovals(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_length_after_removals(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]"
+    },
+    {
+      "nums": "[1,1,2,2,3,3]"
+    },
+    {
+      "nums": "[1000000000,1000000000]"
+    },
+    {
+      "nums": "[2,3,4,4,4]"
+    }
+  ],
+  "functionName": "minLengthAfterRemovals",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "To minimize the length of the array, we should maximize the number of operations performed.",
+    "To perform <code>k</code> operations, it is optimal to use the smallest <code>k</code> values and the largest <code>k</code> values in <code>nums</code>.",
+    "What is the best way to make pairs from the smallest <code>k</code> values and the largest <code>k</code> values so it is possible to remove all the pairs?",
+    "If we consider the smallest <code>k</code> values and the largest <code>k</code> values as two separate <strong>sorted 0-indexed</strong> arrays, <code>a</code> and <code>b</code>, It is optimal to pair <code>a[i]</code> and <code>b[i]</code>. So, a <code>k</code> is valid if <code>a[i] < b[i]</code> for all <code>i</code> in the range <code>[0, k - 1]</code>.",
+    "The greatest possible valid <code>k</code> can be found using binary search.",
+    "The answer is <code>nums.length - 2 * k</code>."
+  ]
+}

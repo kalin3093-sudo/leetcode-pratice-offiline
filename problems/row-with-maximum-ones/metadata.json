@@ -1,0 +1,55 @@
+{
+  "id": "row-with-maximum-ones",
+  "title": "2643. Row With Maximum Ones",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/row-with-maximum-ones/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[0,1],[1,0]]",
+      "output": "[0,1]",
+      "explanation": "Both rows have the same number of 1's. So we return the index of the smaller row, 0, and the maximum count of ones (1). So, the answer is [0,1]."
+    },
+    {
+      "input": "mat = [[0,0,0],[0,1,1]]",
+      "output": "[1,2]",
+      "explanation": "The row indexed 1 has the maximum count of ones (2). So we return its index, 1, and the count. So, the answer is [1,2]."
+    },
+    {
+      "input": "mat = [[0,0],[1,1],[0,0]]",
+      "output": "[1,2]",
+      "explanation": "The row indexed 1 has the maximum count of ones (2). So the answer is [1,2]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> rowAndMaximumOnes(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] rowAndMaximumOnes(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rowAndMaximumOnes(self, mat: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function rowAndMaximumOnes(mat: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] RowAndMaximumOnes(int[][] mat) {\n        \n    }\n}",
+    "go": "func rowAndMaximumOnes(mat [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn row_and_maximum_ones(mat: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[0,1],[1,0]]"
+    },
+    {
+      "mat": "[[0,0,0],[0,1,1]]"
+    },
+    {
+      "mat": "[[0,0],[1,1],[0,0]]"
+    }
+  ],
+  "functionName": "rowAndMaximumOnes",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Iterate through each row and keep the count of ones."
+  ]
+}

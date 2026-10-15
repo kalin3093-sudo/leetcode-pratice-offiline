@@ -1,0 +1,65 @@
+{
+  "id": "earliest-possible-day-of-full-bloom",
+  "title": "2136. Earliest Possible Day of Full Bloom",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/earliest-possible-day-of-full-bloom/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "plantTime = [1,4,3], growTime = [2,3,1]",
+      "output": "9",
+      "explanation": "The grayed out pots represent planting days, colored pots represent growing days, and the flower represents the day it blooms. One optimal way is: On day 0, plant the 0th seed. The seed grows for 2 full days and blooms on day 3. On days 1, 2, 3, and 4, plant the 1st seed. The seed grows for 3 full days and blooms on day 8. On days 5, 6, and 7, plant the 2nd seed. The seed grows for 1 full day and blooms on day 9. Thus, on day 9, all the seeds are blooming."
+    },
+    {
+      "input": "plantTime = [1,2,3,2], growTime = [2,1,2,1]",
+      "output": "9",
+      "explanation": "The grayed out pots represent planting days, colored pots represent growing days, and the flower represents the day it blooms. One optimal way is: On day 1, plant the 0th seed. The seed grows for 2 full days and blooms on day 4. On days 0 and 3, plant the 1st seed. The seed grows for 1 full day and blooms on day 5. On days 2, 4, and 5, plant the 2nd seed. The seed grows for 2 full days and blooms on day 8. On days 6 and 7, plant the 3rd seed. The seed grows for 1 full day and blooms on day 9. Thus, on day 9, all the seeds are blooming."
+    },
+    {
+      "input": "plantTime = [1], growTime = [1]",
+      "output": "2",
+      "explanation": "On day 0, plant the 0th seed. The seed grows for 1 full day and blooms on day 2. Thus, on day 2, all the seeds are blooming."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int earliestFullBloom(vector<int>& plantTime, vector<int>& growTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int earliestFullBloom(int[] plantTime, int[] growTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def earliestFullBloom(self, plantTime: list[int], growTime: list[int]) -> int:\n        ",
+    "typescript": "function earliestFullBloom(plantTime: number[], growTime: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EarliestFullBloom(int[] plantTime, int[] growTime) {\n        \n    }\n}",
+    "go": "func earliestFullBloom(plantTime []int, growTime []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn earliest_full_bloom(plant_time: Vec<i32>, grow_time: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "plantTime": "[1,4,3]",
+      "growTime": "[2,3,1]"
+    },
+    {
+      "plantTime": "[1,2,3,2]",
+      "growTime": "[2,1,2,1]"
+    },
+    {
+      "plantTime": "[1]",
+      "growTime": "[1]"
+    }
+  ],
+  "functionName": "earliestFullBloom",
+  "params": [
+    {
+      "name": "plantTime",
+      "type": "int_array"
+    },
+    {
+      "name": "growTime",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "List the planting like the diagram above shows, where a row represents the timeline of a seed. A row i is above another row j if the last day planting seed i is ahead of the last day for seed j. Does it have any advantage to spend some days to plant seed j before completely planting seed i?",
+    "No. It does not help seed j but could potentially delay the completion of seed i, resulting in a worse final answer. Remaining focused is a part of the optimal solution.",
+    "Sort the seeds by their growTime in descending order. Can you prove why this strategy is the other part of the optimal solution? Note the bloom time of a seed is the sum of plantTime of all seeds preceding this seed plus the growTime of this seed.",
+    "There is no way to improve this strategy. The seed to bloom last dominates the final answer. Exchanging the planting of this seed with another seed with either a larger or smaller growTime will result in a potentially worse answer."
+  ]
+}

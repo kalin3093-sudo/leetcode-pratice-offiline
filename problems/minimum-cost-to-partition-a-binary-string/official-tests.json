@@ -1,0 +1,17 @@
+[
+  {
+    "s": "1010",
+    "encCost": 2,
+    "flatCost": 1
+  },
+  {
+    "s": "1010",
+    "encCost": 3,
+    "flatCost": 10
+  },
+  {
+    "s": "00",
+    "encCost": 1,
+    "flatCost": 2
+  }
+]

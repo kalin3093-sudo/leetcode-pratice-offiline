@@ -1,0 +1,51 @@
+{
+  "id": "palindrome-partitioning-ii",
+  "title": "132. Palindrome Partitioning II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/palindrome-partitioning-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aab\"",
+      "output": "1",
+      "explanation": "The palindrome partitioning [\"aa\",\"b\"] could be produced using 1 cut."
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "0"
+    },
+    {
+      "input": "s = \"ab\"",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCut(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCut(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCut(self, s: str) -> int:\n        ",
+    "typescript": "function minCut(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCut(string s) {\n        \n    }\n}",
+    "go": "func minCut(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cut(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aab"
+    },
+    {
+      "s": "a"
+    },
+    {
+      "s": "ab"
+    }
+  ],
+  "functionName": "minCut",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

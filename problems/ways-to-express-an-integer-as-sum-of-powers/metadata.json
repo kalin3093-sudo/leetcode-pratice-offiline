@@ -1,0 +1,54 @@
+{
+  "id": "ways-to-express-an-integer-as-sum-of-powers",
+  "title": "2787. Ways to Express an Integer as Sum of Powers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 10, x = 2",
+      "output": "1",
+      "explanation": "We can express n as the following: n = 32 + 12 = 10. It can be shown that it is the only way to express 10 as the sum of the 2nd power of unique integers."
+    },
+    {
+      "input": "n = 4, x = 1",
+      "output": "2",
+      "explanation": "We can express n in the following ways: - n = 41 = 4. - n = 31 + 11 = 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfWays(int n, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfWays(int n, int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfWays(self, n: int, x: int) -> int:\n        ",
+    "typescript": "function numberOfWays(n: number, x: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfWays(int n, int x) {\n        \n    }\n}",
+    "go": "func numberOfWays(n int, x int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_ways(n: i32, x: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10,
+      "x": 2
+    },
+    {
+      "n": 4,
+      "x": 1
+    }
+  ],
+  "functionName": "numberOfWays",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "You can use dynamic programming, where dp[k][j] represents the number of ways to express k as the sum of the x-th power of unique positive integers such that the biggest possible number we use is j.",
+    "To calculate dp[k][j], you can iterate over the numbers smaller than j and try to use each one as a power of x to make our sum k."
+  ]
+}

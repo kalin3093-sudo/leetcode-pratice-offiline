@@ -1,0 +1,49 @@
+{
+  "id": "count-number-of-trapezoids-i",
+  "title": "3623. Count Number of Trapezoids I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-number-of-trapezoids-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[1,0],[2,0],[3,0],[2,2],[3,2]]",
+      "output": "3",
+      "explanation": "There are three distinct ways to pick four points that form a horizontal trapezoid: Using points [1,0], [2,0], [3,2], and [2,2]. Using points [2,0], [3,0], [3,2], and [2,2]. Using points [1,0], [3,0], [3,2], and [2,2]."
+    },
+    {
+      "input": "points = [[0,0],[1,0],[0,1],[2,1]]",
+      "output": "1",
+      "explanation": "There is only one horizontal trapezoid that can be formed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countTrapezoids(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countTrapezoids(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countTrapezoids(self, points: List[List[int]]) -> int:\n        ",
+    "typescript": "function countTrapezoids(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountTrapezoids(int[][] points) {\n        \n    }\n}",
+    "go": "func countTrapezoids(points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_trapezoids(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[1,0],[2,0],[3,0],[2,2],[3,2]]"
+    },
+    {
+      "points": "[[0,0],[1,0],[0,1],[2,1]]"
+    }
+  ],
+  "functionName": "countTrapezoids",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For a line parallel to the x‑axis, all its points must share the same y‑coordinate.",
+    "Group the points by their y‑coordinate.",
+    "Choose two distinct groups (two horizontal lines), and from each group select two points to form a trapezoid."
+  ]
+}

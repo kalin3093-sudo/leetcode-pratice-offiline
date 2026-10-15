@@ -1,0 +1,53 @@
+{
+  "id": "minimum-number-of-arrows-to-burst-balloons",
+  "title": "452. Minimum Number of Arrows to Burst Balloons",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[10,16],[2,8],[1,6],[7,12]]",
+      "output": "2",
+      "explanation": "The balloons can be burst by 2 arrows: - Shoot an arrow at x = 6, bursting the balloons [2,8] and [1,6]. - Shoot an arrow at x = 11, bursting the balloons [10,16] and [7,12]."
+    },
+    {
+      "input": "points = [[1,2],[3,4],[5,6],[7,8]]",
+      "output": "4",
+      "explanation": "One arrow needs to be shot for each balloon for a total of 4 arrows."
+    },
+    {
+      "input": "points = [[1,2],[2,3],[3,4],[4,5]]",
+      "output": "2",
+      "explanation": "The balloons can be burst by 2 arrows: - Shoot an arrow at x = 2, bursting the balloons [1,2] and [2,3]. - Shoot an arrow at x = 4, bursting the balloons [3,4] and [4,5]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMinArrowShots(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMinArrowShots(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMinArrowShots(self, points: list[list[int]]) -> int:\n        ",
+    "typescript": "function findMinArrowShots(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMinArrowShots(int[][] points) {\n        \n    }\n}",
+    "go": "func findMinArrowShots(points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_min_arrow_shots(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[10,16],[2,8],[1,6],[7,12]]"
+    },
+    {
+      "points": "[[1,2],[3,4],[5,6],[7,8]]"
+    },
+    {
+      "points": "[[1,2],[2,3],[3,4],[4,5]]"
+    }
+  ],
+  "functionName": "findMinArrowShots",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

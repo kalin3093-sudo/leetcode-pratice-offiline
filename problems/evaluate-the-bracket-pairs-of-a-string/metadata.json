@@ -1,0 +1,63 @@
+{
+  "id": "evaluate-the-bracket-pairs-of-a-string",
+  "title": "1807. Evaluate the Bracket Pairs of a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"(name)is(age)yearsold\", knowledge = [[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "output": "\"bobistwoyearsold\"",
+      "explanation": "The key \"name\" has a value of \"bob\", so replace \"(name)\" with \"bob\". The key \"age\" has a value of \"two\", so replace \"(age)\" with \"two\"."
+    },
+    {
+      "input": "s = \"hi(name)\", knowledge = [[\"a\",\"b\"]]",
+      "output": "\"hi?\"",
+      "explanation": "As you do not know the value of the key \"name\", replace \"(name)\" with \"?\"."
+    },
+    {
+      "input": "s = \"(a)(a)(a)aaa\", knowledge = [[\"a\",\"yes\"]]",
+      "output": "\"yesyesyesaaa\"",
+      "explanation": "The same key can appear multiple times. The key \"a\" has a value of \"yes\", so replace all occurrences of \"(a)\" with \"yes\". Notice that the \"a\"s not in a bracket pair are not evaluated."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string evaluate(string s, vector<vector<string>>& knowledge) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String evaluate(String s, List<List<String>> knowledge) {\n        \n    }\n}",
+    "python": "class Solution:\n    def evaluate(self, s: str, knowledge: list[list[str]]) -> str:\n        ",
+    "typescript": "function evaluate(s: string, knowledge: string[][]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string Evaluate(string s, IList<IList<string>> knowledge) {\n        \n    }\n}",
+    "go": "func evaluate(s string, knowledge [][]string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn evaluate(s: String, knowledge: Vec<Vec<String>>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "(name)is(age)yearsold",
+      "knowledge": "[[\"name\",\"bob\"],[\"age\",\"two\"]]"
+    },
+    {
+      "s": "hi(name)",
+      "knowledge": "[[\"a\",\"b\"]]"
+    },
+    {
+      "s": "(a)(a)(a)aaa",
+      "knowledge": "[[\"a\",\"yes\"]]"
+    }
+  ],
+  "functionName": "evaluate",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "knowledge",
+      "type": "string_list_2d"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Process pairs from right to left to handle repeats",
+    "Keep track of the current enclosed string using another string"
+  ]
+}

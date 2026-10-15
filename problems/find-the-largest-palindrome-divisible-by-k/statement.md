@@ -1,0 +1,15 @@
+You are given two **positive** integers `n` and `k`.
+
+An integer `x` is called **k-palindromic** if:
+
+-   `x` is a palindrome.
+-   `x` is divisible by `k`.
+
+Return the **largest** integer having `n` digits (as a string) that is **k-palindromic**.
+
+**Note** that the integer must **not** have leading zeros.
+
+**Constraints:**
+
+-   `1 ≤ n ≤ 10^5`
+-   `1 ≤ k ≤ 9`

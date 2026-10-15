@@ -1,0 +1,47 @@
+{
+  "id": "last-visited-integers",
+  "title": "2899. Last Visited Integers",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/last-visited-integers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,-1,-1,-1]",
+      "output": "[2,1,-1]",
+      "explanation": "Start with seen = [] and ans = []. Process nums[0]: The first element in nums is 1. We prepend it to the front of seen. Now, seen == [1]. Process nums[1]: The next element is 2. We prepend it to the front of seen. Now, seen == [2, 1]. Process nums[2]: The next element is -1. This is the first occurrence of -1, so k == 1. We look for the first element in seen. We append 2 to ans. Now, ans == [2]. Process nums[3]: Another -1. This is the second consecutive -1, so k == 2. The second element in seen is 1, so we append 1 to ans. Now, ans == [2, 1]. Process nums[4]: Another -1, the third in a row, making k = 3. However, seen only has two elements ([2, 1]). Since k is greater than the number of elements in seen, we append -1 to ans. Finally, ans == [2, 1, -1]."
+    },
+    {
+      "input": "nums = [1,-1,2,-1,-1]",
+      "output": "[1,2,1]",
+      "explanation": "Start with seen = [] and ans = []. Process nums[0]: The first element in nums is 1. We prepend it to the front of seen. Now, seen == [1]. Process nums[1]: The next element is -1. This is the first occurrence of -1, so k == 1. We look for the first element in seen, which is 1. Append 1 to ans. Now, ans == [1]. Process nums[2]: The next element is 2. Prepend this to the front of seen. Now, seen == [2, 1]. Process nums[3]: The next element is -1. This -1 is not consecutive to the first -1 since 2 was in between. Thus, k resets to 1. The first element in seen is 2, so append 2 to ans. Now, ans == [1, 2]. Process nums[4]: Another -1. This is consecutive to the previous -1, so k == 2. The second element in seen is 1, append 1 to ans. Finally, ans == [1, 2, 1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> lastVisitedIntegers(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> lastVisitedIntegers(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lastVisitedIntegers(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function lastVisitedIntegers(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> LastVisitedIntegers(int[] nums) {\n        \n    }\n}",
+    "go": "func lastVisitedIntegers(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn last_visited_integers(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,-1,-1,-1]"
+    },
+    {
+      "nums": "[1,-1,2,-1,-1]"
+    }
+  ],
+  "functionName": "lastVisitedIntegers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "It is sufficient to implement what the description is stating."
+  ]
+}

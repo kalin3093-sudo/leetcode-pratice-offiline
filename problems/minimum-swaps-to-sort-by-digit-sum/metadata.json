@@ -1,0 +1,56 @@
+{
+  "id": "minimum-swaps-to-sort-by-digit-sum",
+  "title": "3551. Minimum Swaps to Sort by Digit Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [37,100]",
+      "output": "1",
+      "explanation": "Compute the digit sum for each integer: [3 + 7 = 10, 1 + 0 + 0 = 1] &rarr; [10, 1] Sort the integers based on digit sum: [100, 37]. Swap 37 with 100 to obtain the sorted order. Thus, the minimum number of swaps required to rearrange nums is 1."
+    },
+    {
+      "input": "nums = [22,14,33,7]",
+      "output": "0",
+      "explanation": "Compute the digit sum for each integer: [2 + 2 = 4, 1 + 4 = 5, 3 + 3 = 6, 7 = 7] &rarr; [4, 5, 6, 7] Sort the integers based on digit sum: [22, 14, 33, 7]. The array is already sorted. Thus, the minimum number of swaps required to rearrange nums is 0."
+    },
+    {
+      "input": "nums = [18,43,34,16]",
+      "output": "2",
+      "explanation": "Compute the digit sum for each integer: [1 + 8 = 9, 4 + 3 = 7, 3 + 4 = 7, 1 + 6 = 7] &rarr; [9, 7, 7, 7] Sort the integers based on digit sum: [16, 34, 43, 18]. Swap 18 with 16, and swap 43 with 34 to obtain the sorted order. Thus, the minimum number of swaps required to rearrange nums is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSwaps(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSwaps(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSwaps(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minSwaps(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSwaps(int[] nums) {\n        \n    }\n}",
+    "go": "func minSwaps(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_swaps(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[37,100]"
+    },
+    {
+      "nums": "[22,14,33,7]"
+    },
+    {
+      "nums": "[18,43,34,16]"
+    }
+  ],
+  "functionName": "minSwaps",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "First, sort the array based on digit sum (and value as a tiebreaker). Then, map each original value to its index in the sorted array.",
+    "Now, the problem reduces to finding the minimum number of swaps to sort this mapped array. The answer is <code>n - number_of_cycles</code> in the permutation."
+  ]
+}

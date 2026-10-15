@@ -1,0 +1,63 @@
+{
+  "id": "find-the-child-who-has-the-ball-after-k-seconds",
+  "title": "3178. Find the Child Who Has the Ball After K Seconds",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-child-who-has-the-ball-after-k-seconds/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3, k = 5",
+      "output": "1",
+      "explanation": "Time elapsed Children 0 [0, 1, 2] 1 [0, 1, 2] 2 [0, 1, 2] 3 [0, 1, 2] 4 [0, 1, 2] 5 [0, 1, 2]"
+    },
+    {
+      "input": "n = 5, k = 6",
+      "output": "2",
+      "explanation": "Time elapsed Children 0 [0, 1, 2, 3, 4] 1 [0, 1, 2, 3, 4] 2 [0, 1, 2, 3, 4] 3 [0, 1, 2, 3, 4] 4 [0, 1, 2, 3, 4] 5 [0, 1, 2, 3, 4] 6 [0, 1, 2, 3, 4]"
+    },
+    {
+      "input": "n = 4, k = 2",
+      "output": "2",
+      "explanation": "Time elapsed Children 0 [0, 1, 2, 3] 1 [0, 1, 2, 3] 2 [0, 1, 2, 3]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfChild(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfChild(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfChild(self, n: int, k: int) -> int:\n        ",
+    "typescript": "function numberOfChild(n: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfChild(int n, int k) {\n        \n    }\n}",
+    "go": "func numberOfChild(n int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_child(n: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "k": 5
+    },
+    {
+      "n": 5,
+      "k": 6
+    },
+    {
+      "n": 4,
+      "k": 2
+    }
+  ],
+  "functionName": "numberOfChild",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The ball will go back to child 0 after <code>2 * (n - 1)</code> seconds and everything is the same as time 0.",
+    "So the answer for <code>k</code> is the same as the answer for <code>k % (2 * (n - 1))</code>."
+  ]
+}

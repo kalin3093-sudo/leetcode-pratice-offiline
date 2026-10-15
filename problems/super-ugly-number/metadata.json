@@ -1,0 +1,51 @@
+{
+  "id": "super-ugly-number",
+  "title": "313. Super Ugly Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/super-ugly-number/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 12, primes = [2,7,13,19]",
+      "output": "32",
+      "explanation": "[1,2,4,7,8,13,14,16,19,26,28,32] is the sequence of the first 12 super ugly numbers given primes = [2,7,13,19]."
+    },
+    {
+      "input": "n = 1, primes = [2,3,5]",
+      "output": "1",
+      "explanation": "1 has no prime factors, therefore all of its prime factors are in the array primes = [2,3,5]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int nthSuperUglyNumber(int n, vector<int>& primes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int nthSuperUglyNumber(int n, int[] primes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nthSuperUglyNumber(self, n: int, primes: list[int]) -> int:\n        ",
+    "typescript": "function nthSuperUglyNumber(n: number, primes: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NthSuperUglyNumber(int n, int[] primes) {\n        \n    }\n}",
+    "go": "func nthSuperUglyNumber(n int, primes []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn nth_super_ugly_number(n: i32, primes: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 12,
+      "primes": "[2,7,13,19]"
+    },
+    {
+      "n": 1,
+      "primes": "[2,3,5]"
+    }
+  ],
+  "functionName": "nthSuperUglyNumber",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "primes",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

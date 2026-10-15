@@ -1,0 +1,67 @@
+{
+  "id": "minimum-sum-of-squared-difference",
+  "title": "2333. Minimum Sum of Squared Difference",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,2,3,4], nums2 = [2,10,20,19], k1 = 0, k2 = 0",
+      "output": "579",
+      "explanation": "The elements in nums1 and nums2 cannot be modified because k1 = 0 and k2 = 0. The sum of square difference will be: (1 - 2)2 + (2 - 10)2 + (3 - 20)2 + (4 - 19)2 = 579."
+    },
+    {
+      "input": "nums1 = [1,4,10,12], nums2 = [5,8,6,9], k1 = 1, k2 = 1",
+      "output": "43",
+      "explanation": "One way to obtain the minimum sum of square difference is: - Increase nums1[0] once. - Increase nums2[2] once. The minimum of the sum of square difference will be: (2 - 5)2 + (4 - 8)2 + (10 - 7)2 + (12 - 9)2 = 43. Note that, there are other ways to obtain the minimum of the sum of square difference, but there is no way to obtain a sum smaller than 43."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minSumSquareDiff(vector<int>& nums1, vector<int>& nums2, int k1, int k2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSumSquareDiff(self, nums1: list[int], nums2: list[int], k1: int, k2: int) -> int:\n        ",
+    "typescript": "function minSumSquareDiff(nums1: number[], nums2: number[], k1: number, k2: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {\n        \n    }\n}",
+    "go": "func minSumSquareDiff(nums1 []int, nums2 []int, k1 int, k2 int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_sum_square_diff(nums1: Vec<i32>, nums2: Vec<i32>, k1: i32, k2: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,2,3,4]",
+      "nums2": "[2,10,20,19]",
+      "k1": 0,
+      "k2": 0
+    },
+    {
+      "nums1": "[1,4,10,12]",
+      "nums2": "[5,8,6,9]",
+      "k1": 1,
+      "k2": 1
+    }
+  ],
+  "functionName": "minSumSquareDiff",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    },
+    {
+      "name": "k1",
+      "type": "int"
+    },
+    {
+      "name": "k2",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "There is no difference between the purpose of k1 and k2. Adding +1 to one element in nums1 is same as performing -1 to one element in nums2, and vice versa.",
+    "Reduce the sum of squared difference greedily. One operation of k should use the index that has the current maximum difference.",
+    "Binary search the maximum difference for the final result."
+  ]
+}

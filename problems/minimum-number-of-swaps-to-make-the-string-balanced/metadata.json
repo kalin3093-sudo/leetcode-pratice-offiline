@@ -1,0 +1,57 @@
+{
+  "id": "minimum-number-of-swaps-to-make-the-string-balanced",
+  "title": "1963. Minimum Number of Swaps to Make the String Balanced",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"][][\"",
+      "output": "1",
+      "explanation": "You can make the string balanced by swapping index 0 with index 3. The resulting string is \"[[]]\"."
+    },
+    {
+      "input": "s = \"]]][[[\"",
+      "output": "2",
+      "explanation": "You can do the following to make the string balanced: - Swap index 0 with index 4. s = \"[]][][\". - Swap index 1 with index 5. s = \"[[][]]\". The resulting string is \"[[][]]\"."
+    },
+    {
+      "input": "s = \"[]\"",
+      "output": "0",
+      "explanation": "The string is already balanced."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSwaps(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSwaps(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSwaps(self, s: str) -> int:\n        ",
+    "typescript": "function minSwaps(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSwaps(string s) {\n        \n    }\n}",
+    "go": "func minSwaps(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_swaps(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "][]["
+    },
+    {
+      "s": "]]][[["
+    },
+    {
+      "s": "[]"
+    }
+  ],
+  "functionName": "minSwaps",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate over the string and keep track of the number of opening and closing brackets on each step.",
+    "If the number of closing brackets is ever larger, you need to make a swap.",
+    "Swap it with the opening bracket closest to the end of s."
+  ]
+}

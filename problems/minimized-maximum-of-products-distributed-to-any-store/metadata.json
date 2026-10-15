@@ -1,0 +1,64 @@
+{
+  "id": "minimized-maximum-of-products-distributed-to-any-store",
+  "title": "2064. Minimized Maximum of Products Distributed to Any Store",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 6, quantities = [11,6]",
+      "output": "3",
+      "explanation": "One optimal way is: - The 11 products of type 0 are distributed to the first four stores in these amounts: 2, 3, 3, 3 - The 6 products of type 1 are distributed to the other two stores in these amounts: 3, 3 The maximum number of products given to any store is max(2, 3, 3, 3, 3, 3) = 3."
+    },
+    {
+      "input": "n = 7, quantities = [15,10,10]",
+      "output": "5",
+      "explanation": "One optimal way is: - The 15 products of type 0 are distributed to the first three stores in these amounts: 5, 5, 5 - The 10 products of type 1 are distributed to the next two stores in these amounts: 5, 5 - The 10 products of type 2 are distributed to the last two stores in these amounts: 5, 5 The maximum number of products given to any store is max(5, 5, 5, 5, 5, 5, 5) = 5."
+    },
+    {
+      "input": "n = 1, quantities = [100000]",
+      "output": "100000",
+      "explanation": "The only optimal way is: - The 100000 products of type 0 are distributed to the only store. The maximum number of products given to any store is max(100000) = 100000."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizedMaximum(int n, vector<int>& quantities) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizedMaximum(int n, int[] quantities) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizedMaximum(self, n: int, quantities: list[int]) -> int:\n        ",
+    "typescript": "function minimizedMaximum(n: number, quantities: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizedMaximum(int n, int[] quantities) {\n        \n    }\n}",
+    "go": "func minimizedMaximum(n int, quantities []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimized_maximum(n: i32, quantities: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "quantities": "[11,6]"
+    },
+    {
+      "n": 7,
+      "quantities": "[15,10,10]"
+    },
+    {
+      "n": 1,
+      "quantities": "[100000]"
+    }
+  ],
+  "functionName": "minimizedMaximum",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "quantities",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There exists a monotonic nature such that when x is smaller than some number, there will be no way to distribute, and when x is not smaller than that number, there will always be a way to distribute.",
+    "If you are given a number k, where the number of products given to any store does not exceed k, could you determine if all products can be distributed?",
+    "Implement a function canDistribute(k), which returns true if you can distribute all products such that any store will not be given more than k products, and returns false if you cannot. Use this function to binary search for the smallest possible k."
+  ]
+}

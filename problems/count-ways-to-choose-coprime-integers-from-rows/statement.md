@@ -1,0 +1,11 @@
+You are given a `m x n` matrix `mat` of positive integers.
+
+Return an integer denoting the number of ways to choose **exactly one** integer from each row of `mat` such that the **greatest common divisor** of all chosen integers is 1.
+
+Since the answer may be very large, return it **modulo** `10^9 + 7`.
+
+**Constraints:**
+
+-   `1 ≤ m == mat.length ≤ 150`
+-   `1 ≤ n == mat[i].length ≤ 150`
+-   `1 ≤ mat[i][j] ≤ 150`

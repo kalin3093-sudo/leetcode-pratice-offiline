@@ -1,0 +1,10 @@
+[
+  {
+    "time": "[1,2,3]",
+    "totalTrips": 5
+  },
+  {
+    "time": "[2]",
+    "totalTrips": 1
+  }
+]

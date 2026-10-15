@@ -1,0 +1,63 @@
+{
+  "id": "count-number-of-nice-subarrays",
+  "title": "1248. Count Number of Nice Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-number-of-nice-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,1,1], k = 3",
+      "output": "2",
+      "explanation": "The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1]."
+    },
+    {
+      "input": "nums = [2,4,6], k = 1",
+      "output": "0",
+      "explanation": "There are no odd numbers in the array."
+    },
+    {
+      "input": "nums = [2,2,2,1,2,2,1,2,2,2], k = 2",
+      "output": "16"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSubarrays(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSubarrays(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSubarrays(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function numberOfSubarrays(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSubarrays(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func numberOfSubarrays(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_subarrays(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,2,1,1]",
+      "k": 3
+    },
+    {
+      "nums": "[2,4,6]",
+      "k": 1
+    },
+    {
+      "nums": "[2,2,2,1,2,2,1,2,2,2]",
+      "k": 2
+    }
+  ],
+  "functionName": "numberOfSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "After replacing each even by zero and every odd by one can we use prefix sum to find answer ?",
+    "Can we use two pointers to count number of sub-arrays ?",
+    "Can we store the indices of odd numbers and for each k indices count the number of sub-arrays that contains them ?"
+  ]
+}

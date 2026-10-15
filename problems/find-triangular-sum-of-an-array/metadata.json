@@ -1,0 +1,48 @@
+{
+  "id": "find-triangular-sum-of-an-array",
+  "title": "2221. Find Triangular Sum of an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-triangular-sum-of-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "8",
+      "explanation": "The above diagram depicts the process from which we obtain the triangular sum of the array."
+    },
+    {
+      "input": "nums = [5]",
+      "output": "5",
+      "explanation": "Since there is only one element in nums, the triangular sum is the value of that element itself."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int triangularSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int triangularSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def triangularSum(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function triangularSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TriangularSum(int[] nums) {\n        \n    }\n}",
+    "go": "func triangularSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn triangular_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[5]"
+    }
+  ],
+  "functionName": "triangularSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try simulating the entire process.",
+    "To reduce space, use a temporary array to update nums in every step instead of creating a new array at each step."
+  ]
+}

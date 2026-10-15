@@ -1,0 +1,56 @@
+{
+  "id": "minimum-moves-to-convert-string",
+  "title": "2027. Minimum Moves to Convert String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-moves-to-convert-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"XXX\"",
+      "output": "1",
+      "explanation": "XXX -> OOO We select all the 3 characters and convert them in one move."
+    },
+    {
+      "input": "s = \"XXOX\"",
+      "output": "2",
+      "explanation": "XXOX -> OOOX -> OOOO We select the first 3 characters in the first move, and convert them to 'O'. Then we select the last 3 characters and convert them so that the final string contains all 'O's."
+    },
+    {
+      "input": "s = \"OOOO\"",
+      "output": "0",
+      "explanation": "There are no 'X's in s to convert."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumMoves(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumMoves(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumMoves(self, s: str) -> int:\n        ",
+    "typescript": "function minimumMoves(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumMoves(string s) {\n        \n    }\n}",
+    "go": "func minimumMoves(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_moves(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "XXX"
+    },
+    {
+      "s": "XXOX"
+    },
+    {
+      "s": "OOOO"
+    }
+  ],
+  "functionName": "minimumMoves",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the smallest substring you need to consider at a time.",
+    "Try delaying a move as long as possible."
+  ]
+}

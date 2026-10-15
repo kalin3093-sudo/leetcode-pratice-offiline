@@ -1,0 +1,47 @@
+{
+  "id": "count-ways-to-make-array-with-product",
+  "title": "1735. Count Ways to Make Array With Product",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-ways-to-make-array-with-product/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "queries = [[2,6],[5,1],[73,660]]",
+      "output": "[4,1,50734910]",
+      "explanation": "Each query is independent. [2,6]: There are 4 ways to fill an array of size 2 that multiply to 6: [1,6], [2,3], [3,2], [6,1]. [5,1]: There is 1 way to fill an array of size 5 that multiply to 1: [1,1,1,1,1]. [73,660]: There are 1050734917 ways to fill an array of size 73 that multiply to 660. 1050734917 modulo 109 + 7 = 50734910."
+    },
+    {
+      "input": "queries = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "output": "[1,2,3,10,5]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> waysToFillArray(vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] waysToFillArray(int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def waysToFillArray(self, queries: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function waysToFillArray(queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] WaysToFillArray(int[][] queries) {\n        \n    }\n}",
+    "go": "func waysToFillArray(queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn ways_to_fill_array(queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "queries": "[[2,6],[5,1],[73,660]]"
+    },
+    {
+      "queries": "[[1,1],[2,2],[3,3],[4,4],[5,5]]"
+    }
+  ],
+  "functionName": "waysToFillArray",
+  "params": [
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Prime-factorize ki and count how many ways you can distribute the primes among the ni positions.",
+    "After prime factorizing ki, suppose there are x amount of prime factor. There are (x + n - 1) choose (n - 1) ways to distribute the x prime factors into n positions, allowing repetitions."
+  ]
+}

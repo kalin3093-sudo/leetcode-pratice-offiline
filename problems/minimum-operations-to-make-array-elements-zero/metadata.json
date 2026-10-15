@@ -1,0 +1,48 @@
+{
+  "id": "minimum-operations-to-make-array-elements-zero",
+  "title": "3495. Minimum Operations to Make Array Elements Zero",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "queries = [[1,2],[2,4]]",
+      "output": "3",
+      "explanation": "For queries[0]: The initial array is nums = [1, 2]. In the first operation, select nums[0] and nums[1]. The array becomes [0, 0]. The minimum number of operations required is 1. For queries[1]: The initial array is nums = [2, 3, 4]. In the first operation, select nums[0] and nums[2]. The array becomes [0, 3, 1]. In the second operation, select nums[1] and nums[2]. The array becomes [0, 0, 0]. The minimum number of operations required is 2. The output is 1 + 2 = 3."
+    },
+    {
+      "input": "queries = [[2,6]]",
+      "output": "4",
+      "explanation": "For queries[0]: The initial array is nums = [2, 3, 4, 5, 6]. In the first operation, select nums[0] and nums[3]. The array becomes [0, 3, 4, 1, 6]. In the second operation, select nums[2] and nums[4]. The array becomes [0, 3, 1, 1, 1]. In the third operation, select nums[1] and nums[2]. The array becomes [0, 0, 0, 1, 1]. In the fourth operation, select nums[3] and nums[4]. The array becomes [0, 0, 0, 0, 0]. The minimum number of operations required is 4. The output is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minOperations(vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minOperations(int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, queries: List[List[int]]) -> int:\n        ",
+    "typescript": "function minOperations(queries: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinOperations(int[][] queries) {\n        \n    }\n}",
+    "go": "func minOperations(queries [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(queries: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "queries": "[[1,2],[2,4]]"
+    },
+    {
+      "queries": "[[2,6]]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "For a number <code>x</code>, the number of <code>\"/4\"</code> operations to change it to 0 is <code>floor(log4(x)) + 1</code>.",
+    "Always pair the 2 numbers with the maximum <code>\"/4\"</code> operations needed."
+  ]
+}

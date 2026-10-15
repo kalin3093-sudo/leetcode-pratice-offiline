@@ -1,0 +1,58 @@
+{
+  "id": "count-no-zero-pairs-that-sum-to-n",
+  "title": "3704. Count No-Zero Pairs That Sum to N",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "1",
+      "explanation": "The only pair is (1, 1)."
+    },
+    {
+      "input": "n = 3",
+      "output": "2",
+      "explanation": "The pairs are (1, 2) and (2, 1)."
+    },
+    {
+      "input": "n = 11",
+      "output": "8",
+      "explanation": "The pairs are (2, 9), (3, 8), (4, 7), (5, 6), (6, 5), (7, 4), (8, 3), and (9, 2). Note that (1, 10) and (10, 1) do not satisfy the conditions because 10 contains 0 in its decimal representation."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countNoZeroPairs(long long n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countNoZeroPairs(long n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countNoZeroPairs(self, n: int) -> int:\n        ",
+    "typescript": "function countNoZeroPairs(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountNoZeroPairs(long n) {\n        \n    }\n}",
+    "go": "func countNoZeroPairs(n int64) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_no_zero_pairs(n: i64) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "2"
+    },
+    {
+      "n": "3"
+    },
+    {
+      "n": "11"
+    }
+  ],
+  "functionName": "countNoZeroPairs",
+  "params": [
+    {
+      "name": "n",
+      "type": "long"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use digit DP over the decimal representation of <code>n</code>.",
+    "At each digit, track whether a carry is present and whether <code>a</code> or <code>b</code> has used a zero so far.",
+    "Transition by choosing digits for <code>a</code> and <code>b</code> that add up (with carry) to the current digit of <code>n</code>.",
+    "Subtract the cases where either number ends up being zero-containing when <code>n</code> itself is no-zero."
+  ]
+}

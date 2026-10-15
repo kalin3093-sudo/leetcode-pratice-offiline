@@ -1,0 +1,47 @@
+{
+  "id": "maximum-possible-number-by-binary-concatenation",
+  "title": "3309. Maximum Possible Number by Binary Concatenation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-possible-number-by-binary-concatenation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "30",
+      "explanation": "Concatenate the numbers in the order [3, 1, 2] to get the result \"11110\", which is the binary representation of 30."
+    },
+    {
+      "input": "nums = [2,8,16]",
+      "output": "1296",
+      "explanation": "Concatenate the numbers in the order [2, 8, 16] to get the result \"10100010000\", which is the binary representation of 1296."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxGoodNumber(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxGoodNumber(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxGoodNumber(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxGoodNumber(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxGoodNumber(int[] nums) {\n        \n    }\n}",
+    "go": "func maxGoodNumber(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_good_number(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[2,8,16]"
+    }
+  ],
+  "functionName": "maxGoodNumber",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How many possible concatenation orders are there?"
+  ]
+}

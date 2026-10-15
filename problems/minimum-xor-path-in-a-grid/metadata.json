@@ -1,0 +1,57 @@
+{
+  "id": "minimum-xor-path-in-a-grid",
+  "title": "3882. Minimum XOR Path in a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2],[3,4]]",
+      "output": "6",
+      "explanation": "There are two valid paths: (0, 0) &rarr; (0, 1) &rarr; (1, 1) with XOR: 1 XOR 2 XOR 4 = 7 (0, 0) &rarr; (1, 0) &rarr; (1, 1) with XOR: 1 XOR 3 XOR 4 = 6 The minimum XOR value among all valid paths is 6."
+    },
+    {
+      "input": "grid = [[6,7],[5,8]]",
+      "output": "9",
+      "explanation": "There are two valid paths: (0, 0) &rarr; (0, 1) &rarr; (1, 1) with XOR: 6 XOR 7 XOR 8 = 9 (0, 0) &rarr; (1, 0) &rarr; (1, 1) with XOR: 6 XOR 5 XOR 8 = 11 The minimum XOR value among all valid paths is 9."
+    },
+    {
+      "input": "grid = [[2,7,5]]",
+      "output": "0",
+      "explanation": "There is only one valid path: (0, 0) &rarr; (0, 1) &rarr; (0, 2) with XOR: 2 XOR 7 XOR 5 = 0 The XOR value of this path is 0, which is the minimum possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCost(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCost(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function minCost(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCost(int[][] grid) {\n        \n    }\n}",
+    "go": "func minCost(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2],[3,4]]"
+    },
+    {
+      "grid": "[[6,7],[5,8]]"
+    },
+    {
+      "grid": "[[2,7,5]]"
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming with state <code>dp[i][j][x]</code>, where <code>x</code> is a possible XOR value.",
+    "<code>dp[i][j][x]</code> indicates whether it is possible to reach cell <code>(i, j)</code> with XOR equal to <code>x</code>.",
+    "Transition from the top left cell by updating <code>x ^ grid[i][j]</code>, and track all reachable XOR values to find the minimum at the end cell."
+  ]
+}

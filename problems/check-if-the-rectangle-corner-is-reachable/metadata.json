@@ -1,0 +1,81 @@
+{
+  "id": "check-if-the-rectangle-corner-is-reachable",
+  "title": "3235. Check if the Rectangle Corner Is Reachable",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "xCorner = 3, yCorner = 4, circles = [[2,1,1]]",
+      "output": "true",
+      "explanation": "The black curve shows a possible path between (0, 0) and (3, 4)."
+    },
+    {
+      "input": "xCorner = 3, yCorner = 3, circles = [[1,1,2]]",
+      "output": "false",
+      "explanation": "No path exists from (0, 0) to (3, 3)."
+    },
+    {
+      "input": "xCorner = 3, yCorner = 3, circles = [[2,1,1],[1,2,1]]",
+      "output": "false",
+      "explanation": "No path exists from (0, 0) to (3, 3)."
+    },
+    {
+      "input": "xCorner = 4, yCorner = 4, circles = [[5,5,1]]",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canReachCorner(int xCorner, int yCorner, vector<vector<int>>& circles) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canReachCorner(int xCorner, int yCorner, int[][] circles) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canReachCorner(self, xCorner: int, yCorner: int, circles: List[List[int]]) -> bool:\n        ",
+    "typescript": "function canReachCorner(xCorner: number, yCorner: number, circles: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanReachCorner(int xCorner, int yCorner, int[][] circles) {\n        \n    }\n}",
+    "go": "func canReachCorner(xCorner int, yCorner int, circles [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_reach_corner(x_corner: i32, y_corner: i32, circles: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "xCorner": 3,
+      "yCorner": 4,
+      "circles": "[[2,1,1]]"
+    },
+    {
+      "xCorner": 3,
+      "yCorner": 3,
+      "circles": "[[1,1,2]]"
+    },
+    {
+      "xCorner": 3,
+      "yCorner": 3,
+      "circles": "[[2,1,1],[1,2,1]]"
+    },
+    {
+      "xCorner": 4,
+      "yCorner": 4,
+      "circles": "[[5,5,1]]"
+    }
+  ],
+  "functionName": "canReachCorner",
+  "params": [
+    {
+      "name": "xCorner",
+      "type": "int"
+    },
+    {
+      "name": "yCorner",
+      "type": "int"
+    },
+    {
+      "name": "circles",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Create a graph with <code>n + 4</code> vertices.",
+    "Vertices 0 to <code>n - 1</code> represent the circles, vertex <code>n</code> represents upper edge, vertex <code>n + 1</code> represents right edge, vertex <code>n + 2</code> represents lower edge, and vertex <code>n + 3</code> represents left edge.",
+    "Add an edge between these vertices if they intersect or touch.",
+    "Answer will be <code>false</code> when any of two sides left-right, left-bottom, right-top or top-bottom are reachable using the edges."
+  ]
+}

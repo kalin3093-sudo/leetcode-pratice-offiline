@@ -1,0 +1,44 @@
+{
+  "id": "push-dominoes",
+  "title": "838. Push Dominoes",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/push-dominoes/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "dominoes = \"RR.L\"",
+      "output": "\"RR.L\"",
+      "explanation": "The first domino expends no additional force on the second domino."
+    },
+    {
+      "input": "dominoes = \".L.R...LR..L..\"",
+      "output": "\"LL.RR.LLRRLL..\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string pushDominoes(string dominoes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String pushDominoes(String dominoes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def pushDominoes(self, dominoes: str) -> str:\n        ",
+    "typescript": "function pushDominoes(dominoes: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string PushDominoes(string dominoes) {\n        \n    }\n}",
+    "go": "func pushDominoes(dominoes string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn push_dominoes(dominoes: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "dominoes": "RR.L"
+    },
+    {
+      "dominoes": ".L.R...LR..L.."
+    }
+  ],
+  "functionName": "pushDominoes",
+  "params": [
+    {
+      "name": "dominoes",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

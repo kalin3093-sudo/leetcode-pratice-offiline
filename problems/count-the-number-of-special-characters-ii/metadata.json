@@ -1,0 +1,55 @@
+{
+  "id": "count-the-number-of-special-characters-ii",
+  "title": "3121. Count the Number of Special Characters II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-the-number-of-special-characters-ii/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"aaAbcBC\"",
+      "output": "3",
+      "explanation": "The special characters are 'a', 'b', and 'c'."
+    },
+    {
+      "input": "word = \"abc\"",
+      "output": "0",
+      "explanation": "There are no special characters in word."
+    },
+    {
+      "input": "word = \"AbBCab\"",
+      "output": "0",
+      "explanation": "There are no special characters in word."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSpecialChars(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSpecialChars(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSpecialChars(self, word: str) -> int:\n        ",
+    "typescript": "function numberOfSpecialChars(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSpecialChars(string word) {\n        \n    }\n}",
+    "go": "func numberOfSpecialChars(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_special_chars(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "aaAbcBC"
+    },
+    {
+      "word": "abc"
+    },
+    {
+      "word": "AbBCab"
+    }
+  ],
+  "functionName": "numberOfSpecialChars",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each character <code>c</code>, store the first occurrence of its uppercase and the last occurrence of its lowercase."
+  ]
+}

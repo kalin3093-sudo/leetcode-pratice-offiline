@@ -1,0 +1,54 @@
+{
+  "id": "find-the-original-typed-string-i",
+  "title": "3330. Find the Original Typed String I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-original-typed-string-i/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"abbcccc\"",
+      "output": "5",
+      "explanation": "The possible strings are: \"abbcccc\", \"abbccc\", \"abbcc\", \"abbc\", and \"abcccc\"."
+    },
+    {
+      "input": "word = \"abcd\"",
+      "output": "1",
+      "explanation": "The only possible string is \"abcd\"."
+    },
+    {
+      "input": "word = \"aaaa\"",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int possibleStringCount(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int possibleStringCount(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def possibleStringCount(self, word: str) -> int:\n        ",
+    "typescript": "function possibleStringCount(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PossibleStringCount(string word) {\n        \n    }\n}",
+    "go": "func possibleStringCount(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn possible_string_count(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "abbcccc"
+    },
+    {
+      "word": "abcd"
+    },
+    {
+      "word": "aaaa"
+    }
+  ],
+  "functionName": "possibleStringCount",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Any group of consecutive characters might have been the mistake."
+  ]
+}

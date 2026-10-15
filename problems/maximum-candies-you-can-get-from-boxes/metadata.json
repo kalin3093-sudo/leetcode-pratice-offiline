@@ -1,0 +1,71 @@
+{
+  "id": "maximum-candies-you-can-get-from-boxes",
+  "title": "1298. Maximum Candies You Can Get from Boxes",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "status = [1,0,1,0], candies = [7,5,4,100], keys = [[],[],[1],[]], containedBoxes = [[1,2],[3],[],[]], initialBoxes = [0]",
+      "output": "16",
+      "explanation": "You will be initially given box 0. You will find 7 candies in it and boxes 1 and 2. Box 1 is closed and you do not have a key for it so you will open box 2. You will find 4 candies and a key to box 1 in box 2. In box 1, you will find 5 candies and box 3 but you will not find a key to box 3 so box 3 will remain closed. Total number of candies collected = 7 + 4 + 5 = 16 candy."
+    },
+    {
+      "input": "status = [1,0,0,0,0,0], candies = [1,1,1,1,1,1], keys = [[1,2,3,4,5],[],[],[],[],[]], containedBoxes = [[1,2,3,4,5],[],[],[],[],[]], initialBoxes = [0]",
+      "output": "6",
+      "explanation": "You have initially box 0. Opening it you can find boxes 1,2,3,4 and 5 and their keys. The total number of candies will be 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxCandies(vector<int>& status, vector<int>& candies, vector<vector<int>>& keys, vector<vector<int>>& containedBoxes, vector<int>& initialBoxes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxCandies(int[] status, int[] candies, int[][] keys, int[][] containedBoxes, int[] initialBoxes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxCandies(self, status: list[int], candies: list[int], keys: list[list[int]], containedBoxes: list[list[int]], initialBoxes: list[int]) -> int:\n        ",
+    "typescript": "function maxCandies(status: number[], candies: number[], keys: number[][], containedBoxes: number[][], initialBoxes: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxCandies(int[] status, int[] candies, int[][] keys, int[][] containedBoxes, int[] initialBoxes) {\n        \n    }\n}",
+    "go": "func maxCandies(status []int, candies []int, keys [][]int, containedBoxes [][]int, initialBoxes []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_candies(status: Vec<i32>, candies: Vec<i32>, keys: Vec<Vec<i32>>, contained_boxes: Vec<Vec<i32>>, initial_boxes: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "status": "[1,0,1,0]",
+      "candies": "[7,5,4,100]",
+      "keys": "[[],[],[1],[]]",
+      "containedBoxes": "[[1,2],[3],[],[]]",
+      "initialBoxes": "[0]"
+    },
+    {
+      "status": "[1,0,0,0,0,0]",
+      "candies": "[1,1,1,1,1,1]",
+      "keys": "[[1,2,3,4,5],[],[],[],[],[]]",
+      "containedBoxes": "[[1,2,3,4,5],[],[],[],[],[]]",
+      "initialBoxes": "[0]"
+    }
+  ],
+  "functionName": "maxCandies",
+  "params": [
+    {
+      "name": "status",
+      "type": "int_array"
+    },
+    {
+      "name": "candies",
+      "type": "int_array"
+    },
+    {
+      "name": "keys",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "containedBoxes",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "initialBoxes",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use Breadth First Search (BFS) to traverse all possible boxes you can open. Only push to the queue the boxes the you have with their keys."
+  ]
+}

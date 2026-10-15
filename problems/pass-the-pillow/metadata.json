@@ -1,0 +1,54 @@
+{
+  "id": "pass-the-pillow",
+  "title": "2582. Pass the Pillow",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/pass-the-pillow/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4, time = 5",
+      "output": "2",
+      "explanation": "People pass the pillow in the following way: 1 -> 2 -> 3 -> 4 -> 3 -> 2. After five seconds, the 2nd person is holding the pillow."
+    },
+    {
+      "input": "n = 3, time = 2",
+      "output": "3",
+      "explanation": "People pass the pillow in the following way: 1 -> 2 -> 3. After two seconds, the 3rd person is holding the pillow."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int passThePillow(int n, int time) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int passThePillow(int n, int time) {\n        \n    }\n}",
+    "python": "class Solution:\n    def passThePillow(self, n: int, time: int) -> int:\n        ",
+    "typescript": "function passThePillow(n: number, time: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PassThePillow(int n, int time) {\n        \n    }\n}",
+    "go": "func passThePillow(n int, time int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn pass_the_pillow(n: i32, time: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "time": 5
+    },
+    {
+      "n": 3,
+      "time": 2
+    }
+  ],
+  "functionName": "passThePillow",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "time",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Maintain two integer variables, direction and i, where direction denotes the current direction in which the pillow should pass, and i denotes an index of the person holding the pillow.",
+    "While time is positive, update the current index with the current direction. If the index reaches the end of the line, multiply direction by - 1."
+  ]
+}

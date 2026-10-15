@@ -1,0 +1,58 @@
+{
+  "id": "distribute-candies",
+  "title": "575. Distribute Candies",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/distribute-candies/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "candyType = [1,1,2,2,3,3]",
+      "output": "3",
+      "explanation": "Alice can only eat 6 / 2 = 3 candies. Since there are only 3 types, she can eat one of each type."
+    },
+    {
+      "input": "candyType = [1,1,2,3]",
+      "output": "2",
+      "explanation": "Alice can only eat 4 / 2 = 2 candies. Whether she eats types [1,2], [1,3], or [2,3], she still can only eat 2 different types."
+    },
+    {
+      "input": "candyType = [6,6,6,6]",
+      "output": "1",
+      "explanation": "Alice can only eat 4 / 2 = 2 candies. Even though she can eat 2 candies, she only has 1 type."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distributeCandies(vector<int>& candyType) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distributeCandies(int[] candyType) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distributeCandies(self, candyType: list[int]) -> int:\n        ",
+    "typescript": "function distributeCandies(candyType: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DistributeCandies(int[] candyType) {\n        \n    }\n}",
+    "go": "func distributeCandies(candyType []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distribute_candies(candy_type: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "candyType": "[1,1,2,2,3,3]"
+    },
+    {
+      "candyType": "[1,1,2,3]"
+    },
+    {
+      "candyType": "[6,6,6,6]"
+    }
+  ],
+  "functionName": "distributeCandies",
+  "params": [
+    {
+      "name": "candyType",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "To maximize the number of kinds of candies, we should try to distribute candies such that Alice will gain all kinds.",
+    "What is the upper limit of the number of kinds of candies Alice will gain? Remember candies are to distributed equally.",
+    "Which data structure is the most suitable for finding the number of kinds of candies?",
+    "Will hashset solves the problem? Inserting all candies kind in the hashset and then checking its size with upper limit."
+  ]
+}

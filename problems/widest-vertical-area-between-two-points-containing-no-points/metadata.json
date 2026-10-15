@@ -1,0 +1,47 @@
+{
+  "id": "widest-vertical-area-between-two-points-containing-no-points",
+  "title": "1637. Widest Vertical Area Between Two Points Containing No Points",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[8,7],[9,9],[7,4],[9,7]]",
+      "output": "1",
+      "explanation": "Both the red and the blue area are optimal."
+    },
+    {
+      "input": "points = [[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxWidthOfVerticalArea(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxWidthOfVerticalArea(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxWidthOfVerticalArea(self, points: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxWidthOfVerticalArea(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxWidthOfVerticalArea(int[][] points) {\n        \n    }\n}",
+    "go": "func maxWidthOfVerticalArea(points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_width_of_vertical_area(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[8,7],[9,9],[7,4],[9,7]]"
+    },
+    {
+      "points": "[[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]"
+    }
+  ],
+  "functionName": "maxWidthOfVerticalArea",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try sorting the points",
+    "Think whether the y-axis of a point is relevant"
+  ]
+}

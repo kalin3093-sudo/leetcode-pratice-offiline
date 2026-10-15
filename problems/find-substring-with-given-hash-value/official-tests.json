@@ -1,0 +1,16 @@
+[
+  {
+    "s": "leetcode",
+    "power": 7,
+    "modulo": 20,
+    "k": 2,
+    "hashValue": 0
+  },
+  {
+    "s": "fbxzaad",
+    "power": 31,
+    "modulo": 100,
+    "k": 3,
+    "hashValue": 32
+  }
+]

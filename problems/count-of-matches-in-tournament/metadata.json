@@ -1,0 +1,48 @@
+{
+  "id": "count-of-matches-in-tournament",
+  "title": "1688. Count of Matches in Tournament",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-of-matches-in-tournament/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 7",
+      "output": "6",
+      "explanation": "Details of the tournament: - 1st Round: Teams = 7, Matches = 3, and 4 teams advance. - 2nd Round: Teams = 4, Matches = 2, and 2 teams advance. - 3rd Round: Teams = 2, Matches = 1, and 1 team is declared the winner. Total number of matches = 3 + 2 + 1 = 6."
+    },
+    {
+      "input": "n = 14",
+      "output": "13",
+      "explanation": "Details of the tournament: - 1st Round: Teams = 14, Matches = 7, and 7 teams advance. - 2nd Round: Teams = 7, Matches = 3, and 4 teams advance. - 3rd Round: Teams = 4, Matches = 2, and 2 teams advance. - 4th Round: Teams = 2, Matches = 1, and 1 team is declared the winner. Total number of matches = 7 + 3 + 2 + 1 = 13."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfMatches(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfMatches(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfMatches(self, n: int) -> int:\n        ",
+    "typescript": "function numberOfMatches(n: number): number {\n\n};",
+    "csharp": "public class Solution {\n    public int NumberOfMatches(int n) {\n        \n    }\n}",
+    "go": "func numberOfMatches(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_matches(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 7
+    },
+    {
+      "n": 14
+    }
+  ],
+  "functionName": "numberOfMatches",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the tournament as given in the statement.",
+    "Be careful when handling odd integers."
+  ]
+}

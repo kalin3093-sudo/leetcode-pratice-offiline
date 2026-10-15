@@ -1,0 +1,56 @@
+{
+  "id": "construct-uniform-parity-array-ii",
+  "title": "3876. Construct Uniform Parity Array II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/construct-uniform-parity-array-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,4,7]",
+      "output": "true",
+      "explanation": "Set nums2[0] = nums1[0] = 1. Set nums2[1] = nums1[1] - nums1[0] = 4 - 1 = 3. Set nums2[2] = nums1[2] = 7. nums2 = [1, 3, 7], and all elements are odd. Thus, the answer is true."
+    },
+    {
+      "input": "nums1 = [2,3]",
+      "output": "false",
+      "explanation": "It is not possible to construct nums2 such that all elements have the same parity. Thus, the answer is false."
+    },
+    {
+      "input": "nums1 = [4,6]",
+      "output": "true",
+      "explanation": "Set nums2[0] = nums1[0] = 4. Set nums2[1] = nums1[1] = 6. nums2 = [4, 6], and all elements are even. Thus, the answer is true."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool uniformArray(vector<int>& nums1) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean uniformArray(int[] nums1) {\n        \n    }\n}",
+    "python": "class Solution:\n    def uniformArray(self, nums1: list[int]) -> bool:\n        ",
+    "typescript": "function uniformArray(nums1: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool UniformArray(int[] nums1) {\n        \n    }\n}",
+    "go": "func uniformArray(nums1 []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn uniform_array(nums1: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,4,7]"
+    },
+    {
+      "nums1": "[2,3]"
+    },
+    {
+      "nums1": "[4,6]"
+    }
+  ],
+  "functionName": "uniformArray",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Try fixing the parity to either all even or all odd.",
+    "Use the smallest odd/even element if a subtraction is needed to match the chosen parity."
+  ]
+}

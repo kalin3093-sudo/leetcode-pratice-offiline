@@ -1,0 +1,13 @@
+Given a 2D integer array `circles` where `circles[i] = [xi, yi, ri]` represents the center `(xi, yi)` and radius `ri` of the `i^th` circle drawn on a grid, return *the **number of lattice points*** *that are present inside **at least one** circle*.
+
+**Note:**
+
+-   A **lattice point** is a point with integer coordinates.
+-   Points that lie **on the circumference of a circle** are also considered to be inside it.
+
+**Constraints:**
+
+-   `1 ≤ circles.length ≤ 200`
+-   `circles[i].length == 3`
+-   `1 ≤ xi, yi ≤ 100`
+-   `1 ≤ ri ≤ min(xi, yi)`

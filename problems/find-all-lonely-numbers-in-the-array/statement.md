@@ -1,0 +1,8 @@
+You are given an integer array `nums`. A number `x` is **lonely** when it appears only **once**, and no **adjacent** numbers (i.e. `x + 1` and `x - 1)` appear in the array.
+
+Return ***all** lonely numbers in* `nums`. You may return the answer in **any order**.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 10^5`
+-   `0 ≤ nums[i] ≤ 10^6`

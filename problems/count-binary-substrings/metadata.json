@@ -1,0 +1,47 @@
+{
+  "id": "count-binary-substrings",
+  "title": "696. Count Binary Substrings",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-binary-substrings/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"00110011\"",
+      "output": "6",
+      "explanation": "There are 6 substrings that have equal number of consecutive 1's and 0's: \"0011\", \"01\", \"1100\", \"10\", \"0011\", and \"01\". Notice that some of these substrings repeat and are counted the number of times they occur. Also, \"00110011\" is not a valid substring because all the 0's (and 1's) are not grouped together."
+    },
+    {
+      "input": "s = \"10101\"",
+      "output": "4",
+      "explanation": "There are 4 substrings: \"10\", \"01\", \"10\", \"01\" that have equal number of consecutive 1's and 0's."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countBinarySubstrings(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countBinarySubstrings(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countBinarySubstrings(self, s: str) -> int:\n        ",
+    "typescript": "function countBinarySubstrings(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountBinarySubstrings(string s) {\n        \n    }\n}",
+    "go": "func countBinarySubstrings(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_binary_substrings(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "00110011"
+    },
+    {
+      "s": "10101"
+    }
+  ],
+  "functionName": "countBinarySubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How many valid binary substrings exist in \"000111\", and how many in \"11100\"?  What about \"00011100\"?"
+  ]
+}

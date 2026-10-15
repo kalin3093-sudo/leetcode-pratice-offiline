@@ -1,0 +1,54 @@
+{
+  "id": "minimum-operations-to-make-a-subsequence",
+  "title": "1713. Minimum Operations to Make a Subsequence",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "target = [5,1,3], arr = [9,4,2,3,4]",
+      "output": "2",
+      "explanation": "You can add 5 and 1 in such a way that makes arr = [5,9,4,1,2,3,4], then target will be a subsequence of arr."
+    },
+    {
+      "input": "target = [6,4,8,1,3,2], arr = [4,7,6,2,3,8,6,1]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& target, vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] target, int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, target: list[int], arr: list[int]) -> int:\n        ",
+    "typescript": "function minOperations(target: number[], arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] target, int[] arr) {\n        \n    }\n}",
+    "go": "func minOperations(target []int, arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(target: Vec<i32>, arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "target": "[5,1,3]",
+      "arr": "[9,4,2,3,4]"
+    },
+    {
+      "target": "[6,4,8,1,3,2]",
+      "arr": "[4,7,6,2,3,8,6,1]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "target",
+      "type": "int_array"
+    },
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The problem can be reduced to computing Longest Common Subsequence between both arrays.",
+    "Since one of the arrays has distinct elements, we can consider that these elements describe an arrangement of numbers, and we can replace each element in the other array with the index it appeared at in the first array.",
+    "Then the problem is converted to finding Longest Increasing Subsequence in the second array, which can be done in O(n log n)."
+  ]
+}

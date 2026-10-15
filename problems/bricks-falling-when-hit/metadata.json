@@ -1,0 +1,51 @@
+{
+  "id": "bricks-falling-when-hit",
+  "title": "803. Bricks Falling When Hit",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/bricks-falling-when-hit/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,0,0,0],[1,1,1,0]], hits = [[1,0]]",
+      "output": "[2]",
+      "explanation": "Starting with the grid: [[1,0,0,0], [1,1,1,0]] We erase the underlined brick at (1,0), resulting in the grid: [[1,0,0,0], [0,1,1,0]] The two underlined bricks are no longer stable as they are no longer connected to the top nor adjacent to another stable brick, so they will fall. The resulting grid is: [[1,0,0,0], [0,0,0,0]] Hence the result is [2]."
+    },
+    {
+      "input": "grid = [[1,0,0,0],[1,1,0,0]], hits = [[1,1],[1,0]]",
+      "output": "[0,0]",
+      "explanation": "Starting with the grid: [[1,0,0,0], [1,1,0,0]] We erase the underlined brick at (1,1), resulting in the grid: [[1,0,0,0], [1,0,0,0]] All remaining bricks are still stable, so no bricks fall. The grid remains the same: [[1,0,0,0], [1,0,0,0]] Next, we erase the underlined brick at (1,0), resulting in the grid: [[1,0,0,0], [0,0,0,0]] Once again, all remaining bricks are still stable, so no bricks fall. Hence the result is [0,0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> hitBricks(vector<vector<int>>& grid, vector<vector<int>>& hits) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] hitBricks(int[][] grid, int[][] hits) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hitBricks(self, grid: list[list[int]], hits: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function hitBricks(grid: number[][], hits: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] HitBricks(int[][] grid, int[][] hits) {\n        \n    }\n}",
+    "go": "func hitBricks(grid [][]int, hits [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn hit_bricks(grid: Vec<Vec<i32>>, hits: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,0,0,0],[1,1,1,0]]",
+      "hits": "[[1,0]]"
+    },
+    {
+      "grid": "[[1,0,0,0],[1,1,0,0]]",
+      "hits": "[[1,1],[1,0]]"
+    }
+  ],
+  "functionName": "hitBricks",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "hits",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

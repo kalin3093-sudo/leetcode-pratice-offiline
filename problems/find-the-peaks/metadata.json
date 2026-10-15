@@ -1,0 +1,47 @@
+{
+  "id": "find-the-peaks",
+  "title": "2951. Find the Peaks",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-peaks/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mountain = [2,4,4]",
+      "output": "[]",
+      "explanation": "mountain[0] and mountain[2] can not be a peak because they are first and last elements of the array. mountain[1] also can not be a peak because it is not strictly greater than mountain[2]. So the answer is []."
+    },
+    {
+      "input": "mountain = [1,4,3,8,5]",
+      "output": "[1,3]",
+      "explanation": "mountain[0] and mountain[4] can not be a peak because they are first and last elements of the array. mountain[2] also can not be a peak because it is not strictly greater than mountain[3] and mountain[1]. But mountain [1] and mountain[3] are strictly greater than their neighboring elements. So the answer is [1,3]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findPeaks(vector<int>& mountain) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> findPeaks(int[] mountain) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findPeaks(self, mountain: List[int]) -> List[int]:\n        ",
+    "typescript": "function findPeaks(mountain: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FindPeaks(int[] mountain) {\n        \n    }\n}",
+    "go": "func findPeaks(mountain []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_peaks(mountain: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mountain": "[2,4,4]"
+    },
+    {
+      "mountain": "[1,4,3,8,5]"
+    }
+  ],
+  "functionName": "findPeaks",
+  "params": [
+    {
+      "name": "mountain",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "If <code>nums[i] > num[i - 1]</code> and <code>nums[i] > nums[i + 1]</code> <code>nums[i]</code> is a peak."
+  ]
+}

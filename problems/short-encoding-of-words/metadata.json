@@ -1,0 +1,45 @@
+{
+  "id": "short-encoding-of-words",
+  "title": "820. Short Encoding of Words",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/short-encoding-of-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"time\", \"me\", \"bell\"]",
+      "output": "10",
+      "explanation": "A valid encoding would be s = \"time#bell#\" and indices = [0, 2, 5]. words[0] = \"time\", the substring of s starting from indices[0] = 0 to the next '#' is underlined in \"time#bell#\" words[1] = \"me\", the substring of s starting from indices[1] = 2 to the next '#' is underlined in \"time#bell#\" words[2] = \"bell\", the substring of s starting from indices[2] = 5 to the next '#' is underlined in \"time#bell#\""
+    },
+    {
+      "input": "words = [\"t\"]",
+      "output": "2",
+      "explanation": "A valid encoding would be s = \"t#\" and indices = [0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumLengthEncoding(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumLengthEncoding(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumLengthEncoding(self, words: list[str]) -> int:\n        ",
+    "typescript": "function minimumLengthEncoding(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumLengthEncoding(string[] words) {\n        \n    }\n}",
+    "go": "func minimumLengthEncoding(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_length_encoding(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"time\",\"me\",\"bell\"]"
+    },
+    {
+      "words": "[\"t\"]"
+    }
+  ],
+  "functionName": "minimumLengthEncoding",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

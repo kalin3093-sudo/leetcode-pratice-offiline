@@ -1,0 +1,50 @@
+{
+  "id": "longest-arithmetic-sequence-after-changing-at-most-one-element",
+  "title": "3872. Longest Arithmetic Sequence After Changing At Most One Element",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [9,7,5,10,1]",
+      "output": "5",
+      "explanation": "Replace nums[3] = 10 with 3. The array becomes [9, 7, 5, 3, 1]. Select the subarray [9, 7, 5, 3, 1], which is arithmetic because consecutive elements have a common difference of -2."
+    },
+    {
+      "input": "nums = [1,2,6,7]",
+      "output": "3",
+      "explanation": "Replace nums[0] = 1 with -2. The array becomes [-2, 2, 6, 7]. Select the subarray [-2, 2, 6, 7], which is arithmetic because consecutive elements have a common difference of 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestArithmetic(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestArithmetic(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestArithmetic(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function longestArithmetic(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestArithmetic(int[] nums) {\n        \n    }\n}",
+    "go": "func longestArithmetic(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_arithmetic(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[9,7,5,10,1]"
+    },
+    {
+      "nums": "[1,2,6,7]"
+    }
+  ],
+  "functionName": "longestArithmetic",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Precompute <code>L[i]</code> = length of longest arithmetic subarray ending at <code>i</code> using fixed differences.",
+    "Precompute <code>R[i]</code> = length of longest arithmetic subarray starting at <code>i</code>.",
+    "For each index <code>i</code> as the replaced element, check if neighbors allow a common difference <code>d = (nums[i+1] - nums[i-1]) / 2</code> and combine <code>L[i-1]</code> and <code>R[i+1]</code>.",
+    "Also consider extending only left or only right, and take the maximum over all positions."
+  ]
+}

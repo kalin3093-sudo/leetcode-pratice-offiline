@@ -1,0 +1,45 @@
+{
+  "id": "partition-array-into-disjoint-intervals",
+  "title": "915. Partition Array into Disjoint Intervals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partition-array-into-disjoint-intervals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,0,3,8,6]",
+      "output": "3",
+      "explanation": "left = [5,0,3], right = [8,6]"
+    },
+    {
+      "input": "nums = [1,1,1,0,6,12]",
+      "output": "4",
+      "explanation": "left = [1,1,1,0], right = [6,12]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int partitionDisjoint(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int partitionDisjoint(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def partitionDisjoint(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function partitionDisjoint(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PartitionDisjoint(int[] nums) {\n        \n    }\n}",
+    "go": "func partitionDisjoint(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn partition_disjoint(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,0,3,8,6]"
+    },
+    {
+      "nums": "[1,1,1,0,6,12]"
+    }
+  ],
+  "functionName": "partitionDisjoint",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

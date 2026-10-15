@@ -1,0 +1,7 @@
+We call a positive integer **special** if all of its digits are **distinct**.
+
+Given a **positive** integer `n`, return *the number of special integers that belong to the interval* `[1, n]`.
+
+**Constraints:**
+
+-   `1 ≤ n ≤ 2 * 10^9`

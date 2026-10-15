@@ -1,0 +1,53 @@
+{
+  "id": "distinct-subsequences-ii",
+  "title": "940. Distinct Subsequences II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/distinct-subsequences-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "7",
+      "explanation": "The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\"."
+    },
+    {
+      "input": "s = \"aba\"",
+      "output": "6",
+      "explanation": "The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\"."
+    },
+    {
+      "input": "s = \"aaa\"",
+      "output": "3",
+      "explanation": "The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distinctSubseqII(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distinctSubseqII(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distinctSubseqII(self, s: str) -> int:\n        ",
+    "typescript": "function distinctSubseqII(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DistinctSubseqII(string s) {\n        \n    }\n}",
+    "go": "func distinctSubseqII(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distinct_subseq_ii(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc"
+    },
+    {
+      "s": "aba"
+    },
+    {
+      "s": "aaa"
+    }
+  ],
+  "functionName": "distinctSubseqII",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

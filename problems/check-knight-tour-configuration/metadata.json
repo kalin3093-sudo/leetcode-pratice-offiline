@@ -1,0 +1,48 @@
+{
+  "id": "check-knight-tour-configuration",
+  "title": "2596. Check Knight Tour Configuration",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/check-knight-tour-configuration/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]",
+      "output": "true",
+      "explanation": "The above diagram represents the grid. It can be shown that it is a valid configuration."
+    },
+    {
+      "input": "grid = [[0,3,6],[5,8,1],[2,7,4]]",
+      "output": "false",
+      "explanation": "The above diagram represents the grid. The 8th move of the knight is not valid considering its position after the 7th move."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkValidGrid(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkValidGrid(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkValidGrid(self, grid: list[list[int]]) -> bool:\n        ",
+    "typescript": "function checkValidGrid(grid: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckValidGrid(int[][] grid) {\n        \n    }\n}",
+    "go": "func checkValidGrid(grid [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_valid_grid(grid: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]"
+    },
+    {
+      "grid": "[[0,3,6],[5,8,1],[2,7,4]]"
+    }
+  ],
+  "functionName": "checkValidGrid",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "It is enough to check if each move of the knight is valid.",
+    "Try all cases of the knight's movements to check if a move is valid."
+  ]
+}

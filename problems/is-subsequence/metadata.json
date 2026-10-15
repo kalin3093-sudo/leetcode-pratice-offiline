@@ -1,0 +1,49 @@
+{
+  "id": "is-subsequence",
+  "title": "392. Is Subsequence",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/is-subsequence/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"abc\", t = \"ahbgdc\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"axc\", t = \"ahbgdc\"",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isSubsequence(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isSubsequence(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isSubsequence(self, s: str, t: str) -> bool:\n        ",
+    "typescript": "function isSubsequence(s: string, t: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsSubsequence(string s, string t) {\n        \n    }\n}",
+    "go": "func isSubsequence(s string, t string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_subsequence(s: String, t: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc",
+      "t": "ahbgdc"
+    },
+    {
+      "s": "axc",
+      "t": "ahbgdc"
+    }
+  ],
+  "functionName": "isSubsequence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

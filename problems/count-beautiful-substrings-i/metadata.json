@@ -1,0 +1,62 @@
+{
+  "id": "count-beautiful-substrings-i",
+  "title": "2947. Count Beautiful Substrings I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-beautiful-substrings-i/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"baeyh\", k = 2",
+      "output": "2",
+      "explanation": "There are 2 beautiful substrings in the given string. - Substring \"baeyh\", vowels = 2 ([\"a\",e\"]), consonants = 2 ([\"y\",\"h\"]). You can see that string \"aeyh\" is beautiful as vowels == consonants and vowels * consonants % k == 0. - Substring \"baeyh\", vowels = 2 ([\"a\",e\"]), consonants = 2 ([\"b\",\"y\"]). You can see that string \"baey\" is beautiful as vowels == consonants and vowels * consonants % k == 0. It can be shown that there are only 2 beautiful substrings in the given string."
+    },
+    {
+      "input": "s = \"abba\", k = 1",
+      "output": "3",
+      "explanation": "There are 3 beautiful substrings in the given string. - Substring \"abba\", vowels = 1 ([\"a\"]), consonants = 1 ([\"b\"]). - Substring \"abba\", vowels = 1 ([\"a\"]), consonants = 1 ([\"b\"]). - Substring \"abba\", vowels = 2 ([\"a\",\"a\"]), consonants = 2 ([\"b\",\"b\"]). It can be shown that there are only 3 beautiful substrings in the given string."
+    },
+    {
+      "input": "s = \"bcdf\", k = 1",
+      "output": "0",
+      "explanation": "There are no beautiful substrings in the given string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int beautifulSubstrings(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int beautifulSubstrings(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def beautifulSubstrings(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function beautifulSubstrings(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BeautifulSubstrings(string s, int k) {\n        \n    }\n}",
+    "go": "func beautifulSubstrings(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn beautiful_substrings(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "baeyh",
+      "k": 2
+    },
+    {
+      "s": "abba",
+      "k": 1
+    },
+    {
+      "s": "bcdf",
+      "k": 1
+    }
+  ],
+  "functionName": "beautifulSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate over all substrings and maintain the frequencies of vowels and consonants."
+  ]
+}

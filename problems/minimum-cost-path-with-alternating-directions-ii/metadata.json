@@ -1,0 +1,72 @@
+{
+  "id": "minimum-cost-path-with-alternating-directions-ii",
+  "title": "3603. Minimum Cost Path with Alternating Directions II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "m = 1, n = 2, waitCost = [[1,2]]",
+      "output": "3",
+      "explanation": "The optimal path is: Start at cell (0, 0) at second 1 with entry cost (0 + 1) * (0 + 1) = 1. Second 1: Move right to cell (0, 1) with entry cost (0 + 1) * (1 + 1) = 2. Thus, the total cost is 1 + 2 = 3."
+    },
+    {
+      "input": "m = 2, n = 2, waitCost = [[3,5],[2,4]]",
+      "output": "9",
+      "explanation": "The optimal path is: Start at cell (0, 0) at second 1 with entry cost (0 + 1) * (0 + 1) = 1. Second 1: Move down to cell (1, 0) with entry cost (1 + 1) * (0 + 1) = 2. Second 2: Wait at cell (1, 0), paying waitCost[1][0] = 2. Second 3: Move right to cell (1, 1) with entry cost (1 + 1) * (1 + 1) = 4. Thus, the total cost is 1 + 2 + 2 + 4 = 9."
+    },
+    {
+      "input": "m = 2, n = 3, waitCost = [[6,1,4],[3,2,5]]",
+      "output": "16",
+      "explanation": "The optimal path is: Start at cell (0, 0) at second 1 with entry cost (0 + 1) * (0 + 1) = 1. Second 1: Move right to cell (0, 1) with entry cost (0 + 1) * (1 + 1) = 2. Second 2: Wait at cell (0, 1), paying waitCost[0][1] = 1. Second 3: Move down to cell (1, 1) with entry cost (1 + 1) * (1 + 1) = 4. Second 4: Wait at cell (1, 1), paying waitCost[1][1] = 2. Second 5: Move right to cell (1, 2) with entry cost (1 + 1) * (2 + 1) = 6. Thus, the total cost is 1 + 2 + 1 + 4 + 2 + 6 = 16."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minCost(int m, int n, vector<vector<int>>& waitCost) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minCost(int m, int n, int[][] waitCost) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, m: int, n: int, waitCost: List[List[int]]) -> int:\n        ",
+    "typescript": "function minCost(m: number, n: number, waitCost: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinCost(int m, int n, int[][] waitCost) {\n        \n    }\n}",
+    "go": "func minCost(m int, n int, waitCost [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(m: i32, n: i32, wait_cost: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "m": 1,
+      "n": 2,
+      "waitCost": "[[1,2]]"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "waitCost": "[[3,5],[2,4]]"
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "waitCost": "[[6,1,4],[3,2,5]]"
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "waitCost",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use dynamic programming",
+    "Observe that you need to wait at each cell except the first and last",
+    "Transition: <code>dp[i][j]</code> <- min(<code>dp[i‑1][j]</code>, <code>dp[i][j‑1]</code>) + <code>waitCost[i][j]</code> + (<code>i+1</code>)*(<code>j+1</code>)",
+    "The answer is <code>dp[m‑1][n‑1]</code> - <code>waitCost[m‑1][n‑1]</code>"
+  ]
+}

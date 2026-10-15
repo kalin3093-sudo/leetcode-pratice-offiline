@@ -1,0 +1,60 @@
+{
+  "id": "the-latest-time-to-catch-a-bus",
+  "title": "2332. The Latest Time to Catch a Bus",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "buses = [10,20], passengers = [2,17,18,19], capacity = 2",
+      "output": "16",
+      "explanation": "Suppose you arrive at time 16. At time 10, the first bus departs with the 0th passenger. At time 20, the second bus departs with you and the 1st passenger. Note that you may not arrive at the same time as another passenger, which is why you must arrive before the 1st passenger to catch the bus."
+    },
+    {
+      "input": "buses = [20,30,10], passengers = [19,13,26,4,25,11,21], capacity = 2",
+      "output": "20",
+      "explanation": "Suppose you arrive at time 20. At time 10, the first bus departs with the 3rd passenger. At time 20, the second bus departs with the 5th and 1st passengers. At time 30, the third bus departs with the 0th passenger and you. Notice if you had arrived any later, then the 6th passenger would have taken your seat on the third bus."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int latestTimeCatchTheBus(vector<int>& buses, vector<int>& passengers, int capacity) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int latestTimeCatchTheBus(int[] buses, int[] passengers, int capacity) {\n        \n    }\n}",
+    "python": "class Solution:\n    def latestTimeCatchTheBus(self, buses: list[int], passengers: list[int], capacity: int) -> int:\n        ",
+    "typescript": "function latestTimeCatchTheBus(buses: number[], passengers: number[], capacity: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LatestTimeCatchTheBus(int[] buses, int[] passengers, int capacity) {\n        \n    }\n}",
+    "go": "func latestTimeCatchTheBus(buses []int, passengers []int, capacity int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn latest_time_catch_the_bus(buses: Vec<i32>, passengers: Vec<i32>, capacity: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "buses": "[10,20]",
+      "passengers": "[2,17,18,19]",
+      "capacity": 2
+    },
+    {
+      "buses": "[20,30,10]",
+      "passengers": "[19,13,26,4,25,11,21]",
+      "capacity": 2
+    }
+  ],
+  "functionName": "latestTimeCatchTheBus",
+  "params": [
+    {
+      "name": "buses",
+      "type": "int_array"
+    },
+    {
+      "name": "passengers",
+      "type": "int_array"
+    },
+    {
+      "name": "capacity",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the buses and passengers arrays.",
+    "Use 2 pointers to traverse buses and passengers with a simulation of passengers getting on a particular bus."
+  ]
+}

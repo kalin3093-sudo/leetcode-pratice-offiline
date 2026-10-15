@@ -1,0 +1,61 @@
+{
+  "id": "check-if-two-string-arrays-are-equivalent",
+  "title": "1662. Check If Two String Arrays are Equivalent",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "word1 = [\"ab\", \"c\"], word2 = [\"a\", \"bc\"]",
+      "output": "true",
+      "explanation": "word1 represents string \"ab\" + \"c\" -> \"abc\" word2 represents string \"a\" + \"bc\" -> \"abc\" The strings are the same, so return true."
+    },
+    {
+      "input": "word1 = [\"a\", \"cb\"], word2 = [\"ab\", \"c\"]",
+      "output": "false"
+    },
+    {
+      "input": "word1  = [\"abc\", \"d\", \"defg\"], word2 = [\"abcddefg\"]",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def arrayStringsAreEqual(self, word1: list[str], word2: list[str]) -> bool:\n        ",
+    "typescript": "function arrayStringsAreEqual(word1: string[], word2: string[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ArrayStringsAreEqual(string[] word1, string[] word2) {\n        \n    }\n}",
+    "go": "func arrayStringsAreEqual(word1 []string, word2 []string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn array_strings_are_equal(word1: Vec<String>, word2: Vec<String>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "[\"ab\", \"c\"]",
+      "word2": "[\"a\", \"bc\"]"
+    },
+    {
+      "word1": "[\"a\", \"cb\"]",
+      "word2": "[\"ab\", \"c\"]"
+    },
+    {
+      "word1": "[\"abc\", \"d\", \"defg\"]",
+      "word2": "[\"abcddefg\"]"
+    }
+  ],
+  "functionName": "arrayStringsAreEqual",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string_array"
+    },
+    {
+      "name": "word2",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Concatenate all strings in the first array into a single string in the given order, the same for the second array.",
+    "Both arrays represent the same string if and only if the generated strings are the same."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "minimum-cost-path-with-alternating-directions-iii",
+  "title": "4003. Minimum Cost Path with Alternating Directions III",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-iii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "m = 2, n = 2, penalty = [[5,3],[1,4]]",
+      "output": "8",
+      "explanation": "The optimal path is: Start at cell (0, 0) with entry cost (0 + 1) * (0 + 1) = 1. Move 1: Move down to cell (1, 0) with entry cost (1 + 1) * (0 + 1) = 2. Move 2: Move right to cell (1, 1) with entry cost (1 + 1) * (1 + 1) = 4 and an extra cost of penalty[1][0] = 1 for violating the even parity rule. Thus, the total cost is 1 + 2 + 4 + 1 = 8."
+    },
+    {
+      "input": "m = 2, n = 2, penalty = [[0,7],[3,2]]",
+      "output": "7",
+      "explanation": "The optimal path is: Start at cell (0, 0) with entry cost (0 + 1) * (0 + 1) = 1. Move 1: Wait at cell (0, 0) with an extra cost of penalty[0][0] = 0 to flip to even parity. Move 2: Move right to cell (0, 1) with entry cost (0 + 1) * (1 + 1) = 2 and an extra cost of penalty[0][0] = 0 for violating the even parity rule. Move 3: Move down to cell (1, 1) with entry cost (1 + 1) * (1 + 1) = 4. Thus, the total cost is 1 + 0 + 2 + 0 + 4 = 7."
+    },
+    {
+      "input": "m = 2, n = 3, penalty = [[8,0,9],[7,4,1]]",
+      "output": "12",
+      "explanation": "The optimal path is: Start at cell (0, 0) with entry cost (0 + 1) * (0 + 1) = 1. Move 1: Move right to cell (0, 1) with entry cost (0 + 1) * (1 + 1) = 2. Move 2: Move right to cell (0, 2) with entry cost (0 + 1) * (2 + 1) = 3 and an extra cost of penalty[0][1] = 0 for violating the even parity rule. Move 3: Move down to cell (1, 2) with entry cost (1 + 1) * (2 + 1) = 6. Thus, the total cost is 1 + 2 + 3 + 0 + 6 = 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minCost(int m, int n, vector<vector<int>>& penalty) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minCost(int m, int n, int[][] penalty) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, m: int, n: int, penalty: List[List[int]]) -> int:\n        ",
+    "typescript": "function minCost(m: number, n: number, penalty: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinCost(int m, int n, int[][] penalty) {\n        \n    }\n}",
+    "go": "func minCost(m int, n int, penalty [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(m: i32, n: i32, penalty: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "m": 2,
+      "n": 2,
+      "penalty": "[[5,3],[1,4]]"
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "penalty": "[[0,7],[3,2]]"
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "penalty": "[[8,0,9],[7,4,1]]"
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "penalty",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<p>Treat each state as <code>(i, j, parity)</code>, where <code>parity</code> indicates whether the next action is odd-numbered or even-numbered.</p>",
+    "<p>From each state, consider moving to every adjacent cell and also waiting. Every transition changes the parity.</p>",
+    "<p>The transition cost depends on whether the chosen move follows the current parity rule. Waiting costs <code>penalty[i][j]</code>.</p>",
+    "<p>All transition costs are non-negative, so use Dijkstra's algorithm on these states. The answer is the minimum distance to the destination with either parity.</p>"
+  ]
+}

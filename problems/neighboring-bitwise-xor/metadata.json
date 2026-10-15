@@ -1,0 +1,56 @@
+{
+  "id": "neighboring-bitwise-xor",
+  "title": "2683. Neighboring Bitwise XOR",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/neighboring-bitwise-xor/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "derived = [1,1,0]",
+      "output": "true",
+      "explanation": "A valid original array that gives derived is [0,1,0]. derived[0] = original[0] &oplus; original[1] = 0 &oplus; 1 = 1 derived[1] = original[1] &oplus; original[2] = 1 &oplus; 0 = 1 derived[2] = original[2] &oplus; original[0] = 0 &oplus; 0 = 0"
+    },
+    {
+      "input": "derived = [1,1]",
+      "output": "true",
+      "explanation": "A valid original array that gives derived is [0,1]. derived[0] = original[0] &oplus; original[1] = 1 derived[1] = original[1] &oplus; original[0] = 1"
+    },
+    {
+      "input": "derived = [1,0]",
+      "output": "false",
+      "explanation": "There is no valid original array that gives derived."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool doesValidArrayExist(vector<int>& derived) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean doesValidArrayExist(int[] derived) {\n        \n    }\n}",
+    "python": "class Solution:\n    def doesValidArrayExist(self, derived: List[int]) -> bool:\n        ",
+    "typescript": "function doesValidArrayExist(derived: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool DoesValidArrayExist(int[] derived) {\n        \n    }\n}",
+    "go": "func doesValidArrayExist(derived []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn does_valid_array_exist(derived: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "derived": "[1,1,0]"
+    },
+    {
+      "derived": "[1,1]"
+    },
+    {
+      "derived": "[1,0]"
+    }
+  ],
+  "functionName": "doesValidArrayExist",
+  "params": [
+    {
+      "name": "derived",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Understand that from the original element, we are using each element twice to construct the derived array",
+    "The xor-sum of the derived array should be 0 since there is always a duplicate occurrence of each element."
+  ]
+}

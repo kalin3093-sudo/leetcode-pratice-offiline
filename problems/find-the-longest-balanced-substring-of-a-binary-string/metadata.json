@@ -1,0 +1,56 @@
+{
+  "id": "find-the-longest-balanced-substring-of-a-binary-string",
+  "title": "2609. Find the Longest Balanced Substring of a Binary String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"01000111\"",
+      "output": "6",
+      "explanation": "The longest balanced substring is \"000111\", which has length 6."
+    },
+    {
+      "input": "s = \"00111\"",
+      "output": "4",
+      "explanation": "The longest balanced substring is \"0011\", which has length 4."
+    },
+    {
+      "input": "s = \"111\"",
+      "output": "0",
+      "explanation": "There is no balanced substring except the empty substring, so the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findTheLongestBalancedSubstring(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findTheLongestBalancedSubstring(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findTheLongestBalancedSubstring(self, s: str) -> int:\n        ",
+    "typescript": "function findTheLongestBalancedSubstring(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindTheLongestBalancedSubstring(string s) {\n        \n    }\n}",
+    "go": "func findTheLongestBalancedSubstring(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_the_longest_balanced_substring(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "01000111"
+    },
+    {
+      "s": "00111"
+    },
+    {
+      "s": "111"
+    }
+  ],
+  "functionName": "findTheLongestBalancedSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider iterating over each subarray and checking if it’s balanced or not.",
+    "Among all balanced subarrays, the answer is the longest one of them."
+  ]
+}

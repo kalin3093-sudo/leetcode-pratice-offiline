@@ -1,0 +1,56 @@
+{
+  "id": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+  "title": "2002. Maximum Product of the Length of Two Palindromic Subsequences",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leetcodecom\"",
+      "output": "9",
+      "explanation": "An optimal solution is to choose \"ete\" for the 1st subsequence and \"cdc\" for the 2nd subsequence. The product of their lengths is: 3 * 3 = 9."
+    },
+    {
+      "input": "s = \"bb\"",
+      "output": "1",
+      "explanation": "An optimal solution is to choose \"b\" (the first character) for the 1st subsequence and \"b\" (the second character) for the 2nd subsequence. The product of their lengths is: 1 * 1 = 1."
+    },
+    {
+      "input": "s = \"accbcaxxcxx\"",
+      "output": "25",
+      "explanation": "An optimal solution is to choose \"accca\" for the 1st subsequence and \"xxcxx\" for the 2nd subsequence. The product of their lengths is: 5 * 5 = 25."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProduct(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProduct(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProduct(self, s: str) -> int:\n        ",
+    "typescript": "function maxProduct(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProduct(string s) {\n        \n    }\n}",
+    "go": "func maxProduct(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_product(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcodecom"
+    },
+    {
+      "s": "bb"
+    },
+    {
+      "s": "accbcaxxcxx"
+    }
+  ],
+  "functionName": "maxProduct",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Could you generate all possible pairs of disjoint subsequences?",
+    "Could you find the maximum length palindrome in each subsequence for a pair of disjoint subsequences?"
+  ]
+}

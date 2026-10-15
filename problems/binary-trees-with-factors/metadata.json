@@ -1,0 +1,45 @@
+{
+  "id": "binary-trees-with-factors",
+  "title": "823. Binary Trees With Factors",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/binary-trees-with-factors/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [2,4]",
+      "output": "3",
+      "explanation": "We can make these trees: [2], [4], [4, 2, 2]"
+    },
+    {
+      "input": "arr = [2,4,5,10]",
+      "output": "7",
+      "explanation": "We can make these trees: [2], [4], [5], [10], [4, 2, 2], [10, 2, 5], [10, 5, 2]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numFactoredBinaryTrees(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numFactoredBinaryTrees(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numFactoredBinaryTrees(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function numFactoredBinaryTrees(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumFactoredBinaryTrees(int[] arr) {\n        \n    }\n}",
+    "go": "func numFactoredBinaryTrees(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_factored_binary_trees(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[2,4]"
+    },
+    {
+      "arr": "[2,4,5,10]"
+    }
+  ],
+  "functionName": "numFactoredBinaryTrees",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

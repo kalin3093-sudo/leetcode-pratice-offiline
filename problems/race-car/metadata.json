@@ -1,0 +1,45 @@
+{
+  "id": "race-car",
+  "title": "818. Race Car",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/race-car/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "target = 3",
+      "output": "2",
+      "explanation": "The shortest instruction sequence is \"AA\". Your position goes from 0 --> 1 --> 3."
+    },
+    {
+      "input": "target = 6",
+      "output": "5",
+      "explanation": "The shortest instruction sequence is \"AAARA\". Your position goes from 0 --> 1 --> 3 --> 7 --> 7 --> 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int racecar(int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int racecar(int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def racecar(self, target: int) -> int:\n        ",
+    "typescript": "function racecar(target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int Racecar(int target) {\n        \n    }\n}",
+    "go": "func racecar(target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn racecar(target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "target": 3
+    },
+    {
+      "target": 6
+    }
+  ],
+  "functionName": "racecar",
+  "params": [
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

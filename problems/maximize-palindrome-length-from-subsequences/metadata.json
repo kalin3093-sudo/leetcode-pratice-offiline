@@ -1,0 +1,63 @@
+{
+  "id": "maximize-palindrome-length-from-subsequences",
+  "title": "1771. Maximize Palindrome Length From Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word1 = \"cacb\", word2 = \"cbba\"",
+      "output": "5",
+      "explanation": "Choose \"ab\" from word1 and \"cba\" from word2 to make \"abcba\", which is a palindrome."
+    },
+    {
+      "input": "word1 = \"ab\", word2 = \"ab\"",
+      "output": "3",
+      "explanation": "Choose \"ab\" from word1 and \"a\" from word2 to make \"aba\", which is a palindrome."
+    },
+    {
+      "input": "word1 = \"aa\", word2 = \"bb\"",
+      "output": "0",
+      "explanation": "You cannot construct a palindrome from the described method, so return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestPalindrome(string word1, string word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestPalindrome(String word1, String word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestPalindrome(self, word1: str, word2: str) -> int:\n        ",
+    "typescript": "function longestPalindrome(word1: string, word2: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestPalindrome(string word1, string word2) {\n        \n    }\n}",
+    "go": "func longestPalindrome(word1 string, word2 string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_palindrome(word1: String, word2: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "cacb",
+      "word2": "cbba"
+    },
+    {
+      "word1": "ab",
+      "word2": "ab"
+    },
+    {
+      "word1": "aa",
+      "word2": "bb"
+    }
+  ],
+  "functionName": "longestPalindrome",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let's ignore the non-empty subsequence constraint. We can concatenate the two strings and find the largest palindromic subsequence with dynamic programming.",
+    "Iterate through every pair of characters word1[i] and word2[j], and see if some palindrome begins with word1[i] and ends with word2[j]. This ensures that the subsequences are non-empty."
+  ]
+}

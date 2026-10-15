@@ -1,0 +1,47 @@
+{
+  "id": "stone-removal-game",
+  "title": "3360. Stone Removal Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/stone-removal-game/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 12",
+      "output": "true",
+      "explanation": "Alice removes 10 stones on her first turn, leaving 2 stones for Bob. Bob cannot remove 9 stones, so Alice wins."
+    },
+    {
+      "input": "n = 1",
+      "output": "false",
+      "explanation": "Alice cannot remove 10 stones, so Alice loses."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canAliceWin(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canAliceWin(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canAliceWin(self, n: int) -> bool:\n        ",
+    "typescript": "function canAliceWin(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanAliceWin(int n) {\n        \n    }\n}",
+    "go": "func canAliceWin(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_alice_win(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 12
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "canAliceWin",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "The constraints are small enough that a brute-force solution is feasible."
+  ]
+}

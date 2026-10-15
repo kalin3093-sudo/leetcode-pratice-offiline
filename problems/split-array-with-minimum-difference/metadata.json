@@ -1,0 +1,58 @@
+{
+  "id": "split-array-with-minimum-difference",
+  "title": "3698. Split Array With Minimum Difference",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/split-array-with-minimum-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,2]",
+      "output": "2",
+      "explanation": "i left right Validity left sum right sum Absolute difference 0 [1] [3, 2] Yes 1 5 |1 - 5| = 4 1 [1, 3] [2] Yes 4 2 |4 - 2| = 2 Thus, the minimum absolute difference is 2."
+    },
+    {
+      "input": "nums = [1,2,4,3]",
+      "output": "4",
+      "explanation": "i left right Validity left sum right sum Absolute difference 0 [1] [2, 4, 3] No 1 9 - 1 [1, 2] [4, 3] Yes 3 7 |3 - 7| = 4 2 [1, 2, 4] [3] Yes 7 3 |7 - 3| = 4 Thus, the minimum absolute difference is 4."
+    },
+    {
+      "input": "nums = [3,1,2]",
+      "output": "-1",
+      "explanation": "No valid split exists, so the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long splitArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long splitArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def splitArray(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function splitArray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SplitArray(int[] nums) {\n        \n    }\n}",
+    "go": "func splitArray(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn split_array(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,2]"
+    },
+    {
+      "nums": "[1,2,4,3]"
+    },
+    {
+      "nums": "[3,1,2]"
+    }
+  ],
+  "functionName": "splitArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Build a prefix boolean <code>inc[i]</code> that is true iff the subarray <code>nums[0..i]</code> is strictly increasing.",
+    "Build a suffix boolean <code>dec[i]</code> that is true iff the subarray <code>nums[i..n - 1]</code> is strictly decreasing.",
+    "A split after index <code>i</code> (where <code>0 <= i < n - 1</code>) is valid iff <code>inc[i] && dec[i + 1]</code>.",
+    "Build a prefix-sum array <code>pref</code>, and use it to check if a valid split exists. If no valid split exists return <code>-1</code>."
+  ]
+}

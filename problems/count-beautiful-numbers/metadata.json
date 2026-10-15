@@ -1,0 +1,53 @@
+{
+  "id": "count-beautiful-numbers",
+  "title": "3490. Count Beautiful Numbers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-beautiful-numbers/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "l = 10, r = 20",
+      "output": "2",
+      "explanation": "The beautiful numbers in the range are 10 and 20."
+    },
+    {
+      "input": "l = 1, r = 15",
+      "output": "10",
+      "explanation": "The beautiful numbers in the range are 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int beautifulNumbers(int l, int r) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int beautifulNumbers(int l, int r) {\n        \n    }\n}",
+    "python": "class Solution:\n    def beautifulNumbers(self, l: int, r: int) -> int:\n        ",
+    "typescript": "function beautifulNumbers(l: number, r: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BeautifulNumbers(int l, int r) {\n        \n    }\n}",
+    "go": "func beautifulNumbers(l int, r int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn beautiful_numbers(l: i32, r: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": 10,
+      "r": 20
+    },
+    {
+      "l": 1,
+      "r": 15
+    }
+  ],
+  "functionName": "beautifulNumbers",
+  "params": [
+    {
+      "name": "l",
+      "type": "int"
+    },
+    {
+      "name": "r",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use digit dynamic programming."
+  ]
+}

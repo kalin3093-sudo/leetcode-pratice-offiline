@@ -1,0 +1,55 @@
+{
+  "id": "unique-substrings-in-wraparound-string",
+  "title": "467. Unique Substrings in Wraparound String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/unique-substrings-in-wraparound-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"a\"",
+      "output": "1",
+      "explanation": "Only the substring \"a\" of s is in base."
+    },
+    {
+      "input": "s = \"cac\"",
+      "output": "2",
+      "explanation": "There are two substrings (\"a\", \"c\") of s in base."
+    },
+    {
+      "input": "s = \"zab\"",
+      "output": "6",
+      "explanation": "There are six substrings (\"z\", \"a\", \"b\", \"za\", \"ab\", and \"zab\") of s in base."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findSubstringInWraproundString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findSubstringInWraproundString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findSubstringInWraproundString(self, s: str) -> int:\n        ",
+    "typescript": "function findSubstringInWraproundString(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindSubstringInWraproundString(string s) {\n        \n    }\n}",
+    "go": "func findSubstringInWraproundString(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_substring_in_wrapround_string(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "a"
+    },
+    {
+      "s": "cac"
+    },
+    {
+      "s": "zab"
+    }
+  ],
+  "functionName": "findSubstringInWraproundString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "One possible solution might be to consider allocating an array size of 26 for each character in the alphabet. (Credits to @r2ysxu)"
+  ]
+}

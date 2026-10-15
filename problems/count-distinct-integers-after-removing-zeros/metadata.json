@@ -1,0 +1,48 @@
+{
+  "id": "count-distinct-integers-after-removing-zeros",
+  "title": "3747. Count Distinct Integers After Removing Zeros",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-distinct-integers-after-removing-zeros/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 10",
+      "output": "9",
+      "explanation": "The integers we wrote down are 1, 2, 3, 4, 5, 6, 7, 8, 9, 1. There are 9 distinct integers (1, 2, 3, 4, 5, 6, 7, 8, 9)."
+    },
+    {
+      "input": "n = 3",
+      "output": "3",
+      "explanation": "The integers we wrote down are 1, 2, 3. There are 3 distinct integers (1, 2, 3)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countDistinct(long long n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countDistinct(long n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countDistinct(self, n: int) -> int:\n        ",
+    "typescript": "function countDistinct(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountDistinct(long n) {\n        \n    }\n}",
+    "go": "func countDistinct(n int64) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_distinct(n: i64) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "10"
+    },
+    {
+      "n": "3"
+    }
+  ],
+  "functionName": "countDistinct",
+  "params": [
+    {
+      "name": "n",
+      "type": "long"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Build integers less than or equal to <code>n</code> using only digits from 1 to 9",
+    "Count such integers using math or digit DP"
+  ]
+}

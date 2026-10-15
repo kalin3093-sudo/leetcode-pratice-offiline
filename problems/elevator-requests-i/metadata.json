@@ -1,0 +1,54 @@
+{
+  "id": "elevator-requests-i",
+  "title": "4020. Elevator Requests I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/elevator-requests-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, requests = [2,1,4,3]",
+      "output": "7",
+      "explanation": "requests[0] = 2: Moving from floor 0 to floor 2 takes 2 seconds. requests[1] = 1: Moving from floor 2 to floor 1 takes 1 second. requests[2] = 4: Moving from floor 1 to floor 4 takes 3 seconds. requests[3] = 3: Moving from floor 4 to floor 3 takes 1 second. The total time required is 2 + 1 + 3 + 1 = 7 seconds."
+    },
+    {
+      "input": "n = 3, requests = [2,0,0]",
+      "output": "4",
+      "explanation": "requests[0] = 2: Moving from floor 0 to floor 2 takes 2 seconds. requests[1] = 0: Moving from floor 2 to floor 0 takes 2 seconds. requests[2] = 0: No movement is needed. The total time required is 2 + 2 + 0 = 4 seconds."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int elevatorRequests(int n, vector<int>& requests) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int elevatorRequests(int n, int[] requests) {\n        \n    }\n}",
+    "python": "class Solution:\n    def elevatorRequests(self, n: int, requests: list[int]) -> int:\n        ",
+    "typescript": "function elevatorRequests(n: number, requests: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ElevatorRequests(int n, int[] requests) {\n        \n    }\n}",
+    "go": "func elevatorRequests(n int, requests []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn elevator_requests(n: i32, requests: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "requests": "[2,1,4,3]"
+    },
+    {
+      "n": 3,
+      "requests": "[2,0,0]"
+    }
+  ],
+  "functionName": "elevatorRequests",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "requests",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Keep track of the elevator's current floor, starting from floor 0.</p>",
+    "<p>For each requested floor, add the absolute difference between it and the current floor to the answer, then update the current floor.</p>"
+  ]
+}

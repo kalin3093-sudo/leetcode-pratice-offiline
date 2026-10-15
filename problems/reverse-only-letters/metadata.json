@@ -1,0 +1,52 @@
+{
+  "id": "reverse-only-letters",
+  "title": "917. Reverse Only Letters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/reverse-only-letters/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"ab-cd\"",
+      "output": "\"dc-ba\""
+    },
+    {
+      "input": "s = \"a-bC-dEf-ghIj\"",
+      "output": "\"j-Ih-gfE-dCba\""
+    },
+    {
+      "input": "s = \"Test1ng-Leet=code-Q!\"",
+      "output": "\"Qedo1ct-eeLg=ntse-T!\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reverseOnlyLetters(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reverseOnlyLetters(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reverseOnlyLetters(self, s: str) -> str:\n        ",
+    "typescript": "function reverseOnlyLetters(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReverseOnlyLetters(string s) {\n        \n    }\n}",
+    "go": "func reverseOnlyLetters(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reverse_only_letters(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "ab-cd"
+    },
+    {
+      "s": "a-bC-dEf-ghIj"
+    },
+    {
+      "s": "Test1ng-Leet=code-Q!"
+    }
+  ],
+  "functionName": "reverseOnlyLetters",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "This problem is exactly like reversing a normal string except that there are certain characters that we have to simply skip. That should be easy enough to do if you know how to reverse a string using the two-pointer approach."
+  ]
+}

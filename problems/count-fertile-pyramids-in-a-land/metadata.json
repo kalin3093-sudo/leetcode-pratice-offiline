@@ -1,0 +1,58 @@
+{
+  "id": "count-fertile-pyramids-in-a-land",
+  "title": "2088. Count Fertile Pyramids in a Land",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-fertile-pyramids-in-a-land/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,1,0],[1,1,1,1]]",
+      "output": "2",
+      "explanation": "The 2 possible pyramidal plots are shown in blue and red respectively. There are no inverse pyramidal plots in this grid. Hence total number of pyramidal and inverse pyramidal plots is 2 + 0 = 2."
+    },
+    {
+      "input": "grid = [[1,1,1],[1,1,1]]",
+      "output": "2",
+      "explanation": "The pyramidal plot is shown in blue, and the inverse pyramidal plot is shown in red. Hence the total number of plots is 1 + 1 = 2."
+    },
+    {
+      "input": "grid = [[1,1,1,1,0],[1,1,1,1,1],[1,1,1,1,1],[0,1,0,0,1]]",
+      "output": "13",
+      "explanation": "There are 7 pyramidal plots, 3 of which are shown in the 2nd and 3rd figures. There are 6 inverse pyramidal plots, 2 of which are shown in the last figure. The total number of plots is 7 + 6 = 13."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPyramids(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPyramids(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPyramids(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function countPyramids(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPyramids(int[][] grid) {\n        \n    }\n}",
+    "go": "func countPyramids(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_pyramids(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,1,0],[1,1,1,1]]"
+    },
+    {
+      "grid": "[[1,1,1],[1,1,1]]"
+    },
+    {
+      "grid": "[[1,1,1,1,0],[1,1,1,1,1],[1,1,1,1,1],[0,1,0,0,1]]"
+    }
+  ],
+  "functionName": "countPyramids",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think about how dynamic programming can help solve the problem.",
+    "For any fixed cell (r, c), can you calculate the maximum height of the pyramid for which it is the apex? Let us denote this value as dp[r][c].",
+    "How will the values at dp[r+1][c-1] and dp[r+1][c+1] help in determining the value at dp[r][c]?",
+    "For the cell (r, c), is there a relation between the number of pyramids for which it serves as the apex and dp[r][c]? How does it help in calculating the answer?"
+  ]
+}

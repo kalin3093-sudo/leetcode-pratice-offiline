@@ -1,0 +1,55 @@
+{
+  "id": "max-pair-sum-in-an-array",
+  "title": "2815. Max Pair Sum in an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/max-pair-sum-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [112,131,411]",
+      "output": "-1",
+      "explanation": "Each numbers largest digit in order is [2,3,4]."
+    },
+    {
+      "input": "nums = [2536,1613,3366,162]",
+      "output": "5902",
+      "explanation": "All the numbers have 6 as their largest digit, so the answer is 2536 + 3366 = 5902."
+    },
+    {
+      "input": "nums = [51,71,17,24,42]",
+      "output": "88",
+      "explanation": "Each number's largest digit in order is [5,7,7,4,4]. So we have only two possible pairs, 71 + 17 = 88 and 24 + 42 = 66."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSum(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSum(int[] nums) {\n        \n    }\n}",
+    "go": "func maxSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[112,131,411]"
+    },
+    {
+      "nums": "[2536,1613,3366,162]"
+    },
+    {
+      "nums": "[51,71,17,24,42]"
+    }
+  ],
+  "functionName": "maxSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the largest and second largest element with maximum digits equal to x where 1<=x<=9."
+  ]
+}

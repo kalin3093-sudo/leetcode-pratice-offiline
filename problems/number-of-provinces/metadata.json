@@ -1,0 +1,43 @@
+{
+  "id": "number-of-provinces",
+  "title": "547. Number of Provinces",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-provinces/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "isConnected = [[1,1,0],[1,1,0],[0,0,1]]",
+      "output": "2"
+    },
+    {
+      "input": "isConnected = [[1,0,0],[0,1,0],[0,0,1]]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findCircleNum(vector<vector<int>>& isConnected) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findCircleNum(int[][] isConnected) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findCircleNum(self, isConnected: List[List[int]]) -> int:\n        ",
+    "typescript": "function findCircleNum(isConnected: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindCircleNum(int[][] isConnected) {\n        \n    }\n}",
+    "go": "func findCircleNum(isConnected [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_circle_num(is_connected: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "isConnected": "[[1,1,0],[1,1,0],[0,0,1]]"
+    },
+    {
+      "isConnected": "[[1,0,0],[0,1,0],[0,0,1]]"
+    }
+  ],
+  "functionName": "findCircleNum",
+  "params": [
+    {
+      "name": "isConnected",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "words": "[\"abc\",\"aaaaa\",\"bcdef\"]",
+    "target": "aabcdabc"
+  },
+  {
+    "words": "[\"abababab\",\"ab\"]",
+    "target": "ababaababa"
+  },
+  {
+    "words": "[\"abcdef\"]",
+    "target": "xyz"
+  }
+]

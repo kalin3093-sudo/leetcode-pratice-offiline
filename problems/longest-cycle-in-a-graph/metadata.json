@@ -1,0 +1,48 @@
+{
+  "id": "longest-cycle-in-a-graph",
+  "title": "2360. Longest Cycle in a Graph",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-cycle-in-a-graph/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "edges = [3,3,4,2,3]",
+      "output": "3",
+      "explanation": "The longest cycle in the graph is the cycle: 2 -> 4 -> 3 -> 2. The length of this cycle is 3, so 3 is returned."
+    },
+    {
+      "input": "edges = [2,-1,3,1]",
+      "output": "-1",
+      "explanation": "There are no cycles in this graph."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestCycle(vector<int>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestCycle(int[] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestCycle(self, edges: list[int]) -> int:\n        ",
+    "typescript": "function longestCycle(edges: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestCycle(int[] edges) {\n        \n    }\n}",
+    "go": "func longestCycle(edges []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_cycle(edges: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "edges": "[3,3,4,2,3]"
+    },
+    {
+      "edges": "[2,-1,3,1]"
+    }
+  ],
+  "functionName": "longestCycle",
+  "params": [
+    {
+      "name": "edges",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How many cycles can each node at most be part of?",
+    "Each node can be part of at most one cycle. Start from each node and find the cycle that it is part of if there is any. Save the already visited nodes to not repeat visiting the same cycle multiple times."
+  ]
+}

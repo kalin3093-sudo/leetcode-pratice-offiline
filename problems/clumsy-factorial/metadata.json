@@ -1,0 +1,45 @@
+{
+  "id": "clumsy-factorial",
+  "title": "1006. Clumsy Factorial",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/clumsy-factorial/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "7",
+      "explanation": "7 = 4 * 3 / 2 + 1"
+    },
+    {
+      "input": "n = 10",
+      "output": "12",
+      "explanation": "12 = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int clumsy(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int clumsy(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def clumsy(self, n: int) -> int:\n        ",
+    "typescript": "function clumsy(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int Clumsy(int n) {\n        \n    }\n}",
+    "go": "func clumsy(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn clumsy(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "clumsy",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

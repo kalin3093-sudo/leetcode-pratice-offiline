@@ -1,0 +1,63 @@
+{
+  "id": "process-string-with-special-operations-ii",
+  "title": "3614. Process String with Special Operations II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/process-string-with-special-operations-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"a#b%*\", k = 1",
+      "output": "\"a\"",
+      "explanation": "i s[i] Operation Current result 0 'a' Append 'a' \"a\" 1 '#' Duplicate result \"aa\" 2 'b' Append 'b' \"aab\" 3 '%' Reverse result \"baa\" 4 '*' Remove the last character \"ba\" The final result is \"ba\". The character at index k = 1 is 'a'."
+    },
+    {
+      "input": "s = \"cd%#*#\", k = 3",
+      "output": "\"d\"",
+      "explanation": "i s[i] Operation Current result 0 'c' Append 'c' \"c\" 1 'd' Append 'd' \"cd\" 2 '%' Reverse result \"dc\" 3 '#' Duplicate result \"dcdc\" 4 '*' Remove the last character \"dcd\" 5 '#' Duplicate result \"dcddcd\" The final result is \"dcddcd\". The character at index k = 3 is 'd'."
+    },
+    {
+      "input": "s = \"z*#\", k = 0",
+      "output": "\".\"",
+      "explanation": "i s[i] Operation Current result 0 'z' Append 'z' \"z\" 1 '*' Remove the last character \"\" 2 '#' Duplicate the string \"\" The final result is \"\". Since index k = 0 is out of bounds, the output is '.'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    char processStr(string s, long long k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public char processStr(String s, long k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def processStr(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function processStr(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public char ProcessStr(string s, long k) {\n        \n    }\n}",
+    "go": "func processStr(s string, k int64) byte {\n    \n}",
+    "rust": "impl Solution {\n    pub fn process_str(s: String, k: i64) -> char {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "a#b%*",
+      "k": "1"
+    },
+    {
+      "s": "cd%#*#",
+      "k": "3"
+    },
+    {
+      "s": "z*#",
+      "k": "0"
+    }
+  ],
+  "functionName": "processStr",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "long"
+    }
+  ],
+  "outputType": "char",
+  "hints": [
+    "Track the length of the string after each operation on <code>s</code>.",
+    "Walk backwards through <code>s</code>, undoing each # by using modulus on the tracked lengths, and undoing each % by mirroring across the midpoint, to pinpoint the <code>k</code>th character."
+  ]
+}

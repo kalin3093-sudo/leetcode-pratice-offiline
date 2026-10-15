@@ -1,0 +1,48 @@
+{
+  "id": "left-and-right-sum-differences",
+  "title": "2574. Left and Right Sum Differences",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/left-and-right-sum-differences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,4,8,3]",
+      "output": "[15,1,11,22]",
+      "explanation": "The array leftSum is [0,10,14,22] and the array rightSum is [15,11,3,0]. The array answer is [|0 - 15|,|10 - 11|,|14 - 3|,|22 - 0|] = [15,1,11,22]."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "[0]",
+      "explanation": "The array leftSum is [0] and the array rightSum is [0]. The array answer is [|0 - 0|] = [0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> leftRightDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] leftRightDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def leftRightDifference(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function leftRightDifference(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] LeftRightDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func leftRightDifference(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn left_right_difference(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,4,8,3]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "leftRightDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "For each index i, maintain two variables leftSum and rightSum.",
+    "Iterate on the range j: [0 … i - 1] and add nums[j] to the leftSum and similarly iterate on the range j: [i + 1 … nums.length - 1] and add nums[j] to the rightSum."
+  ]
+}

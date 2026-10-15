@@ -1,0 +1,74 @@
+{
+  "id": "matrix-cells-in-distance-order",
+  "title": "1030. Matrix Cells in Distance Order",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/matrix-cells-in-distance-order/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rows = 1, cols = 2, rCenter = 0, cCenter = 0",
+      "output": "[[0,0],[0,1]]",
+      "explanation": "The distances from (0, 0) to other cells are: [0,1]"
+    },
+    {
+      "input": "rows = 2, cols = 2, rCenter = 0, cCenter = 1",
+      "output": "[[0,1],[0,0],[1,1],[1,0]]",
+      "explanation": "The distances from (0, 1) to other cells are: [0,1,1,2] The answer [[0,1],[1,1],[0,0],[1,0]] would also be accepted as correct."
+    },
+    {
+      "input": "rows = 2, cols = 3, rCenter = 1, cCenter = 2",
+      "output": "[[1,2],[0,2],[1,1],[0,1],[1,0],[0,0]]",
+      "explanation": "The distances from (1, 2) to other cells are: [0,1,1,2,2,3] There are other answers that would also be accepted as correct, such as [[1,2],[1,1],[0,2],[1,0],[0,1],[0,0]]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {\n        \n    }\n}",
+    "python": "class Solution:\n    def allCellsDistOrder(self, rows: int, cols: int, rCenter: int, cCenter: int) -> list[list[int]]:\n        ",
+    "typescript": "function allCellsDistOrder(rows: number, cols: number, rCenter: number, cCenter: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] AllCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {\n        \n    }\n}",
+    "go": "func allCellsDistOrder(rows int, cols int, rCenter int, cCenter int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn all_cells_dist_order(rows: i32, cols: i32, r_center: i32, c_center: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rows": 1,
+      "cols": 2,
+      "rCenter": 0,
+      "cCenter": 0
+    },
+    {
+      "rows": 2,
+      "cols": 2,
+      "rCenter": 0,
+      "cCenter": 1
+    },
+    {
+      "rows": 2,
+      "cols": 3,
+      "rCenter": 1,
+      "cCenter": 2
+    }
+  ],
+  "functionName": "allCellsDistOrder",
+  "params": [
+    {
+      "name": "rows",
+      "type": "int"
+    },
+    {
+      "name": "cols",
+      "type": "int"
+    },
+    {
+      "name": "rCenter",
+      "type": "int"
+    },
+    {
+      "name": "cCenter",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": []
+}

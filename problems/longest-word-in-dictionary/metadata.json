@@ -1,0 +1,47 @@
+{
+  "id": "longest-word-in-dictionary",
+  "title": "720. Longest Word in Dictionary",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-word-in-dictionary/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"w\",\"wo\",\"wor\",\"worl\",\"world\"]",
+      "output": "\"world\"",
+      "explanation": "The word \"world\" can be built one character at a time by \"w\", \"wo\", \"wor\", and \"worl\"."
+    },
+    {
+      "input": "words = [\"a\",\"banana\",\"app\",\"appl\",\"ap\",\"apply\",\"apple\"]",
+      "output": "\"apple\"",
+      "explanation": "Both \"apply\" and \"apple\" can be built from other words in the dictionary. However, \"apple\" is lexicographically smaller than \"apply\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string longestWord(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String longestWord(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestWord(self, words: list[str]) -> str:\n        ",
+    "typescript": "function longestWord(words: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LongestWord(string[] words) {\n        \n    }\n}",
+    "go": "func longestWord(words []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_word(words: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"w\",\"wo\",\"wor\",\"worl\",\"world\"]"
+    },
+    {
+      "words": "[\"a\",\"banana\",\"app\",\"appl\",\"ap\",\"apply\",\"apple\"]"
+    }
+  ],
+  "functionName": "longestWord",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "For every word in the input list, we can check whether all prefixes of that word are in the input list by using a Set."
+  ]
+}

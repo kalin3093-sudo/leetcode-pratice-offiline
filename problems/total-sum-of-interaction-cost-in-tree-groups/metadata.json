@@ -1,0 +1,81 @@
+{
+  "id": "total-sum-of-interaction-cost-in-tree-groups",
+  "title": "3786. Total Sum of Interaction Cost in Tree Groups",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 3, edges = [[0,1],[1,2]], group = [1,1,1]",
+      "output": "4",
+      "explanation": "All nodes belong to group 1. The interaction costs between the pairs of nodes are: Nodes (0, 1): 1 Nodes (1, 2): 1 Nodes (0, 2): 2 Thus, the total interaction cost is 1 + 1 + 2 = 4."
+    },
+    {
+      "input": "n = 3, edges = [[0,1],[1,2]], group = [3,2,3]",
+      "output": "2",
+      "explanation": "Nodes 0 and 2 belong to group 3. The interaction cost between this pair is 2. Node 1 belongs to a different group and forms no valid pair. Therefore, the total interaction cost is 2."
+    },
+    {
+      "input": "n = 4, edges = [[0,1],[0,2],[0,3]], group = [1,1,4,4]",
+      "output": "3",
+      "explanation": "Nodes belonging to the same groups and their interaction costs are: Group 1: Nodes (0, 1): 1 Group 4: Nodes (2, 3): 2 Thus, the total interaction cost is 1 + 2 = 3."
+    },
+    {
+      "input": "n = 2, edges = [[0,1]], group = [9,8]",
+      "output": "0",
+      "explanation": "All nodes belong to different groups and there are no valid pairs. Therefore, the total interaction cost is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long interactionCosts(int n, vector<vector<int>>& edges, vector<int>& group) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long interactionCosts(int n, int[][] edges, int[] group) {\n        \n    }\n}",
+    "python": "class Solution:\n    def interactionCosts(self, n: int, edges: List[List[int]], group: List[int]) -> int:\n        ",
+    "typescript": "function interactionCosts(n: number, edges: number[][], group: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long InteractionCosts(int n, int[][] edges, int[] group) {\n        \n    }\n}",
+    "go": "func interactionCosts(n int, edges [][]int, group []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn interaction_costs(n: i32, edges: Vec<Vec<i32>>, group: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "edges": "[[0,1],[1,2]]",
+      "group": "[1,1,1]"
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1],[1,2]]",
+      "group": "[3,2,3]"
+    },
+    {
+      "n": 4,
+      "edges": "[[0,1],[0,2],[0,3]]",
+      "group": "[1,1,4,4]"
+    },
+    {
+      "n": 2,
+      "edges": "[[0,1]]",
+      "group": "[9,8]"
+    }
+  ],
+  "functionName": "interactionCosts",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "group",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Do a postorder DFS, count how many nodes of each group are in each subtree.",
+    "For each edge, contribution = <code>subtree_count * (total_count - subtree_count)</code>.",
+    "Sum these over all edges and groups."
+  ]
+}

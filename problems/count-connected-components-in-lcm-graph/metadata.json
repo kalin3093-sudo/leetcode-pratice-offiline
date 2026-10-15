@@ -1,0 +1,54 @@
+{
+  "id": "count-connected-components-in-lcm-graph",
+  "title": "3378. Count Connected Components in LCM Graph",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-connected-components-in-lcm-graph/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,4,8,3,9], threshold = 5",
+      "output": "4",
+      "explanation": "The four connected components are (2, 4), (3), (8), (9)."
+    },
+    {
+      "input": "nums = [2,4,8,3,9,12], threshold = 10",
+      "output": "2",
+      "explanation": "The two connected components are (2, 3, 4, 8, 9), and (12)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countComponents(vector<int>& nums, int threshold) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countComponents(int[] nums, int threshold) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countComponents(self, nums: List[int], threshold: int) -> int:\n        ",
+    "typescript": "function countComponents(nums: number[], threshold: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountComponents(int[] nums, int threshold) {\n        \n    }\n}",
+    "go": "func countComponents(nums []int, threshold int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_components(nums: Vec<i32>, threshold: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,4,8,3,9]",
+      "threshold": 5
+    },
+    {
+      "nums": "[2,4,8,3,9,12]",
+      "threshold": 10
+    }
+  ],
+  "functionName": "countComponents",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "threshold",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use DSU",
+    "Connect a number to all its multiples less than threshold"
+  ]
+}

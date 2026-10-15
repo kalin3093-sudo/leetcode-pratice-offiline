@@ -1,0 +1,55 @@
+{
+  "id": "minimum-cost-to-connect-two-groups-of-points",
+  "title": "1595. Minimum Cost to Connect Two Groups of Points",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cost = [[15, 96], [36, 2]]",
+      "output": "17",
+      "explanation": "The optimal way of connecting the groups is: 1--A 2--B This results in a total cost of 17."
+    },
+    {
+      "input": "cost = [[1, 3, 5], [4, 1, 1], [1, 5, 3]]",
+      "output": "4",
+      "explanation": "The optimal way of connecting the groups is: 1--A 2--B 2--C 3--A This results in a total cost of 4. Note that there are multiple points connected to point 2 in the first group and point A in the second group. This does not matter as there is no limit to the number of points that can be connected. We only care about the minimum total cost."
+    },
+    {
+      "input": "cost = [[2, 5, 1], [3, 4, 7], [8, 1, 2], [6, 2, 4], [3, 8, 8]]",
+      "output": "10"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int connectTwoGroups(vector<vector<int>>& cost) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int connectTwoGroups(List<List<Integer>> cost) {\n        \n    }\n}",
+    "python": "class Solution:\n    def connectTwoGroups(self, cost: list[list[int]]) -> int:\n        ",
+    "typescript": "function connectTwoGroups(cost: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ConnectTwoGroups(IList<IList<int>> cost) {\n        \n    }\n}",
+    "go": "func connectTwoGroups(cost [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn connect_two_groups(cost: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cost": "[[15,96],[36,2]]"
+    },
+    {
+      "cost": "[[1,3,5],[4,1,1],[1,5,3]]"
+    },
+    {
+      "cost": "[[2,5,1],[3,4,7],[8,1,2],[6,2,4],[3,8,8]]"
+    }
+  ],
+  "functionName": "connectTwoGroups",
+  "params": [
+    {
+      "name": "cost",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Each point on the left would either be connected to exactly point already connected to some left node, or a subset of the nodes on the right which are not connected to any node",
+    "Use dynamic programming with bitmasking, where the state will be (number of points assigned in first group, bitmask of points assigned in second group)."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "find-the-shortest-superstring",
+  "title": "943. Find the Shortest Superstring",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-shortest-superstring/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"alex\",\"loves\",\"leetcode\"]",
+      "output": "\"alexlovesleetcode\"",
+      "explanation": "All permutations of \"alex\",\"loves\",\"leetcode\" would also be accepted."
+    },
+    {
+      "input": "words = [\"catg\",\"ctaagt\",\"gcta\",\"ttca\",\"atgcatc\"]",
+      "output": "\"gctaagttcatgcatc\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string shortestSuperstring(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String shortestSuperstring(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestSuperstring(self, words: list[str]) -> str:\n        ",
+    "typescript": "function shortestSuperstring(words: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ShortestSuperstring(string[] words) {\n        \n    }\n}",
+    "go": "func shortestSuperstring(words []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_superstring(words: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"alex\",\"loves\",\"leetcode\"]"
+    },
+    {
+      "words": "[\"catg\",\"ctaagt\",\"gcta\",\"ttca\",\"atgcatc\"]"
+    }
+  ],
+  "functionName": "shortestSuperstring",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

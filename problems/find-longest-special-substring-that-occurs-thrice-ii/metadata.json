@@ -1,0 +1,59 @@
+{
+  "id": "find-longest-special-substring-that-occurs-thrice-ii",
+  "title": "2982. Find Longest Special Substring That Occurs Thrice II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aaaa\"",
+      "output": "2",
+      "explanation": "The longest special substring which occurs thrice is \"aa\": substrings \"aaaa\", \"aaaa\", and \"aaaa\". It can be shown that the maximum length achievable is 2."
+    },
+    {
+      "input": "s = \"abcdef\"",
+      "output": "-1",
+      "explanation": "There exists no special substring which occurs at least thrice. Hence return -1."
+    },
+    {
+      "input": "s = \"abcaba\"",
+      "output": "1",
+      "explanation": "The longest special substring which occurs thrice is \"a\": substrings \"abcaba\", \"abcaba\", and \"abcaba\". It can be shown that the maximum length achievable is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumLength(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumLength(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumLength(self, s: str) -> int:\n        ",
+    "typescript": "function maximumLength(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumLength(string s) {\n        \n    }\n}",
+    "go": "func maximumLength(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_length(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaaa"
+    },
+    {
+      "s": "abcdef"
+    },
+    {
+      "s": "abcaba"
+    }
+  ],
+  "functionName": "maximumLength",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let <code>len[i]</code> be the length of the longest special string ending with <code>s[i]</code>.",
+    "If <code>i > 0</code> and <code>s[i] == s[i - 1]</code>, <code>len[i] = len[i - 1] + 1</code>. Otherwise <code>len[i] == 1</code>.",
+    "Group all the <code>len[i]</code> by <code>s[i]</code>. We have at most <code>26</code> groups.",
+    "The maximum value of the third largest <code>len[i]</code> in each group is the answer.",
+    "We only need to maintain the top three values for each group. You can use sorting, heap, or brute-force comparison to find the third largest value in each group."
+  ]
+}

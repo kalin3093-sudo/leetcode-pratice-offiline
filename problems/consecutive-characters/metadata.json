@@ -1,0 +1,48 @@
+{
+  "id": "consecutive-characters",
+  "title": "1446. Consecutive Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/consecutive-characters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leetcode\"",
+      "output": "2",
+      "explanation": "The substring \"ee\" is of length 2 with the character 'e' only."
+    },
+    {
+      "input": "s = \"abbcccddddeeeeedcba\"",
+      "output": "5",
+      "explanation": "The substring \"eeeee\" is of length 5 with the character 'e' only."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxPower(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxPower(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPower(self, s: str) -> int:\n        ",
+    "typescript": "function maxPower(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxPower(string s) {\n        \n    }\n}",
+    "go": "func maxPower(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_power(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcode"
+    },
+    {
+      "s": "abbcccddddeeeeedcba"
+    }
+  ],
+  "functionName": "maxPower",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Keep an array power where power[i] is the maximum power of the i-th character.",
+    "The answer is max(power[i])."
+  ]
+}

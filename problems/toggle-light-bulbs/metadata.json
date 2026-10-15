@@ -1,0 +1,47 @@
+{
+  "id": "toggle-light-bulbs",
+  "title": "3842. Toggle Light Bulbs",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/toggle-light-bulbs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "bulbs = [10,30,20,10]",
+      "output": "[20,30]",
+      "explanation": "The bulbs[0] = 10th light bulb is currently off. We switch it on. The bulbs[1] = 30th light bulb is currently off. We switch it on. The bulbs[2] = 20th light bulb is currently off. We switch it on. The bulbs[3] = 10th light bulb is currently on. We switch it off. In the end, the 20th and the 30th light bulbs are on."
+    },
+    {
+      "input": "bulbs = [100,100]",
+      "output": "[]",
+      "explanation": "The bulbs[0] = 100th light bulb is currently off. We switch it on. The bulbs[1] = 100th light bulb is currently on. We switch it off. In the end, no light bulb is on."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> toggleLightBulbs(vector<int>& bulbs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> toggleLightBulbs(List<Integer> bulbs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def toggleLightBulbs(self, bulbs: list[int]) -> list[int]:\n        ",
+    "typescript": "function toggleLightBulbs(bulbs: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> ToggleLightBulbs(IList<int> bulbs) {\n        \n    }\n}",
+    "go": "func toggleLightBulbs(bulbs []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn toggle_light_bulbs(bulbs: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "bulbs": "[10,30,20,10]"
+    },
+    {
+      "bulbs": "[100,100]"
+    }
+  ],
+  "functionName": "toggleLightBulbs",
+  "params": [
+    {
+      "name": "bulbs",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Simulate as described"
+  ]
+}

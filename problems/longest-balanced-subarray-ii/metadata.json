@@ -1,0 +1,59 @@
+{
+  "id": "longest-balanced-subarray-ii",
+  "title": "3721. Longest Balanced Subarray II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-balanced-subarray-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,4,3]",
+      "output": "4",
+      "explanation": "The longest balanced subarray is [2, 5, 4, 3]. It has 2 distinct even numbers [2, 4] and 2 distinct odd numbers [5, 3]. Thus, the answer is 4."
+    },
+    {
+      "input": "nums = [3,2,2,5,4]",
+      "output": "5",
+      "explanation": "The longest balanced subarray is [3, 2, 2, 5, 4]. It has 2 distinct even numbers [2, 4] and 2 distinct odd numbers [3, 5]. Thus, the answer is 5."
+    },
+    {
+      "input": "nums = [1,2,3,2]",
+      "output": "3",
+      "explanation": "The longest balanced subarray is [2, 3, 2]. It has 1 distinct even number [2] and 1 distinct odd number [3]. Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestBalanced(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestBalanced(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestBalanced(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function longestBalanced(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestBalanced(int[] nums) {\n        \n    }\n}",
+    "go": "func longestBalanced(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_balanced(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,4,3]"
+    },
+    {
+      "nums": "[3,2,2,5,4]"
+    },
+    {
+      "nums": "[1,2,3,2]"
+    }
+  ],
+  "functionName": "longestBalanced",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Store the first (or all) occurrences for each value in <code>pos[val]</code>.",
+    "Build a lazy segment tree over start indices <code>l in [0..n-1]</code> that supports range add and can tell if any index has value <code>0</code> (keep <code>mn</code>/<code>mx</code>).",
+    "Use <code>sign = +1</code> for odd values and <code>sign = -1</code> for even values.",
+    "Initialize by adding each value's contribution with <code>update(p, n-1, sign)</code> where <code>p</code> is its current first occurrence.",
+    "Slide left <code>l</code>: pop <code>pos[nums[l]]</code>, let <code>next</code> = next occurrence or <code>n</code>, do <code>update(0, next-1, -sign)</code>, then query for any <code>r >= l</code> with value <code>0</code> and update <code>ans = max(ans, r-l+1)</code>."
+  ]
+}

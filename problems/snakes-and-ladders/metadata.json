@@ -1,0 +1,44 @@
+{
+  "id": "snakes-and-ladders",
+  "title": "909. Snakes and Ladders",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/snakes-and-ladders/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "board = [[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]",
+      "output": "4",
+      "explanation": "In the beginning, you start at square 1 (at row 5, column 0). You decide to move to square 2 and must take the ladder to square 15. You then decide to move to square 17 and must take the snake to square 13. You then decide to move to square 14 and must take the ladder to square 35. You then decide to move to square 36, ending the game. This is the lowest possible number of moves to reach the last square, so return 4."
+    },
+    {
+      "input": "board = [[-1,-1],[-1,3]]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int snakesAndLadders(vector<vector<int>>& board) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int snakesAndLadders(int[][] board) {\n        \n    }\n}",
+    "python": "class Solution:\n    def snakesAndLadders(self, board: list[list[int]]) -> int:\n        ",
+    "typescript": "function snakesAndLadders(board: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SnakesAndLadders(int[][] board) {\n        \n    }\n}",
+    "go": "func snakesAndLadders(board [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn snakes_and_ladders(board: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "board": "[[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]"
+    },
+    {
+      "board": "[[-1,-1],[-1,3]]"
+    }
+  ],
+  "functionName": "snakesAndLadders",
+  "params": [
+    {
+      "name": "board",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

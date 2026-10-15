@@ -1,0 +1,54 @@
+{
+  "id": "maximum-beauty-of-an-array-after-applying-operation",
+  "title": "2779. Maximum Beauty of an Array After Applying Operation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,6,1,2], k = 2",
+      "output": "3",
+      "explanation": "In this example, we apply the following operations: - Choose index 1, replace it with 4 (from range [4,8]), nums = [4,4,1,2]. - Choose index 3, replace it with 4 (from range [0,4]), nums = [4,4,1,4]. After the applied operations, the beauty of the array nums is 3 (subsequence consisting of indices 0, 1, and 3). It can be proven that 3 is the maximum possible length we can achieve."
+    },
+    {
+      "input": "nums = [1,1,1,1], k = 10",
+      "output": "4",
+      "explanation": "In this example we don't have to apply any operations. The beauty of the array nums is 4 (whole array)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumBeauty(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumBeauty(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumBeauty(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function maximumBeauty(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumBeauty(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func maximumBeauty(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_beauty(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,6,1,2]",
+      "k": 2
+    },
+    {
+      "nums": "[1,1,1,1]",
+      "k": 10
+    }
+  ],
+  "functionName": "maximumBeauty",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the array.",
+    "The problem becomes the following: find maximum subarray A[i … j] such that A[j] - A[i] ≤ 2 * k."
+  ]
+}

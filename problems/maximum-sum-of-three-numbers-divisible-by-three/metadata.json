@@ -1,0 +1,50 @@
+{
+  "id": "maximum-sum-of-three-numbers-divisible-by-three",
+  "title": "3780. Maximum Sum of Three Numbers Divisible by Three",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,2,3,1]",
+      "output": "9",
+      "explanation": "The valid triplets whose sum is divisible by 3 are: (4, 2, 3) with a sum of 4 + 2 + 3 = 9. (2, 3, 1) with a sum of 2 + 3 + 1 = 6. Thus, the answer is 9."
+    },
+    {
+      "input": "nums = [2,1,5]",
+      "output": "0",
+      "explanation": "No triplet forms a sum divisible by 3, so the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumSum(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maximumSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumSum(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,2,3,1]"
+    },
+    {
+      "nums": "[2,1,5]"
+    }
+  ],
+  "functionName": "maximumSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Split numbers into groups by <code>x % 3</code>.",
+    "Only four valid combinations for <code>sum % 3 == 0</code>.",
+    "Possible combinations are <code>0 + 0 + 0</code>, <code>1 + 1 + 1</code>, <code>2 + 2 + 2</code>, <code>0 + 1 + 2</code>.",
+    "Sort groups descending, try each combo using top values."
+  ]
+}

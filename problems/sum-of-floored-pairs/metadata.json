@@ -1,0 +1,47 @@
+{
+  "id": "sum-of-floored-pairs",
+  "title": "1862. Sum of Floored Pairs",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-floored-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,5,9]",
+      "output": "10",
+      "explanation": "floor(2 / 5) = floor(2 / 9) = floor(5 / 9) = 0 floor(2 / 2) = floor(5 / 5) = floor(9 / 9) = 1 floor(5 / 2) = 2 floor(9 / 2) = 4 floor(9 / 5) = 1 We calculate the floor of the division for every pair of indices in the array then sum them up."
+    },
+    {
+      "input": "nums = [7,7,7,7,7,7,7]",
+      "output": "49"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfFlooredPairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfFlooredPairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfFlooredPairs(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function sumOfFlooredPairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfFlooredPairs(int[] nums) {\n        \n    }\n}",
+    "go": "func sumOfFlooredPairs(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_floored_pairs(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,5,9]"
+    },
+    {
+      "nums": "[7,7,7,7,7,7,7]"
+    }
+  ],
+  "functionName": "sumOfFlooredPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the frequency (number of occurrences) of all elements in the array.",
+    "For each element, iterate through its multiples and multiply frequencies to find the answer."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "binary-number-with-alternating-bits",
+  "title": "693. Binary Number with Alternating Bits",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/binary-number-with-alternating-bits/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "true",
+      "explanation": "The binary representation of 5 is: 101"
+    },
+    {
+      "input": "n = 7",
+      "output": "false",
+      "explanation": "The binary representation of 7 is: 111."
+    },
+    {
+      "input": "n = 11",
+      "output": "false",
+      "explanation": "The binary representation of 11 is: 1011."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool hasAlternatingBits(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean hasAlternatingBits(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hasAlternatingBits(self, n: int) -> bool:\n        ",
+    "typescript": "function hasAlternatingBits(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HasAlternatingBits(int n) {\n        \n    }\n}",
+    "go": "func hasAlternatingBits(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn has_alternating_bits(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 7
+    },
+    {
+      "n": 11
+    }
+  ],
+  "functionName": "hasAlternatingBits",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,50 @@
+{
+  "id": "find-maximum-number-of-non-intersecting-substrings",
+  "title": "3557. Find Maximum Number of Non Intersecting Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"abcdeafdef\"",
+      "output": "2",
+      "explanation": "The two substrings are \"abcdea\" and \"fdef\"."
+    },
+    {
+      "input": "word = \"bcdaaaab\"",
+      "output": "1",
+      "explanation": "The only substring is \"aaaa\". Note that we cannot also choose \"bcdaaaab\" since it intersects with the other substring."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSubstrings(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSubstrings(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSubstrings(self, word: str) -> int:\n        ",
+    "typescript": "function maxSubstrings(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSubstrings(string word) {\n        \n    }\n}",
+    "go": "func maxSubstrings(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_substrings(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "abcdeafdef"
+    },
+    {
+      "word": "bcdaaaab"
+    }
+  ],
+  "functionName": "maxSubstrings",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we solve the problem using Dynamic Programming?",
+    "For each character <code>c</code>, store all occurrence indices in order",
+    "At each position <code>i</code>, let <code>j</code> be the first index of <code>word[i]</code>; if <code>i - j >= 3</code>, we can form substring <code>[j, i]</code>",
+    "For each index, also store the maximum for <b>any</b> substring ending before that index in the dp."
+  ]
+}

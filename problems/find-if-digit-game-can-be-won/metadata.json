@@ -1,0 +1,55 @@
+{
+  "id": "find-if-digit-game-can-be-won",
+  "title": "3232. Find if Digit Game Can Be Won",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-if-digit-game-can-be-won/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,10]",
+      "output": "false",
+      "explanation": "Alice cannot win by choosing either single-digit or double-digit numbers."
+    },
+    {
+      "input": "nums = [1,2,3,4,5,14]",
+      "output": "true",
+      "explanation": "Alice can win by choosing single-digit numbers which have a sum equal to 15."
+    },
+    {
+      "input": "nums = [5,5,5,25]",
+      "output": "true",
+      "explanation": "Alice can win by choosing double-digit numbers which have a sum equal to 25."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canAliceWin(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canAliceWin(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canAliceWin(self, nums: List[int]) -> bool:\n        ",
+    "typescript": "function canAliceWin(nums: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanAliceWin(int[] nums) {\n        \n    }\n}",
+    "go": "func canAliceWin(nums []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_alice_win(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,10]"
+    },
+    {
+      "nums": "[1,2,3,4,5,14]"
+    },
+    {
+      "nums": "[5,5,5,25]"
+    }
+  ],
+  "functionName": "canAliceWin",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Alice wins if the sum of all single-digit numbers and the sum of all double-digit numbers are different."
+  ]
+}

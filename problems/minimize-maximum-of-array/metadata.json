@@ -1,0 +1,49 @@
+{
+  "id": "minimize-maximum-of-array",
+  "title": "2439. Minimize Maximum of Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-maximum-of-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,7,1,6]",
+      "output": "5",
+      "explanation": "One set of optimal operations is as follows: 1. Choose i = 1, and nums becomes [4,6,1,6]. 2. Choose i = 3, and nums becomes [4,6,2,5]. 3. Choose i = 1, and nums becomes [5,5,2,5]. The maximum integer of nums is 5. It can be shown that the maximum number cannot be less than 5. Therefore, we return 5."
+    },
+    {
+      "input": "nums = [10,1]",
+      "output": "10",
+      "explanation": "It is optimal to leave nums as is, and since 10 is the maximum value, we return 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizeArrayValue(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizeArrayValue(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeArrayValue(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minimizeArrayValue(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizeArrayValue(int[] nums) {\n        \n    }\n}",
+    "go": "func minimizeArrayValue(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_array_value(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,7,1,6]"
+    },
+    {
+      "nums": "[10,1]"
+    }
+  ],
+  "functionName": "minimizeArrayValue",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try a binary search approach.",
+    "Perform a binary search over the minimum value that can be achieved for the maximum number of the array.",
+    "In each binary search iteration, iterate through the array backwards, greedily decreasing the current element until it is within the limit."
+  ]
+}

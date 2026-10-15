@@ -1,0 +1,54 @@
+{
+  "id": "find-the-divisibility-array-of-a-string",
+  "title": "2575. Find the Divisibility Array of a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-divisibility-array-of-a-string/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "word = \"998244353\", m = 3",
+      "output": "[1,1,0,0,0,1,1,0,0]",
+      "explanation": "There are only 4 prefixes that are divisible by 3: \"9\", \"99\", \"998244\", and \"9982443\"."
+    },
+    {
+      "input": "word = \"1010\", m = 10",
+      "output": "[0,1,0,1]",
+      "explanation": "There are only 2 prefixes that are divisible by 10: \"10\", and \"1010\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> divisibilityArray(string word, int m) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] divisibilityArray(String word, int m) {\n        \n    }\n}",
+    "python": "class Solution:\n    def divisibilityArray(self, word: str, m: int) -> List[int]:\n        ",
+    "typescript": "function divisibilityArray(word: string, m: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] DivisibilityArray(string word, int m) {\n        \n    }\n}",
+    "go": "func divisibilityArray(word string, m int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn divisibility_array(word: String, m: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "998244353",
+      "m": 3
+    },
+    {
+      "word": "1010",
+      "m": 10
+    }
+  ],
+  "functionName": "divisibilityArray",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "We can check if the numeric value of the prefix of the given string is divisible by m by computing the remainder of the numeric value of the prefix when divided by m.",
+    "The remainder of the numeric value of a prefix ending at index i can be computed from the remainder of the prefix ending at index i-1."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "find-the-encrypted-string",
+  "title": "3210. Find the Encrypted String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-encrypted-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"dart\", k = 3",
+      "output": "\"tdar\"",
+      "explanation": "For i = 0, the 3rd character after 'd' is 't'. For i = 1, the 3rd character after 'a' is 'd'. For i = 2, the 3rd character after 'r' is 'a'. For i = 3, the 3rd character after 't' is 'r'."
+    },
+    {
+      "input": "s = \"aaa\", k = 1",
+      "output": "\"aaa\"",
+      "explanation": "As all the characters are the same, the encrypted string will also be the same."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string getEncryptedString(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String getEncryptedString(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getEncryptedString(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function getEncryptedString(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GetEncryptedString(string s, int k) {\n        \n    }\n}",
+    "go": "func getEncryptedString(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_encrypted_string(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "dart",
+      "k": 3
+    },
+    {
+      "s": "aaa",
+      "k": 1
+    }
+  ],
+  "functionName": "getEncryptedString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Make a new string such that for each character in <code>s</code>, character <code>i</code> will correspond to <code>(i + k) % s.length</code> character in the original string."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "closest-prime-numbers-in-range",
+  "title": "2523. Closest Prime Numbers in Range",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/closest-prime-numbers-in-range/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "left = 10, right = 19",
+      "output": "[11,13]",
+      "explanation": "The prime numbers between 10 and 19 are 11, 13, 17, and 19. The closest gap between any pair is 2, which can be achieved by [11,13] or [17,19]. Since 11 is smaller than 17, we return the first pair."
+    },
+    {
+      "input": "left = 4, right = 6",
+      "output": "[-1,-1]",
+      "explanation": "There exists only one prime number in the given range, so the conditions cannot be satisfied."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> closestPrimes(int left, int right) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] closestPrimes(int left, int right) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closestPrimes(self, left: int, right: int) -> list[int]:\n        ",
+    "typescript": "function closestPrimes(left: number, right: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ClosestPrimes(int left, int right) {\n        \n    }\n}",
+    "go": "func closestPrimes(left int, right int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn closest_primes(left: i32, right: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "left": 10,
+      "right": 19
+    },
+    {
+      "left": 4,
+      "right": 6
+    }
+  ],
+  "functionName": "closestPrimes",
+  "params": [
+    {
+      "name": "left",
+      "type": "int"
+    },
+    {
+      "name": "right",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use Sieve of Eratosthenes to mark numbers that are primes.",
+    "Iterate from right to left and find pair with the minimum distance between marked numbers."
+  ]
+}

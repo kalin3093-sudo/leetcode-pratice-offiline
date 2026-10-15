@@ -1,0 +1,48 @@
+{
+  "id": "latest-time-you-can-obtain-after-replacing-characters",
+  "title": "3114. Latest Time You Can Obtain After Replacing Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/latest-time-you-can-obtain-after-replacing-characters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1?:?4\"",
+      "output": "\"11:54\"",
+      "explanation": "The latest 12-hour format time we can achieve by replacing \"?\" characters is \"11:54\"."
+    },
+    {
+      "input": "s = \"0?:5?\"",
+      "output": "\"09:59\"",
+      "explanation": "The latest 12-hour format time we can achieve by replacing \"?\" characters is \"09:59\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string findLatestTime(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String findLatestTime(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLatestTime(self, s: str) -> str:\n        ",
+    "typescript": "function findLatestTime(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FindLatestTime(string s) {\n        \n    }\n}",
+    "go": "func findLatestTime(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_latest_time(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1?:?4"
+    },
+    {
+      "s": "0?:5?"
+    }
+  ],
+  "functionName": "findLatestTime",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Try using a brute force approach.",
+    "Iterate over all possible times that can be generated from the string and find the latest one."
+  ]
+}

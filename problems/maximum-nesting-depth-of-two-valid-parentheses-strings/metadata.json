@@ -1,0 +1,43 @@
+{
+  "id": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+  "title": "1111. Maximum Nesting Depth of Two Valid Parentheses Strings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "seq = \"(()())\"",
+      "output": "[0,1,1,1,1,0]"
+    },
+    {
+      "input": "seq = \"()(())()\"",
+      "output": "[0,0,0,1,1,0,1,1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> maxDepthAfterSplit(string seq) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] maxDepthAfterSplit(String seq) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDepthAfterSplit(self, seq: str) -> list[int]:\n        ",
+    "typescript": "function maxDepthAfterSplit(seq: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MaxDepthAfterSplit(string seq) {\n        \n    }\n}",
+    "go": "func maxDepthAfterSplit(seq string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_depth_after_split(seq: String) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "seq": "(()())"
+    },
+    {
+      "seq": "()(())()"
+    }
+  ],
+  "functionName": "maxDepthAfterSplit",
+  "params": [
+    {
+      "name": "seq",
+      "type": "string"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

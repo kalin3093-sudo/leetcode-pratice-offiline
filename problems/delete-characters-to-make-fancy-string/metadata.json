@@ -1,0 +1,56 @@
+{
+  "id": "delete-characters-to-make-fancy-string",
+  "title": "1957. Delete Characters to Make Fancy String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/delete-characters-to-make-fancy-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leeetcode\"",
+      "output": "\"leetcode\"",
+      "explanation": "Remove an 'e' from the first group of 'e's to create \"leetcode\". No three consecutive characters are equal, so return \"leetcode\"."
+    },
+    {
+      "input": "s = \"aaabaaaa\"",
+      "output": "\"aabaa\"",
+      "explanation": "Remove an 'a' from the first group of 'a's to create \"aabaaaa\". Remove two 'a's from the second group of 'a's to create \"aabaa\". No three consecutive characters are equal, so return \"aabaa\"."
+    },
+    {
+      "input": "s = \"aab\"",
+      "output": "\"aab\"",
+      "explanation": "No three consecutive characters are equal, so return \"aab\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string makeFancyString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String makeFancyString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeFancyString(self, s: str) -> str:\n        ",
+    "typescript": "function makeFancyString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MakeFancyString(string s) {\n        \n    }\n}",
+    "go": "func makeFancyString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_fancy_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leeetcode"
+    },
+    {
+      "s": "aaabaaaa"
+    },
+    {
+      "s": "aab"
+    }
+  ],
+  "functionName": "makeFancyString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "What's the optimal way to delete characters if three or more consecutive characters are equal?",
+    "If three or more consecutive characters are equal, keep two of them and delete the rest."
+  ]
+}

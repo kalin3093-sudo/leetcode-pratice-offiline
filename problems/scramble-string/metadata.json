@@ -1,0 +1,58 @@
+{
+  "id": "scramble-string",
+  "title": "87. Scramble String",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/scramble-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s1 = \"great\", s2 = \"rgeat\"",
+      "output": "true",
+      "explanation": "One possible scenario applied on s1 is: \"great\" --> \"gr/eat\" // divide at random index. \"gr/eat\" --> \"gr/eat\" // random decision is not to swap the two substrings and keep them in order. \"gr/eat\" --> \"g/r / e/at\" // apply the same algorithm recursively on both substrings. divide at random index each of them. \"g/r / e/at\" --> \"r/g / e/at\" // random decision was to swap the first substring and to keep the second substring in the same order. \"r/g / e/at\" --> \"r/g / e/ a/t\" // again apply the algorithm recursively, divide \"at\" to \"a/t\". \"r/g / e/ a/t\" --> \"r/g / e/ a/t\" // random decision is to keep both substrings in the same order. The algorithm stops now, and the result string is \"rgeat\" which is s2. As one possible scenario led s1 to be scrambled to s2, we return true."
+    },
+    {
+      "input": "s1 = \"abcde\", s2 = \"caebd\"",
+      "output": "false"
+    },
+    {
+      "input": "s1 = \"a\", s2 = \"a\"",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isScramble(string s1, string s2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isScramble(String s1, String s2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isScramble(self, s1: str, s2: str) -> bool:\n        ",
+    "typescript": "function isScramble(s1: string, s2: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsScramble(string s1, string s2) {\n        \n    }\n}",
+    "go": "func isScramble(s1 string, s2 string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_scramble(s1: String, s2: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s1": "great",
+      "s2": "rgeat"
+    },
+    {
+      "s1": "abcde",
+      "s2": "caebd"
+    },
+    {
+      "s1": "a",
+      "s2": "a"
+    }
+  ],
+  "functionName": "isScramble",
+  "params": [
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

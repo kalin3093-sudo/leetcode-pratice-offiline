@@ -1,0 +1,49 @@
+{
+  "id": "longest-subsequence-with-non-zero-bitwise-xor",
+  "title": "3702. Longest Subsequence With Non-Zero Bitwise XOR",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "2",
+      "explanation": "One longest subsequence is [2, 3]. The bitwise XOR is computed as 2 XOR 3 = 1, which is non-zero."
+    },
+    {
+      "input": "nums = [2,3,4]",
+      "output": "3",
+      "explanation": "The longest subsequence is [2, 3, 4]. The bitwise XOR is computed as 2 XOR 3 XOR 4 = 5, which is non-zero."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestSubsequence(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestSubsequence(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubsequence(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function longestSubsequence(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestSubsequence(int[] nums) {\n        \n    }\n}",
+    "go": "func longestSubsequence(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subsequence(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[2,3,4]"
+    }
+  ],
+  "functionName": "longestSubsequence",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What happens if you take the entire array?",
+    "If the XOR of the entire array is 0, can removing one element help?",
+    "What if all elements are 0?"
+  ]
+}

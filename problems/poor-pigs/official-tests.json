@@ -1,0 +1,12 @@
+[
+  {
+    "buckets": 4,
+    "minutesToDie": 15,
+    "minutesToTest": 15
+  },
+  {
+    "buckets": 4,
+    "minutesToDie": 15,
+    "minutesToTest": 30
+  }
+]

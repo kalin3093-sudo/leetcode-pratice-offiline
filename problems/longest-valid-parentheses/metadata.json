@@ -1,0 +1,52 @@
+{
+  "id": "longest-valid-parentheses",
+  "title": "32. Longest Valid Parentheses",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-valid-parentheses/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"(()\"",
+      "output": "2",
+      "explanation": "The longest valid parentheses substring is \"()\"."
+    },
+    {
+      "input": "s = \")()())\"",
+      "output": "4",
+      "explanation": "The longest valid parentheses substring is \"()()\"."
+    },
+    {
+      "input": "s = \"\"",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestValidParentheses(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestValidParentheses(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestValidParentheses(self, s: str) -> int:\n        ",
+    "typescript": "function longestValidParentheses(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestValidParentheses(string s) {\n        \n    }\n}",
+    "go": "func longestValidParentheses(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_valid_parentheses(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "(()"
+    },
+    {
+      "s": ")()())"
+    },
+    {
+      "s": ""
+    }
+  ],
+  "functionName": "longestValidParentheses",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

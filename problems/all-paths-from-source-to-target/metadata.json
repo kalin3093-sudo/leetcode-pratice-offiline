@@ -1,0 +1,44 @@
+{
+  "id": "all-paths-from-source-to-target",
+  "title": "797. All Paths From Source to Target",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/all-paths-from-source-to-target/",
+  "category": "backtracking",
+  "examples": [
+    {
+      "input": "graph = [[1,2],[3],[3],[]]",
+      "output": "[[0,1,3],[0,2,3]]",
+      "explanation": "There are two paths: 0 -> 1 -> 3 and 0 -> 2 -> 3."
+    },
+    {
+      "input": "graph = [[4,3,1],[3,2,4],[3],[4],[]]",
+      "output": "[[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {\n        \n    }\n}",
+    "python": "class Solution:\n    def allPathsSourceTarget(self, graph: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function allPathsSourceTarget(graph: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> AllPathsSourceTarget(int[][] graph) {\n        \n    }\n}",
+    "go": "func allPathsSourceTarget(graph [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn all_paths_source_target(graph: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "graph": "[[1,2],[3],[3],[]]"
+    },
+    {
+      "graph": "[[4,3,1],[3,2,4],[3],[4],[]]"
+    }
+  ],
+  "functionName": "allPathsSourceTarget",
+  "params": [
+    {
+      "name": "graph",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "diagonal-traverse",
+  "title": "498. Diagonal Traverse",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/diagonal-traverse/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[1,2,3],[4,5,6],[7,8,9]]",
+      "output": "[1,2,4,7,5,3,6,8,9]"
+    },
+    {
+      "input": "mat = [[1,2],[3,4]]",
+      "output": "[1,2,3,4]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findDiagonalOrder(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findDiagonalOrder(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findDiagonalOrder(self, mat: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function findDiagonalOrder(mat: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindDiagonalOrder(int[][] mat) {\n        \n    }\n}",
+    "go": "func findDiagonalOrder(mat [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_diagonal_order(mat: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[1,2,3],[4,5,6],[7,8,9]]"
+    },
+    {
+      "mat": "[[1,2],[3,4]]"
+    }
+  ],
+  "functionName": "findDiagonalOrder",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

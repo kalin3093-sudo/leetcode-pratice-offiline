@@ -1,0 +1,64 @@
+{
+  "id": "longest-uncommon-subsequence-i",
+  "title": "521. Longest Uncommon Subsequence I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/longest-uncommon-subsequence-i/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "a = \"aba\", b = \"cdc\"",
+      "output": "3",
+      "explanation": "One longest uncommon subsequence is \"aba\" because \"aba\" is a subsequence of \"aba\" but not \"cdc\". Note that \"cdc\" is also a longest uncommon subsequence."
+    },
+    {
+      "input": "a = \"aaa\", b = \"bbb\"",
+      "output": "3",
+      "explanation": "The longest uncommon subsequences are \"aaa\" and \"bbb\"."
+    },
+    {
+      "input": "a = \"aaa\", b = \"aaa\"",
+      "output": "-1",
+      "explanation": "Every subsequence of string a is also a subsequence of string b. Similarly, every subsequence of string b is also a subsequence of string a. So the answer would be -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findLUSlength(string a, string b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findLUSlength(String a, String b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLUSlength(self, a: str, b: str) -> int:\n        ",
+    "typescript": "function findLUSlength(a: string, b: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindLUSlength(string a, string b) {\n        \n    }\n}",
+    "go": "func findLUSlength(a string, b string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_lu_slength(a: String, b: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": "aba",
+      "b": "cdc"
+    },
+    {
+      "a": "aaa",
+      "b": "bbb"
+    },
+    {
+      "a": "aaa",
+      "b": "aaa"
+    }
+  ],
+  "functionName": "findLUSlength",
+  "params": [
+    {
+      "name": "a",
+      "type": "string"
+    },
+    {
+      "name": "b",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think very simple.",
+    "If <code>a == b</code>, the answer is -1.",
+    "Otherwise, the answer is the string <code>a</code> or the string <code>b</code>."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "minimum-cost-of-buying-candies-with-discount",
+  "title": "2144. Minimum Cost of Buying Candies With Discount",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cost = [1,2,3]",
+      "output": "5",
+      "explanation": "We buy the candies with costs 2 and 3, and take the candy with cost 1 for free. The total cost of buying all candies is 2 + 3 = 5. This is the only way we can buy the candies. Note that we cannot buy candies with costs 1 and 3, and then take the candy with cost 2 for free. The cost of the free candy has to be less than or equal to the minimum cost of the purchased candies."
+    },
+    {
+      "input": "cost = [6,5,7,9,2,2]",
+      "output": "23",
+      "explanation": "The way in which we can get the minimum cost is described below: - Buy candies with costs 9 and 7 - Take the candy with cost 6 for free - We buy candies with costs 5 and 2 - Take the last remaining candy with cost 2 for free Hence, the minimum cost to buy all candies is 9 + 7 + 5 + 2 = 23."
+    },
+    {
+      "input": "cost = [5,5]",
+      "output": "10",
+      "explanation": "Since there are only 2 candies, we buy both of them. There is not a third candy we can take for free. Hence, the minimum cost to buy all candies is 5 + 5 = 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumCost(vector<int>& cost) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumCost(int[] cost) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumCost(self, cost: list[int]) -> int:\n        ",
+    "typescript": "function minimumCost(cost: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumCost(int[] cost) {\n        \n    }\n}",
+    "go": "func minimumCost(cost []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_cost(cost: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cost": "[1,2,3]"
+    },
+    {
+      "cost": "[6,5,7,9,2,2]"
+    },
+    {
+      "cost": "[5,5]"
+    }
+  ],
+  "functionName": "minimumCost",
+  "params": [
+    {
+      "name": "cost",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If we consider costs from high to low, what is the maximum cost of a single candy that we can get for free?",
+    "How can we generalize this approach to maximize the costs of the candies we get for free?",
+    "Can “sorting” the array help us find the minimum cost?"
+  ]
+}

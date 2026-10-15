@@ -1,0 +1,51 @@
+{
+  "id": "count-ways-to-choose-coprime-integers-from-rows",
+  "title": "3725. Count Ways to Choose Coprime Integers from Rows",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-ways-to-choose-coprime-integers-from-rows/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[1,2],[3,4]]",
+      "output": "3",
+      "explanation": "Chosen integer in the first row Chosen integer in the second row Greatest common divisor of chosen integers 1 3 1 1 4 1 2 3 1 2 4 2 3 of these combinations have a greatest common divisor of 1. Therefore, the answer is 3."
+    },
+    {
+      "input": "mat = [[2,2],[2,2]]",
+      "output": "0",
+      "explanation": "Every combination has a greatest common divisor of 2. Therefore, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countCoprime(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countCoprime(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countCoprime(self, mat: List[List[int]]) -> int:\n        ",
+    "typescript": "function countCoprime(mat: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountCoprime(int[][] mat) {\n        \n    }\n}",
+    "go": "func countCoprime(mat [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_coprime(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[1,2],[3,4]]"
+    },
+    {
+      "mat": "[[2,2],[2,2]]"
+    }
+  ],
+  "functionName": "countCoprime",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "Use <code>dp[row][g]</code>, where <code>row</code> is the current row and <code>g</code> is the current gcd value.",
+    "Initialize the first row: for each value <code>v</code> in row 0 do <code>dp[0][v] += 1</code>.",
+    "For a row <code>i</code>, use the values from the previous row <code>i - 1</code> to build the values: for each previous gcd <code>g</code> and each value <code>v</code> in row <code>i</code>.",
+    "The final answer is <code>dp[n-1][1]</code> (number of ways with gcd 1)."
+  ]
+}

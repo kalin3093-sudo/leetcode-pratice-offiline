@@ -1,0 +1,43 @@
+{
+  "id": "odd-even-linked-list",
+  "title": "328. Odd Even Linked List",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/odd-even-linked-list/",
+  "category": "linked-list",
+  "examples": [
+    {
+      "input": "head = [1,2,3,4,5]",
+      "output": "[1,3,5,2,4]"
+    },
+    {
+      "input": "head = [2,1,3,5,6,4,7]",
+      "output": "[2,3,6,7,1,5,4]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* oddEvenList(ListNode* head) {\n        \n    }\n};",
+    "java": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode oddEvenList(ListNode head) {\n        \n    }\n}",
+    "python": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def oddEvenList(self, head: ListNode | None) -> ListNode | None:\n        ",
+    "typescript": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *     val: number\n *     next: ListNode | null\n *     constructor(val?: number, next?: ListNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.next = (next===undefined ? null : next)\n *     }\n * }\n */\n\nfunction oddEvenList(head: ListNode | null): ListNode | null {\n    \n};",
+    "csharp": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int val=0, ListNode next=null) {\n *         this.val = val;\n *         this.next = next;\n *     }\n * }\n */\npublic class Solution {\n    public ListNode OddEvenList(ListNode head) {\n        \n    }\n}",
+    "go": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc oddEvenList(head *ListNode) *ListNode {\n    \n}",
+    "rust": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn odd_even_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "head": "[1,2,3,4,5]"
+    },
+    {
+      "head": "[2,1,3,5,6,4,7]"
+    }
+  ],
+  "functionName": "oddEvenList",
+  "params": [
+    {
+      "name": "head",
+      "type": "list_node"
+    }
+  ],
+  "outputType": "list_node",
+  "hints": []
+}

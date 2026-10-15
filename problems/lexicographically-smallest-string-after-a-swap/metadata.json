@@ -1,0 +1,47 @@
+{
+  "id": "lexicographically-smallest-string-after-a-swap",
+  "title": "3216. Lexicographically Smallest String After a Swap",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"45320\"",
+      "output": "\"43520\"",
+      "explanation": "s[1] == '5' and s[2] == '3' both have the same parity, and swapping them results in the lexicographically smallest string."
+    },
+    {
+      "input": "s = \"001\"",
+      "output": "\"001\"",
+      "explanation": "There is no need to perform a swap because s is already the lexicographically smallest."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string getSmallestString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String getSmallestString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getSmallestString(self, s: str) -> str:\n        ",
+    "typescript": "function getSmallestString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GetSmallestString(string s) {\n        \n    }\n}",
+    "go": "func getSmallestString(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_smallest_string(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "45320"
+    },
+    {
+      "s": "001"
+    }
+  ],
+  "functionName": "getSmallestString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Try all possible swaps satisfying the constraints and find the one that results in the lexicographically smallest string."
+  ]
+}

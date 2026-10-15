@@ -1,0 +1,64 @@
+{
+  "id": "find-the-sum-of-the-power-of-all-subsequences",
+  "title": "3082. Find the Sum of the Power of All Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-sum-of-the-power-of-all-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], k = 3",
+      "output": "6",
+      "explanation": "There are 5 subsequences of nums with non-zero power: The subsequence [1,2,3] has 2 subsequences with sum == 3: [1,2,3] and [1,2,3]. The subsequence [1,2,3] has 1 subsequence with sum == 3: [1,2,3]. The subsequence [1,2,3] has 1 subsequence with sum == 3: [1,2,3]. The subsequence [1,2,3] has 1 subsequence with sum == 3: [1,2,3]. The subsequence [1,2,3] has 1 subsequence with sum == 3: [1,2,3]. Hence the answer is 2 + 1 + 1 + 1 + 1 = 6."
+    },
+    {
+      "input": "nums = [2,3,3], k = 5",
+      "output": "4",
+      "explanation": "There are 3 subsequences of nums with non-zero power: The subsequence [2,3,3] has 2 subsequences with sum == 5: [2,3,3] and [2,3,3]. The subsequence [2,3,3] has 1 subsequence with sum == 5: [2,3,3]. The subsequence [2,3,3] has 1 subsequence with sum == 5: [2,3,3]. Hence the answer is 2 + 1 + 1 = 4."
+    },
+    {
+      "input": "nums = [1,2,3], k = 7",
+      "output": "0",
+      "explanation": "There exists no subsequence with sum 7. Hence all subsequences of nums have power = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfPower(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfPower(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfPower(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function sumOfPower(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfPower(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func sumOfPower(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_power(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]",
+      "k": 3
+    },
+    {
+      "nums": "[2,3,3]",
+      "k": 5
+    },
+    {
+      "nums": "[1,2,3]",
+      "k": 7
+    }
+  ],
+  "functionName": "sumOfPower",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If there is a subsequence of length <code>j</code> with the sum of elements <code>k</code>, it contributes <code>2<sup>n - j</sup></code> to the answer.",
+    "Let <code>dp[i][j]</code> represent the number of subsequences in the subarray <code>nums[0..i]</code> which have a sum of <code>j</code>.",
+    "We can find the <code>dp[i][k]</code> for all <code>0 <= i <= n-1</code> and multiply them with <code>2<sup>n - j</sup></code> to get final answer."
+  ]
+}

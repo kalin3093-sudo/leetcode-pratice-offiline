@@ -1,0 +1,70 @@
+{
+  "id": "check-if-word-equals-summation-of-two-words",
+  "title": "1880. Check if Word Equals Summation of Two Words",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "firstWord = \"acb\", secondWord = \"cba\", targetWord = \"cdb\"",
+      "output": "true",
+      "explanation": "The numerical value of firstWord is \"acb\" -> \"021\" -> 21. The numerical value of secondWord is \"cba\" -> \"210\" -> 210. The numerical value of targetWord is \"cdb\" -> \"231\" -> 231. We return true because 21 + 210 == 231."
+    },
+    {
+      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aab\"",
+      "output": "false",
+      "explanation": "The numerical value of firstWord is \"aaa\" -> \"000\" -> 0. The numerical value of secondWord is \"a\" -> \"0\" -> 0. The numerical value of targetWord is \"aab\" -> \"001\" -> 1. We return false because 0 + 0 != 1."
+    },
+    {
+      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aaaa\"",
+      "output": "true",
+      "explanation": "The numerical value of firstWord is \"aaa\" -> \"000\" -> 0. The numerical value of secondWord is \"a\" -> \"0\" -> 0. The numerical value of targetWord is \"aaaa\" -> \"0000\" -> 0. We return true because 0 + 0 == 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isSumEqual(string firstWord, string secondWord, string targetWord) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isSumEqual(self, firstWord: str, secondWord: str, targetWord: str) -> bool:\n        ",
+    "typescript": "function isSumEqual(firstWord: string, secondWord: string, targetWord: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsSumEqual(string firstWord, string secondWord, string targetWord) {\n        \n    }\n}",
+    "go": "func isSumEqual(firstWord string, secondWord string, targetWord string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_sum_equal(first_word: String, second_word: String, target_word: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "firstWord": "acb",
+      "secondWord": "cba",
+      "targetWord": "cdb"
+    },
+    {
+      "firstWord": "aaa",
+      "secondWord": "a",
+      "targetWord": "aab"
+    },
+    {
+      "firstWord": "aaa",
+      "secondWord": "a",
+      "targetWord": "aaaa"
+    }
+  ],
+  "functionName": "isSumEqual",
+  "params": [
+    {
+      "name": "firstWord",
+      "type": "string"
+    },
+    {
+      "name": "secondWord",
+      "type": "string"
+    },
+    {
+      "name": "targetWord",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Convert each character of each word to its numerical value.",
+    "Check if the numerical values satisfies the condition."
+  ]
+}

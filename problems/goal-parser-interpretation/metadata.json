@@ -1,0 +1,53 @@
+{
+  "id": "goal-parser-interpretation",
+  "title": "1678. Goal Parser Interpretation",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/goal-parser-interpretation/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "command = \"G()(al)\"",
+      "output": "\"Goal\"",
+      "explanation": "The Goal Parser interprets the command as follows: G -> G () -> o (al) -> al The final concatenated result is \"Goal\"."
+    },
+    {
+      "input": "command = \"G()()()()(al)\"",
+      "output": "\"Gooooal\""
+    },
+    {
+      "input": "command = \"(al)G(al)()()G\"",
+      "output": "\"alGalooG\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string interpret(string command) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String interpret(String command) {\n        \n    }\n}",
+    "python": "class Solution:\n    def interpret(self, command: str) -> str:\n        ",
+    "typescript": "function interpret(command: string): string {\n\n};",
+    "csharp": "public class Solution {\n    public string Interpret(string command) {\n        \n    }\n}",
+    "go": "func interpret(command string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn interpret(command: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "command": "G()(al)"
+    },
+    {
+      "command": "G()()()()(al)"
+    },
+    {
+      "command": "(al)G(al)()()G"
+    }
+  ],
+  "functionName": "interpret",
+  "params": [
+    {
+      "name": "command",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "You need to check at most 2 characters to determine which character comes next."
+  ]
+}

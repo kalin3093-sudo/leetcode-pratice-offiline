@@ -1,0 +1,69 @@
+{
+  "id": "minimum-positive-sum-subarray",
+  "title": "3364. Minimum Positive Sum Subarray ",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-positive-sum-subarray/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3, -2, 1, 4], l = 2, r = 3",
+      "output": "1",
+      "explanation": "The subarrays of length between l = 2 and r = 3 where the sum is greater than 0 are: [3, -2] with a sum of 1 [1, 4] with a sum of 5 [3, -2, 1] with a sum of 2 [-2, 1, 4] with a sum of 3 Out of these, the subarray [3, -2] has a sum of 1, which is the smallest positive sum. Hence, the answer is 1."
+    },
+    {
+      "input": "nums = [-2, 2, -3, 1], l = 2, r = 3",
+      "output": "-1",
+      "explanation": "There is no subarray of length between l and r that has a sum greater than 0. So, the answer is -1."
+    },
+    {
+      "input": "nums = [1, 2, 3, 4], l = 2, r = 4",
+      "output": "3",
+      "explanation": "The subarray [1, 2] has a length of 2 and the minimum sum greater than 0. So, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumSumSubarray(vector<int>& nums, int l, int r) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumSumSubarray(List<Integer> nums, int l, int r) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumSumSubarray(self, nums: List[int], l: int, r: int) -> int:\n        ",
+    "typescript": "function minimumSumSubarray(nums: number[], l: number, r: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumSumSubarray(IList<int> nums, int l, int r) {\n        \n    }\n}",
+    "go": "func minimumSumSubarray(nums []int, l int, r int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_sum_subarray(nums: Vec<i32>, l: i32, r: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,-2,1,4]",
+      "l": 2,
+      "r": 3
+    },
+    {
+      "nums": "[-2,2,-3,1]",
+      "l": 2,
+      "r": 3
+    },
+    {
+      "nums": "[1,2,3,4]",
+      "l": 2,
+      "r": 4
+    }
+  ],
+  "functionName": "minimumSumSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list"
+    },
+    {
+      "name": "l",
+      "type": "int"
+    },
+    {
+      "name": "r",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Check every subarray, since constraints are small."
+  ]
+}

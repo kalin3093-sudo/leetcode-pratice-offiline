@@ -1,0 +1,53 @@
+{
+  "id": "split-linked-list-in-parts",
+  "title": "725. Split Linked List in Parts",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/split-linked-list-in-parts/",
+  "category": "linked-list",
+  "examples": [
+    {
+      "input": "head = [1,2,3], k = 5",
+      "output": "[[1],[2],[3],[],[]]",
+      "explanation": "The first element output[0] has output[0].val = 1, output[0].next = null. The last element output[4] is null, but its string representation as a ListNode is []."
+    },
+    {
+      "input": "head = [1,2,3,4,5,6,7,8,9,10], k = 3",
+      "output": "[[1,2,3,4],[5,6,7],[8,9,10]]",
+      "explanation": "The input has been split into consecutive parts with size difference at most 1, and earlier parts are a larger size than the later parts."
+    }
+  ],
+  "starterCode": {
+    "cpp": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    vector<ListNode*> splitListToParts(ListNode* head, int k) {\n        \n    }\n};",
+    "java": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode[] splitListToParts(ListNode head, int k) {\n        \n    }\n}",
+    "python": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def splitListToParts(self, head: ListNode | None, k: int) -> list[ListNode | None]:\n        ",
+    "typescript": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *     val: number\n *     next: ListNode | null\n *     constructor(val?: number, next?: ListNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.next = (next===undefined ? null : next)\n *     }\n * }\n */\n\nfunction splitListToParts(head: ListNode | null, k: number): Array<ListNode | null> {\n    \n};",
+    "csharp": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int val=0, ListNode next=null) {\n *         this.val = val;\n *         this.next = next;\n *     }\n * }\n */\npublic class Solution {\n    public ListNode[] SplitListToParts(ListNode head, int k) {\n        \n    }\n}",
+    "go": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc splitListToParts(head *ListNode, k int) []*ListNode {\n    \n}",
+    "rust": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn split_list_to_parts(head: Option<Box<ListNode>>, k: i32) -> Vec<Option<Box<ListNode>>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "head": "[1,2,3]",
+      "k": 5
+    },
+    {
+      "head": "[1,2,3,4,5,6,7,8,9,10]",
+      "k": 3
+    }
+  ],
+  "functionName": "splitListToParts",
+  "params": [
+    {
+      "name": "head",
+      "type": "list_node"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "list_node_array",
+  "hints": [
+    "If there are N nodes in the list, and k parts, then every part has N/k elements, except the first N%k parts have an extra one."
+  ]
+}

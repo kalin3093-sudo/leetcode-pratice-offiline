@@ -1,0 +1,17 @@
+[
+  {
+    "grid": "[\"####F\",\"#C...\",\"M....\"]",
+    "catJump": 1,
+    "mouseJump": 2
+  },
+  {
+    "grid": "[\"M.C...F\"]",
+    "catJump": 1,
+    "mouseJump": 4
+  },
+  {
+    "grid": "[\"M.C...F\"]",
+    "catJump": 1,
+    "mouseJump": 3
+  }
+]

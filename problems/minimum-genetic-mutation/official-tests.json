@@ -1,0 +1,12 @@
+[
+  {
+    "startGene": "AACCGGTT",
+    "endGene": "AACCGGTA",
+    "bank": "[\"AACCGGTA\"]"
+  },
+  {
+    "startGene": "AACCGGTT",
+    "endGene": "AAACGGTA",
+    "bank": "[\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]"
+  }
+]

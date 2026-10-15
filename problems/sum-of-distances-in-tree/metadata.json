@@ -1,0 +1,58 @@
+{
+  "id": "sum-of-distances-in-tree",
+  "title": "834. Sum of Distances in Tree",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-distances-in-tree/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 6, edges = [[0,1],[0,2],[2,3],[2,4],[2,5]]",
+      "output": "[8,12,6,10,10,10]",
+      "explanation": "The tree is shown above. We can see that dist(0,1) + dist(0,2) + dist(0,3) + dist(0,4) + dist(0,5) equals 1 + 1 + 2 + 2 + 2 = 8. Hence, answer[0] = 8, and so on."
+    },
+    {
+      "input": "n = 1, edges = []",
+      "output": "[0]"
+    },
+    {
+      "input": "n = 2, edges = [[1,0]]",
+      "output": "[1,1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> sumOfDistancesInTree(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] sumOfDistancesInTree(int n, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfDistancesInTree(self, n: int, edges: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function sumOfDistancesInTree(n: number, edges: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SumOfDistancesInTree(int n, int[][] edges) {\n        \n    }\n}",
+    "go": "func sumOfDistancesInTree(n int, edges [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_distances_in_tree(n: i32, edges: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "edges": "[[0,1],[0,2],[2,3],[2,4],[2,5]]"
+    },
+    {
+      "n": 1,
+      "edges": "[]"
+    },
+    {
+      "n": 2,
+      "edges": "[[1,0]]"
+    }
+  ],
+  "functionName": "sumOfDistancesInTree",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

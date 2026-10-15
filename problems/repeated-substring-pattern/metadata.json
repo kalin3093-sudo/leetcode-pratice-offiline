@@ -1,0 +1,52 @@
+{
+  "id": "repeated-substring-pattern",
+  "title": "459. Repeated Substring Pattern",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/repeated-substring-pattern/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abab\"",
+      "output": "true",
+      "explanation": "It is the substring \"ab\" twice."
+    },
+    {
+      "input": "s = \"aba\"",
+      "output": "false"
+    },
+    {
+      "input": "s = \"abcabcabcabc\"",
+      "output": "true",
+      "explanation": "It is the substring \"abc\" four times or the substring \"abcabc\" twice."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool repeatedSubstringPattern(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean repeatedSubstringPattern(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def repeatedSubstringPattern(self, s: str) -> bool:\n        ",
+    "typescript": "function repeatedSubstringPattern(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool RepeatedSubstringPattern(string s) {\n        \n    }\n}",
+    "go": "func repeatedSubstringPattern(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn repeated_substring_pattern(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abab"
+    },
+    {
+      "s": "aba"
+    },
+    {
+      "s": "abcabcabcabc"
+    }
+  ],
+  "functionName": "repeatedSubstringPattern",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

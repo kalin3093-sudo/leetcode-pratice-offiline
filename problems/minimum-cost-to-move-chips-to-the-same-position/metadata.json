@@ -1,0 +1,57 @@
+{
+  "id": "minimum-cost-to-move-chips-to-the-same-position",
+  "title": "1217. Minimum Cost to Move Chips to The Same Position",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "position = [1,2,3]",
+      "output": "1",
+      "explanation": "First step: Move the chip at position 3 to position 1 with cost = 0. Second step: Move the chip at position 2 to position 1 with cost = 1. Total cost is 1."
+    },
+    {
+      "input": "position = [2,2,2,3,3]",
+      "output": "2",
+      "explanation": "We can move the two chips at position  3 to position 2. Each move has cost = 1. The total cost = 2."
+    },
+    {
+      "input": "position = [1,1000000000]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCostToMoveChips(vector<int>& position) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCostToMoveChips(int[] position) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCostToMoveChips(self, position: list[int]) -> int:\n        ",
+    "typescript": "function minCostToMoveChips(position: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCostToMoveChips(int[] position) {\n        \n    }\n}",
+    "go": "func minCostToMoveChips(position []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost_to_move_chips(position: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "position": "[1,2,3]"
+    },
+    {
+      "position": "[2,2,2,3,3]"
+    },
+    {
+      "position": "[1,1000000000]"
+    }
+  ],
+  "functionName": "minCostToMoveChips",
+  "params": [
+    {
+      "name": "position",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The first move keeps the parity of the element as it is.",
+    "The second move changes the parity of the element.",
+    "Since the first move is free, if all the numbers have the same parity, the answer would be zero.",
+    "Find the minimum cost to make all the numbers have the same parity."
+  ]
+}

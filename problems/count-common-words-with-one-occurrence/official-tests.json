@@ -1,0 +1,14 @@
+[
+  {
+    "words1": "[\"leetcode\",\"is\",\"amazing\",\"as\",\"is\"]",
+    "words2": "[\"amazing\",\"leetcode\",\"is\"]"
+  },
+  {
+    "words1": "[\"b\",\"bb\",\"bbb\"]",
+    "words2": "[\"a\",\"aa\",\"aaa\"]"
+  },
+  {
+    "words1": "[\"a\",\"ab\"]",
+    "words2": "[\"a\",\"a\",\"a\",\"ab\"]"
+  }
+]

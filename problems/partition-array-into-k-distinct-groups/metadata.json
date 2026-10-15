@@ -1,0 +1,66 @@
+{
+  "id": "partition-array-into-k-distinct-groups",
+  "title": "3659. Partition Array Into K-Distinct Groups",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partition-array-into-k-distinct-groups/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4], k = 2",
+      "output": "true",
+      "explanation": "One possible partition is to have 2 groups: Group 1: [1, 2] Group 2: [3, 4] Each group contains k = 2 distinct elements, and all elements are used exactly once."
+    },
+    {
+      "input": "nums = [3,5,2,2], k = 2",
+      "output": "true",
+      "explanation": "One possible partition is to have 2 groups: Group 1: [2, 3] Group 2: [2, 5] Each group contains k = 2 distinct elements, and all elements are used exactly once."
+    },
+    {
+      "input": "nums = [1,5,2,3], k = 3",
+      "output": "false",
+      "explanation": "We cannot form groups of k = 3 distinct elements using all values exactly once."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool partitionArray(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean partitionArray(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def partitionArray(self, nums: List[int], k: int) -> bool:\n        ",
+    "typescript": "function partitionArray(nums: number[], k: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool PartitionArray(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func partitionArray(nums []int, k int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn partition_array(nums: Vec<i32>, k: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4]",
+      "k": 2
+    },
+    {
+      "nums": "[3,5,2,2]",
+      "k": 2
+    },
+    {
+      "nums": "[1,5,2,3]",
+      "k": 3
+    }
+  ],
+  "functionName": "partitionArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Think about how many groups of size <code>k</code> you need to form.",
+    "Each group must contain exactly <code>k</code> distinct elements.",
+    "If any element appears more times than the number of groups <code>groups</code>, it cannot be placed uniquely in each group.",
+    "Use a frequency map <code>freq</code> to count the occurrences of each element.",
+    "If the total number of elements <code>n</code> is not divisible by <code>k</code>, partitioning is impossible."
+  ]
+}

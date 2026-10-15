@@ -1,0 +1,53 @@
+{
+  "id": "score-validator",
+  "title": "3921. Score Validator",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/score-validator/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "events = [\"1\",\"4\",\"W\",\"6\",\"WD\"]",
+      "output": "[12,1]",
+      "explanation": "Event Score Counter \"1\" 1 0 \"4\" 5 0 \"W\" 5 1 \"6\" 11 1 \"WD\" 12 1 Final result: [12, 1]."
+    },
+    {
+      "input": "events = [\"WD\",\"NB\",\"0\",\"4\",\"4\"]",
+      "output": "[10,0]",
+      "explanation": "Event Score Counter \"WD\" 1 0 \"NB\" 2 0 \"0\" 2 0 \"4\" 6 0 \"4\" 10 0 Final result: [10, 0]."
+    },
+    {
+      "input": "events = [\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\"]",
+      "output": "[0,10]",
+      "explanation": "After 10 occurrences of \"W\", the counter reaches 10, so processing stops. The remaining events are ignored."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> scoreValidator(vector<string>& events) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] scoreValidator(String[] events) {\n        \n    }\n}",
+    "python": "class Solution:\n    def scoreValidator(self, events: list[str]) -> list[int]:\n        ",
+    "typescript": "function scoreValidator(events: string[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ScoreValidator(string[] events) {\n        \n    }\n}",
+    "go": "func scoreValidator(events []string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn score_validator(events: Vec<String>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "events": "[\"1\",\"4\",\"W\",\"6\",\"WD\"]"
+    },
+    {
+      "events": "[\"WD\",\"NB\",\"0\",\"4\",\"4\"]"
+    },
+    {
+      "events": "[\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\"]"
+    }
+  ],
+  "functionName": "scoreValidator",
+  "params": [
+    {
+      "name": "events",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

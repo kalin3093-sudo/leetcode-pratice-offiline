@@ -1,0 +1,43 @@
+{
+  "id": "reconstruct-original-digits-from-english",
+  "title": "423. Reconstruct Original Digits from English",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/reconstruct-original-digits-from-english/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"owoztneoer\"",
+      "output": "\"012\""
+    },
+    {
+      "input": "s = \"fviefuro\"",
+      "output": "\"45\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string originalDigits(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String originalDigits(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def originalDigits(self, s: str) -> str:\n        ",
+    "typescript": "function originalDigits(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string OriginalDigits(string s) {\n        \n    }\n}",
+    "go": "func originalDigits(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn original_digits(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "owoztneoer"
+    },
+    {
+      "s": "fviefuro"
+    }
+  ],
+  "functionName": "originalDigits",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

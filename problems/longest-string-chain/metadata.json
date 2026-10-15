@@ -1,0 +1,56 @@
+{
+  "id": "longest-string-chain",
+  "title": "1048. Longest String Chain",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-string-chain/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]",
+      "output": "4",
+      "explanation": "One of the longest word chains is [\"a\",\"ba\",\"bda\",\"bdca\"]."
+    },
+    {
+      "input": "words = [\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]",
+      "output": "5",
+      "explanation": "All the words can be put in a word chain [\"xb\", \"xbc\", \"cxbc\", \"pcxbc\", \"pcxbcf\"]."
+    },
+    {
+      "input": "words = [\"abcd\",\"dbqca\"]",
+      "output": "1",
+      "explanation": "The trivial word chain [\"abcd\"] is one of the longest word chains. [\"abcd\",\"dbqca\"] is not a valid word chain because the ordering of the letters is changed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestStrChain(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestStrChain(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestStrChain(self, words: list[str]) -> int:\n        ",
+    "typescript": "function longestStrChain(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestStrChain(string[] words) {\n        \n    }\n}",
+    "go": "func longestStrChain(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_str_chain(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]"
+    },
+    {
+      "words": "[\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]"
+    },
+    {
+      "words": "[\"abcd\",\"dbqca\"]"
+    }
+  ],
+  "functionName": "longestStrChain",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Instead of adding a character, try deleting a character to form a chain in reverse.",
+    "For each word in order of length, for each word2 which is word with one character removed, length[word2] = max(length[word2], length[word] + 1)."
+  ]
+}

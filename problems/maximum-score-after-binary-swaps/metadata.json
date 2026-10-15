@@ -1,0 +1,56 @@
+{
+  "id": "maximum-score-after-binary-swaps",
+  "title": "3781. Maximum Score After Binary Swaps",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-score-after-binary-swaps/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,5,2,3], s = \"01010\"",
+      "output": "7",
+      "explanation": "We can perform the following swaps: Swap at index i = 0: \"01010\" changes to \"10010\" Swap at index i = 2: \"10010\" changes to \"10100\" Positions 0 and 2 contain '1', contributing nums[0] + nums[2] = 2 + 5 = 7. This is maximum score achievable."
+    },
+    {
+      "input": "nums = [4,7,2,9], s = \"0000\"",
+      "output": "0",
+      "explanation": "There are no '1' characters in s, so no swaps can be performed. The score remains 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumScore(vector<int>& nums, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumScore(int[] nums, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumScore(self, nums: List[int], s: str) -> int:\n        ",
+    "typescript": "function maximumScore(nums: number[], s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumScore(int[] nums, string s) {\n        \n    }\n}",
+    "go": "func maximumScore(nums []int, s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_score(nums: Vec<i32>, s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,5,2,3]",
+      "s": "01010"
+    },
+    {
+      "nums": "[4,7,2,9]",
+      "s": "0000"
+    }
+  ],
+  "functionName": "maximumScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "The problem can be solved greedily",
+    "The operation only allows <code>'1'</code>s to move backward",
+    "Going from left to right, maintain a priority queue (max heap)",
+    "When at a <code>'1'</code>, pop the top of the priority queue if it is not empty"
+  ]
+}

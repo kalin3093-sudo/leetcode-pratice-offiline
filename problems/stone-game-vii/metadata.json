@@ -1,0 +1,47 @@
+{
+  "id": "stone-game-vii",
+  "title": "1690. Stone Game VII",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/stone-game-vii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stones = [5,3,1,4,2]",
+      "output": "6",
+      "explanation": "- Alice removes 2 and gets 5 + 3 + 1 + 4 = 13 points. Alice = 13, Bob = 0, stones = [5,3,1,4]. - Bob removes 5 and gets 3 + 1 + 4 = 8 points. Alice = 13, Bob = 8, stones = [3,1,4]. - Alice removes 3 and gets 1 + 4 = 5 points. Alice = 18, Bob = 8, stones = [1,4]. - Bob removes 1 and gets 4 points. Alice = 18, Bob = 12, stones = [4]. - Alice removes 4 and gets 0 points. Alice = 18, Bob = 12, stones = []. The score difference is 18 - 12 = 6."
+    },
+    {
+      "input": "stones = [7,90,5,1,100,10,10,2]",
+      "output": "122"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int stoneGameVII(vector<int>& stones) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int stoneGameVII(int[] stones) {\n        \n    }\n}",
+    "python": "class Solution:\n    def stoneGameVII(self, stones: List[int]) -> int:\n        ",
+    "typescript": "function stoneGameVII(stones: number[]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int StoneGameVII(int[] stones) {\n        \n    }\n}",
+    "go": "func stoneGameVII(stones []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn stone_game_vii(stones: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stones": "[5,3,1,4,2]"
+    },
+    {
+      "stones": "[7,90,5,1,100,10,10,2]"
+    }
+  ],
+  "functionName": "stoneGameVII",
+  "params": [
+    {
+      "name": "stones",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The constraints are small enough for an N^2 solution.",
+    "Try using dynamic programming."
+  ]
+}

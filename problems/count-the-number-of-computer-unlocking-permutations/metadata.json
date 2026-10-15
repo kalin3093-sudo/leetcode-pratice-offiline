@@ -1,0 +1,49 @@
+{
+  "id": "count-the-number-of-computer-unlocking-permutations",
+  "title": "3577. Count the Number of Computer Unlocking Permutations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "complexity = [1,2,3]",
+      "output": "2",
+      "explanation": "The valid permutations are: [0, 1, 2] Unlock computer 0 first with root password. Unlock computer 1 with password of computer 0 since complexity[0] < complexity[1]. Unlock computer 2 with password of computer 1 since complexity[1] < complexity[2]. [0, 2, 1] Unlock computer 0 first with root password. Unlock computer 2 with password of computer 0 since complexity[0] < complexity[2]. Unlock computer 1 with password of computer 0 since complexity[0] < complexity[1]."
+    },
+    {
+      "input": "complexity = [3,3,3,4,4,4]",
+      "output": "0",
+      "explanation": "There are no possible permutations which can unlock all computers."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPermutations(vector<int>& complexity) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPermutations(int[] complexity) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPermutations(self, complexity: List[int]) -> int:\n        ",
+    "typescript": "function countPermutations(complexity: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPermutations(int[] complexity) {\n        \n    }\n}",
+    "go": "func countPermutations(complexity []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_permutations(complexity: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "complexity": "[1,2,3]"
+    },
+    {
+      "complexity": "[3,3,3,4,4,4]"
+    }
+  ],
+  "functionName": "countPermutations",
+  "params": [
+    {
+      "name": "complexity",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Ensure that the element at index 0 has the unique minimum complexity (no other element can match its value).",
+    "Fix index 0 as the first in the unlocking order.",
+    "The remaining indices from <code>1</code> to <code>n - 1</code> can then be arranged arbitrarily, yielding <code>factorial(n - 1)</code> possible orders."
+  ]
+}

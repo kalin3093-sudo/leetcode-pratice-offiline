@@ -1,0 +1,61 @@
+{
+  "id": "reorder-routes-to-make-all-paths-lead-to-the-city-zero",
+  "title": "1466. Reorder Routes to Make All Paths Lead to the City Zero",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "n = 6, connections = [[0,1],[1,3],[2,3],[4,0],[4,5]]",
+      "output": "3",
+      "explanation": "Change the direction of edges show in red such that each node can reach the node 0 (capital)."
+    },
+    {
+      "input": "n = 5, connections = [[1,0],[1,2],[3,2],[3,4]]",
+      "output": "2",
+      "explanation": "Change the direction of edges show in red such that each node can reach the node 0 (capital)."
+    },
+    {
+      "input": "n = 3, connections = [[1,0],[2,0]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minReorder(int n, vector<vector<int>>& connections) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minReorder(int n, int[][] connections) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minReorder(self, n: int, connections: list[list[int]]) -> int:\n        ",
+    "typescript": "function minReorder(n: number, connections: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinReorder(int n, int[][] connections) {\n        \n    }\n}",
+    "go": "func minReorder(n int, connections [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_reorder(n: i32, connections: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "connections": "[[0,1],[1,3],[2,3],[4,0],[4,5]]"
+    },
+    {
+      "n": 5,
+      "connections": "[[1,0],[1,2],[3,2],[3,4]]"
+    },
+    {
+      "n": 3,
+      "connections": "[[1,0],[2,0]]"
+    }
+  ],
+  "functionName": "minReorder",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "connections",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Treat the graph as undirected. Start a dfs from the root, if you come across an edge in the forward direction, you need to reverse the edge."
+  ]
+}

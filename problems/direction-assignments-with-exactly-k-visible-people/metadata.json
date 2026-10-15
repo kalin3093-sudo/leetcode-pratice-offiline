@@ -1,0 +1,73 @@
+{
+  "id": "direction-assignments-with-exactly-k-visible-people",
+  "title": "3881. Direction Assignments with Exactly K Visible People",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/direction-assignments-with-exactly-k-visible-people/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3, pos = 1, k = 0",
+      "output": "2",
+      "explanation": "Index 0 is to the left of pos = 1, and index 2 is to the right of pos = 1. To see k = 0 people, index 0 must choose 'R' and index 2 must choose 'L', keeping both invisible. The person at index 1 can choose 'L' or 'R' since it does not affect the count. Thus, the answer is 2."
+    },
+    {
+      "input": "n = 3, pos = 2, k = 1",
+      "output": "4",
+      "explanation": "Index 0 and index 1 are left of pos = 2, and there is no index to the right. To see k = 1 person, exactly one of index 0 or index 1 must choose 'L', and the other must choose 'R'. There are 2 ways to choose which index is visible from the left. The person at index 2 can choose 'L' or 'R' since it does not affect the count. Thus, the answer is 2 + 2 = 4."
+    },
+    {
+      "input": "n = 1, pos = 0, k = 0",
+      "output": "2",
+      "explanation": "There are no indices to the left or right of pos = 0. To see k = 0 people, no additional condition is required. The person at index 0 can choose 'L' or 'R'. Thus, the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countVisiblePeople(int n, int pos, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countVisiblePeople(int n, int pos, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countVisiblePeople(self, n: int, pos: int, k: int) -> int:\n        ",
+    "typescript": "function countVisiblePeople(n: number, pos: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountVisiblePeople(int n, int pos, int k) {\n        \n    }\n}",
+    "go": "func countVisiblePeople(n int, pos int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_visible_people(n: i32, pos: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "pos": 1,
+      "k": 0
+    },
+    {
+      "n": 3,
+      "pos": 2,
+      "k": 1
+    },
+    {
+      "n": 1,
+      "pos": 0,
+      "k": 0
+    }
+  ],
+  "functionName": "countVisiblePeople",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "pos",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use combinatorics",
+    "Count the visible people on the left and right independently. Let <code>a = pos</code> and <code>b = n - pos - 1</code>.",
+    "To see exactly <code>k</code> people, choose <code>i</code> visible people from the left side and <code>k - i</code> from the right side.",
+    "Each chosen left person must pick <code>L</code>, each chosen right person must pick <code>R</code>, and every other person can pick either direction.",
+    "Sum over all valid <code>i</code>, multiplying the two binomial choices and the free choices for the remaining people."
+  ]
+}

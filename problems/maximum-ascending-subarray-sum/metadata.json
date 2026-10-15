@@ -1,0 +1,56 @@
+{
+  "id": "maximum-ascending-subarray-sum",
+  "title": "1800. Maximum Ascending Subarray Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-ascending-subarray-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,20,30,5,10,50]",
+      "output": "65",
+      "explanation": "[5,10,50] is the ascending subarray with the maximum sum of 65."
+    },
+    {
+      "input": "nums = [10,20,30,40,50]",
+      "output": "150",
+      "explanation": "[10,20,30,40,50] is the ascending subarray with the maximum sum of 150."
+    },
+    {
+      "input": "nums = [12,17,15,13,10,11,12]",
+      "output": "33",
+      "explanation": "[10,11,12] is the ascending subarray with the maximum sum of 33."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxAscendingSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxAscendingSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxAscendingSum(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maxAscendingSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxAscendingSum(int[] nums) {\n        \n    }\n}",
+    "go": "func maxAscendingSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_ascending_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,20,30,5,10,50]"
+    },
+    {
+      "nums": "[10,20,30,40,50]"
+    },
+    {
+      "nums": "[12,17,15,13,10,11,12]"
+    }
+  ],
+  "functionName": "maxAscendingSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "It is fast enough to check all possible subarrays",
+    "The end of each ascending subarray will be the start of the next"
+  ]
+}

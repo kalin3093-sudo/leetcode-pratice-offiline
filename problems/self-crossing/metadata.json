@@ -1,0 +1,53 @@
+{
+  "id": "self-crossing",
+  "title": "335. Self Crossing",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/self-crossing/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "distance = [2,1,1,2]",
+      "output": "true",
+      "explanation": "The path crosses itself at the point (0, 1)."
+    },
+    {
+      "input": "distance = [1,2,3,4]",
+      "output": "false",
+      "explanation": "The path does not cross itself at any point."
+    },
+    {
+      "input": "distance = [1,1,1,2,1]",
+      "output": "true",
+      "explanation": "The path crosses itself at the point (0, 0)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isSelfCrossing(vector<int>& distance) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isSelfCrossing(int[] distance) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isSelfCrossing(self, distance: list[int]) -> bool:\n        ",
+    "typescript": "function isSelfCrossing(distance: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsSelfCrossing(int[] distance) {\n        \n    }\n}",
+    "go": "func isSelfCrossing(distance []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_self_crossing(distance: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "distance": "[2,1,1,2]"
+    },
+    {
+      "distance": "[1,2,3,4]"
+    },
+    {
+      "distance": "[1,1,1,2,1]"
+    }
+  ],
+  "functionName": "isSelfCrossing",
+  "params": [
+    {
+      "name": "distance",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

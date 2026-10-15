@@ -1,0 +1,10 @@
+You are given an integer array `nums`.
+
+Split the array into **exactly** two subarrays, `left` and `right`, such that `left` is **strictly increasing** and `right` is **strictly decreasing**.
+
+Return the **minimum possible absolute difference** between the sums of `left` and `right`. If no valid split exists, return `-1`.
+
+**Constraints:**
+
+-   `2 ≤ nums.length ≤ 10^5`
+-   `1 ≤ nums[i] ≤ 10^5`

@@ -1,0 +1,47 @@
+{
+  "id": "score-of-a-string",
+  "title": "3110. Score of a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/score-of-a-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"hello\"",
+      "output": "13",
+      "explanation": "The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be |104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13."
+    },
+    {
+      "input": "s = \"zaz\"",
+      "output": "50",
+      "explanation": "The ASCII values of the characters in s are: 'z' = 122, 'a' = 97. So, the score of s would be |122 - 97| + |97 - 122| = 25 + 25 = 50."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int scoreOfString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int scoreOfString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def scoreOfString(self, s: str) -> int:\n        ",
+    "typescript": "function scoreOfString(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ScoreOfString(string s) {\n        \n    }\n}",
+    "go": "func scoreOfString(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn score_of_string(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "hello"
+    },
+    {
+      "s": "zaz"
+    }
+  ],
+  "functionName": "scoreOfString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sum the difference between all the adjacent characters by just taking the absolute difference of their ASCII values."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "generate-binary-strings-without-adjacent-zeros",
+  "title": "3211. Generate Binary Strings Without Adjacent Zeros",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "[\"010\",\"011\",\"101\",\"110\",\"111\"]",
+      "explanation": "The valid strings of length 3 are: \"010\", \"011\", \"101\", \"110\", and \"111\"."
+    },
+    {
+      "input": "n = 1",
+      "output": "[\"0\",\"1\"]",
+      "explanation": "The valid strings of length 1 are: \"0\" and \"1\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> validStrings(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> validStrings(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def validStrings(self, n: int) -> List[str]:\n        ",
+    "typescript": "function validStrings(n: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> ValidStrings(int n) {\n        \n    }\n}",
+    "go": "func validStrings(n int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn valid_strings(n: i32) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "validStrings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "If we have a string <code>s</code> of length <code>x</code>, we can generate all strings of length <code>x + 1</code>.",
+    "If <code>s</code> has 0 as the last character, we can only append 1, whereas if the last character is 1, we can append both 0 and 1.",
+    "We can use recursion and backtracking to generate all such strings."
+  ]
+}

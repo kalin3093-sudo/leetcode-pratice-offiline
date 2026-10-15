@@ -1,0 +1,43 @@
+{
+  "id": "non-decreasing-subsequences",
+  "title": "491. Non-decreasing Subsequences",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/non-decreasing-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,6,7,7]",
+      "output": "[[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]"
+    },
+    {
+      "input": "nums = [4,4,3,2,1]",
+      "output": "[[4,4]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> findSubsequences(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> findSubsequences(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findSubsequences(self, nums: list[int]) -> list[list[int]]:\n        ",
+    "typescript": "function findSubsequences(nums: number[]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> FindSubsequences(int[] nums) {\n        \n    }\n}",
+    "go": "func findSubsequences(nums []int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_subsequences(nums: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,6,7,7]"
+    },
+    {
+      "nums": "[4,4,3,2,1]"
+    }
+  ],
+  "functionName": "findSubsequences",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": []
+}

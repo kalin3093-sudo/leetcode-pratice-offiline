@@ -1,0 +1,53 @@
+{
+  "id": "odd-even-jump",
+  "title": "975. Odd Even Jump",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/odd-even-jump/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [10,13,12,14,15]",
+      "output": "2",
+      "explanation": "From starting index i = 0, we can make our 1st jump to i = 2 (since arr[2] is the smallest among arr[1], arr[2], arr[3], arr[4] that is greater or equal to arr[0]), then we cannot jump any more. From starting index i = 1 and i = 2, we can make our 1st jump to i = 3, then we cannot jump any more. From starting index i = 3, we can make our 1st jump to i = 4, so we have reached the end. From starting index i = 4, we have reached the end already. In total, there are 2 different starting indices i = 3 and i = 4, where we can reach the end with some number of jumps."
+    },
+    {
+      "input": "arr = [2,3,1,1,4]",
+      "output": "3",
+      "explanation": "From starting index i = 0, we make jumps to i = 1, i = 2, i = 3: During our 1st jump (odd-numbered), we first jump to i = 1 because arr[1] is the smallest value in [arr[1], arr[2], arr[3], arr[4]] that is greater than or equal to arr[0]. During our 2nd jump (even-numbered), we jump from i = 1 to i = 2 because arr[2] is the largest value in [arr[2], arr[3], arr[4]] that is less than or equal to arr[1]. arr[3] is also the largest value, but 2 is a smaller index, so we can only jump to i = 2 and not i = 3 During our 3rd jump (odd-numbered), we jump from i = 2 to i = 3 because arr[3] is the smallest value in [arr[3], arr[4]] that is greater than or equal to arr[2]. We can't jump from i = 3 to i = 4, so the starting index i = 0 is not good. In a similar manner, we can deduce that: From starting index i = 1, we jump to i = 4, so we reach the end. From starting index i = 2, we jump to i = 3, and then we can't jump anymore. From starting index i = 3, we jump to i = 4, so we reach the end. From starting index i = 4, we are already at the end. In total, there are 3 different starting indices i = 1, i = 3, and i = 4, where we can reach the end with some number of jumps."
+    },
+    {
+      "input": "arr = [5,1,3,4,2]",
+      "output": "3",
+      "explanation": "We can reach the end from starting indices 1, 2, and 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int oddEvenJumps(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int oddEvenJumps(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def oddEvenJumps(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function oddEvenJumps(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int OddEvenJumps(int[] arr) {\n        \n    }\n}",
+    "go": "func oddEvenJumps(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn odd_even_jumps(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[10,13,12,14,15]"
+    },
+    {
+      "arr": "[2,3,1,1,4]"
+    },
+    {
+      "arr": "[5,1,3,4,2]"
+    }
+  ],
+  "functionName": "oddEvenJumps",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "long-pressed-name",
+  "title": "925. Long Pressed Name",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/long-pressed-name/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "name = \"alex\", typed = \"aaleex\"",
+      "output": "true",
+      "explanation": "'a' and 'e' in 'alex' were long pressed."
+    },
+    {
+      "input": "name = \"saeed\", typed = \"ssaaedd\"",
+      "output": "false",
+      "explanation": "'e' must have been pressed twice, but it was not in the typed output."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isLongPressedName(string name, string typed) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isLongPressedName(String name, String typed) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isLongPressedName(self, name: str, typed: str) -> bool:\n        ",
+    "typescript": "function isLongPressedName(name: string, typed: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsLongPressedName(string name, string typed) {\n        \n    }\n}",
+    "go": "func isLongPressedName(name string, typed string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_long_pressed_name(name: String, typed: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "name": "alex",
+      "typed": "aaleex"
+    },
+    {
+      "name": "saeed",
+      "typed": "ssaaedd"
+    }
+  ],
+  "functionName": "isLongPressedName",
+  "params": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "typed",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

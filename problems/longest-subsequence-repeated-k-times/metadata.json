@@ -1,0 +1,64 @@
+{
+  "id": "longest-subsequence-repeated-k-times",
+  "title": "2014. Longest Subsequence Repeated k Times",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-subsequence-repeated-k-times/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"letsleetcode\", k = 2",
+      "output": "\"let\"",
+      "explanation": "There are two longest subsequences repeated 2 times: \"let\" and \"ete\". \"let\" is the lexicographically largest one."
+    },
+    {
+      "input": "s = \"bb\", k = 2",
+      "output": "\"b\"",
+      "explanation": "The longest subsequence repeated 2 times is \"b\"."
+    },
+    {
+      "input": "s = \"ab\", k = 2",
+      "output": "\"\"",
+      "explanation": "There is no subsequence repeated 2 times. Empty string is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string longestSubsequenceRepeatedK(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String longestSubsequenceRepeatedK(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestSubsequenceRepeatedK(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function longestSubsequenceRepeatedK(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LongestSubsequenceRepeatedK(string s, int k) {\n        \n    }\n}",
+    "go": "func longestSubsequenceRepeatedK(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_subsequence_repeated_k(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "letsleetcode",
+      "k": 2
+    },
+    {
+      "s": "bb",
+      "k": 2
+    },
+    {
+      "s": "ab",
+      "k": 2
+    }
+  ],
+  "functionName": "longestSubsequenceRepeatedK",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "The length of the longest subsequence does not exceed n/k. Do you know why?",
+    "Find the characters that could be included in the potential answer. A character occurring more than or equal to k times can be used in the answer up to (count of the character / k) times.",
+    "Try all possible candidates in reverse lexicographic order, and check the string for the subsequence condition."
+  ]
+}

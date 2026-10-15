@@ -1,0 +1,14 @@
+[
+  {
+    "words": "[\"one.two.three\",\"four.five\",\"six\"]",
+    "separator": "."
+  },
+  {
+    "words": "[\"$easy$\",\"$problem$\"]",
+    "separator": "$"
+  },
+  {
+    "words": "[\"|||\"]",
+    "separator": "|"
+  }
+]

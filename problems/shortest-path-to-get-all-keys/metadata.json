@@ -1,0 +1,51 @@
+{
+  "id": "shortest-path-to-get-all-keys",
+  "title": "864. Shortest Path to Get All Keys",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/shortest-path-to-get-all-keys/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [\"@.a..\",\"###.#\",\"b.A.B\"]",
+      "output": "8",
+      "explanation": "Note that the goal is to obtain all the keys not to open all the locks."
+    },
+    {
+      "input": "grid = [\"@..aA\",\"..B#.\",\"....b\"]",
+      "output": "6"
+    },
+    {
+      "input": "grid = [\"@Aa\"]",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestPathAllKeys(vector<string>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestPathAllKeys(String[] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestPathAllKeys(self, grid: list[str]) -> int:\n        ",
+    "typescript": "function shortestPathAllKeys(grid: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestPathAllKeys(string[] grid) {\n        \n    }\n}",
+    "go": "func shortestPathAllKeys(grid []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_path_all_keys(grid: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[\"@.a..\",\"###.#\",\"b.A.B\"]"
+    },
+    {
+      "grid": "[\"@..aA\",\"..B#.\",\"....b\"]"
+    },
+    {
+      "grid": "[\"@Aa\"]"
+    }
+  ],
+  "functionName": "shortestPathAllKeys",
+  "params": [
+    {
+      "name": "grid",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "closest-dessert-cost",
+  "title": "1774. Closest Dessert Cost",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/closest-dessert-cost/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "baseCosts = [1,7], toppingCosts = [3,4], target = 10",
+      "output": "10",
+      "explanation": "Consider the following combination (all 0-indexed): - Choose base 1: cost 7 - Take 1 of topping 0: cost 1 x 3 = 3 - Take 0 of topping 1: cost 0 x 4 = 0 Total: 7 + 3 + 0 = 10."
+    },
+    {
+      "input": "baseCosts = [2,3], toppingCosts = [4,5,100], target = 18",
+      "output": "17",
+      "explanation": "Consider the following combination (all 0-indexed): - Choose base 1: cost 3 - Take 1 of topping 0: cost 1 x 4 = 4 - Take 2 of topping 1: cost 2 x 5 = 10 - Take 0 of topping 2: cost 0 x 100 = 0 Total: 3 + 4 + 10 + 0 = 17. You cannot make a dessert with a total cost of 18."
+    },
+    {
+      "input": "baseCosts = [3,10], toppingCosts = [2,5], target = 9",
+      "output": "8",
+      "explanation": "It is possible to make desserts with cost 8 and 10. Return 8 as it is the lower cost."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int closestCost(vector<int>& baseCosts, vector<int>& toppingCosts, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int closestCost(int[] baseCosts, int[] toppingCosts, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def closestCost(self, baseCosts: list[int], toppingCosts: list[int], target: int) -> int:\n        ",
+    "typescript": "function closestCost(baseCosts: number[], toppingCosts: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ClosestCost(int[] baseCosts, int[] toppingCosts, int target) {\n        \n    }\n}",
+    "go": "func closestCost(baseCosts []int, toppingCosts []int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn closest_cost(base_costs: Vec<i32>, topping_costs: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "baseCosts": "[1,7]",
+      "toppingCosts": "[3,4]",
+      "target": 10
+    },
+    {
+      "baseCosts": "[2,3]",
+      "toppingCosts": "[4,5,100]",
+      "target": 18
+    },
+    {
+      "baseCosts": "[3,10]",
+      "toppingCosts": "[2,5]",
+      "target": 9
+    }
+  ],
+  "functionName": "closestCost",
+  "params": [
+    {
+      "name": "baseCosts",
+      "type": "int_array"
+    },
+    {
+      "name": "toppingCosts",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "As the constraints are not large, you can brute force and enumerate all the possibilities."
+  ]
+}

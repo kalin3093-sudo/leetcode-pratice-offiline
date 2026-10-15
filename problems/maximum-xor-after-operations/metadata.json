@@ -1,0 +1,50 @@
+{
+  "id": "maximum-xor-after-operations",
+  "title": "2317. Maximum XOR After Operations ",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-xor-after-operations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,2,4,6]",
+      "output": "7",
+      "explanation": "Apply the operation with x = 4 and i = 3, num[3] = 6 AND (6 XOR 4) = 6 AND 2 = 2. Now, nums = [3, 2, 4, 2] and the bitwise XOR of all the elements = 3 XOR 2 XOR 4 XOR 2 = 7. It can be shown that 7 is the maximum possible bitwise XOR. Note that other operations may be used to achieve a bitwise XOR of 7."
+    },
+    {
+      "input": "nums = [1,2,3,9,2]",
+      "output": "11",
+      "explanation": "Apply the operation zero times. The bitwise XOR of all the elements = 1 XOR 2 XOR 3 XOR 9 XOR 2 = 11. It can be shown that 11 is the maximum possible bitwise XOR."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumXOR(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumXOR(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumXOR(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maximumXOR(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumXOR(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumXOR(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_xor(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,2,4,6]"
+    },
+    {
+      "nums": "[1,2,3,9,2]"
+    }
+  ],
+  "functionName": "maximumXOR",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider what it means to be able to choose any x for the operation and which integers could be obtained from a given nums[i].",
+    "The given operation can unset any bit in nums[i].",
+    "The nth bit of the XOR of all the elements is 1 if the nth bit is 1 for an odd number of elements. When can we ensure it is odd?",
+    "Try to set every bit of the result to 1 if possible."
+  ]
+}

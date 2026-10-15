@@ -1,0 +1,55 @@
+{
+  "id": "complement-of-base-10-integer",
+  "title": "1009. Complement of Base 10 Integer",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/complement-of-base-10-integer/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "2",
+      "explanation": "5 is \"101\" in binary, with complement \"010\" in binary, which is 2 in base-10."
+    },
+    {
+      "input": "n = 7",
+      "output": "0",
+      "explanation": "7 is \"111\" in binary, with complement \"000\" in binary, which is 0 in base-10."
+    },
+    {
+      "input": "n = 10",
+      "output": "5",
+      "explanation": "10 is \"1010\" in binary, with complement \"0101\" in binary, which is 5 in base-10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int bitwiseComplement(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int bitwiseComplement(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def bitwiseComplement(self, n: int) -> int:\n        ",
+    "typescript": "function bitwiseComplement(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BitwiseComplement(int n) {\n        \n    }\n}",
+    "go": "func bitwiseComplement(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn bitwise_complement(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 7
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "bitwiseComplement",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A binary number plus its complement will equal 111....111 in binary.  Also, N = 0 is a corner case."
+  ]
+}

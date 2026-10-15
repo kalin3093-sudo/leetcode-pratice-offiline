@@ -1,0 +1,13 @@
+You are given an integer array `nums`.
+
+An integer `x` is called **special** if:
+
+-   `x` appears **exactly three** times in `nums`.
+-   **All** three occurrences of `x` are **equally spaced** in `nums`. In other words, if all occurrences of `x` are at indices `i1 < i2 < i3`, then `i2 - i1 = i3 - i2`.
+
+Return the number of **distinct** special integers in `nums`.
+
+**Constraints:**
+
+-   `3 ≤ nums.length ≤ 100`
+-   `1 ≤ nums[i] ≤ 100`

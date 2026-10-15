@@ -1,0 +1,58 @@
+{
+  "id": "longest-almost-palindromic-substring",
+  "title": "3844. Longest Almost-Palindromic Substring",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-almost-palindromic-substring/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"abca\"",
+      "output": "4",
+      "explanation": "Choose the substring \"abca\". Remove \"abca\". The string becomes \"aba\", which is a palindrome. Therefore, \"abca\" is almost-palindromic."
+    },
+    {
+      "input": "s = \"abba\"",
+      "output": "4",
+      "explanation": "Choose the substring \"abba\". Remove \"abba\". The string becomes \"aba\", which is a palindrome. Therefore, \"abba\" is almost-palindromic."
+    },
+    {
+      "input": "s = \"zzabba\"",
+      "output": "5",
+      "explanation": "Choose the substring \"zzabba\". Remove \"zabba\". The string becomes \"abba\", which is a palindrome. Therefore, \"zabba\" is almost-palindromic."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int almostPalindromic(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int almostPalindromic(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def almostPalindromic(self, s: str) -> int:\n        ",
+    "typescript": "function almostPalindromic(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AlmostPalindromic(string s) {\n        \n    }\n}",
+    "go": "func almostPalindromic(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn almost_palindromic(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abca"
+    },
+    {
+      "s": "abba"
+    },
+    {
+      "s": "zzabba"
+    }
+  ],
+  "functionName": "almostPalindromic",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Solve greedily",
+    "Fix the center (consider both odd and even centers) and expand outwards",
+    "On the first mismatch, try skipping the left character and continue expanding, and also try skipping the right character; take the longer result",
+    "Track the maximum length found across all centers"
+  ]
+}

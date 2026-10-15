@@ -1,0 +1,55 @@
+{
+  "id": "threshold-majority-queries",
+  "title": "3636. Threshold Majority Queries",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/threshold-majority-queries/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,2,1,1], queries = [[0,5,4],[0,3,3],[2,3,2]]",
+      "output": "[1,-1,2]",
+      "explanation": "Query Sub-array Threshold Frequency table Answer [0, 5, 4] [1, 1, 2, 2, 1, 1] 4 1 &rarr; 4, 2 &rarr; 2 1 [0, 3, 3] [1, 1, 2, 2] 3 1 &rarr; 2, 2 &rarr; 2 -1 [2, 3, 2] [2, 2] 2 2 &rarr; 2 2"
+    },
+    {
+      "input": "nums = [3,2,3,2,3,2,3], queries = [[0,6,4],[1,5,2],[2,4,1],[3,3,1]]",
+      "output": "[3,2,3,2]",
+      "explanation": "Query Sub-array Threshold Frequency table Answer [0, 6, 4] [3, 2, 3, 2, 3, 2, 3] 4 3 &rarr; 4, 2 &rarr; 3 3 [1, 5, 2] [2, 3, 2, 3, 2] 2 2 &rarr; 3, 3 &rarr; 2 2 [2, 4, 1] [3, 2, 3] 1 3 &rarr; 2, 2 &rarr; 1 3 [3, 3, 1] [2] 1 2 &rarr; 1 2"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> subarrayMajority(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] subarrayMajority(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def subarrayMajority(self, nums: List[int], queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function subarrayMajority(nums: number[], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SubarrayMajority(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func subarrayMajority(nums []int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn subarray_majority(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1,2,2,1,1]",
+      "queries": "[[0,5,4],[0,3,3],[2,3,2]]"
+    },
+    {
+      "nums": "[3,2,3,2,3,2,3]",
+      "queries": "[[0,6,4],[1,5,2],[2,4,1],[3,3,1]]"
+    }
+  ],
+  "functionName": "subarrayMajority",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Use sqrt decomposition: let <code>B = int(sqrt(n))</code> and sort queries by <code>(l//B, r)</code>",
+    "Maintain window <code>[L,R]</code> with a frequency map <code>cnt</code> and buckets <code>bucket[f]</code> of values at count <code>f</code>",
+    "Slide <code>L</code> and <code>R</code> per query, updating <code>cnt</code> and <code>bucket</code>, then scan from <code>threshold</code> to max freq to find the smallest valid value or -1"
+  ]
+}

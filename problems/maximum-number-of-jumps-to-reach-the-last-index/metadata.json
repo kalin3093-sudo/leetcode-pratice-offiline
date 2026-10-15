@@ -1,0 +1,64 @@
+{
+  "id": "maximum-number-of-jumps-to-reach-the-last-index",
+  "title": "2770. Maximum Number of Jumps to Reach the Last Index",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,6,4,1,2], target = 2",
+      "output": "3",
+      "explanation": "To go from index 0 to index n - 1 with the maximum number of jumps, you can perform the following jumping sequence: - Jump from index 0 to index 1. - Jump from index 1 to index 3. - Jump from index 3 to index 5. It can be proven that there is no other jumping sequence that goes from 0 to n - 1 with more than 3 jumps. Hence, the answer is 3."
+    },
+    {
+      "input": "nums = [1,3,6,4,1,2], target = 3",
+      "output": "5",
+      "explanation": "To go from index 0 to index n - 1 with the maximum number of jumps, you can perform the following jumping sequence: - Jump from index 0 to index 1. - Jump from index 1 to index 2. - Jump from index 2 to index 3. - Jump from index 3 to index 4. - Jump from index 4 to index 5. It can be proven that there is no other jumping sequence that goes from 0 to n - 1 with more than 5 jumps. Hence, the answer is 5."
+    },
+    {
+      "input": "nums = [1,3,6,4,1,2], target = 0",
+      "output": "-1",
+      "explanation": "It can be proven that there is no jumping sequence that goes from 0 to n - 1. Hence, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumJumps(vector<int>& nums, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumJumps(int[] nums, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumJumps(self, nums: List[int], target: int) -> int:\n        ",
+    "typescript": "function maximumJumps(nums: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumJumps(int[] nums, int target) {\n        \n    }\n}",
+    "go": "func maximumJumps(nums []int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_jumps(nums: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,6,4,1,2]",
+      "target": 2
+    },
+    {
+      "nums": "[1,3,6,4,1,2]",
+      "target": 3
+    },
+    {
+      "nums": "[1,3,6,4,1,2]",
+      "target": 0
+    }
+  ],
+  "functionName": "maximumJumps",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a dynamic programming approach.",
+    "Define a dynamic programming array dp of size n, where dp[i] represents the maximum number of jumps from index 0 to index i.",
+    "For each j iterate over all i < j. Set dp[j] = max(dp[j], dp[i] + 1) if -target <= nums[j] - nums[i] <= target."
+  ]
+}

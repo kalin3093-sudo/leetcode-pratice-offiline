@@ -1,0 +1,10 @@
+[
+  {
+    "stamp": "abc",
+    "target": "ababc"
+  },
+  {
+    "stamp": "abca",
+    "target": "aabcaca"
+  }
+]

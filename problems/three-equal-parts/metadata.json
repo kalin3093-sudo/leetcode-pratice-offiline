@@ -1,0 +1,50 @@
+{
+  "id": "three-equal-parts",
+  "title": "927. Three Equal Parts",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/three-equal-parts/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,0,1,0,1]",
+      "output": "[0,3]"
+    },
+    {
+      "input": "arr = [1,1,0,1,1]",
+      "output": "[-1,-1]"
+    },
+    {
+      "input": "arr = [1,1,0,0,1]",
+      "output": "[0,2]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> threeEqualParts(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] threeEqualParts(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def threeEqualParts(self, arr: list[int]) -> list[int]:\n        ",
+    "typescript": "function threeEqualParts(arr: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ThreeEqualParts(int[] arr) {\n        \n    }\n}",
+    "go": "func threeEqualParts(arr []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn three_equal_parts(arr: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,0,1,0,1]"
+    },
+    {
+      "arr": "[1,1,0,1,1]"
+    },
+    {
+      "arr": "[1,1,0,0,1]"
+    }
+  ],
+  "functionName": "threeEqualParts",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

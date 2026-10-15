@@ -1,0 +1,47 @@
+{
+  "id": "degree-of-an-array",
+  "title": "697. Degree of an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/degree-of-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,2,3,1]",
+      "output": "2",
+      "explanation": "The input array has a degree of 2 because both elements 1 and 2 appear twice. Of the subarrays that have the same degree: [1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2] The shortest length is 2. So return 2."
+    },
+    {
+      "input": "nums = [1,2,2,3,1,4,2]",
+      "output": "6",
+      "explanation": "The degree is 3 because the element 2 is repeated 3 times. So [2,2,3,1,4,2] is the shortest subarray, therefore returning 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findShortestSubArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findShortestSubArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findShortestSubArray(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function findShortestSubArray(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindShortestSubArray(int[] nums) {\n        \n    }\n}",
+    "go": "func findShortestSubArray(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_shortest_sub_array(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,2,3,1]"
+    },
+    {
+      "nums": "[1,2,2,3,1,4,2]"
+    }
+  ],
+  "functionName": "findShortestSubArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Say 5 is the only element that occurs the most number of times - for example, nums = [1, 5, 2, 3, 5, 4, 5, 6].  What is the answer?"
+  ]
+}

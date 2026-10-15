@@ -1,0 +1,53 @@
+{
+  "id": "largest-plus-sign",
+  "title": "764. Largest Plus Sign",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-plus-sign/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, mines = [[4,2]]",
+      "output": "2",
+      "explanation": "In the above grid, the largest plus sign can only be of order 2. One of them is shown."
+    },
+    {
+      "input": "n = 1, mines = [[0,0]]",
+      "output": "0",
+      "explanation": "There is no plus sign, so return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int orderOfLargestPlusSign(int n, vector<vector<int>>& mines) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int orderOfLargestPlusSign(int n, int[][] mines) {\n        \n    }\n}",
+    "python": "class Solution:\n    def orderOfLargestPlusSign(self, n: int, mines: list[list[int]]) -> int:\n        ",
+    "typescript": "function orderOfLargestPlusSign(n: number, mines: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int OrderOfLargestPlusSign(int n, int[][] mines) {\n        \n    }\n}",
+    "go": "func orderOfLargestPlusSign(n int, mines [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn order_of_largest_plus_sign(n: i32, mines: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "mines": "[[4,2]]"
+    },
+    {
+      "n": 1,
+      "mines": "[[0,0]]"
+    }
+  ],
+  "functionName": "orderOfLargestPlusSign",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "mines",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each direction such as \"left\", find left[r][c] = the number of 1s you will see before a zero starting at r, c and walking left.  You can find this in N^2 time with a dp.  The largest plus sign at r, c is just the minimum of left[r][c], up[r][c] etc."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "minimum-operations-to-form-subset-sum-i",
+  "title": "4040. Minimum Operations to Form Subset Sum I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-form-subset-sum-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,6,10], sum = 4",
+      "output": "3",
+      "explanation": "Divide nums[0] = 5 twice: 5 &rarr; 2 &rarr; 1, costing 2 operations. Divide nums[1] = 6 once: 6 &rarr; 3, costing 1 operation. After these operations, nums = [1, 3, 10]. The subset {1, 3} sums to 4 using 3 operations in total."
+    },
+    {
+      "input": "nums = [10,2], sum = 13",
+      "output": "3",
+      "explanation": "Divide nums[0] = 10 once: 10 &rarr; 5, costing 1 operation. Multiply nums[1] = 2 twice: 2 &rarr; 4 &rarr; 8, costing 2 operations. After these operations, nums = [5, 8]. The subset {5, 8} sums to 13 using 3 operations in total."
+    },
+    {
+      "input": "nums = [6,3], sum = 8",
+      "output": "-1",
+      "explanation": "No sequence of operations lets a subset of nums sum to 8, so the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int sum) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums, int sum) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: list[int], sum: int) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[], sum: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums, int sum) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int, sum int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>, sum: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,6,10]",
+      "sum": 4
+    },
+    {
+      "nums": "[10,2]",
+      "sum": 13
+    },
+    {
+      "nums": "[6,3]",
+      "sum": 8
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "sum",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider what values a single element <code>x</code> can end with. Because every multiplication must precede every division, any multiplication immediately canceled by a later division does not help. The relevant positive values are obtained by repeatedly doubling <code>x</code> or repeatedly applying <code>floor(x / 2)</code>.",
+    "For every element, compute the minimum number of operations needed to obtain each useful value at most <code>sum</code>. Then use a knapsack-style DP where each element may either be excluded from the subset or contribute one of its reachable values."
+  ]
+}

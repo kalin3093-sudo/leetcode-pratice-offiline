@@ -1,0 +1,48 @@
+{
+  "id": "shortest-uncommon-substring-in-an-array",
+  "title": "3076. Shortest Uncommon Substring in an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [\"cab\",\"ad\",\"bad\",\"c\"]",
+      "output": "[\"ab\",\"\",\"ba\",\"\"]",
+      "explanation": "We have the following: - For the string \"cab\", the shortest substring that does not occur in any other string is either \"ca\" or \"ab\", we choose the lexicographically smaller substring, which is \"ab\". - For the string \"ad\", there is no substring that does not occur in any other string. - For the string \"bad\", the shortest substring that does not occur in any other string is \"ba\". - For the string \"c\", there is no substring that does not occur in any other string."
+    },
+    {
+      "input": "arr = [\"abc\",\"bcd\",\"abcd\"]",
+      "output": "[\"\",\"\",\"abcd\"]",
+      "explanation": "We have the following: - For the string \"abc\", there is no substring that does not occur in any other string. - For the string \"bcd\", there is no substring that does not occur in any other string. - For the string \"abcd\", the shortest substring that does not occur in any other string is \"abcd\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> shortestSubstrings(vector<string>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] shortestSubstrings(String[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestSubstrings(self, arr: List[str]) -> List[str]:\n        ",
+    "typescript": "function shortestSubstrings(arr: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] ShortestSubstrings(string[] arr) {\n        \n    }\n}",
+    "go": "func shortestSubstrings(arr []string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_substrings(arr: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[\"cab\",\"ad\",\"bad\",\"c\"]"
+    },
+    {
+      "arr": "[\"abc\",\"bcd\",\"abcd\"]"
+    }
+  ],
+  "functionName": "shortestSubstrings",
+  "params": [
+    {
+      "name": "arr",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": [
+    "Try a brute force solution where you check every substring.",
+    "Use a Hash map to keep track of the substrings."
+  ]
+}

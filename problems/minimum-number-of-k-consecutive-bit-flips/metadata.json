@@ -1,0 +1,60 @@
+{
+  "id": "minimum-number-of-k-consecutive-bit-flips",
+  "title": "995. Minimum Number of K Consecutive Bit Flips",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,0], k = 1",
+      "output": "2",
+      "explanation": "Flip nums[0], then flip nums[2]."
+    },
+    {
+      "input": "nums = [1,1,0], k = 2",
+      "output": "-1",
+      "explanation": "No matter how we flip subarrays of size 2, we cannot make the array become [1,1,1]."
+    },
+    {
+      "input": "nums = [0,0,0,1,0,1,1,0], k = 3",
+      "output": "3",
+      "explanation": "Flip nums[0],nums[1],nums[2]: nums becomes [1,1,1,1,0,1,1,0] Flip nums[4],nums[5],nums[6]: nums becomes [1,1,1,1,1,0,0,0] Flip nums[5],nums[6],nums[7]: nums becomes [1,1,1,1,1,1,1,1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minKBitFlips(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minKBitFlips(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minKBitFlips(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function minKBitFlips(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinKBitFlips(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minKBitFlips(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_k_bit_flips(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,0]",
+      "k": 1
+    },
+    {
+      "nums": "[1,1,0]",
+      "k": 2
+    },
+    {
+      "nums": "[0,0,0,1,0,1,1,0]",
+      "k": 3
+    }
+  ],
+  "functionName": "minKBitFlips",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

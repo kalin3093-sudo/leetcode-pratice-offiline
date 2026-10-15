@@ -1,0 +1,17 @@
+[
+  {
+    "customers": "[8,3]",
+    "boardingCost": 5,
+    "runningCost": 6
+  },
+  {
+    "customers": "[10,9,6]",
+    "boardingCost": 6,
+    "runningCost": 4
+  },
+  {
+    "customers": "[3,4,0,5,1]",
+    "boardingCost": 1,
+    "runningCost": 92
+  }
+]

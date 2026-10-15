@@ -1,0 +1,62 @@
+{
+  "id": "number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers",
+  "title": "1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [7,4], nums2 = [5,2,8,9]",
+      "output": "1",
+      "explanation": "Type 1: (1, 1, 2), nums1[1]2 = nums2[1] * nums2[2]. (42 = 2 * 8)."
+    },
+    {
+      "input": "nums1 = [1,1], nums2 = [1,1,1]",
+      "output": "9",
+      "explanation": "All Triplets are valid, because 12 = 1 * 1. Type 1: (0,0,1), (0,0,2), (0,1,2), (1,0,1), (1,0,2), (1,1,2).  nums1[i]2 = nums2[j] * nums2[k]. Type 2: (0,0,1), (1,0,1), (2,0,1). nums2[i]2 = nums1[j] * nums1[k]."
+    },
+    {
+      "input": "nums1 = [7,7,8,3], nums2 = [1,2,9,7]",
+      "output": "2",
+      "explanation": "There are 2 valid triplets. Type 1: (3,0,2).  nums1[3]2 = nums2[0] * nums2[2]. Type 2: (3,0,1).  nums2[3]2 = nums1[0] * nums1[1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numTriplets(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numTriplets(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numTriplets(self, nums1: list[int], nums2: list[int]) -> int:\n        ",
+    "typescript": "function numTriplets(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumTriplets(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func numTriplets(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_triplets(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[7,4]",
+      "nums2": "[5,2,8,9]"
+    },
+    {
+      "nums1": "[1,1]",
+      "nums2": "[1,1,1]"
+    },
+    {
+      "nums1": "[7,7,8,3]",
+      "nums2": "[1,2,9,7]"
+    }
+  ],
+  "functionName": "numTriplets",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Precalculate the frequencies of all nums1[i]^2 and nums2[i]^2"
+  ]
+}

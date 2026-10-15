@@ -1,0 +1,71 @@
+{
+  "id": "lexicographically-smallest-string-after-applying-operations",
+  "title": "1625. Lexicographically Smallest String After Applying Operations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"5525\", a = 9, b = 2",
+      "output": "\"2050\"",
+      "explanation": "We can apply the following operations: Start:  \"5525\" Rotate: \"2555\" Add:    \"2454\" Add:    \"2353\" Rotate: \"5323\" Add:    \"5222\" Add:    \"5121\" Rotate: \"2151\" Add:    \"2050\" There is no way to obtain a string that is lexicographically smaller than \"2050\"."
+    },
+    {
+      "input": "s = \"74\", a = 5, b = 1",
+      "output": "\"24\"",
+      "explanation": "We can apply the following operations: Start:  \"74\" Rotate: \"47\" Add:    \"42\" Rotate: \"24\" There is no way to obtain a string that is lexicographically smaller than \"24\"."
+    },
+    {
+      "input": "s = \"0011\", a = 4, b = 2",
+      "output": "\"0011\"",
+      "explanation": "There are no sequence of operations that will give us a lexicographically smaller string than \"0011\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string findLexSmallestString(string s, int a, int b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String findLexSmallestString(String s, int a, int b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLexSmallestString(self, s: str, a: int, b: int) -> str:\n        ",
+    "typescript": "function findLexSmallestString(s: string, a: number, b: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FindLexSmallestString(string s, int a, int b) {\n        \n    }\n}",
+    "go": "func findLexSmallestString(s string, a int, b int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_lex_smallest_string(s: String, a: i32, b: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "5525",
+      "a": 9,
+      "b": 2
+    },
+    {
+      "s": "74",
+      "a": 5,
+      "b": 1
+    },
+    {
+      "s": "0011",
+      "a": 4,
+      "b": 2
+    }
+  ],
+  "functionName": "findLexSmallestString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Since the length of s is even, the total number of possible sequences is at most 10 * 10 * s.length.",
+    "You can generate all possible sequences and take their minimum.",
+    "Keep track of already generated sequences so they are not processed again."
+  ]
+}

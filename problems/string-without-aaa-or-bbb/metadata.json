@@ -1,0 +1,50 @@
+{
+  "id": "string-without-aaa-or-bbb",
+  "title": "984. String Without AAA or BBB",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/string-without-aaa-or-bbb/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "a = 1, b = 2",
+      "output": "\"abb\"",
+      "explanation": "\"abb\", \"bab\" and \"bba\" are all correct answers."
+    },
+    {
+      "input": "a = 4, b = 1",
+      "output": "\"aabaa\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string strWithout3a3b(int a, int b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String strWithout3a3b(int a, int b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def strWithout3a3b(self, a: int, b: int) -> str:\n        ",
+    "typescript": "function strWithout3a3b(a: number, b: number): string {\n\n};",
+    "csharp": "public class Solution {\n    public string StrWithout3a3b(int a, int b) {\n        \n    }\n}",
+    "go": "func strWithout3a3b(a int, b int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn str_without3a3b(a: i32, b: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": 1,
+      "b": 2
+    },
+    {
+      "a": 4,
+      "b": 1
+    }
+  ],
+  "functionName": "strWithout3a3b",
+  "params": [
+    {
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

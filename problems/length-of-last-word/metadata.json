@@ -1,0 +1,53 @@
+{
+  "id": "length-of-last-word",
+  "title": "58. Length of Last Word",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/length-of-last-word/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"Hello World\"",
+      "output": "5",
+      "explanation": "The last word is \"World\" with length 5."
+    },
+    {
+      "input": "s = \"   fly me   to   the moon  \"",
+      "output": "4",
+      "explanation": "The last word is \"moon\" with length 4."
+    },
+    {
+      "input": "s = \"luffy is still joyboy\"",
+      "output": "6",
+      "explanation": "The last word is \"joyboy\" with length 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int lengthOfLastWord(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int lengthOfLastWord(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lengthOfLastWord(self, s: str) -> int:\n        ",
+    "typescript": "function lengthOfLastWord(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LengthOfLastWord(string s) {\n        \n    }\n}",
+    "go": "func lengthOfLastWord(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn length_of_last_word(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "Hello World"
+    },
+    {
+      "s": "   fly me   to   the moon  "
+    },
+    {
+      "s": "luffy is still joyboy"
+    }
+  ],
+  "functionName": "lengthOfLastWord",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

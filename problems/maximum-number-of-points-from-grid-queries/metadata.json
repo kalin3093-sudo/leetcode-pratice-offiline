@@ -1,0 +1,55 @@
+{
+  "id": "maximum-number-of-points-from-grid-queries",
+  "title": "2503. Maximum Number of Points From Grid Queries",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2,3],[2,5,7],[3,5,1]], queries = [5,6,2]",
+      "output": "[5,8,1]",
+      "explanation": "The diagrams above show which cells we visit to get points for each query."
+    },
+    {
+      "input": "grid = [[5,2,1],[1,1,2]], queries = [3]",
+      "output": "[0]",
+      "explanation": "We can not get any points because the value of the top left cell is already greater than or equal to 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> maxPoints(vector<vector<int>>& grid, vector<int>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] maxPoints(int[][] grid, int[] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPoints(self, grid: list[list[int]], queries: list[int]) -> list[int]:\n        ",
+    "typescript": "function maxPoints(grid: number[][], queries: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MaxPoints(int[][] grid, int[] queries) {\n        \n    }\n}",
+    "go": "func maxPoints(grid [][]int, queries []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_points(grid: Vec<Vec<i32>>, queries: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2,3],[2,5,7],[3,5,1]]",
+      "queries": "[5,6,2]"
+    },
+    {
+      "grid": "[[5,2,1],[1,1,2]]",
+      "queries": "[3]"
+    }
+  ],
+  "functionName": "maxPoints",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "queries",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "The queries are all given to you beforehand so you can answer them in any order you want.",
+    "Sort the queries knowing their original order to be able to build the answer array.",
+    "Run a BFS on the graph and answer the queries in increasing order."
+  ]
+}

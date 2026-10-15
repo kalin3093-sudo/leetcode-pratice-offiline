@@ -1,0 +1,51 @@
+{
+  "id": "self-dividing-numbers",
+  "title": "728. Self Dividing Numbers",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/self-dividing-numbers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "left = 1, right = 22",
+      "output": "[1,2,3,4,5,6,7,8,9,11,12,15,22]"
+    },
+    {
+      "input": "left = 47, right = 85",
+      "output": "[48,55,66,77]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> selfDividingNumbers(int left, int right) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> selfDividingNumbers(int left, int right) {\n        \n    }\n}",
+    "python": "class Solution:\n    def selfDividingNumbers(self, left: int, right: int) -> list[int]:\n        ",
+    "typescript": "function selfDividingNumbers(left: number, right: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> SelfDividingNumbers(int left, int right) {\n        \n    }\n}",
+    "go": "func selfDividingNumbers(left int, right int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn self_dividing_numbers(left: i32, right: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "left": 1,
+      "right": 22
+    },
+    {
+      "left": 47,
+      "right": 85
+    }
+  ],
+  "functionName": "selfDividingNumbers",
+  "params": [
+    {
+      "name": "left",
+      "type": "int"
+    },
+    {
+      "name": "right",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "For each number in the range, check whether it is self dividing by converting that number to a character array (or string in Python), then checking that each digit is nonzero and divides the original number."
+  ]
+}

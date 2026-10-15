@@ -1,0 +1,53 @@
+{
+  "id": "snake-in-matrix",
+  "title": "3248. Snake in Matrix",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/snake-in-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 2, commands = [\"RIGHT\",\"DOWN\"]",
+      "output": "3",
+      "explanation": "0 1 2 3 0 1 2 3 0 1 2 3"
+    },
+    {
+      "input": "n = 3, commands = [\"DOWN\",\"RIGHT\",\"UP\"]",
+      "output": "1",
+      "explanation": "0 1 2 3 4 5 6 7 8 0 1 2 3 4 5 6 7 8 0 1 2 3 4 5 6 7 8 0 1 2 3 4 5 6 7 8"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int finalPositionOfSnake(int n, vector<string>& commands) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int finalPositionOfSnake(int n, List<String> commands) {\n        \n    }\n}",
+    "python": "class Solution:\n    def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:\n        ",
+    "typescript": "function finalPositionOfSnake(n: number, commands: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FinalPositionOfSnake(int n, IList<string> commands) {\n        \n    }\n}",
+    "go": "func finalPositionOfSnake(n int, commands []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn final_position_of_snake(n: i32, commands: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "commands": "[\"RIGHT\",\"DOWN\"]"
+    },
+    {
+      "n": 3,
+      "commands": "[\"DOWN\",\"RIGHT\",\"UP\"]"
+    }
+  ],
+  "functionName": "finalPositionOfSnake",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "commands",
+      "type": "string_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to update the row and column of the snake after each command."
+  ]
+}

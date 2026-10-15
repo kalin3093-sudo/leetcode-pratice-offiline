@@ -1,0 +1,48 @@
+{
+  "id": "max-difference-you-can-get-from-changing-an-integer",
+  "title": "1432. Max Difference You Can Get From Changing an Integer",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 555",
+      "output": "888",
+      "explanation": "The first time pick x = 5 and y = 9 and store the new integer in a. The second time pick x = 5 and y = 1 and store the new integer in b. We have now a = 999 and b = 111 and max difference = 888"
+    },
+    {
+      "input": "num = 9",
+      "output": "8",
+      "explanation": "The first time pick x = 9 and y = 9 and store the new integer in a. The second time pick x = 9 and y = 1 and store the new integer in b. We have now a = 9 and b = 1 and max difference = 8"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDiff(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDiff(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDiff(self, num: int) -> int:\n        ",
+    "typescript": "function maxDiff(num: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDiff(int num) {\n        \n    }\n}",
+    "go": "func maxDiff(num int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_diff(num: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 555
+    },
+    {
+      "num": 9
+    }
+  ],
+  "functionName": "maxDiff",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We need to get the max and min value after changing num and the answer is max - min.",
+    "Use brute force, try all possible changes and keep the minimum and maximum values."
+  ]
+}

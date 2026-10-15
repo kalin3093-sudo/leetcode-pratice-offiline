@@ -1,0 +1,43 @@
+{
+  "id": "reordered-power-of-2",
+  "title": "869. Reordered Power of 2",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/reordered-power-of-2/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "true"
+    },
+    {
+      "input": "n = 10",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool reorderedPowerOf2(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean reorderedPowerOf2(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reorderedPowerOf2(self, n: int) -> bool:\n        ",
+    "typescript": "function reorderedPowerOf2(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ReorderedPowerOf2(int n) {\n        \n    }\n}",
+    "go": "func reorderedPowerOf2(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reordered_power_of2(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 10
+    }
+  ],
+  "functionName": "reorderedPowerOf2",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

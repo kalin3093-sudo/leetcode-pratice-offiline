@@ -1,0 +1,53 @@
+{
+  "id": "number-of-employees-who-met-the-target",
+  "title": "2798. Number of Employees Who Met the Target",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-employees-who-met-the-target/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "hours = [0,1,2,3,4], target = 2",
+      "output": "3",
+      "explanation": "The company wants each employee to work for at least 2 hours. - Employee 0 worked for 0 hours and didn't meet the target. - Employee 1 worked for 1 hours and didn't meet the target. - Employee 2 worked for 2 hours and met the target. - Employee 3 worked for 3 hours and met the target. - Employee 4 worked for 4 hours and met the target. There are 3 employees who met the target."
+    },
+    {
+      "input": "hours = [5,1,4,2,2], target = 6",
+      "output": "0",
+      "explanation": "The company wants each employee to work for at least 6 hours. There are 0 employees who met the target."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfEmployeesWhoMetTarget(vector<int>& hours, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:\n        ",
+    "typescript": "function numberOfEmployeesWhoMetTarget(hours: number[], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfEmployeesWhoMetTarget(int[] hours, int target) {\n        \n    }\n}",
+    "go": "func numberOfEmployeesWhoMetTarget(hours []int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_employees_who_met_target(hours: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "hours": "[0,1,2,3,4]",
+      "target": 2
+    },
+    {
+      "hours": "[5,1,4,2,2]",
+      "target": 6
+    }
+  ],
+  "functionName": "numberOfEmployeesWhoMetTarget",
+  "params": [
+    {
+      "name": "hours",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate over the elements of array hours and check if the value is greater than or equal to target."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "largest-palindrome-product",
+  "title": "479. Largest Palindrome Product",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/largest-palindrome-product/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "987",
+      "explanation": "99 x 91 = 9009, 9009 % 1337 = 987"
+    },
+    {
+      "input": "n = 1",
+      "output": "9"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestPalindrome(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestPalindrome(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestPalindrome(self, n: int) -> int:\n        ",
+    "typescript": "function largestPalindrome(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestPalindrome(int n) {\n        \n    }\n}",
+    "go": "func largestPalindrome(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_palindrome(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "largestPalindrome",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

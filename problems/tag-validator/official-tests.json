@@ -1,0 +1,11 @@
+[
+  {
+    "code": "<DIV>This is the first line <![CDATA[<div>]]></DIV>"
+  },
+  {
+    "code": "<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>"
+  },
+  {
+    "code": "<A>  <B> </A>   </B>"
+  }
+]

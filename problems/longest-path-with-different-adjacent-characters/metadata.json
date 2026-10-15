@@ -1,0 +1,54 @@
+{
+  "id": "longest-path-with-different-adjacent-characters",
+  "title": "2246. Longest Path With Different Adjacent Characters",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/longest-path-with-different-adjacent-characters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "parent = [-1,0,0,1,1,2], s = \"abacbe\"",
+      "output": "3",
+      "explanation": "The longest path where each two adjacent nodes have different characters in the tree is the path: 0 -> 1 -> 3. The length of this path is 3, so 3 is returned. It can be proven that there is no longer path that satisfies the conditions."
+    },
+    {
+      "input": "parent = [-1,0,0,0], s = \"aabc\"",
+      "output": "3",
+      "explanation": "The longest path where each two adjacent nodes have different characters is the path: 2 -> 0 -> 3. The length of this path is 3, so 3 is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestPath(vector<int>& parent, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestPath(int[] parent, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def longestPath(self, parent: list[int], s: str) -> int:\n        ",
+    "typescript": "function longestPath(parent: number[], s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestPath(int[] parent, string s) {\n        \n    }\n}",
+    "go": "func longestPath(parent []int, s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn longest_path(parent: Vec<i32>, s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "parent": "[-1,0,0,1,1,2]",
+      "s": "abacbe"
+    },
+    {
+      "parent": "[-1,0,0,0]",
+      "s": "aabc"
+    }
+  ],
+  "functionName": "longestPath",
+  "params": [
+    {
+      "name": "parent",
+      "type": "int_array"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Do a DFS from the root. At each node, calculate the longest path we can make from two branches of that subtree.",
+    "To do that, we need to find the length of the longest path from each of the node’s children."
+  ]
+}

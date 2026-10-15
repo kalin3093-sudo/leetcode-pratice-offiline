@@ -1,0 +1,53 @@
+{
+  "id": "minimum-area-rectangle-ii",
+  "title": "963. Minimum Area Rectangle II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-area-rectangle-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[1,2],[2,1],[1,0],[0,1]]",
+      "output": "2.00000",
+      "explanation": "The minimum area rectangle occurs at [1,2],[2,1],[1,0],[0,1], with an area of 2."
+    },
+    {
+      "input": "points = [[0,1],[2,1],[1,1],[1,0],[2,0]]",
+      "output": "1.00000",
+      "explanation": "The minimum area rectangle occurs at [1,0],[1,1],[2,1],[2,0], with an area of 1."
+    },
+    {
+      "input": "points = [[0,3],[1,2],[3,1],[1,3],[2,1]]",
+      "output": "0",
+      "explanation": "There is no possible rectangle to form from these points."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    double minAreaFreeRect(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public double minAreaFreeRect(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minAreaFreeRect(self, points: list[list[int]]) -> float:\n        ",
+    "typescript": "function minAreaFreeRect(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public double MinAreaFreeRect(int[][] points) {\n        \n    }\n}",
+    "go": "func minAreaFreeRect(points [][]int) float64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_area_free_rect(points: Vec<Vec<i32>>) -> f64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[1,2],[2,1],[1,0],[0,1]]"
+    },
+    {
+      "points": "[[0,1],[2,1],[1,1],[1,0],[2,0]]"
+    },
+    {
+      "points": "[[0,3],[1,2],[3,1],[1,3],[2,1]]"
+    }
+  ],
+  "functionName": "minAreaFreeRect",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "double",
+  "hints": []
+}

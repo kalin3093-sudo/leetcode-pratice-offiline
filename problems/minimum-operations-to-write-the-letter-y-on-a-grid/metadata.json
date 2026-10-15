@@ -1,0 +1,45 @@
+{
+  "id": "minimum-operations-to-write-the-letter-y-on-a-grid",
+  "title": "3071. Minimum Operations to Write the Letter Y on a Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2,2],[1,1,0],[0,1,0]]",
+      "output": "3",
+      "explanation": "We can write Y on the grid by applying the changes highlighted in blue in the image above. After the operations, all cells that belong to Y, denoted in bold, have the same value of 1 while those that do not belong to Y are equal to 0. It can be shown that 3 is the minimum number of operations needed to write Y on the grid."
+    },
+    {
+      "input": "grid = [[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]",
+      "output": "12",
+      "explanation": "We can write Y on the grid by applying the changes highlighted in blue in the image above. After the operations, all cells that belong to Y, denoted in bold, have the same value of 0 while those that do not belong to Y are equal to 2. It can be shown that 12 is the minimum number of operations needed to write Y on the grid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperationsToWriteY(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperationsToWriteY(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOperationsToWriteY(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function minimumOperationsToWriteY(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperationsToWriteY(int[][] grid) {\n        \n    }\n}",
+    "go": "func minimumOperationsToWriteY(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations_to_write_y(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2,2],[1,1,0],[0,1,0]]"
+    },
+    {
+      "grid": "[[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]"
+    }
+  ],
+  "functionName": "minimumOperationsToWriteY",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

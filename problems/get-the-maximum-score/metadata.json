@@ -1,0 +1,62 @@
+{
+  "id": "get-the-maximum-score",
+  "title": "1537. Get the Maximum Score",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/get-the-maximum-score/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [2,4,5,8,10], nums2 = [4,6,8,9]",
+      "output": "30",
+      "explanation": "Valid paths: [2,4,5,8,10], [2,4,5,8,9], [2,4,6,8,9], [2,4,6,8,10],  (starting from nums1) [4,6,8,9], [4,5,8,10], [4,5,8,9], [4,6,8,10]    (starting from nums2) The maximum is obtained with the path in green [2,4,6,8,10]."
+    },
+    {
+      "input": "nums1 = [1,3,5,7,9], nums2 = [3,5,100]",
+      "output": "109",
+      "explanation": "Maximum sum is obtained with the path [1,3,5,100]."
+    },
+    {
+      "input": "nums1 = [1,2,3,4,5], nums2 = [6,7,8,9,10]",
+      "output": "40",
+      "explanation": "There are no common elements between nums1 and nums2. Maximum sum is obtained with the path [6,7,8,9,10]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSum(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSum(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSum(self, nums1: list[int], nums2: list[int]) -> int:\n        ",
+    "typescript": "function maxSum(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSum(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func maxSum(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_sum(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[2,4,5,8,10]",
+      "nums2": "[4,6,8,9]"
+    },
+    {
+      "nums1": "[1,3,5,7,9]",
+      "nums2": "[3,5,100]"
+    },
+    {
+      "nums1": "[1,2,3,4,5]",
+      "nums2": "[6,7,8,9,10]"
+    }
+  ],
+  "functionName": "maxSum",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Partition the array by common integers, and choose the path with larger sum with a DP technique."
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "chunks": "[\"hello wor\",\"ld hello\"]",
+    "queries": "[\"hello\",\"world\",\"wor\"]"
+  },
+  {
+    "chunks": "[\"a-b a--b \",\"a-\",\"b\"]",
+    "queries": "[\"a-b\",\"a\",\"b\"]"
+  },
+  {
+    "chunks": "[\"-cat dog- mouse\"]",
+    "queries": "[\"cat\",\"dog\",\"mouse\",\"cat-dog\"]"
+  }
+]

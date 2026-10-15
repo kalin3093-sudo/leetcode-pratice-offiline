@@ -1,0 +1,55 @@
+{
+  "id": "find-the-degree-of-each-vertex",
+  "title": "3898. Find the Degree of Each Vertex",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-degree-of-each-vertex/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[0,1,1],[1,0,1],[1,1,0]]",
+      "output": "[2,2,2]",
+      "explanation": "Vertex 0 is connected to vertices 1 and 2, so its degree is 2. Vertex 1 is connected to vertices 0 and 2, so its degree is 2. Vertex 2 is connected to vertices 0 and 1, so its degree is 2. Thus, the answer is [2, 2, 2]."
+    },
+    {
+      "input": "matrix = [[0,1,0],[1,0,0],[0,0,0]]",
+      "output": "[1,1,0]",
+      "explanation": "Vertex 0 is connected to vertex 1, so its degree is 1. Vertex 1 is connected to vertex 0, so its degree is 1. Vertex 2 is not connected to any vertex, so its degree is 0. Thus, the answer is [1, 1, 0]."
+    },
+    {
+      "input": "matrix = [[0]]",
+      "output": "[0]",
+      "explanation": "There is only one vertex and it has no edges connected to it. Thus, the answer is [0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findDegrees(vector<vector<int>>& matrix) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findDegrees(int[][] matrix) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findDegrees(self, matrix: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function findDegrees(matrix: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindDegrees(int[][] matrix) {\n        \n    }\n}",
+    "go": "func findDegrees(matrix [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_degrees(matrix: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[0,1,1],[1,0,1],[1,1,0]]"
+    },
+    {
+      "matrix": "[[0,1,0],[1,0,0],[0,0,0]]"
+    },
+    {
+      "matrix": "[[0]]"
+    }
+  ],
+  "functionName": "findDegrees",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "The degree of node <code>i</code> is the sum of row <code>i</code> in the matrix"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "remove-letter-to-equalize-frequency",
+  "title": "2423. Remove Letter To Equalize Frequency",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/remove-letter-to-equalize-frequency/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"abcc\"",
+      "output": "true",
+      "explanation": "Select index 3 and delete it: word becomes \"abc\" and each character has a frequency of 1."
+    },
+    {
+      "input": "word = \"aazz\"",
+      "output": "false",
+      "explanation": "We must delete a character, so either the frequency of \"a\" is 1 and the frequency of \"z\" is 2, or vice versa. It is impossible to make all present letters have equal frequency."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool equalFrequency(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean equalFrequency(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def equalFrequency(self, word: str) -> bool:\n        ",
+    "typescript": "function equalFrequency(word: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool EqualFrequency(string word) {\n        \n    }\n}",
+    "go": "func equalFrequency(word string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn equal_frequency(word: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "abcc"
+    },
+    {
+      "word": "aazz"
+    }
+  ],
+  "functionName": "equalFrequency",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Brute force all letters that could be removed.",
+    "Use a frequency array of size 26."
+  ]
+}

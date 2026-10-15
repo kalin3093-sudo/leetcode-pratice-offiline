@@ -1,0 +1,69 @@
+{
+  "id": "simplify-path",
+  "title": "181. Simplify Path",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/simplify-path/",
+  "category": "stack",
+  "examples": [
+    {
+      "input": "path = \"/home/\"",
+      "output": "\"/home\"",
+      "explanation": "The trailing slash should be removed."
+    },
+    {
+      "input": "path = \"/home//foo/\"",
+      "output": "\"/home/foo\"",
+      "explanation": "Multiple consecutive slashes are replaced by a single one."
+    },
+    {
+      "input": "path = \"/home/user/Documents/../Pictures\"",
+      "output": "\"/home/user/Pictures\"",
+      "explanation": "A double period \"..\" refers to the directory up a level (the parent directory)."
+    },
+    {
+      "input": "path = \"/../\"",
+      "output": "\"/\"",
+      "explanation": "Going one level up from the root directory is not possible."
+    },
+    {
+      "input": "path = \"/.../a/../b/c/../d/./\"",
+      "output": "\"/.../b/d\"",
+      "explanation": "\"...\" is a valid name for a directory in this problem."
+    }
+  ],
+  "starterCode": {
+    "java": "class Solution {\n    public String simplifyPath(String path) {\n        return \"\";\n    }\n}",
+    "python": "class Solution:\n    def simplifyPath(self, path: str) -> str:\n        return \"\"\n",
+    "cpp": "#include <string>\nusing namespace std;\nclass Solution {\npublic:\n    string simplifyPath(string path) {\n        return \"\";\n    }\n};",
+    "csharp": "public class Solution \n{\n    public string SimplifyPath(string path) \n    {\n        return \"\";\n    }\n}",
+    "rust": "pub struct Solution;\n\nimpl Solution {\n    pub fn simplify_path(path: String) -> String {\n        String::new()\n    }\n}",
+    "go": "package main\n\nfunc SimplifyPath(path string) string {\n    return \"\"\n}",
+    "typescript": "export function simplifyPath(path: string): string {\n    return \"\";\n}"
+  },
+  "testCases": [
+    {
+      "path": "/home/"
+    },
+    {
+      "path": "/home//foo/"
+    },
+    {
+      "path": "/home/user/Documents/../Pictures"
+    },
+    {
+      "path": "/../"
+    }
+  ],
+  "functionName": "simplifyPath",
+  "params": [
+    {
+      "name": "path",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Split by '/' and use a stack: ignore empty parts and '.', pop on '..' when possible, otherwise push the directory name.",
+    "Join the stack with '/' prefixed; return '/' when the stack is empty."
+  ]
+}

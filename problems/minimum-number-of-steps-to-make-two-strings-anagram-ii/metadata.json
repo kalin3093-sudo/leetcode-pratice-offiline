@@ -1,0 +1,55 @@
+{
+  "id": "minimum-number-of-steps-to-make-two-strings-anagram-ii",
+  "title": "2186. Minimum Number of Steps to Make Two Strings Anagram II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"leetcode\", t = \"coats\"",
+      "output": "7",
+      "explanation": "- In 2 steps, we can append the letters in \"as\" onto s = \"leetcode\", forming s = \"leetcodeas\". - In 5 steps, we can append the letters in \"leede\" onto t = \"coats\", forming t = \"coatsleede\". \"leetcodeas\" and \"coatsleede\" are now anagrams of each other. We used a total of 2 + 5 = 7 steps. It can be shown that there is no way to make them anagrams of each other with less than 7 steps."
+    },
+    {
+      "input": "s = \"night\", t = \"thing\"",
+      "output": "0",
+      "explanation": "The given strings are already anagrams of each other. Thus, we do not need any further steps."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSteps(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSteps(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSteps(self, s: str, t: str) -> int:\n        ",
+    "typescript": "function minSteps(s: string, t: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSteps(string s, string t) {\n        \n    }\n}",
+    "go": "func minSteps(s string, t string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_steps(s: String, t: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcode",
+      "t": "coats"
+    },
+    {
+      "s": "night",
+      "t": "thing"
+    }
+  ],
+  "functionName": "minSteps",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Notice that for anagrams, the order of the letters is irrelevant.",
+    "For each letter, we can count its frequency in s and t.",
+    "For each letter, its contribution to the answer is the absolute difference between its frequency in s and t."
+  ]
+}

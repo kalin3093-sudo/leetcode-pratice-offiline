@@ -1,0 +1,47 @@
+{
+  "id": "special-positions-in-a-binary-matrix",
+  "title": "1582. Special Positions in a Binary Matrix",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[1,0,0],[0,0,1],[1,0,0]]",
+      "output": "1",
+      "explanation": "(1, 2) is a special position because mat[1][2] == 1 and all other elements in row 1 and column 2 are 0."
+    },
+    {
+      "input": "mat = [[1,0,0],[0,1,0],[0,0,1]]",
+      "output": "3",
+      "explanation": "(0, 0), (1, 1) and (2, 2) are special positions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSpecial(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSpecial(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSpecial(self, mat: list[list[int]]) -> int:\n        ",
+    "typescript": "function numSpecial(mat: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSpecial(int[][] mat) {\n        \n    }\n}",
+    "go": "func numSpecial(mat [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_special(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[1,0,0],[0,0,1],[1,0,0]]"
+    },
+    {
+      "mat": "[[1,0,0],[0,1,0],[0,0,1]]"
+    }
+  ],
+  "functionName": "numSpecial",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Keep track of 1s in each row and in each column. Then while iterating over matrix, if the current position is 1 and current row as well as current column contains exactly one occurrence of 1."
+  ]
+}

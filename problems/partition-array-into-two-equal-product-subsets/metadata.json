@@ -1,0 +1,54 @@
+{
+  "id": "partition-array-into-two-equal-product-subsets",
+  "title": "3566. Partition Array into Two Equal Product Subsets",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,1,6,8,4], target = 24",
+      "output": "true",
+      "explanation": "The subsets [3, 8] and [1, 6, 4] each have a product of 24. Hence, the output is true."
+    },
+    {
+      "input": "nums = [2,5,3,7], target = 15",
+      "output": "false",
+      "explanation": "There is no way to partition nums into two non-empty disjoint subsets such that both subsets have a product of 15. Hence, the output is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkEqualPartitions(vector<int>& nums, long long target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkEqualPartitions(int[] nums, long target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkEqualPartitions(self, nums: List[int], target: int) -> bool:\n        ",
+    "typescript": "function checkEqualPartitions(nums: number[], target: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckEqualPartitions(int[] nums, long target) {\n        \n    }\n}",
+    "go": "func checkEqualPartitions(nums []int, target int64) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_equal_partitions(nums: Vec<i32>, target: i64) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,1,6,8,4]",
+      "target": "24"
+    },
+    {
+      "nums": "[2,5,3,7]",
+      "target": "15"
+    }
+  ],
+  "functionName": "checkEqualPartitions",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "long"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Try iterating over all subsets",
+    "Use bitmasks"
+  ]
+}

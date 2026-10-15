@@ -1,0 +1,55 @@
+{
+  "id": "stone-game-iv",
+  "title": "1510. Stone Game IV",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/stone-game-iv/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "true",
+      "explanation": "Alice can remove 1 stone winning the game because Bob doesn't have any moves."
+    },
+    {
+      "input": "n = 2",
+      "output": "false",
+      "explanation": "Alice can only remove 1 stone, after that Bob removes the last one winning the game (2 -> 1 -> 0)."
+    },
+    {
+      "input": "n = 4",
+      "output": "true",
+      "explanation": "n is already a perfect square, Alice can win with one move, removing 4 stones (4 -> 0)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool winnerSquareGame(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean winnerSquareGame(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def winnerSquareGame(self, n: int) -> bool:\n        ",
+    "typescript": "function winnerSquareGame(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool WinnerSquareGame(int n) {\n        \n    }\n}",
+    "go": "func winnerSquareGame(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn winner_square_game(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "winnerSquareGame",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use dynamic programming to keep track of winning and losing states. Given some number of stones, Alice can win if she can force Bob onto a losing state."
+  ]
+}

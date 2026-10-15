@@ -1,0 +1,55 @@
+{
+  "id": "find-the-count-of-numbers-which-are-not-special",
+  "title": "3233. Find the Count of Numbers Which Are Not Special",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "l = 5, r = 7",
+      "output": "3",
+      "explanation": "There are no special numbers in the range [5, 7]."
+    },
+    {
+      "input": "l = 4, r = 16",
+      "output": "11",
+      "explanation": "The special numbers in the range [4, 16] are 4 and 9."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int nonSpecialCount(int l, int r) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int nonSpecialCount(int l, int r) {\n        \n    }\n}",
+    "python": "class Solution:\n    def nonSpecialCount(self, l: int, r: int) -> int:\n        ",
+    "typescript": "function nonSpecialCount(l: number, r: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NonSpecialCount(int l, int r) {\n        \n    }\n}",
+    "go": "func nonSpecialCount(l int, r int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn non_special_count(l: i32, r: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": 5,
+      "r": 7
+    },
+    {
+      "l": 4,
+      "r": 16
+    }
+  ],
+  "functionName": "nonSpecialCount",
+  "params": [
+    {
+      "name": "l",
+      "type": "int"
+    },
+    {
+      "name": "r",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A special number must be a square of a prime number.",
+    "We need to find all primes in the range <code>[sqrt(l), sqrt(r)]</code>.",
+    "Use sieve to find primes till <code>sqrt(10<sup>9</sup>)</code>."
+  ]
+}

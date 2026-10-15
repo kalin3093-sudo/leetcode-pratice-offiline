@@ -1,0 +1,77 @@
+{
+  "id": "maximum-number-of-tasks-you-can-assign",
+  "title": "2071. Maximum Number of Tasks You Can Assign",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tasks = [3,2,1], workers = [0,3,3], pills = 1, strength = 1",
+      "output": "3",
+      "explanation": "We can assign the magical pill and tasks as follows: - Give the magical pill to worker 0. - Assign worker 0 to task 2 (0 + 1 >= 1) - Assign worker 1 to task 1 (3 >= 2) - Assign worker 2 to task 0 (3 >= 3)"
+    },
+    {
+      "input": "tasks = [5,4], workers = [0,0,0], pills = 1, strength = 5",
+      "output": "1",
+      "explanation": "We can assign the magical pill and tasks as follows: - Give the magical pill to worker 0. - Assign worker 0 to task 0 (0 + 5 >= 5)"
+    },
+    {
+      "input": "tasks = [10,15,30], workers = [0,10,10,10,10], pills = 3, strength = 10",
+      "output": "2",
+      "explanation": "We can assign the magical pills and tasks as follows: - Give the magical pill to worker 0 and worker 1. - Assign worker 0 to task 0 (0 + 10 >= 10) - Assign worker 1 to task 1 (10 + 10 >= 15) The last pill is not given because it will not make any worker strong enough for the last task."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxTaskAssign(vector<int>& tasks, vector<int>& workers, int pills, int strength) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxTaskAssign(int[] tasks, int[] workers, int pills, int strength) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxTaskAssign(self, tasks: list[int], workers: list[int], pills: int, strength: int) -> int:\n        ",
+    "typescript": "function maxTaskAssign(tasks: number[], workers: number[], pills: number, strength: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxTaskAssign(int[] tasks, int[] workers, int pills, int strength) {\n        \n    }\n}",
+    "go": "func maxTaskAssign(tasks []int, workers []int, pills int, strength int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_task_assign(tasks: Vec<i32>, workers: Vec<i32>, pills: i32, strength: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tasks": "[3,2,1]",
+      "workers": "[0,3,3]",
+      "pills": 1,
+      "strength": 1
+    },
+    {
+      "tasks": "[5,4]",
+      "workers": "[0,0,0]",
+      "pills": 1,
+      "strength": 5
+    },
+    {
+      "tasks": "[10,15,30]",
+      "workers": "[0,10,10,10,10]",
+      "pills": 3,
+      "strength": 10
+    }
+  ],
+  "functionName": "maxTaskAssign",
+  "params": [
+    {
+      "name": "tasks",
+      "type": "int_array"
+    },
+    {
+      "name": "workers",
+      "type": "int_array"
+    },
+    {
+      "name": "pills",
+      "type": "int"
+    },
+    {
+      "name": "strength",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Is it possible to assign the first k smallest tasks to the workers?",
+    "How can you efficiently try every k?"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "maximum-length-of-a-concatenated-string-with-unique-characters",
+  "title": "1239. Maximum Length of a Concatenated String with Unique Characters",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [\"un\",\"iq\",\"ue\"]",
+      "output": "4",
+      "explanation": "All the valid concatenations are: - \"\" - \"un\" - \"iq\" - \"ue\" - \"uniq\" (\"un\" + \"iq\") - \"ique\" (\"iq\" + \"ue\") Maximum length is 4."
+    },
+    {
+      "input": "arr = [\"cha\",\"r\",\"act\",\"ers\"]",
+      "output": "6",
+      "explanation": "Possible longest valid concatenations are \"chaers\" (\"cha\" + \"ers\") and \"acters\" (\"act\" + \"ers\")."
+    },
+    {
+      "input": "arr = [\"abcdefghijklmnopqrstuvwxyz\"]",
+      "output": "26",
+      "explanation": "The only string in arr has all 26 characters."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxLength(vector<string>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxLength(List<String> arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxLength(self, arr: list[str]) -> int:\n        ",
+    "typescript": "function maxLength(arr: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxLength(IList<string> arr) {\n        \n    }\n}",
+    "go": "func maxLength(arr []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_length(arr: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[\"un\",\"iq\",\"ue\"]"
+    },
+    {
+      "arr": "[\"cha\",\"r\",\"act\",\"ers\"]"
+    },
+    {
+      "arr": "[\"abcdefghijklmnopqrstuvwxyz\"]"
+    }
+  ],
+  "functionName": "maxLength",
+  "params": [
+    {
+      "name": "arr",
+      "type": "string_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "You can try all combinations and keep mask of characters you have.",
+    "You can use DP."
+  ]
+}

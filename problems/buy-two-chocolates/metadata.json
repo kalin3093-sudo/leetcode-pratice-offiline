@@ -1,0 +1,53 @@
+{
+  "id": "buy-two-chocolates",
+  "title": "2706. Buy Two Chocolates",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/buy-two-chocolates/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "prices = [1,2,2], money = 3",
+      "output": "0",
+      "explanation": "Purchase the chocolates priced at 1 and 2 units respectively. You will have 3 - 3 = 0 units of money afterwards. Thus, we return 0."
+    },
+    {
+      "input": "prices = [3,2,3], money = 3",
+      "output": "3",
+      "explanation": "You cannot buy 2 chocolates without going in debt, so we return 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int buyChoco(vector<int>& prices, int money) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int buyChoco(int[] prices, int money) {\n        \n    }\n}",
+    "python": "class Solution:\n    def buyChoco(self, prices: List[int], money: int) -> int:\n        ",
+    "typescript": "function buyChoco(prices: number[], money: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BuyChoco(int[] prices, int money) {\n        \n    }\n}",
+    "go": "func buyChoco(prices []int, money int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn buy_choco(prices: Vec<i32>, money: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "prices": "[1,2,2]",
+      "money": 3
+    },
+    {
+      "prices": "[3,2,3]",
+      "money": 3
+    }
+  ],
+  "functionName": "buyChoco",
+  "params": [
+    {
+      "name": "prices",
+      "type": "int_array"
+    },
+    {
+      "name": "money",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the array and check if the money is more than or equal to the sum of the two cheapest elements."
+  ]
+}

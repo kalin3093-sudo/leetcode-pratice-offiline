@@ -1,0 +1,47 @@
+{
+  "id": "find-the-least-frequent-digit",
+  "title": "3663. Find The Least Frequent Digit",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-least-frequent-digit/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 1553322",
+      "output": "1",
+      "explanation": "The least frequent digit in n is 1, which appears only once. All other digits appear twice."
+    },
+    {
+      "input": "n = 723344511",
+      "output": "2",
+      "explanation": "The least frequent digits in n are 7, 2, and 5; each appears only once."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getLeastFrequentDigit(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getLeastFrequentDigit(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getLeastFrequentDigit(self, n: int) -> int:\n        ",
+    "typescript": "function getLeastFrequentDigit(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetLeastFrequentDigit(int n) {\n        \n    }\n}",
+    "go": "func getLeastFrequentDigit(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_least_frequent_digit(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1553322
+    },
+    {
+      "n": 723344511
+    }
+  ],
+  "functionName": "getLeastFrequentDigit",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate as described"
+  ]
+}

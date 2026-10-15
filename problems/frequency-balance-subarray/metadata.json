@@ -1,0 +1,57 @@
+{
+  "id": "frequency-balance-subarray",
+  "title": "3960. Frequency Balance Subarray",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/frequency-balance-subarray/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,2,1,2,3,3,3]",
+      "output": "5",
+      "explanation": "The longest frequency balance subarray is [2, 1, 2, 3, 3]. The elements that appear most frequently are 2 and 3, both appearing twice. The remaining element 1 appears once, meeting the requirements."
+    },
+    {
+      "input": "nums = [5,5,5,5]",
+      "output": "4",
+      "explanation": "The longest frequency balance subarray is [5, 5, 5, 5]. The element that appears most frequently is 5. There are no other elements meeting the requirements."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "1",
+      "explanation": "Since all elements appear only once, the length of the longest frequency balance subarray is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getLength(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getLength(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getLength(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function getLength(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetLength(int[] nums) {\n        \n    }\n}",
+    "go": "func getLength(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_length(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,2,1,2,3,3,3]"
+    },
+    {
+      "nums": "[5,5,5,5]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "getLength",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each candidate subarray, maintain the frequency of every distinct value.",
+    "A subarray with multiple distinct values is valid exactly when it has two distinct frequency values, and the larger one is twice the smaller one.",
+    "A subarray containing only one distinct value is always valid."
+  ]
+}

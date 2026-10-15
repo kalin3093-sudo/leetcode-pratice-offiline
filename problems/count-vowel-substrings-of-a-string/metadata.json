@@ -1,0 +1,56 @@
+{
+  "id": "count-vowel-substrings-of-a-string",
+  "title": "2062. Count Vowel Substrings of a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-vowel-substrings-of-a-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"aeiouu\"",
+      "output": "2",
+      "explanation": "The vowel substrings of word are as follows (underlined): - \"aeiouu\" - \"aeiouu\""
+    },
+    {
+      "input": "word = \"unicornarihan\"",
+      "output": "0",
+      "explanation": "Not all 5 vowels are present, so there are no vowel substrings."
+    },
+    {
+      "input": "word = \"cuaieuouac\"",
+      "output": "7",
+      "explanation": "The vowel substrings of word are as follows (underlined): - \"cuaieuouac\" - \"cuaieuouac\" - \"cuaieuouac\" - \"cuaieuouac\" - \"cuaieuouac\" - \"cuaieuouac\" - \"cuaieuouac\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countVowelSubstrings(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countVowelSubstrings(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countVowelSubstrings(self, word: str) -> int:\n        ",
+    "typescript": "function countVowelSubstrings(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountVowelSubstrings(string word) {\n        \n    }\n}",
+    "go": "func countVowelSubstrings(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_vowel_substrings(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "aeiouu"
+    },
+    {
+      "word": "unicornarihan"
+    },
+    {
+      "word": "cuaieuouac"
+    }
+  ],
+  "functionName": "countVowelSubstrings",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "While generating substrings starting at any index, do you need to continue generating larger substrings if you encounter a consonant?",
+    "Can you store the count of characters to avoid generating substrings altogether?"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "minimum-cost-to-divide-array-into-subarrays",
+  "title": "3500. Minimum Cost to Divide Array Into Subarrays",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-cost-to-divide-array-into-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,1,4], cost = [4,6,6], k = 1",
+      "output": "110",
+      "explanation": "The minimum total cost possible can be achieved by dividing nums into subarrays [3, 1] and [4]. The cost of the first subarray [3,1] is (3 + 1 + 1 * 1) * (4 + 6) = 50. The cost of the second subarray [4] is (3 + 1 + 4 + 1 * 2) * 6 = 60."
+    },
+    {
+      "input": "nums = [4,8,5,1,14,2,2,12,1], cost = [7,2,8,4,2,2,1,1,2], k = 7",
+      "output": "985",
+      "explanation": "The minimum total cost possible can be achieved by dividing nums into subarrays [4, 8, 5, 1], [14, 2, 2], and [12, 1]. The cost of the first subarray [4, 8, 5, 1] is (4 + 8 + 5 + 1 + 7 * 1) * (7 + 2 + 8 + 4) = 525. The cost of the second subarray [14, 2, 2] is (4 + 8 + 5 + 1 + 14 + 2 + 2 + 7 * 2) * (2 + 2 + 1) = 250. The cost of the third subarray [12, 1] is (4 + 8 + 5 + 1 + 14 + 2 + 2 + 12 + 1 + 7 * 3) * (1 + 2) = 210."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minimumCost(vector<int>& nums, vector<int>& cost, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minimumCost(int[] nums, int[] cost, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumCost(self, nums: List[int], cost: List[int], k: int) -> int:\n        ",
+    "typescript": "function minimumCost(nums: number[], cost: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinimumCost(int[] nums, int[] cost, int k) {\n        \n    }\n}",
+    "go": "func minimumCost(nums []int, cost []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_cost(nums: Vec<i32>, cost: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,1,4]",
+      "cost": "[4,6,6]",
+      "k": 1
+    },
+    {
+      "nums": "[4,8,5,1,14,2,2,12,1]",
+      "cost": "[7,2,8,4,2,2,1,1,2]",
+      "k": 7
+    }
+  ],
+  "functionName": "minimumCost",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "cost",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<code>dp[i]</code> is the minimum cost to split the array suffix starting at <code>i</code>.",
+    "Observe that no matter how many subarrays we have, if we have the first subarray on the left, the total cost of the previous subarrays increases by <code>k * total_cost_of_the_subarray</code>. This is because when we increase <code>i</code> to <code>(i + 1)</code>, the cost increase is just the suffix sum of the cost array."
+  ]
+}

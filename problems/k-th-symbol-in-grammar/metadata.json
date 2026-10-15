@@ -1,0 +1,62 @@
+{
+  "id": "k-th-symbol-in-grammar",
+  "title": "779. K-th Symbol in Grammar",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/k-th-symbol-in-grammar/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1, k = 1",
+      "output": "0",
+      "explanation": "row 1: 0"
+    },
+    {
+      "input": "n = 2, k = 1",
+      "output": "0",
+      "explanation": "row 1: 0 row 2: 01"
+    },
+    {
+      "input": "n = 2, k = 2",
+      "output": "1",
+      "explanation": "row 1: 0 row 2: 01"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int kthGrammar(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int kthGrammar(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kthGrammar(self, n: int, k: int) -> int:\n        ",
+    "typescript": "function kthGrammar(n: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int KthGrammar(int n, int k) {\n        \n    }\n}",
+    "go": "func kthGrammar(n int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn kth_grammar(n: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1,
+      "k": 1
+    },
+    {
+      "n": 2,
+      "k": 1
+    },
+    {
+      "n": 2,
+      "k": 2
+    }
+  ],
+  "functionName": "kthGrammar",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to represent the current (N, K) in terms of some (N-1, prevK).  What is prevK ?"
+  ]
+}

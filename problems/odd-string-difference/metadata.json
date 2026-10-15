@@ -1,0 +1,48 @@
+{
+  "id": "odd-string-difference",
+  "title": "2451. Odd String Difference",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/odd-string-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"adc\",\"wzy\",\"abc\"]",
+      "output": "\"abc\"",
+      "explanation": "- The difference integer array of \"adc\" is [3 - 0, 2 - 3] = [3, -1]. - The difference integer array of \"wzy\" is [25 - 22, 24 - 25]= [3, -1]. - The difference integer array of \"abc\" is [1 - 0, 2 - 1] = [1, 1]. The odd array out is [1, 1], so we return the corresponding string, \"abc\"."
+    },
+    {
+      "input": "words = [\"aaa\",\"bob\",\"ccc\",\"ddd\"]",
+      "output": "\"bob\"",
+      "explanation": "All the integer arrays are [0, 0] except for \"bob\", which corresponds to [13, -13]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string oddString(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String oddString(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def oddString(self, words: list[str]) -> str:\n        ",
+    "typescript": "function oddString(words: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string OddString(string[] words) {\n        \n    }\n}",
+    "go": "func oddString(words []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn odd_string(words: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"adc\",\"wzy\",\"abc\"]"
+    },
+    {
+      "words": "[\"aaa\",\"bob\",\"ccc\",\"ddd\"]"
+    }
+  ],
+  "functionName": "oddString",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Find the difference integer array for each string.",
+    "Compare them to find the odd one out."
+  ]
+}

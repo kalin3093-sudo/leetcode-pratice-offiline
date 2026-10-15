@@ -1,0 +1,65 @@
+{
+  "id": "assign-elements-to-groups-with-constraints",
+  "title": "3447. Assign Elements to Groups with Constraints",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/assign-elements-to-groups-with-constraints/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "groups = [8,4,3,2,4], elements = [4,2]",
+      "output": "[0,0,-1,1,0]",
+      "explanation": "elements[0] = 4 is assigned to groups 0, 1, and 4. elements[1] = 2 is assigned to group 3. Group 2 cannot be assigned any element."
+    },
+    {
+      "input": "groups = [2,3,5,7], elements = [5,3,3]",
+      "output": "[-1,1,0,-1]",
+      "explanation": "elements[1] = 3 is assigned to group 1. elements[0] = 5 is assigned to group 2. Groups 0 and 3 cannot be assigned any element."
+    },
+    {
+      "input": "groups = [10,21,30,41], elements = [2,1]",
+      "output": "[0,1,0,1]",
+      "explanation": "elements[0] = 2 is assigned to the groups with even values, and elements[1] = 1 is assigned to the groups with odd values."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> assignElements(vector<int>& groups, vector<int>& elements) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] assignElements(int[] groups, int[] elements) {\n        \n    }\n}",
+    "python": "class Solution:\n    def assignElements(self, groups: List[int], elements: List[int]) -> List[int]:\n        ",
+    "typescript": "function assignElements(groups: number[], elements: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] AssignElements(int[] groups, int[] elements) {\n        \n    }\n}",
+    "go": "func assignElements(groups []int, elements []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn assign_elements(groups: Vec<i32>, elements: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "groups": "[8,4,3,2,4]",
+      "elements": "[4,2]"
+    },
+    {
+      "groups": "[2,3,5,7]",
+      "elements": "[5,3,3]"
+    },
+    {
+      "groups": "[10,21,30,41]",
+      "elements": "[2,1]"
+    }
+  ],
+  "functionName": "assignElements",
+  "params": [
+    {
+      "name": "groups",
+      "type": "int_array"
+    },
+    {
+      "name": "elements",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Can a sieve-like approach be applied here?",
+    "Starting from the smallest index, iterate through the multiples of the element and assign it to groups divisible by that value.",
+    "Process each element once.",
+    "Find all divisors of each group, then match them with elements."
+  ]
+}

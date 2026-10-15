@@ -1,0 +1,58 @@
+{
+  "id": "lexicographically-maximum-mex-array",
+  "title": "3948. Lexicographically Maximum MEX Array",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/lexicographically-maximum-mex-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,0]",
+      "output": "[2,1]",
+      "explanation": "Take the first k = 2 elements [0, 1] which has MEX = 2. Current result = [2]. Remaining array [0] has MEX = 1. Thus, the final result = [2, 1]."
+    },
+    {
+      "input": "nums = [1,0,2]",
+      "output": "[3]",
+      "explanation": "Take the first k = 3 elements [1, 0, 2] which has MEX = 3. nums is now empty. Thus, the final result = [3]."
+    },
+    {
+      "input": "nums = [3,1]",
+      "output": "[0,0]",
+      "explanation": "Take k = 1, first element [3] has MEX = 0. Current result = [0]. Remaining array [1] has MEX = 0. Thus, the final result = [0, 0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> maximumMEX(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] maximumMEX(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumMEX(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function maximumMEX(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MaximumMEX(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumMEX(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_mex(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,0]"
+    },
+    {
+      "nums": "[1,0,2]"
+    },
+    {
+      "nums": "[3,1]"
+    }
+  ],
+  "functionName": "maximumMEX",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "At any step, the best next value is the MEX of the entire remaining suffix. You cannot make the first result element larger than that.",
+    "If the current suffix MEX is <code>x</code>, you should take the shortest prefix that contains all values <code>0, 1, ..., x - 1</code>. This appends <code>x</code> while leaving as many elements as possible for later.",
+    "If the current suffix MEX is 0, then no remaining element is 0, so taking one element at a time is optimal and appends many 0s.",
+    "Maintain remaining frequencies to know the current suffix MEX, and use a sliding process to find the shortest prefix containing all numbers below it."
+  ]
+}

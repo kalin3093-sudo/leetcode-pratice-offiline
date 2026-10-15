@@ -1,0 +1,58 @@
+{
+  "id": "k-th-digit-in-infinite-string",
+  "title": "4022. K-th Digit in Infinite String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/k-th-digit-in-infinite-string/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "k = 4",
+      "output": "4",
+      "explanation": "The string begins as \"123456789..\". The 4th digit is '4'."
+    },
+    {
+      "input": "k = 15",
+      "output": "7",
+      "explanation": "The string begins as \"123456789191817..\". The 15th digit is '7'."
+    },
+    {
+      "input": "k = 11",
+      "output": "9",
+      "explanation": "The string begins as \"12345678919..\". The 11th digit is '9'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int kthDigit(long long k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int kthDigit(long k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def kthDigit(self, k: int) -> int:\n        ",
+    "typescript": "function kthDigit(k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int KthDigit(long k) {\n        \n    }\n}",
+    "go": "func kthDigit(k int64) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn kth_digit(k: i64) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": "4\r"
+    },
+    {
+      "k": "15\r"
+    },
+    {
+      "k": "11\r"
+    }
+  ],
+  "functionName": "kthDigit",
+  "params": [
+    {
+      "name": "k",
+      "type": "long"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>The order inside a block does not affect its total number of digits. After finishing block <code>b</code>, the string has used exactly the same number of digits as writing all integers from 1 through <code>10 * b + 9</code> in the usual order.</p>",
+    "<p>Write a function that computes the total number of decimal digits needed to write all integers from 1 through <code>x</code>. Compute it by grouping numbers according to their digit length.</p>",
+    "<p>Binary search for the first block <code>b</code> whose cumulative number of digits is at least <code>k</code>. Then subtract the number of digits before that block to obtain the 1-indexed position inside the block.</p>",
+    "<p>For <code>b &gt; 0</code>, all 10 integers in the block have the same number of digits. Use the position inside the block to determine which integer and which digit it refers to. If <code>b</code> is odd, remember that the integers appear in decreasing order.</p>"
+  ]
+}

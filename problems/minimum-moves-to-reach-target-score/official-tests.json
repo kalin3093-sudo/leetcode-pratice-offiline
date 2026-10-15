@@ -1,0 +1,14 @@
+[
+  {
+    "target": 5,
+    "maxDoubles": 0
+  },
+  {
+    "target": 19,
+    "maxDoubles": 2
+  },
+  {
+    "target": 10,
+    "maxDoubles": 4
+  }
+]

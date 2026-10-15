@@ -1,0 +1,56 @@
+{
+  "id": "count-pairs-of-similar-strings",
+  "title": "2506. Count Pairs Of Similar Strings",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-pairs-of-similar-strings/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"aba\",\"aabb\",\"abcd\",\"bac\",\"aabc\"]",
+      "output": "2",
+      "explanation": "There are 2 pairs that satisfy the conditions: - i = 0 and j = 1 : both words[0] and words[1] only consist of characters 'a' and 'b'. - i = 3 and j = 4 : both words[3] and words[4] only consist of characters 'a', 'b', and 'c'."
+    },
+    {
+      "input": "words = [\"aabb\",\"ab\",\"ba\"]",
+      "output": "3",
+      "explanation": "There are 3 pairs that satisfy the conditions: - i = 0 and j = 1 : both words[0] and words[1] only consist of characters 'a' and 'b'. - i = 0 and j = 2 : both words[0] and words[2] only consist of characters 'a' and 'b'. - i = 1 and j = 2 : both words[1] and words[2] only consist of characters 'a' and 'b'."
+    },
+    {
+      "input": "words = [\"nba\",\"cba\",\"dba\"]",
+      "output": "0",
+      "explanation": "Since there does not exist any pair that satisfies the conditions, we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int similarPairs(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int similarPairs(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def similarPairs(self, words: list[str]) -> int:\n        ",
+    "typescript": "function similarPairs(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SimilarPairs(string[] words) {\n        \n    }\n}",
+    "go": "func similarPairs(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn similar_pairs(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"aba\",\"aabb\",\"abcd\",\"bac\",\"aabc\"]"
+    },
+    {
+      "words": "[\"aabb\",\"ab\",\"ba\"]"
+    },
+    {
+      "words": "[\"nba\",\"cba\",\"dba\"]"
+    }
+  ],
+  "functionName": "similarPairs",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How can you check if two strings are similar?",
+    "Use a hashSet to store the character of each string."
+  ]
+}

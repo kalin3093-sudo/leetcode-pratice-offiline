@@ -1,0 +1,71 @@
+{
+  "id": "find-the-occurrence-of-first-almost-equal-substring",
+  "title": "3303. Find the Occurrence of First Almost Equal Substring",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abcdefg\", pattern = \"bcdffg\"",
+      "output": "1",
+      "explanation": "The substring s[1..6] == \"bcdefg\" can be converted to \"bcdffg\" by changing s[4] to \"f\"."
+    },
+    {
+      "input": "s = \"ababbababa\", pattern = \"bacaba\"",
+      "output": "4",
+      "explanation": "The substring s[4..9] == \"bababa\" can be converted to \"bacaba\" by changing s[6] to \"c\"."
+    },
+    {
+      "input": "s = \"abcd\", pattern = \"dba\"",
+      "output": "-1"
+    },
+    {
+      "input": "s = \"dde\", pattern = \"d\"",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minStartingIndex(string s, string pattern) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minStartingIndex(String s, String pattern) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minStartingIndex(self, s: str, pattern: str) -> int:\n        ",
+    "typescript": "function minStartingIndex(s: string, pattern: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinStartingIndex(string s, string pattern) {\n        \n    }\n}",
+    "go": "func minStartingIndex(s string, pattern string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_starting_index(s: String, pattern: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcdefg",
+      "pattern": "bcdffg"
+    },
+    {
+      "s": "ababbababa",
+      "pattern": "bacaba"
+    },
+    {
+      "s": "abcd",
+      "pattern": "dba"
+    },
+    {
+      "s": "dde",
+      "pattern": "d"
+    }
+  ],
+  "functionName": "minStartingIndex",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "pattern",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let <code>dp1[i]</code> represent the maximum length of a substring of <code>s</code> starting at index <code>i</code> that is also a prefix of <code>pattern</code>.",
+    "Let <code>dp2[i]</code> represent the maximum length of a substring of <code>s</code> ending at index <code>i</code> that is also a suffix of <code>pattern</code>.",
+    "Consider a window of size <code>pattern.length</code>. If <code>dp1[i] + i == i + pattern.length - 1 - dp2[i + pattern.length - 1]</code>, what does this signify?"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "sender-with-largest-word-count",
+  "title": "2284. Sender With Largest Word Count",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sender-with-largest-word-count/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "messages = [\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"], senders = [\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "output": "\"Alice\"",
+      "explanation": "Alice sends a total of 2 + 3 = 5 words. userTwo sends a total of 2 words. userThree sends a total of 3 words. Since Alice has the largest word count, we return \"Alice\"."
+    },
+    {
+      "input": "messages = [\"How is leetcode for everyone\",\"Leetcode is useful for practice\"], senders = [\"Bob\",\"Charlie\"]",
+      "output": "\"Charlie\"",
+      "explanation": "Bob sends a total of 5 words. Charlie sends a total of 5 words. Since there is a tie for the largest word count, we return the sender with the lexicographically larger name, Charlie."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestWordCount(vector<string>& messages, vector<string>& senders) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestWordCount(String[] messages, String[] senders) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestWordCount(self, messages: list[str], senders: list[str]) -> str:\n        ",
+    "typescript": "function largestWordCount(messages: string[], senders: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestWordCount(string[] messages, string[] senders) {\n        \n    }\n}",
+    "go": "func largestWordCount(messages []string, senders []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_word_count(messages: Vec<String>, senders: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "messages": "[\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"]",
+      "senders": "[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]"
+    },
+    {
+      "messages": "[\"How is leetcode for everyone\",\"Leetcode is useful for practice\"]",
+      "senders": "[\"Bob\",\"Charlie\"]"
+    }
+  ],
+  "functionName": "largestWordCount",
+  "params": [
+    {
+      "name": "messages",
+      "type": "string_array"
+    },
+    {
+      "name": "senders",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "The number of words in a message is equal to the number of spaces + 1.",
+    "Use a hash map to count the total number of words from each sender."
+  ]
+}

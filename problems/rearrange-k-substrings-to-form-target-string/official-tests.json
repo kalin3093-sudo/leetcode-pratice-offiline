@@ -1,0 +1,17 @@
+[
+  {
+    "s": "abcd",
+    "t": "cdab",
+    "k": 2
+  },
+  {
+    "s": "aabbcc",
+    "t": "bbaacc",
+    "k": 3
+  },
+  {
+    "s": "aabbcc",
+    "t": "bbaacc",
+    "k": 2
+  }
+]

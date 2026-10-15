@@ -1,0 +1,10 @@
+[
+  {
+    "n": 2,
+    "commands": "[\"RIGHT\",\"DOWN\"]"
+  },
+  {
+    "n": 3,
+    "commands": "[\"DOWN\",\"RIGHT\",\"UP\"]"
+  }
+]

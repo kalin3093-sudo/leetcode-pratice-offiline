@@ -1,0 +1,49 @@
+{
+  "id": "reduce-array-size-to-the-half",
+  "title": "1338. Reduce Array Size to The Half",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/reduce-array-size-to-the-half/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [3,3,3,3,5,5,5,2,2,7]",
+      "output": "2",
+      "explanation": "Choosing {3,7} will make the new array [5,5,5,2,2] which has size 5 (i.e equal to half of the size of the old array). Possible sets of size 2 are {3,5},{3,2},{5,2}. Choosing set {2,7} is not possible as it will make the new array [3,3,3,3,5,5,5] which has a size greater than half of the size of the old array."
+    },
+    {
+      "input": "arr = [7,7,7,7,7,7]",
+      "output": "1",
+      "explanation": "The only possible set you can choose is {7}. This will make the new array empty."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minSetSize(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minSetSize(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minSetSize(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function minSetSize(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinSetSize(int[] arr) {\n        \n    }\n}",
+    "go": "func minSetSize(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_set_size(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[3,3,3,3,5,5,5,2,2,7]"
+    },
+    {
+      "arr": "[7,7,7,7,7,7]"
+    }
+  ],
+  "functionName": "minSetSize",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the frequency of each integer in the array.",
+    "Start with an empty set, add to the set the integer with the maximum frequency.",
+    "Keep Adding the integer with the max frequency until you remove at least half of the integers."
+  ]
+}

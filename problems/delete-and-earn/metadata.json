@@ -1,0 +1,47 @@
+{
+  "id": "delete-and-earn",
+  "title": "740. Delete and Earn",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/delete-and-earn/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,4,2]",
+      "output": "6",
+      "explanation": "You can perform the following operations: - Delete 4 to earn 4 points. Consequently, 3 is also deleted. nums = [2]. - Delete 2 to earn 2 points. nums = []. You earn a total of 6 points."
+    },
+    {
+      "input": "nums = [2,2,3,3,3,4]",
+      "output": "9",
+      "explanation": "You can perform the following operations: - Delete a 3 to earn 3 points. All 2's and 4's are also deleted. nums = [3,3]. - Delete a 3 again to earn 3 points. nums = [3]. - Delete a 3 once more to earn 3 points. nums = []. You earn a total of 9 points."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int deleteAndEarn(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int deleteAndEarn(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def deleteAndEarn(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function deleteAndEarn(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DeleteAndEarn(int[] nums) {\n        \n    }\n}",
+    "go": "func deleteAndEarn(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn delete_and_earn(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,4,2]"
+    },
+    {
+      "nums": "[2,2,3,3,3,4]"
+    }
+  ],
+  "functionName": "deleteAndEarn",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If you take a number, you might as well take them all.  Keep track of what the value is of the subset of the input with maximum M when you either take or don't take M."
+  ]
+}

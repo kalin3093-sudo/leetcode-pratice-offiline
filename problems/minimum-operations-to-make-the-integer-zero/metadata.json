@@ -1,0 +1,56 @@
+{
+  "id": "minimum-operations-to-make-the-integer-zero",
+  "title": "2749. Minimum Operations to Make the Integer Zero",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "num1 = 3, num2 = -2",
+      "output": "3",
+      "explanation": "We can make 3 equal to 0 with the following operations: - We choose i = 2 and subtract 22 + (-2) from 3, 3 - (4 + (-2)) = 1. - We choose i = 2 and subtract 22 + (-2) from 1, 1 - (4 + (-2)) = -1. - We choose i = 0 and subtract 20 + (-2) from -1, (-1) - (1 + (-2)) = 0. It can be proven, that 3 is the minimum number of operations that we need to perform."
+    },
+    {
+      "input": "num1 = 5, num2 = 7",
+      "output": "-1",
+      "explanation": "It can be proven, that it is impossible to make 5 equal to 0 with the given operation."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int makeTheIntegerZero(int num1, int num2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int makeTheIntegerZero(int num1, int num2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeTheIntegerZero(self, num1: int, num2: int) -> int:\n        ",
+    "typescript": "function makeTheIntegerZero(num1: number, num2: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MakeTheIntegerZero(int num1, int num2) {\n        \n    }\n}",
+    "go": "func makeTheIntegerZero(num1 int, num2 int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_the_integer_zero(num1: i32, num2: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num1": 3,
+      "num2": -2
+    },
+    {
+      "num1": 5,
+      "num2": 7
+    }
+  ],
+  "functionName": "makeTheIntegerZero",
+  "params": [
+    {
+      "name": "num1",
+      "type": "int"
+    },
+    {
+      "name": "num2",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If we want to make integer n equal to 0 by only subtracting powers of 2 from n, in how many operations can we achieve it?",
+    "We need at least - the number of bits in the binary representation of n, and at most - n.",
+    "Notice that, if it is possible to make num1 equal to 0, then we need at most 60 operations.",
+    "Iterate on the number of operations."
+  ]
+}

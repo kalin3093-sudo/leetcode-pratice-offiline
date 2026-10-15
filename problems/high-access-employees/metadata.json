@@ -1,0 +1,56 @@
+{
+  "id": "high-access-employees",
+  "title": "2933. High-Access Employees",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/high-access-employees/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "access_times = [[\"a\",\"0549\"],[\"b\",\"0457\"],[\"a\",\"0532\"],[\"a\",\"0621\"],[\"b\",\"0540\"]]",
+      "output": "[\"a\"]",
+      "explanation": "\"a\" has three access times in the one-hour period of [05:32, 06:31] which are 05:32, 05:49, and 06:21. But \"b\" does not have more than two access times at all. So the answer is [\"a\"]."
+    },
+    {
+      "input": "access_times = [[\"d\",\"0002\"],[\"c\",\"0808\"],[\"c\",\"0829\"],[\"e\",\"0215\"],[\"d\",\"1508\"],[\"d\",\"1444\"],[\"d\",\"1410\"],[\"c\",\"0809\"]]",
+      "output": "[\"c\",\"d\"]",
+      "explanation": "\"c\" has three access times in the one-hour period of [08:08, 09:07] which are 08:08, 08:09, and 08:29. \"d\" has also three access times in the one-hour period of [14:10, 15:09] which are 14:10, 14:44, and 15:08. However, \"e\" has just one access time, so it can not be in the answer and the final answer is [\"c\",\"d\"]."
+    },
+    {
+      "input": "access_times = [[\"cd\",\"1025\"],[\"ab\",\"1025\"],[\"cd\",\"1046\"],[\"cd\",\"1055\"],[\"ab\",\"1124\"],[\"ab\",\"1120\"]]",
+      "output": "[\"ab\",\"cd\"]",
+      "explanation": "\"ab\" has three access times in the one-hour period of [10:25, 11:24] which are 10:25, 11:20, and 11:24. \"cd\" has also three access times in the one-hour period of [10:25, 11:24] which are 10:25, 10:46, and 10:55. So the answer is [\"ab\",\"cd\"]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findHighAccessEmployees(vector<vector<string>>& access_times) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> findHighAccessEmployees(List<List<String>> access_times) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findHighAccessEmployees(self, access_times: List[List[str]]) -> List[str]:\n        ",
+    "typescript": "function findHighAccessEmployees(access_times: string[][]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> FindHighAccessEmployees(IList<IList<string>> access_times) {\n        \n    }\n}",
+    "go": "func findHighAccessEmployees(access_times [][]string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_high_access_employees(access_times: Vec<Vec<String>>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "access_times": "[[\"a\",\"0549\"],[\"b\",\"0457\"],[\"a\",\"0532\"],[\"a\",\"0621\"],[\"b\",\"0540\"]]"
+    },
+    {
+      "access_times": "[[\"d\",\"0002\"],[\"c\",\"0808\"],[\"c\",\"0829\"],[\"e\",\"0215\"],[\"d\",\"1508\"],[\"d\",\"1444\"],[\"d\",\"1410\"],[\"c\",\"0809\"]]"
+    },
+    {
+      "access_times": "[[\"cd\",\"1025\"],[\"ab\",\"1025\"],[\"cd\",\"1046\"],[\"cd\",\"1055\"],[\"ab\",\"1124\"],[\"ab\",\"1120\"]]"
+    }
+  ],
+  "functionName": "findHighAccessEmployees",
+  "params": [
+    {
+      "name": "access_times",
+      "type": "string_list_2d"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "Sort the access times in each person’s list.",
+    "A person’s name should be in the answer list if there are <code>2</code> access times in his/her access time list (after sorting), where the index difference is at least <code>2</code> and the time difference is strictly less than <code>60</code> minutes."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "rotating-the-box",
+  "title": "1861. Rotating the Box",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/rotating-the-box/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "boxGrid = [[\"#\",\".\",\"#\"]]",
+      "output": "[[\".\"],[\"#\"],[\"#\"]]"
+    },
+    {
+      "input": "boxGrid = [[\"#\",\".\",\"*\",\".\"], [\"#\",\"#\",\"*\",\".\"]]",
+      "output": "[[\"#\",\".\"],[\"#\",\"#\"],[\"*\",\"*\"],[\".\",\".\"]]"
+    },
+    {
+      "input": "boxGrid = [[\"#\",\"#\",\"*\",\".\",\"*\",\".\"], [\"#\",\"#\",\"#\",\"*\",\".\",\".\"], [\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]",
+      "output": "[[\".\",\"#\",\"#\"],[\".\",\"#\",\"#\"],[\"#\",\"#\",\"*\"],[\"#\",\"*\",\".\"],[\"#\",\".\",\"*\"],[\"#\",\".\",\".\"]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<char>> rotateTheBox(vector<vector<char>>& boxGrid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public char[][] rotateTheBox(char[][] boxGrid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rotateTheBox(self, boxGrid: list[list[str]]) -> list[list[str]]:\n        ",
+    "typescript": "function rotateTheBox(boxGrid: string[][]): string[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public char[][] RotateTheBox(char[][] boxGrid) {\n        \n    }\n}",
+    "go": "func rotateTheBox(boxGrid [][]byte) [][]byte {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rotate_the_box(box_grid: Vec<Vec<char>>) -> Vec<Vec<char>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "boxGrid": "[[\"#\",\".\",\"#\"]]"
+    },
+    {
+      "boxGrid": "[[\"#\",\".\",\"*\",\".\"],[\"#\",\"#\",\"*\",\".\"]]"
+    },
+    {
+      "boxGrid": "[[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],[\"#\",\"#\",\"#\",\"*\",\".\",\".\"],[\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]"
+    }
+  ],
+  "functionName": "rotateTheBox",
+  "params": [
+    {
+      "name": "boxGrid",
+      "type": "char_array_2d"
+    }
+  ],
+  "outputType": "char_array_2d",
+  "hints": [
+    "Rotate the box using the relation rotatedBox[i][j] = box[m - 1 - j][i].",
+    "Start iterating from the bottom of the box and for each empty cell check if there is any stone above it with no obstacles between them."
+  ]
+}

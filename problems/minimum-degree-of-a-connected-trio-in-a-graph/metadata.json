@@ -1,0 +1,54 @@
+{
+  "id": "minimum-degree-of-a-connected-trio-in-a-graph",
+  "title": "1761. Minimum Degree of a Connected Trio in a Graph",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/",
+  "category": "graph-theory",
+  "examples": [
+    {
+      "input": "n = 6, edges = [[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]",
+      "output": "3",
+      "explanation": "There is exactly one trio, which is [1,2,3]. The edges that form its degree are bolded in the figure above."
+    },
+    {
+      "input": "n = 7, edges = [[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]",
+      "output": "0",
+      "explanation": "There are exactly three trios: 1) [1,4,3] with degree 0. 2) [2,5,6] with degree 2. 3) [5,6,7] with degree 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minTrioDegree(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minTrioDegree(int n, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minTrioDegree(self, n: int, edges: list[list[int]]) -> int:\n        ",
+    "typescript": "function minTrioDegree(n: number, edges: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinTrioDegree(int n, int[][] edges) {\n        \n    }\n}",
+    "go": "func minTrioDegree(n int, edges [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_trio_degree(n: i32, edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "edges": "[[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]"
+    },
+    {
+      "n": 7,
+      "edges": "[[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]"
+    }
+  ],
+  "functionName": "minTrioDegree",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider a trio with nodes u, v, and w. The degree of the trio is just degree(u) + degree(v) + degree(w) - 6. The -6 comes from subtracting the edges u-v, u-w, and v-w, which are counted twice each in the vertex degree calculation.",
+    "To get the trios (u,v,w), you can iterate on u, then iterate on each w,v such that w and v are neighbors of u and are neighbors of each other."
+  ]
+}

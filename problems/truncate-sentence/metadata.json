@@ -1,0 +1,62 @@
+{
+  "id": "truncate-sentence",
+  "title": "1816. Truncate Sentence",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/truncate-sentence/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"Hello how are you Contestant\", k = 4",
+      "output": "\"Hello how are you\"",
+      "explanation": "The words in s are [\"Hello\", \"how\", \"are\", \"you\", \"Contestant\"]. The first 4 words are [\"Hello\", \"how\", \"are\", \"you\"]. Hence, you should return \"Hello how are you\"."
+    },
+    {
+      "input": "s = \"What is the solution to this problem\", k = 4",
+      "output": "\"What is the solution\"",
+      "explanation": "The words in s are [\"What\", \"is\", \"the\", \"solution\", \"to\", \"this\", \"problem\"]. The first 4 words are [\"What\", \"is\", \"the\", \"solution\"]. Hence, you should return \"What is the solution\"."
+    },
+    {
+      "input": "s = \"chopper is not a tanuki\", k = 5",
+      "output": "\"chopper is not a tanuki\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string truncateSentence(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String truncateSentence(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def truncateSentence(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function truncateSentence(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string TruncateSentence(string s, int k) {\n        \n    }\n}",
+    "go": "func truncateSentence(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn truncate_sentence(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "Hello how are you Contestant",
+      "k": 4
+    },
+    {
+      "s": "What is the solution to this problem",
+      "k": 4
+    },
+    {
+      "s": "chopper is not a tanuki",
+      "k": 5
+    }
+  ],
+  "functionName": "truncateSentence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "It's easier to solve this problem on an array of strings so parse the string to an array of words",
+    "After return the first k words as a sentence"
+  ]
+}

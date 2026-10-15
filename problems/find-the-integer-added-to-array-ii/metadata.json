@@ -1,0 +1,54 @@
+{
+  "id": "find-the-integer-added-to-array-ii",
+  "title": "3132. Find the Integer Added to Array II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-integer-added-to-array-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [4,20,16,12,8], nums2 = [14,18,10]",
+      "output": "-2",
+      "explanation": "After removing elements at indices [0,4] and adding -2, nums1 becomes [18,14,10]."
+    },
+    {
+      "input": "nums1 = [3,5,5,3], nums2 = [7,7]",
+      "output": "2",
+      "explanation": "After removing elements at indices [0,3] and adding 2, nums1 becomes [7,7]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumAddedInteger(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumAddedInteger(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumAddedInteger(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
+    "typescript": "function minimumAddedInteger(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumAddedInteger(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func minimumAddedInteger(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_added_integer(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[4,20,16,12,8]",
+      "nums2": "[14,18,10]"
+    },
+    {
+      "nums1": "[3,5,5,3]",
+      "nums2": "[7,7]"
+    }
+  ],
+  "functionName": "minimumAddedInteger",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try all possibilities to remove 2 elements from <code>nums1</code>.",
+    "<code>x</code> should be equal to <code>min(nums2) - min(nums1)</code>, check it naively."
+  ]
+}

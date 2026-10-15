@@ -1,0 +1,45 @@
+{
+  "id": "thousand-separator",
+  "title": "1556. Thousand Separator",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/thousand-separator/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 987",
+      "output": "\"987\""
+    },
+    {
+      "input": "n = 1234",
+      "output": "\"1.234\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string thousandSeparator(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String thousandSeparator(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def thousandSeparator(self, n: int) -> str:\n        ",
+    "typescript": "function thousandSeparator(n: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ThousandSeparator(int n) {\n        \n    }\n}",
+    "go": "func thousandSeparator(n int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn thousand_separator(n: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 987
+    },
+    {
+      "n": 1234
+    }
+  ],
+  "functionName": "thousandSeparator",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Scan from the back of the integer and use dots to connect blocks with length 3 except the last block."
+  ]
+}

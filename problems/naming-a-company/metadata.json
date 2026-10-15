@@ -1,0 +1,50 @@
+{
+  "id": "naming-a-company",
+  "title": "2306. Naming a Company",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/naming-a-company/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "ideas = [\"coffee\",\"donuts\",\"time\",\"toffee\"]",
+      "output": "6",
+      "explanation": "The following selections are valid: - (\"coffee\", \"donuts\"): The company name created is \"doffee conuts\". - (\"donuts\", \"coffee\"): The company name created is \"conuts doffee\". - (\"donuts\", \"time\"): The company name created is \"tonuts dime\". - (\"donuts\", \"toffee\"): The company name created is \"tonuts doffee\". - (\"time\", \"donuts\"): The company name created is \"dime tonuts\". - (\"toffee\", \"donuts\"): The company name created is \"doffee tonuts\". Therefore, there are a total of 6 distinct company names. The following are some examples of invalid selections: - (\"coffee\", \"time\"): The name \"toffee\" formed after swapping already exists in the original array. - (\"time\", \"toffee\"): Both names are still the same after swapping and exist in the original array. - (\"coffee\", \"toffee\"): Both names formed after swapping already exist in the original array."
+    },
+    {
+      "input": "ideas = [\"lack\",\"back\"]",
+      "output": "0",
+      "explanation": "There are no valid selections. Therefore, 0 is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long distinctNames(vector<string>& ideas) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long distinctNames(String[] ideas) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distinctNames(self, ideas: list[str]) -> int:\n        ",
+    "typescript": "function distinctNames(ideas: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long DistinctNames(string[] ideas) {\n        \n    }\n}",
+    "go": "func distinctNames(ideas []string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distinct_names(ideas: Vec<String>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "ideas": "[\"coffee\",\"donuts\",\"time\",\"toffee\"]"
+    },
+    {
+      "ideas": "[\"lack\",\"back\"]"
+    }
+  ],
+  "functionName": "distinctNames",
+  "params": [
+    {
+      "name": "ideas",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "How can we divide the ideas into groups to make it easier to find valid pairs?",
+    "Group ideas that share the same suffix (all characters except the first) together and notice that a pair of ideas from the same group is invalid. What about pairs of ideas from different groups?",
+    "The first letter of the idea in the first group must not be the first letter of an idea in the second group and vice versa.",
+    "We can efficiently count the valid pairings for an idea if we already know how many ideas starting with a letter x are within a group that does not contain any ideas with starting letter y for all letters x and y."
+  ]
+}

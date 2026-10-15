@@ -1,0 +1,55 @@
+{
+  "id": "number-of-sub-arrays-with-odd-sum",
+  "title": "1524. Number of Sub-arrays With Odd Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [1,3,5]",
+      "output": "4",
+      "explanation": "All subarrays are [[1],[1,3],[1,3,5],[3],[3,5],[5]] All sub-arrays sum are [1,4,9,3,8,5]. Odd sums are [1,9,3,5] so the answer is 4."
+    },
+    {
+      "input": "arr = [2,4,6]",
+      "output": "0",
+      "explanation": "All subarrays are [[2],[2,4],[2,4,6],[4],[4,6],[6]] All sub-arrays sum are [2,6,12,4,10,6]. All sub-arrays have even sum and the answer is 0."
+    },
+    {
+      "input": "arr = [1,2,3,4,5,6,7]",
+      "output": "16"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numOfSubarrays(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numOfSubarrays(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numOfSubarrays(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function numOfSubarrays(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumOfSubarrays(int[] arr) {\n        \n    }\n}",
+    "go": "func numOfSubarrays(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_of_subarrays(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[1,3,5]"
+    },
+    {
+      "arr": "[2,4,6]"
+    },
+    {
+      "arr": "[1,2,3,4,5,6,7]"
+    }
+  ],
+  "functionName": "numOfSubarrays",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we use the accumulative sum to keep track of all the odd-sum sub-arrays ?",
+    "if the current accu sum is odd, we care only about previous even accu sums and vice versa."
+  ]
+}

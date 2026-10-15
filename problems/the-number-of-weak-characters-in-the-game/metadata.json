@@ -1,0 +1,56 @@
+{
+  "id": "the-number-of-weak-characters-in-the-game",
+  "title": "1996. The Number of Weak Characters in the Game",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "properties = [[5,5],[6,3],[3,6]]",
+      "output": "0",
+      "explanation": "No character has strictly greater attack and defense than the other."
+    },
+    {
+      "input": "properties = [[2,2],[3,3]]",
+      "output": "1",
+      "explanation": "The first character is weak because the second character has a strictly greater attack and defense."
+    },
+    {
+      "input": "properties = [[1,5],[10,4],[4,3]]",
+      "output": "1",
+      "explanation": "The third character is weak because the second character has a strictly greater attack and defense."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfWeakCharacters(vector<vector<int>>& properties) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfWeakCharacters(int[][] properties) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfWeakCharacters(self, properties: list[list[int]]) -> int:\n        ",
+    "typescript": "function numberOfWeakCharacters(properties: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfWeakCharacters(int[][] properties) {\n        \n    }\n}",
+    "go": "func numberOfWeakCharacters(properties [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_weak_characters(properties: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "properties": "[[5,5],[6,3],[3,6]]"
+    },
+    {
+      "properties": "[[2,2],[3,3]]"
+    },
+    {
+      "properties": "[[1,5],[10,4],[4,3]]"
+    }
+  ],
+  "functionName": "numberOfWeakCharacters",
+  "params": [
+    {
+      "name": "properties",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the array on the basis of the attack values and group characters with the same attack together. How can you use these groups?",
+    "Characters in one group will always have a lesser attack value than the characters of the next group. Hence, we will only need to check if there is a higher defense value present in the next groups."
+  ]
+}

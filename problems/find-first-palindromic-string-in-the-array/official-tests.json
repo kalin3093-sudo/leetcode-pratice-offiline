@@ -1,0 +1,11 @@
+[
+  {
+    "words": "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]"
+  },
+  {
+    "words": "[\"notapalindrome\",\"racecar\"]"
+  },
+  {
+    "words": "[\"def\",\"ghi\"]"
+  }
+]

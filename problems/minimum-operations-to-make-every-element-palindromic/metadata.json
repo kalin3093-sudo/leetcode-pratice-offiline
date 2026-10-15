@@ -1,0 +1,57 @@
+{
+  "id": "minimum-operations-to-make-every-element-palindromic",
+  "title": "4053. Minimum Operations to Make Every Element Palindromic",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-every-element-palindromic/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,12,14,16]",
+      "output": "9",
+      "explanation": "One optimal sequence of operations is: Decrement nums[0] by 2 once to change it from 10 to 8. Decrement nums[1] by 2 twice to change it from 12 to 8. Decrement nums[2] by 2 three times to change it from 14 to 8. Increment nums[3] by 2 three times to change it from 16 to 22. After 1 + 2 + 3 + 3 = 9 operations, nums = [8, 8, 8, 22], and every element is a positive palindromic integer. It can be shown that fewer than 9 operations cannot achieve this."
+    },
+    {
+      "input": "nums = [9,10,11,10]",
+      "output": "2",
+      "explanation": "Decrement nums[1] and nums[3] by 2 once each. After 2 operations, nums = [9, 8, 11, 8], and every element is a positive palindromic integer. At least one operation is needed for each of these two elements, so the minimum number of operations is 2."
+    },
+    {
+      "input": "nums = [125]",
+      "output": "2",
+      "explanation": "Decrement nums[0] by 2 twice to change it from 125 to 121, which is a positive palindromic integer. A single operation would change it to 123 or 127, neither of which is palindromic. Thus, the minimum number of operations is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,12,14,16]\r"
+    },
+    {
+      "nums": "[9,10,11,10]\r"
+    },
+    {
+      "nums": "[125]\r"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<p>Each operation preserves parity. Handle each element independently by finding its nearest positive palindrome of the same parity.</p>",
+    "<p>Precompute all positive palindromes up to 2,000,000,002 by mirroring their first halves, and separate them into sorted lists by parity. Perform this precomputation <strong>only once</strong>, using global or static initialization, and reuse the lists across all test cases.</p>",
+    "<p>Binary search the appropriate list for the closest candidates on either side of each element. Changing <code>x</code> into <code>p</code> costs <code>|x - p| / 2</code> operations.</p>"
+  ]
+}

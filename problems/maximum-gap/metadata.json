@@ -1,0 +1,45 @@
+{
+  "id": "maximum-gap",
+  "title": "164. Maximum Gap",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-gap/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,6,9,1]",
+      "output": "3",
+      "explanation": "The sorted form of the array is [1,3,6,9], either (3,6) or (6,9) has the maximum difference 3."
+    },
+    {
+      "input": "nums = [10]",
+      "output": "0",
+      "explanation": "The array contains less than 2 elements, therefore return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumGap(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumGap(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumGap(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maximumGap(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumGap(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumGap(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_gap(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,6,9,1]"
+    },
+    {
+      "nums": "[10]"
+    }
+  ],
+  "functionName": "maximumGap",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,25 @@
+import java.util.*;
+class Marker {
+  public int numRollsToTarget(int n, int k, int target) {
+    final int MOD = 1_000_000_007;
+    int[] dp = new int[target + 1];
+    dp[0] = 1;
+
+    while (n-- > 0) { // n dices
+      int[] newDp = new int[target + 1];
+      for (int i = 1; i <= k; ++i)          // numbers 1, 2, ..., f
+        for (int t = i; t <= target; ++t) { // all the possible targets
+          newDp[t] += dp[t - i];
+          newDp[t] %= MOD;
+        }
+      dp = newDp;
+    }
+
+    return dp[target];
+  }
+
+    public boolean isCorrect(int n, int k, int target, int output) {
+        int expected = numRollsToTarget(n, k, target);
+        return expected == output;
+    }
+}

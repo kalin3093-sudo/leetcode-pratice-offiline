@@ -1,0 +1,64 @@
+{
+  "id": "maximize-happiness-of-selected-children",
+  "title": "3075. Maximize Happiness of Selected Children",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-happiness-of-selected-children/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "happiness = [1,2,3], k = 2",
+      "output": "4",
+      "explanation": "We can pick 2 children in the following way: - Pick the child with the happiness value == 3. The happiness value of the remaining children becomes [0,1]. - Pick the child with the happiness value == 1. The happiness value of the remaining child becomes [0]. Note that the happiness value cannot become less than 0. The sum of the happiness values of the selected children is 3 + 1 = 4."
+    },
+    {
+      "input": "happiness = [1,1,1,1], k = 2",
+      "output": "1",
+      "explanation": "We can pick 2 children in the following way: - Pick any child with the happiness value == 1. The happiness value of the remaining children becomes [0,0,0]. - Pick the child with the happiness value == 0. The happiness value of the remaining child becomes [0,0]. The sum of the happiness values of the selected children is 1 + 0 = 1."
+    },
+    {
+      "input": "happiness = [2,3,4,5], k = 1",
+      "output": "5",
+      "explanation": "We can pick 1 child in the following way: - Pick the child with the happiness value == 5. The happiness value of the remaining children becomes [1,2,3]. The sum of the happiness values of the selected children is 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumHappinessSum(vector<int>& happiness, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumHappinessSum(int[] happiness, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumHappinessSum(self, happiness: List[int], k: int) -> int:\n        ",
+    "typescript": "function maximumHappinessSum(happiness: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumHappinessSum(int[] happiness, int k) {\n        \n    }\n}",
+    "go": "func maximumHappinessSum(happiness []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_happiness_sum(happiness: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "happiness": "[1,2,3]",
+      "k": 2
+    },
+    {
+      "happiness": "[1,1,1,1]",
+      "k": 2
+    },
+    {
+      "happiness": "[2,3,4,5]",
+      "k": 1
+    }
+  ],
+  "functionName": "maximumHappinessSum",
+  "params": [
+    {
+      "name": "happiness",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Since all the unselected numbers are decreasing at the same rate, we should greedily select <code>k</code> largest values.",
+    "The <code>i<sup>th</code> largest number (<code>i = 1, 2, 3,…k</code>) should decrease by <code>(i - 1)</code> when it is picked.",
+    "Add <code>0</code> if the decreased value is negative."
+  ]
+}

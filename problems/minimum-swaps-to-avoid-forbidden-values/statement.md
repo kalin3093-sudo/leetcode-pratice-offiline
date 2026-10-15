@@ -1,0 +1,12 @@
+You are given two integer arrays, `nums` and `forbidden`, each of length `n`.
+
+You may perform the following operation any number of times (including zero):
+
+-   Choose two **distinct** indices `i` and `j`, and swap `nums[i]` with `nums[j]`.
+
+Return the **minimum** number of swaps required such that, for every index `i`, the value of `nums[i]` is **not equal** to `forbidden[i]`. If no amount of swaps can ensure that every index avoids its forbidden value, return -1.
+
+**Constraints:**
+
+-   `1 ≤ n == nums.length == forbidden.length ≤ 10^5`
+-   `1 ≤ nums[i], forbidden[i] ≤ 10^9`

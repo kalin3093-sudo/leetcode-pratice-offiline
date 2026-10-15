@@ -1,0 +1,58 @@
+{
+  "id": "image-overlap",
+  "title": "835. Image Overlap",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/image-overlap/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "img1 = [[1,1,0],[0,1,0],[0,1,0]], img2 = [[0,0,0],[0,1,1],[0,0,1]]",
+      "output": "3",
+      "explanation": "We translate img1 to right by 1 unit and down by 1 unit. The number of positions that have a 1 in both images is 3 (shown in red)."
+    },
+    {
+      "input": "img1 = [[1]], img2 = [[1]]",
+      "output": "1"
+    },
+    {
+      "input": "img1 = [[0]], img2 = [[0]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestOverlap(vector<vector<int>>& img1, vector<vector<int>>& img2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestOverlap(int[][] img1, int[][] img2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestOverlap(self, img1: list[list[int]], img2: list[list[int]]) -> int:\n        ",
+    "typescript": "function largestOverlap(img1: number[][], img2: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestOverlap(int[][] img1, int[][] img2) {\n        \n    }\n}",
+    "go": "func largestOverlap(img1 [][]int, img2 [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_overlap(img1: Vec<Vec<i32>>, img2: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "img1": "[[1,1,0],[0,1,0],[0,1,0]]",
+      "img2": "[[0,0,0],[0,1,1],[0,0,1]]"
+    },
+    {
+      "img1": "[[1]]",
+      "img2": "[[1]]"
+    },
+    {
+      "img1": "[[0]]",
+      "img2": "[[0]]"
+    }
+  ],
+  "functionName": "largestOverlap",
+  "params": [
+    {
+      "name": "img1",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "img2",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

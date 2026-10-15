@@ -1,0 +1,47 @@
+{
+  "id": "minimum-number-game",
+  "title": "2974. Minimum Number Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-number-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,4,2,3]",
+      "output": "[3,2,5,4]",
+      "explanation": "In round one, first Alice removes 2 and then Bob removes 3. Then in arr firstly Bob appends 3 and then Alice appends 2. So arr = [3,2]. At the begining of round two, nums = [5,4]. Now, first Alice removes 4 and then Bob removes 5. Then both append in arr which becomes [3,2,5,4]."
+    },
+    {
+      "input": "nums = [2,5]",
+      "output": "[5,2]",
+      "explanation": "In round one, first Alice removes 2 and then Bob removes 5. Then in arr firstly Bob appends and then Alice appends. So arr = [5,2]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> numberGame(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] numberGame(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberGame(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function numberGame(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] NumberGame(int[] nums) {\n        \n    }\n}",
+    "go": "func numberGame(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_game(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,4,2,3]"
+    },
+    {
+      "nums": "[2,5]"
+    }
+  ],
+  "functionName": "numberGame",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Sort the array in increasing order and then swap the adjacent elements."
+  ]
+}

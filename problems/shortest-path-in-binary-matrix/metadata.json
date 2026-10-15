@@ -1,0 +1,52 @@
+{
+  "id": "shortest-path-in-binary-matrix",
+  "title": "1091. Shortest Path in Binary Matrix",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1],[1,0]]",
+      "output": "2"
+    },
+    {
+      "input": "grid = [[0,0,0],[1,1,0],[1,1,0]]",
+      "output": "4"
+    },
+    {
+      "input": "grid = [[1,0,0],[1,1,0],[1,1,0]]",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestPathBinaryMatrix(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestPathBinaryMatrix(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestPathBinaryMatrix(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function shortestPathBinaryMatrix(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestPathBinaryMatrix(int[][] grid) {\n        \n    }\n}",
+    "go": "func shortestPathBinaryMatrix(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_path_binary_matrix(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1],[1,0]]"
+    },
+    {
+      "grid": "[[0,0,0],[1,1,0],[1,1,0]]"
+    },
+    {
+      "grid": "[[1,0,0],[1,1,0],[1,1,0]]"
+    }
+  ],
+  "functionName": "shortestPathBinaryMatrix",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Do a breadth first search to find the shortest path."
+  ]
+}

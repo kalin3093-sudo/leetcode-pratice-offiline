@@ -1,0 +1,54 @@
+{
+  "id": "find-the-student-that-will-replace-the-chalk",
+  "title": "1894. Find the Student that Will Replace the Chalk",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "chalk = [5,1,5], k = 22",
+      "output": "0",
+      "explanation": "The students go in turns as follows: - Student number 0 uses 5 chalk, so k = 17. - Student number 1 uses 1 chalk, so k = 16. - Student number 2 uses 5 chalk, so k = 11. - Student number 0 uses 5 chalk, so k = 6. - Student number 1 uses 1 chalk, so k = 5. - Student number 2 uses 5 chalk, so k = 0. Student number 0 does not have enough chalk, so they will have to replace it."
+    },
+    {
+      "input": "chalk = [3,4,1,2], k = 25",
+      "output": "1",
+      "explanation": "The students go in turns as follows: - Student number 0 uses 3 chalk so k = 22. - Student number 1 uses 4 chalk so k = 18. - Student number 2 uses 1 chalk so k = 17. - Student number 3 uses 2 chalk so k = 15. - Student number 0 uses 3 chalk so k = 12. - Student number 1 uses 4 chalk so k = 8. - Student number 2 uses 1 chalk so k = 7. - Student number 3 uses 2 chalk so k = 5. - Student number 0 uses 3 chalk so k = 2. Student number 1 does not have enough chalk, so they will have to replace it."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int chalkReplacer(vector<int>& chalk, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int chalkReplacer(int[] chalk, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def chalkReplacer(self, chalk: list[int], k: int) -> int:\n        ",
+    "typescript": "function chalkReplacer(chalk: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ChalkReplacer(int[] chalk, int k) {\n        \n    }\n}",
+    "go": "func chalkReplacer(chalk []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn chalk_replacer(chalk: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "chalk": "[5,1,5]",
+      "k": 22
+    },
+    {
+      "chalk": "[3,4,1,2]",
+      "k": 25
+    }
+  ],
+  "functionName": "chalkReplacer",
+  "params": [
+    {
+      "name": "chalk",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Subtract the sum of chalk from k until k is less than the sum of chalk.",
+    "Now iterate over the array. If chalk[i] is less than k, this is the answer. Otherwise, subtract chalk[i] from k and continue."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "remove-k-balanced-substrings",
+  "title": "3703. Remove K-Balanced Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-k-balanced-substrings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"(())\", k = 1",
+      "output": "\"\"",
+      "explanation": "k-balanced substring is \"()\" Step Current s k-balanced Result s 1 (()) (()) () 2 () () Empty Thus, the final string is \"\"."
+    },
+    {
+      "input": "s = \"(()(\", k = 1",
+      "output": "\"((\"",
+      "explanation": "k-balanced substring is \"()\" Step Current s k-balanced Result s 1 (()( (()( (( 2 (( - (( Thus, the final string is \"((\"."
+    },
+    {
+      "input": "s = \"((()))()()()\", k = 3",
+      "output": "\"()()()\"",
+      "explanation": "k-balanced substring is \"((()))\" Step Current s k-balanced Result s 1 ((()))()()() ((()))()()() ()()() 2 ()()() - ()()() Thus, the final string is \"()()()\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string removeSubstring(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String removeSubstring(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeSubstring(self, s: str, k: int) -> str:\n        ",
+    "typescript": "function removeSubstring(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RemoveSubstring(string s, int k) {\n        \n    }\n}",
+    "go": "func removeSubstring(s string, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_substring(s: String, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "(())",
+      "k": 1
+    },
+    {
+      "s": "(()(",
+      "k": 1
+    },
+    {
+      "s": "((()))()()()",
+      "k": 3
+    }
+  ],
+  "functionName": "removeSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Use a stack",
+    "Try run-length encoding; operations only happen at boundaries of '(' and ')' runs",
+    "When adjacent runs are '(' then ')', you can cancel in blocks of k"
+  ]
+}

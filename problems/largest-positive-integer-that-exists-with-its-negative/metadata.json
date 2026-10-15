@@ -1,0 +1,56 @@
+{
+  "id": "largest-positive-integer-that-exists-with-its-negative",
+  "title": "2441. Largest Positive Integer That Exists With Its Negative",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [-1,2,-3,3]",
+      "output": "3",
+      "explanation": "3 is the only valid k we can find in the array."
+    },
+    {
+      "input": "nums = [-1,10,6,7,-7,1]",
+      "output": "7",
+      "explanation": "Both 1 and 7 have their corresponding negative values in the array. 7 has a larger value."
+    },
+    {
+      "input": "nums = [-10,8,6,7,-2,-3]",
+      "output": "-1",
+      "explanation": "There is no a single valid k, we return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMaxK(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMaxK(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMaxK(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function findMaxK(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMaxK(int[] nums) {\n        \n    }\n}",
+    "go": "func findMaxK(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_max_k(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[-1,2,-3,3]"
+    },
+    {
+      "nums": "[-1,10,6,7,-7,1]"
+    },
+    {
+      "nums": "[-10,8,6,7,-2,-3]"
+    }
+  ],
+  "functionName": "findMaxK",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What data structure can help you to determine if an element exists?",
+    "Would a hash table help?"
+  ]
+}

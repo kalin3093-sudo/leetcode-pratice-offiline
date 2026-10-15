@@ -1,0 +1,46 @@
+{
+  "id": "special-binary-string",
+  "title": "761. Special Binary String",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/special-binary-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"11011000\"",
+      "output": "\"11100100\"",
+      "explanation": "The strings \"10\" [occuring at s[1]] and \"1100\" [at s[3]] are swapped. This is the lexicographically largest string possible after some number of swaps."
+    },
+    {
+      "input": "s = \"10\"",
+      "output": "\"10\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string makeLargestSpecial(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String makeLargestSpecial(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeLargestSpecial(self, s: str) -> str:\n        ",
+    "typescript": "function makeLargestSpecial(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MakeLargestSpecial(string s) {\n        \n    }\n}",
+    "go": "func makeLargestSpecial(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_largest_special(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "11011000"
+    },
+    {
+      "s": "10"
+    }
+  ],
+  "functionName": "makeLargestSpecial",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Draw a line from (x, y) to (x+1, y+1) if we see a \"1\", else to (x+1, y-1).\r\nA special substring is just a line that starts and ends at the same y-coordinate, and that is the lowest y-coordinate reached.\r\nCall a mountain a special substring with no special prefixes - ie. only at the beginning and end is the lowest y-coordinate reached.\r\nIf F is the answer function, and S has mountain decomposition M1,M2,M3,...,Mk,  then the answer is:\r\nreverse_sorted(F(M1), F(M2), ..., F(Mk)).\r\nHowever, you'll also need to deal with the case that S is a mountain, such as 11011000 -> 11100100."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "sort-characters-by-frequency",
+  "title": "451. Sort Characters By Frequency",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sort-characters-by-frequency/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"tree\"",
+      "output": "\"eert\"",
+      "explanation": "'e' appears twice while 'r' and 't' both appear once. So 'e' must appear before both 'r' and 't'. Therefore \"eetr\" is also a valid answer."
+    },
+    {
+      "input": "s = \"cccaaa\"",
+      "output": "\"aaaccc\"",
+      "explanation": "Both 'c' and 'a' appear three times, so both \"cccaaa\" and \"aaaccc\" are valid answers. Note that \"cacaca\" is incorrect, as the same characters must be together."
+    },
+    {
+      "input": "s = \"Aabb\"",
+      "output": "\"bbAa\"",
+      "explanation": "\"bbaA\" is also a valid answer, but \"Aabb\" is incorrect. Note that 'A' and 'a' are treated as two different characters."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string frequencySort(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String frequencySort(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def frequencySort(self, s: str) -> str:\n        ",
+    "typescript": "function frequencySort(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FrequencySort(string s) {\n        \n    }\n}",
+    "go": "func frequencySort(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn frequency_sort(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "tree"
+    },
+    {
+      "s": "cccaaa"
+    },
+    {
+      "s": "Aabb"
+    }
+  ],
+  "functionName": "frequencySort",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

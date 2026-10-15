@@ -1,0 +1,71 @@
+{
+  "id": "sum-of-k-digit-numbers-in-a-range",
+  "title": "3855. Sum of K-Digit Numbers in a Range",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-k-digit-numbers-in-a-range/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "l = 1, r = 2, k = 2",
+      "output": "66",
+      "explanation": "All numbers formed using k = 2 digits in the range [1, 2] are 11, 12, 21, 22. The total sum is 11 + 12 + 21 + 22 = 66."
+    },
+    {
+      "input": "l = 0, r = 1, k = 3",
+      "output": "444",
+      "explanation": "All numbers formed using k = 3 digits in the range [0, 1] are 000, 001, 010, 011, 100, 101, 110, 111. These numbers without leading zeros are 0, 1, 10, 11, 100, 101, 110, 111. The total sum is 444."
+    },
+    {
+      "input": "l = 5, r = 5, k = 10",
+      "output": "555555520",
+      "explanation": "5555555555 is the only valid number consisting of k = 10 digits in the range [5, 5]. The total sum is 5555555555 % (109 + 7) = 555555520."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfNumbers(int l, int r, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfNumbers(int l, int r, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfNumbers(self, l: int, r: int, k: int) -> int:\n        ",
+    "typescript": "function sumOfNumbers(l: number, r: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfNumbers(int l, int r, int k) {\n        \n    }\n}",
+    "go": "func sumOfNumbers(l int, r int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_numbers(l: i32, r: i32, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "l": 1,
+      "r": 2,
+      "k": 2
+    },
+    {
+      "l": 0,
+      "r": 1,
+      "k": 3
+    },
+    {
+      "l": 5,
+      "r": 5,
+      "k": 10
+    }
+  ],
+  "functionName": "sumOfNumbers",
+  "params": [
+    {
+      "name": "l",
+      "type": "int"
+    },
+    {
+      "name": "r",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use combinatorics.",
+    "For some position <code>p</code> among the <code>k</code> digits, the sum is <code>10^p * (l + (l+1) + ... + r) * (r - l + 1)^(k-1)</code>.",
+    "Summing <code>p</code> over <code>[0, k-1]</code> gives <code>(l + (l+1) + ... + r) * (r - l + 1)^(k-1) * (10^k - 1) / 9</code>."
+  ]
+}

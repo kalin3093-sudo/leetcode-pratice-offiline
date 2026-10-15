@@ -1,0 +1,48 @@
+{
+  "id": "redistribute-characters-to-make-all-strings-equal",
+  "title": "1897. Redistribute Characters to Make All Strings Equal",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "words = [\"abc\",\"aabc\",\"bc\"]",
+      "output": "true",
+      "explanation": "Move the first 'a' in words[1] to the front of words[2], to make words[1] = \"abc\" and words[2] = \"abc\". All the strings are now equal to \"abc\", so return true."
+    },
+    {
+      "input": "words = [\"ab\",\"a\"]",
+      "output": "false",
+      "explanation": "It is impossible to make all the strings equal using the operation."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool makeEqual(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean makeEqual(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeEqual(self, words: list[str]) -> bool:\n        ",
+    "typescript": "function makeEqual(words: string[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool MakeEqual(string[] words) {\n        \n    }\n}",
+    "go": "func makeEqual(words []string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_equal(words: Vec<String>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abc\",\"aabc\",\"bc\"]"
+    },
+    {
+      "words": "[\"ab\",\"a\"]"
+    }
+  ],
+  "functionName": "makeEqual",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Characters are independent—only the frequency of characters matters.",
+    "It is possible to distribute characters if all characters can be divided equally among all strings."
+  ]
+}

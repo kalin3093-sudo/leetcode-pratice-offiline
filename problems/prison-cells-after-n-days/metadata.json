@@ -1,0 +1,50 @@
+{
+  "id": "prison-cells-after-n-days",
+  "title": "957. Prison Cells After N Days",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/prison-cells-after-n-days/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cells = [0,1,0,1,1,0,0,1], n = 7",
+      "output": "[0,0,1,1,0,0,0,0]",
+      "explanation": "The following table summarizes the state of the prison on each day: Day 0: [0, 1, 0, 1, 1, 0, 0, 1] Day 1: [0, 1, 1, 0, 0, 0, 0, 0] Day 2: [0, 0, 0, 0, 1, 1, 1, 0] Day 3: [0, 1, 1, 0, 0, 1, 0, 0] Day 4: [0, 0, 0, 0, 0, 1, 0, 0] Day 5: [0, 1, 1, 1, 0, 1, 0, 0] Day 6: [0, 0, 1, 0, 1, 1, 0, 0] Day 7: [0, 0, 1, 1, 0, 0, 0, 0]"
+    },
+    {
+      "input": "cells = [1,0,0,1,0,0,1,0], n = 1000000000",
+      "output": "[0,0,1,1,1,1,1,0]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> prisonAfterNDays(vector<int>& cells, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] prisonAfterNDays(int[] cells, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def prisonAfterNDays(self, cells: list[int], n: int) -> list[int]:\n        ",
+    "typescript": "function prisonAfterNDays(cells: number[], n: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] PrisonAfterNDays(int[] cells, int n) {\n        \n    }\n}",
+    "go": "func prisonAfterNDays(cells []int, n int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn prison_after_n_days(cells: Vec<i32>, n: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cells": "[0,1,0,1,1,0,0,1]",
+      "n": 7
+    },
+    {
+      "cells": "[1,0,0,1,0,0,1,0]",
+      "n": 1000000000
+    }
+  ],
+  "functionName": "prisonAfterNDays",
+  "params": [
+    {
+      "name": "cells",
+      "type": "int_array"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

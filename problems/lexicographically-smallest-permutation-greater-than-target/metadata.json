@@ -1,0 +1,65 @@
+{
+  "id": "lexicographically-smallest-permutation-greater-than-target",
+  "title": "3720. Lexicographically Smallest Permutation Greater Than Target",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abc\", target = \"bba\"",
+      "output": "\"bca\"",
+      "explanation": "The permutations of s (in lexicographical order) are \"abc\", \"acb\", \"bac\", \"bca\", \"cab\", and \"cba\". The lexicographically smallest permutation that is strictly greater than target is \"bca\"."
+    },
+    {
+      "input": "s = \"leet\", target = \"code\"",
+      "output": "\"eelt\"",
+      "explanation": "The permutations of s (in lexicographical order) are \"eelt\", \"eetl\", \"elet\", \"elte\", \"etel\", \"etle\", \"leet\", \"lete\", \"ltee\", \"teel\", \"tele\", and \"tlee\". The lexicographically smallest permutation that is strictly greater than target is \"eelt\"."
+    },
+    {
+      "input": "s = \"baba\", target = \"bbaa\"",
+      "output": "\"\"",
+      "explanation": "The permutations of s (in lexicographical order) are \"aabb\", \"abab\", \"abba\", \"baab\", \"baba\", and \"bbaa\". None of them is lexicographically strictly greater than target. Therefore, the answer is \"\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lexGreaterPermutation(string s, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lexGreaterPermutation(String s, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lexGreaterPermutation(self, s: str, target: str) -> str:\n        ",
+    "typescript": "function lexGreaterPermutation(s: string, target: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LexGreaterPermutation(string s, string target) {\n        \n    }\n}",
+    "go": "func lexGreaterPermutation(s string, target string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn lex_greater_permutation(s: String, target: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abc",
+      "target": "bba"
+    },
+    {
+      "s": "leet",
+      "target": "code"
+    },
+    {
+      "s": "baba",
+      "target": "bbaa"
+    }
+  ],
+  "functionName": "lexGreaterPermutation",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Maintain frequency counts of <code>s</code>.",
+    "Walk left-to-right; if equal to <code>target[i]</code> is possible, take it and continue.",
+    "If not, try the smallest letter strictly greater than <code>target[i]</code>.",
+    "If neither, backtrack left to the most recent index where you matched <code>target</code> and try to bump there."
+  ]
+}

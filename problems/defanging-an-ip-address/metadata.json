@@ -1,0 +1,43 @@
+{
+  "id": "defanging-an-ip-address",
+  "title": "1108. Defanging an IP Address",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/defanging-an-ip-address/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "address = \"1.1.1.1\"",
+      "output": "\"1[.]1[.]1[.]1\""
+    },
+    {
+      "input": "address = \"255.100.50.0\"",
+      "output": "\"255[.]100[.]50[.]0\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string defangIPaddr(string address) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String defangIPaddr(String address) {\n        \n    }\n}",
+    "python": "class Solution:\n    def defangIPaddr(self, address: str) -> str:\n        ",
+    "typescript": "function defangIPaddr(address: string): string {\n\n};",
+    "csharp": "public class Solution {\n    public string DefangIPaddr(string address) {\n        \n    }\n}",
+    "go": "func defangIPaddr(address string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn defang_i_paddr(address: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "address": "1.1.1.1"
+    },
+    {
+      "address": "255.100.50.0"
+    }
+  ],
+  "functionName": "defangIPaddr",
+  "params": [
+    {
+      "name": "address",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

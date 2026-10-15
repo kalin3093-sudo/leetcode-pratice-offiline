@@ -1,0 +1,48 @@
+{
+  "id": "make-array-non-decreasing",
+  "title": "3523. Make Array Non-decreasing",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/make-array-non-decreasing/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,2,5,3,5]",
+      "output": "3",
+      "explanation": "One way to achieve the maximum size is: Replace subarray nums[1..2] = [2, 5] with 5 &rarr; [4, 5, 3, 5]. Replace subarray nums[2..3] = [3, 5] with 5 &rarr; [4, 5, 5]. The final array [4, 5, 5] is non-decreasing with size 3."
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "3",
+      "explanation": "No operation is needed as the array [1,2,3] is already non-decreasing."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumPossibleSize(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumPossibleSize(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumPossibleSize(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maximumPossibleSize(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumPossibleSize(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumPossibleSize(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_possible_size(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,2,5,3,5]"
+    },
+    {
+      "nums": "[1,2,3]"
+    }
+  ],
+  "functionName": "maximumPossibleSize",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate backwards.",
+    "Can you remove the largest element in the array? Is that ever helpful?"
+  ]
+}

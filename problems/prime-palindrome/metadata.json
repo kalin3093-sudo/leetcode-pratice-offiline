@@ -1,0 +1,50 @@
+{
+  "id": "prime-palindrome",
+  "title": "866. Prime Palindrome",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/prime-palindrome/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "7"
+    },
+    {
+      "input": "n = 8",
+      "output": "11"
+    },
+    {
+      "input": "n = 13",
+      "output": "101"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int primePalindrome(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int primePalindrome(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def primePalindrome(self, n: int) -> int:\n        ",
+    "typescript": "function primePalindrome(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PrimePalindrome(int n) {\n        \n    }\n}",
+    "go": "func primePalindrome(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn prime_palindrome(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6
+    },
+    {
+      "n": 8
+    },
+    {
+      "n": 13
+    }
+  ],
+  "functionName": "primePalindrome",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

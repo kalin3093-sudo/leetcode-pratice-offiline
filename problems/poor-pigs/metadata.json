@@ -1,0 +1,61 @@
+{
+  "id": "poor-pigs",
+  "title": "458. Poor Pigs",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/poor-pigs/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "buckets = 4, minutesToDie = 15, minutesToTest = 15",
+      "output": "2",
+      "explanation": "We can determine the poisonous bucket as follows: At time 0, feed the first pig buckets 1 and 2, and feed the second pig buckets 2 and 3. At time 15, there are 4 possible outcomes: - If only the first pig dies, then bucket 1 must be poisonous. - If only the second pig dies, then bucket 3 must be poisonous. - If both pigs die, then bucket 2 must be poisonous. - If neither pig dies, then bucket 4 must be poisonous."
+    },
+    {
+      "input": "buckets = 4, minutesToDie = 15, minutesToTest = 30",
+      "output": "2",
+      "explanation": "We can determine the poisonous bucket as follows: At time 0, feed the first pig bucket 1, and feed the second pig bucket 2. At time 15, there are 2 possible outcomes: - If either pig dies, then the poisonous bucket is the one it was fed. - If neither pig dies, then feed the first pig bucket 3, and feed the second pig bucket 4. At time 30, one of the two pigs must die, and the poisonous bucket is the one it was fed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int poorPigs(int buckets, int minutesToDie, int minutesToTest) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int poorPigs(int buckets, int minutesToDie, int minutesToTest) {\n        \n    }\n}",
+    "python": "class Solution:\n    def poorPigs(self, buckets: int, minutesToDie: int, minutesToTest: int) -> int:\n        ",
+    "typescript": "function poorPigs(buckets: number, minutesToDie: number, minutesToTest: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PoorPigs(int buckets, int minutesToDie, int minutesToTest) {\n        \n    }\n}",
+    "go": "func poorPigs(buckets int, minutesToDie int, minutesToTest int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn poor_pigs(buckets: i32, minutes_to_die: i32, minutes_to_test: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "buckets": 4,
+      "minutesToDie": 15,
+      "minutesToTest": 15
+    },
+    {
+      "buckets": 4,
+      "minutesToDie": 15,
+      "minutesToTest": 30
+    }
+  ],
+  "functionName": "poorPigs",
+  "params": [
+    {
+      "name": "buckets",
+      "type": "int"
+    },
+    {
+      "name": "minutesToDie",
+      "type": "int"
+    },
+    {
+      "name": "minutesToTest",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What if you only have one shot? Eg. 4 buckets, 15 mins to die, and 15 mins to test.",
+    "How many states can we generate with x pigs and T tests?",
+    "Find minimum <code>x</code> such that <code>(T+1)^x >= N</code>"
+  ]
+}

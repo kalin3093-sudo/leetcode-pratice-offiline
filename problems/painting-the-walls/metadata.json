@@ -1,0 +1,55 @@
+{
+  "id": "painting-the-walls",
+  "title": "2742. Painting the Walls",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/painting-the-walls/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cost = [1,2,3,2], time = [1,2,3,2]",
+      "output": "3",
+      "explanation": "The walls at index 0 and 1 will be painted by the paid painter, and it will take 3 units of time; meanwhile, the free painter will paint the walls at index 2 and 3, free of cost in 2 units of time. Thus, the total cost is 1 + 2 = 3."
+    },
+    {
+      "input": "cost = [2,3,4,2], time = [1,1,1,1]",
+      "output": "4",
+      "explanation": "The walls at index 0 and 3 will be painted by the paid painter, and it will take 2 units of time; meanwhile, the free painter will paint the walls at index 1 and 2, free of cost in 2 units of time. Thus, the total cost is 2 + 2 = 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int paintWalls(vector<int>& cost, vector<int>& time) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int paintWalls(int[] cost, int[] time) {\n        \n    }\n}",
+    "python": "class Solution:\n    def paintWalls(self, cost: list[int], time: list[int]) -> int:\n        ",
+    "typescript": "function paintWalls(cost: number[], time: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PaintWalls(int[] cost, int[] time) {\n        \n    }\n}",
+    "go": "func paintWalls(cost []int, time []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn paint_walls(cost: Vec<i32>, time: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cost": "[1,2,3,2]",
+      "time": "[1,2,3,2]"
+    },
+    {
+      "cost": "[2,3,4,2]",
+      "time": "[1,1,1,1]"
+    }
+  ],
+  "functionName": "paintWalls",
+  "params": [
+    {
+      "name": "cost",
+      "type": "int_array"
+    },
+    {
+      "name": "time",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we break the problem down into smaller subproblems and use DP?",
+    "If you pay for wall <code>i</code>, it contributes <code>cost[i]</code> and effectively covers <code>time[i] + 1</code> walls: the paid wall itself plus up to <code>time[i]</code> walls that the free painter can paint while the paid painter works.",
+    "Use DP over the number of walls covered, capped at n."
+  ]
+}

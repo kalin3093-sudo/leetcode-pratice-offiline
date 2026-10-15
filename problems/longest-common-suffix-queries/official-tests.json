@@ -1,0 +1,10 @@
+[
+  {
+    "wordsContainer": "[\"abcd\",\"bcd\",\"xbcd\"]",
+    "wordsQuery": "[\"cd\",\"bcd\",\"xyz\"]"
+  },
+  {
+    "wordsContainer": "[\"abcdefgh\",\"poiuygh\",\"ghghgh\"]",
+    "wordsQuery": "[\"gh\",\"acbfgh\",\"acbfegh\"]"
+  }
+]

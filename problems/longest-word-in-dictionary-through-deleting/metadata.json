@@ -1,0 +1,49 @@
+{
+  "id": "longest-word-in-dictionary-through-deleting",
+  "title": "524. Longest Word in Dictionary through Deleting",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "s = \"abpcplea\", dictionary = [\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "output": "\"apple\""
+    },
+    {
+      "input": "s = \"abpcplea\", dictionary = [\"a\",\"b\",\"c\"]",
+      "output": "\"a\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string findLongestWord(string s, vector<string>& dictionary) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String findLongestWord(String s, List<String> dictionary) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLongestWord(self, s: str, dictionary: list[str]) -> str:\n        ",
+    "typescript": "function findLongestWord(s: string, dictionary: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FindLongestWord(string s, IList<string> dictionary) {\n        \n    }\n}",
+    "go": "func findLongestWord(s string, dictionary []string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_longest_word(s: String, dictionary: Vec<String>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abpcplea",
+      "dictionary": "[\"ale\",\"apple\",\"monkey\",\"plea\"]"
+    },
+    {
+      "s": "abpcplea",
+      "dictionary": "[\"a\",\"b\",\"c\"]"
+    }
+  ],
+  "functionName": "findLongestWord",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "dictionary",
+      "type": "string_list"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

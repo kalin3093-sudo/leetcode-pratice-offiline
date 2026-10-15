@@ -1,0 +1,48 @@
+{
+  "id": "replace-all-digits-with-characters",
+  "title": "1844. Replace All Digits with Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/replace-all-digits-with-characters/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"a1c1e1\"",
+      "output": "\"abcdef\"",
+      "explanation": "The digits are replaced as follows: - s[1] -> shift('a',1) = 'b' - s[3] -> shift('c',1) = 'd' - s[5] -> shift('e',1) = 'f'"
+    },
+    {
+      "input": "s = \"a1b2c3d4e\"",
+      "output": "\"abbdcfdhe\"",
+      "explanation": "The digits are replaced as follows: - s[1] -> shift('a',1) = 'b' - s[3] -> shift('b',2) = 'd' - s[5] -> shift('c',3) = 'f' - s[7] -> shift('d',4) = 'h'"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string replaceDigits(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String replaceDigits(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def replaceDigits(self, s: str) -> str:\n        ",
+    "typescript": "function replaceDigits(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReplaceDigits(string s) {\n        \n    }\n}",
+    "go": "func replaceDigits(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn replace_digits(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "a1c1e1"
+    },
+    {
+      "s": "a1b2c3d4e"
+    }
+  ],
+  "functionName": "replaceDigits",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "We just need to replace every even positioned character with the character s[i] positions ahead of the character preceding it",
+    "Get the position of the preceeding character in alphabet then advance it s[i] positions and get the character at that position"
+  ]
+}

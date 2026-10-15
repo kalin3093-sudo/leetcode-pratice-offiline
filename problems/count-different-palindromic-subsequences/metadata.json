@@ -1,0 +1,47 @@
+{
+  "id": "count-different-palindromic-subsequences",
+  "title": "730. Count Different Palindromic Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-different-palindromic-subsequences/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"bccb\"",
+      "output": "6",
+      "explanation": "The 6 different non-empty palindromic subsequences are 'b', 'c', 'bb', 'cc', 'bcb', 'bccb'. Note that 'bcb' is counted only once, even though it occurs twice."
+    },
+    {
+      "input": "s = \"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"",
+      "output": "104860361",
+      "explanation": "There are 3104860382 different non-empty palindromic subsequences, which is 104860361 modulo 109 + 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPalindromicSubsequences(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPalindromicSubsequences(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPalindromicSubsequences(self, s: str) -> int:\n        ",
+    "typescript": "function countPalindromicSubsequences(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPalindromicSubsequences(string s) {\n        \n    }\n}",
+    "go": "func countPalindromicSubsequences(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_palindromic_subsequences(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "bccb"
+    },
+    {
+      "s": "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba"
+    }
+  ],
+  "functionName": "countPalindromicSubsequences",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let dp(i, j) be the answer for the string T = S[i:j+1] including the empty sequence. The answer is the number of unique characters in T, plus palindromes of the form \"a_a\", \"b_b\", \"c_c\", and \"d_d\", where \"_\" represents zero or more characters."
+  ]
+}

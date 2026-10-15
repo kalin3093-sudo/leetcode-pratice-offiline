@@ -1,0 +1,56 @@
+{
+  "id": "largest-3-same-digit-number-in-string",
+  "title": "2264. Largest 3-Same-Digit Number in String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-3-same-digit-number-in-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "num = \"6777133339\"",
+      "output": "\"777\"",
+      "explanation": "There are two distinct good integers: \"777\" and \"333\". \"777\" is the largest, so we return \"777\"."
+    },
+    {
+      "input": "num = \"2300019\"",
+      "output": "\"000\"",
+      "explanation": "\"000\" is the only good integer."
+    },
+    {
+      "input": "num = \"42352338\"",
+      "output": "\"\"",
+      "explanation": "No substring of length 3 consists of only one unique digit. Therefore, there are no good integers."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestGoodInteger(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestGoodInteger(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestGoodInteger(self, num: str) -> str:\n        ",
+    "typescript": "function largestGoodInteger(num: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestGoodInteger(string num) {\n        \n    }\n}",
+    "go": "func largestGoodInteger(num string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_good_integer(num: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "6777133339"
+    },
+    {
+      "num": "2300019"
+    },
+    {
+      "num": "42352338"
+    }
+  ],
+  "functionName": "largestGoodInteger",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "We can sequentially check if “999”, “888”, “777”, … , “000” exists in num in that order. The first to be found is the maximum good integer.",
+    "If we cannot find any of the above integers, we return an empty string “”."
+  ]
+}

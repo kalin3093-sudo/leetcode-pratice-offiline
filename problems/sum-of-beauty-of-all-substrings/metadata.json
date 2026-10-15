@@ -1,0 +1,47 @@
+{
+  "id": "sum-of-beauty-of-all-substrings",
+  "title": "1781. Sum of Beauty of All Substrings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aabcb\"",
+      "output": "5",
+      "explanation": "The substrings with non-zero beauty are [\"aab\",\"aabc\",\"aabcb\",\"abcb\",\"bcb\"], each with beauty equal to 1."
+    },
+    {
+      "input": "s = \"aabcbaa\"",
+      "output": "17"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int beautySum(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int beautySum(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def beautySum(self, s: str) -> int:\n        ",
+    "typescript": "function beautySum(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BeautySum(string s) {\n        \n    }\n}",
+    "go": "func beautySum(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn beauty_sum(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aabcb"
+    },
+    {
+      "s": "aabcbaa"
+    }
+  ],
+  "functionName": "beautySum",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Maintain a prefix sum for the frequencies of characters.",
+    "You can iterate over all substring then iterate over the alphabet and find which character appears most and which appears least using the prefix sum array"
+  ]
+}

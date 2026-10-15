@@ -1,0 +1,43 @@
+{
+  "id": "01-matrix",
+  "title": "542. 01 Matrix",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/01-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[0,0,0],[0,1,0],[0,0,0]]",
+      "output": "[[0,0,0],[0,1,0],[0,0,0]]"
+    },
+    {
+      "input": "mat = [[0,0,0],[0,1,0],[1,1,1]]",
+      "output": "[[0,0,0],[0,1,0],[1,2,1]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] updateMatrix(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def updateMatrix(self, mat: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function updateMatrix(mat: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] UpdateMatrix(int[][] mat) {\n        \n    }\n}",
+    "go": "func updateMatrix(mat [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn update_matrix(mat: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[0,0,0],[0,1,0],[0,0,0]]"
+    },
+    {
+      "mat": "[[0,0,0],[0,1,0],[1,1,1]]"
+    }
+  ],
+  "functionName": "updateMatrix",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": []
+}

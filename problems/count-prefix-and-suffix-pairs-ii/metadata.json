@@ -1,0 +1,58 @@
+{
+  "id": "count-prefix-and-suffix-pairs-ii",
+  "title": "3045. Count Prefix and Suffix Pairs II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"a\",\"aba\",\"ababa\",\"aa\"]",
+      "output": "4",
+      "explanation": "In this example, the counted index pairs are: i = 0 and j = 1 because isPrefixAndSuffix(\"a\", \"aba\") is true. i = 0 and j = 2 because isPrefixAndSuffix(\"a\", \"ababa\") is true. i = 0 and j = 3 because isPrefixAndSuffix(\"a\", \"aa\") is true. i = 1 and j = 2 because isPrefixAndSuffix(\"aba\", \"ababa\") is true. Therefore, the answer is 4."
+    },
+    {
+      "input": "words = [\"pa\",\"papa\",\"ma\",\"mama\"]",
+      "output": "2",
+      "explanation": "In this example, the counted index pairs are: i = 0 and j = 1 because isPrefixAndSuffix(\"pa\", \"papa\") is true. i = 2 and j = 3 because isPrefixAndSuffix(\"ma\", \"mama\") is true. Therefore, the answer is 2."
+    },
+    {
+      "input": "words = [\"abab\",\"ab\"]",
+      "output": "0",
+      "explanation": "In this example, the only valid index pair is i = 0 and j = 1, and isPrefixAndSuffix(\"abab\", \"ab\") is false. Therefore, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countPrefixSuffixPairs(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countPrefixSuffixPairs(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPrefixSuffixPairs(self, words: List[str]) -> int:\n        ",
+    "typescript": "function countPrefixSuffixPairs(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountPrefixSuffixPairs(string[] words) {\n        \n    }\n}",
+    "go": "func countPrefixSuffixPairs(words []string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_prefix_suffix_pairs(words: Vec<String>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"a\",\"aba\",\"ababa\",\"aa\"]"
+    },
+    {
+      "words": "[\"pa\",\"papa\",\"ma\",\"mama\"]"
+    },
+    {
+      "words": "[\"abab\",\"ab\"]"
+    }
+  ],
+  "functionName": "countPrefixSuffixPairs",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "We can use a trie to solve it.",
+    "Process all <code>words[i]</code> from left to right. The trie stores the pair <code>(words[i][j], words[i][words[i].length - j - 1])</code> as a single character; we process all the words in this way.",
+    "During insertion, keep a counter in each trie node, as in a normal trie. If the current node is the end of a word (namely, the pair on that node is <code>(words[i][words[i].length - 1], words[i][0])</code>), increase the node's counter by <code>1</code>.",
+    "From left to right, insert each word into the trie, and increase our final result by each node's counter when going down the trie during insertion. This means there was at least one word that is both a prefix and a suffix of the current word before."
+  ]
+}

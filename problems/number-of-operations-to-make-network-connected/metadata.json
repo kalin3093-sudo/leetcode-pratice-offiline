@@ -1,0 +1,62 @@
+{
+  "id": "number-of-operations-to-make-network-connected",
+  "title": "1319. Number of Operations to Make Network Connected",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "n = 4, connections = [[0,1],[0,2],[1,2]]",
+      "output": "1",
+      "explanation": "Remove cable between computer 1 and 2 and place between computers 1 and 3."
+    },
+    {
+      "input": "n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]",
+      "output": "2"
+    },
+    {
+      "input": "n = 6, connections = [[0,1],[0,2],[0,3],[1,2]]",
+      "output": "-1",
+      "explanation": "There are not enough cables."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int makeConnected(int n, vector<vector<int>>& connections) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int makeConnected(int n, int[][] connections) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeConnected(self, n: int, connections: list[list[int]]) -> int:\n        ",
+    "typescript": "function makeConnected(n: number, connections: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MakeConnected(int n, int[][] connections) {\n        \n    }\n}",
+    "go": "func makeConnected(n int, connections [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_connected(n: i32, connections: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "connections": "[[0,1],[0,2],[1,2]]"
+    },
+    {
+      "n": 6,
+      "connections": "[[0,1],[0,2],[0,3],[1,2],[1,3]]"
+    },
+    {
+      "n": 6,
+      "connections": "[[0,1],[0,2],[0,3],[1,2]]"
+    }
+  ],
+  "functionName": "makeConnected",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "connections",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "As long as there are at least (n - 1) connections, there is definitely a way to connect all computers.",
+    "Use DFS to determine the number of isolated computer clusters."
+  ]
+}

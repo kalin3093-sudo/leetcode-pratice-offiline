@@ -1,0 +1,48 @@
+{
+  "id": "minimum-operations-to-make-binary-array-elements-equal-to-one-ii",
+  "title": "3192. Minimum Operations to Make Binary Array Elements Equal to One II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,1,0,1]",
+      "output": "4",
+      "explanation": "We can do the following operations: Choose the index i = 1. The resulting array will be nums = [0,0,0,1,0]. Choose the index i = 0. The resulting array will be nums = [1,1,1,0,1]. Choose the index i = 4. The resulting array will be nums = [1,1,1,0,0]. Choose the index i = 3. The resulting array will be nums = [1,1,1,1,1]."
+    },
+    {
+      "input": "nums = [1,0,0,0]",
+      "output": "1",
+      "explanation": "We can do the following operation: Choose the index i = 1. The resulting array will be nums = [1,1,1,1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,1,0,1]"
+    },
+    {
+      "nums": "[1,0,0,0]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The only way to change <code>nums[0]</code> to 1 is by performing an operation with index <code>i = 0</code>.",
+    "Iterate from left to right and perform an operation at each index i where nums[i] is 0, and keep track of how many operations are currently performed on the suffix."
+  ]
+}

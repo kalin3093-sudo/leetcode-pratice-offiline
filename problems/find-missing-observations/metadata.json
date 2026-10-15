@@ -1,0 +1,70 @@
+{
+  "id": "find-missing-observations",
+  "title": "2028. Find Missing Observations",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-missing-observations/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rolls = [3,2,4,3], mean = 4, n = 2",
+      "output": "[6,6]",
+      "explanation": "The mean of all n + m rolls is (3 + 2 + 4 + 3 + 6 + 6) / 6 = 4."
+    },
+    {
+      "input": "rolls = [1,5,6], mean = 3, n = 4",
+      "output": "[2,3,2,2]",
+      "explanation": "The mean of all n + m rolls is (1 + 5 + 6 + 2 + 3 + 2 + 2) / 7 = 3."
+    },
+    {
+      "input": "rolls = [1,2,3,4], mean = 6, n = 4",
+      "output": "[]",
+      "explanation": "It is impossible for the mean to be 6 no matter what the 4 missing rolls are."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> missingRolls(vector<int>& rolls, int mean, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] missingRolls(int[] rolls, int mean, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def missingRolls(self, rolls: list[int], mean: int, n: int) -> list[int]:\n        ",
+    "typescript": "function missingRolls(rolls: number[], mean: number, n: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MissingRolls(int[] rolls, int mean, int n) {\n        \n    }\n}",
+    "go": "func missingRolls(rolls []int, mean int, n int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn missing_rolls(rolls: Vec<i32>, mean: i32, n: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rolls": "[3,2,4,3]",
+      "mean": 4,
+      "n": 2
+    },
+    {
+      "rolls": "[1,5,6]",
+      "mean": 3,
+      "n": 4
+    },
+    {
+      "rolls": "[1,2,3,4]",
+      "mean": 6,
+      "n": 4
+    }
+  ],
+  "functionName": "missingRolls",
+  "params": [
+    {
+      "name": "rolls",
+      "type": "int_array"
+    },
+    {
+      "name": "mean",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "What should the sum of the n rolls be?",
+    "Could you generate an array of size n such that each element is between 1 and 6?"
+  ]
+}

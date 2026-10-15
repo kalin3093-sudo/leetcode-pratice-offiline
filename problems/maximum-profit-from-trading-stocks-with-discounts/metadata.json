@@ -1,0 +1,100 @@
+{
+  "id": "maximum-profit-from-trading-stocks-with-discounts",
+  "title": "3562. Maximum Profit from Trading Stocks with Discounts",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 2, present = [1,2], future = [4,3], hierarchy = [[1,2]], budget = 3",
+      "output": "5",
+      "explanation": "Employee 1 buys the stock at price 1 and earns a profit of 4 - 1 = 3. Since Employee 1 is the direct boss of Employee 2, Employee 2 gets a discounted price of floor(2 / 2) = 1. Employee 2 buys the stock at price 1 and earns a profit of 3 - 1 = 2. The total buying cost is 1 + 1 = 2 <= budget. Thus, the maximum total profit achieved is 3 + 2 = 5."
+    },
+    {
+      "input": "n = 2, present = [3,4], future = [5,8], hierarchy = [[1,2]], budget = 4",
+      "output": "4",
+      "explanation": "Employee 2 buys the stock at price 4 and earns a profit of 8 - 4 = 4. Since both employees cannot buy together, the maximum profit is 4."
+    },
+    {
+      "input": "n = 3, present = [4,6,8], future = [7,9,11], hierarchy = [[1,2],[1,3]], budget = 10",
+      "output": "10",
+      "explanation": "Employee 1 buys the stock at price 4 and earns a profit of 7 - 4 = 3. Employee 3 would get a discounted price of floor(8 / 2) = 4 and earns a profit of 11 - 4 = 7. Employee 1 and Employee 3 buy their stocks at a total cost of 4 + 4 = 8 <= budget. Thus, the maximum total profit achieved is 3 + 7 = 10."
+    },
+    {
+      "input": "n = 3, present = [5,2,3], future = [8,5,6], hierarchy = [[1,2],[2,3]], budget = 7",
+      "output": "12",
+      "explanation": "Employee 1 buys the stock at price 5 and earns a profit of 8 - 5 = 3. Employee 2 would get a discounted price of floor(2 / 2) = 1 and earns a profit of 5 - 1 = 4. Employee 3 would get a discounted price of floor(3 / 2) = 1 and earns a profit of 6 - 1 = 5. The total cost becomes 5 + 1 + 1 = 7 <= budget. Thus, the maximum total profit achieved is 3 + 4 + 5 = 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProfit(int n, vector<int>& present, vector<int>& future, vector<vector<int>>& hierarchy, int budget) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProfit(int n, int[] present, int[] future, int[][] hierarchy, int budget) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProfit(self, n: int, present: List[int], future: List[int], hierarchy: List[List[int]], budget: int) -> int:\n        ",
+    "typescript": "function maxProfit(n: number, present: number[], future: number[], hierarchy: number[][], budget: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProfit(int n, int[] present, int[] future, int[][] hierarchy, int budget) {\n        \n    }\n}",
+    "go": "func maxProfit(n int, present []int, future []int, hierarchy [][]int, budget int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_profit(n: i32, present: Vec<i32>, future: Vec<i32>, hierarchy: Vec<Vec<i32>>, budget: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "present": "[1,2]",
+      "future": "[4,3]",
+      "hierarchy": "[[1,2]]",
+      "budget": 3
+    },
+    {
+      "n": 2,
+      "present": "[3,4]",
+      "future": "[5,8]",
+      "hierarchy": "[[1,2]]",
+      "budget": 4
+    },
+    {
+      "n": 3,
+      "present": "[4,6,8]",
+      "future": "[7,9,11]",
+      "hierarchy": "[[1,2],[1,3]]",
+      "budget": 10
+    },
+    {
+      "n": 3,
+      "present": "[5,2,3]",
+      "future": "[8,5,6]",
+      "hierarchy": "[[1,2],[2,3]]",
+      "budget": 7
+    }
+  ],
+  "functionName": "maxProfit",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "present",
+      "type": "int_array"
+    },
+    {
+      "name": "future",
+      "type": "int_array"
+    },
+    {
+      "name": "hierarchy",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "budget",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "- Compute <code>max_profit[u]</code> and <code>max_profit1[u]</code> for each node <code>u</code>",
+    "- <code>max_profit[u]</code> = maximum profit in the subtree of <code>u</code> assuming the parent of <code>u</code> has not bought the stock",
+    "- <code>max_profit1[u]</code> = maximum profit in the subtree of <code>u</code> assuming the parent of <code>u</code> has bought the stock",
+    "For each node <code>u</code>, consider two cases:",
+    "Buy the stock for <code>u</code> (at <code>present[u]</code> price if parent did not buy, or at <code>floor(present[u]/2)</code> if parent bought), then add the best <code>max_profit1</code> values of its children",
+    "Skip buying for <code>u</code>, then add the best <code>max_profit</code> values of its children"
+  ]
+}

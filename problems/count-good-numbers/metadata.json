@@ -1,0 +1,54 @@
+{
+  "id": "count-good-numbers",
+  "title": "1922. Count Good Numbers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-good-numbers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "5",
+      "explanation": "The good numbers of length 1 are \"0\", \"2\", \"4\", \"6\", \"8\"."
+    },
+    {
+      "input": "n = 4",
+      "output": "400"
+    },
+    {
+      "input": "n = 50",
+      "output": "564908303"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countGoodNumbers(long long n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countGoodNumbers(long n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countGoodNumbers(self, n: int) -> int:\n        ",
+    "typescript": "function countGoodNumbers(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountGoodNumbers(long n) {\n        \n    }\n}",
+    "go": "func countGoodNumbers(n int64) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_good_numbers(n: i64) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": "1"
+    },
+    {
+      "n": "4"
+    },
+    {
+      "n": "50"
+    }
+  ],
+  "functionName": "countGoodNumbers",
+  "params": [
+    {
+      "name": "n",
+      "type": "long"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Is there a formula we can use to find the count of all the good numbers?",
+    "Exponentiation can be done very fast if we looked at the binary bits of n."
+  ]
+}

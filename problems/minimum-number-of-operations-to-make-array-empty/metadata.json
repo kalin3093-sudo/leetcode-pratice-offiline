@@ -1,0 +1,45 @@
+{
+  "id": "minimum-number-of-operations-to-make-array-empty",
+  "title": "2870. Minimum Number of Operations to Make Array Empty",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,3,2,2,4,2,3,4]",
+      "output": "4",
+      "explanation": "We can apply the following operations to make the array empty: - Apply the first operation on the elements at indices 0 and 3. The resulting array is nums = [3,3,2,4,2,3,4]. - Apply the first operation on the elements at indices 2 and 4. The resulting array is nums = [3,3,4,3,4]. - Apply the second operation on the elements at indices 0, 1, and 3. The resulting array is nums = [4,4]. - Apply the first operation on the elements at indices 0 and 1. The resulting array is nums = []. It can be shown that we cannot make the array empty in less than 4 operations."
+    },
+    {
+      "input": "nums = [2,1,2,2,3,3]",
+      "output": "-1",
+      "explanation": "It is impossible to empty the array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,3,2,2,4,2,3,4]"
+    },
+    {
+      "nums": "[2,1,2,2,3,3]"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,15 @@
+You are given an array `nums` of **distinct** integers.
+
+In one operation, you can swap any two **adjacent** elements in the array.
+
+An arrangement of the array is considered **valid** if the parity of adjacent elements **alternates**, meaning every pair of neighboring elements consists of one even and one odd number.
+
+Return the **minimum** number of adjacent swaps required to transform `nums` into any valid arrangement.
+
+If it is impossible to rearrange `nums` such that no two adjacent elements have the same parity, return `-1`.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 10^5`
+-   `1 ≤ nums[i] ≤ 10^9`
+-   All elements in `nums` are **distinct**.

@@ -1,0 +1,14 @@
+[
+  {
+    "startPos": "[1,0]",
+    "homePos": "[2,3]",
+    "rowCosts": "[5,4,3]",
+    "colCosts": "[8,2,6,7]"
+  },
+  {
+    "startPos": "[0,0]",
+    "homePos": "[0,0]",
+    "rowCosts": "[5]",
+    "colCosts": "[26]"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "id": "minimum-number-of-changes-to-make-binary-string-beautiful",
+  "title": "2914. Minimum Number of Changes to Make Binary String Beautiful",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1001\"",
+      "output": "2",
+      "explanation": "We change s[1] to 1 and s[3] to 0 to get string \"1100\". It can be seen that the string \"1100\" is beautiful because we can partition it into \"11|00\". It can be proven that 2 is the minimum number of changes needed to make the string beautiful."
+    },
+    {
+      "input": "s = \"10\"",
+      "output": "1",
+      "explanation": "We change s[1] to 1 to get string \"11\". It can be seen that the string \"11\" is beautiful because we can partition it into \"11\". It can be proven that 1 is the minimum number of changes needed to make the string beautiful."
+    },
+    {
+      "input": "s = \"0000\"",
+      "output": "0",
+      "explanation": "We don't need to make any changes as the string \"0000\" is beautiful already."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minChanges(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minChanges(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minChanges(self, s: str) -> int:\n        ",
+    "typescript": "function minChanges(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinChanges(string s) {\n        \n    }\n}",
+    "go": "func minChanges(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_changes(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1001"
+    },
+    {
+      "s": "10"
+    },
+    {
+      "s": "0000"
+    }
+  ],
+  "functionName": "minChanges",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For any valid partition, since each part consists of an even number of the same characters, we can further partition each part into lengths of exactly <code>2</code>.",
+    "After noticing the first hint, we can decompose the whole string into disjoint blocks of size <code>2</code> and find the minimum number of changes required to make those blocks beautiful."
+  ]
+}

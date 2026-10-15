@@ -1,0 +1,50 @@
+{
+  "id": "power-of-four",
+  "title": "342. Power of Four",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/power-of-four/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 16",
+      "output": "true"
+    },
+    {
+      "input": "n = 5",
+      "output": "false"
+    },
+    {
+      "input": "n = 1",
+      "output": "true"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isPowerOfFour(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isPowerOfFour(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isPowerOfFour(self, n: int) -> bool:\n        ",
+    "typescript": "function isPowerOfFour(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsPowerOfFour(int n) {\n        \n    }\n}",
+    "go": "func isPowerOfFour(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_power_of_four(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 16
+    },
+    {
+      "n": 5
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "isPowerOfFour",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

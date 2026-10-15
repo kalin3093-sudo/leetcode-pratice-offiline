@@ -1,0 +1,60 @@
+{
+  "id": "count-artifacts-that-can-be-extracted",
+  "title": "2201. Count Artifacts That Can Be Extracted",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-artifacts-that-can-be-extracted/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1]]",
+      "output": "1",
+      "explanation": "The different colors represent different artifacts. Excavated cells are labeled with a 'D' in the grid. There is 1 artifact that can be extracted, namely the red artifact. The blue artifact has one part in cell (1,1) which remains uncovered, so we cannot extract it. Thus, we return 1."
+    },
+    {
+      "input": "n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1],[1,1]]",
+      "output": "2",
+      "explanation": "Both the red and blue artifacts have all parts uncovered (labeled with a 'D') and can be extracted, so we return 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int digArtifacts(int n, vector<vector<int>>& artifacts, vector<vector<int>>& dig) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int digArtifacts(int n, int[][] artifacts, int[][] dig) {\n        \n    }\n}",
+    "python": "class Solution:\n    def digArtifacts(self, n: int, artifacts: list[list[int]], dig: list[list[int]]) -> int:\n        ",
+    "typescript": "function digArtifacts(n: number, artifacts: number[][], dig: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DigArtifacts(int n, int[][] artifacts, int[][] dig) {\n        \n    }\n}",
+    "go": "func digArtifacts(n int, artifacts [][]int, dig [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn dig_artifacts(n: i32, artifacts: Vec<Vec<i32>>, dig: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "artifacts": "[[0,0,0,0],[0,1,1,1]]",
+      "dig": "[[0,0],[0,1]]"
+    },
+    {
+      "n": 2,
+      "artifacts": "[[0,0,0,0],[0,1,1,1]]",
+      "dig": "[[0,0],[0,1],[1,1]]"
+    }
+  ],
+  "functionName": "digArtifacts",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "artifacts",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "dig",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Check if each coordinate of each artifact has been excavated. How can we do this quickly without iterating over the dig array every time?",
+    "Consider marking all excavated cells in a 2D boolean array."
+  ]
+}

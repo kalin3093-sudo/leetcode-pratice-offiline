@@ -1,0 +1,5 @@
+Given an integer `n`, return *the number of prime numbers that are strictly less than* `n`.
+
+**Constraints:**
+
+-   `0 ≤ n ≤ 5 * 10^6`

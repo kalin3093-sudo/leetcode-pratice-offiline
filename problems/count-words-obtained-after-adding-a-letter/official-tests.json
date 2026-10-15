@@ -1,0 +1,10 @@
+[
+  {
+    "startWords": "[\"ant\",\"act\",\"tack\"]",
+    "targetWords": "[\"tack\",\"act\",\"acti\"]"
+  },
+  {
+    "startWords": "[\"ab\",\"a\"]",
+    "targetWords": "[\"abc\",\"abcd\"]"
+  }
+]

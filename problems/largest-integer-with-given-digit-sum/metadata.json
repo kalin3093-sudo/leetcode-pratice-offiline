@@ -1,0 +1,66 @@
+{
+  "id": "largest-integer-with-given-digit-sum",
+  "title": "4000. Largest Integer With Given Digit Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-integer-with-given-digit-sum/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2, s = 9",
+      "output": "90",
+      "explanation": "The largest integer with at most 2 digits that has a sum of digits of 9 is 90."
+    },
+    {
+      "input": "n = 2, s = 19",
+      "output": "-1",
+      "explanation": "There is no integer with at most 2 digits that has a sum of digits of 19, so the answer is -1."
+    },
+    {
+      "input": "n = 5, s = 0",
+      "output": "0",
+      "explanation": "The only non-negative integer whose digits sum to 0 is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestInteger(int n, int s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestInteger(int n, int s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestInteger(self, n: int, s: int) -> int:\n        ",
+    "typescript": "function largestInteger(n: number, s: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestInteger(int n, int s) {\n        \n    }\n}",
+    "go": "func largestInteger(n int, s int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_integer(n: i32, s: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "s": 9
+    },
+    {
+      "n": 2,
+      "s": 19
+    },
+    {
+      "n": 5,
+      "s": 0
+    }
+  ],
+  "functionName": "largestInteger",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "s",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p><strong>1a (Brute Force).</strong> Since <code>n &lt;= 5</code>, there are at most <code>10<sup>5</sup></code> non-negative integers with at most <code>n</code> digits.</p>",
+    "<p><strong>1b (Brute Force).</strong> Check every integer from <code>0</code> to <code>10<sup>n</sup> - 1</code>, and keep the largest one whose digit sum is <code>s</code>.</p>",
+    "<p><strong>2a (Greedy).</strong> If <code>s &gt; 9 * n</code>, no valid integer exists.</p>",
+    "<p><strong>2b (Greedy).</strong> To maximize the integer, assign as much of the remaining digit sum as possible to each digit from left to right.</p>",
+    "<p><strong>2c (Greedy).</strong> Handle <code>s == 0</code> separately: the answer is <code>0</code>.</p>"
+  ]
+}

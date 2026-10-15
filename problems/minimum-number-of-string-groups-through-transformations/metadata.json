@@ -1,0 +1,58 @@
+{
+  "id": "minimum-number-of-string-groups-through-transformations",
+  "title": "3999. Minimum Number of String Groups Through Transformations",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "words = [\"ntgwz\",\"zwntg\"]",
+      "output": "1",
+      "explanation": "For \"ntgwz\", the even-index subsequence is \"ngz\" and the odd-index subsequence is \"tw\". Shift \"ngz\" right by 1 position to obtain \"zng\", and shift \"tw\" right by 1 position to obtain \"wt\". After reconstructing the string, we obtain \"zwntg\". Therefore, both strings are equivalent and belong to the same group."
+    },
+    {
+      "input": "words = [\"abc\",\"cab\",\"bac\",\"acb\",\"bca\",\"cba\"]",
+      "output": "3",
+      "explanation": "The strings can be partitioned into the following groups: [\"abc\",\"cba\"] [\"cab\",\"bac\"] [\"acb\",\"bca\"]"
+    },
+    {
+      "input": "words = [\"leet\",\"abb\",\"bab\",\"deed\",\"edde\",\"code\",\"bba\"]",
+      "output": "5",
+      "explanation": "The strings can be partitioned into the following groups: [\"abb\",\"bba\"] [\"deed\",\"edde\"] [\"leet\"] [\"bab\"] [\"code\"] All pairs of strings in each group are equivalent."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumGroups(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumGroups(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumGroups(self, words: List[str]) -> int:\n        ",
+    "typescript": "function minimumGroups(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumGroups(string[] words) {\n        \n    }\n}",
+    "go": "func minimumGroups(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_groups(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"ntgwz\",\"zwntg\"]"
+    },
+    {
+      "words": "[\"abc\",\"cab\",\"bac\",\"acb\",\"bca\",\"cba\"]"
+    },
+    {
+      "words": "[\"leet\",\"abb\",\"bab\",\"deed\",\"edde\",\"code\",\"bba\"]"
+    }
+  ],
+  "functionName": "minimumGroups",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Separate each word into the characters at even indices and the characters at odd indices.</p>",
+    "<p>Two words are equivalent if their even-index subsequences are cyclic shifts of each other and their odd-index subsequences are cyclic shifts of each other.</p>",
+    "<p>For each subsequence, compute a canonical representative of its cyclic rotations, such as its lexicographically smallest cyclic rotation. This can be found efficiently using Booth's algorithm, Duval's algorithm, or even a suffix-array-based approach on the doubled string etc.</p>",
+    "<p>Use the pair of canonical representatives as the signature of the word. The answer is the number of distinct signatures.</p>"
+  ]
+}

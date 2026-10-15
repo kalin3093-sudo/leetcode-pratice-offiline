@@ -1,0 +1,56 @@
+{
+  "id": "minimum-cost-good-caption",
+  "title": "3441. Minimum Cost Good Caption",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-cost-good-caption/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "caption = \"cdcd\"",
+      "output": "\"cccc\"",
+      "explanation": "It can be shown that the given caption cannot be transformed into a good caption with fewer than 2 operations. The possible good captions that can be created using exactly 2 operations are: \"dddd\": Change caption[0] and caption[2] to their next character 'd'. \"cccc\": Change caption[1] and caption[3] to their previous character 'c'. Since \"cccc\" is lexicographically smaller than \"dddd\", return \"cccc\"."
+    },
+    {
+      "input": "caption = \"aca\"",
+      "output": "\"aaa\"",
+      "explanation": "It can be proven that the given caption requires at least 2 operations to be transformed into a good caption. The only good caption that can be obtained with exactly 2 operations is as follows: Operation 1: Change caption[1] to 'b'. caption = \"aba\". Operation 2: Change caption[1] to 'a'. caption = \"aaa\". Thus, return \"aaa\"."
+    },
+    {
+      "input": "caption = \"bc\"",
+      "output": "\"\"",
+      "explanation": "It can be shown that the given caption cannot be converted to a good caption by using any number of operations."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minCostGoodCaption(string caption) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minCostGoodCaption(String caption) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCostGoodCaption(self, caption: str) -> str:\n        ",
+    "typescript": "function minCostGoodCaption(caption: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinCostGoodCaption(string caption) {\n        \n    }\n}",
+    "go": "func minCostGoodCaption(caption string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost_good_caption(caption: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "caption": "cdcd"
+    },
+    {
+      "caption": "aca"
+    },
+    {
+      "caption": "bc"
+    }
+  ],
+  "functionName": "minCostGoodCaption",
+  "params": [
+    {
+      "name": "caption",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Construct a DP table and try all possible characters at every index.",
+    "Choose characters greedily to get the lexicographically smallest caption."
+  ]
+}

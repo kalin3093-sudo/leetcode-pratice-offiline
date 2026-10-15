@@ -1,0 +1,62 @@
+{
+  "id": "find-minimum-log-transportation-cost",
+  "title": "3560. Find Minimum Log Transportation Cost",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-minimum-log-transportation-cost/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 6, m = 5, k = 5",
+      "output": "5",
+      "explanation": "Cut the log with length 6 into logs with length 1 and 5, at a cost equal to 1 * 5 == 5. Now the three logs of length 1, 5, and 5 can fit in one truck each."
+    },
+    {
+      "input": "n = 4, m = 4, k = 6",
+      "output": "0",
+      "explanation": "The two logs can fit in the trucks already, hence we don't need to cut the logs."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minCuttingCost(int n, int m, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minCuttingCost(int n, int m, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCuttingCost(self, n: int, m: int, k: int) -> int:\n        ",
+    "typescript": "function minCuttingCost(n: number, m: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinCuttingCost(int n, int m, int k) {\n        \n    }\n}",
+    "go": "func minCuttingCost(n int, m int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "m": 5,
+      "k": 5
+    },
+    {
+      "n": 4,
+      "m": 4,
+      "k": 6
+    }
+  ],
+  "functionName": "minCuttingCost",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "If both logs have a length less than <code>k</code>, cost is zero.",
+    "Can we transport the logs if both logs have length greater than <code>k</code>.",
+    "Otherwise, pick the log with greater length and cut it into logs with lengths <code>len1</code> and <code>len2</code> such that <code>len1 + len2</code> equals the original length.",
+    "To minimize the cost <code>len1 * len2</code>, choose <code>len1</code> and <code>len2</code> as far apart as possible (e.g. <code>1</code> and <code>length−1</code>)."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "find-the-largest-palindrome-divisible-by-k",
+  "title": "3260. Find the Largest Palindrome Divisible by K",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3, k = 5",
+      "output": "\"595\"",
+      "explanation": "595 is the largest k-palindromic integer with 3 digits."
+    },
+    {
+      "input": "n = 1, k = 4",
+      "output": "\"8\"",
+      "explanation": "4 and 8 are the only k-palindromic integers with 1 digit."
+    },
+    {
+      "input": "n = 5, k = 6",
+      "output": "\"89898\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestPalindrome(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestPalindrome(int n, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestPalindrome(self, n: int, k: int) -> str:\n        ",
+    "typescript": "function largestPalindrome(n: number, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestPalindrome(int n, int k) {\n        \n    }\n}",
+    "go": "func largestPalindrome(n int, k int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_palindrome(n: i32, k: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "k": 5
+    },
+    {
+      "n": 1,
+      "k": 4
+    },
+    {
+      "n": 5,
+      "k": 6
+    }
+  ],
+  "functionName": "largestPalindrome",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "It must have a solution since we can have all digits equal to <code>k</code>.",
+    "Use string dp, store modulus along with length of number currently formed.",
+    "Is it possible to solve greedily using divisibility rules?"
+  ]
+}

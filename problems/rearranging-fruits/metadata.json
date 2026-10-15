@@ -1,0 +1,57 @@
+{
+  "id": "rearranging-fruits",
+  "title": "2561. Rearranging Fruits",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/rearranging-fruits/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "basket1 = [4,2,2,2], basket2 = [1,4,1,2]",
+      "output": "1",
+      "explanation": "Swap index 1 of basket1 with index 0 of basket2, which has cost 1. Now basket1 = [4,1,2,2] and basket2 = [2,4,1,2]. Rearranging both the arrays makes them equal."
+    },
+    {
+      "input": "basket1 = [2,3,4,1], basket2 = [3,2,5,1]",
+      "output": "-1",
+      "explanation": "It can be shown that it is impossible to make both the baskets equal."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minCost(vector<int>& basket1, vector<int>& basket2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minCost(int[] basket1, int[] basket2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, basket1: List[int], basket2: List[int]) -> int:\n        ",
+    "typescript": "function minCost(basket1: number[], basket2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinCost(int[] basket1, int[] basket2) {\n        \n    }\n}",
+    "go": "func minCost(basket1 []int, basket2 []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(basket1: Vec<i32>, basket2: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "basket1": "[4,2,2,2]",
+      "basket2": "[1,4,1,2]"
+    },
+    {
+      "basket1": "[2,3,4,1]",
+      "basket2": "[3,2,5,1]"
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "basket1",
+      "type": "int_array"
+    },
+    {
+      "name": "basket2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Create two frequency maps for both arrays, and find the minimum element among all elements of both arrays.",
+    "Check if the sum of frequencies of an element in both arrays is odd, if so return -1",
+    "Store the elements that need to be swapped in a vector, and sort it.",
+    "Can we reduce swapping cost with the help of minimum element?",
+    "Calculate the minimum cost of swapping."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "count-paths-that-can-form-a-palindrome-in-a-tree",
+  "title": "2791. Count Paths That Can Form a Palindrome in a Tree",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "parent = [-1,0,0,1,1,2], s = \"acaabc\"",
+      "output": "8",
+      "explanation": "The valid pairs are: - All the pairs (0,1), (0,2), (1,3), (1,4) and (2,5) result in one character which is always a palindrome. - The pair (2,3) result in the string \"aca\" which is a palindrome. - The pair (1,5) result in the string \"cac\" which is a palindrome. - The pair (3,5) result in the string \"acac\" which can be rearranged into the palindrome \"acca\"."
+    },
+    {
+      "input": "parent = [-1,0,0,0,0], s = \"aaaaa\"",
+      "output": "10",
+      "explanation": "Any pair of nodes (u,v) where u < v is valid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countPalindromePaths(vector<int>& parent, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countPalindromePaths(List<Integer> parent, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPalindromePaths(self, parent: List[int], s: str) -> int:\n        ",
+    "typescript": "function countPalindromePaths(parent: number[], s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountPalindromePaths(IList<int> parent, string s) {\n        \n    }\n}",
+    "go": "func countPalindromePaths(parent []int, s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_palindrome_paths(parent: Vec<i32>, s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "parent": "[-1,0,0,1,1,2]",
+      "s": "acaabc"
+    },
+    {
+      "parent": "[-1,0,0,0,0]",
+      "s": "aaaaa"
+    }
+  ],
+  "functionName": "countPalindromePaths",
+  "params": [
+    {
+      "name": "parent",
+      "type": "int_list"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "A string is a palindrome if the number of characters with an odd frequency is either 0 or 1.",
+    "Let mask[v] be a mask of 26 bits that represent the parity of each character in the alphabet on the path from node 0 to v. How can you use this array to solve the problem?"
+  ]
+}

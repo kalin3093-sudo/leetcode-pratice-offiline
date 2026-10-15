@@ -1,0 +1,48 @@
+{
+  "id": "array-with-elements-not-equal-to-average-of-neighbors",
+  "title": "1968. Array With Elements Not Equal to Average of Neighbors",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "[1,2,4,5,3]",
+      "explanation": "When i=1, nums[i] = 2, and the average of its neighbors is (1+4) / 2 = 2.5. When i=2, nums[i] = 4, and the average of its neighbors is (2+5) / 2 = 3.5. When i=3, nums[i] = 5, and the average of its neighbors is (4+3) / 2 = 3.5."
+    },
+    {
+      "input": "nums = [6,2,0,9,7]",
+      "output": "[9,7,6,2,0]",
+      "explanation": "When i=1, nums[i] = 7, and the average of its neighbors is (9+6) / 2 = 7.5. When i=2, nums[i] = 6, and the average of its neighbors is (7+2) / 2 = 4.5. When i=3, nums[i] = 2, and the average of its neighbors is (6+0) / 2 = 3. Note that the original array [6,2,0,9,7] also satisfies the conditions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> rearrangeArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] rearrangeArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rearrangeArray(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function rearrangeArray(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] RearrangeArray(int[] nums) {\n        \n    }\n}",
+    "go": "func rearrangeArray(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rearrange_array(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[6,2,0,9,7]"
+    }
+  ],
+  "functionName": "rearrangeArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "A number can be the average of its neighbors if one neighbor is smaller than the number and the other is greater than the number.",
+    "We can put numbers smaller than the median on odd indices and the rest on even indices."
+  ]
+}

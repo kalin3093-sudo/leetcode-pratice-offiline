@@ -1,0 +1,71 @@
+{
+  "id": "maximum-xor-product",
+  "title": "2939. Maximum Xor Product",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-xor-product/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "a = 12, b = 5, n = 4",
+      "output": "98",
+      "explanation": "For x = 2, (a XOR x) = 14 and (b XOR x) = 7. Hence, (a XOR x) * (b XOR x) = 98. It can be shown that 98 is the maximum value of (a XOR x) * (b XOR x) for all 0 <= x < 2n."
+    },
+    {
+      "input": "a = 6, b = 7 , n = 5",
+      "output": "930",
+      "explanation": "For x = 25, (a XOR x) = 31 and (b XOR x) = 30. Hence, (a XOR x) * (b XOR x) = 930. It can be shown that 930 is the maximum value of (a XOR x) * (b XOR x) for all 0 <= x < 2n."
+    },
+    {
+      "input": "a = 1, b = 6, n = 3",
+      "output": "12",
+      "explanation": "For x = 5, (a XOR x) = 4 and (b XOR x) = 3. Hence, (a XOR x) * (b XOR x) = 12. It can be shown that 12 is the maximum value of (a XOR x) * (b XOR x) for all 0 <= x < 2n."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumXorProduct(long long a, long long b, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumXorProduct(long a, long b, int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumXorProduct(self, a: int, b: int, n: int) -> int:\n        ",
+    "typescript": "function maximumXorProduct(a: number, b: number, n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumXorProduct(long a, long b, int n) {\n        \n    }\n}",
+    "go": "func maximumXorProduct(a int64, b int64, n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_xor_product(a: i64, b: i64, n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": "12",
+      "b": "5",
+      "n": 4
+    },
+    {
+      "a": "6",
+      "b": "7",
+      "n": 5
+    },
+    {
+      "a": "1",
+      "b": "6",
+      "n": 3
+    }
+  ],
+  "functionName": "maximumXorProduct",
+  "params": [
+    {
+      "name": "a",
+      "type": "long"
+    },
+    {
+      "name": "b",
+      "type": "long"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate over bits from most significant to least significant.",
+    "For the <code>i<sup>th</sup></code> bit, if both <code>a</code> and <code>b</code> have the same value, we can always make <code>x</code>’s <code>i<sup>th</sup></code> bit different from <code>a</code> and <code>b</code>, so <code>a ^ x</code> and <code>b ^ x</code> both have the <code>i<sup>th</sup></cod> bit set.",
+    "Otherwise, we can only set the <code>i<sup>th</sup></code> bit of one of <code>a ^ x</code> or <code>b ^ x</code>. Depending on the previous bits of  <code>a ^ x</code> or <code>b ^ x</code>, we should set the smaller value’s <code>i<sup>th</sup></code> bit."
+  ]
+}

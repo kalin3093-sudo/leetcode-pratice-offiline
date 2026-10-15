@@ -1,0 +1,46 @@
+{
+  "id": "alternating-groups-i",
+  "title": "3206. Alternating Groups I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/alternating-groups-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "colors = [1,1,1]",
+      "output": "0"
+    },
+    {
+      "input": "colors = [0,1,0,0,1]",
+      "output": "3",
+      "explanation": "Alternating groups:"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfAlternatingGroups(vector<int>& colors) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfAlternatingGroups(int[] colors) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfAlternatingGroups(self, colors: List[int]) -> int:\n        ",
+    "typescript": "function numberOfAlternatingGroups(colors: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfAlternatingGroups(int[] colors) {\n        \n    }\n}",
+    "go": "func numberOfAlternatingGroups(colors []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_alternating_groups(colors: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "colors": "[1,1,1]"
+    },
+    {
+      "colors": "[0,1,0,0,1]"
+    }
+  ],
+  "functionName": "numberOfAlternatingGroups",
+  "params": [
+    {
+      "name": "colors",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each tile, check that the previous and the next tile have different colors from that tile or not."
+  ]
+}

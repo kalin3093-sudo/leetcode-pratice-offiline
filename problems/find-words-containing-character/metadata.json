@@ -1,0 +1,62 @@
+{
+  "id": "find-words-containing-character",
+  "title": "2942. Find Words Containing Character",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-words-containing-character/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"leet\",\"code\"], x = \"e\"",
+      "output": "[0,1]",
+      "explanation": "\"e\" occurs in both words: \"leet\", and \"code\". Hence, we return indices 0 and 1."
+    },
+    {
+      "input": "words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"a\"",
+      "output": "[0,2]",
+      "explanation": "\"a\" occurs in \"abc\", and \"aaaa\". Hence, we return indices 0 and 2."
+    },
+    {
+      "input": "words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"z\"",
+      "output": "[]",
+      "explanation": "\"z\" does not occur in any of the words. Hence, we return an empty array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findWordsContaining(vector<string>& words, char x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> findWordsContaining(String[] words, char x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findWordsContaining(self, words: List[str], x: str) -> List[int]:\n        ",
+    "typescript": "function findWordsContaining(words: string[], x: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FindWordsContaining(string[] words, char x) {\n        \n    }\n}",
+    "go": "func findWordsContaining(words []string, x byte) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_words_containing(words: Vec<String>, x: char) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"leet\",\"code\"]",
+      "x": "e"
+    },
+    {
+      "words": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]",
+      "x": "a"
+    },
+    {
+      "words": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]",
+      "x": "z"
+    }
+  ],
+  "functionName": "findWordsContaining",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "x",
+      "type": "char"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "Use two nested loops."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "number-of-perfect-pairs",
+  "title": "3649. Number of Perfect Pairs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-perfect-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,2,3]",
+      "output": "2",
+      "explanation": "There are 2 perfect pairs: (i, j) (a, b) min(|a &minus; b|, |a + b|) min(|a|, |b|) max(|a &minus; b|, |a + b|) max(|a|, |b|) (1, 2) (1, 2) min(|1 &minus; 2|, |1 + 2|) = 1 1 max(|1 &minus; 2|, |1 + 2|) = 3 2 (2, 3) (2, 3) min(|2 &minus; 3|, |2 + 3|) = 1 2 max(|2 &minus; 3|, |2 + 3|) = 5 3"
+    },
+    {
+      "input": "nums = [-3,2,-1,4]",
+      "output": "4",
+      "explanation": "There are 4 perfect pairs: (i, j) (a, b) min(|a &minus; b|, |a + b|) min(|a|, |b|) max(|a &minus; b|, |a + b|) max(|a|, |b|) (0, 1) (-3, 2) min(|-3 - 2|, |-3 + 2|) = 1 2 max(|-3 - 2|, |-3 + 2|) = 5 3 (0, 3) (-3, 4) min(|-3 - 4|, |-3 + 4|) = 1 3 max(|-3 - 4|, |-3 + 4|) = 7 4 (1, 2) (2, -1) min(|2 - (-1)|, |2 + (-1)|) = 1 1 max(|2 - (-1)|, |2 + (-1)|) = 3 2 (1, 3) (2, 4) min(|2 - 4|, |2 + 4|) = 2 2 max(|2 - 4|, |2 + 4|) = 6 4"
+    },
+    {
+      "input": "nums = [1,10,100,1000]",
+      "output": "0",
+      "explanation": "There are no perfect pairs. Thus, the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long perfectPairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long perfectPairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def perfectPairs(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function perfectPairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long PerfectPairs(int[] nums) {\n        \n    }\n}",
+    "go": "func perfectPairs(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn perfect_pairs(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,2,3]"
+    },
+    {
+      "nums": "[-3,2,-1,4]"
+    },
+    {
+      "nums": "[1,10,100,1000]"
+    }
+  ],
+  "functionName": "perfectPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "For any pair (a, b), let <code>x = |a|</code> and <code>y = |b|</code> and assume <code>x <= y</code>; the two conditions simplify to <code>y <= 2*x</code>.",
+    "Sort the array by absolute value.",
+    "Maintain two pointers <code>i</code> and <code>j</code> (starting at 0 and 1): for each <code>i</code>, advance <code>j</code> while <code>abs(nums[j]) <= 2*abs(nums[i])</code>.",
+    "For each <code>i</code>, add <code>j - i - 1</code> to your answer."
+  ]
+}

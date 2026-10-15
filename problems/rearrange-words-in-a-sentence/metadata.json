@@ -1,0 +1,54 @@
+{
+  "id": "rearrange-words-in-a-sentence",
+  "title": "1451. Rearrange Words in a Sentence",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/rearrange-words-in-a-sentence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "text = \"Leetcode is cool\"",
+      "output": "\"Is cool leetcode\"",
+      "explanation": "There are 3 words, \"Leetcode\" of length 8, \"is\" of length 2 and \"cool\" of length 4. Output is ordered by length and the new first word starts with capital letter."
+    },
+    {
+      "input": "text = \"Keep calm and code on\"",
+      "output": "\"On and keep calm code\"",
+      "explanation": "Output is ordered as follows: \"On\" 2 letters. \"and\" 3 letters. \"keep\" 4 letters in case of tie order by position in original text. \"calm\" 4 letters. \"code\" 4 letters."
+    },
+    {
+      "input": "text = \"To be or not to be\"",
+      "output": "\"To be or to be not\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string arrangeWords(string text) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String arrangeWords(String text) {\n        \n    }\n}",
+    "python": "class Solution:\n    def arrangeWords(self, text: str) -> str:\n        ",
+    "typescript": "function arrangeWords(text: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ArrangeWords(string text) {\n        \n    }\n}",
+    "go": "func arrangeWords(text string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn arrange_words(text: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "Leetcode is cool"
+    },
+    {
+      "text": "Keep calm and code on"
+    },
+    {
+      "text": "To be or not to be"
+    }
+  ],
+  "functionName": "arrangeWords",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Store each word and their relative position. Then, sort them by length of words in case of tie by their original order."
+  ]
+}

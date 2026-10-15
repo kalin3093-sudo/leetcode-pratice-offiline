@@ -1,0 +1,60 @@
+{
+  "id": "escape-a-large-maze",
+  "title": "1036. Escape a Large Maze",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/escape-a-large-maze/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "blocked = [[0,1],[1,0]], source = [0,0], target = [0,2]",
+      "output": "false",
+      "explanation": "The target square is inaccessible starting from the source square because we cannot move. We cannot move north or east because those squares are blocked. We cannot move south or west because we cannot go outside of the grid."
+    },
+    {
+      "input": "blocked = [], source = [0,0], target = [999999,999999]",
+      "output": "true",
+      "explanation": "Because there are no blocked cells, it is possible to reach the target square."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isEscapePossible(vector<vector<int>>& blocked, vector<int>& source, vector<int>& target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isEscapePossible(int[][] blocked, int[] source, int[] target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isEscapePossible(self, blocked: list[list[int]], source: list[int], target: list[int]) -> bool:\n        ",
+    "typescript": "function isEscapePossible(blocked: number[][], source: number[], target: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsEscapePossible(int[][] blocked, int[] source, int[] target) {\n        \n    }\n}",
+    "go": "func isEscapePossible(blocked [][]int, source []int, target []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_escape_possible(blocked: Vec<Vec<i32>>, source: Vec<i32>, target: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "blocked": "[[0,1],[1,0]]",
+      "source": "[0,0]",
+      "target": "[0,2]"
+    },
+    {
+      "blocked": "[]",
+      "source": "[0,0]",
+      "target": "[999999,999999]"
+    }
+  ],
+  "functionName": "isEscapePossible",
+  "params": [
+    {
+      "name": "blocked",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "source",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "If we become stuck, there's either a loop around the source or around the target.",
+    "If there is a loop around say, the source, what is the maximum number of squares it can have?"
+  ]
+}

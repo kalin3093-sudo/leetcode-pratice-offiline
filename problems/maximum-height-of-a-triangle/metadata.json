@@ -1,0 +1,71 @@
+{
+  "id": "maximum-height-of-a-triangle",
+  "title": "3200. Maximum Height of a Triangle",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-height-of-a-triangle/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "red = 2, blue = 4",
+      "output": "3",
+      "explanation": "The only possible arrangement is shown above."
+    },
+    {
+      "input": "red = 2, blue = 1",
+      "output": "2",
+      "explanation": "The only possible arrangement is shown above."
+    },
+    {
+      "input": "red = 1, blue = 1",
+      "output": "1"
+    },
+    {
+      "input": "red = 10, blue = 1",
+      "output": "2",
+      "explanation": "The only possible arrangement is shown above."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxHeightOfTriangle(int red, int blue) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxHeightOfTriangle(int red, int blue) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxHeightOfTriangle(self, red: int, blue: int) -> int:\n        ",
+    "typescript": "function maxHeightOfTriangle(red: number, blue: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxHeightOfTriangle(int red, int blue) {\n        \n    }\n}",
+    "go": "func maxHeightOfTriangle(red int, blue int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_height_of_triangle(red: i32, blue: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "red": 2,
+      "blue": 4
+    },
+    {
+      "red": 2,
+      "blue": 1
+    },
+    {
+      "red": 1,
+      "blue": 1
+    },
+    {
+      "red": 10,
+      "blue": 1
+    }
+  ],
+  "functionName": "maxHeightOfTriangle",
+  "params": [
+    {
+      "name": "red",
+      "type": "int"
+    },
+    {
+      "name": "blue",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the max height using both possibilities. That is, red ball as top and blue ball as top.",
+    "For counting the max height, use a simple for loop and remove the number of balls required at this level."
+  ]
+}

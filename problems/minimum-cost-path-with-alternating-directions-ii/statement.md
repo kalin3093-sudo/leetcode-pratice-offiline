@@ -1,0 +1,22 @@
+You are given two integers `m` and `n` representing the number of rows and columns of a grid, respectively.
+
+The cost to enter cell `(i, j)` is defined as `(i + 1) * (j + 1)`.
+
+You are also given a 2D integer array `waitCost` where `waitCost[i][j]` defines the cost to **wait** on that cell.
+
+The path will always begin by entering cell `(0, 0)` on move 1 and paying the entrance cost.
+
+At each step, you follow an alternating pattern:
+
+-   On **odd-numbered** seconds, you must move **right** or **down** to an **adjacent** cell, paying its entry cost.
+-   On **even-numbered** seconds, you must **wait** in place for **exactly** one second and pay `waitCost[i][j]` during that second.
+
+Return the **minimum** total cost required to reach `(m - 1, n - 1)`.
+
+**Constraints:**
+
+-   `1 ≤ m, n ≤ 10^5`
+-   `2 ≤ m * n ≤ 10^5`
+-   `waitCost.length == m`
+-   `waitCost[0].length == n`
+-   `0 ≤ waitCost[i][j] ≤ 10^5`

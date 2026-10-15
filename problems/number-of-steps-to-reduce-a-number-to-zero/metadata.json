@@ -1,0 +1,54 @@
+{
+  "id": "number-of-steps-to-reduce-a-number-to-zero",
+  "title": "1342. Number of Steps to Reduce a Number to Zero",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 14",
+      "output": "6",
+      "explanation": "Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd; subtract 1 and obtain 6. Step 3) 6 is even; divide by 2 and obtain 3. Step 4) 3 is odd; subtract 1 and obtain 2. Step 5) 2 is even; divide by 2 and obtain 1. Step 6) 1 is odd; subtract 1 and obtain 0."
+    },
+    {
+      "input": "num = 8",
+      "output": "4",
+      "explanation": "Step 1) 8 is even; divide by 2 and obtain 4. Step 2) 4 is even; divide by 2 and obtain 2. Step 3) 2 is even; divide by 2 and obtain 1. Step 4) 1 is odd; subtract 1 and obtain 0."
+    },
+    {
+      "input": "num = 123",
+      "output": "12"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSteps(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSteps(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfSteps(self, num: int) -> int:\n        ",
+    "typescript": "function numberOfSteps(num: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSteps(int num) {\n        \n    }\n}",
+    "go": "func numberOfSteps(num int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_steps(num: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 14
+    },
+    {
+      "num": 8
+    },
+    {
+      "num": 123
+    }
+  ],
+  "functionName": "numberOfSteps",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the process to get the final answer."
+  ]
+}

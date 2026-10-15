@@ -1,0 +1,45 @@
+{
+  "id": "keys-and-rooms",
+  "title": "841. Keys and Rooms",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/keys-and-rooms/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "rooms = [[1],[2],[3],[]]",
+      "output": "true",
+      "explanation": "We visit room 0 and pick up key 1. We then visit room 1 and pick up key 2. We then visit room 2 and pick up key 3. We then visit room 3. Since we were able to visit every room, we return true."
+    },
+    {
+      "input": "rooms = [[1,3],[3,0,1],[2],[0]]",
+      "output": "false",
+      "explanation": "We can not enter room number 2 since the only key that unlocks it is in that room."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canVisitAllRooms(vector<vector<int>>& rooms) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canVisitAllRooms(List<List<Integer>> rooms) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canVisitAllRooms(self, rooms: list[list[int]]) -> bool:\n        ",
+    "typescript": "function canVisitAllRooms(rooms: number[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanVisitAllRooms(IList<IList<int>> rooms) {\n        \n    }\n}",
+    "go": "func canVisitAllRooms(rooms [][]int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_visit_all_rooms(rooms: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rooms": "[[1],[2],[3],[]]"
+    },
+    {
+      "rooms": "[[1,3],[3,0,1],[2],[0]]"
+    }
+  ],
+  "functionName": "canVisitAllRooms",
+  "params": [
+    {
+      "name": "rooms",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,50 @@
+{
+  "id": "minimum-number-of-days-to-disconnect-island",
+  "title": "1568. Minimum Number of Days to Disconnect Island",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
+      "output": "2",
+      "explanation": "We need at least 2 days to get a disconnected grid. Change land grid[1][1] and grid[0][2] to water and get 2 disconnected island."
+    },
+    {
+      "input": "grid = [[1,1]]",
+      "output": "2",
+      "explanation": "Grid of full water is also disconnected ([[1,1]] -> [[0,0]]), 0 islands."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDays(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDays(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDays(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function minDays(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDays(int[][] grid) {\n        \n    }\n}",
+    "go": "func minDays(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_days(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[0,1,1,0],[0,1,1,0],[0,0,0,0]]"
+    },
+    {
+      "grid": "[[1,1]]"
+    }
+  ],
+  "functionName": "minDays",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Return 0 if the grid is already disconnected.",
+    "Return 1 if changing a single land to water disconnect the island.",
+    "Otherwise return 2.",
+    "We can disconnect the grid within at most 2 days."
+  ]
+}

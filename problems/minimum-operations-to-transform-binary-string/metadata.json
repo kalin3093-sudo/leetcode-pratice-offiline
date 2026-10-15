@@ -1,0 +1,66 @@
+{
+  "id": "minimum-operations-to-transform-binary-string",
+  "title": "3980. Minimum Operations to Transform Binary String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-transform-binary-string/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s1 = \"11\", s2 = \"00\"",
+      "output": "1",
+      "explanation": "Change indices 0 and 1 from '1' to '0' in one operation, so \"11\" becomes \"00\". Thus, the answer is 1."
+    },
+    {
+      "input": "s1 = \"01\", s2 = \"10\"",
+      "output": "3",
+      "explanation": "Change index 0 from '0' to '1', so \"01\" becomes \"11\". Change indices 0 and 1 from '1' to '0', so \"11\" becomes \"00\". Change index 0 from '0' to '1', so \"00\" becomes \"10\". Thus, the answer is 3."
+    },
+    {
+      "input": "s1 = \"1\", s2 = \"0\"",
+      "output": "-1",
+      "explanation": "The first operation cannot change '1' to '0', and the second operation requires two adjacent characters. Therefore, it is impossible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(string s1, string s2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(String s1, String s2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, s1: str, s2: str) -> int:\n        ",
+    "typescript": "function minOperations(s1: string, s2: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(string s1, string s2) {\n        \n    }\n}",
+    "go": "func minOperations(s1 string, s2 string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(s1: String, s2: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s1": "11",
+      "s2": "00"
+    },
+    {
+      "s1": "01",
+      "s2": "10"
+    },
+    {
+      "s1": "1",
+      "s2": "0"
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The first operation is the only way to change a <code>'0'</code> into a <code>'1'</code>.",
+    "The second operation is the only way to change a <code>'1'</code> into a <code>'0'</code>, but it affects two adjacent positions at once.",
+    "Use dynamic programming from left to right. When processing position <code>i</code>, keep enough information to know whether position <code>i</code> has already been affected by an operation involving position <code>i - 1</code>.",
+    "For each position, either make it match directly, or use the second operation on the pair <code>(i, i + 1)</code> after making both characters <code>'1'</code> if necessary.",
+    "Handle the case <code>n == 1</code> separately, since the second operation cannot be used."
+  ]
+}

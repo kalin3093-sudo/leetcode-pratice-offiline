@@ -1,0 +1,49 @@
+{
+  "id": "count-anagrams",
+  "title": "2514. Count Anagrams",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-anagrams/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"too hot\"",
+      "output": "18",
+      "explanation": "Some of the anagrams of the given string are \"too hot\", \"oot hot\", \"oto toh\", \"too toh\", and \"too oht\"."
+    },
+    {
+      "input": "s = \"aa\"",
+      "output": "1",
+      "explanation": "There is only one anagram possible for the given string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countAnagrams(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countAnagrams(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countAnagrams(self, s: str) -> int:\n        ",
+    "typescript": "function countAnagrams(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountAnagrams(string s) {\n        \n    }\n}",
+    "go": "func countAnagrams(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_anagrams(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "too hot"
+    },
+    {
+      "s": "aa"
+    }
+  ],
+  "functionName": "countAnagrams",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each word, can you count the number of permutations possible if all characters are distinct?",
+    "How to reduce overcounting when letters are repeated?",
+    "The product of the counts of distinct permutations of all words will give the final answer."
+  ]
+}

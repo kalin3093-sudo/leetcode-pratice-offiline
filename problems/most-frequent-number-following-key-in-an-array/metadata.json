@@ -1,0 +1,54 @@
+{
+  "id": "most-frequent-number-following-key-in-an-array",
+  "title": "2190. Most Frequent Number Following Key In an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,100,200,1,100], key = 1",
+      "output": "100",
+      "explanation": "For target = 100, there are 2 occurrences at indices 1 and 4 which follow an occurrence of key. No other integers follow an occurrence of key, so we return 100."
+    },
+    {
+      "input": "nums = [2,2,2,2,3], key = 2",
+      "output": "2",
+      "explanation": "For target = 2, there are 3 occurrences at indices 1, 2, and 3 which follow an occurrence of key. For target = 3, there is only one occurrence at index 4 which follows an occurrence of key. target = 2 has the maximum number of occurrences following an occurrence of key, so we return 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int mostFrequent(vector<int>& nums, int key) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int mostFrequent(int[] nums, int key) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mostFrequent(self, nums: list[int], key: int) -> int:\n        ",
+    "typescript": "function mostFrequent(nums: number[], key: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MostFrequent(int[] nums, int key) {\n        \n    }\n}",
+    "go": "func mostFrequent(nums []int, key int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn most_frequent(nums: Vec<i32>, key: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,100,200,1,100]",
+      "key": 1
+    },
+    {
+      "nums": "[2,2,2,2,3]",
+      "key": 2
+    }
+  ],
+  "functionName": "mostFrequent",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "key",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the number of times each target value follows the key in the array.",
+    "Choose the target with the maximum count and return it."
+  ]
+}

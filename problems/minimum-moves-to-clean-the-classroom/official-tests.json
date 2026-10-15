@@ -1,0 +1,14 @@
+[
+  {
+    "classroom": "[\"S.\", \"XL\"]",
+    "energy": 2
+  },
+  {
+    "classroom": "[\"LS\", \"RL\"]",
+    "energy": 4
+  },
+  {
+    "classroom": "[\"L.S\", \"RXL\"]",
+    "energy": 3
+  }
+]

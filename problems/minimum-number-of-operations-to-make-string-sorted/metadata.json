@@ -1,0 +1,48 @@
+{
+  "id": "minimum-number-of-operations-to-make-string-sorted",
+  "title": "1830. Minimum Number of Operations to Make String Sorted",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"cba\"",
+      "output": "5",
+      "explanation": "The simulation goes as follows: Operation 1: i=2, j=2. Swap s[1] and s[2] to get s=\"cab\", then reverse the suffix starting at 2. Now, s=\"cab\". Operation 2: i=1, j=2. Swap s[0] and s[2] to get s=\"bac\", then reverse the suffix starting at 1. Now, s=\"bca\". Operation 3: i=2, j=2. Swap s[1] and s[2] to get s=\"bac\", then reverse the suffix starting at 2. Now, s=\"bac\". Operation 4: i=1, j=1. Swap s[0] and s[1] to get s=\"abc\", then reverse the suffix starting at 1. Now, s=\"acb\". Operation 5: i=2, j=2. Swap s[1] and s[2] to get s=\"abc\", then reverse the suffix starting at 2. Now, s=\"abc\"."
+    },
+    {
+      "input": "s = \"aabaa\"",
+      "output": "2",
+      "explanation": "The simulation goes as follows: Operation 1: i=3, j=4. Swap s[2] and s[4] to get s=\"aaaab\", then reverse the substring starting at 3. Now, s=\"aaaba\". Operation 2: i=4, j=4. Swap s[3] and s[4] to get s=\"aaaab\", then reverse the substring starting at 4. Now, s=\"aaaab\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int makeStringSorted(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int makeStringSorted(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeStringSorted(self, s: str) -> int:\n        ",
+    "typescript": "function makeStringSorted(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MakeStringSorted(string s) {\n        \n    }\n}",
+    "go": "func makeStringSorted(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_string_sorted(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "cba"
+    },
+    {
+      "s": "aabaa"
+    }
+  ],
+  "functionName": "makeStringSorted",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Note that the operations given describe getting the previous permutation of s",
+    "To solve this problem you need to solve every suffix separately"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "time-needed-to-buy-tickets",
+  "title": "2073. Time Needed to Buy Tickets",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tickets = [2,3,2], k = 2",
+      "output": "6",
+      "explanation": "The queue starts as [2,3,2], where the kth person is underlined. After the person at the front has bought a ticket, the queue becomes [3,2,1] at 1 second. Continuing this process, the queue becomes [2,1,2] at 2 seconds. Continuing this process, the queue becomes [1,2,1] at 3 seconds. Continuing this process, the queue becomes [2,1] at 4 seconds. Note: the person at the front left the queue. Continuing this process, the queue becomes [1,1] at 5 seconds. Continuing this process, the queue becomes [1] at 6 seconds. The kth person has bought all their tickets, so return 6."
+    },
+    {
+      "input": "tickets = [5,1,1,1], k = 0",
+      "output": "8",
+      "explanation": "The queue starts as [5,1,1,1], where the kth person is underlined. After the person at the front has bought a ticket, the queue becomes [1,1,1,4] at 1 second. Continuing this process for 3 seconds, the queue becomes [4] at 4 seconds. Continuing this process for 4 seconds, the queue becomes [] at 8 seconds. The kth person has bought all their tickets, so return 8."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int timeRequiredToBuy(vector<int>& tickets, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int timeRequiredToBuy(int[] tickets, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def timeRequiredToBuy(self, tickets: list[int], k: int) -> int:\n        ",
+    "typescript": "function timeRequiredToBuy(tickets: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TimeRequiredToBuy(int[] tickets, int k) {\n        \n    }\n}",
+    "go": "func timeRequiredToBuy(tickets []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn time_required_to_buy(tickets: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tickets": "[2,3,2]",
+      "k": 2
+    },
+    {
+      "tickets": "[5,1,1,1]",
+      "k": 0
+    }
+  ],
+  "functionName": "timeRequiredToBuy",
+  "params": [
+    {
+      "name": "tickets",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Loop through the line of people and decrement the number of tickets for each to buy one at a time as if simulating the line moving forward. Keep track of how many tickets have been sold up until person k has no more tickets to buy.",
+    "Remember that those who have no more tickets to buy will leave the line."
+  ]
+}

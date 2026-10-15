@@ -1,0 +1,62 @@
+{
+  "id": "fraction-to-recurring-decimal",
+  "title": "166. Fraction to Recurring Decimal",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/fraction-to-recurring-decimal/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "numerator = 1, denominator = 2",
+      "output": "\"0.5\""
+    },
+    {
+      "input": "numerator = 2, denominator = 1",
+      "output": "\"2\""
+    },
+    {
+      "input": "numerator = 4, denominator = 333",
+      "output": "\"0.(012)\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string fractionToDecimal(int numerator, int denominator) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String fractionToDecimal(int numerator, int denominator) {\n        \n    }\n}",
+    "python": "class Solution:\n    def fractionToDecimal(self, numerator: int, denominator: int) -> str:\n        ",
+    "typescript": "function fractionToDecimal(numerator: number, denominator: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FractionToDecimal(int numerator, int denominator) {\n        \n    }\n}",
+    "go": "func fractionToDecimal(numerator int, denominator int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn fraction_to_decimal(numerator: i32, denominator: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "numerator": 1,
+      "denominator": 2
+    },
+    {
+      "numerator": 2,
+      "denominator": 1
+    },
+    {
+      "numerator": 4,
+      "denominator": 333
+    }
+  ],
+  "functionName": "fractionToDecimal",
+  "params": [
+    {
+      "name": "numerator",
+      "type": "int"
+    },
+    {
+      "name": "denominator",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "No scary math, just apply elementary math knowledge. Still remember how to perform a <i>long division</i>?",
+    "Try a long division on 4/9, the repeating part is obvious. Now try 4/333. Do you see a pattern?",
+    "Notice that once the remainder starts repeating, so does the divided result.",
+    "Be wary of edge cases! List out as many test cases as you can think of and test your code thoroughly."
+  ]
+}

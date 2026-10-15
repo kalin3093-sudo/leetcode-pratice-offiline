@@ -1,0 +1,60 @@
+{
+  "id": "minimum-cost-to-merge-stones",
+  "title": "1000. Minimum Cost to Merge Stones",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-cost-to-merge-stones/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stones = [3,2,4,1], k = 2",
+      "output": "20",
+      "explanation": "We start with [3, 2, 4, 1]. We merge [3, 2] for a cost of 5, and we are left with [5, 4, 1]. We merge [4, 1] for a cost of 5, and we are left with [5, 5]. We merge [5, 5] for a cost of 10, and we are left with [10]. The total cost was 20, and this is the minimum possible."
+    },
+    {
+      "input": "stones = [3,2,4,1], k = 3",
+      "output": "-1",
+      "explanation": "After any merge operation, there are 2 piles left, and we can't merge anymore.  So the task is impossible."
+    },
+    {
+      "input": "stones = [3,5,1,2,6], k = 3",
+      "output": "25",
+      "explanation": "We start with [3, 5, 1, 2, 6]. We merge [5, 1, 2] for a cost of 8, and we are left with [3, 8, 6]. We merge [3, 8, 6] for a cost of 17, and we are left with [17]. The total cost was 25, and this is the minimum possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int mergeStones(vector<int>& stones, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int mergeStones(int[] stones, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mergeStones(self, stones: list[int], k: int) -> int:\n        ",
+    "typescript": "function mergeStones(stones: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MergeStones(int[] stones, int k) {\n        \n    }\n}",
+    "go": "func mergeStones(stones []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn merge_stones(stones: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stones": "[3,2,4,1]",
+      "k": 2
+    },
+    {
+      "stones": "[3,2,4,1]",
+      "k": 3
+    },
+    {
+      "stones": "[3,5,1,2,6]",
+      "k": 3
+    }
+  ],
+  "functionName": "mergeStones",
+  "params": [
+    {
+      "name": "stones",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

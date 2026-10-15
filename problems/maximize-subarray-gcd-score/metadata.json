@@ -1,0 +1,63 @@
+{
+  "id": "maximize-subarray-gcd-score",
+  "title": "3574. Maximize Subarray GCD Score",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-subarray-gcd-score/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,4], k = 1",
+      "output": "8",
+      "explanation": "Double nums[0] to 4 using one operation. The modified array becomes [4, 4]. The GCD of the subarray [4, 4] is 4, and the length is 2. Thus, the maximum possible score is 2 &times; 4 = 8."
+    },
+    {
+      "input": "nums = [3,5,7], k = 2",
+      "output": "14",
+      "explanation": "Double nums[2] to 14 using one operation. The modified array becomes [3, 5, 14]. The GCD of the subarray [14] is 14, and the length is 1. Thus, the maximum possible score is 1 &times; 14 = 14."
+    },
+    {
+      "input": "nums = [5,5,5], k = 1",
+      "output": "15",
+      "explanation": "The subarray [5, 5, 5] has a GCD of 5, and its length is 3. Since doubling any element doesn't improve the score, the maximum score is 3 &times; 5 = 15."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxGCDScore(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxGCDScore(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxGCDScore(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function maxGCDScore(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxGCDScore(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func maxGCDScore(nums []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_gcd_score(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,4]",
+      "k": 1
+    },
+    {
+      "nums": "[3,5,7]",
+      "k": 2
+    },
+    {
+      "nums": "[5,5,5]",
+      "k": 1
+    }
+  ],
+  "functionName": "maxGCDScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Try iterating over the subarrays",
+    "Handle the 2s in the factors of elements separately"
+  ]
+}

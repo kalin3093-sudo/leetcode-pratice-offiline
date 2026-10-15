@@ -1,0 +1,48 @@
+{
+  "id": "min-max-game",
+  "title": "2293. Min Max Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/min-max-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,5,2,4,8,2,2]",
+      "output": "1",
+      "explanation": "The following arrays are the results of applying the algorithm repeatedly. First: nums = [1,5,4,2] Second: nums = [1,4] Third: nums = [1] 1 is the last remaining number, so we return 1."
+    },
+    {
+      "input": "nums = [3]",
+      "output": "3",
+      "explanation": "3 is already the last remaining number, so we return 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minMaxGame(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minMaxGame(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minMaxGame(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minMaxGame(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinMaxGame(int[] nums) {\n        \n    }\n}",
+    "go": "func minMaxGame(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_max_game(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,5,2,4,8,2,2]"
+    },
+    {
+      "nums": "[3]"
+    }
+  ],
+  "functionName": "minMaxGame",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simply simulate the algorithm.",
+    "Note that the size of the array decreases exponentially, so the process will terminate after just O(log n) steps."
+  ]
+}

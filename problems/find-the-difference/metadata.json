@@ -1,0 +1,50 @@
+{
+  "id": "find-the-difference",
+  "title": "389. Find the Difference",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-difference/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abcd\", t = \"abcde\"",
+      "output": "\"e\"",
+      "explanation": "'e' is the letter that was added."
+    },
+    {
+      "input": "s = \"\", t = \"y\"",
+      "output": "\"y\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    char findTheDifference(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public char findTheDifference(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findTheDifference(self, s: str, t: str) -> str:\n        ",
+    "typescript": "function findTheDifference(s: string, t: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public char FindTheDifference(string s, string t) {\n        \n    }\n}",
+    "go": "func findTheDifference(s string, t string) byte {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_the_difference(s: String, t: String) -> char {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcd",
+      "t": "abcde"
+    },
+    {
+      "s": "",
+      "t": "y"
+    }
+  ],
+  "functionName": "findTheDifference",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "char",
+  "hints": []
+}

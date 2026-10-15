@@ -1,0 +1,51 @@
+{
+  "id": "top-k-frequent-words",
+  "title": "692. Top K Frequent Words",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/top-k-frequent-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"], k = 2",
+      "output": "[\"i\",\"love\"]",
+      "explanation": "\"i\" and \"love\" are the two most frequent words. Note that \"i\" comes before \"love\" due to a lower alphabetical order."
+    },
+    {
+      "input": "words = [\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"], k = 4",
+      "output": "[\"the\",\"is\",\"sunny\",\"day\"]",
+      "explanation": "\"the\", \"is\", \"sunny\" and \"day\" are the four most frequent words, with the number of occurrence being 4, 3, 2 and 1 respectively."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> topKFrequent(vector<string>& words, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> topKFrequent(String[] words, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def topKFrequent(self, words: list[str], k: int) -> list[str]:\n        ",
+    "typescript": "function topKFrequent(words: string[], k: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> TopKFrequent(string[] words, int k) {\n        \n    }\n}",
+    "go": "func topKFrequent(words []string, k int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn top_k_frequent(words: Vec<String>, k: i32) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"]",
+      "k": 2
+    },
+    {
+      "words": "[\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"]",
+      "k": 4
+    }
+  ],
+  "functionName": "topKFrequent",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": []
+}

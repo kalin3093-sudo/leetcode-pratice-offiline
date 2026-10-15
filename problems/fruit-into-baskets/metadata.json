@@ -1,0 +1,53 @@
+{
+  "id": "fruit-into-baskets",
+  "title": "904. Fruit Into Baskets",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/fruit-into-baskets/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "fruits = [1,2,1]",
+      "output": "3",
+      "explanation": "We can pick from all 3 trees."
+    },
+    {
+      "input": "fruits = [0,1,2,2]",
+      "output": "3",
+      "explanation": "We can pick from trees [1,2,2]. If we had started at the first tree, we would only pick from trees [0,1]."
+    },
+    {
+      "input": "fruits = [1,2,3,2,2]",
+      "output": "4",
+      "explanation": "We can pick from trees [2,3,2,2]. If we had started at the first tree, we would only pick from trees [1,2]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int totalFruit(vector<int>& fruits) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int totalFruit(int[] fruits) {\n        \n    }\n}",
+    "python": "class Solution:\n    def totalFruit(self, fruits: list[int]) -> int:\n        ",
+    "typescript": "function totalFruit(fruits: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TotalFruit(int[] fruits) {\n        \n    }\n}",
+    "go": "func totalFruit(fruits []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn total_fruit(fruits: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "fruits": "[1,2,1]"
+    },
+    {
+      "fruits": "[0,1,2,2]"
+    },
+    {
+      "fruits": "[1,2,3,2,2]"
+    }
+  ],
+  "functionName": "totalFruit",
+  "params": [
+    {
+      "name": "fruits",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

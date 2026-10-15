@@ -1,0 +1,62 @@
+{
+  "id": "count-substrings-that-can-be-rearranged-to-contain-a-string-i",
+  "title": "3297. Count Substrings That Can Be Rearranged to Contain a String I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word1 = \"bcca\", word2 = \"abc\"",
+      "output": "1",
+      "explanation": "The only valid substring is \"bcca\" which can be rearranged to \"abcc\" having \"abc\" as a prefix."
+    },
+    {
+      "input": "word1 = \"abcabc\", word2 = \"abc\"",
+      "output": "10",
+      "explanation": "All the substrings except substrings of size 1 and size 2 are valid."
+    },
+    {
+      "input": "word1 = \"abcabc\", word2 = \"aaabc\"",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long validSubstringCount(string word1, string word2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long validSubstringCount(String word1, String word2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def validSubstringCount(self, word1: str, word2: str) -> int:\n        ",
+    "typescript": "function validSubstringCount(word1: string, word2: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long ValidSubstringCount(string word1, string word2) {\n        \n    }\n}",
+    "go": "func validSubstringCount(word1 string, word2 string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn valid_substring_count(word1: String, word2: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "bcca",
+      "word2": "abc"
+    },
+    {
+      "word1": "abcabc",
+      "word2": "abc"
+    },
+    {
+      "word1": "abcabc",
+      "word2": "aaabc"
+    }
+  ],
+  "functionName": "validSubstringCount",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Store the frequency of each character for all prefixes.",
+    "Use Binary Search."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "maximum-manhattan-distance-after-all-moves",
+  "title": "3968. Maximum Manhattan Distance After All Moves",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "moves = \"L_D_\"",
+      "output": "4",
+      "explanation": "One optimal choice is: 'L': (0, 0) -> (-1, 0) '_' treated as 'D': (-1, 0) -> (-1, -1) 'D': (-1, -1) -> (-1, -2) '_' treated as 'L': (-1, -2) -> (-2, -2) The final Manhattan distance from the origin is |0 - (-2)| + |0 - (-2)| = 4."
+    },
+    {
+      "input": "moves = \"U_R\"",
+      "output": "3",
+      "explanation": "One optimal choice is: 'U': (0, 0) -> (0, 1) '_' treated as 'U': (0, 1) -> (0, 2) 'R': (0, 2) -> (1, 2) The final Manhattan distance from the origin is |0 - 1| + |0 - 2| = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDistance(string moves) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDistance(String moves) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxDistance(self, moves: str) -> int:\n        ",
+    "typescript": "function maxDistance(moves: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDistance(string moves) {\n        \n    }\n}",
+    "go": "func maxDistance(moves string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_distance(moves: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "moves": "L_D_"
+    },
+    {
+      "moves": "U_R"
+    }
+  ],
+  "functionName": "maxDistance",
+  "params": [
+    {
+      "name": "moves",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the net horizontal movement, net vertical movement, and the number of underscores.",
+    "Without underscores, the final distance is <code>abs(x) + abs(y)</code>.",
+    "Each underscore can always be chosen to increase the final Manhattan distance by 1, so add the number of underscores to the fixed-move distance."
+  ]
+}

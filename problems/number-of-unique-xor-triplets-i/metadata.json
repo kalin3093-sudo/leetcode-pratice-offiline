@@ -1,0 +1,49 @@
+{
+  "id": "number-of-unique-xor-triplets-i",
+  "title": "3513. Number of Unique XOR Triplets I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-unique-xor-triplets-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2]",
+      "output": "2",
+      "explanation": "The possible XOR triplet values are: (0, 0, 0) &rarr; 1 XOR 1 XOR 1 = 1 (0, 0, 1) &rarr; 1 XOR 1 XOR 2 = 2 (0, 1, 1) &rarr; 1 XOR 2 XOR 2 = 1 (1, 1, 1) &rarr; 2 XOR 2 XOR 2 = 2 The unique XOR values are {1, 2}, so the output is 2."
+    },
+    {
+      "input": "nums = [3,1,2]",
+      "output": "4",
+      "explanation": "The possible XOR triplet values include: (0, 0, 0) &rarr; 3 XOR 3 XOR 3 = 3 (0, 0, 1) &rarr; 3 XOR 3 XOR 1 = 1 (0, 0, 2) &rarr; 3 XOR 3 XOR 2 = 2 (0, 1, 2) &rarr; 3 XOR 1 XOR 2 = 0 The unique XOR values are {0, 1, 2, 3}, so the output is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int uniqueXorTriplets(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int uniqueXorTriplets(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def uniqueXorTriplets(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function uniqueXorTriplets(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int UniqueXorTriplets(int[] nums) {\n        \n    }\n}",
+    "go": "func uniqueXorTriplets(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn unique_xor_triplets(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2]"
+    },
+    {
+      "nums": "[3,1,2]"
+    }
+  ],
+  "functionName": "uniqueXorTriplets",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What is the maximum and minimum value we can obtain using the given numbers?",
+    "Can we generate all numbers within that range?",
+    "For <code>n >= 3</code> we can obtain all numbers in <code>[0, 2^(msb(n) + 1) - 1]</code>, where <code>msb(n)</code> is the index of the most significant bit in <code>n</code>’s binary representation (i.e., the highest power of 2 less than or equal to <code>n</code>). Handle the case when <code>n <= 2</code> separately."
+  ]
+}

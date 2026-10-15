@@ -1,0 +1,13 @@
+You are given two integer arrays `costs` and `capacity`, both of length `n`, where `costs[i]` represents the purchase cost of the `i^th` machine and `capacity[i]` represents its performance capacity.
+
+You are also given an integer `budget`.
+
+You may select **at most two distinct** machines such that the **total cost** of the selected machines is **strictly less** than `budget`.
+
+Return the **maximum** achievable total capacity of the selected machines.
+
+**Constraints:**
+
+-   `1 ≤ n == costs.length == capacity.length ≤ 10^5`
+-   `1 ≤ costs[i], capacity[i] ≤ 10^5`
+-   `1 ≤ budget ≤ 2 * 10^5`

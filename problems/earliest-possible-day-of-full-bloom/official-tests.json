@@ -1,0 +1,14 @@
+[
+  {
+    "plantTime": "[1,4,3]",
+    "growTime": "[2,3,1]"
+  },
+  {
+    "plantTime": "[1,2,3,2]",
+    "growTime": "[2,1,2,1]"
+  },
+  {
+    "plantTime": "[1]",
+    "growTime": "[1]"
+  }
+]

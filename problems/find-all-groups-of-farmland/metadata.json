@@ -1,0 +1,57 @@
+{
+  "id": "find-all-groups-of-farmland",
+  "title": "1992. Find All Groups of Farmland",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-all-groups-of-farmland/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "land = [[1,0,0],[0,1,1],[0,1,1]]",
+      "output": "[[0,0,0,0],[1,1,2,2]]",
+      "explanation": "The first group has a top left corner at land[0][0] and a bottom right corner at land[0][0]. The second group has a top left corner at land[1][1] and a bottom right corner at land[2][2]."
+    },
+    {
+      "input": "land = [[1,1],[1,1]]",
+      "output": "[[0,0,1,1]]",
+      "explanation": "The first group has a top left corner at land[0][0] and a bottom right corner at land[1][1]."
+    },
+    {
+      "input": "land = [[0]]",
+      "output": "[]",
+      "explanation": "There are no groups of farmland."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> findFarmland(vector<vector<int>>& land) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] findFarmland(int[][] land) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findFarmland(self, land: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function findFarmland(land: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] FindFarmland(int[][] land) {\n        \n    }\n}",
+    "go": "func findFarmland(land [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_farmland(land: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "land": "[[1,0,0],[0,1,1],[0,1,1]]"
+    },
+    {
+      "land": "[[1,1],[1,1]]"
+    },
+    {
+      "land": "[[0]]"
+    }
+  ],
+  "functionName": "findFarmland",
+  "params": [
+    {
+      "name": "land",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Since every group of farmland is rectangular, the top left corner of each group will have the smallest x-coordinate and y-coordinate of any farmland in the group.",
+    "Similarly, the bottom right corner of each group will have the largest x-coordinate and y-coordinate of any farmland in the group.",
+    "Use DFS to traverse through different groups of farmlands and keep track of the smallest and largest x-coordinate and y-coordinates you have seen in each group."
+  ]
+}

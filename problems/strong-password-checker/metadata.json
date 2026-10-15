@@ -1,0 +1,50 @@
+{
+  "id": "strong-password-checker",
+  "title": "420. Strong Password Checker",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/strong-password-checker/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "password = \"a\"",
+      "output": "5"
+    },
+    {
+      "input": "password = \"aA1\"",
+      "output": "3"
+    },
+    {
+      "input": "password = \"1337C0d3\"",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int strongPasswordChecker(string password) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int strongPasswordChecker(String password) {\n        \n    }\n}",
+    "python": "class Solution:\n    def strongPasswordChecker(self, password: str) -> int:\n        ",
+    "typescript": "function strongPasswordChecker(password: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int StrongPasswordChecker(string password) {\n        \n    }\n}",
+    "go": "func strongPasswordChecker(password string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn strong_password_checker(password: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "password": "a"
+    },
+    {
+      "password": "aA1"
+    },
+    {
+      "password": "1337C0d3"
+    }
+  ],
+  "functionName": "strongPasswordChecker",
+  "params": [
+    {
+      "name": "password",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

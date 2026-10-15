@@ -1,0 +1,61 @@
+{
+  "id": "minimum-white-tiles-after-covering-with-carpets",
+  "title": "2209. Minimum White Tiles After Covering With Carpets",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "floor = \"10110101\", numCarpets = 2, carpetLen = 2",
+      "output": "2",
+      "explanation": "The figure above shows one way of covering the tiles with the carpets such that only 2 white tiles are visible. No other way of covering the tiles with the carpets can leave less than 2 white tiles visible."
+    },
+    {
+      "input": "floor = \"11111\", numCarpets = 2, carpetLen = 3",
+      "output": "0",
+      "explanation": "The figure above shows one way of covering the tiles with the carpets such that no white tiles are visible. Note that the carpets are able to overlap one another."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumWhiteTiles(string floor, int numCarpets, int carpetLen) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumWhiteTiles(String floor, int numCarpets, int carpetLen) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumWhiteTiles(self, floor: str, numCarpets: int, carpetLen: int) -> int:\n        ",
+    "typescript": "function minimumWhiteTiles(floor: string, numCarpets: number, carpetLen: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumWhiteTiles(string floor, int numCarpets, int carpetLen) {\n        \n    }\n}",
+    "go": "func minimumWhiteTiles(floor string, numCarpets int, carpetLen int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_white_tiles(floor: String, num_carpets: i32, carpet_len: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "floor": "10110101",
+      "numCarpets": 2,
+      "carpetLen": 2
+    },
+    {
+      "floor": "11111",
+      "numCarpets": 2,
+      "carpetLen": 3
+    }
+  ],
+  "functionName": "minimumWhiteTiles",
+  "params": [
+    {
+      "name": "floor",
+      "type": "string"
+    },
+    {
+      "name": "numCarpets",
+      "type": "int"
+    },
+    {
+      "name": "carpetLen",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can you think of a DP solution?",
+    "Let DP[i][j] denote the minimum number of white tiles still visible from indices i to floor.length-1 after covering with at most j carpets.",
+    "The transition will be whether to put down the carpet at position i (if possible), or not."
+  ]
+}

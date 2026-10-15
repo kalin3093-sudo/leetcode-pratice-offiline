@@ -1,0 +1,60 @@
+{
+  "id": "maximize-the-minimum-powered-city",
+  "title": "2528. Maximize the Minimum Powered City",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-the-minimum-powered-city/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stations = [1,2,4,5,0], r = 1, k = 2",
+      "output": "5",
+      "explanation": "One of the optimal ways is to install both the power stations at city 1. So stations will become [1,4,4,5,0]. - City 0 is provided by 1 + 4 = 5 power stations. - City 1 is provided by 1 + 4 + 4 = 9 power stations. - City 2 is provided by 4 + 4 + 5 = 13 power stations. - City 3 is provided by 5 + 4 = 9 power stations. - City 4 is provided by 5 + 0 = 5 power stations. So the minimum power of a city is 5. Since it is not possible to obtain a larger power, we return 5."
+    },
+    {
+      "input": "stations = [4,4,4,4], r = 0, k = 3",
+      "output": "4",
+      "explanation": "It can be proved that we cannot make the minimum power of a city greater than 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxPower(vector<int>& stations, int r, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxPower(int[] stations, int r, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPower(self, stations: list[int], r: int, k: int) -> int:\n        ",
+    "typescript": "function maxPower(stations: number[], r: number, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxPower(int[] stations, int r, int k) {\n        \n    }\n}",
+    "go": "func maxPower(stations []int, r int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_power(stations: Vec<i32>, r: i32, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stations": "[1,2,4,5,0]",
+      "r": 1,
+      "k": 2
+    },
+    {
+      "stations": "[4,4,4,4]",
+      "r": 0,
+      "k": 3
+    }
+  ],
+  "functionName": "maxPower",
+  "params": [
+    {
+      "name": "stations",
+      "type": "int_array"
+    },
+    {
+      "name": "r",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Pre calculate the number of stations on each city using Line Sweep.",
+    "Use binary search to maximize the minimum."
+  ]
+}

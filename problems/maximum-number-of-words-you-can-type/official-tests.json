@@ -1,0 +1,14 @@
+[
+  {
+    "text": "hello world",
+    "brokenLetters": "ad"
+  },
+  {
+    "text": "leet code",
+    "brokenLetters": "lt"
+  },
+  {
+    "text": "leet code",
+    "brokenLetters": "e"
+  }
+]

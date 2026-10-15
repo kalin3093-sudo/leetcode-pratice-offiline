@@ -1,0 +1,56 @@
+{
+  "id": "jump-game-iv",
+  "title": "1345. Jump Game IV",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/jump-game-iv/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [100,-23,-23,404,100,23,23,23,3,404]",
+      "output": "3",
+      "explanation": "You need three jumps from index 0 --> 4 --> 3 --> 9. Note that index 9 is the last index of the array."
+    },
+    {
+      "input": "arr = [7]",
+      "output": "0",
+      "explanation": "Start index is the last index. You do not need to jump."
+    },
+    {
+      "input": "arr = [7,6,9,6,9,6,9,7]",
+      "output": "1",
+      "explanation": "You can jump directly from index 0 to index 7 which is last index of the array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minJumps(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minJumps(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minJumps(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function minJumps(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinJumps(int[] arr) {\n        \n    }\n}",
+    "go": "func minJumps(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_jumps(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[100,-23,-23,404,100,23,23,23,3,404]"
+    },
+    {
+      "arr": "[7]"
+    },
+    {
+      "arr": "[7,6,9,6,9,6,9,7]"
+    }
+  ],
+  "functionName": "minJumps",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Build a graph of n nodes where nodes are the indices of the array and edges for node i are nodes i+1, i-1, j where arr[i] == arr[j].",
+    "Start bfs from node 0 and keep distance. The answer is the distance when you reach node n-1."
+  ]
+}

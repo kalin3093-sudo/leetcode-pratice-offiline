@@ -1,0 +1,55 @@
+{
+  "id": "sum-of-matrix-after-queries",
+  "title": "2718. Sum of Matrix After Queries",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-matrix-after-queries/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]]",
+      "output": "23",
+      "explanation": "The image above describes the matrix after each query. The sum of the matrix after all queries are applied is 23."
+    },
+    {
+      "input": "n = 3, queries = [[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]",
+      "output": "17",
+      "explanation": "The image above describes the matrix after each query. The sum of the matrix after all queries are applied is 17."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long matrixSumQueries(int n, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long matrixSumQueries(int n, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def matrixSumQueries(self, n: int, queries: List[List[int]]) -> int:\n        ",
+    "typescript": "function matrixSumQueries(n: number, queries: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MatrixSumQueries(int n, int[][] queries) {\n        \n    }\n}",
+    "go": "func matrixSumQueries(n int, queries [][]int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn matrix_sum_queries(n: i32, queries: Vec<Vec<i32>>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "queries": "[[0,0,1],[1,2,2],[0,2,3],[1,0,4]]"
+    },
+    {
+      "n": 3,
+      "queries": "[[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]"
+    }
+  ],
+  "functionName": "matrixSumQueries",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Process queries in reversed order, as the latest queries represent the most recent changes in the matrix.",
+    "Once you encounter an operation on some row/column, no further operations will affect the values in this row/column. Keep track of seen rows and columns with a set.",
+    "When operating on an unseen row/column, the number of affected cells is the number of columns/rows you haven’t previously seen."
+  ]
+}

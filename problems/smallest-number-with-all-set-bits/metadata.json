@@ -1,0 +1,55 @@
+{
+  "id": "smallest-number-with-all-set-bits",
+  "title": "3370. Smallest Number With All Set Bits",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/smallest-number-with-all-set-bits/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "7",
+      "explanation": "The binary representation of 7 is \"111\"."
+    },
+    {
+      "input": "n = 10",
+      "output": "15",
+      "explanation": "The binary representation of 15 is \"1111\"."
+    },
+    {
+      "input": "n = 3",
+      "output": "3",
+      "explanation": "The binary representation of 3 is \"11\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestNumber(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestNumber(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestNumber(self, n: int) -> int:\n        ",
+    "typescript": "function smallestNumber(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestNumber(int n) {\n        \n    }\n}",
+    "go": "func smallestNumber(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_number(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 10
+    },
+    {
+      "n": 3
+    }
+  ],
+  "functionName": "smallestNumber",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the strictly greater power of 2, and subtract 1 from it."
+  ]
+}

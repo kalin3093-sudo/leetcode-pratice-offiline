@@ -1,0 +1,48 @@
+{
+  "id": "sorting-the-sentence",
+  "title": "1859. Sorting the Sentence",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/sorting-the-sentence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"is2 sentence4 This1 a3\"",
+      "output": "\"This is a sentence\"",
+      "explanation": "Sort the words in s to their original positions \"This1 is2 a3 sentence4\", then remove the numbers."
+    },
+    {
+      "input": "s = \"Myself2 Me1 I4 and3\"",
+      "output": "\"Me Myself and I\"",
+      "explanation": "Sort the words in s to their original positions \"Me1 Myself2 and3 I4\", then remove the numbers."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string sortSentence(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String sortSentence(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortSentence(self, s: str) -> str:\n        ",
+    "typescript": "function sortSentence(s: string): string {\n\n};",
+    "csharp": "public class Solution {\n    public string SortSentence(string s) {\n        \n    }\n}",
+    "go": "func sortSentence(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_sentence(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "is2 sentence4 This1 a3"
+    },
+    {
+      "s": "Myself2 Me1 I4 and3"
+    }
+  ],
+  "functionName": "sortSentence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Divide the string into the words as an array of strings",
+    "Sort the words by removing the last character from each word and sorting according to it"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "select-cells-in-grid-with-maximum-score",
+  "title": "3276. Select Cells in Grid With Maximum Score",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,2,3],[4,3,2],[1,1,1]]",
+      "output": "8",
+      "explanation": "We can select the cells with values 1, 3, and 4 that are colored above."
+    },
+    {
+      "input": "grid = [[8,7,6],[8,3,2]]",
+      "output": "15",
+      "explanation": "We can select the cells with values 7 and 8 that are colored above."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScore(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScore(List<List<Integer>> grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxScore(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function maxScore(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScore(IList<IList<int>> grid) {\n        \n    }\n}",
+    "go": "func maxScore(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_score(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,2,3],[4,3,2],[1,1,1]]"
+    },
+    {
+      "grid": "[[8,7,6],[8,3,2]]"
+    }
+  ],
+  "functionName": "maxScore",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort all the cells in the grid by their values and keep track of their original positions.",
+    "Try dynamic programming with the following states: the current cell that we might select and a bitmask representing all the rows from which we have already selected a cell so far."
+  ]
+}

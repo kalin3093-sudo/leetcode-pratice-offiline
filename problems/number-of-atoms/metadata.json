@@ -1,0 +1,55 @@
+{
+  "id": "number-of-atoms",
+  "title": "726. Number of Atoms",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-atoms/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "formula = \"H2O\"",
+      "output": "\"H2O\"",
+      "explanation": "The count of elements are {'H': 2, 'O': 1}."
+    },
+    {
+      "input": "formula = \"Mg(OH)2\"",
+      "output": "\"H2MgO2\"",
+      "explanation": "The count of elements are {'H': 2, 'Mg': 1, 'O': 2}."
+    },
+    {
+      "input": "formula = \"K4(ON(SO3)2)2\"",
+      "output": "\"K4N2O14S4\"",
+      "explanation": "The count of elements are {'K': 4, 'N': 2, 'O': 14, 'S': 4}."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string countOfAtoms(string formula) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String countOfAtoms(String formula) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countOfAtoms(self, formula: str) -> str:\n        ",
+    "typescript": "function countOfAtoms(formula: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string CountOfAtoms(string formula) {\n        \n    }\n}",
+    "go": "func countOfAtoms(formula string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_of_atoms(formula: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "formula": "H2O"
+    },
+    {
+      "formula": "Mg(OH)2"
+    },
+    {
+      "formula": "K4(ON(SO3)2)2"
+    }
+  ],
+  "functionName": "countOfAtoms",
+  "params": [
+    {
+      "name": "formula",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "To parse formula[i:], when we see a `'('`, we will parse recursively whatever is inside the brackets (up to the correct closing ending bracket) and add it to our count, multiplying by the following multiplicity if there is one.\r\n\r\nOtherwise, we should see an uppercase character: we will parse the rest of the letters to get the name, and add that (plus the multiplicity if there is one.)"
+  ]
+}

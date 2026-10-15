@@ -1,0 +1,55 @@
+{
+  "id": "count-subarrays-with-median-k",
+  "title": "2488. Count Subarrays With Median K",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-subarrays-with-median-k/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,2,1,4,5], k = 4",
+      "output": "3",
+      "explanation": "The subarrays that have a median equal to 4 are: [4], [4,5] and [1,4,5]."
+    },
+    {
+      "input": "nums = [2,3,1], k = 3",
+      "output": "1",
+      "explanation": "[3] is the only subarray that has a median equal to 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSubarrays(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSubarrays(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSubarrays(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function countSubarrays(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSubarrays(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func countSubarrays(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_subarrays(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,2,1,4,5]",
+      "k": 4
+    },
+    {
+      "nums": "[2,3,1]",
+      "k": 3
+    }
+  ],
+  "functionName": "countSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider changing the numbers that are strictly greater than k in the array to 1, the numbers that are strictly smaller than k to -1, and k to 0.",
+    "After the change, what property does a subarray with median k have in the new array?",
+    "An array with median k should have a sum equal to either 0 or 1 in the new array and should contain the element k. How do you count such subarrays?"
+  ]
+}

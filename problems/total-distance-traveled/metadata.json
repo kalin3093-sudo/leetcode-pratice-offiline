@@ -1,0 +1,53 @@
+{
+  "id": "total-distance-traveled",
+  "title": "2739. Total Distance Traveled",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/total-distance-traveled/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "mainTank = 5, additionalTank = 10",
+      "output": "60",
+      "explanation": "After spending 5 litre of fuel, fuel remaining is (5 - 5 + 1) = 1 litre and distance traveled is 50km. After spending another 1 litre of fuel, no fuel gets injected in the main tank and the main tank becomes empty. Total distance traveled is 60km."
+    },
+    {
+      "input": "mainTank = 1, additionalTank = 2",
+      "output": "10",
+      "explanation": "After spending 1 litre of fuel, the main tank becomes empty. Total distance traveled is 10km."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int distanceTraveled(int mainTank, int additionalTank) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int distanceTraveled(int mainTank, int additionalTank) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distanceTraveled(self, mainTank: int, additionalTank: int) -> int:\n        ",
+    "typescript": "function distanceTraveled(mainTank: number, additionalTank: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DistanceTraveled(int mainTank, int additionalTank) {\n        \n    }\n}",
+    "go": "func distanceTraveled(mainTank int, additionalTank int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distance_traveled(main_tank: i32, additional_tank: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mainTank": 5,
+      "additionalTank": 10
+    },
+    {
+      "mainTank": 1,
+      "additionalTank": 2
+    }
+  ],
+  "functionName": "distanceTraveled",
+  "params": [
+    {
+      "name": "mainTank",
+      "type": "int"
+    },
+    {
+      "name": "additionalTank",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Avoid calculations in decimal to prevent precision errors."
+  ]
+}

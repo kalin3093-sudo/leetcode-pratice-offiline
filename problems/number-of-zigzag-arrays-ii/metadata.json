@@ -1,0 +1,62 @@
+{
+  "id": "number-of-zigzag-arrays-ii",
+  "title": "3700. Number of ZigZag Arrays II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-zigzag-arrays-ii/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3, l = 4, r = 5",
+      "output": "2",
+      "explanation": "There are only 2 valid ZigZag arrays of length n = 3 using values in the range [4, 5]: [4, 5, 4] [5, 4, 5]"
+    },
+    {
+      "input": "n = 3, l = 1, r = 3",
+      "output": "10",
+      "explanation": "There are 10 valid ZigZag arrays of length n = 3 using values in the range [1, 3]: [1, 2, 1], [1, 3, 1], [1, 3, 2] [2, 1, 2], [2, 1, 3], [2, 3, 1], [2, 3, 2] [3, 1, 2], [3, 1, 3], [3, 2, 3] All arrays meet the ZigZag conditions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int zigZagArrays(int n, int l, int r) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int zigZagArrays(int n, int l, int r) {\n        \n    }\n}",
+    "python": "class Solution:\n    def zigZagArrays(self, n: int, l: int, r: int) -> int:\n        ",
+    "typescript": "function zigZagArrays(n: number, l: number, r: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ZigZagArrays(int n, int l, int r) {\n        \n    }\n}",
+    "go": "func zigZagArrays(n int, l int, r int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn zig_zag_arrays(n: i32, l: i32, r: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "l": 4,
+      "r": 5
+    },
+    {
+      "n": 3,
+      "l": 1,
+      "r": 3
+    }
+  ],
+  "functionName": "zigZagArrays",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "l",
+      "type": "int"
+    },
+    {
+      "name": "r",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use matrix exponentiation",
+    "Encode states in a vector of length <code>2*m</code> where <code>m = r - l + 1</code>: first <code>m</code> entries = \"next compare = down\" for values, next <code>m</code> = \"next compare = up\".",
+    "Build a transition matrix <code>T</code> (size <code>2*m × 2*m</code>): from an <code>up,x</code> state go to <code>down,y</code> for every <code>y > x</code>, and from <code>down,x</code> go to <code>up,y</code> for every <code>y < x</code>.",
+    "Use fast matrix exponentiation to compute <code>T^(n-1)</code>, apply it to the initial vector (ones in the block for starting <code>up</code> and separately for starting <code>down</code>), sum final entries, and add both results (for <code>n=1</code> return <code>m</code>)."
+  ]
+}

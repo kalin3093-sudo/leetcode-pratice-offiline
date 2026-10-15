@@ -1,0 +1,48 @@
+{
+  "id": "optimal-partition-of-string",
+  "title": "2405. Optimal Partition of String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/optimal-partition-of-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abacaba\"",
+      "output": "4",
+      "explanation": "Two possible partitions are (\"a\",\"ba\",\"cab\",\"a\") and (\"ab\",\"a\",\"ca\",\"ba\"). It can be shown that 4 is the minimum number of substrings needed."
+    },
+    {
+      "input": "s = \"ssssss\"",
+      "output": "6",
+      "explanation": "The only valid partition is (\"s\",\"s\",\"s\",\"s\",\"s\",\"s\")."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int partitionString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int partitionString(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def partitionString(self, s: str) -> int:\n        ",
+    "typescript": "function partitionString(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PartitionString(string s) {\n        \n    }\n}",
+    "go": "func partitionString(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn partition_string(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abacaba"
+    },
+    {
+      "s": "ssssss"
+    }
+  ],
+  "functionName": "partitionString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to come up with a greedy approach.",
+    "From left to right, extend every substring in the partition as much as possible."
+  ]
+}

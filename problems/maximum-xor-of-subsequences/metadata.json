@@ -1,0 +1,47 @@
+{
+  "id": "maximum-xor-of-subsequences",
+  "title": "3681. Maximum XOR of Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-xor-of-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "3",
+      "explanation": "Choose subsequences: First subsequence [2], whose XOR is 2. Second subsequence [2,3], whose XOR is 1. Then, XOR of both subsequences = 2 XOR 1 = 3. This is the maximum XOR value achievable from any two subsequences."
+    },
+    {
+      "input": "nums = [5,2]",
+      "output": "7",
+      "explanation": "Choose subsequences: First subsequence [5], whose XOR is 5. Second subsequence [2], whose XOR is 2. Then, XOR of both subsequences = 5 XOR 2 = 7. This is the maximum XOR value achievable from any two subsequences."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxXorSubsequences(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxXorSubsequences(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxXorSubsequences(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maxXorSubsequences(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxXorSubsequences(int[] nums) {\n        \n    }\n}",
+    "go": "func maxXorSubsequences(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_xor_subsequences(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[5,2]"
+    }
+  ],
+  "functionName": "maxXorSubsequences",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Build a linear XOR basis from all numbers and take the maximum XOR achievable from it."
+  ]
+}

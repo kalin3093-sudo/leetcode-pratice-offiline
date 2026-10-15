@@ -1,0 +1,7 @@
+You are given two positive integers, `l` and `r`. A positive integer is called **beautiful** if the product of its digits is divisible by the sum of its digits.
+
+Return the count of **beautiful** numbers between `l` and `r`, inclusive.
+
+**Constraints:**
+
+-   `1 ≤ l ≤ r < 10^9`

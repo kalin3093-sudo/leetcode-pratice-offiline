@@ -1,0 +1,55 @@
+{
+  "id": "count-complete-substrings",
+  "title": "2953. Count Complete Substrings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-complete-substrings/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "word = \"igigee\", k = 2",
+      "output": "3",
+      "explanation": "The complete substrings where each character appears exactly twice and the difference between adjacent characters is at most 2 are: igigee, igigee, igigee."
+    },
+    {
+      "input": "word = \"aaabbbccc\", k = 3",
+      "output": "6",
+      "explanation": "The complete substrings where each character appears exactly three times and the difference between adjacent characters is at most 2 are: aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countCompleteSubstrings(string word, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countCompleteSubstrings(String word, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countCompleteSubstrings(self, word: str, k: int) -> int:\n        ",
+    "typescript": "function countCompleteSubstrings(word: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountCompleteSubstrings(string word, int k) {\n        \n    }\n}",
+    "go": "func countCompleteSubstrings(word string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_complete_substrings(word: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "igigee",
+      "k": 2
+    },
+    {
+      "word": "aaabbbccc",
+      "k": 3
+    }
+  ],
+  "functionName": "countCompleteSubstrings",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There are at most 26 different lengths of the complete substrings: <code>k *1, k * 2, … k * 26</code>.****",
+    "For each length, we can use sliding window to count the frequency of each letter in the window.",
+    "We still need to check for all characters in the window that <code>abs(word[i] - word[i - 1]) <= 2</code>. We do this by maintaining the values of <code>abs(word[i] - word[i - 1])</code> in the sliding window dynamically in an ordered multiset or priority queue, so that we know the maximum value at each iteration."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "best-time-to-buy-and-sell-stock-iv",
+  "title": "188. Best Time to Buy and Sell Stock IV",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "k = 2, prices = [2,4,1]",
+      "output": "2",
+      "explanation": "Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2."
+    },
+    {
+      "input": "k = 2, prices = [3,2,6,5,0,3]",
+      "output": "7",
+      "explanation": "Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4. Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProfit(int k, vector<int>& prices) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProfit(int k, int[] prices) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxProfit(self, k: int, prices: list[int]) -> int:\n        ",
+    "typescript": "function maxProfit(k: number, prices: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProfit(int k, int[] prices) {\n        \n    }\n}",
+    "go": "func maxProfit(k int, prices []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_profit(k: i32, prices: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "k": 2,
+      "prices": "[2,4,1]"
+    },
+    {
+      "k": 2,
+      "prices": "[3,2,6,5,0,3]"
+    }
+  ],
+  "functionName": "maxProfit",
+  "params": [
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "prices",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

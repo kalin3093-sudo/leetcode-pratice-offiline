@@ -1,0 +1,44 @@
+{
+  "id": "magical-string",
+  "title": "481. Magical String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/magical-string/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "3",
+      "explanation": "The first 6 elements of magical string s is \"122112\" and it contains three 1's, so return 3."
+    },
+    {
+      "input": "n = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int magicalString(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int magicalString(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def magicalString(self, n: int) -> int:\n        ",
+    "typescript": "function magicalString(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MagicalString(int n) {\n        \n    }\n}",
+    "go": "func magicalString(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn magical_string(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "magicalString",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

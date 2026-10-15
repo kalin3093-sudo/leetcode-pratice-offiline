@@ -1,0 +1,53 @@
+{
+  "id": "find-the-maximum-achievable-number",
+  "title": "2769. Find the Maximum Achievable Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-maximum-achievable-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 4, t = 1",
+      "output": "6",
+      "explanation": "Apply the following operation once to make the maximum achievable number equal to num: Decrease the maximum achievable number by 1, and increase num by 1."
+    },
+    {
+      "input": "num = 3, t = 2",
+      "output": "7",
+      "explanation": "Apply the following operation twice to make the maximum achievable number equal to num: Decrease the maximum achievable number by 1, and increase num by 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int theMaximumAchievableX(int num, int t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int theMaximumAchievableX(int num, int t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def theMaximumAchievableX(self, num: int, t: int) -> int:\n        ",
+    "typescript": "function theMaximumAchievableX(num: number, t: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TheMaximumAchievableX(int num, int t) {\n        \n    }\n}",
+    "go": "func theMaximumAchievableX(num int, t int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn the_maximum_achievable_x(num: i32, t: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 4,
+      "t": 1
+    },
+    {
+      "num": 3,
+      "t": 2
+    }
+  ],
+  "functionName": "theMaximumAchievableX",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    },
+    {
+      "name": "t",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let x be the answer, it’s always optimal to decrease x in each operation and increase nums."
+  ]
+}

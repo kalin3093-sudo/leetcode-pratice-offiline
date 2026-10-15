@@ -1,0 +1,56 @@
+{
+  "id": "minimum-time-to-type-word-using-special-typewriter",
+  "title": "1974. Minimum Time to Type Word Using Special Typewriter",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"abc\"",
+      "output": "5",
+      "explanation": "The characters are printed as follows: - Type the character 'a' in 1 second since the pointer is initially on 'a'. - Move the pointer clockwise to 'b' in 1 second. - Type the character 'b' in 1 second. - Move the pointer clockwise to 'c' in 1 second. - Type the character 'c' in 1 second."
+    },
+    {
+      "input": "word = \"bza\"",
+      "output": "7",
+      "explanation": "The characters are printed as follows: - Move the pointer clockwise to 'b' in 1 second. - Type the character 'b' in 1 second. - Move the pointer counterclockwise to 'z' in 2 seconds. - Type the character 'z' in 1 second. - Move the pointer clockwise to 'a' in 1 second. - Type the character 'a' in 1 second."
+    },
+    {
+      "input": "word = \"zjpc\"",
+      "output": "34",
+      "explanation": "The characters are printed as follows: - Move the pointer counterclockwise to 'z' in 1 second. - Type the character 'z' in 1 second. - Move the pointer clockwise to 'j' in 10 seconds. - Type the character 'j' in 1 second. - Move the pointer clockwise to 'p' in 6 seconds. - Type the character 'p' in 1 second. - Move the pointer counterclockwise to 'c' in 13 seconds. - Type the character 'c' in 1 second."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minTimeToType(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minTimeToType(String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minTimeToType(self, word: str) -> int:\n        ",
+    "typescript": "function minTimeToType(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinTimeToType(string word) {\n        \n    }\n}",
+    "go": "func minTimeToType(word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_time_to_type(word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "abc"
+    },
+    {
+      "word": "bza"
+    },
+    {
+      "word": "zjpc"
+    }
+  ],
+  "functionName": "minTimeToType",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There are only two possible directions you can go when you move to the next letter.",
+    "When moving to the next letter, you will always go in the direction that takes the least amount of time."
+  ]
+}

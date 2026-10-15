@@ -1,0 +1,65 @@
+{
+  "id": "maximum-subarray-sum-after-at-most-k-swaps",
+  "title": "3962. Maximum Subarray Sum After at Most K Swaps",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-subarray-sum-after-at-most-k-swaps/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,-1,0,2], k = 1",
+      "output": "3",
+      "explanation": "We can swap on indices 1 and 3, resulting in the array [1, 2, 0, -1]. The subarray [1, 2] has a sum of 3, which is the maximum possible subarray sum after at most k = 1 swap."
+    },
+    {
+      "input": "nums = [4,3,2,4], k = 2",
+      "output": "13",
+      "explanation": "The maximum possible subarray sum after at most k = 2 swaps is the sum of the entire array, which is 13."
+    },
+    {
+      "input": "nums = [-1,-2], k = 0",
+      "output": "-1",
+      "explanation": "k = 0 swaps are allowed. The possible subarrays are [-1], [-2], and [-1, -2], with sums -1, -2, and -3 respectively. Among these sums, the maximum is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxSum(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxSum(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSum(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function maxSum(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxSum(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func maxSum(nums []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_sum(nums: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,-1,0,2]",
+      "k": 1
+    },
+    {
+      "nums": "[4,3,2,4]",
+      "k": 2
+    },
+    {
+      "nums": "[-1,-2]",
+      "k": 0
+    }
+  ],
+  "functionName": "maxSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Fix a subarray. An optimal swap exchanges one of its smallest elements with one of the largest elements outside it, provided this increases the sum.",
+    "If the elements inside are ordered increasingly and those outside decreasingly, the gain from using <code>t</code> swaps is the sum of the <code>t</code> largest outside elements minus the sum of the <code>t</code> smallest inside elements.",
+    "Enumerate the left endpoint and extend the right endpoint while maintaining the inside and outside elements in order-statistics data structures that support counts, sums, and the sum of the smallest or largest <code>t</code> elements.",
+    "The marginal gains are non-increasing as <code>t</code> grows, so find the largest profitable <code>t <= k</code> and add its gain to the original subarray sum."
+  ]
+}

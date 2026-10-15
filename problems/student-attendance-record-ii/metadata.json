@@ -1,0 +1,51 @@
+{
+  "id": "student-attendance-record-ii",
+  "title": "552. Student Attendance Record II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/student-attendance-record-ii/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "8",
+      "explanation": "There are 8 records with length 2 that are eligible for an award: \"PP\", \"AP\", \"PA\", \"LP\", \"PL\", \"AL\", \"LA\", \"LL\" Only \"AA\" is not eligible because there are 2 absences (there need to be fewer than 2)."
+    },
+    {
+      "input": "n = 1",
+      "output": "3"
+    },
+    {
+      "input": "n = 10101",
+      "output": "183236316"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int checkRecord(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int checkRecord(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkRecord(self, n: int) -> int:\n        ",
+    "typescript": "function checkRecord(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CheckRecord(int n) {\n        \n    }\n}",
+    "go": "func checkRecord(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_record(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2
+    },
+    {
+      "n": 1
+    },
+    {
+      "n": 10101
+    }
+  ],
+  "functionName": "checkRecord",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

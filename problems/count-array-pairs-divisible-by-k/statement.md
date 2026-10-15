@@ -1,0 +1,9 @@
+Given a **0-indexed** integer array `nums` of length `n` and an integer `k`, return *the **number of pairs*** `(i, j)` *such that:*
+
+-   `0 ≤ i < j ≤ n - 1` *and*
+-   `nums[i] * nums[j]` *is divisible by* `k`.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 10^5`
+-   `1 ≤ nums[i], k ≤ 10^5`

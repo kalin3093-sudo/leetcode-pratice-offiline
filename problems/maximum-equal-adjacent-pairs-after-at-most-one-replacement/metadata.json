@@ -1,0 +1,53 @@
+{
+  "id": "maximum-equal-adjacent-pairs-after-at-most-one-replacement",
+  "title": "4066. Maximum Equal Adjacent Pairs After at Most One Replacement",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-equal-adjacent-pairs-after-at-most-one-replacement/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,2]",
+      "output": "2",
+      "explanation": "One optimal solution is to choose x = 3 and y = 2. The resulting array is [1, 2, 2, 2]. There are 2 pairs of adjacent elements that are equal: (nums[2], nums[3]) and (nums[3], nums[4]). Therefore, the answer is 2."
+    },
+    {
+      "input": "nums = [1,2,1,2,1]",
+      "output": "4",
+      "explanation": "One optimal solution is to choose x = 1 and y = 2. The resulting array is [2, 2, 2, 2, 2]. There are 4 pairs of adjacent elements that are equal: (nums[1], nums[2]), (nums[2], nums[3]), (nums[3], nums[4]), and (nums[4], nums[5]). Therefore, the answer is 4."
+    },
+    {
+      "input": "nums = [1,1,1]",
+      "output": "2",
+      "explanation": "One optimal solution is to perform no operation. Thus, the resulting array is [1, 1, 1]. There are 2 pairs of adjacent elements that are equal: (nums[1], nums[2]) and (nums[2], nums[3]). Therefore, the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxEqualAdjacentPairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxEqualAdjacentPairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxEqualAdjacentPairs(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maxEqualAdjacentPairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxEqualAdjacentPairs(int[] nums) {\n        \n    }\n}",
+    "go": "func maxEqualAdjacentPairs(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_equal_adjacent_pairs(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,2]"
+    },
+    {
+      "nums": "[1,2,1,2,1]"
+    },
+    {
+      "nums": "[1,1,1]"
+    }
+  ],
+  "functionName": "maxEqualAdjacentPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

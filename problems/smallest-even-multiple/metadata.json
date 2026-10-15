@@ -1,0 +1,48 @@
+{
+  "id": "smallest-even-multiple",
+  "title": "2413. Smallest Even Multiple",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/smallest-even-multiple/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "10",
+      "explanation": "The smallest multiple of both 5 and 2 is 10."
+    },
+    {
+      "input": "n = 6",
+      "output": "6",
+      "explanation": "The smallest multiple of both 6 and 2 is 6. Note that a number is a multiple of itself."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestEvenMultiple(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestEvenMultiple(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestEvenMultiple(self, n: int) -> int:\n        ",
+    "typescript": "function smallestEvenMultiple(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestEvenMultiple(int n) {\n        \n    }\n}",
+    "go": "func smallestEvenMultiple(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_even_multiple(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 6
+    }
+  ],
+  "functionName": "smallestEvenMultiple",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "A guaranteed way to find a multiple of 2 and n is to multiply them together. When is this the answer, and when is there a smaller answer?",
+    "There is a smaller answer when n is even."
+  ]
+}

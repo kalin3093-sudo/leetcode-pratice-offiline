@@ -1,0 +1,45 @@
+{
+  "id": "additive-number",
+  "title": "306. Additive Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/additive-number/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "\"112358\"",
+      "output": "true",
+      "explanation": "The digits can form an additive sequence: 1, 1, 2, 3, 5, 8. 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8"
+    },
+    {
+      "input": "\"199100199\"",
+      "output": "true",
+      "explanation": "The additive sequence is: 1, 99, 100, 199. 1 + 99 = 100, 99 + 100 = 199"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isAdditiveNumber(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isAdditiveNumber(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isAdditiveNumber(self, num: str) -> bool:\n        ",
+    "typescript": "function isAdditiveNumber(num: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsAdditiveNumber(string num) {\n        \n    }\n}",
+    "go": "func isAdditiveNumber(num string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_additive_number(num: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "112358"
+    },
+    {
+      "num": "199100199"
+    }
+  ],
+  "functionName": "isAdditiveNumber",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

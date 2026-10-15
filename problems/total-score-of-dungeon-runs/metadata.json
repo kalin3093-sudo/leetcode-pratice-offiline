@@ -1,0 +1,62 @@
+{
+  "id": "total-score-of-dungeon-runs",
+  "title": "3771. Total Score of Dungeon Runs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/total-score-of-dungeon-runs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "hp = 11, damage = [3,6,7], requirement = [4,2,5]",
+      "output": "3",
+      "explanation": "score(1) = 2, score(2) = 1, score(3) = 0. The total score is 2 + 1 + 0 = 3. As an example, score(1) = 2 because you get 2 points if you start from room 1. You start with 11 health points. Enter room 1. Your health points are now 11 - 3 = 8. You get 1 point because 8 >= 4. Enter room 2. Your health points are now 8 - 6 = 2. You get 1 point because 2 >= 2. Enter room 3. Your health points are now 2 - 7 = -5. You do not get any points because -5 < 5."
+    },
+    {
+      "input": "hp = 2, damage = [10000,1], requirement = [1,1]",
+      "output": "1",
+      "explanation": "score(1) = 0, score(2) = 1. The total score is 0 + 1 = 1. score(1) = 0 because you do not get any points if you start from room 1. You start with 2 health points. Enter room 1. Your health points are now 2 - 10000 = -9998. You do not get any points because -9998 < 1. Enter room 2. Your health points are now -9998 - 1 = -9999. You do not get any points because -9999 < 1. score(2) = 1 because you get 1 point if you start from room 2. You start with 2 health points. Enter room 2. Your health points are now 2 - 1 = 1. You get 1 point because 1 >= 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long totalScore(int hp, vector<int>& damage, vector<int>& requirement) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long totalScore(int hp, int[] damage, int[] requirement) {\n        \n    }\n}",
+    "python": "class Solution:\n    def totalScore(self, hp: int, damage: List[int], requirement: List[int]) -> int:\n        ",
+    "typescript": "function totalScore(hp: number, damage: number[], requirement: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long TotalScore(int hp, int[] damage, int[] requirement) {\n        \n    }\n}",
+    "go": "func totalScore(hp int, damage []int, requirement []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn total_score(hp: i32, damage: Vec<i32>, requirement: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "hp": 11,
+      "damage": "[3,6,7]",
+      "requirement": "[4,2,5]"
+    },
+    {
+      "hp": 2,
+      "damage": "[10000,1]",
+      "requirement": "[1,1]"
+    }
+  ],
+  "functionName": "totalScore",
+  "params": [
+    {
+      "name": "hp",
+      "type": "int"
+    },
+    {
+      "name": "damage",
+      "type": "int_array"
+    },
+    {
+      "name": "requirement",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use prefix sums on the damage. Create <code>pref</code> with the prefix sums.",
+    "Initially, the total points/score is the total number of subarrays <code>n * (n + 1) / 2</code>.",
+    "We need to subtract subarrays <code>[i, j]</code> that do not satisfy <code>hp - (pref[j] - pref[i-1]) >= requirement[j]</code>. The inequality is equivalent to <code>pref[i-1] >= requirement[j] - hp + pref[j]</code>.",
+    "For each <code>j</code>, count the previous <code>i</code>s with <code>pref[i-1] < requirement[j] - hp + pref[j]</code> using binary search or an ordered data structure."
+  ]
+}

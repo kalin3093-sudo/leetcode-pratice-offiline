@@ -1,0 +1,63 @@
+{
+  "id": "profitable-schemes",
+  "title": "879. Profitable Schemes",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/profitable-schemes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, minProfit = 3, group = [2,2], profit = [2,3]",
+      "output": "2",
+      "explanation": "To make a profit of at least 3, the group could either commit crimes 0 and 1, or just crime 1. In total, there are 2 schemes."
+    },
+    {
+      "input": "n = 10, minProfit = 5, group = [2,3,5], profit = [6,7,8]",
+      "output": "7",
+      "explanation": "To make a profit of at least 5, the group could commit any crimes, as long as they commit one. There are 7 possible schemes: (0), (1), (2), (0,1), (0,2), (1,2), and (0,1,2)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int profitableSchemes(int n, int minProfit, vector<int>& group, vector<int>& profit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int profitableSchemes(int n, int minProfit, int[] group, int[] profit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def profitableSchemes(self, n: int, minProfit: int, group: list[int], profit: list[int]) -> int:\n        ",
+    "typescript": "function profitableSchemes(n: number, minProfit: number, group: number[], profit: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ProfitableSchemes(int n, int minProfit, int[] group, int[] profit) {\n        \n    }\n}",
+    "go": "func profitableSchemes(n int, minProfit int, group []int, profit []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn profitable_schemes(n: i32, min_profit: i32, group: Vec<i32>, profit: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "minProfit": 3,
+      "group": "[2,2]",
+      "profit": "[2,3]"
+    },
+    {
+      "n": 10,
+      "minProfit": 5,
+      "group": "[2,3,5]",
+      "profit": "[6,7,8]"
+    }
+  ],
+  "functionName": "profitableSchemes",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "minProfit",
+      "type": "int"
+    },
+    {
+      "name": "group",
+      "type": "int_array"
+    },
+    {
+      "name": "profit",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

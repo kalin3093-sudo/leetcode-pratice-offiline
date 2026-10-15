@@ -1,0 +1,56 @@
+{
+  "id": "find-lucky-integer-in-an-array",
+  "title": "1394. Find Lucky Integer in an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-lucky-integer-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [2,2,3,4]",
+      "output": "2",
+      "explanation": "The only lucky number in the array is 2 because frequency[2] == 2."
+    },
+    {
+      "input": "arr = [1,2,2,3,3,3]",
+      "output": "3",
+      "explanation": "1, 2 and 3 are all lucky numbers, return the largest of them."
+    },
+    {
+      "input": "arr = [2,2,2,3,3]",
+      "output": "-1",
+      "explanation": "There are no lucky numbers in the array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findLucky(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findLucky(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findLucky(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function findLucky(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindLucky(int[] arr) {\n        \n    }\n}",
+    "go": "func findLucky(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_lucky(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[2,2,3,4]"
+    },
+    {
+      "arr": "[1,2,2,3,3,3]"
+    },
+    {
+      "arr": "[2,2,2,3,3]"
+    }
+  ],
+  "functionName": "findLucky",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Count the frequency of each integer in the array.",
+    "Get all lucky numbers and return the largest of them."
+  ]
+}

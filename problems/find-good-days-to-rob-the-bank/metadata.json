@@ -1,0 +1,64 @@
+{
+  "id": "find-good-days-to-rob-the-bank",
+  "title": "2100. Find Good Days to Rob the Bank",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-good-days-to-rob-the-bank/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "security = [5,3,3,3,5,6,2], time = 2",
+      "output": "[2,3]",
+      "explanation": "On day 2, we have security[0] >= security[1] >= security[2] <= security[3] <= security[4]. On day 3, we have security[1] >= security[2] >= security[3] <= security[4] <= security[5]. No other days satisfy this condition, so days 2 and 3 are the only good days to rob the bank."
+    },
+    {
+      "input": "security = [1,1,1,1,1], time = 0",
+      "output": "[0,1,2,3,4]",
+      "explanation": "Since time equals 0, every day is a good day to rob the bank, so return every day."
+    },
+    {
+      "input": "security = [1,2,3,4,5,6], time = 2",
+      "output": "[]",
+      "explanation": "No day has 2 days before it that have a non-increasing number of guards. Thus, no day is a good day to rob the bank, so return an empty list."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> goodDaysToRobBank(vector<int>& security, int time) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> goodDaysToRobBank(int[] security, int time) {\n        \n    }\n}",
+    "python": "class Solution:\n    def goodDaysToRobBank(self, security: list[int], time: int) -> list[int]:\n        ",
+    "typescript": "function goodDaysToRobBank(security: number[], time: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> GoodDaysToRobBank(int[] security, int time) {\n        \n    }\n}",
+    "go": "func goodDaysToRobBank(security []int, time int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn good_days_to_rob_bank(security: Vec<i32>, time: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "security": "[5,3,3,3,5,6,2]",
+      "time": 2
+    },
+    {
+      "security": "[1,1,1,1,1]",
+      "time": 0
+    },
+    {
+      "security": "[1,2,3,4,5,6]",
+      "time": 2
+    }
+  ],
+  "functionName": "goodDaysToRobBank",
+  "params": [
+    {
+      "name": "security",
+      "type": "int_array"
+    },
+    {
+      "name": "time",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": [
+    "The trivial solution is to check the time days before and after each day. There are a lot of repeated operations using this solution. How could we optimize this solution?",
+    "We can use precomputation to make the solution faster.",
+    "Use an array to store the number of days before the i<sup>th</sup> day that is non-increasing, and another array to store the number of days after the i<sup>th</sup> day that is non-decreasing."
+  ]
+}

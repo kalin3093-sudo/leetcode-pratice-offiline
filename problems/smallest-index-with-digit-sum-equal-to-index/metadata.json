@@ -1,0 +1,55 @@
+{
+  "id": "smallest-index-with-digit-sum-equal-to-index",
+  "title": "3550. Smallest Index With Digit Sum Equal to Index",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,2]",
+      "output": "2",
+      "explanation": "For nums[2] = 2, the sum of digits is 2, which is equal to index i = 2. Thus, the output is 2."
+    },
+    {
+      "input": "nums = [1,10,11]",
+      "output": "1",
+      "explanation": "For nums[1] = 10, the sum of digits is 1 + 0 = 1, which is equal to index i = 1. For nums[2] = 11, the sum of digits is 1 + 1 = 2, which is equal to index i = 2. Since index 1 is the smallest, the output is 1."
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "-1",
+      "explanation": "Since no index satisfies the condition, the output is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestIndex(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestIndex(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestIndex(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function smallestIndex(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestIndex(int[] nums) {\n        \n    }\n}",
+    "go": "func smallestIndex(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_index(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,2]"
+    },
+    {
+      "nums": "[1,10,11]"
+    },
+    {
+      "nums": "[1,2,3]"
+    }
+  ],
+  "functionName": "smallestIndex",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate as described"
+  ]
+}

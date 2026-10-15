@@ -1,0 +1,57 @@
+{
+  "id": "decremental-string-concatenation",
+  "title": "2746. Decremental String Concatenation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/decremental-string-concatenation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"aa\",\"ab\",\"bc\"]",
+      "output": "4",
+      "explanation": "In this example, we can perform join operations in the following order to minimize the length of str2: str0 = \"aa\" str1 = join(str0, \"ab\") = \"aab\" str2 = join(str1, \"bc\") = \"aabc\" It can be shown that the minimum possible length of str2 is 4."
+    },
+    {
+      "input": "words = [\"ab\",\"b\"]",
+      "output": "2",
+      "explanation": "In this example, str0 = \"ab\", there are two ways to get str1: join(str0, \"b\") = \"ab\" or join(\"b\", str0) = \"bab\". The first string, \"ab\", has the minimum length. Hence, the answer is 2."
+    },
+    {
+      "input": "words = [\"aaa\",\"c\",\"aba\"]",
+      "output": "6",
+      "explanation": "In this example, we can perform join operations in the following order to minimize the length of str2: str0 = \"aaa\" str1 = join(str0, \"c\") = \"aaac\" str2 = join(\"aba\", str1) = \"abaaac\" It can be shown that the minimum possible length of str2 is 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizeConcatenatedLength(vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizeConcatenatedLength(String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeConcatenatedLength(self, words: List[str]) -> int:\n        ",
+    "typescript": "function minimizeConcatenatedLength(words: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizeConcatenatedLength(string[] words) {\n        \n    }\n}",
+    "go": "func minimizeConcatenatedLength(words []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_concatenated_length(words: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"aa\",\"ab\",\"bc\"]"
+    },
+    {
+      "words": "[\"ab\",\"b\"]"
+    },
+    {
+      "words": "[\"aaa\",\"c\",\"aba\"]"
+    }
+  ],
+  "functionName": "minimizeConcatenatedLength",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming with memoization.",
+    "Notice that the first and last characters of a string are sufficient to determine the length of its concatenation with any other string.",
+    "Define dp[i][first][last] as the shortest concatenation length of the first i words starting with a character first and ending with a character last. Convert characters to their ASCII codes if your programming language cannot implicitly convert them to array indices."
+  ]
+}

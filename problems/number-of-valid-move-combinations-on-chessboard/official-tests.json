@@ -1,0 +1,14 @@
+[
+  {
+    "pieces": "[\"rook\"]",
+    "positions": "[[1,1]]"
+  },
+  {
+    "pieces": "[\"queen\"]",
+    "positions": "[[1,1]]"
+  },
+  {
+    "pieces": "[\"bishop\"]",
+    "positions": "[[4,3]]"
+  }
+]

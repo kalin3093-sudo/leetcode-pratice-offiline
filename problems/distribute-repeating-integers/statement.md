@@ -1,0 +1,17 @@
+You are given an array of `n` integers, `nums`, where there are at most `50` unique values in the array. You are also given an array of `m` customer order quantities, `quantity`, where `quantity[i]` is the amount of integers the `i^th` customer ordered. Determine if it is possible to distribute `nums` such that:
+
+-   The `i^th` customer gets **exactly** `quantity[i]` integers,
+-   The integers the `i^th` customer gets are **all equal**, and
+-   Every customer is satisfied.
+
+Return `true` *if it is possible to distribute* `nums` *according to the above conditions*.
+
+**Constraints:**
+
+-   `n == nums.length`
+-   `1 ≤ n ≤ 10^5`
+-   `1 ≤ nums[i] ≤ 1000`
+-   `m == quantity.length`
+-   `1 ≤ m ≤ 10`
+-   `1 ≤ quantity[i] ≤ 10^5`
+-   There are at most `50` unique values in `nums`.

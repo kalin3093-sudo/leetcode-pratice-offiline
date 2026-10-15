@@ -1,0 +1,55 @@
+{
+  "id": "find-the-winning-player-in-coin-game",
+  "title": "3222. Find the Winning Player in Coin Game",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-the-winning-player-in-coin-game/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "x = 2, y = 7",
+      "output": "\"Alice\"",
+      "explanation": "The game ends in a single turn: Alice picks 1 coin with a value of 75 and 4 coins with a value of 10."
+    },
+    {
+      "input": "x = 4, y = 11",
+      "output": "\"Bob\"",
+      "explanation": "The game ends in 2 turns: Alice picks 1 coin with a value of 75 and 4 coins with a value of 10. Bob picks 1 coin with a value of 75 and 4 coins with a value of 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string winningPlayer(int x, int y) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String winningPlayer(int x, int y) {\n        \n    }\n}",
+    "python": "class Solution:\n    def winningPlayer(self, x: int, y: int) -> str:\n        ",
+    "typescript": "function winningPlayer(x: number, y: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string WinningPlayer(int x, int y) {\n        \n    }\n}",
+    "go": "func winningPlayer(x int, y int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn winning_player(x: i32, y: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "x": 2,
+      "y": 7
+    },
+    {
+      "x": 4,
+      "y": 11
+    }
+  ],
+  "functionName": "winningPlayer",
+  "params": [
+    {
+      "name": "x",
+      "type": "int"
+    },
+    {
+      "name": "y",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "The only way to make 115 is to use one coin of value 75 and four coins of value 10. Each turn uses up these many coins.",
+    "Hence the number of turns is <code>min(x, y / 4)</code>.",
+    "Determine the winner from its parity."
+  ]
+}

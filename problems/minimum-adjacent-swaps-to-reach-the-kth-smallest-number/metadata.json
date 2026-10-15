@@ -1,0 +1,63 @@
+{
+  "id": "minimum-adjacent-swaps-to-reach-the-kth-smallest-number",
+  "title": "1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "num = \"5489355142\", k = 4",
+      "output": "2",
+      "explanation": "The 4th smallest wonderful number is \"5489355421\". To get this number: - Swap index 7 with index 8: \"5489355142\" -> \"5489355412\" - Swap index 8 with index 9: \"5489355412\" -> \"5489355421\""
+    },
+    {
+      "input": "num = \"11112\", k = 4",
+      "output": "4",
+      "explanation": "The 4th smallest wonderful number is \"21111\". To get this number: - Swap index 3 with index 4: \"11112\" -> \"11121\" - Swap index 2 with index 3: \"11121\" -> \"11211\" - Swap index 1 with index 2: \"11211\" -> \"12111\" - Swap index 0 with index 1: \"12111\" -> \"21111\""
+    },
+    {
+      "input": "num = \"00123\", k = 1",
+      "output": "1",
+      "explanation": "The 1st smallest wonderful number is \"00132\". To get this number: - Swap index 3 with index 4: \"00123\" -> \"00132\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getMinSwaps(string num, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getMinSwaps(String num, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getMinSwaps(self, num: str, k: int) -> int:\n        ",
+    "typescript": "function getMinSwaps(num: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetMinSwaps(string num, int k) {\n        \n    }\n}",
+    "go": "func getMinSwaps(num string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_min_swaps(num: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "5489355142",
+      "k": 4
+    },
+    {
+      "num": "11112",
+      "k": 4
+    },
+    {
+      "num": "00123",
+      "k": 1
+    }
+  ],
+  "functionName": "getMinSwaps",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the next permutation of the given string k times.",
+    "Try to move each element to its correct position and calculate the number of steps."
+  ]
+}

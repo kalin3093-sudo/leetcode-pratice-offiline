@@ -1,0 +1,71 @@
+{
+  "id": "maximum-number-of-visible-points",
+  "title": "1610. Maximum Number of Visible Points",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-number-of-visible-points/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[2,1],[2,2],[3,3]], angle = 90, location = [1,1]",
+      "output": "3",
+      "explanation": "The shaded region represents your field of view. All points can be made visible in your field of view, including [3,3] even though [2,2] is in front and in the same line of sight."
+    },
+    {
+      "input": "points = [[2,1],[2,2],[3,4],[1,1]], angle = 90, location = [1,1]",
+      "output": "4",
+      "explanation": "All points can be made visible in your field of view, including the one at your location."
+    },
+    {
+      "input": "points = [[1,0],[2,1]], angle = 13, location = [1,1]",
+      "output": "1",
+      "explanation": "You can only see one of the two points, as shown above."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int visiblePoints(vector<vector<int>>& points, int angle, vector<int>& location) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int visiblePoints(List<List<Integer>> points, int angle, List<Integer> location) {\n        \n    }\n}",
+    "python": "class Solution:\n    def visiblePoints(self, points: list[list[int]], angle: int, location: list[int]) -> int:\n        ",
+    "typescript": "function visiblePoints(points: number[][], angle: number, location: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int VisiblePoints(IList<IList<int>> points, int angle, IList<int> location) {\n        \n    }\n}",
+    "go": "func visiblePoints(points [][]int, angle int, location []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn visible_points(points: Vec<Vec<i32>>, angle: i32, location: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[2,1],[2,2],[3,3]]",
+      "angle": 90,
+      "location": "[1,1]"
+    },
+    {
+      "points": "[[2,1],[2,2],[3,4],[1,1]]",
+      "angle": 90,
+      "location": "[1,1]"
+    },
+    {
+      "points": "[[1,0],[2,1]]",
+      "angle": 13,
+      "location": "[1,1]"
+    }
+  ],
+  "functionName": "visiblePoints",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_list_2d"
+    },
+    {
+      "name": "angle",
+      "type": "int"
+    },
+    {
+      "name": "location",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Sort the points by polar angle with the original position. Now only a consecutive collection of points would be visible from any coordinate.",
+    "We can use two pointers to keep track of visible points for each start point",
+    "For handling the cyclic condition, it’d be helpful to append the point list to itself after sorting."
+  ]
+}

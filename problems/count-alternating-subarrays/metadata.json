@@ -1,0 +1,49 @@
+{
+  "id": "count-alternating-subarrays",
+  "title": "3101. Count Alternating Subarrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-alternating-subarrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,1,1,1]",
+      "output": "5",
+      "explanation": "The following subarrays are alternating: [0], [1], [1], [1], and [0,1]."
+    },
+    {
+      "input": "nums = [1,0,1,0]",
+      "output": "10",
+      "explanation": "Every subarray of the array is alternating. There are 10 possible subarrays that we can choose."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countAlternatingSubarrays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countAlternatingSubarrays(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countAlternatingSubarrays(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countAlternatingSubarrays(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountAlternatingSubarrays(int[] nums) {\n        \n    }\n}",
+    "go": "func countAlternatingSubarrays(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_alternating_subarrays(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,1,1,1]"
+    },
+    {
+      "nums": "[1,0,1,0]"
+    }
+  ],
+  "functionName": "countAlternatingSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Try using dynamic programming.",
+    "Let <code>dp[i]</code> be the number of alternating subarrays ending at index <code>i</code>.",
+    "The final answer is the sum of <code>dp[i]</code> over all  indices <code>i</code> from <code>0</code> to <code>n - 1</code>."
+  ]
+}

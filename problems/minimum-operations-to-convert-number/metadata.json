@@ -1,0 +1,70 @@
+{
+  "id": "minimum-operations-to-convert-number",
+  "title": "2059. Minimum Operations to Convert Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-convert-number/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,4,12], start = 2, goal = 12",
+      "output": "2",
+      "explanation": "We can go from 2 &rarr; 14 &rarr; 12 with the following 2 operations. - 2 + 12 = 14 - 14 - 2 = 12"
+    },
+    {
+      "input": "nums = [3,5,7], start = 0, goal = -4",
+      "output": "2",
+      "explanation": "We can go from 0 &rarr; 3 &rarr; -4 with the following 2 operations. - 0 + 3 = 3 - 3 - 7 = -4 Note that the last operation sets x out of the range 0 <= x <= 1000, which is valid."
+    },
+    {
+      "input": "nums = [2,8,16], start = 0, goal = 1",
+      "output": "-1",
+      "explanation": "There is no way to convert 0 into 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperations(vector<int>& nums, int start, int goal) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperations(int[] nums, int start, int goal) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOperations(self, nums: list[int], start: int, goal: int) -> int:\n        ",
+    "typescript": "function minimumOperations(nums: number[], start: number, goal: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperations(int[] nums, int start, int goal) {\n        \n    }\n}",
+    "go": "func minimumOperations(nums []int, start int, goal int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations(nums: Vec<i32>, start: i32, goal: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,4,12]",
+      "start": 2,
+      "goal": 12
+    },
+    {
+      "nums": "[3,5,7]",
+      "start": 0,
+      "goal": -4
+    },
+    {
+      "nums": "[2,8,16]",
+      "start": 0,
+      "goal": 1
+    }
+  ],
+  "functionName": "minimumOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "start",
+      "type": "int"
+    },
+    {
+      "name": "goal",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Once x drops below 0 or goes above 1000, is it possible to continue performing operations on x?",
+    "How can you use BFS to find the minimum operations?"
+  ]
+}

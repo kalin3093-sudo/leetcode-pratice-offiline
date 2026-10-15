@@ -1,0 +1,53 @@
+{
+  "id": "circular-array-loop",
+  "title": "457. Circular Array Loop",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/circular-array-loop/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,-1,1,2,2]",
+      "output": "true",
+      "explanation": "The graph shows how the indices are connected. White nodes are jumping forward, while red is jumping backward. We can see the cycle 0 --> 2 --> 3 --> 0 --> ..., and all of its nodes are white (jumping in the same direction)."
+    },
+    {
+      "input": "nums = [-1,-2,-3,-4,-5,6]",
+      "output": "false",
+      "explanation": "The graph shows how the indices are connected. White nodes are jumping forward, while red is jumping backward. The only cycle is of size 1, so we return false."
+    },
+    {
+      "input": "nums = [1,-1,5,1,4]",
+      "output": "true",
+      "explanation": "The graph shows how the indices are connected. White nodes are jumping forward, while red is jumping backward. We can see the cycle 0 --> 1 --> 0 --> ..., and while it is of size > 1, it has a node jumping forward and a node jumping backward, so it is not a cycle. We can see the cycle 3 --> 4 --> 3 --> ..., and all of its nodes are white (jumping in the same direction)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool circularArrayLoop(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean circularArrayLoop(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def circularArrayLoop(self, nums: list[int]) -> bool:\n        ",
+    "typescript": "function circularArrayLoop(nums: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CircularArrayLoop(int[] nums) {\n        \n    }\n}",
+    "go": "func circularArrayLoop(nums []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn circular_array_loop(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,-1,1,2,2]"
+    },
+    {
+      "nums": "[-1,-2,-3,-4,-5,6]"
+    },
+    {
+      "nums": "[1,-1,5,1,4]"
+    }
+  ],
+  "functionName": "circularArrayLoop",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

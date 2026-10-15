@@ -1,0 +1,43 @@
+{
+  "id": "brick-wall",
+  "title": "554. Brick Wall",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/brick-wall/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "wall = [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]",
+      "output": "2"
+    },
+    {
+      "input": "wall = [[1],[1],[1]]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int leastBricks(vector<vector<int>>& wall) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int leastBricks(List<List<Integer>> wall) {\n        \n    }\n}",
+    "python": "class Solution:\n    def leastBricks(self, wall: List[List[int]]) -> int:\n        ",
+    "typescript": "function leastBricks(wall: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LeastBricks(IList<IList<int>> wall) {\n        \n    }\n}",
+    "go": "func leastBricks(wall [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn least_bricks(wall: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "wall": "[[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]"
+    },
+    {
+      "wall": "[[1],[1],[1]]"
+    }
+  ],
+  "functionName": "leastBricks",
+  "params": [
+    {
+      "name": "wall",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

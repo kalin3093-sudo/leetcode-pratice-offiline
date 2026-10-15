@@ -1,0 +1,47 @@
+{
+  "id": "maximum-area-of-longest-diagonal-rectangle",
+  "title": "3000. Maximum Area of Longest Diagonal Rectangle",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "dimensions = [[9,3],[8,6]]",
+      "output": "48",
+      "explanation": "For index = 0, length = 9 and width = 3. Diagonal length = sqrt(9 * 9 + 3 * 3) = sqrt(90) &asymp; 9.487. For index = 1, length = 8 and width = 6. Diagonal length = sqrt(8 * 8 + 6 * 6) = sqrt(100) = 10. So, the rectangle at index 1 has a greater diagonal length therefore we return area = 8 * 6 = 48."
+    },
+    {
+      "input": "dimensions = [[3,4],[4,3]]",
+      "output": "12",
+      "explanation": "Length of diagonal is the same for both which is 5, so maximum area = 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int areaOfMaxDiagonal(int[][] dimensions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def areaOfMaxDiagonal(self, dimensions: List[List[int]]) -> int:\n        ",
+    "typescript": "function areaOfMaxDiagonal(dimensions: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AreaOfMaxDiagonal(int[][] dimensions) {\n        \n    }\n}",
+    "go": "func areaOfMaxDiagonal(dimensions [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn area_of_max_diagonal(dimensions: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "dimensions": "[[9,3],[8,6]]"
+    },
+    {
+      "dimensions": "[[3,4],[4,3]]"
+    }
+  ],
+  "functionName": "areaOfMaxDiagonal",
+  "params": [
+    {
+      "name": "dimensions",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Diagonal of rectangle is <code>sqrt(length<sup>2</sup> + width<sup>2</sup>)</code>."
+  ]
+}

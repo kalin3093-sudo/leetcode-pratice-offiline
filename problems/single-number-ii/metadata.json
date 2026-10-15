@@ -1,0 +1,43 @@
+{
+  "id": "single-number-ii",
+  "title": "137. Single Number II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/single-number-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,2,3,2]",
+      "output": "3"
+    },
+    {
+      "input": "nums = [0,1,0,1,0,1,99]",
+      "output": "99"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int singleNumber(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int singleNumber(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def singleNumber(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function singleNumber(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SingleNumber(int[] nums) {\n        \n    }\n}",
+    "go": "func singleNumber(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn single_number(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,2,3,2]"
+    },
+    {
+      "nums": "[0,1,0,1,0,1,99]"
+    }
+  ],
+  "functionName": "singleNumber",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

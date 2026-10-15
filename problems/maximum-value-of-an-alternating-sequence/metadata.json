@@ -1,0 +1,63 @@
+{
+  "id": "maximum-value-of-an-alternating-sequence",
+  "title": "3993. Maximum Value of an Alternating Sequence",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 4, s = 3, m = 5",
+      "output": "12",
+      "explanation": "One valid sequence is [3, 8, 7, 12]. The maximum element in the sequence is 12."
+    },
+    {
+      "input": "n = 2, s = 4, m = 3",
+      "output": "7",
+      "explanation": "One valid sequence is [4, 7]. The maximum element in the sequence is 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumValue(int n, int s, int m) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumValue(int n, int s, int m) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumValue(self, n: int, s: int, m: int) -> int:\n        ",
+    "typescript": "function maximumValue(n: number, s: number, m: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumValue(int n, int s, int m) {\n        \n    }\n}",
+    "go": "func maximumValue(n int, s int, m int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_value(n: i32, s: i32, m: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "s": 3,
+      "m": 5
+    },
+    {
+      "n": 2,
+      "s": 4,
+      "m": 3
+    }
+  ],
+  "functionName": "maximumValue",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "s",
+      "type": "int"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "<p>To make values grow as much as possible, use the maximum allowed increase <code>m</code> when moving to a high point.</p>",
+    "<p>Between two high points, there must be a lower element. To lose as little value as possible, make that lower element smaller by only <code>1</code>.</p>",
+    "<p>Therefore, after the first high point, every two additional positions can increase the maximum reachable high value by <code>m - 1</code>.</p>",
+    "<p>Consider both possible alternating patterns: starting with a decrease and starting with an increase.</p>",
+    "<p>Handle <code>n == 1</code> separately.</p>"
+  ]
+}

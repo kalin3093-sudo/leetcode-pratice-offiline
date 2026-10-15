@@ -1,0 +1,47 @@
+{
+  "id": "transform-array-by-parity",
+  "title": "3467. Transform Array by Parity",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/transform-array-by-parity/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [4,3,2,1]",
+      "output": "[0,0,1,1]",
+      "explanation": "Replace the even numbers (4 and 2) with 0 and the odd numbers (3 and 1) with 1. Now, nums = [0, 1, 0, 1]. After sorting nums in non-descending order, nums = [0, 0, 1, 1]."
+    },
+    {
+      "input": "nums = [1,5,1,4,2]",
+      "output": "[0,0,1,1,1]",
+      "explanation": "Replace the even numbers (4 and 2) with 0 and the odd numbers (1, 5 and 1) with 1. Now, nums = [1, 1, 1, 0, 0]. After sorting nums in non-descending order, nums = [0, 0, 1, 1, 1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> transformArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] transformArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def transformArray(self, nums: List[int]) -> List[int]:\n        ",
+    "typescript": "function transformArray(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] TransformArray(int[] nums) {\n        \n    }\n}",
+    "go": "func transformArray(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn transform_array(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[4,3,2,1]"
+    },
+    {
+      "nums": "[1,5,1,4,2]"
+    }
+  ],
+  "functionName": "transformArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Let <code>x</code> be the number of even numbers, and <code>y</code> be the number of odd numbers. Output <code>0</code> <code>x</code> times, followed by <code>1</code> <code>y</code> times."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "maximum-number-of-words-you-can-type",
+  "title": "1935. Maximum Number of Words You Can Type",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-number-of-words-you-can-type/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "text = \"hello world\", brokenLetters = \"ad\"",
+      "output": "1",
+      "explanation": "We cannot type \"world\" because the 'd' key is broken."
+    },
+    {
+      "input": "text = \"leet code\", brokenLetters = \"lt\"",
+      "output": "1",
+      "explanation": "We cannot type \"leet\" because the 'l' and 't' keys are broken."
+    },
+    {
+      "input": "text = \"leet code\", brokenLetters = \"e\"",
+      "output": "0",
+      "explanation": "We cannot type either word because the 'e' key is broken."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int canBeTypedWords(string text, string brokenLetters) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int canBeTypedWords(String text, String brokenLetters) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canBeTypedWords(self, text: str, brokenLetters: str) -> int:\n        ",
+    "typescript": "function canBeTypedWords(text: string, brokenLetters: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CanBeTypedWords(string text, string brokenLetters) {\n        \n    }\n}",
+    "go": "func canBeTypedWords(text string, brokenLetters string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_be_typed_words(text: String, broken_letters: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "hello world",
+      "brokenLetters": "ad"
+    },
+    {
+      "text": "leet code",
+      "brokenLetters": "lt"
+    },
+    {
+      "text": "leet code",
+      "brokenLetters": "e"
+    }
+  ],
+  "functionName": "canBeTypedWords",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    },
+    {
+      "name": "brokenLetters",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Check each word separately if it can be typed.",
+    "A word can be typed if all its letters are not broken."
+  ]
+}

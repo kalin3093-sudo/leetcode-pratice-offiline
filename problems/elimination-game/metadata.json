@@ -1,0 +1,44 @@
+{
+  "id": "elimination-game",
+  "title": "390. Elimination Game",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/elimination-game/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 9",
+      "output": "6",
+      "explanation": "arr = [1, 2, 3, 4, 5, 6, 7, 8, 9] arr = [2, 4, 6, 8] arr = [2, 6] arr = [6]"
+    },
+    {
+      "input": "n = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int lastRemaining(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int lastRemaining(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def lastRemaining(self, n: int) -> int:\n        ",
+    "typescript": "function lastRemaining(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LastRemaining(int n) {\n        \n    }\n}",
+    "go": "func lastRemaining(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn last_remaining(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 9
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "lastRemaining",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

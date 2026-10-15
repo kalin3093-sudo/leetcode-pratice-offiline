@@ -1,0 +1,72 @@
+{
+  "id": "find-substring-with-given-hash-value",
+  "title": "2156. Find Substring With Given Hash Value",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-substring-with-given-hash-value/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leetcode\", power = 7, modulo = 20, k = 2, hashValue = 0",
+      "output": "\"ee\"",
+      "explanation": "The hash of \"ee\" can be computed to be hash(\"ee\", 7, 20) = (5 * 1 + 5 * 7) mod 20 = 40 mod 20 = 0. \"ee\" is the first substring of length 2 with hashValue 0. Hence, we return \"ee\"."
+    },
+    {
+      "input": "s = \"fbxzaad\", power = 31, modulo = 100, k = 3, hashValue = 32",
+      "output": "\"fbx\"",
+      "explanation": "The hash of \"fbx\" can be computed to be hash(\"fbx\", 31, 100) = (6 * 1 + 2 * 31 + 24 * 312) mod 100 = 23132 mod 100 = 32. The hash of \"bxz\" can be computed to be hash(\"bxz\", 31, 100) = (2 * 1 + 24 * 31 + 26 * 312) mod 100 = 25732 mod 100 = 32. \"fbx\" is the first substring of length 3 with hashValue 32. Hence, we return \"fbx\". Note that \"bxz\" also has a hash of 32 but it appears later than \"fbx\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string subStrHash(string s, int power, int modulo, int k, int hashValue) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String subStrHash(String s, int power, int modulo, int k, int hashValue) {\n        \n    }\n}",
+    "python": "class Solution:\n    def subStrHash(self, s: str, power: int, modulo: int, k: int, hashValue: int) -> str:\n        ",
+    "typescript": "function subStrHash(s: string, power: number, modulo: number, k: number, hashValue: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SubStrHash(string s, int power, int modulo, int k, int hashValue) {\n        \n    }\n}",
+    "go": "func subStrHash(s string, power int, modulo int, k int, hashValue int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sub_str_hash(s: String, power: i32, modulo: i32, k: i32, hash_value: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcode",
+      "power": 7,
+      "modulo": 20,
+      "k": 2,
+      "hashValue": 0
+    },
+    {
+      "s": "fbxzaad",
+      "power": 31,
+      "modulo": 100,
+      "k": 3,
+      "hashValue": 32
+    }
+  ],
+  "functionName": "subStrHash",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "power",
+      "type": "int"
+    },
+    {
+      "name": "modulo",
+      "type": "int"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "hashValue",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "How can we update the hash value efficiently while iterating instead of recalculating it each time?",
+    "Use the rolling hash method."
+  ]
+}

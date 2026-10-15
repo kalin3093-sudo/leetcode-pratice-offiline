@@ -1,0 +1,47 @@
+{
+  "id": "find-the-most-common-response",
+  "title": "3527. Find the Most Common Response",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-most-common-response/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "responses = [[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]",
+      "output": "\"good\"",
+      "explanation": "After removing duplicates within each list, responses = [[\"good\", \"ok\"], [\"ok\", \"bad\", \"good\"], [\"good\"], [\"bad\"]]. \"good\" appears 3 times, \"ok\" appears 2 times, and \"bad\" appears 2 times. Return \"good\" because it has the highest frequency."
+    },
+    {
+      "input": "responses = [[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
+      "output": "\"bad\"",
+      "explanation": "After removing duplicates within each list we have responses = [[\"good\", \"ok\"], [\"ok\", \"bad\"], [\"bad\", \"notsure\"], [\"great\", \"good\"]]. \"bad\", \"good\", and \"ok\" each occur 2 times. The output is \"bad\" because it is the lexicographically smallest amongst the words with the highest frequency."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string findCommonResponse(vector<vector<string>>& responses) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String findCommonResponse(List<List<String>> responses) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findCommonResponse(self, responses: List[List[str]]) -> str:\n        ",
+    "typescript": "function findCommonResponse(responses: string[][]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string FindCommonResponse(IList<IList<string>> responses) {\n        \n    }\n}",
+    "go": "func findCommonResponse(responses [][]string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_common_response(responses: Vec<Vec<String>>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "responses": "[[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]"
+    },
+    {
+      "responses": "[[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]"
+    }
+  ],
+  "functionName": "findCommonResponse",
+  "params": [
+    {
+      "name": "responses",
+      "type": "string_list_2d"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Use a HashMap."
+  ]
+}

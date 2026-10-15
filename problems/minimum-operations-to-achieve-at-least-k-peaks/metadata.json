@@ -1,0 +1,64 @@
+{
+  "id": "minimum-operations-to-achieve-at-least-k-peaks",
+  "title": "3892. Minimum Operations to Achieve At Least K Peaks",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,2], k = 1",
+      "output": "1",
+      "explanation": "To achieve at least k = 1 peak, we can increase nums[2] = 2 to 3. After this operation, nums[2] = 3 is strictly greater than its neighbors nums[0] = 2 and nums[1] = 1. Therefore, the minimum number of operations required is 1."
+    },
+    {
+      "input": "nums = [4,5,3,6], k = 2",
+      "output": "0",
+      "explanation": "The array already contains at least k = 2 peaks with zero operations. Index 1: nums[1] = 5 is strictly greater than its neighbors nums[0] = 4 and nums[2] = 3. Index 3: nums[3] = 6 is strictly greater than its neighbors nums[2] = 3 and nums[0] = 4. Therefore, the minimum number of operations required is 0."
+    },
+    {
+      "input": "nums = [3,7,3], k = 2",
+      "output": "-1",
+      "explanation": "It is impossible to have at least k = 2 peaks in this array. Therefore, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,2]",
+      "k": 1
+    },
+    {
+      "nums": "[4,5,3,6]",
+      "k": 2
+    },
+    {
+      "nums": "[3,7,3]",
+      "k": 2
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "There are a few cases to handle: when the first element is a peak, when the last element is a peak, and when neither the first nor the last element is a peak.",
+    "After fixing the case, solve with dynamic programming states <code>dp[i][j]</code>, where <code>dp[i][j]</code> is the minimum number of operations needed to make <code>j</code> peaks from the first <code>i</code> values in <code>nums</code>."
+  ]
+}

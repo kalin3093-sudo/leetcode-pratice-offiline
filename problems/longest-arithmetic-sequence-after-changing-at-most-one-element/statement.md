@@ -1,0 +1,12 @@
+You are given an integer array `nums`.
+
+A subarray is **arithmetic** if the difference between consecutive elements in the subarray is constant.
+
+You can replace **at most one** element in `nums` with any **integer**. Then, you select an arithmetic subarray from `nums`.
+
+Return an integer denoting the **maximum** length of the arithmetic subarray you can select.
+
+**Constraints:**
+
+-   `4 ≤ nums.length ≤ 10^5`
+-   `1 ≤ nums[i] ≤ 10^5`

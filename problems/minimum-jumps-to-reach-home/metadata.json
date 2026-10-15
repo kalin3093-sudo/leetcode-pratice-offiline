@@ -1,0 +1,76 @@
+{
+  "id": "minimum-jumps-to-reach-home",
+  "title": "1654. Minimum Jumps to Reach Home",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-jumps-to-reach-home/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "forbidden = [14,4,18,1,15], a = 3, b = 15, x = 9",
+      "output": "3",
+      "explanation": "3 jumps forward (0 -> 3 -> 6 -> 9) will get the bug home."
+    },
+    {
+      "input": "forbidden = [8,3,16,6,12,20], a = 15, b = 13, x = 11",
+      "output": "-1"
+    },
+    {
+      "input": "forbidden = [1,6,2,14,5,17,4], a = 16, b = 9, x = 7",
+      "output": "2",
+      "explanation": "One jump forward (0 -> 16) then one jump backward (16 -> 7) will get the bug home."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumJumps(vector<int>& forbidden, int a, int b, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumJumps(int[] forbidden, int a, int b, int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumJumps(self, forbidden: list[int], a: int, b: int, x: int) -> int:\n        ",
+    "typescript": "function minimumJumps(forbidden: number[], a: number, b: number, x: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumJumps(int[] forbidden, int a, int b, int x) {\n        \n    }\n}",
+    "go": "func minimumJumps(forbidden []int, a int, b int, x int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_jumps(forbidden: Vec<i32>, a: i32, b: i32, x: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "forbidden": "[14,4,18,1,15]",
+      "a": 3,
+      "b": 15,
+      "x": 9
+    },
+    {
+      "forbidden": "[8,3,16,6,12,20]",
+      "a": 15,
+      "b": 13,
+      "x": 11
+    },
+    {
+      "forbidden": "[1,6,2,14,5,17,4]",
+      "a": 16,
+      "b": 9,
+      "x": 7
+    }
+  ],
+  "functionName": "minimumJumps",
+  "params": [
+    {
+      "name": "forbidden",
+      "type": "int_array"
+    },
+    {
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
+      "type": "int"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think of the line as a graph",
+    "to handle the no double back jumps condition you can handle it by holding the state of your previous jump"
+  ]
+}

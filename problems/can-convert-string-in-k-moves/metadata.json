@@ -1,0 +1,70 @@
+{
+  "id": "can-convert-string-in-k-moves",
+  "title": "1540. Can Convert String in K Moves",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/can-convert-string-in-k-moves/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"input\", t = \"ouput\", k = 9",
+      "output": "true",
+      "explanation": "In the 6th move, we shift 'i' 6 times to get 'o'. And in the 7th move we shift 'n' to get 'u'."
+    },
+    {
+      "input": "s = \"abc\", t = \"bcd\", k = 10",
+      "output": "false",
+      "explanation": "We need to shift each character in s one time to convert it into t. We can shift 'a' to 'b' during the 1st move. However, there is no way to shift the other characters in the remaining moves to obtain t from s."
+    },
+    {
+      "input": "s = \"aab\", t = \"bbb\", k = 27",
+      "output": "true",
+      "explanation": "In the 1st move, we shift the first 'a' 1 time to get 'b'. In the 27th move, we shift the second 'a' 27 times to get 'b'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canConvertString(string s, string t, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canConvertString(String s, String t, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canConvertString(self, s: str, t: str, k: int) -> bool:\n        ",
+    "typescript": "function canConvertString(s: string, t: string, k: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanConvertString(string s, string t, int k) {\n        \n    }\n}",
+    "go": "func canConvertString(s string, t string, k int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_convert_string(s: String, t: String, k: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "input",
+      "t": "ouput",
+      "k": 9
+    },
+    {
+      "s": "abc",
+      "t": "bcd",
+      "k": 10
+    },
+    {
+      "s": "aab",
+      "t": "bbb",
+      "k": 27
+    }
+  ],
+  "functionName": "canConvertString",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Observe that shifting a letter x times has the same effect of shifting the letter x + 26 times.",
+    "You need to check whether k is large enough to cover all shifts with the same remainder after modulo 26."
+  ]
+}

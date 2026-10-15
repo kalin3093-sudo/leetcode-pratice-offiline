@@ -1,0 +1,73 @@
+{
+  "id": "coloring-a-border",
+  "title": "1034. Coloring A Border",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/coloring-a-border/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,1],[1,2]], row = 0, col = 0, color = 3",
+      "output": "[[3,3],[3,2]]"
+    },
+    {
+      "input": "grid = [[1,2,2],[2,3,2]], row = 0, col = 1, color = 3",
+      "output": "[[1,3,3],[2,3,3]]"
+    },
+    {
+      "input": "grid = [[1,1,1],[1,1,1],[1,1,1]], row = 1, col = 1, color = 2",
+      "output": "[[2,2,2],[2,1,2],[2,2,2]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> colorBorder(vector<vector<int>>& grid, int row, int col, int color) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] colorBorder(int[][] grid, int row, int col, int color) {\n        \n    }\n}",
+    "python": "class Solution:\n    def colorBorder(self, grid: list[list[int]], row: int, col: int, color: int) -> list[list[int]]:\n        ",
+    "typescript": "function colorBorder(grid: number[][], row: number, col: number, color: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] ColorBorder(int[][] grid, int row, int col, int color) {\n        \n    }\n}",
+    "go": "func colorBorder(grid [][]int, row int, col int, color int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn color_border(grid: Vec<Vec<i32>>, row: i32, col: i32, color: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,1],[1,2]]",
+      "row": 0,
+      "col": 0,
+      "color": 3
+    },
+    {
+      "grid": "[[1,2,2],[2,3,2]]",
+      "row": 0,
+      "col": 1,
+      "color": 3
+    },
+    {
+      "grid": "[[1,1,1],[1,1,1],[1,1,1]]",
+      "row": 1,
+      "col": 1,
+      "color": 2
+    }
+  ],
+  "functionName": "colorBorder",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "row",
+      "type": "int"
+    },
+    {
+      "name": "col",
+      "type": "int"
+    },
+    {
+      "name": "color",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Use a DFS to find every square in the component.  Then for each square, color it if it has a neighbor that is outside the grid or a different color."
+  ]
+}

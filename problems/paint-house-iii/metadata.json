@@ -1,0 +1,84 @@
+{
+  "id": "paint-house-iii",
+  "title": "1473. Paint House III",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/paint-house-iii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "houses = [0,0,0,0,0], cost = [[1,10],[10,1],[10,1],[1,10],[5,1]], m = 5, n = 2, target = 3",
+      "output": "9",
+      "explanation": "Paint houses of this way [1,2,2,1,1] This array contains target = 3 neighborhoods, [{1}, {2,2}, {1,1}]. Cost of paint all houses (1 + 1 + 1 + 1 + 5) = 9."
+    },
+    {
+      "input": "houses = [0,2,1,2,0], cost = [[1,10],[10,1],[10,1],[1,10],[5,1]], m = 5, n = 2, target = 3",
+      "output": "11",
+      "explanation": "Some houses are already painted, Paint the houses of this way [2,2,1,2,2] This array contains target = 3 neighborhoods, [{2,2}, {1}, {2,2}]. Cost of paint the first and last house (10 + 1) = 11."
+    },
+    {
+      "input": "houses = [3,1,2,3], cost = [[1,1,1],[1,1,1],[1,1,1],[1,1,1]], m = 4, n = 3, target = 3",
+      "output": "-1",
+      "explanation": "Houses are already painted with a total of 4 neighborhoods [{3},{1},{2},{3}] different of target = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCost(vector<int>& houses, vector<vector<int>>& cost, int m, int n, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCost(int[] houses, int[][] cost, int m, int n, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, houses: list[int], cost: list[list[int]], m: int, n: int, target: int) -> int:\n        ",
+    "typescript": "function minCost(houses: number[], cost: number[][], m: number, n: number, target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCost(int[] houses, int[][] cost, int m, int n, int target) {\n        \n    }\n}",
+    "go": "func minCost(houses []int, cost [][]int, m int, n int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(houses: Vec<i32>, cost: Vec<Vec<i32>>, m: i32, n: i32, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "houses": "[0,0,0,0,0]",
+      "cost": "[[1,10],[10,1],[10,1],[1,10],[5,1]]",
+      "m": 5,
+      "n": 2,
+      "target": 3
+    },
+    {
+      "houses": "[0,2,1,2,0]",
+      "cost": "[[1,10],[10,1],[10,1],[1,10],[5,1]]",
+      "m": 5,
+      "n": 2,
+      "target": 3
+    },
+    {
+      "houses": "[3,1,2,3]",
+      "cost": "[[1,1,1],[1,1,1],[1,1,1],[1,1,1]]",
+      "m": 4,
+      "n": 3,
+      "target": 3
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "houses",
+      "type": "int_array"
+    },
+    {
+      "name": "cost",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    },
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use Dynamic programming.",
+    "Define dp[i][j][k] as the minimum cost where we have k neighborhoods in the first i houses and the i-th house is painted with the color j."
+  ]
+}

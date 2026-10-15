@@ -1,0 +1,47 @@
+{
+  "id": "count-dominant-indices",
+  "title": "3833. Count Dominant Indices",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-dominant-indices/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,4,3]",
+      "output": "2",
+      "explanation": "At index i = 0, the value 5 is dominant as 5 > average(4, 3) = 3.5. At index i = 1, the value 4 is dominant over the subarray [3]. Index i = 2 is not dominant as there are no elements to its right. Thus, the answer is 2."
+    },
+    {
+      "input": "nums = [4,1,2]",
+      "output": "1",
+      "explanation": "At index i = 0, the value 4 is dominant over the subarray [1, 2]. At index i = 1, the value 1 is not dominant. Index i = 2 is not dominant as there are no elements to its right. Thus, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int dominantIndices(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int dominantIndices(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def dominantIndices(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function dominantIndices(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DominantIndices(int[] nums) {\n        \n    }\n}",
+    "go": "func dominantIndices(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn dominant_indices(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,4,3]"
+    },
+    {
+      "nums": "[4,1,2]"
+    }
+  ],
+  "functionName": "dominantIndices",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate as described"
+  ]
+}

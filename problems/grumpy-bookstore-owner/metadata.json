@@ -1,0 +1,58 @@
+{
+  "id": "grumpy-bookstore-owner",
+  "title": "1052. Grumpy Bookstore Owner",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/grumpy-bookstore-owner/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], minutes = 3",
+      "output": "16",
+      "explanation": "The bookstore owner keeps themselves not grumpy for the last 3 minutes. The maximum number of customers that can be satisfied = 1 + 1 + 1 + 1 + 7 + 5 = 16."
+    },
+    {
+      "input": "customers = [1], grumpy = [0], minutes = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxSatisfied(self, customers: list[int], grumpy: list[int], minutes: int) -> int:\n        ",
+    "typescript": "function maxSatisfied(customers: number[], grumpy: number[], minutes: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxSatisfied(int[] customers, int[] grumpy, int minutes) {\n        \n    }\n}",
+    "go": "func maxSatisfied(customers []int, grumpy []int, minutes int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_satisfied(customers: Vec<i32>, grumpy: Vec<i32>, minutes: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "customers": "[1,0,1,2,1,1,7,5]",
+      "grumpy": "[0,1,0,1,0,1,0,1]",
+      "minutes": 3
+    },
+    {
+      "customers": "[1]",
+      "grumpy": "[0]",
+      "minutes": 1
+    }
+  ],
+  "functionName": "maxSatisfied",
+  "params": [
+    {
+      "name": "customers",
+      "type": "int_array"
+    },
+    {
+      "name": "grumpy",
+      "type": "int_array"
+    },
+    {
+      "name": "minutes",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Say the store owner uses their power in minute 1 to X and we have some answer A.  If they instead use their power from minute 2 to X+1, we only have to use data from minutes 1, 2, X and X+1 to update our answer A."
+  ]
+}

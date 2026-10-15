@@ -1,0 +1,64 @@
+{
+  "id": "string-compression-ii",
+  "title": "1531. String Compression II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/string-compression-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aaabcccd\", k = 2",
+      "output": "4",
+      "explanation": "Compressing s without deleting anything will give us \"a3bc3d\" of length 6. Deleting any of the characters 'a' or 'c' would at most decrease the length of the compressed string to 5, for instance delete 2 'a' then we will have s = \"abcccd\" which compressed is abc3d. Therefore, the optimal way is to delete 'b' and 'd', then the compressed version of s will be \"a3c3\" of length 4."
+    },
+    {
+      "input": "s = \"aabbaa\", k = 2",
+      "output": "2",
+      "explanation": "If we delete both 'b' characters, the resulting compressed string would be \"a4\" of length 2."
+    },
+    {
+      "input": "s = \"aaaaaaaaaaa\", k = 0",
+      "output": "3",
+      "explanation": "Since k is zero, we cannot delete anything. The compressed string is \"a11\" of length 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getLengthOfOptimalCompression(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getLengthOfOptimalCompression(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getLengthOfOptimalCompression(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function getLengthOfOptimalCompression(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetLengthOfOptimalCompression(string s, int k) {\n        \n    }\n}",
+    "go": "func getLengthOfOptimalCompression(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_length_of_optimal_compression(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaabcccd",
+      "k": 2
+    },
+    {
+      "s": "aabbaa",
+      "k": 2
+    },
+    {
+      "s": "aaaaaaaaaaa",
+      "k": 0
+    }
+  ],
+  "functionName": "getLengthOfOptimalCompression",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "The state of the DP can be the current index and the remaining characters to delete.",
+    "Having a prefix sum for each character can help you determine for a certain character c in some specific range, how many characters you need to delete to merge all occurrences of c in that range."
+  ]
+}

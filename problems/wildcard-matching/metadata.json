@@ -1,0 +1,60 @@
+{
+  "id": "wildcard-matching",
+  "title": "44. Wildcard Matching",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/wildcard-matching/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"aa\", p = \"a\"",
+      "output": "false",
+      "explanation": "\"a\" does not match the entire string \"aa\"."
+    },
+    {
+      "input": "s = \"aa\", p = \"*\"",
+      "output": "true",
+      "explanation": "'*' matches any sequence."
+    },
+    {
+      "input": "s = \"cb\", p = \"?a\"",
+      "output": "false",
+      "explanation": "'?' matches 'c', but the second letter is 'a', which does not match 'b'."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isMatch(string s, string p) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isMatch(String s, String p) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isMatch(self, s: str, p: str) -> bool:\n        ",
+    "typescript": "function isMatch(s: string, p: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsMatch(string s, string p) {\n        \n    }\n}",
+    "go": "func isMatch(s string, p string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_match(s: String, p: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aa",
+      "p": "a"
+    },
+    {
+      "s": "aa",
+      "p": "*"
+    },
+    {
+      "s": "cb",
+      "p": "?a"
+    }
+  ],
+  "functionName": "isMatch",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "p",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "sort-the-people",
+  "title": "2418. Sort the People",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/sort-the-people/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "names = [\"Mary\",\"John\",\"Emma\"], heights = [180,165,170]",
+      "output": "[\"Mary\",\"Emma\",\"John\"]",
+      "explanation": "Mary is the tallest, followed by Emma and John."
+    },
+    {
+      "input": "names = [\"Alice\",\"Bob\",\"Bob\"], heights = [155,185,150]",
+      "output": "[\"Bob\",\"Alice\",\"Bob\"]",
+      "explanation": "The first Bob is the tallest, followed by Alice and the second Bob."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> sortPeople(vector<string>& names, vector<int>& heights) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] sortPeople(String[] names, int[] heights) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sortPeople(self, names: list[str], heights: list[int]) -> list[str]:\n        ",
+    "typescript": "function sortPeople(names: string[], heights: number[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] SortPeople(string[] names, int[] heights) {\n        \n    }\n}",
+    "go": "func sortPeople(names []string, heights []int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sort_people(names: Vec<String>, heights: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "names": "[\"Mary\",\"John\",\"Emma\"]",
+      "heights": "[180,165,170]"
+    },
+    {
+      "names": "[\"Alice\",\"Bob\",\"Bob\"]",
+      "heights": "[155,185,150]"
+    }
+  ],
+  "functionName": "sortPeople",
+  "params": [
+    {
+      "name": "names",
+      "type": "string_array"
+    },
+    {
+      "name": "heights",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": [
+    "Find the tallest person and swap with the first person, then find the second tallest person and swap with the second person, etc. Repeat until you fix all n people."
+  ]
+}

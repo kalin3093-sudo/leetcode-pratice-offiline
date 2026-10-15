@@ -1,0 +1,45 @@
+{
+  "id": "first-unique-even-element",
+  "title": "3866. First Unique Even Element",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/first-unique-even-element/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,4,2,5,4,6]",
+      "output": "2",
+      "explanation": "Both 2 and 6 are even and they appear exactly once. Since 2 occurs first in the array, the answer is 2."
+    },
+    {
+      "input": "nums = [4,4]",
+      "output": "-1",
+      "explanation": "No even integer appears exactly once, so return -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int firstUniqueEven(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int firstUniqueEven(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def firstUniqueEven(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function firstUniqueEven(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FirstUniqueEven(int[] nums) {\n        \n    }\n}",
+    "go": "func firstUniqueEven(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn first_unique_even(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,4,2,5,4,6]"
+    },
+    {
+      "nums": "[4,4]"
+    }
+  ],
+  "functionName": "firstUniqueEven",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

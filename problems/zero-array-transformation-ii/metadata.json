@@ -1,0 +1,54 @@
+{
+  "id": "zero-array-transformation-ii",
+  "title": "3356. Zero Array Transformation II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/zero-array-transformation-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,0,2], queries = [[0,2,1],[0,2,1],[1,1,3]]",
+      "output": "2",
+      "explanation": "For i = 0 (l = 0, r = 2, val = 1): Decrement values at indices [0, 1, 2] by [1, 0, 1] respectively. The array will become [1, 0, 1]. For i = 1 (l = 0, r = 2, val = 1): Decrement values at indices [0, 1, 2] by [1, 0, 1] respectively. The array will become [0, 0, 0], which is a Zero Array. Therefore, the minimum value of k is 2."
+    },
+    {
+      "input": "nums = [4,3,2,1], queries = [[1,3,2],[0,2,1]]",
+      "output": "-1",
+      "explanation": "For i = 0 (l = 1, r = 3, val = 2): Decrement values at indices [1, 2, 3] by [2, 2, 1] respectively. The array will become [4, 1, 0, 0]. For i = 1 (l = 0, r = 2, val = 1): Decrement values at indices [0, 1, 2] by [1, 1, 0] respectively. The array will become [3, 0, 0, 0], which is not a Zero Array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minZeroArray(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minZeroArray(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minZeroArray(self, nums: List[int], queries: List[List[int]]) -> int:\n        ",
+    "typescript": "function minZeroArray(nums: number[], queries: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinZeroArray(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func minZeroArray(nums []int, queries [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_zero_array(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,0,2]",
+      "queries": "[[0,2,1],[0,2,1],[1,1,3]]"
+    },
+    {
+      "nums": "[4,3,2,1]",
+      "queries": "[[1,3,2],[0,2,1]]"
+    }
+  ],
+  "functionName": "minZeroArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Can we apply binary search here?",
+    "Utilize a difference array to optimize the processing of queries."
+  ]
+}

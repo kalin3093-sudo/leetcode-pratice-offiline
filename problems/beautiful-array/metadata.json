@@ -1,0 +1,43 @@
+{
+  "id": "beautiful-array",
+  "title": "932. Beautiful Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/beautiful-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "[2,1,4,3]"
+    },
+    {
+      "input": "n = 5",
+      "output": "[3,1,2,5,4]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> beautifulArray(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] beautifulArray(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def beautifulArray(self, n: int) -> list[int]:\n        ",
+    "typescript": "function beautifulArray(n: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] BeautifulArray(int n) {\n        \n    }\n}",
+    "go": "func beautifulArray(n int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn beautiful_array(n: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4
+    },
+    {
+      "n": 5
+    }
+  ],
+  "functionName": "beautifulArray",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

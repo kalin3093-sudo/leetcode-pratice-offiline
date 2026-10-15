@@ -1,0 +1,60 @@
+{
+  "id": "maximum-containers-on-a-ship",
+  "title": "3492. Maximum Containers on a Ship",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-containers-on-a-ship/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2, w = 3, maxWeight = 15",
+      "output": "4",
+      "explanation": "The deck has 4 cells, and each container weighs 3. The total weight of loading all containers is 12, which does not exceed maxWeight."
+    },
+    {
+      "input": "n = 3, w = 5, maxWeight = 20",
+      "output": "4",
+      "explanation": "The deck has 9 cells, and each container weighs 5. The maximum number of containers that can be loaded without exceeding maxWeight is 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxContainers(int n, int w, int maxWeight) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxContainers(int n, int w, int maxWeight) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxContainers(self, n: int, w: int, maxWeight: int) -> int:\n        ",
+    "typescript": "function maxContainers(n: number, w: number, maxWeight: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxContainers(int n, int w, int maxWeight) {\n        \n    }\n}",
+    "go": "func maxContainers(n int, w int, maxWeight int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_containers(n: i32, w: i32, max_weight: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2,
+      "w": 3,
+      "maxWeight": 15
+    },
+    {
+      "n": 3,
+      "w": 5,
+      "maxWeight": 20
+    }
+  ],
+  "functionName": "maxContainers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "w",
+      "type": "int"
+    },
+    {
+      "name": "maxWeight",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "What are the limits on the number of containers?",
+    "We can load at most <code>min(n * n, maxWeight / w)</code> containers."
+  ]
+}

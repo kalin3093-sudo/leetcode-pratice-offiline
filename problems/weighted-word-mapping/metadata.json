@@ -1,0 +1,65 @@
+{
+  "id": "weighted-word-mapping",
+  "title": "3838. Weighted Word Mapping",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/weighted-word-mapping/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"abcd\",\"def\",\"xyz\"], weights = [5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]",
+      "output": "\"rij\"",
+      "explanation": "The weight of \"abcd\" is 5 + 3 + 12 + 14 = 34. The result modulo 26 is 34 % 26 = 8, which maps to 'r'. The weight of \"def\" is 14 + 1 + 2 = 17. The result modulo 26 is 17 % 26 = 17, which maps to 'i'. The weight of \"xyz\" is 7 + 7 + 2 = 16. The result modulo 26 is 16 % 26 = 16, which maps to 'j'. Thus, the string formed by concatenating the mapped characters is \"rij\"."
+    },
+    {
+      "input": "words = [\"a\",\"b\",\"c\"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "output": "\"yyy\"",
+      "explanation": "Each word has weight 1. The result modulo 26 is 1 % 26 = 1, which maps to 'y'. Thus, the string formed by concatenating the mapped characters is \"yyy\"."
+    },
+    {
+      "input": "words = [\"abcd\"], weights = [7,5,3,4,3,5,4,9,4,2,2,7,10,2,5,10,6,1,2,2,4,1,3,4,4,5]",
+      "output": "\"g\"",
+      "explanation": "The weight of \"abcd\" is 7 + 5 + 3 + 4 = 19. The result modulo 26 is 19 % 26 = 19, which maps to 'g'. Thus, the string formed by concatenating the mapped characters is \"g\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string mapWordWeights(vector<string>& words, vector<int>& weights) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String mapWordWeights(String[] words, int[] weights) {\n        \n    }\n}",
+    "python": "class Solution:\n    def mapWordWeights(self, words: List[str], weights: List[int]) -> str:\n        ",
+    "typescript": "function mapWordWeights(words: string[], weights: number[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MapWordWeights(string[] words, int[] weights) {\n        \n    }\n}",
+    "go": "func mapWordWeights(words []string, weights []int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn map_word_weights(words: Vec<String>, weights: Vec<i32>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abcd\",\"def\",\"xyz\"]",
+      "weights": "[5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]"
+    },
+    {
+      "words": "[\"a\",\"b\",\"c\"]",
+      "weights": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]"
+    },
+    {
+      "words": "[\"abcd\"]",
+      "weights": "[7,5,3,4,3,5,4,9,4,2,2,7,10,2,5,10,6,1,2,2,4,1,3,4,4,5]"
+    }
+  ],
+  "functionName": "mapWordWeights",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "weights",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "For each word, sum character weights using <code>weights[c - 'a']</code>",
+    "Take the sum modulo <code>26</code>",
+    "Map the value to a character using reverse order: <code>char = 'z' - value</code>",
+    "Append all mapped characters in order to form the result string"
+  ]
+}

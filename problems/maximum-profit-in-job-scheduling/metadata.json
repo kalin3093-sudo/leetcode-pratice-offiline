@@ -1,0 +1,70 @@
+{
+  "id": "maximum-profit-in-job-scheduling",
+  "title": "1235. Maximum Profit in Job Scheduling",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]",
+      "output": "120",
+      "explanation": "The subset chosen is the first and fourth job. Time range [1-3]+[3-6] , we get profit of 120 = 50 + 70."
+    },
+    {
+      "input": "startTime = [1,2,3,4,6], endTime = [3,5,10,6,9], profit = [20,20,100,70,60]",
+      "output": "150",
+      "explanation": "The subset chosen is the first, fourth and fifth job. Profit obtained 150 = 20 + 70 + 60."
+    },
+    {
+      "input": "startTime = [1,1,1], endTime = [2,3,4], profit = [5,6,4]",
+      "output": "6"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def jobScheduling(self, startTime: list[int], endTime: list[int], profit: list[int]) -> int:\n        ",
+    "typescript": "function jobScheduling(startTime: number[], endTime: number[], profit: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int JobScheduling(int[] startTime, int[] endTime, int[] profit) {\n        \n    }\n}",
+    "go": "func jobScheduling(startTime []int, endTime []int, profit []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn job_scheduling(start_time: Vec<i32>, end_time: Vec<i32>, profit: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "startTime": "[1,2,3,3]",
+      "endTime": "[3,4,5,6]",
+      "profit": "[50,10,40,70]"
+    },
+    {
+      "startTime": "[1,2,3,4,6]",
+      "endTime": "[3,5,10,6,9]",
+      "profit": "[20,20,100,70,60]"
+    },
+    {
+      "startTime": "[1,1,1]",
+      "endTime": "[2,3,4]",
+      "profit": "[5,6,4]"
+    }
+  ],
+  "functionName": "jobScheduling",
+  "params": [
+    {
+      "name": "startTime",
+      "type": "int_array"
+    },
+    {
+      "name": "endTime",
+      "type": "int_array"
+    },
+    {
+      "name": "profit",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Think on DP.",
+    "Sort the elements by starting time, then define the dp[i] as the maximum profit taking elements from the suffix starting at i.",
+    "Use binarySearch (lower_bound/upper_bound on C++) to get the next index for the DP transition."
+  ]
+}

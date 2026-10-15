@@ -1,0 +1,54 @@
+{
+  "id": "minimum-limit-of-balls-in-a-bag",
+  "title": "1760. Minimum Limit of Balls in a Bag",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [9], maxOperations = 2",
+      "output": "3",
+      "explanation": "- Divide the bag with 9 balls into two bags of sizes 6 and 3. [9] -> [6,3]. - Divide the bag with 6 balls into two bags of sizes 3 and 3. [6,3] -> [3,3,3]. The bag with the most number of balls has 3 balls, so your penalty is 3 and you should return 3."
+    },
+    {
+      "input": "nums = [2,4,8,2], maxOperations = 4",
+      "output": "2",
+      "explanation": "- Divide the bag with 8 balls into two bags of sizes 4 and 4. [2,4,8,2] -> [2,4,4,4,2]. - Divide the bag with 4 balls into two bags of sizes 2 and 2. [2,4,4,4,2] -> [2,2,2,4,4,2]. - Divide the bag with 4 balls into two bags of sizes 2 and 2. [2,2,2,4,4,2] -> [2,2,2,2,2,4,2]. - Divide the bag with 4 balls into two bags of sizes 2 and 2. [2,2,2,2,2,4,2] -> [2,2,2,2,2,2,2,2]. The bag with the most number of balls has 2 balls, so your penalty is 2, and you should return 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumSize(vector<int>& nums, int maxOperations) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumSize(int[] nums, int maxOperations) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumSize(self, nums: list[int], maxOperations: int) -> int:\n        ",
+    "typescript": "function minimumSize(nums: number[], maxOperations: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumSize(int[] nums, int maxOperations) {\n        \n    }\n}",
+    "go": "func minimumSize(nums []int, maxOperations int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_size(nums: Vec<i32>, max_operations: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[9]",
+      "maxOperations": 2
+    },
+    {
+      "nums": "[2,4,8,2]",
+      "maxOperations": 4
+    }
+  ],
+  "functionName": "minimumSize",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "maxOperations",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let's change the question if we know the maximum size of a bag what is the minimum number of bags you can make",
+    "note that as the maximum size increases the minimum number of bags decreases so we can binary search the maximum size"
+  ]
+}

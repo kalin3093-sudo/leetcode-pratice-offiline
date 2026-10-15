@@ -1,0 +1,64 @@
+{
+  "id": "minimum-capacity-box",
+  "title": "3861. Minimum Capacity Box",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-capacity-box/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "capacity = [1,5,3,7], itemSize = 3",
+      "output": "2",
+      "explanation": "The box at index 2 has a capacity of 3, which is the minimum capacity that can store the item. Thus, the answer is 2."
+    },
+    {
+      "input": "capacity = [3,5,4,3], itemSize = 2",
+      "output": "0",
+      "explanation": "The minimum capacity that can store the item is 3, and it appears at indices 0 and 3. Thus, the answer is 0."
+    },
+    {
+      "input": "capacity = [4], itemSize = 5",
+      "output": "-1",
+      "explanation": "No box has enough capacity to store the item, so the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumIndex(vector<int>& capacity, int itemSize) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumIndex(int[] capacity, int itemSize) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumIndex(self, capacity: list[int], itemSize: int) -> int:\n        ",
+    "typescript": "function minimumIndex(capacity: number[], itemSize: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumIndex(int[] capacity, int itemSize) {\n        \n    }\n}",
+    "go": "func minimumIndex(capacity []int, itemSize int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_index(capacity: Vec<i32>, item_size: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "capacity": "[1,5,3,7]",
+      "itemSize": 3
+    },
+    {
+      "capacity": "[3,5,4,3]",
+      "itemSize": 2
+    },
+    {
+      "capacity": "[4]",
+      "itemSize": 5
+    }
+  ],
+  "functionName": "minimumIndex",
+  "params": [
+    {
+      "name": "capacity",
+      "type": "int_array"
+    },
+    {
+      "name": "itemSize",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate to find the minimum capacity >= <code>itemSize</code>, updating index only on strictly smaller finds.",
+    "Handle ties by keeping the earliest index.",
+    "Return <code>-1</code> if no valid box exists."
+  ]
+}

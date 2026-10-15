@@ -1,0 +1,74 @@
+{
+  "id": "count-routes-to-climb-a-rectangular-grid",
+  "title": "3797. Count Routes to Climb a Rectangular Grid",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [\"..\",\"#.\"], d = 1",
+      "output": "2",
+      "explanation": "We label the cells we visit in the routes sequentially, starting from 1. The two routes are: .2 #1 32 #1 We can move from the cell (1, 1) to the cell (0, 1) because the Euclidean distance is sqrt((1 - 0)2 + (1 - 1)2) = sqrt(1) <= d. However, we cannot move from the cell (1, 1) to the cell (0, 0) because the Euclidean distance is sqrt((1 - 0)2 + (1 - 0)2) = sqrt(2) > d."
+    },
+    {
+      "input": "grid = [\"..\",\"#.\"], d = 2",
+      "output": "4",
+      "explanation": "Two of the routes are given in example 1. The other two routes are: 2. #1 23 #1 Note that we can move from (1, 1) to (0, 0) because the Euclidean distance is sqrt(2) <= d."
+    },
+    {
+      "input": "grid = [\"#\"], d = 750",
+      "output": "0",
+      "explanation": "We cannot choose any cell as the starting cell. Therefore, there are no routes."
+    },
+    {
+      "input": "grid = [\"..\"], d = 1",
+      "output": "4",
+      "explanation": "The possible routes are: .1 1. 12 21"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfRoutes(vector<string>& grid, int d) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfRoutes(String[] grid, int d) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfRoutes(self, grid: List[str], d: int) -> int:\n        ",
+    "typescript": "function numberOfRoutes(grid: string[], d: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfRoutes(string[] grid, int d) {\n        \n    }\n}",
+    "go": "func numberOfRoutes(grid []string, d int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_routes(grid: Vec<String>, d: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[\"..\",\"#.\"]",
+      "d": 1
+    },
+    {
+      "grid": "[\"..\",\"#.\"]",
+      "d": 2
+    },
+    {
+      "grid": "[\"#\"]",
+      "d": 750
+    },
+    {
+      "grid": "[\"..\"]",
+      "d": 1
+    }
+  ],
+  "functionName": "numberOfRoutes",
+  "params": [
+    {
+      "name": "grid",
+      "type": "string_array"
+    },
+    {
+      "name": "d",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use dynamic programming.",
+    "Let <code>dp[r][c][0]</code> be the number of ways to reach <code>(r, c)</code> where the last move came from row <code>r + 1</code> (moved up), and let <code>dp[r][c][1]</code> be the number of ways where the last move stayed on row <code>r</code>.",
+    "Make computations faster using prefix sums over columns to aggregate contributions from cells within Euclidean distance <code>d</code>.",
+    "Combine <code>dp[r][c][0]</code> and <code>dp[r][c][1]</code> for all columns <code>c</code> in row <code>r</code> to produce the <code>dp</code> values used for row <code>r - 1</code>."
+  ]
+}

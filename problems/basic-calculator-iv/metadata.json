@@ -1,0 +1,66 @@
+{
+  "id": "basic-calculator-iv",
+  "title": "770. Basic Calculator IV",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/basic-calculator-iv/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "expression = \"e + 8 - a + 5\", evalvars = [\"e\"], evalints = [1]",
+      "output": "[\"-1*a\",\"14\"]"
+    },
+    {
+      "input": "expression = \"e - 8 + temperature - pressure\", evalvars = [\"e\", \"temperature\"], evalints = [1, 12]",
+      "output": "[\"-1*pressure\",\"5\"]"
+    },
+    {
+      "input": "expression = \"(e + 8) * (e - 8)\", evalvars = [], evalints = []",
+      "output": "[\"1*e*e\",\"-64\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> basicCalculatorIV(string expression, vector<string>& evalvars, vector<int>& evalints) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> basicCalculatorIV(String expression, String[] evalvars, int[] evalints) {\n        \n    }\n}",
+    "python": "class Solution:\n    def basicCalculatorIV(self, expression: str, evalvars: list[str], evalints: list[int]) -> list[str]:\n        ",
+    "typescript": "function basicCalculatorIV(expression: string, evalvars: string[], evalints: number[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> BasicCalculatorIV(string expression, string[] evalvars, int[] evalints) {\n        \n    }\n}",
+    "go": "func basicCalculatorIV(expression string, evalvars []string, evalints []int) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn basic_calculator_iv(expression: String, evalvars: Vec<String>, evalints: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "expression": "e + 8 - a + 5",
+      "evalvars": "[\"e\"]",
+      "evalints": "[1]"
+    },
+    {
+      "expression": "e - 8 + temperature - pressure",
+      "evalvars": "[\"e\", \"temperature\"]",
+      "evalints": "[1, 12]"
+    },
+    {
+      "expression": "(e + 8) * (e - 8)",
+      "evalvars": "[]",
+      "evalints": "[]"
+    }
+  ],
+  "functionName": "basicCalculatorIV",
+  "params": [
+    {
+      "name": "expression",
+      "type": "string"
+    },
+    {
+      "name": "evalvars",
+      "type": "string_array"
+    },
+    {
+      "name": "evalints",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string_list",
+  "hints": [
+    "One way is with a Polynomial class.  For example,\r\n\r\n* `Poly:add(this, that)` returns the result of `this + that`.\r\n* `Poly:sub(this, that)` returns the result of `this - that`.\r\n* `Poly:mul(this, that)` returns the result of `this * that`.\r\n* `Poly:evaluate(this, evalmap)` returns the polynomial after replacing all free variables with constants as specified by `evalmap`.\r\n* `Poly:toList(this)` returns the polynomial in the correct output format.\r\n\r\n* `Solution::combine(left, right, symbol)` returns the result of applying the binary operator represented by `symbol` to `left` and `right`.\r\n* `Solution::make(expr)` makes a new `Poly` represented by either the constant or free variable specified by `expr`.\r\n* `Solution::parse(expr)` parses an expression into a new `Poly`."
+  ]
+}

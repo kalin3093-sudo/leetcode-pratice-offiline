@@ -1,0 +1,57 @@
+{
+  "id": "count-connected-subgraphs-with-even-node-sum",
+  "title": "3910. Count Connected Subgraphs with Even Node Sum",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,0,1], edges = [[0,1],[1,2]]",
+      "output": "2",
+      "explanation": "s connected? sum of node values counted? [0] Yes 1 No [1] Yes 0 Yes [2] Yes 1 No [0,1] Yes 1 No [0,2] No, node 0 and node 2 are disconnected. 2 No [1,2] Yes 1 No [0,1,2] Yes 2 Yes"
+    },
+    {
+      "input": "nums = [1], edges = []",
+      "output": "0",
+      "explanation": "s connected? sum of node values counted? [0] Yes 1 No"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int evenSumSubgraphs(vector<int>& nums, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int evenSumSubgraphs(int[] nums, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def evenSumSubgraphs(self, nums: list[int], edges: list[list[int]]) -> int:\n        ",
+    "typescript": "function evenSumSubgraphs(nums: number[], edges: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int EvenSumSubgraphs(int[] nums, int[][] edges) {\n        \n    }\n}",
+    "go": "func evenSumSubgraphs(nums []int, edges [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn even_sum_subgraphs(nums: Vec<i32>, edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,0,1]",
+      "edges": "[[0,1],[1,2]]"
+    },
+    {
+      "nums": "[1]",
+      "edges": "[]"
+    }
+  ],
+  "functionName": "evenSumSubgraphs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Enumerate all subsets with bitmasks",
+    "For each subset, check whether the induced subgraph is connected using <code>DFS</code> or <code>BFS</code>",
+    "Keep track of the parity of the sum of <code>nums</code> in the subset",
+    "Count the subset only if it is connected and the sum is even",
+    "Since <code>n <= 13</code>, a brute-force bitmask solution is feasible"
+  ]
+}

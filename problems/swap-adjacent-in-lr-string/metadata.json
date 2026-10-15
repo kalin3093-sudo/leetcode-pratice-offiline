@@ -1,0 +1,52 @@
+{
+  "id": "swap-adjacent-in-lr-string",
+  "title": "777. Swap Adjacent in LR String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/swap-adjacent-in-lr-string/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "start = \"RXXLRXRXL\", result = \"XRLXXRRLX\"",
+      "output": "true",
+      "explanation": "We can transform start to result following these steps: RXXLRXRXL -> XRXLRXRXL -> XRLXRXRXL -> XRLXXRRXL -> XRLXXRRLX"
+    },
+    {
+      "input": "start = \"X\", result = \"L\"",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canTransform(string start, string result) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canTransform(String start, String result) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canTransform(self, start: str, result: str) -> bool:\n        ",
+    "typescript": "function canTransform(start: string, result: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanTransform(string start, string result) {\n        \n    }\n}",
+    "go": "func canTransform(start string, result string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_transform(start: String, result: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "start": "RXXLRXRXL",
+      "result": "XRLXXRRLX"
+    },
+    {
+      "start": "X",
+      "result": "L"
+    }
+  ],
+  "functionName": "canTransform",
+  "params": [
+    {
+      "name": "start",
+      "type": "string"
+    },
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Think of the L and R's as people on a horizontal line, where X is a space.  The people can't cross each other, and also you can't go from XRX to RXX."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "unique-email-addresses",
+  "title": "929. Unique Email Addresses",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/unique-email-addresses/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "emails = [\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]",
+      "output": "2",
+      "explanation": "\"testemail@leetcode.com\" and \"testemail@lee.tcode.com\" actually receive mails."
+    },
+    {
+      "input": "emails = [\"a@leetcode.com\",\"b@leetcode.com\",\"c@leetcode.com\"]",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numUniqueEmails(vector<string>& emails) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numUniqueEmails(String[] emails) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numUniqueEmails(self, emails: list[str]) -> int:\n        ",
+    "typescript": "function numUniqueEmails(emails: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumUniqueEmails(string[] emails) {\n        \n    }\n}",
+    "go": "func numUniqueEmails(emails []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_unique_emails(emails: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "emails": "[\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]"
+    },
+    {
+      "emails": "[\"a@leetcode.com\",\"b@leetcode.com\",\"c@leetcode.com\"]"
+    }
+  ],
+  "functionName": "numUniqueEmails",
+  "params": [
+    {
+      "name": "emails",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

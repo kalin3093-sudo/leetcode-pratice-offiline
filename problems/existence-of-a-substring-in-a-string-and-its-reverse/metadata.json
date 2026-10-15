@@ -1,0 +1,56 @@
+{
+  "id": "existence-of-a-substring-in-a-string-and-its-reverse",
+  "title": "3083. Existence of a Substring in a String and Its Reverse",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"leetcode\"",
+      "output": "true",
+      "explanation": "Substring \"ee\" is of length 2 which is also present in reverse(s) == \"edocteel\"."
+    },
+    {
+      "input": "s = \"abcba\"",
+      "output": "true",
+      "explanation": "All of the substrings of length 2 \"ab\", \"bc\", \"cb\", \"ba\" are also present in reverse(s) == \"abcba\"."
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "false",
+      "explanation": "There is no substring of length 2 in s, which is also present in the reverse of s."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isSubstringPresent(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isSubstringPresent(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isSubstringPresent(self, s: str) -> bool:\n        ",
+    "typescript": "function isSubstringPresent(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsSubstringPresent(string s) {\n        \n    }\n}",
+    "go": "func isSubstringPresent(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_substring_present(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcode"
+    },
+    {
+      "s": "abcba"
+    },
+    {
+      "s": "abcd"
+    }
+  ],
+  "functionName": "isSubstringPresent",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Make a new string by reversing the string <code>s</code>.",
+    "For every substring of length <code>2</code> in <code>s</code>, check if there is a corresponding substring in the reverse of <code>s</code>."
+  ]
+}

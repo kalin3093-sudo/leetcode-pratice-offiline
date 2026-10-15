@@ -1,0 +1,65 @@
+{
+  "id": "find-the-number-of-copy-arrays",
+  "title": "3468. Find the Number of Copy Arrays",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-number-of-copy-arrays/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "original = [1,2,3,4], bounds = [[1,2],[2,3],[3,4],[4,5]]",
+      "output": "2",
+      "explanation": "The possible arrays are: [1, 2, 3, 4] [2, 3, 4, 5]"
+    },
+    {
+      "input": "original = [1,2,3,4], bounds = [[1,10],[2,9],[3,8],[4,7]]",
+      "output": "4",
+      "explanation": "The possible arrays are: [1, 2, 3, 4] [2, 3, 4, 5] [3, 4, 5, 6] [4, 5, 6, 7]"
+    },
+    {
+      "input": "original = [1,2,1,2], bounds = [[1,1],[2,3],[3,3],[2,3]]",
+      "output": "0",
+      "explanation": "No array is possible."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countArrays(vector<int>& original, vector<vector<int>>& bounds) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countArrays(int[] original, int[][] bounds) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countArrays(self, original: List[int], bounds: List[List[int]]) -> int:\n        ",
+    "typescript": "function countArrays(original: number[], bounds: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountArrays(int[] original, int[][] bounds) {\n        \n    }\n}",
+    "go": "func countArrays(original []int, bounds [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_arrays(original: Vec<i32>, bounds: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "original": "[1,2,3,4]",
+      "bounds": "[[1,2],[2,3],[3,4],[4,5]]"
+    },
+    {
+      "original": "[1,2,3,4]",
+      "bounds": "[[1,10],[2,9],[3,8],[4,7]]"
+    },
+    {
+      "original": "[1,2,1,2]",
+      "bounds": "[[1,1],[2,3],[3,3],[2,3]]"
+    }
+  ],
+  "functionName": "countArrays",
+  "params": [
+    {
+      "name": "original",
+      "type": "int_array"
+    },
+    {
+      "name": "bounds",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<code>copy[0]</code> uniquely determines all other values.",
+    "Possible values for <code>copy[0]</code> are in <code>[u[0], v[0]]</code>.",
+    "From left to right, compute valid ranges for each index by intersecting bounds with the previous range.",
+    "The answer is the size of the valid range for the last index."
+  ]
+}

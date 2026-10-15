@@ -1,0 +1,71 @@
+{
+  "id": "watering-plants-ii",
+  "title": "2105. Watering Plants II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/watering-plants-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "plants = [2,2,3,3], capacityA = 5, capacityB = 5",
+      "output": "1",
+      "explanation": "- Initially, Alice and Bob have 5 units of water each in their watering cans. - Alice waters plant 0, Bob waters plant 3. - Alice and Bob now have 3 units and 2 units of water respectively. - Alice has enough water for plant 1, so she waters it. Bob does not have enough water for plant 2, so he refills his can then waters it. So, the total number of times they have to refill to water all the plants is 0 + 0 + 1 + 0 = 1."
+    },
+    {
+      "input": "plants = [2,2,3,3], capacityA = 3, capacityB = 4",
+      "output": "2",
+      "explanation": "- Initially, Alice and Bob have 3 units and 4 units of water in their watering cans respectively. - Alice waters plant 0, Bob waters plant 3. - Alice and Bob now have 1 unit of water each, and need to water plants 1 and 2 respectively. - Since neither of them have enough water for their current plants, they refill their cans and then water the plants. So, the total number of times they have to refill to water all the plants is 0 + 1 + 1 + 0 = 2."
+    },
+    {
+      "input": "plants = [5], capacityA = 10, capacityB = 8",
+      "output": "0",
+      "explanation": "- There is only one plant. - Alice's watering can has 10 units of water, whereas Bob's can has 8 units. Since Alice has more water in her can, she waters this plant. So, the total number of times they have to refill is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumRefill(vector<int>& plants, int capacityA, int capacityB) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumRefill(int[] plants, int capacityA, int capacityB) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumRefill(self, plants: list[int], capacityA: int, capacityB: int) -> int:\n        ",
+    "typescript": "function minimumRefill(plants: number[], capacityA: number, capacityB: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumRefill(int[] plants, int capacityA, int capacityB) {\n        \n    }\n}",
+    "go": "func minimumRefill(plants []int, capacityA int, capacityB int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_refill(plants: Vec<i32>, capacity_a: i32, capacity_b: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "plants": "[2,2,3,3]",
+      "capacityA": 5,
+      "capacityB": 5
+    },
+    {
+      "plants": "[2,2,3,3]",
+      "capacityA": 3,
+      "capacityB": 4
+    },
+    {
+      "plants": "[5]",
+      "capacityA": 10,
+      "capacityB": 8
+    }
+  ],
+  "functionName": "minimumRefill",
+  "params": [
+    {
+      "name": "plants",
+      "type": "int_array"
+    },
+    {
+      "name": "capacityA",
+      "type": "int"
+    },
+    {
+      "name": "capacityB",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try \"simulating\" the process.",
+    "Since watering each plant takes the same amount of time, where will Alice and Bob meet if they start watering the plants simultaneously? How can you use this to optimize your solution?",
+    "What will you do when both Alice and Bob have to water the same plant?"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "shortest-subarray-with-or-at-least-k-i",
+  "title": "3095. Shortest Subarray With OR at Least K I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], k = 2",
+      "output": "1",
+      "explanation": "The subarray [3] has OR value of 3. Hence, we return 1. Note that [2] is also a special subarray."
+    },
+    {
+      "input": "nums = [2,1,8], k = 10",
+      "output": "3",
+      "explanation": "The subarray [2,1,8] has OR value of 11. Hence, we return 3."
+    },
+    {
+      "input": "nums = [1,2], k = 0",
+      "output": "1",
+      "explanation": "The subarray [1] has OR value of 1. Hence, we return 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumSubarrayLength(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumSubarrayLength(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumSubarrayLength(self, nums: List[int], k: int) -> int:\n        ",
+    "typescript": "function minimumSubarrayLength(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumSubarrayLength(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minimumSubarrayLength(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_subarray_length(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]",
+      "k": 2
+    },
+    {
+      "nums": "[2,1,8]",
+      "k": 10
+    },
+    {
+      "nums": "[1,2]",
+      "k": 0
+    }
+  ],
+  "functionName": "minimumSubarrayLength",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The constraints are small. Brute force checking all the subarrays."
+  ]
+}

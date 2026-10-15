@@ -1,0 +1,64 @@
+{
+  "id": "smallest-substring-with-identical-characters-ii",
+  "title": "3399. Smallest Substring With Identical Characters II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"000001\", numOps = 1",
+      "output": "2",
+      "explanation": "By changing s[2] to '1', s becomes \"001001\". The longest substrings with identical characters are s[0..1] and s[3..4]."
+    },
+    {
+      "input": "s = \"0000\", numOps = 2",
+      "output": "1",
+      "explanation": "By changing s[0] and s[2] to '1', s becomes \"1010\"."
+    },
+    {
+      "input": "s = \"0101\", numOps = 0",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minLength(string s, int numOps) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minLength(String s, int numOps) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minLength(self, s: str, numOps: int) -> int:\n        ",
+    "typescript": "function minLength(s: string, numOps: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinLength(string s, int numOps) {\n        \n    }\n}",
+    "go": "func minLength(s string, numOps int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_length(s: String, num_ops: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "000001",
+      "numOps": 1
+    },
+    {
+      "s": "0000",
+      "numOps": 2
+    },
+    {
+      "s": "0101",
+      "numOps": 0
+    }
+  ],
+  "functionName": "minLength",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "numOps",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Binary search for the answer.",
+    "Group the same digits by size of <code>(mid + 1)</code> and ignore any remainder. Flip one in each group (the last one).",
+    "For the last group, we can flip the 2nd last one.",
+    "What if the answer was 1?"
+  ]
+}

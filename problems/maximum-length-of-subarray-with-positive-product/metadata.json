@@ -1,0 +1,57 @@
+{
+  "id": "maximum-length-of-subarray-with-positive-product",
+  "title": "1567. Maximum Length of Subarray With Positive Product",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,-2,-3,4]",
+      "output": "4",
+      "explanation": "The array nums already has a positive product of 24."
+    },
+    {
+      "input": "nums = [0,1,-2,-3,-4]",
+      "output": "3",
+      "explanation": "The longest subarray with positive product is [1,-2,-3] which has a product of 6. Notice that we cannot include 0 in the subarray since that'll make the product 0 which is not positive."
+    },
+    {
+      "input": "nums = [-1,-2,-3,0,1]",
+      "output": "2",
+      "explanation": "The longest subarray with positive product is [-1,-2] or [-2,-3]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int getMaxLen(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int getMaxLen(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getMaxLen(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function getMaxLen(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int GetMaxLen(int[] nums) {\n        \n    }\n}",
+    "go": "func getMaxLen(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_max_len(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,-2,-3,4]"
+    },
+    {
+      "nums": "[0,1,-2,-3,-4]"
+    },
+    {
+      "nums": "[-1,-2,-3,0,1]"
+    }
+  ],
+  "functionName": "getMaxLen",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Split the whole array into subarrays by zeroes since a subarray with positive product cannot contain any zero.",
+    "If the subarray has even number of negative numbers, the whole subarray has positive product.",
+    "Otherwise, we have two choices, either - remove the prefix till the first negative element in this subarray, or remove the suffix starting from the last negative element in this subarray."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "count-negative-numbers-in-a-sorted-matrix",
+  "title": "1351. Count Negative Numbers in a Sorted Matrix",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]",
+      "output": "8",
+      "explanation": "There are 8 negatives number in the matrix."
+    },
+    {
+      "input": "grid = [[3,2],[1,0]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countNegatives(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countNegatives(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countNegatives(self, grid: list[list[int]]) -> int:\n        ",
+    "typescript": "function countNegatives(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountNegatives(int[][] grid) {\n        \n    }\n}",
+    "go": "func countNegatives(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_negatives(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]"
+    },
+    {
+      "grid": "[[3,2],[1,0]]"
+    }
+  ],
+  "functionName": "countNegatives",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use binary search for optimization or simply brute force."
+  ]
+}

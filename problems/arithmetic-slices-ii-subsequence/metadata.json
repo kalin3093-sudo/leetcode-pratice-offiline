@@ -1,0 +1,45 @@
+{
+  "id": "arithmetic-slices-ii-subsequence",
+  "title": "446. Arithmetic Slices II - Subsequence",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/arithmetic-slices-ii-subsequence/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,4,6,8,10]",
+      "output": "7",
+      "explanation": "All arithmetic subsequence slices are: [2,4,6] [4,6,8] [6,8,10] [2,4,6,8] [4,6,8,10] [2,4,6,8,10] [2,6,10]"
+    },
+    {
+      "input": "nums = [7,7,7,7,7]",
+      "output": "16",
+      "explanation": "Any subsequence of this array is arithmetic."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfArithmeticSlices(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfArithmeticSlices(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfArithmeticSlices(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function numberOfArithmeticSlices(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfArithmeticSlices(int[] nums) {\n        \n    }\n}",
+    "go": "func numberOfArithmeticSlices(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_arithmetic_slices(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,4,6,8,10]"
+    },
+    {
+      "nums": "[7,7,7,7,7]"
+    }
+  ],
+  "functionName": "numberOfArithmeticSlices",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

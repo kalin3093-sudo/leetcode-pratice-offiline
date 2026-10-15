@@ -1,0 +1,47 @@
+{
+  "id": "minimum-pair-removal-to-sort-array-i",
+  "title": "3507. Minimum Pair Removal to Sort Array I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,2,3,1]",
+      "output": "2",
+      "explanation": "The pair (3,1) has the minimum sum of 4. After replacement, nums = [5,2,4]. The pair (2,4) has the minimum sum of 6. After replacement, nums = [5,6]. The array nums became non-decreasing in two operations."
+    },
+    {
+      "input": "nums = [1,2,2]",
+      "output": "0",
+      "explanation": "The array nums is already sorted."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumPairRemoval(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumPairRemoval(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumPairRemoval(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimumPairRemoval(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumPairRemoval(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumPairRemoval(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_pair_removal(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,2,3,1]"
+    },
+    {
+      "nums": "[1,2,2]"
+    }
+  ],
+  "functionName": "minimumPairRemoval",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate the operations"
+  ]
+}

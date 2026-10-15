@@ -1,0 +1,63 @@
+{
+  "id": "minimum-number-of-valid-strings-to-form-target-i",
+  "title": "3291. Minimum Number of Valid Strings to Form Target I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"abc\",\"aaaaa\",\"bcdef\"], target = \"aabcdabc\"",
+      "output": "3",
+      "explanation": "The target string can be formed by concatenating: Prefix of length 2 of words[1], i.e. \"aa\". Prefix of length 3 of words[2], i.e. \"bcd\". Prefix of length 3 of words[0], i.e. \"abc\"."
+    },
+    {
+      "input": "words = [\"abababab\",\"ab\"], target = \"ababaababa\"",
+      "output": "2",
+      "explanation": "The target string can be formed by concatenating: Prefix of length 5 of words[0], i.e. \"ababa\". Prefix of length 5 of words[0], i.e. \"ababa\"."
+    },
+    {
+      "input": "words = [\"abcdef\"], target = \"xyz\"",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minValidStrings(vector<string>& words, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minValidStrings(String[] words, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minValidStrings(self, words: List[str], target: str) -> int:\n        ",
+    "typescript": "function minValidStrings(words: string[], target: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinValidStrings(string[] words, string target) {\n        \n    }\n}",
+    "go": "func minValidStrings(words []string, target string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_valid_strings(words: Vec<String>, target: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"abc\",\"aaaaa\",\"bcdef\"]",
+      "target": "aabcdabc"
+    },
+    {
+      "words": "[\"abababab\",\"ab\"]",
+      "target": "ababaababa"
+    },
+    {
+      "words": "[\"abcdef\"]",
+      "target": "xyz"
+    }
+  ],
+  "functionName": "minValidStrings",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Let <code>dp[i]</code> be the minimum cost to form the prefix of length <code>i</code> of <code>target</code>.",
+    "If <code>target[(i + 1)..j]</code> matches any prefix, update the range <code>dp[(i + 1)..j]</code> to minimum between original value and <code>dp[i] + 1</code>.",
+    "Use a Trie to check prefix matching."
+  ]
+}

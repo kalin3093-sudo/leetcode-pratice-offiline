@@ -1,0 +1,12 @@
+You are given an array of `intervals`, where `intervals[i] = [starti, endi]` and each `starti` is **unique**.
+
+The **right interval** for an interval `i` is an interval `j` such that `startj ≥ endi` and `startj` is **minimized**. Note that `i` may equal `j`.
+
+Return *an array of **right interval** indices for each interval `i`*. If no **right interval** exists for interval `i`, then put `-1` at index `i`.
+
+**Constraints:**
+
+-   `1 ≤ intervals.length ≤ 2 * 10^4`
+-   `intervals[i].length == 2`
+-   `-10^6 ≤ starti ≤ endi ≤ 10^6`
+-   The start point of each interval is **unique**.

@@ -1,0 +1,53 @@
+{
+  "id": "delete-columns-to-make-sorted-iii",
+  "title": "960. Delete Columns to Make Sorted III",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/delete-columns-to-make-sorted-iii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "strs = [\"babca\",\"bbazb\"]",
+      "output": "3",
+      "explanation": "After deleting columns 0, 1, and 4, the final array is strs = [\"bc\", \"az\"]. Both these rows are individually in lexicographic order (ie. strs[0][0] <= strs[0][1] and strs[1][0] <= strs[1][1]). Note that strs[0] > strs[1] - the array strs is not necessarily in lexicographic order."
+    },
+    {
+      "input": "strs = [\"edcba\"]",
+      "output": "4",
+      "explanation": "If we delete less than 4 columns, the only row will not be lexicographically sorted."
+    },
+    {
+      "input": "strs = [\"ghi\",\"def\",\"abc\"]",
+      "output": "0",
+      "explanation": "All rows are already lexicographically sorted."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minDeletionSize(vector<string>& strs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minDeletionSize(String[] strs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minDeletionSize(self, strs: list[str]) -> int:\n        ",
+    "typescript": "function minDeletionSize(strs: string[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinDeletionSize(string[] strs) {\n        \n    }\n}",
+    "go": "func minDeletionSize(strs []string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_deletion_size(strs: Vec<String>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "strs": "[\"babca\",\"bbazb\"]"
+    },
+    {
+      "strs": "[\"edcba\"]"
+    },
+    {
+      "strs": "[\"ghi\",\"def\",\"abc\"]"
+    }
+  ],
+  "functionName": "minDeletionSize",
+  "params": [
+    {
+      "name": "strs",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

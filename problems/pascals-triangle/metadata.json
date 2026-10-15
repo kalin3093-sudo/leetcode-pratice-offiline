@@ -1,0 +1,43 @@
+{
+  "id": "pascals-triangle",
+  "title": "118. Pascal's Triangle",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/pascals-triangle/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "numRows = 5",
+      "output": "[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]"
+    },
+    {
+      "input": "numRows = 1",
+      "output": "[[1]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> generate(int numRows) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> generate(int numRows) {\n        \n    }\n}",
+    "python": "class Solution:\n    def generate(self, numRows: int) -> list[list[int]]:\n        ",
+    "typescript": "function generate(numRows: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> Generate(int numRows) {\n        \n    }\n}",
+    "go": "func generate(numRows int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "numRows": 5
+    },
+    {
+      "numRows": 1
+    }
+  ],
+  "functionName": "generate",
+  "params": [
+    {
+      "name": "numRows",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list_2d",
+  "hints": []
+}

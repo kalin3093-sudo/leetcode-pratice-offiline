@@ -1,0 +1,55 @@
+{
+  "id": "remove-stones-to-minimize-the-total",
+  "title": "1962. Remove Stones to Minimize the Total",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-stones-to-minimize-the-total/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "piles = [5,4,9], k = 2",
+      "output": "12",
+      "explanation": "Steps of a possible scenario are: - Apply the operation on pile 2. The resulting piles are [5,4,5]. - Apply the operation on pile 0. The resulting piles are [3,4,5]. The total number of stones in [3,4,5] is 12."
+    },
+    {
+      "input": "piles = [4,3,6,7], k = 3",
+      "output": "12",
+      "explanation": "Steps of a possible scenario are: - Apply the operation on pile 2. The resulting piles are [4,3,3,7]. - Apply the operation on pile 3. The resulting piles are [4,3,3,4]. - Apply the operation on pile 0. The resulting piles are [2,3,3,4]. The total number of stones in [2,3,3,4] is 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minStoneSum(vector<int>& piles, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minStoneSum(int[] piles, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minStoneSum(self, piles: list[int], k: int) -> int:\n        ",
+    "typescript": "function minStoneSum(piles: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinStoneSum(int[] piles, int k) {\n        \n    }\n}",
+    "go": "func minStoneSum(piles []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_stone_sum(piles: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "piles": "[5,4,9]",
+      "k": 2
+    },
+    {
+      "piles": "[4,3,6,7]",
+      "k": 3
+    }
+  ],
+  "functionName": "minStoneSum",
+  "params": [
+    {
+      "name": "piles",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Choose the pile with the maximum number of stones each time.",
+    "Use a data structure that helps you find the mentioned pile each time efficiently.",
+    "One such data structure is a Priority Queue."
+  ]
+}

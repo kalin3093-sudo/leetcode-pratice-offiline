@@ -1,0 +1,76 @@
+{
+  "id": "maximum-performance-of-a-team",
+  "title": "1383. Maximum Performance of a Team",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-performance-of-a-team/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 2",
+      "output": "60",
+      "explanation": "We have the maximum performance of the team by selecting engineer 2 (with speed=10 and efficiency=4) and engineer 5 (with speed=5 and efficiency=7). That is, performance = (10 + 5) * min(4, 7) = 60."
+    },
+    {
+      "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 3",
+      "output": "68",
+      "explanation": "This is the same example as the first but k = 3. We can select engineer 1, engineer 2 and engineer 5 to get the maximum performance of the team. That is, performance = (2 + 10 + 5) * min(5, 4, 7) = 68."
+    },
+    {
+      "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 4",
+      "output": "72"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxPerformance(int n, vector<int>& speed, vector<int>& efficiency, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxPerformance(int n, int[] speed, int[] efficiency, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPerformance(self, n: int, speed: list[int], efficiency: list[int], k: int) -> int:\n        ",
+    "typescript": "function maxPerformance(n: number, speed: number[], efficiency: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxPerformance(int n, int[] speed, int[] efficiency, int k) {\n        \n    }\n}",
+    "go": "func maxPerformance(n int, speed []int, efficiency []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_performance(n: i32, speed: Vec<i32>, efficiency: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6,
+      "speed": "[2,10,3,1,5,8]",
+      "efficiency": "[5,4,3,9,7,2]",
+      "k": 2
+    },
+    {
+      "n": 6,
+      "speed": "[2,10,3,1,5,8]",
+      "efficiency": "[5,4,3,9,7,2]",
+      "k": 3
+    },
+    {
+      "n": 6,
+      "speed": "[2,10,3,1,5,8]",
+      "efficiency": "[5,4,3,9,7,2]",
+      "k": 4
+    }
+  ],
+  "functionName": "maxPerformance",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "speed",
+      "type": "int_array"
+    },
+    {
+      "name": "efficiency",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Keep track of the engineers by their efficiency in decreasing order.",
+    "Starting from one engineer, to build a team, it suffices to bring K-1 more engineers who have higher efficiencies as well as high speeds."
+  ]
+}

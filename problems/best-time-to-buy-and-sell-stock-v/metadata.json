@@ -1,0 +1,55 @@
+{
+  "id": "best-time-to-buy-and-sell-stock-v",
+  "title": "3573. Best Time to Buy and Sell Stock V",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "prices = [1,7,9,8,2], k = 2",
+      "output": "14",
+      "explanation": "We can make $14 of profit through 2 transactions: A normal transaction: buy the stock on day 0 for $1 then sell it on day 2 for $9. A short selling transaction: sell the stock on day 3 for $8 then buy back on day 4 for $2."
+    },
+    {
+      "input": "prices = [12,16,19,19,8,1,19,13,9], k = 3",
+      "output": "36",
+      "explanation": "We can make $36 of profit through 3 transactions: A normal transaction: buy the stock on day 0 for $12 then sell it on day 2 for $19. A short selling transaction: sell the stock on day 3 for $19 then buy back on day 4 for $8. A normal transaction: buy the stock on day 5 for $1 then sell it on day 6 for $19."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maximumProfit(vector<int>& prices, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maximumProfit(int[] prices, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumProfit(self, prices: List[int], k: int) -> int:\n        ",
+    "typescript": "function maximumProfit(prices: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaximumProfit(int[] prices, int k) {\n        \n    }\n}",
+    "go": "func maximumProfit(prices []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_profit(prices: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "prices": "[1,7,9,8,2]\r",
+      "k": 2
+    },
+    {
+      "prices": "[12,16,19,19,8,1,19,13,9]\r",
+      "k": 3
+    }
+  ],
+  "functionName": "maximumProfit",
+  "params": [
+    {
+      "name": "prices",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Use dynamic programming.",
+    "Keep the following states: <code>idx</code>, <code>transactionsDone</code>, <code>transactionType</code>, <code>isTransactionRunning</code>.",
+    "Transactions transition from completed -> running and from running -> completed."
+  ]
+}

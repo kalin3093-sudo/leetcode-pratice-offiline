@@ -1,0 +1,35 @@
+import java.util.*;
+class Marker {
+  public int maxSumRangeQuery(int[] nums, int[][] requests) {
+    final int MOD = 1_000_000_007;
+    long ans = 0;
+    // count[i] := the number of times nums[i] has been requested
+    int[] count = new int[nums.length];
+
+    for (int[] request : requests) {
+      final int start = request[0];
+      final int end = request[1];
+      ++count[start];
+      if (end + 1 < nums.length)
+        --count[end + 1];
+    }
+
+    for (int i = 1; i < nums.length; ++i)
+      count[i] += count[i - 1];
+
+    Arrays.sort(count);
+    Arrays.sort(nums);
+
+    for (int i = 0; i < nums.length; ++i) {
+      ans += (long) nums[i] * count[i];
+      ans %= MOD;
+    }
+
+    return (int) ans;
+  }
+
+    public boolean isCorrect(int[] nums, int[][] requests, int output) {
+        int expected = maxSumRangeQuery(nums, requests);
+        return expected == output;
+    }
+}

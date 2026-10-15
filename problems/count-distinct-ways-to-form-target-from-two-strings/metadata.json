@@ -1,0 +1,82 @@
+{
+  "id": "count-distinct-ways-to-form-target-from-two-strings",
+  "title": "3981. Count Distinct Ways to Form Target from Two Strings",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word1 = \"abc\", word2 = \"bac\", target = \"abc\"",
+      "output": "5",
+      "explanation": "There are 5 ways to form target: word1[0] = 'a', word1[1] = 'b', word2[2] = 'c' word1[0] = 'a', word2[0] = 'b', word1[2] = 'c' word1[0] = 'a', word2[0] = 'b', word2[2] = 'c' word2[1] = 'a', word1[1] = 'b', word1[2] = 'c' word2[1] = 'a', word1[1] = 'b', word2[2] = 'c' All ways preserve the increasing index order inside each string and choose at least one character from each string."
+    },
+    {
+      "input": "word1 = \"cd\", word2 = \"cd\", target = \"ccd\"",
+      "output": "4",
+      "explanation": "There are 4 ways to form target: word1[0] = 'c', word2[0] = 'c', word1[1] = 'd' word1[0] = 'c', word2[0] = 'c', word2[1] = 'd' word2[0] = 'c', word1[0] = 'c', word1[1] = 'd' word2[0] = 'c', word1[0] = 'c', word2[1] = 'd' The first two 'c' characters in target must come one from each string. The final 'd' can be chosen from either string."
+    },
+    {
+      "input": "word1 = \"xy\", word2 = \"xy\", target = \"xyxy\"",
+      "output": "2",
+      "explanation": "There are 2 ways to form target: word1[0] = 'x', word1[1] = 'y', word2[0] = 'x', word2[1] = 'y' word2[0] = 'x', word2[1] = 'y', word1[0] = 'x', word1[1] = 'y' Each \"xy\" part in target comes entirely from one string."
+    },
+    {
+      "input": "word1 = \"ab\", word2 = \"cde\", target = \"ace\"",
+      "output": "1",
+      "explanation": "The only way is to choose word1[0] = 'a', word2[0] = 'c', and word2[2] = 'e'. Thus, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int interleaveCharacters(string word1, string word2, string target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int interleaveCharacters(String word1, String word2, String target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def interleaveCharacters(self, word1: str, word2: str, target: str) -> int:\n        ",
+    "typescript": "function interleaveCharacters(word1: string, word2: string, target: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int InterleaveCharacters(string word1, string word2, string target) {\n        \n    }\n}",
+    "go": "func interleaveCharacters(word1 string, word2 string, target string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn interleave_characters(word1: String, word2: String, target: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word1": "abc",
+      "word2": "bac",
+      "target": "abc"
+    },
+    {
+      "word1": "cd",
+      "word2": "cd",
+      "target": "ccd"
+    },
+    {
+      "word1": "xy",
+      "word2": "xy",
+      "target": "xyxy"
+    },
+    {
+      "word1": "ab",
+      "word2": "cde",
+      "target": "ace"
+    }
+  ],
+  "functionName": "interleaveCharacters",
+  "params": [
+    {
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<p>Use dynamic programming over the current position in <code>target</code> and the next available indices in <code>word1</code> and <code>word2</code>.</p>",
+    "<p>For each character of <code>target</code>, try choosing a matching character from <code>word1</code> or from <code>word2</code>, then move only the corresponding string's index forward.</p>",
+    "<p>Track whether at least one character has been chosen from each string. This can be represented using a bitmask.</p>",
+    "<p>The final answer is the number of ways where all characters of <code>target</code> have been formed and both strings have been used.</p>"
+  ]
+}

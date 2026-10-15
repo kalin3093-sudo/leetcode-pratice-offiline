@@ -1,0 +1,54 @@
+{
+  "id": "generate-a-string-with-characters-that-have-odd-counts",
+  "title": "1374. Generate a String With Characters That Have Odd Counts",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "\"pppz\"",
+      "explanation": "\"pppz\" is a valid string since the character 'p' occurs three times and the character 'z' occurs once. Note that there are many other valid strings such as \"ohhh\" and \"love\"."
+    },
+    {
+      "input": "n = 2",
+      "output": "\"xy\"",
+      "explanation": "\"xy\" is a valid string since the characters 'x' and 'y' occur once. Note that there are many other valid strings such as \"ag\" and \"ur\"."
+    },
+    {
+      "input": "n = 7",
+      "output": "\"holasss\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string generateTheString(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String generateTheString(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def generateTheString(self, n: int) -> str:\n        ",
+    "typescript": "function generateTheString(n: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GenerateTheString(int n) {\n        \n    }\n}",
+    "go": "func generateTheString(n int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn generate_the_string(n: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4
+    },
+    {
+      "n": 2
+    },
+    {
+      "n": 7
+    }
+  ],
+  "functionName": "generateTheString",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "If n is odd, return a string of size n formed only by 'a', else return string formed with n-1 'a' and 1 'b''."
+  ]
+}

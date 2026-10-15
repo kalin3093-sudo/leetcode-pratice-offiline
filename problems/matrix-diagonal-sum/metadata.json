@@ -1,0 +1,53 @@
+{
+  "id": "matrix-diagonal-sum",
+  "title": "1572. Matrix Diagonal Sum",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/matrix-diagonal-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "mat = [[1,2,3], [4,5,6], [7,8,9]]",
+      "output": "25",
+      "explanation": "Diagonals sum: 1 + 5 + 9 + 3 + 7 = 25 Notice that element mat[1][1] = 5 is counted only once."
+    },
+    {
+      "input": "mat = [[1,1,1,1], [1,1,1,1], [1,1,1,1], [1,1,1,1]]",
+      "output": "8"
+    },
+    {
+      "input": "mat = [[5]]",
+      "output": "5"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int diagonalSum(vector<vector<int>>& mat) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int diagonalSum(int[][] mat) {\n        \n    }\n}",
+    "python": "class Solution:\n    def diagonalSum(self, mat: list[list[int]]) -> int:\n        ",
+    "typescript": "function diagonalSum(mat: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DiagonalSum(int[][] mat) {\n        \n    }\n}",
+    "go": "func diagonalSum(mat [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn diagonal_sum(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "mat": "[[1,2,3],[4,5,6],[7,8,9]]"
+    },
+    {
+      "mat": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]"
+    },
+    {
+      "mat": "[[5]]"
+    }
+  ],
+  "functionName": "diagonalSum",
+  "params": [
+    {
+      "name": "mat",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "There will be overlap of elements in the primary and secondary diagonals if and only if the length of the matrix is odd, which is at the center."
+  ]
+}

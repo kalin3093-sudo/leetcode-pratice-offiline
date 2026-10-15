@@ -1,0 +1,57 @@
+{
+  "id": "avoid-flood-in-the-city",
+  "title": "1488. Avoid Flood in The City",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/avoid-flood-in-the-city/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rains = [1,2,3,4]",
+      "output": "[-1,-1,-1,-1]",
+      "explanation": "After the first day full lakes are [1] After the second day full lakes are [1,2] After the third day full lakes are [1,2,3] After the fourth day full lakes are [1,2,3,4] There's no day to dry any lake and there is no flood in any lake."
+    },
+    {
+      "input": "rains = [1,2,0,0,2,1]",
+      "output": "[-1,-1,2,1,-1,-1]",
+      "explanation": "After the first day full lakes are [1] After the second day full lakes are [1,2] After the third day, we dry lake 2. Full lakes are [1] After the fourth day, we dry lake 1. There is no full lakes. After the fifth day, full lakes are [2]. After the sixth day, full lakes are [1,2]. It is easy that this scenario is flood-free. [-1,-1,1,2,-1,-1] is another acceptable scenario."
+    },
+    {
+      "input": "rains = [1,2,0,1,2]",
+      "output": "[]",
+      "explanation": "After the second day, full lakes are  [1,2]. We have to dry one lake in the third day. After that, it will rain over lakes [1,2]. It's easy to prove that no matter which lake you choose to dry in the 3rd day, the other one will flood."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> avoidFlood(vector<int>& rains) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] avoidFlood(int[] rains) {\n        \n    }\n}",
+    "python": "class Solution:\n    def avoidFlood(self, rains: list[int]) -> list[int]:\n        ",
+    "typescript": "function avoidFlood(rains: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] AvoidFlood(int[] rains) {\n        \n    }\n}",
+    "go": "func avoidFlood(rains []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn avoid_flood(rains: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rains": "[1,2,3,4]"
+    },
+    {
+      "rains": "[1,2,0,0,2,1]"
+    },
+    {
+      "rains": "[1,2,0,1,2]"
+    }
+  ],
+  "functionName": "avoidFlood",
+  "params": [
+    {
+      "name": "rains",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Keep An array of the last day there was rains over each city.",
+    "Keep an array of the days you can dry a lake when you face one.",
+    "When it rains over a lake, check the first possible day you can dry this lake and assign this day to this lake."
+  ]
+}

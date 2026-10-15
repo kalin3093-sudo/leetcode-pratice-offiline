@@ -1,0 +1,64 @@
+{
+  "id": "largest-number-after-mutating-substring",
+  "title": "1946. Largest Number After Mutating Substring",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-number-after-mutating-substring/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "num = \"132\", change = [9,8,5,0,3,6,4,2,6,8]",
+      "output": "\"832\"",
+      "explanation": "Replace the substring \"1\": - 1 maps to change[1] = 8. Thus, \"132\" becomes \"832\". \"832\" is the largest number that can be created, so return it."
+    },
+    {
+      "input": "num = \"021\", change = [9,4,3,5,7,2,1,9,0,6]",
+      "output": "\"934\"",
+      "explanation": "Replace the substring \"021\": - 0 maps to change[0] = 9. - 2 maps to change[2] = 3. - 1 maps to change[1] = 4. Thus, \"021\" becomes \"934\". \"934\" is the largest number that can be created, so return it."
+    },
+    {
+      "input": "num = \"5\", change = [1,4,7,5,3,2,5,6,9,4]",
+      "output": "\"5\"",
+      "explanation": "\"5\" is already the largest number that can be created, so return it."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string maximumNumber(string num, vector<int>& change) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String maximumNumber(String num, int[] change) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumNumber(self, num: str, change: list[int]) -> str:\n        ",
+    "typescript": "function maximumNumber(num: string, change: number[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MaximumNumber(string num, int[] change) {\n        \n    }\n}",
+    "go": "func maximumNumber(num string, change []int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_number(num: String, change: Vec<i32>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "132",
+      "change": "[9,8,5,0,3,6,4,2,6,8]"
+    },
+    {
+      "num": "021",
+      "change": "[9,4,3,5,7,2,1,9,0,6]"
+    },
+    {
+      "num": "5",
+      "change": "[1,4,7,5,3,2,5,6,9,4]"
+    }
+  ],
+  "functionName": "maximumNumber",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    },
+    {
+      "name": "change",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Should you change a digit if the new digit is smaller than the original?",
+    "If changing the first digit and the last digit both make the number bigger, but you can only change one of them; which one should you change?",
+    "Changing numbers closer to the front is always better"
+  ]
+}

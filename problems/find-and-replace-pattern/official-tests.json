@@ -1,0 +1,10 @@
+[
+  {
+    "words": "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]",
+    "pattern": "abb"
+  },
+  {
+    "words": "[\"a\",\"b\",\"c\"]",
+    "pattern": "a"
+  }
+]

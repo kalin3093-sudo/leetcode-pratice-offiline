@@ -1,0 +1,47 @@
+{
+  "id": "concatenate-array-with-reverse",
+  "title": "3925. Concatenate Array With Reverse",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/concatenate-array-with-reverse/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "[1,2,3,3,2,1]",
+      "explanation": "The first n elements of ans are the same as nums. For the next n = 3 elements, each element is taken from nums in reverse order: ans[3] = nums[2] = 3 ans[4] = nums[1] = 2 ans[5] = nums[0] = 1 Thus, ans = [1, 2, 3, 3, 2, 1]."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "[1,1]",
+      "explanation": "The array remains the same when reversed. Thus, ans = [1, 1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> concatWithReverse(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] concatWithReverse(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def concatWithReverse(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function concatWithReverse(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] ConcatWithReverse(int[] nums) {\n        \n    }\n}",
+    "go": "func concatWithReverse(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn concat_with_reverse(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "concatWithReverse",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Pure simulation problem."
+  ]
+}

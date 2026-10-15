@@ -1,0 +1,48 @@
+{
+  "id": "minimum-lines-to-represent-a-line-chart",
+  "title": "2280. Minimum Lines to Represent a Line Chart",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "stockPrices = [[1,7],[2,6],[3,5],[4,4],[5,4],[6,3],[7,2],[8,1]]",
+      "output": "3",
+      "explanation": "The diagram above represents the input, with the X-axis representing the day and Y-axis representing the price. The following 3 lines can be drawn to represent the line chart: - Line 1 (in red) from (1,7) to (4,4) passing through (1,7), (2,6), (3,5), and (4,4). - Line 2 (in blue) from (4,4) to (5,4). - Line 3 (in green) from (5,4) to (8,1) passing through (5,4), (6,3), (7,2), and (8,1). It can be shown that it is not possible to represent the line chart using less than 3 lines."
+    },
+    {
+      "input": "stockPrices = [[3,4],[1,2],[7,8],[2,3]]",
+      "output": "1",
+      "explanation": "As shown in the diagram above, the line chart can be represented with a single line."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumLines(vector<vector<int>>& stockPrices) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumLines(int[][] stockPrices) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumLines(self, stockPrices: list[list[int]]) -> int:\n        ",
+    "typescript": "function minimumLines(stockPrices: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumLines(int[][] stockPrices) {\n        \n    }\n}",
+    "go": "func minimumLines(stockPrices [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_lines(stock_prices: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "stockPrices": "[[1,7],[2,6],[3,5],[4,4],[5,4],[6,3],[7,2],[8,1]]"
+    },
+    {
+      "stockPrices": "[[3,4],[1,2],[7,8],[2,3]]"
+    }
+  ],
+  "functionName": "minimumLines",
+  "params": [
+    {
+      "name": "stockPrices",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "When will three adjacent points lie on the same line? How can we generalize this for all points?",
+    "Will calculating the slope of lines connecting adjacent points help us find the answer?"
+  ]
+}

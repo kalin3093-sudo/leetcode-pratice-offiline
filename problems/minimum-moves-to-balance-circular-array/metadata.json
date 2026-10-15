@@ -1,0 +1,57 @@
+{
+  "id": "minimum-moves-to-balance-circular-array",
+  "title": "3776. Minimum Moves to Balance Circular Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-moves-to-balance-circular-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "balance = [5,1,-4]",
+      "output": "4",
+      "explanation": "One optimal sequence of moves is: Move 1 unit from i = 1 to i = 2, resulting in balance = [5, 0, -3] Move 1 unit from i = 0 to i = 2, resulting in balance = [4, 0, -2] Move 1 unit from i = 0 to i = 2, resulting in balance = [3, 0, -1] Move 1 unit from i = 0 to i = 2, resulting in balance = [2, 0, 0] Thus, the minimum number of moves required is 4."
+    },
+    {
+      "input": "balance = [1,2,-5,2]",
+      "output": "6",
+      "explanation": "One optimal sequence of moves is: Move 1 unit from i = 1 to i = 2, resulting in balance = [1, 1, -4, 2] Move 1 unit from i = 1 to i = 2, resulting in balance = [1, 0, -3, 2] Move 1 unit from i = 3 to i = 2, resulting in balance = [1, 0, -2, 1] Move 1 unit from i = 3 to i = 2, resulting in balance = [1, 0, -1, 0] Move 1 unit from i = 0 to i = 1, resulting in balance = [0, 1, -1, 0] Move 1 unit from i = 1 to i = 2, resulting in balance = [0, 0, 0, 0] Thus, the minimum number of moves required is 6."
+    },
+    {
+      "input": "balance = [-3,2]",
+      "output": "-1",
+      "explanation": "It is impossible to make all balances non-negative for balance = [-3, 2], so the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minMoves(vector<int>& balance) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minMoves(int[] balance) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minMoves(self, balance: List[int]) -> int:\n        ",
+    "typescript": "function minMoves(balance: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinMoves(int[] balance) {\n        \n    }\n}",
+    "go": "func minMoves(balance []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_moves(balance: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "balance": "[5,1,-4]"
+    },
+    {
+      "balance": "[1,2,-5,2]"
+    },
+    {
+      "balance": "[-3,2]"
+    }
+  ],
+  "functionName": "minMoves",
+  "params": [
+    {
+      "name": "balance",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "If there is no negative value, then the answer is 0. If the total sum is less than 0, then the answer is -1.",
+    "Sort the positive values in <code>nums</code> by their distance from the index with the negative value.",
+    "Greedily use as many values as needed from the sorted <code>nums</code> to offset the current negative value."
+  ]
+}

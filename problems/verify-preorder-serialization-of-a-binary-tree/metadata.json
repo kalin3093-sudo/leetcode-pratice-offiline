@@ -1,0 +1,50 @@
+{
+  "id": "verify-preorder-serialization-of-a-binary-tree",
+  "title": "331. Verify Preorder Serialization of a Binary Tree",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "preorder = \"9,3,4,#,#,1,#,#,2,#,6,#,#\"",
+      "output": "true"
+    },
+    {
+      "input": "preorder = \"1,#\"",
+      "output": "false"
+    },
+    {
+      "input": "preorder = \"9,#,#,1\"",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isValidSerialization(string preorder) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isValidSerialization(String preorder) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isValidSerialization(self, preorder: str) -> bool:\n        ",
+    "typescript": "function isValidSerialization(preorder: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsValidSerialization(string preorder) {\n        \n    }\n}",
+    "go": "func isValidSerialization(preorder string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_valid_serialization(preorder: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "preorder": "9,3,4,#,#,1,#,#,2,#,6,#,#"
+    },
+    {
+      "preorder": "1,#"
+    },
+    {
+      "preorder": "9,#,#,1"
+    }
+  ],
+  "functionName": "isValidSerialization",
+  "params": [
+    {
+      "name": "preorder",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

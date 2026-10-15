@@ -1,0 +1,44 @@
+{
+  "id": "smallest-range-covering-elements-from-k-lists",
+  "title": "632. Smallest Range Covering Elements from K Lists",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]",
+      "output": "[20,24]",
+      "explanation": "List 1: [4, 10, 15, 24,26], 24 is in range [20,24]. List 2: [0, 9, 12, 20], 20 is in range [20,24]. List 3: [5, 18, 22, 30], 22 is in range [20,24]."
+    },
+    {
+      "input": "nums = [[1,2,3],[1,2,3],[1,2,3]]",
+      "output": "[1,1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> smallestRange(vector<vector<int>>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] smallestRange(List<List<Integer>> nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestRange(self, nums: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function smallestRange(nums: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SmallestRange(IList<IList<int>> nums) {\n        \n    }\n}",
+    "go": "func smallestRange(nums [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_range(nums: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]"
+    },
+    {
+      "nums": "[[1,2,3],[1,2,3],[1,2,3]]"
+    }
+  ],
+  "functionName": "smallestRange",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

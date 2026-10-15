@@ -1,0 +1,57 @@
+{
+  "id": "minimum-distance-between-three-equal-elements-ii",
+  "title": "3741. Minimum Distance Between Three Equal Elements II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,1,1,3]",
+      "output": "6",
+      "explanation": "The minimum distance is achieved by the good tuple (0, 2, 3). (0, 2, 3) is a good tuple because nums[0] == nums[2] == nums[3] == 1. Its distance is abs(0 - 2) + abs(2 - 3) + abs(3 - 0) = 2 + 1 + 3 = 6."
+    },
+    {
+      "input": "nums = [1,1,2,3,2,1,2]",
+      "output": "8",
+      "explanation": "The minimum distance is achieved by the good tuple (2, 4, 6). (2, 4, 6) is a good tuple because nums[2] == nums[4] == nums[6] == 2. Its distance is abs(2 - 4) + abs(4 - 6) + abs(6 - 2) = 2 + 2 + 4 = 8."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "-1",
+      "explanation": "There are no good tuples. Therefore, the answer is -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumDistance(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumDistance(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumDistance(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimumDistance(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumDistance(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumDistance(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_distance(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,1,1,3]"
+    },
+    {
+      "nums": "[1,1,2,3,2,1,2]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "minimumDistance",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The distance formula <code>abs(i - j) + abs(j - k) + abs(k - i)</code> simplifies to <code>2 * (max(i, j, k) - min(i, j, k))</code>.",
+    "Group the indices for each unique number. For a number to form a good tuple, it must appear at least 3 times.",
+    "For each number that appears at least 3 times, we want to find three of its indices <code>p < q < r</code> that minimize <code>r - p</code>. This is achieved by considering every three consecutive indices in the sorted list of indices."
+  ]
+}

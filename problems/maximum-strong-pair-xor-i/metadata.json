@@ -1,0 +1,55 @@
+{
+  "id": "maximum-strong-pair-xor-i",
+  "title": "2932. Maximum Strong Pair XOR I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-strong-pair-xor-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "7",
+      "explanation": "There are 11 strong pairs in the array nums: (1, 1), (1, 2), (2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (3, 5), (4, 4), (4, 5) and (5, 5). The maximum XOR possible from these pairs is 3 XOR 4 = 7."
+    },
+    {
+      "input": "nums = [10,100]",
+      "output": "0",
+      "explanation": "There are 2 strong pairs in the array nums: (10, 10) and (100, 100). The maximum XOR possible from these pairs is 10 XOR 10 = 0 since the pair (100, 100) also gives 100 XOR 100 = 0."
+    },
+    {
+      "input": "nums = [5,6,25,30]",
+      "output": "7",
+      "explanation": "There are 6 strong pairs in the array nums: (5, 5), (5, 6), (6, 6), (25, 25), (25, 30) and (30, 30). The maximum XOR possible from these pairs is 25 XOR 30 = 7 since the only other non-zero XOR value is 5 XOR 6 = 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumStrongPairXor(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumStrongPairXor(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumStrongPairXor(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function maximumStrongPairXor(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumStrongPairXor(int[] nums) {\n        \n    }\n}",
+    "go": "func maximumStrongPairXor(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_strong_pair_xor(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3,4,5]"
+    },
+    {
+      "nums": "[10,100]"
+    },
+    {
+      "nums": "[5,6,25,30]"
+    }
+  ],
+  "functionName": "maximumStrongPairXor",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The constraints are small enough to make brute-force solutions pass."
+  ]
+}

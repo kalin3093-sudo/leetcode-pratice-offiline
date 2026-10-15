@@ -1,0 +1,57 @@
+{
+  "id": "find-pivot-index",
+  "title": "724. Find Pivot Index",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-pivot-index/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,7,3,6,5,6]",
+      "output": "3",
+      "explanation": "The pivot index is 3. Left sum = nums[0] + nums[1] + nums[2] = 1 + 7 + 3 = 11 Right sum = nums[4] + nums[5] = 5 + 6 = 11"
+    },
+    {
+      "input": "nums = [1,2,3]",
+      "output": "-1",
+      "explanation": "There is no index that satisfies the conditions in the problem statement."
+    },
+    {
+      "input": "nums = [2,1,-1]",
+      "output": "0",
+      "explanation": "The pivot index is 0. Left sum = 0 (no elements to the left of index 0) Right sum = nums[1] + nums[2] = 1 + -1 = 0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int pivotIndex(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int pivotIndex(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def pivotIndex(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function pivotIndex(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PivotIndex(int[] nums) {\n        \n    }\n}",
+    "go": "func pivotIndex(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn pivot_index(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,7,3,6,5,6]"
+    },
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[2,1,-1]"
+    }
+  ],
+  "functionName": "pivotIndex",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Create an array sumLeft where sumLeft[i] is the sum of all the numbers to the left of index i.",
+    "Create an array sumRight where sumRight[i] is the sum of all the numbers to the right of index i.",
+    "For each index i, check if sumLeft[i] equals sumRight[i]. If so, return i. If no such i is found, return -1."
+  ]
+}

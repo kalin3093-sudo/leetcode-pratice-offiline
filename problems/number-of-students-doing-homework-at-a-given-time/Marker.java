@@ -1,0 +1,15 @@
+import java.util.*;
+
+class Marker {
+    public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
+        int c = 0;
+        for (int i = 0; i < startTime.length; i++) {
+            if (startTime[i] <= queryTime && queryTime <= endTime[i]) c++;
+        }
+        return c;
+    }
+
+    public boolean isCorrect(int[] startTime, int[] endTime, int queryTime, int output) {
+        return output == busyStudent(startTime, endTime, queryTime);
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "sum-of-number-and-its-reverse",
+  "title": "2443. Sum of Number and Its Reverse",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-number-and-its-reverse/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 443",
+      "output": "true",
+      "explanation": "172 + 271 = 443 so we return true."
+    },
+    {
+      "input": "num = 63",
+      "output": "false",
+      "explanation": "63 cannot be expressed as the sum of a non-negative integer and its reverse so we return false."
+    },
+    {
+      "input": "num = 181",
+      "output": "true",
+      "explanation": "140 + 041 = 181 so we return true. Note that when a number is reversed, there may be leading zeros."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool sumOfNumberAndReverse(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean sumOfNumberAndReverse(int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfNumberAndReverse(self, num: int) -> bool:\n        ",
+    "typescript": "function sumOfNumberAndReverse(num: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool SumOfNumberAndReverse(int num) {\n        \n    }\n}",
+    "go": "func sumOfNumberAndReverse(num int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_number_and_reverse(num: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 443
+    },
+    {
+      "num": 63
+    },
+    {
+      "num": 181
+    }
+  ],
+  "functionName": "sumOfNumberAndReverse",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "The constraints are small enough that we can check every number.",
+    "To reverse a number, first convert it to a string. Then, create a new string that is the reverse of the first one. Finally, convert the new string back into a number."
+  ]
+}

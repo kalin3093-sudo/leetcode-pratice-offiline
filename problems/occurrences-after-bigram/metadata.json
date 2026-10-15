@@ -1,0 +1,57 @@
+{
+  "id": "occurrences-after-bigram",
+  "title": "1078. Occurrences After Bigram",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/occurrences-after-bigram/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "text = \"alice is a good girl she is a good student\", first = \"a\", second = \"good\"",
+      "output": "[\"girl\",\"student\"]"
+    },
+    {
+      "input": "text = \"we will we will rock you\", first = \"we\", second = \"will\"",
+      "output": "[\"we\",\"rock\"]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findOcurrences(string text, string first, string second) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String[] findOcurrences(String text, String first, String second) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findOcurrences(self, text: str, first: str, second: str) -> list[str]:\n        ",
+    "typescript": "function findOcurrences(text: string, first: string, second: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public string[] FindOcurrences(string text, string first, string second) {\n        \n    }\n}",
+    "go": "func findOcurrences(text string, first string, second string) []string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_ocurrences(text: String, first: String, second: String) -> Vec<String> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "alice is a good girl she is a good student",
+      "first": "a",
+      "second": "good"
+    },
+    {
+      "text": "we will we will rock you",
+      "first": "we",
+      "second": "will"
+    }
+  ],
+  "functionName": "findOcurrences",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    },
+    {
+      "name": "first",
+      "type": "string"
+    },
+    {
+      "name": "second",
+      "type": "string"
+    }
+  ],
+  "outputType": "string_array",
+  "hints": [
+    "Split the string into words, then look at adjacent triples of words."
+  ]
+}

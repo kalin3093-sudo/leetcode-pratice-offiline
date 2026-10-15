@@ -1,0 +1,56 @@
+{
+  "id": "distribute-candies-among-children-ii",
+  "title": "2929. Distribute Candies Among Children II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/distribute-candies-among-children-ii/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5, limit = 2",
+      "output": "3",
+      "explanation": "There are 3 ways to distribute 5 candies such that no child gets more than 2 candies: (1, 2, 2), (2, 1, 2) and (2, 2, 1)."
+    },
+    {
+      "input": "n = 3, limit = 3",
+      "output": "10",
+      "explanation": "There are 10 ways to distribute 3 candies such that no child gets more than 3 candies: (0, 0, 3), (0, 1, 2), (0, 2, 1), (0, 3, 0), (1, 0, 2), (1, 1, 1), (1, 2, 0), (2, 0, 1), (2, 1, 0) and (3, 0, 0)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long distributeCandies(int n, int limit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long distributeCandies(int n, int limit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def distributeCandies(self, n: int, limit: int) -> int:\n        ",
+    "typescript": "function distributeCandies(n: number, limit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long DistributeCandies(int n, int limit) {\n        \n    }\n}",
+    "go": "func distributeCandies(n int, limit int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn distribute_candies(n: i32, limit: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "limit": 2
+    },
+    {
+      "n": 3,
+      "limit": 3
+    }
+  ],
+  "functionName": "distributeCandies",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "limit",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "We can enumerate the number of candies of one particular child, let it be <code>i</code> which means <code>0 <= i <= min(limit, n)</code>.",
+    "Suppose the 2nd child gets <code>j</code> candies. Then <code>0 <= j <= limit</code> and <code>i + j <= n</code>.",
+    "The 3rd child will hence get <code>n - i - j</code> candies and we should have <code>0 <= n - i - j <= limit</code>.",
+    "After some transformations, for each <code>i</code>, we have <code>max(0, n - i - limit) <= j <= min(limit, n - i)</code>, each <code>j</code> corresponding to a solution.\r\nSo the number of solutions for some <code>i</code> is <code>max(min(limit, n - i) - max(0, n - i - limit) + 1, 0)</code>. Sum the expression for every <code>i</code> in <code>[0, min(n, limit)]</code>."
+  ]
+}

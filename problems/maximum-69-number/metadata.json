@@ -1,0 +1,56 @@
+{
+  "id": "maximum-69-number",
+  "title": "1323. Maximum 69 Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-69-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = 9669",
+      "output": "9969",
+      "explanation": "Changing the first digit results in 6669. Changing the second digit results in 9969. Changing the third digit results in 9699. Changing the fourth digit results in 9666. The maximum number is 9969."
+    },
+    {
+      "input": "num = 9996",
+      "output": "9999",
+      "explanation": "Changing the last digit 6 to 9 results in the maximum number."
+    },
+    {
+      "input": "num = 9999",
+      "output": "9999",
+      "explanation": "It is better not to apply any change."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximum69Number (int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximum69Number (int num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximum69Number (self, num: int) -> int:\n        ",
+    "typescript": "function maximum69Number (num: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int Maximum69Number (int num) {\n        \n    }\n}",
+    "go": "func maximum69Number (num int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum69_number (num: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": 9669
+    },
+    {
+      "num": 9996
+    },
+    {
+      "num": 9999
+    }
+  ],
+  "functionName": "maximum69Number ",
+  "params": [
+    {
+      "name": "num",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Convert the number in an array of its digits.",
+    "Brute force on every digit to get the maximum number."
+  ]
+}

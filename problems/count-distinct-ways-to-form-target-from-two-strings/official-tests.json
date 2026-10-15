@@ -1,0 +1,22 @@
+[
+  {
+    "word1": "abc",
+    "word2": "bac",
+    "target": "abc"
+  },
+  {
+    "word1": "cd",
+    "word2": "cd",
+    "target": "ccd"
+  },
+  {
+    "word1": "xy",
+    "word2": "xy",
+    "target": "xyxy"
+  },
+  {
+    "word1": "ab",
+    "word2": "cde",
+    "target": "ace"
+  }
+]

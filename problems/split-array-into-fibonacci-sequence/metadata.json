@@ -1,0 +1,53 @@
+{
+  "id": "split-array-into-fibonacci-sequence",
+  "title": "842. Split Array into Fibonacci Sequence",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/split-array-into-fibonacci-sequence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "num = \"1101111\"",
+      "output": "[11,0,11,11]",
+      "explanation": "The output [110, 1, 111] would also be accepted."
+    },
+    {
+      "input": "num = \"112358130\"",
+      "output": "[]",
+      "explanation": "The task is impossible."
+    },
+    {
+      "input": "num = \"0123\"",
+      "output": "[]",
+      "explanation": "Leading zeroes are not allowed, so \"01\", \"2\", \"3\" is not valid."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> splitIntoFibonacci(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> splitIntoFibonacci(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def splitIntoFibonacci(self, num: str) -> list[int]:\n        ",
+    "typescript": "function splitIntoFibonacci(num: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> SplitIntoFibonacci(string num) {\n        \n    }\n}",
+    "go": "func splitIntoFibonacci(num string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn split_into_fibonacci(num: String) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "1101111"
+    },
+    {
+      "num": "112358130"
+    },
+    {
+      "num": "0123"
+    }
+  ],
+  "functionName": "splitIntoFibonacci",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": []
+}

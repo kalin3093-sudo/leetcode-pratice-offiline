@@ -1,0 +1,54 @@
+{
+  "id": "to-lower-case",
+  "title": "709. To Lower Case",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/to-lower-case/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"Hello\"",
+      "output": "\"hello\""
+    },
+    {
+      "input": "s = \"here\"",
+      "output": "\"here\""
+    },
+    {
+      "input": "s = \"LOVELY\"",
+      "output": "\"lovely\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string toLowerCase(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String toLowerCase(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def toLowerCase(self, s: str) -> str:\n        ",
+    "typescript": "function toLowerCase(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ToLowerCase(string s) {\n        \n    }\n}",
+    "go": "func toLowerCase(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn to_lower_case(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "Hello"
+    },
+    {
+      "s": "here"
+    },
+    {
+      "s": "LOVELY"
+    }
+  ],
+  "functionName": "toLowerCase",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Most languages support lowercase conversion for a string data type. However, that is certainly not the purpose of the problem. Think about how the implementation of the lowercase function call can be done easily.",
+    "<b>Think ASCII!</b>",
+    "Think about the different capital letters and their ASCII codes and how that relates to their lowercase counterparts. Does there seem to be any pattern there? Any mathematical relationship that we can use?"
+  ]
+}

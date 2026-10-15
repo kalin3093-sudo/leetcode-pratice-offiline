@@ -1,0 +1,62 @@
+{
+  "id": "check-if-a-string-is-an-acronym-of-words",
+  "title": "2828. Check if a String Is an Acronym of Words",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"alice\",\"bob\",\"charlie\"], s = \"abc\"",
+      "output": "true",
+      "explanation": "The first character in the words \"alice\", \"bob\", and \"charlie\" are 'a', 'b', and 'c', respectively. Hence, s = \"abc\" is the acronym."
+    },
+    {
+      "input": "words = [\"an\",\"apple\"], s = \"a\"",
+      "output": "false",
+      "explanation": "The first character in the words \"an\" and \"apple\" are 'a' and 'a', respectively. The acronym formed by concatenating these characters is \"aa\". Hence, s = \"a\" is not the acronym."
+    },
+    {
+      "input": "words = [\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"], s = \"ngguoy\"",
+      "output": "true",
+      "explanation": "By concatenating the first character of the words in the array, we get the string \"ngguoy\". Hence, s = \"ngguoy\" is the acronym."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isAcronym(vector<string>& words, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isAcronym(List<String> words, String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isAcronym(self, words: List[str], s: str) -> bool:\n        ",
+    "typescript": "function isAcronym(words: string[], s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsAcronym(IList<string> words, string s) {\n        \n    }\n}",
+    "go": "func isAcronym(words []string, s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_acronym(words: Vec<String>, s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"alice\",\"bob\",\"charlie\"]",
+      "s": "abc"
+    },
+    {
+      "words": "[\"an\",\"apple\"]",
+      "s": "a"
+    },
+    {
+      "words": "[\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"]",
+      "s": "ngguoy"
+    }
+  ],
+  "functionName": "isAcronym",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_list"
+    },
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "<div class=\"_1l1MA\">Concatenate the first characters of the strings in <code>words</code>, and compare the resulting concatenation to <code>s</code>.</div>"
+  ]
+}

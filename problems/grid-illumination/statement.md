@@ -1,0 +1,19 @@
+There is a 2D `grid` of size `n x n` where each cell of this grid has a lamp that is initially **turned off**.
+
+You are given a 2D array of lamp positions `lamps`, where `lamps[i] = [rowi, coli]` indicates that the lamp at `grid[rowi][coli]` is **turned on**. Even if the same lamp is listed more than once, it is turned on.
+
+When a lamp is turned on, it **illuminates its cell** and **all other cells** in the same **row, column, or diagonal**.
+
+You are also given another 2D array `queries`, where `queries[j] = [rowj, colj]`. For the `j^th` query, determine whether `grid[rowj][colj]` is illuminated or not. After answering the `j^th` query, **turn off** the lamp at `grid[rowj][colj]` and its **8 adjacent lamps** if they exist. A lamp is adjacent if its cell shares either a side or corner with `grid[rowj][colj]`.
+
+Return *an array of integers* `ans`*,* *where* `ans[j]` *should be* `1` *if the cell in the* `j^th` *query was illuminated, or* `0` *if the lamp was not.*
+
+**Constraints:**
+
+-   `1 ≤ n ≤ 10^9`
+-   `0 ≤ lamps.length ≤ 20000`
+-   `0 ≤ queries.length ≤ 20000`
+-   `lamps[i].length == 2`
+-   `0 ≤ rowi, coli < n`
+-   `queries[j].length == 2`
+-   `0 ≤ rowj, colj < n`

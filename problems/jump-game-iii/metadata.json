@@ -1,0 +1,63 @@
+{
+  "id": "jump-game-iii",
+  "title": "1306. Jump Game III",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/jump-game-iii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [4,2,3,0,3,1,2], start = 5",
+      "output": "true",
+      "explanation": "All possible ways to reach at index 3 with value 0 are: index 5 -> index 4 -> index 1 -> index 3 index 5 -> index 6 -> index 4 -> index 1 -> index 3"
+    },
+    {
+      "input": "arr = [4,2,3,0,3,1,2], start = 0",
+      "output": "true",
+      "explanation": "One possible way to reach at index 3 with value 0 is: index 0 -> index 4 -> index 1 -> index 3"
+    },
+    {
+      "input": "arr = [3,0,2,1,2], start = 2",
+      "output": "false",
+      "explanation": "There is no way to reach at index 1 with value 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canReach(vector<int>& arr, int start) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canReach(int[] arr, int start) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canReach(self, arr: list[int], start: int) -> bool:\n        ",
+    "typescript": "function canReach(arr: number[], start: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanReach(int[] arr, int start) {\n        \n    }\n}",
+    "go": "func canReach(arr []int, start int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_reach(arr: Vec<i32>, start: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[4,2,3,0,3,1,2]",
+      "start": 5
+    },
+    {
+      "arr": "[4,2,3,0,3,1,2]",
+      "start": 0
+    },
+    {
+      "arr": "[3,0,2,1,2]",
+      "start": 2
+    }
+  ],
+  "functionName": "canReach",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    },
+    {
+      "name": "start",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Think of BFS to solve the problem.",
+    "When you reach a position with a value = 0 then return true."
+  ]
+}

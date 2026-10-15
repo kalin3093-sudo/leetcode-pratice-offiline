@@ -1,0 +1,63 @@
+{
+  "id": "count-k-reducible-numbers-less-than-n",
+  "title": "3352. Count K-Reducible Numbers Less Than N",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"111\", k = 1",
+      "output": "3",
+      "explanation": "n = 7. The 1-reducible integers less than 7 are 1, 2, and 4."
+    },
+    {
+      "input": "s = \"1000\", k = 2",
+      "output": "6",
+      "explanation": "n = 8. The 2-reducible integers less than 8 are 1, 2, 3, 4, 5, and 6."
+    },
+    {
+      "input": "s = \"1\", k = 3",
+      "output": "0",
+      "explanation": "There are no positive integers less than n = 1, so the answer is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countKReducibleNumbers(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countKReducibleNumbers(String s, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countKReducibleNumbers(self, s: str, k: int) -> int:\n        ",
+    "typescript": "function countKReducibleNumbers(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountKReducibleNumbers(string s, int k) {\n        \n    }\n}",
+    "go": "func countKReducibleNumbers(s string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_k_reducible_numbers(s: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "111",
+      "k": 1
+    },
+    {
+      "s": "1000",
+      "k": 2
+    },
+    {
+      "s": "1",
+      "k": 3
+    }
+  ],
+  "functionName": "countKReducibleNumbers",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "You can precompute number of operations required to convert a number with <code>x</code> bits to 1.",
+    "Use digit dp."
+  ]
+}

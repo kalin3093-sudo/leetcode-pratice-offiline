@@ -1,0 +1,57 @@
+{
+  "id": "sorting-three-groups",
+  "title": "2826. Sorting Three Groups",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sorting-three-groups/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,3,2,1]",
+      "output": "3",
+      "explanation": "One of the optimal solutions is to remove nums[0], nums[2] and nums[3]."
+    },
+    {
+      "input": "nums = [1,3,2,1,3,3]",
+      "output": "2",
+      "explanation": "One of the optimal solutions is to remove nums[1] and nums[2]."
+    },
+    {
+      "input": "nums = [2,2,2,2,3,3]",
+      "output": "0",
+      "explanation": "nums is already non-decreasing."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperations(List<Integer> nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOperations(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimumOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperations(IList<int> nums) {\n        \n    }\n}",
+    "go": "func minimumOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,3,2,1]"
+    },
+    {
+      "nums": "[1,3,2,1,3,3]"
+    },
+    {
+      "nums": "[2,2,2,2,3,3]"
+    }
+  ],
+  "functionName": "minimumOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The problem asks to change the array nums to make it sorted (i.e., all the 1s are on the left of 2s, and all the 2s are on the left of 3s.).",
+    "We can try all the possibilities to make nums indices range in [0, i) to 0 and [i, j) to 1 and [j, n) to 2. Note the ranges are left-close and right-open; each might be empty. Namely, 0 <= i <= j <= n.",
+    "Count the changes we need for each possibility by comparing the expected and original values at each index position."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "minimum-operations-to-make-array-modulo-alternating-i",
+  "title": "3937. Minimum Operations to Make Array Modulo Alternating I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,4,2,8], k = 3",
+      "output": "2",
+      "explanation": "Let's choose x = 1 for even indices and y = 2 for odd indices. Perform the following operations: Increment nums[1] = 4 by 1, giving nums = [1, 5, 2, 8]. Decrement nums[2] = 2 by 1, giving nums = [1, 5, 1, 8]. Now, for even indices, nums[i] % k = 1, and for odd indices, nums[i] % k = 2. Thus, the total number of operations required is 2."
+    },
+    {
+      "input": "nums = [1,1,1], k = 3",
+      "output": "1",
+      "explanation": "Incrementing nums[1] by 1 gives nums = [1, 2, 1], which satisfies the condition with x = 1 and y = 2. Thus, the total number of operations required is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minOperations(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minOperations(self, nums: list[int], k: int) -> int:\n        ",
+    "typescript": "function minOperations(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinOperations(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func minOperations(nums []int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,4,2,8]",
+      "k": 3
+    },
+    {
+      "nums": "[1,1,1]",
+      "k": 3
+    }
+  ],
+  "functionName": "minOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Bruteforce for all combinations of <code>x</code> and <code>y</code>, making sure they are distinct.",
+    "For each element, we either increase it until the condition is satisfied, or decrease. \r\nCheck both options and pick the one that uses a smaller number of operations."
+  ]
+}

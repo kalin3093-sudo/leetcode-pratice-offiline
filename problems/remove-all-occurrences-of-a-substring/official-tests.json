@@ -1,0 +1,10 @@
+[
+  {
+    "s": "daabcbaabcbc",
+    "part": "abc"
+  },
+  {
+    "s": "axxxxyyyyb",
+    "part": "xy"
+  }
+]

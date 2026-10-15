@@ -1,0 +1,44 @@
+{
+  "id": "reverse-vowels-of-a-string",
+  "title": "345. Reverse Vowels of a String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"IceCreAm\"",
+      "output": "\"AceCreIm\"",
+      "explanation": "The vowels in s are ['I', 'e', 'e', 'A']. On reversing the vowels, s becomes \"AceCreIm\"."
+    },
+    {
+      "input": "s = \"leetcode\"",
+      "output": "\"leotcede\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reverseVowels(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reverseVowels(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reverseVowels(self, s: str) -> str:\n        ",
+    "typescript": "function reverseVowels(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReverseVowels(string s) {\n        \n    }\n}",
+    "go": "func reverseVowels(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reverse_vowels(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "IceCreAm"
+    },
+    {
+      "s": "leetcode"
+    }
+  ],
+  "functionName": "reverseVowels",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

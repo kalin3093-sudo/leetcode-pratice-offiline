@@ -1,0 +1,71 @@
+{
+  "id": "maximize-points-after-choosing-k-tasks",
+  "title": "3767. Maximize Points After Choosing K Tasks",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "technique1 = [5,2,10], technique2 = [10,3,8], k = 2",
+      "output": "22",
+      "explanation": "We must complete at least k = 2 tasks using technique1. Choosing technique1[1] and technique1[2] (completed using technique 1), and technique2[0] (completed using technique 2), yields the maximum points: 2 + 10 + 10 = 22."
+    },
+    {
+      "input": "technique1 = [10,20,30], technique2 = [5,15,25], k = 2",
+      "output": "60",
+      "explanation": "We must complete at least k = 2 tasks using technique1. Choosing all tasks using technique 1 yields the maximum points: 10 + 20 + 30 = 60."
+    },
+    {
+      "input": "technique1 = [1,2,3], technique2 = [4,5,6], k = 0",
+      "output": "15",
+      "explanation": "Since k = 0, we are not required to choose any task using technique1. Choosing all tasks using technique 2 yields the maximum points: 4 + 5 + 6 = 15."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long maxPoints(vector<int>& technique1, vector<int>& technique2, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long maxPoints(int[] technique1, int[] technique2, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxPoints(self, technique1: List[int], technique2: List[int], k: int) -> int:\n        ",
+    "typescript": "function maxPoints(technique1: number[], technique2: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MaxPoints(int[] technique1, int[] technique2, int k) {\n        \n    }\n}",
+    "go": "func maxPoints(technique1 []int, technique2 []int, k int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_points(technique1: Vec<i32>, technique2: Vec<i32>, k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "technique1": "[5,2,10]",
+      "technique2": "[10,3,8]",
+      "k": 2
+    },
+    {
+      "technique1": "[10,20,30]",
+      "technique2": "[5,15,25]",
+      "k": 2
+    },
+    {
+      "technique1": "[1,2,3]",
+      "technique2": "[4,5,6]",
+      "k": 0
+    }
+  ],
+  "functionName": "maxPoints",
+  "params": [
+    {
+      "name": "technique1",
+      "type": "int_array"
+    },
+    {
+      "name": "technique2",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Initially complete all tasks using way 1; let the initial total be <code>sum(reward1)</code>.",
+    "The delta when switching task <code>i</code> from way 1 to way 2 is <code>reward2[i] - reward1[i]</code>.",
+    "Sort deltas descending and apply the largest <code>n - k</code>; after each switch update the maximum."
+  ]
+}

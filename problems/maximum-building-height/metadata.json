@@ -1,0 +1,63 @@
+{
+  "id": "maximum-building-height",
+  "title": "1840. Maximum Building Height",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-building-height/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, restrictions = [[2,1],[4,1]]",
+      "output": "2",
+      "explanation": "The green area in the image indicates the maximum allowed height for each building. We can build the buildings with heights [0,1,2,1,2], and the tallest building has a height of 2."
+    },
+    {
+      "input": "n = 6, restrictions = []",
+      "output": "5",
+      "explanation": "The green area in the image indicates the maximum allowed height for each building. We can build the buildings with heights [0,1,2,3,4,5], and the tallest building has a height of 5."
+    },
+    {
+      "input": "n = 10, restrictions = [[5,3],[2,5],[7,4],[10,3]]",
+      "output": "5",
+      "explanation": "The green area in the image indicates the maximum allowed height for each building. We can build the buildings with heights [0,1,2,3,3,4,4,5,4,3], and the tallest building has a height of 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxBuilding(int n, vector<vector<int>>& restrictions) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxBuilding(int n, int[][] restrictions) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxBuilding(self, n: int, restrictions: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxBuilding(n: number, restrictions: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxBuilding(int n, int[][] restrictions) {\n        \n    }\n}",
+    "go": "func maxBuilding(n int, restrictions [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_building(n: i32, restrictions: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "restrictions": "[[2,1],[4,1]]"
+    },
+    {
+      "n": 6,
+      "restrictions": "[]"
+    },
+    {
+      "n": 10,
+      "restrictions": "[[5,3],[2,5],[7,4],[10,3]]"
+    }
+  ],
+  "functionName": "maxBuilding",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "restrictions",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Is it possible to find the max height if given the height range of a particular building?",
+    "You can find the height range of a restricted building by doing 2 passes from the left and right."
+  ]
+}

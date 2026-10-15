@@ -1,0 +1,54 @@
+{
+  "id": "task-scheduler-ii",
+  "title": "2365. Task Scheduler II",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/task-scheduler-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "tasks = [1,2,1,2,3,1], space = 3",
+      "output": "9",
+      "explanation": "One way to complete all tasks in 9 days is as follows: Day 1: Complete the 0th task. Day 2: Complete the 1st task. Day 3: Take a break. Day 4: Take a break. Day 5: Complete the 2nd task. Day 6: Complete the 3rd task. Day 7: Take a break. Day 8: Complete the 4th task. Day 9: Complete the 5th task. It can be shown that the tasks cannot be completed in less than 9 days."
+    },
+    {
+      "input": "tasks = [5,8,8,5], space = 2",
+      "output": "6",
+      "explanation": "One way to complete all tasks in 6 days is as follows: Day 1: Complete the 0th task. Day 2: Complete the 1st task. Day 3: Take a break. Day 4: Take a break. Day 5: Complete the 2nd task. Day 6: Complete the 3rd task. It can be shown that the tasks cannot be completed in less than 6 days."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long taskSchedulerII(vector<int>& tasks, int space) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long taskSchedulerII(int[] tasks, int space) {\n        \n    }\n}",
+    "python": "class Solution:\n    def taskSchedulerII(self, tasks: list[int], space: int) -> int:\n        ",
+    "typescript": "function taskSchedulerII(tasks: number[], space: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long TaskSchedulerII(int[] tasks, int space) {\n        \n    }\n}",
+    "go": "func taskSchedulerII(tasks []int, space int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn task_scheduler_ii(tasks: Vec<i32>, space: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "tasks": "[1,2,1,2,3,1]",
+      "space": 3
+    },
+    {
+      "tasks": "[5,8,8,5]",
+      "space": 2
+    }
+  ],
+  "functionName": "taskSchedulerII",
+  "params": [
+    {
+      "name": "tasks",
+      "type": "int_array"
+    },
+    {
+      "name": "space",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Try taking breaks as late as possible, such that tasks are still spaced appropriately.",
+    "Whenever considering whether to complete the next task, if it is not the first task of its type, check how many days ago the previous task was completed and add an appropriate number of breaks."
+  ]
+}

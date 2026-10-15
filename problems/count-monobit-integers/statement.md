@@ -1,0 +1,9 @@
+You are given an integer `n`.
+
+An integer is called **Monobit** if all bits in its binary representation are the same.
+
+Return the count of **Monobit** integers in the range `[0, n]` (inclusive).
+
+**Constraints:**
+
+-   `0 ≤ n ≤ 1000`

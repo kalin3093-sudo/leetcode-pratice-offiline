@@ -1,0 +1,54 @@
+{
+  "id": "course-schedule-iii",
+  "title": "630. Course Schedule III",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/course-schedule-iii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "courses = [[100,200],[200,1300],[1000,1250],[2000,3200]]",
+      "output": "3",
+      "explanation": "There are totally 4 courses, but you can take 3 courses at most: First, take the 1st course, it costs 100 days so you will finish it on the 100th day, and ready to take the next course on the 101st day. Second, take the 3rd course, it costs 1000 days so you will finish it on the 1100th day, and ready to take the next course on the 1101st day. Third, take the 2nd course, it costs 200 days so you will finish it on the 1300th day. The 4th course cannot be taken now, since you will finish it on the 3300th day, which exceeds the closed date."
+    },
+    {
+      "input": "courses = [[1,2]]",
+      "output": "1"
+    },
+    {
+      "input": "courses = [[3,2],[4,3]]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int scheduleCourse(vector<vector<int>>& courses) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int scheduleCourse(int[][] courses) {\n        \n    }\n}",
+    "python": "class Solution:\n    def scheduleCourse(self, courses: List[List[int]]) -> int:\n        ",
+    "typescript": "function scheduleCourse(courses: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ScheduleCourse(int[][] courses) {\n        \n    }\n}",
+    "go": "func scheduleCourse(courses [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn schedule_course(courses: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "courses": "[[100,200],[200,1300],[1000,1250],[2000,3200]]"
+    },
+    {
+      "courses": "[[1,2]]"
+    },
+    {
+      "courses": "[[3,2],[4,3]]"
+    }
+  ],
+  "functionName": "scheduleCourse",
+  "params": [
+    {
+      "name": "courses",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "During iteration, say I want to add the current course, currentTotalTime being total time of all courses taken till now, but adding the current course might exceed my deadline or it doesn’t.</br></br>\r\n\r\n1. If it doesn’t, then I have added one new course. Increment the currentTotalTime with duration of current course.",
+    "2. If it exceeds deadline, I can swap current course with current courses that has biggest duration.</br>\r\n* No harm done and I might have just reduced the currentTotalTime, right? </br>\r\n* What preprocessing do I need to do on my course processing order so that this swap is always legal?"
+  ]
+}

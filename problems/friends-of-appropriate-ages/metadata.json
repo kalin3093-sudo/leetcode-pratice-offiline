@@ -1,0 +1,53 @@
+{
+  "id": "friends-of-appropriate-ages",
+  "title": "825. Friends Of Appropriate Ages",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/friends-of-appropriate-ages/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "ages = [16,16]",
+      "output": "2",
+      "explanation": "2 people friend request each other."
+    },
+    {
+      "input": "ages = [16,17,18]",
+      "output": "2",
+      "explanation": "Friend requests are made 17 -> 16, 18 -> 17."
+    },
+    {
+      "input": "ages = [20,30,100,110,120]",
+      "output": "3",
+      "explanation": "Friend requests are made 110 -> 100, 120 -> 110, 120 -> 100."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numFriendRequests(vector<int>& ages) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numFriendRequests(int[] ages) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numFriendRequests(self, ages: list[int]) -> int:\n        ",
+    "typescript": "function numFriendRequests(ages: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumFriendRequests(int[] ages) {\n        \n    }\n}",
+    "go": "func numFriendRequests(ages []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_friend_requests(ages: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "ages": "[16,16]"
+    },
+    {
+      "ages": "[16,17,18]"
+    },
+    {
+      "ages": "[20,30,100,110,120]"
+    }
+  ],
+  "functionName": "numFriendRequests",
+  "params": [
+    {
+      "name": "ages",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "s": "baba",
+    "target": "abba"
+  },
+  {
+    "s": "baba",
+    "target": "bbaa"
+  },
+  {
+    "s": "abc",
+    "target": "abb"
+  },
+  {
+    "s": "aac",
+    "target": "abb"
+  }
+]

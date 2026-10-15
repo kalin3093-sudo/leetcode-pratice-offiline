@@ -1,0 +1,44 @@
+{
+  "id": "sum-of-subarray-minimums",
+  "title": "907. Sum of Subarray Minimums",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [3,1,2,4]",
+      "output": "17",
+      "explanation": "Subarrays are [3], [1], [2], [4], [3,1], [1,2], [2,4], [3,1,2], [1,2,4], [3,1,2,4]. Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1. Sum is 17."
+    },
+    {
+      "input": "arr = [11,81,94,43,3]",
+      "output": "444"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumSubarrayMins(vector<int>& arr) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumSubarrayMins(int[] arr) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumSubarrayMins(self, arr: list[int]) -> int:\n        ",
+    "typescript": "function sumSubarrayMins(arr: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumSubarrayMins(int[] arr) {\n        \n    }\n}",
+    "go": "func sumSubarrayMins(arr []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_subarray_mins(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[3,1,2,4]"
+    },
+    {
+      "arr": "[50]"
+    }
+  ],
+  "functionName": "sumSubarrayMins",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

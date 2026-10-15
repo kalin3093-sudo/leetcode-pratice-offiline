@@ -1,0 +1,44 @@
+{
+  "id": "nth-digit",
+  "title": "400. Nth Digit",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/nth-digit/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "3"
+    },
+    {
+      "input": "n = 11",
+      "output": "0",
+      "explanation": "The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, which is part of the number 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findNthDigit(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findNthDigit(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findNthDigit(self, n: int) -> int:\n        ",
+    "typescript": "function findNthDigit(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindNthDigit(int n) {\n        \n    }\n}",
+    "go": "func findNthDigit(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_nth_digit(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 11
+    }
+  ],
+  "functionName": "findNthDigit",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

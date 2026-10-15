@@ -1,0 +1,61 @@
+{
+  "id": "count-subarrays-with-fixed-bounds",
+  "title": "2444. Count Subarrays With Fixed Bounds",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-subarrays-with-fixed-bounds/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,5,2,7,5], minK = 1, maxK = 5",
+      "output": "2",
+      "explanation": "The fixed-bound subarrays are [1,3,5] and [1,3,5,2]."
+    },
+    {
+      "input": "nums = [1,1,1,1], minK = 1, maxK = 1",
+      "output": "10",
+      "explanation": "Every subarray of nums is a fixed-bound subarray. There are 10 possible subarrays."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countSubarrays(vector<int>& nums, int minK, int maxK) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countSubarrays(int[] nums, int minK, int maxK) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSubarrays(self, nums: list[int], minK: int, maxK: int) -> int:\n        ",
+    "typescript": "function countSubarrays(nums: number[], minK: number, maxK: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountSubarrays(int[] nums, int minK, int maxK) {\n        \n    }\n}",
+    "go": "func countSubarrays(nums []int, minK int, maxK int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_subarrays(nums: Vec<i32>, min_k: i32, max_k: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,5,2,7,5]",
+      "minK": 1,
+      "maxK": 5
+    },
+    {
+      "nums": "[1,1,1,1]",
+      "minK": 1,
+      "maxK": 1
+    }
+  ],
+  "functionName": "countSubarrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "minK",
+      "type": "int"
+    },
+    {
+      "name": "maxK",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Can you solve the problem if all the numbers in the array were between minK and maxK inclusive?",
+    "Think of the inclusion-exclusion principle.",
+    "Divide the array into multiple subarrays such that each number in each subarray is between minK and maxK inclusive, solve the previous problem for each subarray, and sum all the answers."
+  ]
+}

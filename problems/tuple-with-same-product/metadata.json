@@ -1,0 +1,48 @@
+{
+  "id": "tuple-with-same-product",
+  "title": "1726. Tuple with Same Product",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/tuple-with-same-product/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,3,4,6]",
+      "output": "8",
+      "explanation": "There are 8 valid tuples: (2,6,3,4) , (2,6,4,3) , (6,2,3,4) , (6,2,4,3) (3,4,2,6) , (4,3,2,6) , (3,4,6,2) , (4,3,6,2)"
+    },
+    {
+      "input": "nums = [1,2,4,5,10]",
+      "output": "16",
+      "explanation": "There are 16 valid tuples: (1,10,2,5) , (1,10,5,2) , (10,1,2,5) , (10,1,5,2) (2,5,1,10) , (2,5,10,1) , (5,2,1,10) , (5,2,10,1) (2,10,4,5) , (2,10,5,4) , (10,2,4,5) , (10,2,5,4) (4,5,2,10) , (4,5,10,2) , (5,4,2,10) , (5,4,10,2)"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int tupleSameProduct(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int tupleSameProduct(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def tupleSameProduct(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function tupleSameProduct(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TupleSameProduct(int[] nums) {\n        \n    }\n}",
+    "go": "func tupleSameProduct(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn tuple_same_product(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,3,4,6]"
+    },
+    {
+      "nums": "[1,2,4,5,10]"
+    }
+  ],
+  "functionName": "tupleSameProduct",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Note that all of the integers are distinct. This means that each time a product is formed it must be formed by two unique integers.",
+    "Count the frequency of each product of 2 distinct numbers. Then calculate the permutations formed."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sum-of-beauty-in-the-array",
+  "title": "2012. Sum of Beauty in the Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-beauty-in-the-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "2",
+      "explanation": "For each index i in the range 1 <= i <= 1: - The beauty of nums[1] equals 2."
+    },
+    {
+      "input": "nums = [2,4,6,4]",
+      "output": "1",
+      "explanation": "For each index i in the range 1 <= i <= 2: - The beauty of nums[1] equals 1. - The beauty of nums[2] equals 0."
+    },
+    {
+      "input": "nums = [3,2,1]",
+      "output": "0",
+      "explanation": "For each index i in the range 1 <= i <= 1: - The beauty of nums[1] equals 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfBeauties(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfBeauties(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfBeauties(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function sumOfBeauties(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfBeauties(int[] nums) {\n        \n    }\n}",
+    "go": "func sumOfBeauties(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_beauties(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[2,4,6,4]"
+    },
+    {
+      "nums": "[3,2,1]"
+    }
+  ],
+  "functionName": "sumOfBeauties",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use suffix/prefix arrays.",
+    "prefix[i] records the maximum value in range (0, i - 1) inclusive.",
+    "suffix[i] records the minimum value in range (i + 1, n - 1) inclusive."
+  ]
+}

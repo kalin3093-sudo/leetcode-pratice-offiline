@@ -1,0 +1,58 @@
+{
+  "id": "even-number-of-knight-moves",
+  "title": "3996. Even Number of Knight Moves",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/even-number-of-knight-moves/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "start = [1,1], target = [2,2]",
+      "output": "true",
+      "explanation": "One possible sequence of moves is (1, 1) -> (3, 2) -> (2, 4) -> (4, 3) -> (2, 2). The knight reaches the target in 4 moves, which is even. Thus, the answer is true."
+    },
+    {
+      "input": "start = [4,5], target = [6,6]",
+      "output": "false",
+      "explanation": "It is impossible to reach target = [6, 6] from start = [4, 5] in an even number of moves. Thus, the answer is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canReach(vector<int>& start, vector<int>& target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canReach(int[] start, int[] target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canReach(self, start: list[int], target: list[int]) -> bool:\n        ",
+    "typescript": "function canReach(start: number[], target: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanReach(int[] start, int[] target) {\n        \n    }\n}",
+    "go": "func canReach(start []int, target []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_reach(start: Vec<i32>, target: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "start": "[1,1]",
+      "target": "[2,2]"
+    },
+    {
+      "start": "[4,5]",
+      "target": "[6,6]"
+    }
+  ],
+  "functionName": "canReach",
+  "params": [
+    {
+      "name": "start",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "<p><strong>1a (Chessboard Coloring).</strong> Color the chessboard like a standard chessboard using the parity of <code>x + y</code>.</p>",
+    "<p><strong>1b (Chessboard Coloring).</strong> Every knight move changes the color of the current cell. Therefore, after an even number of moves, the knight must be on a cell of the same color as the starting cell.</p>",
+    "<p><strong>1c (Chessboard Coloring).</strong> Since every cell is reachable from every other cell on an <code>8 x 8</code> chessboard, return whether <code>(start[0] + start[1]) % 2 == (target[0] + target[1]) % 2</code>.</p>",
+    "<p><strong>2a (BFS).</strong> Treat each of the 64 cells as a node and connect two cells if a knight can move between them.</p>",
+    "<p><strong>2b (BFS).</strong> Run BFS while tracking both the current cell and the parity of the number of moves used.</p>",
+    "<p><strong>2c (BFS).</strong> Return <code>true</code> if <code>target</code> is reachable with even parity.</p>"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "detect-cycles-in-2d-grid",
+  "title": "1559. Detect Cycles in 2D Grid",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/detect-cycles-in-2d-grid/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[\"a\",\"a\",\"a\",\"a\"],[\"a\",\"b\",\"b\",\"a\"],[\"a\",\"b\",\"b\",\"a\"],[\"a\",\"a\",\"a\",\"a\"]]",
+      "output": "true",
+      "explanation": "There are two valid cycles shown in different colors in the image below:"
+    },
+    {
+      "input": "grid = [[\"c\",\"c\",\"c\",\"a\"],[\"c\",\"d\",\"c\",\"c\"],[\"c\",\"c\",\"e\",\"c\"],[\"f\",\"c\",\"c\",\"c\"]]",
+      "output": "true",
+      "explanation": "There is only one valid cycle highlighted in the image below:"
+    },
+    {
+      "input": "grid = [[\"a\",\"b\",\"b\"],[\"b\",\"z\",\"b\"],[\"b\",\"b\",\"a\"]]",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool containsCycle(vector<vector<char>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean containsCycle(char[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def containsCycle(self, grid: list[list[str]]) -> bool:\n        ",
+    "typescript": "function containsCycle(grid: string[][]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ContainsCycle(char[][] grid) {\n        \n    }\n}",
+    "go": "func containsCycle(grid [][]byte) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn contains_cycle(grid: Vec<Vec<char>>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[\"a\",\"a\",\"a\",\"a\"],[\"a\",\"b\",\"b\",\"a\"],[\"a\",\"b\",\"b\",\"a\"],[\"a\",\"a\",\"a\",\"a\"]]"
+    },
+    {
+      "grid": "[[\"c\",\"c\",\"c\",\"a\"],[\"c\",\"d\",\"c\",\"c\"],[\"c\",\"c\",\"e\",\"c\"],[\"f\",\"c\",\"c\",\"c\"]]"
+    },
+    {
+      "grid": "[[\"a\",\"b\",\"b\"],[\"b\",\"z\",\"b\"],[\"b\",\"b\",\"a\"]]"
+    }
+  ],
+  "functionName": "containsCycle",
+  "params": [
+    {
+      "name": "grid",
+      "type": "char_array_2d"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Keep track of the parent (previous position) to avoid considering an invalid path.",
+    "Use DFS or BFS and keep track of visited cells to see if there is a cycle."
+  ]
+}

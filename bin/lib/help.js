@@ -1,0 +1,58 @@
+import { isDesktopCli } from "./utils.js";
+
+export function showHelp() {
+  console.log(`
+${isDesktopCli ? "Cojudge desktop CLI" : "Cojudge CLI - Offline code judge"}
+
+Usage:
+  ${isDesktopCli ? "cojudge                        Show this help message" : "cojudge [options]              Start the server and open in browser"}
+  cojudge start <slug> <file>    Open a specific problem or playground with a file
+  cojudge [file]                 Same as 'cojudge playground [file]'
+  cojudge list                   List all available problem slugs
+  cojudge search <keyword>       Search problems by keyword (in title, slug, and statement)
+  cojudge run <slug> <file>     Run sample tests for a problem
+  cojudge run <file>              Run a playground file
+  cojudge submit <slug> <file>   Submit code for a problem
+  cojudge debug <jobId>           Show debug session state
+  cojudge debug continue <jobId>  Continue a debug session
+  cojudge debug step <jobId>      Step over in a debug session
+  cojudge debug stop <jobId>      Stop a debug session
+  cojudge debug eval <jobId> <variable>
+                                 Show the value of a variable in the current runtime
+  cojudge mark <slug>             Mark a problem as solved
+  cojudge unmark <slug>          Unmark a problem as solved
+  cojudge init <slug>           Initialize a problem file with starter code
+                                 (Options: --lang java|python|cpp|rust|csharp|go)
+  cojudge sync                  Show content status (auto-updates unedited copies)
+  cojudge sync --reset <id>     Reset a problem/course to the bundled version
+  cojudge sync --reset --all    Reset all modified content to bundled versions
+  cojudge -p, --port <number>    Specify port (default: 5375)
+  cojudge -v, --version          Show installed release number
+  cojudge version                Same as 'cojudge --version'
+  cojudge -u, --update           ${isDesktopCli ? "Check GitHub Releases for a newer app" : "Update cojudge to the latest version"}
+  cojudge update                 Same as 'cojudge --update'
+                                  ${isDesktopCli ? "(prints the download for this device, then reinstall the CLI from the app menu)" : "(restarts the server if it is running)"}
+  cojudge -s, --status           Show if the server is running
+  cojudge -l, --logs             Stream the server logs
+  cojudge -k, --kill             Stop the server
+  cojudge -r, --restart          Restart the server
+  cojudge -h, --help             Show this help message
+
+Examples:
+  cojudge start two-sum Solution.java
+  cojudge run two-sum Solution.java
+  cojudge init two-sum --lang rust --output solver.rs
+  cojudge start playground my-script.py
+  cojudge run my-script.py --debug-lines 5,10,15
+  cojudge debug abc123
+  cojudge debug step abc123
+  cojudge debug eval abc123 nums
+  cojudge mark two-sum
+
+Content:
+  Problems & courses live in ~/cojudge (auto-seeded on first start).
+  Unedited copies auto-update when Cojudge ships fixes; your edits are
+  never overwritten. If an item shows as modified but you never edited it,
+  reset it with 'cojudge sync --reset <id>'. Override with COJUDGE_CONTENT_DIR.
+`);
+}

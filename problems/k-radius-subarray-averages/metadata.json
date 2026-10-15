@@ -1,0 +1,64 @@
+{
+  "id": "k-radius-subarray-averages",
+  "title": "2090. K Radius Subarray Averages",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/k-radius-subarray-averages/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [7,4,3,9,1,8,5,2,6], k = 3",
+      "output": "[-1,-1,-1,5,4,4,-1,-1,-1]",
+      "explanation": "- avg[0], avg[1], and avg[2] are -1 because there are less than k elements before each index. - The sum of the subarray centered at index 3 with radius 3 is: 7 + 4 + 3 + 9 + 1 + 8 + 5 = 37. Using integer division, avg[3] = 37 / 7 = 5. - For the subarray centered at index 4, avg[4] = (4 + 3 + 9 + 1 + 8 + 5 + 2) / 7 = 4. - For the subarray centered at index 5, avg[5] = (3 + 9 + 1 + 8 + 5 + 2 + 6) / 7 = 4. - avg[6], avg[7], and avg[8] are -1 because there are less than k elements after each index."
+    },
+    {
+      "input": "nums = [100000], k = 0",
+      "output": "[100000]",
+      "explanation": "- The sum of the subarray centered at index 0 with radius 0 is: 100000. avg[0] = 100000 / 1 = 100000."
+    },
+    {
+      "input": "nums = [8], k = 100000",
+      "output": "[-1]",
+      "explanation": "- avg[0] is -1 because there are less than k elements before and after index 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> getAverages(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] getAverages(int[] nums, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def getAverages(self, nums: list[int], k: int) -> list[int]:\n        ",
+    "typescript": "function getAverages(nums: number[], k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] GetAverages(int[] nums, int k) {\n        \n    }\n}",
+    "go": "func getAverages(nums []int, k int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn get_averages(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[7,4,3,9,1,8,5,2,6]",
+      "k": 3
+    },
+    {
+      "nums": "[100000]",
+      "k": 0
+    },
+    {
+      "nums": "[8]",
+      "k": 100000
+    }
+  ],
+  "functionName": "getAverages",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "To calculate the average of a subarray, you need the sum and the K. K is already given. How could you quickly calculate the sum of a subarray?",
+    "Use the Prefix Sums method to calculate the subarray sums.",
+    "It is possible that the sum of all the elements does not fit in a 32-bit integer type. Be sure to use a 64-bit integer type for the prefix sum array."
+  ]
+}

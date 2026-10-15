@@ -1,0 +1,12 @@
+[
+  {
+    "tires": "[[2,3],[3,4]]",
+    "changeTime": 5,
+    "numLaps": 4
+  },
+  {
+    "tires": "[[1,10],[2,2],[3,4]]",
+    "changeTime": 6,
+    "numLaps": 5
+  }
+]

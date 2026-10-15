@@ -1,0 +1,63 @@
+{
+  "id": "maximum-repeating-substring",
+  "title": "1668. Maximum Repeating Substring",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-repeating-substring/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "sequence = \"ababc\", word = \"ab\"",
+      "output": "2",
+      "explanation": "\"abab\" is a substring in \"ababc\"."
+    },
+    {
+      "input": "sequence = \"ababc\", word = \"ba\"",
+      "output": "1",
+      "explanation": "\"ba\" is a substring in \"ababc\". \"baba\" is not a substring in \"ababc\"."
+    },
+    {
+      "input": "sequence = \"ababc\", word = \"ac\"",
+      "output": "0",
+      "explanation": "\"ac\" is not a substring in \"ababc\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxRepeating(string sequence, string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxRepeating(String sequence, String word) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxRepeating(self, sequence: str, word: str) -> int:\n        ",
+    "typescript": "function maxRepeating(sequence: string, word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxRepeating(string sequence, string word) {\n        \n    }\n}",
+    "go": "func maxRepeating(sequence string, word string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_repeating(sequence: String, word: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "sequence": "ababc",
+      "word": "ab"
+    },
+    {
+      "sequence": "ababc",
+      "word": "ba"
+    },
+    {
+      "sequence": "ababc",
+      "word": "ac"
+    }
+  ],
+  "functionName": "maxRepeating",
+  "params": [
+    {
+      "name": "sequence",
+      "type": "string"
+    },
+    {
+      "name": "word",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The constraints are low enough for a brute force approach.",
+    "Try every k value from 0 upwards until word is no longer k-repeating."
+  ]
+}

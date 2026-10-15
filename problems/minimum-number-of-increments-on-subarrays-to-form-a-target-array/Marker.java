@@ -1,0 +1,17 @@
+import java.util.*;
+class Marker {
+  public int minNumberOperations(int[] target) {
+    int ans = target[0];
+
+    for (int i = 1; i < target.length; ++i)
+      if (target[i] > target[i - 1])
+        ans += target[i] - target[i - 1];
+
+    return ans;
+  }
+
+    public boolean isCorrect(int[] target, int output) {
+        int expected = minNumberOperations(target);
+        return expected == output;
+    }
+}

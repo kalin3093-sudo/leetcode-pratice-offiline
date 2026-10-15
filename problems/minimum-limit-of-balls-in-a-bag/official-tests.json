@@ -1,0 +1,10 @@
+[
+  {
+    "nums": "[9]",
+    "maxOperations": 2
+  },
+  {
+    "nums": "[2,4,8,2]",
+    "maxOperations": 4
+  }
+]

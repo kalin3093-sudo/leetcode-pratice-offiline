@@ -1,0 +1,60 @@
+{
+  "id": "number-of-ways-to-buy-pens-and-pencils",
+  "title": "2240. Number of Ways to Buy Pens and Pencils",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "total = 20, cost1 = 10, cost2 = 5",
+      "output": "9",
+      "explanation": "The price of a pen is 10 and the price of a pencil is 5. - If you buy 0 pens, you can buy 0, 1, 2, 3, or 4 pencils. - If you buy 1 pen, you can buy 0, 1, or 2 pencils. - If you buy 2 pens, you cannot buy any pencils. The total number of ways to buy pens and pencils is 5 + 3 + 1 = 9."
+    },
+    {
+      "input": "total = 5, cost1 = 10, cost2 = 10",
+      "output": "1",
+      "explanation": "The price of both pens and pencils are 10, which cost more than total, so you cannot buy any writing utensils. Therefore, there is only 1 way: buy 0 pens and 0 pencils."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long waysToBuyPensPencils(int total, int cost1, int cost2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long waysToBuyPensPencils(int total, int cost1, int cost2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def waysToBuyPensPencils(self, total: int, cost1: int, cost2: int) -> int:\n        ",
+    "typescript": "function waysToBuyPensPencils(total: number, cost1: number, cost2: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long WaysToBuyPensPencils(int total, int cost1, int cost2) {\n        \n    }\n}",
+    "go": "func waysToBuyPensPencils(total int, cost1 int, cost2 int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn ways_to_buy_pens_pencils(total: i32, cost1: i32, cost2: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "total": 20,
+      "cost1": 10,
+      "cost2": 5
+    },
+    {
+      "total": 5,
+      "cost1": 10,
+      "cost2": 10
+    }
+  ],
+  "functionName": "waysToBuyPensPencils",
+  "params": [
+    {
+      "name": "total",
+      "type": "int"
+    },
+    {
+      "name": "cost1",
+      "type": "int"
+    },
+    {
+      "name": "cost2",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Fix the number of pencils purchased and calculate the number of ways to buy pens.",
+    "Sum up the number of ways to buy pens for each amount of pencils purchased to get the answer."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "domino-and-tromino-tiling",
+  "title": "790. Domino and Tromino Tiling",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/domino-and-tromino-tiling/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "5",
+      "explanation": "The five different ways are shown above."
+    },
+    {
+      "input": "n = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numTilings(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numTilings(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numTilings(self, n: int) -> int:\n        ",
+    "typescript": "function numTilings(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumTilings(int n) {\n        \n    }\n}",
+    "go": "func numTilings(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_tilings(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "numTilings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

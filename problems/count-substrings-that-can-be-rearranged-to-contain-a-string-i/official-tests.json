@@ -1,0 +1,14 @@
+[
+  {
+    "word1": "bcca",
+    "word2": "abc"
+  },
+  {
+    "word1": "abcabc",
+    "word2": "abc"
+  },
+  {
+    "word1": "abcabc",
+    "word2": "aaabc"
+  }
+]

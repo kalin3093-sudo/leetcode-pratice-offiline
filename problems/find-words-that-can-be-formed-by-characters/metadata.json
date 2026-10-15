@@ -1,0 +1,56 @@
+{
+  "id": "find-words-that-can-be-formed-by-characters",
+  "title": "1160. Find Words That Can Be Formed by Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "words = [\"cat\",\"bt\",\"hat\",\"tree\"], chars = \"atach\"",
+      "output": "6",
+      "explanation": "The strings that can be formed are \"cat\" and \"hat\" so the answer is 3 + 3 = 6."
+    },
+    {
+      "input": "words = [\"hello\",\"world\",\"leetcode\"], chars = \"welldonehoneyr\"",
+      "output": "10",
+      "explanation": "The strings that can be formed are \"hello\" and \"world\" so the answer is 5 + 5 = 10."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countCharacters(vector<string>& words, string chars) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countCharacters(String[] words, String chars) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countCharacters(self, words: list[str], chars: str) -> int:\n        ",
+    "typescript": "function countCharacters(words: string[], chars: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountCharacters(string[] words, string chars) {\n        \n    }\n}",
+    "go": "func countCharacters(words []string, chars string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_characters(words: Vec<String>, chars: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "words": "[\"cat\",\"bt\",\"hat\",\"tree\"]",
+      "chars": "atach"
+    },
+    {
+      "words": "[\"hello\",\"world\",\"leetcode\"]",
+      "chars": "welldonehoneyr"
+    }
+  ],
+  "functionName": "countCharacters",
+  "params": [
+    {
+      "name": "words",
+      "type": "string_array"
+    },
+    {
+      "name": "chars",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Solve the problem for each string in <code>words</code> independently.",
+    "Now try to think in frequency of letters.",
+    "Count how many times each character occurs in string <code>chars</code>.",
+    "To form a string using characters from <code>chars</code>, the frequency of each character in <code>chars</code> must be greater than or equal the frequency of that character in the string to be formed."
+  ]
+}

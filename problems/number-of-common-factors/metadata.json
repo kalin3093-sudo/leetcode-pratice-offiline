@@ -1,0 +1,53 @@
+{
+  "id": "number-of-common-factors",
+  "title": "2427. Number of Common Factors",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-common-factors/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "a = 12, b = 6",
+      "output": "4",
+      "explanation": "The common factors of 12 and 6 are 1, 2, 3, 6."
+    },
+    {
+      "input": "a = 25, b = 30",
+      "output": "2",
+      "explanation": "The common factors of 25 and 30 are 1, 5."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int commonFactors(int a, int b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int commonFactors(int a, int b) {\n        \n    }\n}",
+    "python": "class Solution:\n    def commonFactors(self, a: int, b: int) -> int:\n        ",
+    "typescript": "function commonFactors(a: number, b: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CommonFactors(int a, int b) {\n        \n    }\n}",
+    "go": "func commonFactors(a int, b int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn common_factors(a: i32, b: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": 12,
+      "b": 6
+    },
+    {
+      "a": 25,
+      "b": 30
+    }
+  ],
+  "functionName": "commonFactors",
+  "params": [
+    {
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each integer in range [1,1000], check if it’s divisible by both A and B."
+  ]
+}

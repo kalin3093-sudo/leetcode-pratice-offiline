@@ -1,0 +1,49 @@
+{
+  "id": "sum-of-digit-differences-of-all-pairs",
+  "title": "3153. Sum of Digit Differences of All Pairs",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [13,23,12]",
+      "output": "4",
+      "explanation": "We have the following: - The digit difference between 13 and 23 is 1. - The digit difference between 13 and 12 is 1. - The digit difference between 23 and 12 is 2. So the total sum of digit differences between all pairs of integers is 1 + 1 + 2 = 4."
+    },
+    {
+      "input": "nums = [10,10,10,10]",
+      "output": "0",
+      "explanation": "All the integers in the array are the same. So the total sum of digit differences between all pairs of integers will be 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long sumDigitDifferences(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long sumDigitDifferences(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumDigitDifferences(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function sumDigitDifferences(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long SumDigitDifferences(int[] nums) {\n        \n    }\n}",
+    "go": "func sumDigitDifferences(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_digit_differences(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[13,23,12]"
+    },
+    {
+      "nums": "[10,10,10,10]"
+    }
+  ],
+  "functionName": "sumDigitDifferences",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "You can solve the problem for digits that are on the same position separately, and then sum up all the answers.",
+    "For each position, count the number of occurences of each digit from 0 to 9 that appear on that position.",
+    "Let <code>c</code> be the number of occurences of a digit on a position, that will contribute with <code>c * (n - c)</code> to the final answer, where <code>n</code> is the number of integers in <code>nums</code>."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "vowel-consonant-score",
+  "title": "3813. Vowel-Consonant Score",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/vowel-consonant-score/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"cooear\"",
+      "output": "2",
+      "explanation": "The string s = \"cooear\" contains v = 4 vowels ('o', 'o', 'e', 'a') and c = 2 consonants ('c', 'r'). The score is floor(v / c) = floor(4 / 2) = 2."
+    },
+    {
+      "input": "s = \"axeyizou\"",
+      "output": "1",
+      "explanation": "The string s = \"axeyizou\" contains v = 5 vowels ('a', 'e', 'i', 'o', 'u') and c = 3 consonants ('x', 'y', 'z'). The score is floor(v / c) = floor(5 / 3) = 1."
+    },
+    {
+      "input": "s = \"au 123\"",
+      "output": "0",
+      "explanation": "The string s = \"au 123\" contains no consonants (c = 0), so the score is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int vowelConsonantScore(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int vowelConsonantScore(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def vowelConsonantScore(self, s: str) -> int:\n        ",
+    "typescript": "function vowelConsonantScore(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int VowelConsonantScore(string s) {\n        \n    }\n}",
+    "go": "func vowelConsonantScore(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn vowel_consonant_score(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "cooear"
+    },
+    {
+      "s": "axeyizou"
+    },
+    {
+      "s": "au 123"
+    }
+  ],
+  "functionName": "vowelConsonantScore",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate as described"
+  ]
+}

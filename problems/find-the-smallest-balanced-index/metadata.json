@@ -1,0 +1,57 @@
+{
+  "id": "find-the-smallest-balanced-index",
+  "title": "3862. Find the Smallest Balanced Index",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-smallest-balanced-index/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,2]",
+      "output": "1",
+      "explanation": "For index i = 1: Left sum = nums[0] = 2 Right product = nums[2] = 2 Since the left sum equals the right product, index 1 is balanced. No smaller index satisfies the condition, so the answer is 1."
+    },
+    {
+      "input": "nums = [2,8,2,2,5]",
+      "output": "2",
+      "explanation": "For index i = 2: Left sum = 2 + 8 = 10 Right product = 2 * 5 = 10 Since the left sum equals the right product, index 2 is balanced. No smaller index satisfies the condition, so the answer is 2."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "-1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int smallestBalancedIndex(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int smallestBalancedIndex(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestBalancedIndex(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function smallestBalancedIndex(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SmallestBalancedIndex(int[] nums) {\n        \n    }\n}",
+    "go": "func smallestBalancedIndex(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_balanced_index(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,2]"
+    },
+    {
+      "nums": "[2,8,2,2,5]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "smallestBalancedIndex",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Compute prefix sums for elements to the left of each index.",
+    "Compute suffix products for elements to the right with overflow checks.",
+    "Check each index <code>i</code> where left sum == right product.",
+    "Return the smallest such index, or <code>-1</code> if none exists."
+  ]
+}

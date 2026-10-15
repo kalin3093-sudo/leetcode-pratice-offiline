@@ -1,0 +1,49 @@
+{
+  "id": "largest-prime-from-consecutive-prime-sum",
+  "title": "3770. Largest Prime from Consecutive Prime Sum",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 20",
+      "output": "17",
+      "explanation": "The prime numbers less than or equal to n = 20 which are consecutive prime sums are: 2 = 2 5 = 2 + 3 17 = 2 + 3 + 5 + 7 The largest is 17, so it is the answer."
+    },
+    {
+      "input": "n = 2",
+      "output": "2",
+      "explanation": "The only consecutive prime sum less than or equal to 2 is 2 itself."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestPrime(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestPrime(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestPrime(self, n: int) -> int:\n        ",
+    "typescript": "function largestPrime(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestPrime(int n) {\n        \n    }\n}",
+    "go": "func largestPrime(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_prime(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 20
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "largestPrime",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Generate all prime numbers up to <code>n</code> (use sieve or trial division).",
+    "Compute consecutive sums starting from 2 until the sum exceeds <code>n</code>.",
+    "Find the largest sum that is also a prime."
+  ]
+}

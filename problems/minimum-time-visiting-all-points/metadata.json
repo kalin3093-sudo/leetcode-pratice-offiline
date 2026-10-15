@@ -1,0 +1,48 @@
+{
+  "id": "minimum-time-visiting-all-points",
+  "title": "1266. Minimum Time Visiting All Points",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/minimum-time-visiting-all-points/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "points = [[1,1],[3,4],[-1,0]]",
+      "output": "7",
+      "explanation": "One optimal path is [1,1] -> [2,2] -> [3,3] -> [3,4] -> [2,3] -> [1,2] -> [0,1] -> [-1,0] Time from [1,1] to [3,4] = 3 seconds Time from [3,4] to [-1,0] = 4 seconds Total time = 7 seconds"
+    },
+    {
+      "input": "points = [[3,2],[-2,2]]",
+      "output": "5"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minTimeToVisitAllPoints(vector<vector<int>>& points) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minTimeToVisitAllPoints(int[][] points) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minTimeToVisitAllPoints(self, points: list[list[int]]) -> int:\n        ",
+    "typescript": "function minTimeToVisitAllPoints(points: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinTimeToVisitAllPoints(int[][] points) {\n        \n    }\n}",
+    "go": "func minTimeToVisitAllPoints(points [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_time_to_visit_all_points(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "points": "[[1,1],[3,4],[-1,0]]"
+    },
+    {
+      "points": "[[3,2],[-2,2]]"
+    }
+  ],
+  "functionName": "minTimeToVisitAllPoints",
+  "params": [
+    {
+      "name": "points",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "To walk from point A to point B there will be an optimal strategy to walk ?",
+    "Advance in diagonal as possible then after that go in straight line.",
+    "Repeat the process until visiting all the points."
+  ]
+}

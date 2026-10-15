@@ -1,0 +1,55 @@
+{
+  "id": "count-partitions-with-even-sum-difference",
+  "title": "3432. Count Partitions with Even Sum Difference",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-partitions-with-even-sum-difference/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [10,10,3,7,6]",
+      "output": "4",
+      "explanation": "The 4 partitions are: [10], [10, 3, 7, 6] with a sum difference of 10 - 26 = -16, which is even. [10, 10], [3, 7, 6] with a sum difference of 20 - 16 = 4, which is even. [10, 10, 3], [7, 6] with a sum difference of 23 - 13 = 10, which is even. [10, 10, 3, 7], [6] with a sum difference of 30 - 6 = 24, which is even."
+    },
+    {
+      "input": "nums = [1,2,2]",
+      "output": "0",
+      "explanation": "No partition results in an even sum difference."
+    },
+    {
+      "input": "nums = [2,4,6,8]",
+      "output": "3",
+      "explanation": "All partitions result in an even sum difference."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countPartitions(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countPartitions(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countPartitions(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countPartitions(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountPartitions(int[] nums) {\n        \n    }\n}",
+    "go": "func countPartitions(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_partitions(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[10,10,3,7,6]"
+    },
+    {
+      "nums": "[1,2,2]"
+    },
+    {
+      "nums": "[2,4,6,8]"
+    }
+  ],
+  "functionName": "countPartitions",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If the parity of the sum is even, the partition is valid; otherwise, there is no partition."
+  ]
+}

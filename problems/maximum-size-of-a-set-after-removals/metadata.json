@@ -1,0 +1,64 @@
+{
+  "id": "maximum-size-of-a-set-after-removals",
+  "title": "3002. Maximum Size of a Set After Removals",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-size-of-a-set-after-removals/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,2,1,2], nums2 = [1,1,1,1]",
+      "output": "2",
+      "explanation": "We remove two occurences of 1 from nums1 and nums2. After the removals, the arrays become equal to nums1 = [2,2] and nums2 = [1,1]. Therefore, s = {1,2}. It can be shown that 2 is the maximum possible size of the set s after the removals."
+    },
+    {
+      "input": "nums1 = [1,2,3,4,5,6], nums2 = [2,3,2,3,2,3]",
+      "output": "5",
+      "explanation": "We remove 2, 3, and 6 from nums1, as well as 2 and two occurrences of 3 from nums2. After the removals, the arrays become equal to nums1 = [1,4,5] and nums2 = [2,3,2]. Therefore, s = {1,2,3,4,5}. It can be shown that 5 is the maximum possible size of the set s after the removals."
+    },
+    {
+      "input": "nums1 = [1,1,2,2,3,3], nums2 = [4,4,5,5,6,6]",
+      "output": "6",
+      "explanation": "We remove 1, 2, and 3 from nums1, as well as 4, 5, and 6 from nums2. After the removals, the arrays become equal to nums1 = [1,2,3] and nums2 = [4,5,6]. Therefore, s = {1,2,3,4,5,6}. It can be shown that 6 is the maximum possible size of the set s after the removals."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximumSetSize(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximumSetSize(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumSetSize(self, nums1: List[int], nums2: List[int]) -> int:\n        ",
+    "typescript": "function maximumSetSize(nums1: number[], nums2: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximumSetSize(int[] nums1, int[] nums2) {\n        \n    }\n}",
+    "go": "func maximumSetSize(nums1 []int, nums2 []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_set_size(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,2,1,2]",
+      "nums2": "[1,1,1,1]"
+    },
+    {
+      "nums1": "[1,2,3,4,5,6]",
+      "nums2": "[2,3,2,3,2,3]"
+    },
+    {
+      "nums1": "[1,1,2,2,3,3]",
+      "nums2": "[4,4,5,5,6,6]"
+    }
+  ],
+  "functionName": "maximumSetSize",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Removing <code>n / 2</code> elements from each array is the same as keeping <code>n / 2<code> elements in each array.",
+    "Think of a greedy algorithm.",
+    "For each array, we will greedily keep the elements that are only in that array. Once we run out of such elements, we will keep the elements that are common to both arrays."
+  ]
+}

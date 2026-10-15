@@ -1,0 +1,10 @@
+[
+  {
+    "wordlist": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]",
+    "queries": "[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]"
+  },
+  {
+    "wordlist": "[\"yellow\"]",
+    "queries": "[\"YellOw\"]"
+  }
+]

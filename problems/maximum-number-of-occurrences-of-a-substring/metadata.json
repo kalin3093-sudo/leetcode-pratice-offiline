@@ -1,0 +1,67 @@
+{
+  "id": "maximum-number-of-occurrences-of-a-substring",
+  "title": "1297. Maximum Number of Occurrences of a Substring",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aababcaab\", maxLetters = 2, minSize = 3, maxSize = 4",
+      "output": "2",
+      "explanation": "Substring \"aab\" has 2 occurrences in the original string. It satisfies the conditions, 2 unique letters and size 3 (between minSize and maxSize)."
+    },
+    {
+      "input": "s = \"aaaa\", maxLetters = 1, minSize = 3, maxSize = 3",
+      "output": "2",
+      "explanation": "Substring \"aaa\" occur 2 times in the string. It can overlap."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxFreq(string s, int maxLetters, int minSize, int maxSize) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxFreq(String s, int maxLetters, int minSize, int maxSize) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxFreq(self, s: str, maxLetters: int, minSize: int, maxSize: int) -> int:\n        ",
+    "typescript": "function maxFreq(s: string, maxLetters: number, minSize: number, maxSize: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxFreq(string s, int maxLetters, int minSize, int maxSize) {\n        \n    }\n}",
+    "go": "func maxFreq(s string, maxLetters int, minSize int, maxSize int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_freq(s: String, max_letters: i32, min_size: i32, max_size: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aababcaab",
+      "maxLetters": 2,
+      "minSize": 3,
+      "maxSize": 4
+    },
+    {
+      "s": "aaaa",
+      "maxLetters": 1,
+      "minSize": 3,
+      "maxSize": 3
+    }
+  ],
+  "functionName": "maxFreq",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "maxLetters",
+      "type": "int"
+    },
+    {
+      "name": "minSize",
+      "type": "int"
+    },
+    {
+      "name": "maxSize",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Check out the constraints, (maxSize <=26).",
+    "This means you can explore all substrings in O(n * 26).",
+    "Find the Maximum Number of Occurrences of a Substring with bruteforce."
+  ]
+}

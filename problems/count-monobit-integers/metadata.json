@@ -1,0 +1,47 @@
+{
+  "id": "count-monobit-integers",
+  "title": "3827. Count Monobit Integers",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-monobit-integers/",
+  "category": "bit-manipulation",
+  "examples": [
+    {
+      "input": "n = 1",
+      "output": "2",
+      "explanation": "The integers in the range [0, 1] have binary representations \"0\" and \"1\". Each representation consists of identical bits. Thus, the answer is 2."
+    },
+    {
+      "input": "n = 4",
+      "output": "3",
+      "explanation": "The integers in the range [0, 4] include binaries \"0\", \"1\", \"10\", \"11\", and \"100\". Only 0, 1 and 3 satisfy the Monobit condition. Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countMonobit(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countMonobit(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countMonobit(self, n: int) -> int:\n        ",
+    "typescript": "function countMonobit(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountMonobit(int n) {\n        \n    }\n}",
+    "go": "func countMonobit(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_monobit(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1
+    },
+    {
+      "n": 4
+    }
+  ],
+  "functionName": "countMonobit",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Go through all the integers in the range <code>[0, n]</code> and count the monobit integers"
+  ]
+}

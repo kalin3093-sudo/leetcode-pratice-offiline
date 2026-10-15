@@ -1,0 +1,52 @@
+{
+  "id": "monotone-increasing-digits",
+  "title": "738. Monotone Increasing Digits",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/monotone-increasing-digits/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 10",
+      "output": "9"
+    },
+    {
+      "input": "n = 1234",
+      "output": "1234"
+    },
+    {
+      "input": "n = 332",
+      "output": "299"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int monotoneIncreasingDigits(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int monotoneIncreasingDigits(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def monotoneIncreasingDigits(self, n: int) -> int:\n        ",
+    "typescript": "function monotoneIncreasingDigits(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MonotoneIncreasingDigits(int n) {\n        \n    }\n}",
+    "go": "func monotoneIncreasingDigits(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn monotone_increasing_digits(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 10
+    },
+    {
+      "n": 1234
+    },
+    {
+      "n": 332
+    }
+  ],
+  "functionName": "monotoneIncreasingDigits",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Build the answer digit by digit, adding the largest possible one that would make the number still less than or equal to N."
+  ]
+}

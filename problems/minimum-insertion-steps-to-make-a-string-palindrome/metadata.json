@@ -1,0 +1,56 @@
+{
+  "id": "minimum-insertion-steps-to-make-a-string-palindrome",
+  "title": "1312. Minimum Insertion Steps to Make a String Palindrome",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"zzazz\"",
+      "output": "0",
+      "explanation": "The string \"zzazz\" is already palindrome we do not need any insertions."
+    },
+    {
+      "input": "s = \"mbadm\"",
+      "output": "2",
+      "explanation": "String can be \"mbdadbm\" or \"mdbabdm\"."
+    },
+    {
+      "input": "s = \"leetcode\"",
+      "output": "5",
+      "explanation": "Inserting 5 characters the string becomes \"leetcodocteel\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minInsertions(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minInsertions(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minInsertions(self, s: str) -> int:\n        ",
+    "typescript": "function minInsertions(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinInsertions(string s) {\n        \n    }\n}",
+    "go": "func minInsertions(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_insertions(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "zzazz"
+    },
+    {
+      "s": "mbadm"
+    },
+    {
+      "s": "leetcode"
+    }
+  ],
+  "functionName": "minInsertions",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Is dynamic programming suitable for this problem ?",
+    "If we know the longest palindromic sub-sequence is x and the length of the string is n then, what is the answer to this problem? It is n - x as we need n - x insertions to make the remaining characters also palindrome."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "check-if-digits-are-equal-in-string-after-operations-i",
+  "title": "3461. Check If Digits Are Equal in String After Operations I",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"3902\"",
+      "output": "true",
+      "explanation": "Initially, s = \"3902\" First operation: (s[0] + s[1]) % 10 = (3 + 9) % 10 = 2 (s[1] + s[2]) % 10 = (9 + 0) % 10 = 9 (s[2] + s[3]) % 10 = (0 + 2) % 10 = 2 s becomes \"292\" Second operation: (s[0] + s[1]) % 10 = (2 + 9) % 10 = 1 (s[1] + s[2]) % 10 = (9 + 2) % 10 = 1 s becomes \"11\" Since the digits in \"11\" are the same, the output is true."
+    },
+    {
+      "input": "s = \"34789\"",
+      "output": "false",
+      "explanation": "Initially, s = \"34789\". After the first operation, s = \"7157\". After the second operation, s = \"862\". After the third operation, s = \"48\". Since '4' != '8', the output is false."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool hasSameDigits(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean hasSameDigits(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hasSameDigits(self, s: str) -> bool:\n        ",
+    "typescript": "function hasSameDigits(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HasSameDigits(string s) {\n        \n    }\n}",
+    "go": "func hasSameDigits(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn has_same_digits(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "3902"
+    },
+    {
+      "s": "34789"
+    }
+  ],
+  "functionName": "hasSameDigits",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Simulate the operations as described."
+  ]
+}

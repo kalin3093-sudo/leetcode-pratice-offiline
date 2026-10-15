@@ -1,0 +1,18 @@
+Given an integer array `nums` and two integers `k` and `p`, return *the number of **distinct subarrays,** which have **at most*** `k` *elements* that are *divisible by* `p`.
+
+Two arrays `nums1` and `nums2` are said to be **distinct** if:
+
+-   They are of **different** lengths, or
+-   There exists **at least** one index `i` where `nums1[i] != nums2[i]`.
+
+A **subarray** is defined as a **non-empty** contiguous sequence of elements in an array.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 200`
+-   `1 ≤ nums[i], p ≤ 200`
+-   `1 ≤ k ≤ nums.length`
+
+**Follow up:**
+
+Can you solve this problem in O(n^2) time complexity?

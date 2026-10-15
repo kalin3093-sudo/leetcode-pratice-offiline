@@ -1,0 +1,47 @@
+{
+  "id": "substrings-of-size-three-with-distinct-characters",
+  "title": "1876. Substrings of Size Three with Distinct Characters",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"xyzzaz\"",
+      "output": "1",
+      "explanation": "There are 4 substrings of size 3: \"xyz\", \"yzz\", \"zza\", and \"zaz\". The only good substring of length 3 is \"xyz\"."
+    },
+    {
+      "input": "s = \"aababcabc\"",
+      "output": "4",
+      "explanation": "There are 7 substrings of size 3: \"aab\", \"aba\", \"bab\", \"abc\", \"bca\", \"cab\", and \"abc\". The good substrings are \"abc\", \"bca\", \"cab\", and \"abc\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countGoodSubstrings(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countGoodSubstrings(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countGoodSubstrings(self, s: str) -> int:\n        ",
+    "typescript": "function countGoodSubstrings(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountGoodSubstrings(string s) {\n        \n    }\n}",
+    "go": "func countGoodSubstrings(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_good_substrings(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "xyzzaz"
+    },
+    {
+      "s": "aababcabc"
+    }
+  ],
+  "functionName": "countGoodSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try using a set to find out the number of distinct characters in a substring."
+  ]
+}

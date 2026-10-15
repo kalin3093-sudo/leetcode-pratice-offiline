@@ -1,0 +1,54 @@
+{
+  "id": "process-tasks-using-servers",
+  "title": "1882. Process Tasks Using Servers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/process-tasks-using-servers/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "servers = [3,3,2], tasks = [1,2,3,2,1,2]",
+      "output": "[2,2,0,2,1,2]",
+      "explanation": "Events in chronological order go as follows: - At second 0, task 0 is added and processed using server 2 until second 1. - At second 1, server 2 becomes free. Task 1 is added and processed using server 2 until second 3. - At second 2, task 2 is added and processed using server 0 until second 5. - At second 3, server 2 becomes free. Task 3 is added and processed using server 2 until second 5. - At second 4, task 4 is added and processed using server 1 until second 5. - At second 5, all servers become free. Task 5 is added and processed using server 2 until second 7."
+    },
+    {
+      "input": "servers = [5,1,4,3,2], tasks = [2,1,2,4,5,2,1]",
+      "output": "[1,4,1,4,1,3,2]",
+      "explanation": "Events in chronological order go as follows: - At second 0, task 0 is added and processed using server 1 until second 2. - At second 1, task 1 is added and processed using server 4 until second 2. - At second 2, servers 1 and 4 become free. Task 2 is added and processed using server 1 until second 4. - At second 3, task 3 is added and processed using server 4 until second 7. - At second 4, server 1 becomes free. Task 4 is added and processed using server 1 until second 9. - At second 5, task 5 is added and processed using server 3 until second 7. - At second 6, task 6 is added and processed using server 2 until second 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> assignTasks(vector<int>& servers, vector<int>& tasks) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] assignTasks(int[] servers, int[] tasks) {\n        \n    }\n}",
+    "python": "class Solution:\n    def assignTasks(self, servers: list[int], tasks: list[int]) -> list[int]:\n        ",
+    "typescript": "function assignTasks(servers: number[], tasks: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] AssignTasks(int[] servers, int[] tasks) {\n        \n    }\n}",
+    "go": "func assignTasks(servers []int, tasks []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn assign_tasks(servers: Vec<i32>, tasks: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "servers": "[3,3,2]",
+      "tasks": "[1,2,3,2,1,2]"
+    },
+    {
+      "servers": "[5,1,4,3,2]",
+      "tasks": "[2,1,2,4,5,2,1]"
+    }
+  ],
+  "functionName": "assignTasks",
+  "params": [
+    {
+      "name": "servers",
+      "type": "int_array"
+    },
+    {
+      "name": "tasks",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "You can maintain a Heap of available Servers and a Heap of unavailable servers",
+    "Note that the tasks will be processed in the input order so you just need to find the x-th server that will be available according to the rules"
+  ]
+}

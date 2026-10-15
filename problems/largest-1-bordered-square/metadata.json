@@ -1,0 +1,46 @@
+{
+  "id": "largest-1-bordered-square",
+  "title": "1139. Largest 1-Bordered Square",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-1-bordered-square/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,1,1],[1,0,1],[1,1,1]]",
+      "output": "9"
+    },
+    {
+      "input": "grid = [[1,1,0,0]]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largest1BorderedSquare(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largest1BorderedSquare(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largest1BorderedSquare(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function largest1BorderedSquare(grid: number[][]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int Largest1BorderedSquare(int[][] grid) {\n        \n    }\n}",
+    "go": "func largest1BorderedSquare(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest1_bordered_square(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,1,1],[1,0,1],[1,1,1]]"
+    },
+    {
+      "grid": "[[1,1,0,0]]"
+    }
+  ],
+  "functionName": "largest1BorderedSquare",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each square, know how many ones are up, left, down, and right of this square. You can find it in O(N^2) using dynamic programming.",
+    "Now for each square ( O(N^3) ), we can evaluate whether that square is 1-bordered in O(1)."
+  ]
+}

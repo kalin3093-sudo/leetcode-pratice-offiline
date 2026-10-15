@@ -1,0 +1,67 @@
+{
+  "id": "time-needed-to-inform-all-employees",
+  "title": "1376. Time Needed to Inform All Employees",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/time-needed-to-inform-all-employees/",
+  "category": "tree",
+  "examples": [
+    {
+      "input": "n = 1, headID = 0, manager = [-1], informTime = [0]",
+      "output": "0",
+      "explanation": "The head of the company is the only employee in the company."
+    },
+    {
+      "input": "n = 6, headID = 2, manager = [2,2,-1,2,2,2], informTime = [0,0,1,0,0,0]",
+      "output": "1",
+      "explanation": "The head of the company with id = 2 is the direct manager of all the employees in the company and needs 1 minute to inform them all. The tree structure of the employees in the company is shown."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numOfMinutes(int n, int headID, vector<int>& manager, vector<int>& informTime) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numOfMinutes(self, n: int, headID: int, manager: list[int], informTime: list[int]) -> int:\n        ",
+    "typescript": "function numOfMinutes(n: number, headID: number, manager: number[], informTime: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumOfMinutes(int n, int headID, int[] manager, int[] informTime) {\n        \n    }\n}",
+    "go": "func numOfMinutes(n int, headID int, manager []int, informTime []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_of_minutes(n: i32, head_id: i32, manager: Vec<i32>, inform_time: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1,
+      "headID": 0,
+      "manager": "[-1]",
+      "informTime": "[0]"
+    },
+    {
+      "n": 6,
+      "headID": 2,
+      "manager": "[2,2,-1,2,2,2]",
+      "informTime": "[0,0,1,0,0,0]"
+    }
+  ],
+  "functionName": "numOfMinutes",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "headID",
+      "type": "int"
+    },
+    {
+      "name": "manager",
+      "type": "int_array"
+    },
+    {
+      "name": "informTime",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The company can be represented as a tree, headID is always the root.",
+    "Store for each node the time needed to be informed of the news.",
+    "Answer is the max time a leaf node needs to be informed."
+  ]
+}

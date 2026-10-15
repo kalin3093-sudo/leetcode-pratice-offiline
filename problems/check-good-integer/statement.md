@@ -1,0 +1,11 @@
+You are given a positive integer `n`.
+
+Let `digitSum` be the sum of the digits of `n`, and let `squareSum` be the sum of the squares of the digits of `n`.
+
+An integer is called **good** if `squareSum - digitSum ≥ 50`.
+
+Return `true` if `n` is good. Otherwise, return `false`.
+
+**Constraints:**
+
+-   `1 ≤ n ≤ 10^9`

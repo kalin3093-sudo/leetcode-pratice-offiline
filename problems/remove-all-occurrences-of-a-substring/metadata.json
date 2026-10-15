@@ -1,0 +1,54 @@
+{
+  "id": "remove-all-occurrences-of-a-substring",
+  "title": "1910. Remove All Occurrences of a Substring",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/remove-all-occurrences-of-a-substring/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"daabcbaabcbc\", part = \"abc\"",
+      "output": "\"dab\"",
+      "explanation": "The following operations are done: - s = \"daabcbaabcbc\", remove \"abc\" starting at index 2, so s = \"dabaabcbc\". - s = \"dabaabcbc\", remove \"abc\" starting at index 4, so s = \"dababc\". - s = \"dababc\", remove \"abc\" starting at index 3, so s = \"dab\". Now s has no occurrences of \"abc\"."
+    },
+    {
+      "input": "s = \"axxxxyyyyb\", part = \"xy\"",
+      "output": "\"ab\"",
+      "explanation": "The following operations are done: - s = \"axxxxyyyyb\", remove \"xy\" starting at index 4 so s = \"axxxyyyb\". - s = \"axxxyyyb\", remove \"xy\" starting at index 3 so s = \"axxyyb\". - s = \"axxyyb\", remove \"xy\" starting at index 2 so s = \"axyb\". - s = \"axyb\", remove \"xy\" starting at index 1 so s = \"ab\". Now s has no occurrences of \"xy\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string removeOccurrences(string s, string part) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String removeOccurrences(String s, String part) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removeOccurrences(self, s: str, part: str) -> str:\n        ",
+    "typescript": "function removeOccurrences(s: string, part: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RemoveOccurrences(string s, string part) {\n        \n    }\n}",
+    "go": "func removeOccurrences(s string, part string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_occurrences(s: String, part: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "daabcbaabcbc",
+      "part": "abc"
+    },
+    {
+      "s": "axxxxyyyyb",
+      "part": "xy"
+    }
+  ],
+  "functionName": "removeOccurrences",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "part",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Note that a new occurrence of pattern can appear if you remove an old one, For example, s = \"ababcc\" and pattern = \"abc\".",
+    "You can maintain a stack of characters and if the last character of the pattern size in the stack match the pattern remove them"
+  ]
+}

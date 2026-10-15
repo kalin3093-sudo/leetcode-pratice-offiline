@@ -1,0 +1,66 @@
+{
+  "id": "check-if-move-is-legal",
+  "title": "1958. Check if Move is Legal",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/check-if-move-is-legal/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "board = [[\".\",\".\",\".\",\"B\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"],[\"W\",\"B\",\"B\",\".\",\"W\",\"W\",\"W\",\"B\"],[\".\",\".\",\".\",\"B\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"B\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"]], rMove = 4, cMove = 3, color = \"B\"",
+      "output": "true",
+      "explanation": "'.', 'W', and 'B' are represented by the colors blue, white, and black respectively, and cell (rMove, cMove) is marked with an 'X'. The two good lines with the chosen cell as an endpoint are annotated above with the red rectangles."
+    },
+    {
+      "input": "board = [[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\"B\",\".\",\".\",\"W\",\".\",\".\",\".\"],[\".\",\".\",\"W\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\"B\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\"B\",\"W\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\"W\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\"B\"]], rMove = 4, cMove = 4, color = \"W\"",
+      "output": "false",
+      "explanation": "While there are good lines with the chosen cell as a middle cell, there are no good lines with the chosen cell as an endpoint."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkMove(vector<vector<char>>& board, int rMove, int cMove, char color) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkMove(char[][] board, int rMove, int cMove, char color) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkMove(self, board: list[list[str]], rMove: int, cMove: int, color: str) -> bool:\n        ",
+    "typescript": "function checkMove(board: string[][], rMove: number, cMove: number, color: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckMove(char[][] board, int rMove, int cMove, char color) {\n        \n    }\n}",
+    "go": "func checkMove(board [][]byte, rMove int, cMove int, color byte) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_move(board: Vec<Vec<char>>, r_move: i32, c_move: i32, color: char) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "board": "[[\".\",\".\",\".\",\"B\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"],[\"W\",\"B\",\"B\",\".\",\"W\",\"W\",\"W\",\"B\"],[\".\",\".\",\".\",\"B\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"B\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\".\",\".\",\".\",\".\"]]",
+      "rMove": 4,
+      "cMove": 3,
+      "color": "B"
+    },
+    {
+      "board": "[[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\"B\",\".\",\".\",\"W\",\".\",\".\",\".\"],[\".\",\".\",\"W\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"W\",\"B\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\"B\",\"W\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\"W\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\"B\"]]",
+      "rMove": 4,
+      "cMove": 4,
+      "color": "W"
+    }
+  ],
+  "functionName": "checkMove",
+  "params": [
+    {
+      "name": "board",
+      "type": "char_array_2d"
+    },
+    {
+      "name": "rMove",
+      "type": "int"
+    },
+    {
+      "name": "cMove",
+      "type": "int"
+    },
+    {
+      "name": "color",
+      "type": "char"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "For each line starting at the given cell check if it's a good line",
+    "To do that iterate over all directions horizontal, vertical, and diagonals then check good lines naively"
+  ]
+}

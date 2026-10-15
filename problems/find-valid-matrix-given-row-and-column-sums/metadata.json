@@ -1,0 +1,52 @@
+{
+  "id": "find-valid-matrix-given-row-and-column-sums",
+  "title": "1605. Find Valid Matrix Given Row and Column Sums",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rowSum = [3,8], colSum = [4,7]",
+      "output": "[[3,0],[1,7]]",
+      "explanation": "0th row: 3 + 0 = 3 == rowSum[0] 1st row: 1 + 7 = 8 == rowSum[1] 0th column: 3 + 1 = 4 == colSum[0] 1st column: 0 + 7 = 7 == colSum[1] The row and column sums match, and all matrix elements are non-negative. Another possible matrix is: [[1,2], [3,5]]"
+    },
+    {
+      "input": "rowSum = [5,7,10], colSum = [8,6,8]",
+      "output": "[[0,5,0],[6,1,0],[2,0,8]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> restoreMatrix(vector<int>& rowSum, vector<int>& colSum) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] restoreMatrix(int[] rowSum, int[] colSum) {\n        \n    }\n}",
+    "python": "class Solution:\n    def restoreMatrix(self, rowSum: list[int], colSum: list[int]) -> list[list[int]]:\n        ",
+    "typescript": "function restoreMatrix(rowSum: number[], colSum: number[]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] RestoreMatrix(int[] rowSum, int[] colSum) {\n        \n    }\n}",
+    "go": "func restoreMatrix(rowSum []int, colSum []int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn restore_matrix(row_sum: Vec<i32>, col_sum: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rowSum": "[3,8]",
+      "colSum": "[4,7]"
+    },
+    {
+      "rowSum": "[5,7,10]",
+      "colSum": "[8,6,8]"
+    }
+  ],
+  "functionName": "restoreMatrix",
+  "params": [
+    {
+      "name": "rowSum",
+      "type": "int_array"
+    },
+    {
+      "name": "colSum",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Find the smallest rowSum or colSum, and let it be x. Place that number in the grid, and subtract x from rowSum and colSum. Continue until all the sums are satisfied."
+  ]
+}

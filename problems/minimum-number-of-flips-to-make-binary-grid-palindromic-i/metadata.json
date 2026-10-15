@@ -1,0 +1,55 @@
+{
+  "id": "minimum-number-of-flips-to-make-binary-grid-palindromic-i",
+  "title": "3239. Minimum Number of Flips to Make Binary Grid Palindromic I",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[1,0,0],[0,0,0],[0,0,1]]",
+      "output": "2",
+      "explanation": "Flipping the highlighted cells makes all the rows palindromic."
+    },
+    {
+      "input": "grid = [[0,1],[0,1],[0,0]]",
+      "output": "1",
+      "explanation": "Flipping the highlighted cell makes all the columns palindromic."
+    },
+    {
+      "input": "grid = [[1],[0]]",
+      "output": "0",
+      "explanation": "All rows are already palindromic."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minFlips(vector<vector<int>>& grid) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minFlips(int[][] grid) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minFlips(self, grid: List[List[int]]) -> int:\n        ",
+    "typescript": "function minFlips(grid: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinFlips(int[][] grid) {\n        \n    }\n}",
+    "go": "func minFlips(grid [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_flips(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[1,0,0],[0,0,0],[0,0,1]]"
+    },
+    {
+      "grid": "[[0,1],[0,1],[0,0]]"
+    },
+    {
+      "grid": "[[1],[0]]"
+    }
+  ],
+  "functionName": "minFlips",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "We need to perform the operation only when the equivalent element of <code>i</code> from the back is not equal."
+  ]
+}

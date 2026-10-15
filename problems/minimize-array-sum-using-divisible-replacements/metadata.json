@@ -1,0 +1,53 @@
+{
+  "id": "minimize-array-sum-using-divisible-replacements",
+  "title": "3927. Minimize Array Sum Using Divisible Replacements",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-array-sum-using-divisible-replacements/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,6,2]",
+      "output": "7",
+      "explanation": "Choose a = 1, b = 2, where nums[a] = 6 and nums[b] = 2. Since 6 % 2 == 0, replace nums[1] with nums[2]. The array becomes [3, 2, 2]. No further operation reduces the sum. Thus, the final sum is 3 + 2 + 2 = 7."
+    },
+    {
+      "input": "nums = [4,2,8,3]",
+      "output": "9",
+      "explanation": "Choose a = 0, b = 1, where nums[a] = 4 and nums[b] = 2. Since 4 % 2 == 0, replace nums[0] with nums[1]. Choose a = 2, b = 1, where nums[a] = 8 and nums[b] = 2. Since 8 % 2 == 0, replace nums[2] with nums[1]. The array becomes [2, 2, 2, 3]. No further operation reduces the sum. Thus, the final sum is 2 + 2 + 2 + 3 = 9."
+    },
+    {
+      "input": "nums = [7,5,9]",
+      "output": "21",
+      "explanation": "There is no pair (a, b) such that nums[a] % nums[b] == 0. Hence, no operation can be performed. The sum remains 7 + 5 + 9 = 21."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minArraySum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minArraySum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minArraySum(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minArraySum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinArraySum(int[] nums) {\n        \n    }\n}",
+    "go": "func minArraySum(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_array_sum(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,6,2]"
+    },
+    {
+      "nums": "[4,2,8,3]"
+    },
+    {
+      "nums": "[7,5,9]"
+    }
+  ],
+  "functionName": "minArraySum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": []
+}

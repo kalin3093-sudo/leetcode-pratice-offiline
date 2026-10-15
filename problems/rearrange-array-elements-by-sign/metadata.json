@@ -1,0 +1,48 @@
+{
+  "id": "rearrange-array-elements-by-sign",
+  "title": "2149. Rearrange Array Elements by Sign",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/rearrange-array-elements-by-sign/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,1,-2,-5,2,-4]",
+      "output": "[3,-2,1,-5,2,-4]",
+      "explanation": "The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4]. The only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4]. Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions."
+    },
+    {
+      "input": "nums = [-1,1]",
+      "output": "[1,-1]",
+      "explanation": "1 is the only positive integer and -1 the only negative integer in nums. So nums is rearranged to [1,-1]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> rearrangeArray(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] rearrangeArray(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def rearrangeArray(self, nums: list[int]) -> list[int]:\n        ",
+    "typescript": "function rearrangeArray(nums: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] RearrangeArray(int[] nums) {\n        \n    }\n}",
+    "go": "func rearrangeArray(nums []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn rearrange_array(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,1,-2,-5,2,-4]"
+    },
+    {
+      "nums": "[-1,1]"
+    }
+  ],
+  "functionName": "rearrangeArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Divide the array into two parts- one comprising of only positive integers and the other of negative integers.",
+    "Merge the two parts to get the resultant array."
+  ]
+}

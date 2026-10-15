@@ -1,0 +1,56 @@
+{
+  "id": "minimum-penalty-for-a-shop",
+  "title": "2483. Minimum Penalty for a Shop",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-penalty-for-a-shop/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "customers = \"YYNY\"",
+      "output": "2",
+      "explanation": "- Closing the shop at the 0th hour incurs in 1+1+0+1 = 3 penalty. - Closing the shop at the 1st hour incurs in 0+1+0+1 = 2 penalty. - Closing the shop at the 2nd hour incurs in 0+0+0+1 = 1 penalty. - Closing the shop at the 3rd hour incurs in 0+0+1+1 = 2 penalty. - Closing the shop at the 4th hour incurs in 0+0+1+0 = 1 penalty. Closing the shop at 2nd or 4th hour gives a minimum penalty. Since 2 is earlier, the optimal closing time is 2."
+    },
+    {
+      "input": "customers = \"NNNNN\"",
+      "output": "0",
+      "explanation": "It is best to close the shop at the 0th hour as no customers arrive."
+    },
+    {
+      "input": "customers = \"YYYY\"",
+      "output": "4",
+      "explanation": "It is best to close the shop at the 4th hour as customers arrive at each hour."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int bestClosingTime(string customers) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int bestClosingTime(String customers) {\n        \n    }\n}",
+    "python": "class Solution:\n    def bestClosingTime(self, customers: str) -> int:\n        ",
+    "typescript": "function bestClosingTime(customers: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BestClosingTime(string customers) {\n        \n    }\n}",
+    "go": "func bestClosingTime(customers string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn best_closing_time(customers: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "customers": "YYNY"
+    },
+    {
+      "customers": "NNNNN"
+    },
+    {
+      "customers": "YYYY"
+    }
+  ],
+  "functionName": "bestClosingTime",
+  "params": [
+    {
+      "name": "customers",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "At any index, the penalty is the sum of prefix count of ‘N’ and suffix count of ‘Y’.",
+    "Enumerate all indices and find the minimum such value."
+  ]
+}

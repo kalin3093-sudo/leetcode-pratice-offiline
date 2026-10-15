@@ -1,0 +1,14 @@
+[
+  {
+    "words": "[\"leet\",\"code\"]",
+    "x": "e"
+  },
+  {
+    "words": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]",
+    "x": "a"
+  },
+  {
+    "words": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]",
+    "x": "z"
+  }
+]

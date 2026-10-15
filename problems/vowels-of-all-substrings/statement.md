@@ -1,0 +1,10 @@
+Given a string `word`, return *the **sum of the number of vowels** (*`'a'`, `'e'`*,* `'i'`*,* `'o'`*, and* `'u'`*)* *in every substring of* `word`.
+
+A **substring** is a contiguous (non-empty) sequence of characters within a string.
+
+**Note:** Due to the large constraints, the answer may not fit in a signed 32-bit integer. Please be careful during the calculations.
+
+**Constraints:**
+
+-   `1 ≤ word.length ≤ 10^5`
+-   `word` consists of lowercase English letters.

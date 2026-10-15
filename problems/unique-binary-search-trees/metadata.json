@@ -1,0 +1,43 @@
+{
+  "id": "unique-binary-search-trees",
+  "title": "96. Unique Binary Search Trees",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/unique-binary-search-trees/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "5"
+    },
+    {
+      "input": "n = 1",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numTrees(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numTrees(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numTrees(self, n: int) -> int:\n        ",
+    "typescript": "function numTrees(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumTrees(int n) {\n        \n    }\n}",
+    "go": "func numTrees(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_trees(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3
+    },
+    {
+      "n": 1
+    }
+  ],
+  "functionName": "numTrees",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

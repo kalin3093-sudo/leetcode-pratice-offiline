@@ -1,0 +1,57 @@
+{
+  "id": "maximize-fixed-points-after-deletions",
+  "title": "3920. Maximize Fixed Points After Deletions",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-fixed-points-after-deletions/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [0,2,1]",
+      "output": "2",
+      "explanation": "Delete nums[1] = 2. The array becomes [0, 1]. Now, nums[0] = 0 and nums[1] = 1, so both indices are fixed points. Thus, the answer is 2."
+    },
+    {
+      "input": "nums = [3,1,2]",
+      "output": "2",
+      "explanation": "Do not delete any elements. The array remains [3, 1, 2]. Here, nums[1] = 1 and nums[2] = 2, so these indices are fixed points. Thus, the answer is 2."
+    },
+    {
+      "input": "nums = [1,0,1,2]",
+      "output": "3",
+      "explanation": "Delete nums[0] = 1. The array becomes [0, 1, 2]. Now, nums[0] = 0, nums[1] = 1, and nums[2] = 2, so all indices are fixed points. Thus, the answer is 3."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxFixedPoints(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxFixedPoints(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxFixedPoints(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function maxFixedPoints(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxFixedPoints(int[] nums) {\n        \n    }\n}",
+    "go": "func maxFixedPoints(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_fixed_points(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[0,2,1]"
+    },
+    {
+      "nums": "[3,1,2]"
+    },
+    {
+      "nums": "[1,0,1,2]"
+    }
+  ],
+  "functionName": "maxFixedPoints",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "An element can become a fixed point only if <code>i >= nums[i]</code>.",
+    "Two indices <code>i</code> and <code>j</code> can both be fixed points if they satisfy the first condition and <code>i - nums[i] < j - nums[j]</code>.",
+    "Find the longest possible increasing subsequence from those indices."
+  ]
+}

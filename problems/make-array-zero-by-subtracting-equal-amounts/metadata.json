@@ -1,0 +1,49 @@
+{
+  "id": "make-array-zero-by-subtracting-equal-amounts",
+  "title": "2357. Make Array Zero by Subtracting Equal Amounts",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,5,0,3,5]",
+      "output": "3",
+      "explanation": "In the first operation, choose x = 1. Now, nums = [0,4,0,2,4]. In the second operation, choose x = 2. Now, nums = [0,2,0,0,2]. In the third operation, choose x = 2. Now, nums = [0,0,0,0,0]."
+    },
+    {
+      "input": "nums = [0]",
+      "output": "0",
+      "explanation": "Each element in nums is already 0 so no operations are needed."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperations(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperations(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumOperations(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function minimumOperations(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperations(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumOperations(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,5,0,3,5]"
+    },
+    {
+      "nums": "[0]"
+    }
+  ],
+  "functionName": "minimumOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "It is always best to set x as the smallest non-zero element in nums.",
+    "Elements with the same value will always take the same number of operations to become 0. Contrarily, elements with different values will always take a different number of operations to become 0.",
+    "The answer is the number of unique non-zero numbers in nums."
+  ]
+}

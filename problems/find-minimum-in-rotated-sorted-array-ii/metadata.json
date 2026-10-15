@@ -1,0 +1,43 @@
+{
+  "id": "find-minimum-in-rotated-sorted-array-ii",
+  "title": "154. Find Minimum in Rotated Sorted Array II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,5]",
+      "output": "1"
+    },
+    {
+      "input": "nums = [2,2,2,0,1]",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMin(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMin(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMin(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function findMin(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMin(int[] nums) {\n        \n    }\n}",
+    "go": "func findMin(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_min(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,5]"
+    },
+    {
+      "nums": "[2,2,2,0,1]"
+    }
+  ],
+  "functionName": "findMin",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

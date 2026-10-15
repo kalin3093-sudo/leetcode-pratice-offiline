@@ -1,0 +1,48 @@
+{
+  "id": "egg-drop-with-2-eggs-and-n-floors",
+  "title": "1884. Egg Drop With 2 Eggs and N Floors",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "2",
+      "explanation": "We can drop the first egg from floor 1 and the second egg from floor 2. If the first egg breaks, we know that f = 0. If the second egg breaks but the first egg didn't, we know that f = 1. Otherwise, if both eggs survive, we know that f = 2."
+    },
+    {
+      "input": "n = 100",
+      "output": "14",
+      "explanation": "One optimal strategy is: - Drop the 1st egg at floor 9. If it breaks, we know f is between 0 and 8. Drop the 2nd egg starting from floor 1 and going up one at a time to find f within 8 more drops. Total drops is 1 + 8 = 9. - If the 1st egg does not break, drop the 1st egg again at floor 22. If it breaks, we know f is between 9 and 21. Drop the 2nd egg starting from floor 10 and going up one at a time to find f within 12 more drops. Total drops is 2 + 12 = 14. - If the 1st egg does not break again, follow a similar process dropping the 1st egg from floors 34, 45, 55, 64, 72, 79, 85, 90, 94, 97, 99, and 100. Regardless of the outcome, it takes at most 14 drops to determine f."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int twoEggDrop(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int twoEggDrop(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def twoEggDrop(self, n: int) -> int:\n        ",
+    "typescript": "function twoEggDrop(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TwoEggDrop(int n) {\n        \n    }\n}",
+    "go": "func twoEggDrop(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn two_egg_drop(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 2
+    },
+    {
+      "n": 100
+    }
+  ],
+  "functionName": "twoEggDrop",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Is it really optimal to always drop the egg on the middle floor for each move?",
+    "Can we create states based on the number of unbroken eggs and floors to build our solution?"
+  ]
+}

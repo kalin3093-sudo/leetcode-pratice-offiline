@@ -1,0 +1,58 @@
+{
+  "id": "maximum-twin-sum-of-a-linked-list",
+  "title": "2130. Maximum Twin Sum of a Linked List",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+  "category": "linked-list",
+  "examples": [
+    {
+      "input": "head = [5,4,2,1]",
+      "output": "6",
+      "explanation": "Nodes 0 and 1 are the twins of nodes 3 and 2, respectively. All have twin sum = 6. There are no other nodes with twins in the linked list. Thus, the maximum twin sum of the linked list is 6."
+    },
+    {
+      "input": "head = [4,2,2,3]",
+      "output": "7",
+      "explanation": "The nodes with twins present in this linked list are: - Node 0 is the twin of node 3 having a twin sum of 4 + 3 = 7. - Node 1 is the twin of node 2 having a twin sum of 2 + 2 = 4. Thus, the maximum twin sum of the linked list is max(7, 4) = 7."
+    },
+    {
+      "input": "head = [1,100000]",
+      "output": "100001",
+      "explanation": "There is only one node with a twin in the linked list having twin sum of 1 + 100000 = 100001."
+    }
+  ],
+  "starterCode": {
+    "cpp": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    int pairSum(ListNode* head) {\n        \n    }\n};",
+    "java": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public int pairSum(ListNode head) {\n        \n    }\n}",
+    "python": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def pairSum(self, head: ListNode | None) -> int:\n        ",
+    "typescript": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *     val: number\n *     next: ListNode | null\n *     constructor(val?: number, next?: ListNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.next = (next===undefined ? null : next)\n *     }\n * }\n */\n\nfunction pairSum(head: ListNode | null): number {\n    \n};",
+    "csharp": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int val=0, ListNode next=null) {\n *         this.val = val;\n *         this.next = next;\n *     }\n * }\n */\npublic class Solution {\n    public int PairSum(ListNode head) {\n        \n    }\n}",
+    "go": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc pairSum(head *ListNode) int {\n    \n}",
+    "rust": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn pair_sum(head: Option<Box<ListNode>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "head": "[5,4,2,1]"
+    },
+    {
+      "head": "[4,2,2,3]"
+    },
+    {
+      "head": "[1,100000]"
+    }
+  ],
+  "functionName": "pairSum",
+  "params": [
+    {
+      "name": "head",
+      "type": "list_node"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "How can \"reversing\" a part of the linked list help find the answer?",
+    "We know that the nodes of the first half are twins of nodes in the second half, so try dividing the linked list in half and reverse the second half.",
+    "How can two pointers be used to find every twin sum optimally?",
+    "Use two different pointers pointing to the first nodes of the two halves of the linked list. The second pointer will point to the first node of the reversed half, which is the (n-1-i)th node in the original linked list. By moving both pointers forward at the same time, we find all twin sums."
+  ]
+}

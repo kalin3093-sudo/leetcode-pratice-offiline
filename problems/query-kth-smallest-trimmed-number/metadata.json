@@ -1,0 +1,53 @@
+{
+  "id": "query-kth-smallest-trimmed-number",
+  "title": "2343. Query Kth Smallest Trimmed Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/query-kth-smallest-trimmed-number/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [\"102\",\"473\",\"251\",\"814\"], queries = [[1,1],[2,3],[4,2],[1,2]]",
+      "output": "[2,2,1,0]",
+      "explanation": "1. After trimming to the last digit, nums = [\"2\",\"3\",\"1\",\"4\"]. The smallest number is 1 at index 2. 2. Trimmed to the last 3 digits, nums is unchanged. The 2nd smallest number is 251 at index 2. 3. Trimmed to the last 2 digits, nums = [\"02\",\"73\",\"51\",\"14\"]. The 4th smallest number is 73. 4. Trimmed to the last 2 digits, the smallest number is 2 at index 0. Note that the trimmed number \"02\" is evaluated as 2."
+    },
+    {
+      "input": "nums = [\"24\",\"37\",\"96\",\"04\"], queries = [[2,1],[2,2]]",
+      "output": "[3,0]",
+      "explanation": "1. Trimmed to the last digit, nums = [\"4\",\"7\",\"6\",\"4\"]. The 2nd smallest number is 4 at index 3. There are two occurrences of 4, but the one at index 0 is considered smaller than the one at index 3. 2. Trimmed to the last 2 digits, nums is unchanged. The 2nd smallest number is 24."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> smallestTrimmedNumbers(vector<string>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] smallestTrimmedNumbers(String[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def smallestTrimmedNumbers(self, nums: list[str], queries: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function smallestTrimmedNumbers(nums: string[], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] SmallestTrimmedNumbers(string[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func smallestTrimmedNumbers(nums []string, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn smallest_trimmed_numbers(nums: Vec<String>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[\"102\",\"473\",\"251\",\"814\"]",
+      "queries": "[[1,1],[2,3],[4,2],[1,2]]"
+    },
+    {
+      "nums": "[\"24\",\"37\",\"96\",\"04\"]",
+      "queries": "[[2,1],[2,2]]"
+    }
+  ],
+  "functionName": "smallestTrimmedNumbers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "string_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Run a simulation to follow the requirement of each query."
+  ]
+}

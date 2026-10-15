@@ -1,0 +1,47 @@
+{
+  "id": "maximum-number-of-operations-to-move-ones-to-the-end",
+  "title": "3228. Maximum Number of Operations to Move Ones to the End",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"1001101\"",
+      "output": "4",
+      "explanation": "We can perform the following operations: Choose index i = 0. The resulting string is s = \"0011101\". Choose index i = 4. The resulting string is s = \"0011011\". Choose index i = 3. The resulting string is s = \"0010111\". Choose index i = 2. The resulting string is s = \"0001111\"."
+    },
+    {
+      "input": "s = \"00111\"",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxOperations(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxOperations(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxOperations(self, s: str) -> int:\n        ",
+    "typescript": "function maxOperations(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxOperations(string s) {\n        \n    }\n}",
+    "go": "func maxOperations(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_operations(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "1001101"
+    },
+    {
+      "s": "00111"
+    }
+  ],
+  "functionName": "maxOperations",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "It is optimal to perform the operation on the lowest index possible each time.",
+    "Traverse the string from left to right and perform the operation every time it is possible."
+  ]
+}

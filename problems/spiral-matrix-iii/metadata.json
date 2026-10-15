@@ -1,0 +1,61 @@
+{
+  "id": "spiral-matrix-iii",
+  "title": "885. Spiral Matrix III",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/spiral-matrix-iii/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "rows = 1, cols = 4, rStart = 0, cStart = 0",
+      "output": "[[0,0],[0,1],[0,2],[0,3]]"
+    },
+    {
+      "input": "rows = 5, cols = 6, rStart = 1, cStart = 4",
+      "output": "[[1,4],[1,5],[2,5],[2,4],[2,3],[1,3],[0,3],[0,4],[0,5],[3,5],[3,4],[3,3],[3,2],[2,2],[1,2],[0,2],[4,5],[4,4],[4,3],[4,2],[4,1],[3,1],[2,1],[1,1],[0,1],[4,0],[3,0],[2,0],[1,0],[0,0]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> spiralMatrixIII(int rows, int cols, int rStart, int cStart) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {\n        \n    }\n}",
+    "python": "class Solution:\n    def spiralMatrixIII(self, rows: int, cols: int, rStart: int, cStart: int) -> list[list[int]]:\n        ",
+    "typescript": "function spiralMatrixIII(rows: number, cols: number, rStart: number, cStart: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] SpiralMatrixIII(int rows, int cols, int rStart, int cStart) {\n        \n    }\n}",
+    "go": "func spiralMatrixIII(rows int, cols int, rStart int, cStart int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn spiral_matrix_iii(rows: i32, cols: i32, r_start: i32, c_start: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rows": 1,
+      "cols": 4,
+      "rStart": 0,
+      "cStart": 0
+    },
+    {
+      "rows": 5,
+      "cols": 6,
+      "rStart": 1,
+      "cStart": 4
+    }
+  ],
+  "functionName": "spiralMatrixIII",
+  "params": [
+    {
+      "name": "rows",
+      "type": "int"
+    },
+    {
+      "name": "cols",
+      "type": "int"
+    },
+    {
+      "name": "rStart",
+      "type": "int"
+    },
+    {
+      "name": "cStart",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": []
+}

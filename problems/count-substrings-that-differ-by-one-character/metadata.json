@@ -1,0 +1,54 @@
+{
+  "id": "count-substrings-that-differ-by-one-character",
+  "title": "1638. Count Substrings That Differ by One Character",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-substrings-that-differ-by-one-character/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aba\", t = \"baba\"",
+      "output": "6",
+      "explanation": "The following are the pairs of substrings from s and t that differ by exactly 1 character: (\"aba\", \"baba\") (\"aba\", \"baba\") (\"aba\", \"baba\") (\"aba\", \"baba\") (\"aba\", \"baba\") (\"aba\", \"baba\") The underlined portions are the substrings that are chosen from s and t."
+    },
+    {
+      "input": "s = \"ab\", t = \"bb\"",
+      "output": "3",
+      "explanation": "The following are the pairs of substrings from s and t that differ by 1 character: (\"ab\", \"bb\") (\"ab\", \"bb\") (\"ab\", \"bb\") The underlined portions are the substrings that are chosen from s and t."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSubstrings(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSubstrings(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSubstrings(self, s: str, t: str) -> int:\n        ",
+    "typescript": "function countSubstrings(s: string, t: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSubstrings(string s, string t) {\n        \n    }\n}",
+    "go": "func countSubstrings(s string, t string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_substrings(s: String, t: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aba",
+      "t": "baba"
+    },
+    {
+      "s": "ab",
+      "t": "bb"
+    }
+  ],
+  "functionName": "countSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Take every substring of s, change a character, and see how many substrings of t match that substring.",
+    "Use a Trie to store all substrings of t as a dictionary."
+  ]
+}

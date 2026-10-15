@@ -1,0 +1,49 @@
+{
+  "id": "count-increasing-quadruplets",
+  "title": "2552. Count Increasing Quadruplets",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-increasing-quadruplets/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,3,2,4,5]",
+      "output": "2",
+      "explanation": "- When i = 0, j = 1, k = 2, and l = 3, nums[i] < nums[k] < nums[j] < nums[l]. - When i = 0, j = 1, k = 2, and l = 4, nums[i] < nums[k] < nums[j] < nums[l]. There are no other quadruplets, so we return 2."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "0",
+      "explanation": "There exists only one quadruplet with i = 0, j = 1, k = 2, l = 3, but since nums[j] < nums[k], we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long countQuadruplets(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long countQuadruplets(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countQuadruplets(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countQuadruplets(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CountQuadruplets(int[] nums) {\n        \n    }\n}",
+    "go": "func countQuadruplets(nums []int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_quadruplets(nums: Vec<i32>) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,3,2,4,5]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "countQuadruplets",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Can you loop over all possible (j, k) and find the answer?",
+    "We can pre-compute all possible (i, j) and (k, l) and store them in 2 matrices.",
+    "The answer will the sum of prefix[j][k] * suffix[k][j]."
+  ]
+}

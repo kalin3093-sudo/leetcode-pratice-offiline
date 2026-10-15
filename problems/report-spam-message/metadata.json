@@ -1,0 +1,53 @@
+{
+  "id": "report-spam-message",
+  "title": "3295. Report Spam Message",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/report-spam-message/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "message = [\"hello\",\"world\",\"leetcode\"], bannedWords = [\"world\",\"hello\"]",
+      "output": "true",
+      "explanation": "The words \"hello\" and \"world\" from the message array both appear in the bannedWords array."
+    },
+    {
+      "input": "message = [\"hello\",\"programming\",\"fun\"], bannedWords = [\"world\",\"programming\",\"leetcode\"]",
+      "output": "false",
+      "explanation": "Only one word from the message array (\"programming\") appears in the bannedWords array."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool reportSpam(vector<string>& message, vector<string>& bannedWords) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean reportSpam(String[] message, String[] bannedWords) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reportSpam(self, message: List[str], bannedWords: List[str]) -> bool:\n        ",
+    "typescript": "function reportSpam(message: string[], bannedWords: string[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ReportSpam(string[] message, string[] bannedWords) {\n        \n    }\n}",
+    "go": "func reportSpam(message []string, bannedWords []string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn report_spam(message: Vec<String>, banned_words: Vec<String>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "message": "[\"hello\",\"world\",\"leetcode\"]",
+      "bannedWords": "[\"world\",\"hello\"]"
+    },
+    {
+      "message": "[\"hello\",\"programming\",\"fun\"]",
+      "bannedWords": "[\"world\",\"programming\",\"leetcode\"]"
+    }
+  ],
+  "functionName": "reportSpam",
+  "params": [
+    {
+      "name": "message",
+      "type": "string_array"
+    },
+    {
+      "name": "bannedWords",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Use hash set."
+  ]
+}

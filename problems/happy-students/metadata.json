@@ -1,0 +1,49 @@
+{
+  "id": "happy-students",
+  "title": "2860. Happy Students",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/happy-students/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,1]",
+      "output": "2",
+      "explanation": "The two possible ways are: The class teacher selects no student. The class teacher selects both students to form the group. If the class teacher selects just one student to form a group then the both students will not be happy. Therefore, there are only two possible ways."
+    },
+    {
+      "input": "nums = [6,0,3,3,6,7,2,7]",
+      "output": "3",
+      "explanation": "The three possible ways are: The class teacher selects the student with index = 1 to form the group. The class teacher selects the students with index = 1, 2, 3, 6 to form the group. The class teacher selects all the students to form the group."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countWays(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countWays(List<Integer> nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countWays(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function countWays(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountWays(IList<int> nums) {\n        \n    }\n}",
+    "go": "func countWays(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_ways(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,1]"
+    },
+    {
+      "nums": "[6,0,3,3,6,7,2,7]"
+    }
+  ],
+  "functionName": "countWays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_list"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If a student with <code>nums[i] = x</code> is selected, all the students with <code>nums[j] <= x</code> must be selected.",
+    "If a student with <code>nums[i] = x</code> is not selected, all the students with <code>nums[j] >= x</code> must not be selected.",
+    "Sort values in <code>nums</code> and try all possible values for <code>x</code> from <code>0</code> to <code>n</code> separately."
+  ]
+}

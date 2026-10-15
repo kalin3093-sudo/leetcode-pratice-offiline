@@ -1,0 +1,60 @@
+{
+  "id": "substring-with-concatenation-of-all-words",
+  "title": "30. Substring with Concatenation of All Words",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"barfoothefoobarman\", words = [\"foo\",\"bar\"]",
+      "output": "[0,9]",
+      "explanation": "The substring starting at 0 is \"barfoo\". It is the concatenation of [\"bar\",\"foo\"] which is a permutation of words. The substring starting at 9 is \"foobar\". It is the concatenation of [\"foo\",\"bar\"] which is a permutation of words."
+    },
+    {
+      "input": "s = \"wordgoodgoodgoodbestword\", words = [\"word\",\"good\",\"best\",\"word\"]",
+      "output": "[]",
+      "explanation": "There is no concatenated substring."
+    },
+    {
+      "input": "s = \"barfoofoobarthefoobarman\", words = [\"bar\",\"foo\",\"the\"]",
+      "output": "[6,9,12]",
+      "explanation": "The substring starting at 6 is \"foobarthe\". It is the concatenation of [\"foo\",\"bar\",\"the\"]. The substring starting at 9 is \"barthefoo\". It is the concatenation of [\"bar\",\"the\",\"foo\"]. The substring starting at 12 is \"thefoobar\". It is the concatenation of [\"the\",\"foo\",\"bar\"]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findSubstring(string s, vector<string>& words) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> findSubstring(String s, String[] words) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findSubstring(self, s: str, words: List[str]) -> List[int]:\n        ",
+    "typescript": "function findSubstring(s: string, words: string[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> FindSubstring(string s, string[] words) {\n        \n    }\n}",
+    "go": "func findSubstring(s string, words []string) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_substring(s: String, words: Vec<String>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "barfoothefoobarman",
+      "words": "[\"foo\",\"bar\"]"
+    },
+    {
+      "s": "wordgoodgoodgoodbestword",
+      "words": "[\"word\",\"good\",\"best\",\"word\"]"
+    },
+    {
+      "s": "barfoofoobarthefoobarman",
+      "words": "[\"bar\",\"foo\",\"the\"]"
+    }
+  ],
+  "functionName": "findSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "words",
+      "type": "string_array"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": []
+}

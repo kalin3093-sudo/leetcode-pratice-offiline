@@ -1,0 +1,54 @@
+{
+  "id": "minimize-xor",
+  "title": "2429. Minimize XOR",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimize-xor/",
+  "category": "greedy",
+  "examples": [
+    {
+      "input": "num1 = 3, num2 = 5",
+      "output": "3",
+      "explanation": "The binary representations of num1 and num2 are 0011 and 0101, respectively. The integer 3 has the same number of set bits as num2, and the value 3 XOR 3 = 0 is minimal."
+    },
+    {
+      "input": "num1 = 1, num2 = 12",
+      "output": "3",
+      "explanation": "The binary representations of num1 and num2 are 0001 and 1100, respectively. The integer 3 has the same number of set bits as num2, and the value 3 XOR 1 = 2 is minimal."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimizeXor(int num1, int num2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimizeXor(int num1, int num2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimizeXor(self, num1: int, num2: int) -> int:\n        ",
+    "typescript": "function minimizeXor(num1: number, num2: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimizeXor(int num1, int num2) {\n        \n    }\n}",
+    "go": "func minimizeXor(num1 int, num2 int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimize_xor(num1: i32, num2: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num1": 3,
+      "num2": 5
+    },
+    {
+      "num1": 1,
+      "num2": 12
+    }
+  ],
+  "functionName": "minimizeXor",
+  "params": [
+    {
+      "name": "num1",
+      "type": "int"
+    },
+    {
+      "name": "num2",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "To arrive at a small xor, try to turn off some bits from num1",
+    "If there are still left bits to set, try to set them from the least significant bit"
+  ]
+}

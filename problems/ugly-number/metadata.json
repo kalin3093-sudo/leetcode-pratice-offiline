@@ -1,0 +1,53 @@
+{
+  "id": "ugly-number",
+  "title": "263. Ugly Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/ugly-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "true",
+      "explanation": "6 = 2 &times; 3"
+    },
+    {
+      "input": "n = 1",
+      "output": "true",
+      "explanation": "1 has no prime factors."
+    },
+    {
+      "input": "n = 14",
+      "output": "false",
+      "explanation": "14 is not ugly since it includes the prime factor 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isUgly(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isUgly(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isUgly(self, n: int) -> bool:\n        ",
+    "typescript": "function isUgly(n: number): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsUgly(int n) {\n        \n    }\n}",
+    "go": "func isUgly(n int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_ugly(n: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 6
+    },
+    {
+      "n": 1
+    },
+    {
+      "n": 14
+    }
+  ],
+  "functionName": "isUgly",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

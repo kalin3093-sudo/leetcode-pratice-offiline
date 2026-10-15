@@ -1,0 +1,57 @@
+{
+  "id": "rectangle-overlap",
+  "title": "836. Rectangle Overlap",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/rectangle-overlap/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "rec1 = [0,0,2,2], rec2 = [1,1,3,3]",
+      "output": "true"
+    },
+    {
+      "input": "rec1 = [0,0,1,1], rec2 = [1,0,2,1]",
+      "output": "false"
+    },
+    {
+      "input": "rec1 = [0,0,1,1], rec2 = [2,2,3,3]",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isRectangleOverlap(vector<int>& rec1, vector<int>& rec2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isRectangleOverlap(int[] rec1, int[] rec2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isRectangleOverlap(self, rec1: list[int], rec2: list[int]) -> bool:\n        ",
+    "typescript": "function isRectangleOverlap(rec1: number[], rec2: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsRectangleOverlap(int[] rec1, int[] rec2) {\n        \n    }\n}",
+    "go": "func isRectangleOverlap(rec1 []int, rec2 []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_rectangle_overlap(rec1: Vec<i32>, rec2: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "rec1": "[0,0,2,2]",
+      "rec2": "[1,1,3,3]"
+    },
+    {
+      "rec1": "[0,0,1,1]",
+      "rec2": "[1,0,2,1]"
+    },
+    {
+      "rec1": "[0,0,1,1]",
+      "rec2": "[2,2,3,3]"
+    }
+  ],
+  "functionName": "isRectangleOverlap",
+  "params": [
+    {
+      "name": "rec1",
+      "type": "int_array"
+    },
+    {
+      "name": "rec2",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

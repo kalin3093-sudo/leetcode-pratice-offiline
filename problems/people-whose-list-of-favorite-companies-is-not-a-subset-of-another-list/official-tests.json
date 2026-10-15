@@ -1,0 +1,11 @@
+[
+  {
+    "favoriteCompanies": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]"
+  },
+  {
+    "favoriteCompanies": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]"
+  },
+  {
+    "favoriteCompanies": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]"
+  }
+]

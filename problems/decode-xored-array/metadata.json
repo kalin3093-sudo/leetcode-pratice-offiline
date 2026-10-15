@@ -1,0 +1,53 @@
+{
+  "id": "decode-xored-array",
+  "title": "1720. Decode XORed Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/decode-xored-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "encoded = [1,2,3], first = 1",
+      "output": "[1,0,2,1]",
+      "explanation": "If arr = [1,0,2,1], then first = 1 and encoded = [1 XOR 0, 0 XOR 2, 2 XOR 1] = [1,2,3]"
+    },
+    {
+      "input": "encoded = [6,2,7,3], first = 4",
+      "output": "[4,2,0,7,4]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> decode(vector<int>& encoded, int first) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] decode(int[] encoded, int first) {\n        \n    }\n}",
+    "python": "class Solution:\n    def decode(self, encoded: list[int], first: int) -> list[int]:\n        ",
+    "typescript": "function decode(encoded: number[], first: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] Decode(int[] encoded, int first) {\n        \n    }\n}",
+    "go": "func decode(encoded []int, first int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn decode(encoded: Vec<i32>, first: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "encoded": "[1,2,3]",
+      "first": 1
+    },
+    {
+      "encoded": "[6,2,7,3]",
+      "first": 4
+    }
+  ],
+  "functionName": "decode",
+  "params": [
+    {
+      "name": "encoded",
+      "type": "int_array"
+    },
+    {
+      "name": "first",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Since that encoded[i] = arr[i] XOR arr[i+1], then arr[i+1] = encoded[i] XOR arr[i].",
+    "Iterate on i from beginning to end, and set arr[i+1] = encoded[i] XOR arr[i]."
+  ]
+}

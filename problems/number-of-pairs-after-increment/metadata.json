@@ -1,0 +1,72 @@
+{
+  "id": "number-of-pairs-after-increment",
+  "title": "3943. Number of Pairs After Increment",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-pairs-after-increment/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums1 = [1,2], nums2 = [3,4], queries = [[2,5],[1,0,0,2],[2,5]]",
+      "output": "[2,1]",
+      "explanation": "queries[0] = [2, 5]: Valid pairs are nums1[0] + nums2[1] = 1 + 4 = 5 and nums1[1] + nums2[0] = 2 + 3 = 5. queries[1] = [1, 0, 0, 2]: Add 2 to nums2[0], resulting in nums2 = [5, 4]. queries[2] = [2, 5]: Valid pair is nums1[0] + nums2[1] = 1 + 4 = 5. Thus, the answer = [2, 1]."
+    },
+    {
+      "input": "nums1 = [1,1], nums2 = [2,2,3], queries = [[2,4],[1,0,1,1],[2,4]]",
+      "output": "[2,6]",
+      "explanation": "queries[0] = [2, 4]: Valid pairs are nums1[0] + nums2[2] = 1 + 3 and nums1[1] + nums2[2] = 1 + 3. queries[1] = [1, 0, 1, 1]: Add 1 to nums2[0] and nums2[1], resulting in nums2 = [3, 3, 3]. queries[2] = [2, 4]: Every element of nums1 = [1, 1] pairs with every element of nums2 = [3, 3, 3] as 1 + 3 = 4. That gives 2 &times; 3 = 6 pairs in total. Thus, the answer = [2, 6]."
+    },
+    {
+      "input": "nums1 = [2,5,8,4], nums2 = [1,3,8], queries = [[2,9],[1,1,2,1],[2,10]]",
+      "output": "[1,0]",
+      "explanation": "queries[0] = [2, 9]: Only valid pair is nums1[2] + nums2[0] = 8 + 1 = 9. queries[1] = [1, 1, 2, 1]: Add 1 to nums2[1] and nums2[2], resulting in nums2 = [1, 4, 9]. queries[2] = [2, 10]: No pair sums to 10. Thus, the answer = [1, 0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> numberOfPairs(vector<int>& nums1, vector<int>& nums2, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] numberOfPairs(int[] nums1, int[] nums2, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfPairs(self, nums1: list[int], nums2: list[int], queries: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function numberOfPairs(nums1: number[], nums2: number[], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] NumberOfPairs(int[] nums1, int[] nums2, int[][] queries) {\n        \n    }\n}",
+    "go": "func numberOfPairs(nums1 []int, nums2 []int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_pairs(nums1: Vec<i32>, nums2: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums1": "[1,2]",
+      "nums2": "[3,4]",
+      "queries": "[[2,5],[1,0,0,2],[2,5]]"
+    },
+    {
+      "nums1": "[1,1]",
+      "nums2": "[2,2,3]",
+      "queries": "[[2,4],[1,0,1,1],[2,4]]"
+    },
+    {
+      "nums1": "[2,5,8,4]",
+      "nums2": "[1,3,8]",
+      "queries": "[[2,9],[1,1,2,1],[2,10]]"
+    }
+  ],
+  "functionName": "numberOfPairs",
+  "params": [
+    {
+      "name": "nums1",
+      "type": "int_array"
+    },
+    {
+      "name": "nums2",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Think of <code>nums1</code> as fixed. Precompute its frequency map once.\r\nFor <code>nums2</code>, range additions make direct frequency maintenance hard, so split <code>nums2</code> into sqrt-sized blocks.",
+    "For each block, keep:\r\na lazy add value for the whole block,\r\na frequency map of the block values before applying lazy.",
+    "For an update <code>[x, y, val]</code>, fully covered blocks only increase their lazy value. Partially covered blocks are pushed/rebuilt manually.",
+    "For a query <code>tot</code>, for every distinct value <code>a</code> in <code>nums1</code>, count how many values equal <code>tot - a</code> in <code>nums2</code> by checking each block’s frequency map after adjusting for lazy."
+  ]
+}

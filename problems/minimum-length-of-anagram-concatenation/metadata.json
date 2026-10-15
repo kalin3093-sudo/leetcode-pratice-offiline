@@ -1,0 +1,55 @@
+{
+  "id": "minimum-length-of-anagram-concatenation",
+  "title": "3138. Minimum Length of Anagram Concatenation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-length-of-anagram-concatenation/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"abba\"",
+      "output": "2",
+      "explanation": "One possible string t could be \"ba\"."
+    },
+    {
+      "input": "s = \"cdef\"",
+      "output": "4",
+      "explanation": "One possible string t could be \"cdef\", notice that t can be equal to s."
+    },
+    {
+      "input": "s = \"abcbcacabbaccba\"",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minAnagramLength(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minAnagramLength(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minAnagramLength(self, s: str) -> int:\n        ",
+    "typescript": "function minAnagramLength(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinAnagramLength(string s) {\n        \n    }\n}",
+    "go": "func minAnagramLength(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_anagram_length(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abba"
+    },
+    {
+      "s": "cdef"
+    },
+    {
+      "s": "abcbcacabbaccba"
+    }
+  ],
+  "functionName": "minAnagramLength",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The answer should be a divisor of <code>s.length</code>.",
+    "Check each candidate naively."
+  ]
+}

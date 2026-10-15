@@ -1,0 +1,56 @@
+{
+  "id": "minimum-number-of-frogs-croaking",
+  "title": "1419. Minimum Number of Frogs Croaking",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-number-of-frogs-croaking/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "croakOfFrogs = \"croakcroak\"",
+      "output": "1",
+      "explanation": "One frog yelling \"croak\" twice."
+    },
+    {
+      "input": "croakOfFrogs = \"crcoakroak\"",
+      "output": "2",
+      "explanation": "The minimum number of frogs is two. The first frog could yell \"crcoakroak\". The second frog could yell later \"crcoakroak\"."
+    },
+    {
+      "input": "croakOfFrogs = \"croakcrook\"",
+      "output": "-1",
+      "explanation": "The given string is an invalid combination of \"croak\" from different frogs."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minNumberOfFrogs(string croakOfFrogs) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minNumberOfFrogs(String croakOfFrogs) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minNumberOfFrogs(self, croakOfFrogs: str) -> int:\n        ",
+    "typescript": "function minNumberOfFrogs(croakOfFrogs: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinNumberOfFrogs(string croakOfFrogs) {\n        \n    }\n}",
+    "go": "func minNumberOfFrogs(croakOfFrogs string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_number_of_frogs(croak_of_frogs: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "croakOfFrogs": "croakcroak"
+    },
+    {
+      "croakOfFrogs": "crcoakroak"
+    },
+    {
+      "croakOfFrogs": "croakcrook"
+    }
+  ],
+  "functionName": "minNumberOfFrogs",
+  "params": [
+    {
+      "name": "croakOfFrogs",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "keep the frequency of all characters from \"croak\" using a hashmap.",
+    "For each character in the given string, greedily match it to a possible \"croak\"."
+  ]
+}

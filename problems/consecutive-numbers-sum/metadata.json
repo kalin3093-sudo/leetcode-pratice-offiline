@@ -1,0 +1,53 @@
+{
+  "id": "consecutive-numbers-sum",
+  "title": "829. Consecutive Numbers Sum",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/consecutive-numbers-sum/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "2",
+      "explanation": "5 = 2 + 3"
+    },
+    {
+      "input": "n = 9",
+      "output": "3",
+      "explanation": "9 = 4 + 5 = 2 + 3 + 4"
+    },
+    {
+      "input": "n = 15",
+      "output": "4",
+      "explanation": "15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int consecutiveNumbersSum(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int consecutiveNumbersSum(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def consecutiveNumbersSum(self, n: int) -> int:\n        ",
+    "typescript": "function consecutiveNumbersSum(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ConsecutiveNumbersSum(int n) {\n        \n    }\n}",
+    "go": "func consecutiveNumbersSum(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn consecutive_numbers_sum(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 9
+    },
+    {
+      "n": 15
+    }
+  ],
+  "functionName": "consecutiveNumbersSum",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "number-of-ways-to-separate-numbers",
+  "title": "1977. Number of Ways to Separate Numbers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-ways-to-separate-numbers/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "num = \"327\"",
+      "output": "2",
+      "explanation": "You could have written down the numbers: 3, 27 327"
+    },
+    {
+      "input": "num = \"094\"",
+      "output": "0",
+      "explanation": "No numbers can have leading zeros and all numbers must be positive."
+    },
+    {
+      "input": "num = \"0\"",
+      "output": "0",
+      "explanation": "No numbers can have leading zeros and all numbers must be positive."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfCombinations(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfCombinations(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numberOfCombinations(self, num: str) -> int:\n        ",
+    "typescript": "function numberOfCombinations(num: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfCombinations(string num) {\n        \n    }\n}",
+    "go": "func numberOfCombinations(num string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn number_of_combinations(num: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "327"
+    },
+    {
+      "num": "094"
+    },
+    {
+      "num": "0"
+    }
+  ],
+  "functionName": "numberOfCombinations",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "If we know the current number has d digits, how many digits can the previous number have?",
+    "Is there a quick way of calculating the number of possibilities for the previous number if we know that it must have less than or equal to d digits? Try to do some pre-processing."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "minimum-discards-to-balance-inventory",
+  "title": "3679.  Minimum Discards to Balance Inventory",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-discards-to-balance-inventory/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arrivals = [1,2,1,3,1], w = 4, m = 2",
+      "output": "0",
+      "explanation": "On day 1, Item 1 arrives; the window contains no more than m occurrences of this type, so we keep it. On day 2, Item 2 arrives; the window of days 1 - 2 is fine. On day 3, Item 1 arrives, window [1, 2, 1] has item 1 twice, within limit. On day 4, Item 3 arrives, window [1, 2, 1, 3] has item 1 twice, allowed. On day 5, Item 1 arrives, window [2, 1, 3, 1] has item 1 twice, still valid. There are no discarded items, so return 0."
+    },
+    {
+      "input": "arrivals = [1,2,3,3,3,4], w = 3, m = 2",
+      "output": "1",
+      "explanation": "On day 1, Item 1 arrives. We keep it. On day 2, Item 2 arrives, window [1, 2] is fine. On day 3, Item 3 arrives, window [1, 2, 3] has item 3 once. On day 4, Item 3 arrives, window [2, 3, 3] has item 3 twice, allowed. On day 5, Item 3 arrives, window [3, 3, 3] has item 3 three times, exceeds limit, so the arrival must be discarded. On day 6, Item 4 arrives, window [3, 4] is fine. Item 3 on day 5 is discarded, and this is the minimum number of arrivals to discard, so return 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minArrivalsToDiscard(vector<int>& arrivals, int w, int m) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minArrivalsToDiscard(int[] arrivals, int w, int m) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minArrivalsToDiscard(self, arrivals: List[int], w: int, m: int) -> int:\n        ",
+    "typescript": "function minArrivalsToDiscard(arrivals: number[], w: number, m: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinArrivalsToDiscard(int[] arrivals, int w, int m) {\n        \n    }\n}",
+    "go": "func minArrivalsToDiscard(arrivals []int, w int, m int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_arrivals_to_discard(arrivals: Vec<i32>, w: i32, m: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arrivals": "[1,2,1,3,1]",
+      "w": 4,
+      "m": 2
+    },
+    {
+      "arrivals": "[1,2,3,3,3,4]",
+      "w": 3,
+      "m": 2
+    }
+  ],
+  "functionName": "minArrivalsToDiscard",
+  "params": [
+    {
+      "name": "arrivals",
+      "type": "int_array"
+    },
+    {
+      "name": "w",
+      "type": "int"
+    },
+    {
+      "name": "m",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a sliding window of up to <code>w</code> days with two pointers <code>left</code> and <code>right</code> to represent the current interval.",
+    "Maintain a hash map <code>cnt</code> from item type to its current count in the window. When you advance <code>right</code> to day <code>i</code>, do <code>cnt[arrivals[i]]++</code>.",
+    "If the window size exceeds <code>w</code> (i.e. <code>right - left + 1 > w</code>), shrink it by doing <code>cnt[arrivals[left]]--</code> and then <code>left++</code>.",
+    "After each increment, check if <code>cnt[arrivals[right]] > m</code>. If so, we must discard the current arrival."
+  ]
+}

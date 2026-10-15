@@ -1,0 +1,62 @@
+{
+  "id": "maximum-consecutive-floors-without-special-floors",
+  "title": "2274. Maximum Consecutive Floors Without Special Floors",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "bottom = 2, top = 9, special = [4,6]",
+      "output": "3",
+      "explanation": "The following are the ranges (inclusive) of consecutive floors without a special floor: - (2, 3) with a total amount of 2 floors. - (5, 5) with a total amount of 1 floor. - (7, 9) with a total amount of 3 floors. Therefore, we return the maximum number which is 3 floors."
+    },
+    {
+      "input": "bottom = 6, top = 8, special = [7,6,8]",
+      "output": "0",
+      "explanation": "Every floor rented is a special floor, so we return 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxConsecutive(int bottom, int top, vector<int>& special) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxConsecutive(int bottom, int top, int[] special) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxConsecutive(self, bottom: int, top: int, special: list[int]) -> int:\n        ",
+    "typescript": "function maxConsecutive(bottom: number, top: number, special: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxConsecutive(int bottom, int top, int[] special) {\n        \n    }\n}",
+    "go": "func maxConsecutive(bottom int, top int, special []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_consecutive(bottom: i32, top: i32, special: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "bottom": 2,
+      "top": 9,
+      "special": "[4,6]"
+    },
+    {
+      "bottom": 6,
+      "top": 8,
+      "special": "[7,6,8]"
+    }
+  ],
+  "functionName": "maxConsecutive",
+  "params": [
+    {
+      "name": "bottom",
+      "type": "int"
+    },
+    {
+      "name": "top",
+      "type": "int"
+    },
+    {
+      "name": "special",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Say we have a pair of special floors (x, y) with no other special floors in between. There are x - y - 1 consecutive floors in between them without a special floor.",
+    "Say there are n special floors. After sorting special, we have answer = max(answer, special[i] – special[i – 1] – 1) for all 0 < i < n.",
+    "However, there are two special cases left to consider: the floors before special[0] and after special[n-1].",
+    "To consider these cases, we have answer = max(answer, special[0] – bottom, top – special[n-1])."
+  ]
+}

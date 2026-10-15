@@ -1,0 +1,55 @@
+{
+  "id": "find-the-score-difference-in-a-game",
+  "title": "3847. Find the Score Difference in a Game",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-the-score-difference-in-a-game/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "0",
+      "explanation": "Game 0: Since the points are odd, the second player becomes active and gains nums[0] = 1 point. Game 1: No swap occurs. The second player gains nums[1] = 2 points. Game 2: Since the points are odd, the first player becomes active and gains nums[2] = 3 points. The score difference is 3 - 3 = 0."
+    },
+    {
+      "input": "nums = [2,4,2,1,2,1]",
+      "output": "4",
+      "explanation": "Games 0 to 2: The first player gains 2 + 4 + 2 = 8 points. Game 3: Since the points are odd, the second player is now active and gains nums[3] = 1 point. Game 4: The second player gains nums[4] = 2 points. Game 5: Since the points are odd, the players swap roles. Then, because this is the 6th game, the players swap again. The second player gains nums[5] = 1 point. The score difference is 8 - 4 = 4."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "-1",
+      "explanation": "Game 0: Since the points are odd, the second player is now active and gains nums[0] = 1 point. The score difference is 0 - 1 = -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int scoreDifference(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int scoreDifference(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def scoreDifference(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function scoreDifference(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ScoreDifference(int[] nums) {\n        \n    }\n}",
+    "go": "func scoreDifference(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn score_difference(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[2,4,2,1,2,1]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "scoreDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Simulate as described"
+  ]
+}

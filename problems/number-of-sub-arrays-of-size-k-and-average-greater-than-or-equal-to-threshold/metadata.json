@@ -1,0 +1,60 @@
+{
+  "id": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
+  "title": "1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "arr = [2,2,2,2,5,5,5,8], k = 3, threshold = 4",
+      "output": "3",
+      "explanation": "Sub-arrays [2,5,5],[5,5,5] and [5,5,8] have averages 4, 5 and 6 respectively. All other sub-arrays of size 3 have averages less than 4 (the threshold)."
+    },
+    {
+      "input": "arr = [11,13,17,23,29,31,7,5,2,3], k = 3, threshold = 5",
+      "output": "6",
+      "explanation": "The first 6 sub-arrays of size 3 have averages greater than 5. Note that averages are not integers."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numOfSubarrays(vector<int>& arr, int k, int threshold) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numOfSubarrays(int[] arr, int k, int threshold) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numOfSubarrays(self, arr: list[int], k: int, threshold: int) -> int:\n        ",
+    "typescript": "function numOfSubarrays(arr: number[], k: number, threshold: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumOfSubarrays(int[] arr, int k, int threshold) {\n        \n    }\n}",
+    "go": "func numOfSubarrays(arr []int, k int, threshold int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_of_subarrays(arr: Vec<i32>, k: i32, threshold: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "arr": "[2,2,2,2,5,5,5,8]",
+      "k": 3,
+      "threshold": 4
+    },
+    {
+      "arr": "[11,13,17,23,29,31,7,5,2,3]",
+      "k": 3,
+      "threshold": 5
+    }
+  ],
+  "functionName": "numOfSubarrays",
+  "params": [
+    {
+      "name": "arr",
+      "type": "int_array"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    },
+    {
+      "name": "threshold",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Start with a window of size K and test its average against the threshold.",
+    "Keep moving the window by one element maintaining its size k until you cover the whole array. Count the number of windows that have an average greater than or equal to the threshold."
+  ]
+}

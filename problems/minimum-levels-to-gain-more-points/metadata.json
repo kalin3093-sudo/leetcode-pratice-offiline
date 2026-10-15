@@ -1,0 +1,56 @@
+{
+  "id": "minimum-levels-to-gain-more-points",
+  "title": "3096. Minimum Levels to Gain More Points",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-levels-to-gain-more-points/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "possible = [1,0,1,0]",
+      "output": "1",
+      "explanation": "Let's look at all the levels that Alice can play up to: If Alice plays only level 0 and Bob plays the rest of the levels, Alice has 1 point, while Bob has -1 + 1 - 1 = -1 point. If Alice plays till level 1 and Bob plays the rest of the levels, Alice has 1 - 1 = 0 points, while Bob has 1 - 1 = 0 points. If Alice plays till level 2 and Bob plays the rest of the levels, Alice has 1 - 1 + 1 = 1 point, while Bob has -1 point. Alice must play a minimum of 1 level to gain more points."
+    },
+    {
+      "input": "possible = [1,1,1,1,1]",
+      "output": "3",
+      "explanation": "Let's look at all the levels that Alice can play up to: If Alice plays only level 0 and Bob plays the rest of the levels, Alice has 1 point, while Bob has 4 points. If Alice plays till level 1 and Bob plays the rest of the levels, Alice has 2 points, while Bob has 3 points. If Alice plays till level 2 and Bob plays the rest of the levels, Alice has 3 points, while Bob has 2 points. If Alice plays till level 3 and Bob plays the rest of the levels, Alice has 4 points, while Bob has 1 point. Alice must play a minimum of 3 levels to gain more points."
+    },
+    {
+      "input": "possible = [0,0]",
+      "output": "-1",
+      "explanation": "The only possible way is for both players to play 1 level each. Alice plays level 0 and loses 1 point. Bob plays level 1 and loses 1 point. As both players have equal points, Alice can't gain more points than Bob."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumLevels(vector<int>& possible) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumLevels(int[] possible) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumLevels(self, possible: List[int]) -> int:\n        ",
+    "typescript": "function minimumLevels(possible: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumLevels(int[] possible) {\n        \n    }\n}",
+    "go": "func minimumLevels(possible []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_levels(possible: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "possible": "[1,0,1,0]"
+    },
+    {
+      "possible": "[1,1,1,1,1]"
+    },
+    {
+      "possible": "[0,0]"
+    }
+  ],
+  "functionName": "minimumLevels",
+  "params": [
+    {
+      "name": "possible",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Change all <code>0</code> in possible array into <code>-1</code>.",
+    "We need to find the shortest non-empty prefix of the new possible array such that the sum of elements in it is strictly larger than the remaining part."
+  ]
+}

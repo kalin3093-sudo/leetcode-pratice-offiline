@@ -1,0 +1,56 @@
+{
+  "id": "largest-odd-number-in-string",
+  "title": "1903. Largest Odd Number in String",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/largest-odd-number-in-string/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "num = \"52\"",
+      "output": "\"5\"",
+      "explanation": "The only non-empty substrings are \"5\", \"2\", and \"52\". \"5\" is the only odd number."
+    },
+    {
+      "input": "num = \"4206\"",
+      "output": "\"\"",
+      "explanation": "There are no odd numbers in \"4206\"."
+    },
+    {
+      "input": "num = \"35427\"",
+      "output": "\"35427\"",
+      "explanation": "\"35427\" is already an odd number."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestOddNumber(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestOddNumber(String num) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestOddNumber(self, num: str) -> str:\n        ",
+    "typescript": "function largestOddNumber(num: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestOddNumber(string num) {\n        \n    }\n}",
+    "go": "func largestOddNumber(num string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_odd_number(num: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "num": "52"
+    },
+    {
+      "num": "4206"
+    },
+    {
+      "num": "35427"
+    }
+  ],
+  "functionName": "largestOddNumber",
+  "params": [
+    {
+      "name": "num",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "In what order should you iterate through the digits?",
+    "If an odd number exists, where must the number start from?"
+  ]
+}

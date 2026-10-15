@@ -1,0 +1,18 @@
+[
+  {
+    "s": "abcdefg",
+    "pattern": "bcdffg"
+  },
+  {
+    "s": "ababbababa",
+    "pattern": "bacaba"
+  },
+  {
+    "s": "abcd",
+    "pattern": "dba"
+  },
+  {
+    "s": "dde",
+    "pattern": "d"
+  }
+]

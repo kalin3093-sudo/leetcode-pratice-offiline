@@ -1,0 +1,48 @@
+{
+  "id": "count-nice-pairs-in-an-array",
+  "title": "1814. Count Nice Pairs in an Array",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-nice-pairs-in-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [42,11,1,97]",
+      "output": "2",
+      "explanation": "The two pairs are: - (0,3) : 42 + rev(97) = 42 + 79 = 121, 97 + rev(42) = 97 + 24 = 121. - (1,2) : 11 + rev(1) = 11 + 1 = 12, 1 + rev(11) = 1 + 11 = 12."
+    },
+    {
+      "input": "nums = [13,10,35,24,76]",
+      "output": "4"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countNicePairs(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countNicePairs(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countNicePairs(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function countNicePairs(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountNicePairs(int[] nums) {\n        \n    }\n}",
+    "go": "func countNicePairs(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_nice_pairs(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[42,11,1,97]"
+    },
+    {
+      "nums": "[13,10,35,24,76]"
+    }
+  ],
+  "functionName": "countNicePairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The condition can be rearranged to (nums[i] - rev(nums[i])) == (nums[j] - rev(nums[j])).",
+    "Transform each nums[i] into (nums[i] - rev(nums[i])). Then, count the number of (i, j) pairs that have equal values.",
+    "Keep a map storing the frequencies of values that you have seen so far. For each i, check if nums[i] is in the map. If it is, then add that count to the overall count. Then, increment the frequency of nums[i]."
+  ]
+}

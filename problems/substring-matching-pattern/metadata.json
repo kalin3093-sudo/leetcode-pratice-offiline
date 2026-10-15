@@ -1,0 +1,62 @@
+{
+  "id": "substring-matching-pattern",
+  "title": "3407. Substring Matching Pattern",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/substring-matching-pattern/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"leetcode\", p = \"ee*e\"",
+      "output": "true",
+      "explanation": "By replacing the '*' with \"tcod\", the substring \"eetcode\" matches the pattern."
+    },
+    {
+      "input": "s = \"car\", p = \"c*v\"",
+      "output": "false",
+      "explanation": "There is no substring matching the pattern."
+    },
+    {
+      "input": "s = \"luck\", p = \"u*\"",
+      "output": "true",
+      "explanation": "The substrings \"u\", \"uc\", and \"uck\" match the pattern."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool hasMatch(string s, string p) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean hasMatch(String s, String p) {\n        \n    }\n}",
+    "python": "class Solution:\n    def hasMatch(self, s: str, p: str) -> bool:\n        ",
+    "typescript": "function hasMatch(s: string, p: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool HasMatch(string s, string p) {\n        \n    }\n}",
+    "go": "func hasMatch(s string, p string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn has_match(s: String, p: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "leetcode",
+      "p": "ee*e"
+    },
+    {
+      "s": "car",
+      "p": "c*v"
+    },
+    {
+      "s": "luck",
+      "p": "u*"
+    }
+  ],
+  "functionName": "hasMatch",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "p",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Divide the pattern in two strings and search in the string."
+  ]
+}

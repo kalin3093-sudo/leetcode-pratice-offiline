@@ -1,0 +1,47 @@
+{
+  "id": "minimum-k-to-reduce-array-within-limit",
+  "title": "3824. Minimum K to Reduce Array Within Limit",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/minimum-k-to-reduce-array-within-limit/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [3,7,5]",
+      "output": "3",
+      "explanation": "When k = 3, nonPositive(nums, k) = 6 <= k2. Reduce nums[0] = 3 one time. nums[0] becomes 3 - 3 = 0. Reduce nums[1] = 7 three times. nums[1] becomes 7 - 3 - 3 - 3 = -2. Reduce nums[2] = 5 two times. nums[2] becomes 5 - 3 - 3 = -1."
+    },
+    {
+      "input": "nums = [1]",
+      "output": "1",
+      "explanation": "When k = 1, nonPositive(nums, k) = 1 <= k2. Reduce nums[0] = 1 one time. nums[0] becomes 1 - 1 = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumK(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumK(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumK(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function minimumK(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumK(int[] nums) {\n        \n    }\n}",
+    "go": "func minimumK(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_k(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[3,7,5]"
+    },
+    {
+      "nums": "[1]"
+    }
+  ],
+  "functionName": "minimumK",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use binary search"
+  ]
+}

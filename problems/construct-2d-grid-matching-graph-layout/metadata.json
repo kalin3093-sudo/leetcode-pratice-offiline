@@ -1,0 +1,62 @@
+{
+  "id": "construct-2d-grid-matching-graph-layout",
+  "title": "3311. Construct 2D Grid Matching Graph Layout",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 4, edges = [[0,1],[0,2],[1,3],[2,3]]",
+      "output": "[[3,1],[2,0]]"
+    },
+    {
+      "input": "n = 5, edges = [[0,1],[1,3],[2,3],[2,4]]",
+      "output": "[[4,2,3,1,0]]"
+    },
+    {
+      "input": "n = 9, edges = [[0,1],[0,4],[0,5],[1,7],[2,3],[2,4],[2,5],[3,6],[4,6],[4,7],[6,8],[7,8]]",
+      "output": "[[8,6,3],[7,4,2],[1,0,5]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> constructGridLayout(int n, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] constructGridLayout(int n, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def constructGridLayout(self, n: int, edges: List[List[int]]) -> List[List[int]]:\n        ",
+    "typescript": "function constructGridLayout(n: number, edges: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] ConstructGridLayout(int n, int[][] edges) {\n        \n    }\n}",
+    "go": "func constructGridLayout(n int, edges [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn construct_grid_layout(n: i32, edges: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 4,
+      "edges": "[[0,1],[0,2],[1,3],[2,3]]"
+    },
+    {
+      "n": 5,
+      "edges": "[[0,1],[1,3],[2,3],[2,4]]"
+    },
+    {
+      "n": 9,
+      "edges": "[[0,1],[0,4],[0,5],[1,7],[2,3],[2,4],[2,5],[3,6],[4,6],[4,7],[6,8],[7,8]]"
+    }
+  ],
+  "functionName": "constructGridLayout",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Observe the indegrees of the nodes.",
+    "The case where there are two nodes with an indegree of 1, and all the others have an indegree of 2 can be handled separately.",
+    "The nodes with the smallest degrees are the corners.",
+    "You can simulate the grid creation process using BFS or a similar approach after making some observations on the indegrees."
+  ]
+}

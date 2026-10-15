@@ -1,0 +1,61 @@
+{
+  "id": "minimum-operations-to-make-character-frequencies-equal",
+  "title": "3389. Minimum Operations to Make Character Frequencies Equal",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"acab\"",
+      "output": "1",
+      "explanation": "We can make s good by deleting one occurrence of character 'a'."
+    },
+    {
+      "input": "s = \"wddw\"",
+      "output": "0",
+      "explanation": "We do not need to perform any operations since s is initially good."
+    },
+    {
+      "input": "s = \"aaabc\"",
+      "output": "2",
+      "explanation": "We can make s good by applying these operations: Change one occurrence of 'a' to 'b' Insert one occurrence of 'c' into s"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int makeStringGood(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int makeStringGood(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def makeStringGood(self, s: str) -> int:\n        ",
+    "typescript": "function makeStringGood(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MakeStringGood(string s) {\n        \n    }\n}",
+    "go": "func makeStringGood(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn make_string_good(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "acab"
+    },
+    {
+      "s": "wddw"
+    },
+    {
+      "s": "aaabbc"
+    }
+  ],
+  "functionName": "makeStringGood",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The order of the letters in the string is irrelevant.",
+    "Compute an occurrence array <code>occ</code> where <code>occ[x]</code> is the number of occurrences of the <code>x<supth</sup></code> character of the alphabet. How do the described operations change <code>occ</code>?",
+    "We have three types of operations: increase any <code>occ[x]</code> by 1, decrease any <code>occ[x]</code> by 1, or decrease any <code>occ[x]</code> by 1 and simultaneously increase <code>occ[x + 1]</code> by 1 at the same time. To make <code>s</code> good, we need to make <code>occ</code> good. <code>occ</code> is good if and only if every <code>occ[x]</code> equals either 0 or some constant <code>c</code>.",
+    "If you know the value of <code>c</code>, how can you calculate the minimum operations required to make <code>occ</code> good?",
+    "Observation 1: It is never optimal to apply the third type of operation (simultaneous decrease and increase) on two continuous elements <code>occ[x]</code> and <code>occ[x + 1]</code>. Instead, we can decrease <code>occ[x]</code> by 1 then increase <code>occ[x + 2]</code> by 1 to achieve the same effect.",
+    "Observation 2: It is never optimal to increase an element of <code>occ</code> then decrease it, or vice versa.",
+    "Use dynamic programming where <code>dp[i]</code> is the minimum number of operations required to make <code>occ[0..i]</code> good. You will need to use the above observations to come up with the transitions."
+  ]
+}

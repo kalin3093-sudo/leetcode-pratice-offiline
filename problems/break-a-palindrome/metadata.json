@@ -1,0 +1,50 @@
+{
+  "id": "break-a-palindrome",
+  "title": "1328. Break a Palindrome",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/break-a-palindrome/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "palindrome = \"abccba\"",
+      "output": "\"aaccba\"",
+      "explanation": "There are many ways to make \"abccba\" not a palindrome, such as \"zbccba\", \"aaccba\", and \"abacba\". Of all the ways, \"aaccba\" is the lexicographically smallest."
+    },
+    {
+      "input": "palindrome = \"a\"",
+      "output": "\"\"",
+      "explanation": "There is no way to replace a single character to make \"a\" not a palindrome, so return an empty string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string breakPalindrome(string palindrome) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String breakPalindrome(String palindrome) {\n        \n    }\n}",
+    "python": "class Solution:\n    def breakPalindrome(self, palindrome: str) -> str:\n        ",
+    "typescript": "function breakPalindrome(palindrome: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string BreakPalindrome(string palindrome) {\n        \n    }\n}",
+    "go": "func breakPalindrome(palindrome string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn break_palindrome(palindrome: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "palindrome": "abccba"
+    },
+    {
+      "palindrome": "a"
+    }
+  ],
+  "functionName": "breakPalindrome",
+  "params": [
+    {
+      "name": "palindrome",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "How to detect if there is impossible to perform the replacement? Only when the length = 1.",
+    "Change the first non 'a' character to 'a'.",
+    "What if the string has only 'a'?",
+    "Change the last character to 'b'."
+  ]
+}

@@ -1,0 +1,6 @@
+Given an array of integers `nums` and an integer `k`, return the number of subarrays of `nums` where the bitwise `AND` of the elements of the subarray equals `k`.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 10^5`
+-   `0 ≤ nums[i], k ≤ 10^9`

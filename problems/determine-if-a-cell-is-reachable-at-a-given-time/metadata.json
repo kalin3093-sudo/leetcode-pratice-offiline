@@ -1,0 +1,73 @@
+{
+  "id": "determine-if-a-cell-is-reachable-at-a-given-time",
+  "title": "2849. Determine if a Cell Is Reachable at a Given Time",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "sx = 2, sy = 4, fx = 7, fy = 7, t = 6",
+      "output": "true",
+      "explanation": "Starting at cell (2, 4), we can reach cell (7, 7) in exactly 6 seconds by going through the cells depicted in the picture above."
+    },
+    {
+      "input": "sx = 3, sy = 1, fx = 7, fy = 3, t = 3",
+      "output": "false",
+      "explanation": "Starting at cell (3, 1), it takes at least 4 seconds to reach cell (7, 3) by going through the cells depicted in the picture above. Hence, we cannot reach cell (7, 3) at the third second."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isReachableAtTime(int sx, int sy, int fx, int fy, int t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isReachableAtTime(int sx, int sy, int fx, int fy, int t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isReachableAtTime(self, sx: int, sy: int, fx: int, fy: int, t: int) -> bool:\n        ",
+    "typescript": "function isReachableAtTime(sx: number, sy: number, fx: number, fy: number, t: number): boolean {\n\n};",
+    "csharp": "public class Solution {\n    public bool IsReachableAtTime(int sx, int sy, int fx, int fy, int t) {\n        \n    }\n}",
+    "go": "func isReachableAtTime(sx int, sy int, fx int, fy int, t int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_reachable_at_time(sx: i32, sy: i32, fx: i32, fy: i32, t: i32) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "sx": 2,
+      "sy": 4,
+      "fx": 7,
+      "fy": 7,
+      "t": 6
+    },
+    {
+      "sx": 3,
+      "sy": 1,
+      "fx": 7,
+      "fy": 3,
+      "t": 3
+    }
+  ],
+  "functionName": "isReachableAtTime",
+  "params": [
+    {
+      "name": "sx",
+      "type": "int"
+    },
+    {
+      "name": "sy",
+      "type": "int"
+    },
+    {
+      "name": "fx",
+      "type": "int"
+    },
+    {
+      "name": "fy",
+      "type": "int"
+    },
+    {
+      "name": "t",
+      "type": "int"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Minimum time to reach the cell should be less than or equal to given time.",
+    "The answer is true if <code>t</code> is greater or equal than the Chebyshev distance from <code>(sx, sy)</code> to <code>(fx, fy)</code>. However, there is one more edge case to be considered.",
+    "The answer is false If <code>sx == fx</code> and <code>sy == fy</code>"
+  ]
+}

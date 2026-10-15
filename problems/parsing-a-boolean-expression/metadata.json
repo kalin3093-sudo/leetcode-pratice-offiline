@@ -1,0 +1,55 @@
+{
+  "id": "parsing-a-boolean-expression",
+  "title": "1106. Parsing A Boolean Expression",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/parsing-a-boolean-expression/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "expression = \"&(|(f))\"",
+      "output": "false",
+      "explanation": "First, evaluate |(f) --> f. The expression is now \"&(f)\". Then, evaluate &(f) --> f. The expression is now \"f\". Finally, return false."
+    },
+    {
+      "input": "expression = \"|(f,f,f,t)\"",
+      "output": "true",
+      "explanation": "The evaluation of (false OR false OR false OR true) is true."
+    },
+    {
+      "input": "expression = \"!(&(f,t))\"",
+      "output": "true",
+      "explanation": "First, evaluate &(f,t) --> (false AND true) --> false --> f. The expression is now \"!(f)\". Then, evaluate !(f) --> NOT false --> true. We return true."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool parseBoolExpr(string expression) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean parseBoolExpr(String expression) {\n        \n    }\n}",
+    "python": "class Solution:\n    def parseBoolExpr(self, expression: str) -> bool:\n        ",
+    "typescript": "function parseBoolExpr(expression: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool ParseBoolExpr(string expression) {\n        \n    }\n}",
+    "go": "func parseBoolExpr(expression string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn parse_bool_expr(expression: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "expression": "&(|(f))"
+    },
+    {
+      "expression": "|(f,f,f,t)"
+    },
+    {
+      "expression": "!(&(f,t))"
+    }
+  ],
+  "functionName": "parseBoolExpr",
+  "params": [
+    {
+      "name": "expression",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Write a function \"parse\" which calls helper functions \"parse_or\", \"parse_and\", \"parse_not\"."
+  ]
+}

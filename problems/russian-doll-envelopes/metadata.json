@@ -1,0 +1,44 @@
+{
+  "id": "russian-doll-envelopes",
+  "title": "354. Russian Doll Envelopes",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/russian-doll-envelopes/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "envelopes = [[5,4],[6,4],[6,7],[2,3]]",
+      "output": "3",
+      "explanation": "The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7])."
+    },
+    {
+      "input": "envelopes = [[1,1],[1,1],[1,1]]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxEnvelopes(vector<vector<int>>& envelopes) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxEnvelopes(int[][] envelopes) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maxEnvelopes(self, envelopes: list[list[int]]) -> int:\n        ",
+    "typescript": "function maxEnvelopes(envelopes: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxEnvelopes(int[][] envelopes) {\n        \n    }\n}",
+    "go": "func maxEnvelopes(envelopes [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn max_envelopes(envelopes: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "envelopes": "[[5,4],[6,4],[6,7],[2,3]]"
+    },
+    {
+      "envelopes": "[[1,1],[1,1],[1,1]]"
+    }
+  ],
+  "functionName": "maxEnvelopes",
+  "params": [
+    {
+      "name": "envelopes",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

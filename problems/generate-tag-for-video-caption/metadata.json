@@ -1,0 +1,55 @@
+{
+  "id": "generate-tag-for-video-caption",
+  "title": "3582. Generate Tag for Video Caption",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/generate-tag-for-video-caption/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "caption = \"Leetcode daily streak achieved\"",
+      "output": "\"#leetcodeDailyStreakAchieved\"",
+      "explanation": "The first letter for all words except \"leetcode\" should be capitalized."
+    },
+    {
+      "input": "caption = \"can I Go There\"",
+      "output": "\"#canIGoThere\"",
+      "explanation": "The first letter for all words except \"can\" should be capitalized."
+    },
+    {
+      "input": "caption = \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
+      "output": "\"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
+      "explanation": "Since the first word has length 101, we need to truncate the last two letters from the word."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string generateTag(string caption) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String generateTag(String caption) {\n        \n    }\n}",
+    "python": "class Solution:\n    def generateTag(self, caption: str) -> str:\n        ",
+    "typescript": "function generateTag(caption: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GenerateTag(string caption) {\n        \n    }\n}",
+    "go": "func generateTag(caption string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn generate_tag(caption: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "caption": "Leetcode daily streak achieved"
+    },
+    {
+      "caption": "can I Go There"
+    },
+    {
+      "caption": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+    }
+  ],
+  "functionName": "generateTag",
+  "params": [
+    {
+      "name": "caption",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Simulate as described"
+  ]
+}

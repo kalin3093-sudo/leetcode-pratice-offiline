@@ -1,0 +1,54 @@
+{
+  "id": "largest-color-value-in-a-directed-graph",
+  "title": "1857. Largest Color Value in a Directed Graph",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/largest-color-value-in-a-directed-graph/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "colors = \"abaca\", edges = [[0,1],[0,2],[2,3],[3,4]]",
+      "output": "3",
+      "explanation": "The path 0 -> 2 -> 3 -> 4 contains 3 nodes that are colored \"a\" (red in the above image)."
+    },
+    {
+      "input": "colors = \"a\", edges = [[0,0]]",
+      "output": "-1",
+      "explanation": "There is a cycle from 0 to 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestPathValue(string colors, vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestPathValue(String colors, int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestPathValue(self, colors: str, edges: list[list[int]]) -> int:\n        ",
+    "typescript": "function largestPathValue(colors: string, edges: number[][]): number {\n\n};",
+    "csharp": "public class Solution {\n    public int LargestPathValue(string colors, int[][] edges) {\n        \n    }\n}",
+    "go": "func largestPathValue(colors string, edges [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_path_value(colors: String, edges: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "colors": "abaca",
+      "edges": "[[0,1],[0,2],[2,3],[3,4]]"
+    },
+    {
+      "colors": "a",
+      "edges": "[[0,0]]"
+    }
+  ],
+  "functionName": "largestPathValue",
+  "params": [
+    {
+      "name": "colors",
+      "type": "string"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use topological sort.",
+    "let dp[u][c] := the maximum count of vertices with color c of any path starting from vertex u. (by JerryJin2905)"
+  ]
+}

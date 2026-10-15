@@ -1,0 +1,45 @@
+{
+  "id": "lexicographically-minimum-string-after-removing-stars",
+  "title": "3170. Lexicographically Minimum String After Removing Stars",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aaba*\"",
+      "output": "\"aab\"",
+      "explanation": "We should delete one of the 'a' characters with '*'. If we choose s[3], s becomes the lexicographically smallest."
+    },
+    {
+      "input": "s = \"abc\"",
+      "output": "\"abc\"",
+      "explanation": "There is no '*' in the string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string clearStars(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String clearStars(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def clearStars(self, s: str) -> str:\n        ",
+    "typescript": "function clearStars(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ClearStars(string s) {\n        \n    }\n}",
+    "go": "func clearStars(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn clear_stars(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aaba*"
+    },
+    {
+      "s": "abc"
+    }
+  ],
+  "functionName": "clearStars",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

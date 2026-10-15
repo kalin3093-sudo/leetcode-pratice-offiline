@@ -1,0 +1,56 @@
+{
+  "id": "number-of-valid-words-in-a-sentence",
+  "title": "2047. Number of Valid Words in a Sentence",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/number-of-valid-words-in-a-sentence/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "sentence = \"cat and  dog\"",
+      "output": "3",
+      "explanation": "The valid words in the sentence are \"cat\", \"and\", and \"dog\"."
+    },
+    {
+      "input": "sentence = \"!this  1-s b8d!\"",
+      "output": "0",
+      "explanation": "There are no valid words in the sentence. \"!this\" is invalid because it starts with a punctuation mark. \"1-s\" and \"b8d\" are invalid because they contain digits."
+    },
+    {
+      "input": "sentence = \"alice and  bob are playing stone-game10\"",
+      "output": "5",
+      "explanation": "The valid words in the sentence are \"alice\", \"and\", \"bob\", \"are\", and \"playing\". \"stone-game10\" is invalid because it contains digits."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countValidWords(string sentence) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countValidWords(String sentence) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countValidWords(self, sentence: str) -> int:\n        ",
+    "typescript": "function countValidWords(sentence: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountValidWords(string sentence) {\n        \n    }\n}",
+    "go": "func countValidWords(sentence string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_valid_words(sentence: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "sentence": "cat and  dog"
+    },
+    {
+      "sentence": "!this  1-s b8d!"
+    },
+    {
+      "sentence": "alice and  bob are playing stone-game10"
+    }
+  ],
+  "functionName": "countValidWords",
+  "params": [
+    {
+      "name": "sentence",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate through the string to split it by spaces.",
+    "Count the number of characters of each type (letters, numbers, hyphens, and punctuations)."
+  ]
+}

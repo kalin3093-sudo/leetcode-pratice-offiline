@@ -1,0 +1,69 @@
+{
+  "id": "moving-stones-until-consecutive",
+  "title": "1033. Moving Stones Until Consecutive",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/moving-stones-until-consecutive/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "a = 1, b = 2, c = 5",
+      "output": "[1,2]",
+      "explanation": "Move the stone from 5 to 3, or move the stone from 5 to 4 to 3."
+    },
+    {
+      "input": "a = 4, b = 3, c = 2",
+      "output": "[0,0]",
+      "explanation": "We cannot make any moves."
+    },
+    {
+      "input": "a = 3, b = 5, c = 1",
+      "output": "[1,2]",
+      "explanation": "Move the stone from 1 to 4; or move the stone from 1 to 2 to 4."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> numMovesStones(int a, int b, int c) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] numMovesStones(int a, int b, int c) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numMovesStones(self, a: int, b: int, c: int) -> list[int]:\n        ",
+    "typescript": "function numMovesStones(a: number, b: number, c: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] NumMovesStones(int a, int b, int c) {\n        \n    }\n}",
+    "go": "func numMovesStones(a int, b int, c int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_moves_stones(a: i32, b: i32, c: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "a": 1,
+      "b": 2,
+      "c": 5
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "c": 2
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "c": 1
+    }
+  ],
+  "functionName": "numMovesStones",
+  "params": [
+    {
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
+      "type": "int"
+    },
+    {
+      "name": "c",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "For the minimum:  We can always do it in at most 2 moves, by moving one stone next to another, then the third stone next to the other two.  When can we do it in 1 move?  0 moves?\r\n\r\nFor the maximum:  Every move, the maximum position minus the minimum position must decrease by at least 1."
+  ]
+}

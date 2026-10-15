@@ -1,0 +1,9 @@
+You are given a **0-indexed** array `nums` of length `n` containing **distinct** positive integers. Return *the **minimum** number of **right shifts** required to sort* `nums` *and* `-1` *if this is not possible.*
+
+A **right shift** is defined as shifting the element at index `i` to index `(i + 1) % n`, for all indices.
+
+**Constraints:**
+
+-   `1 ≤ nums.length ≤ 100`
+-   `1 ≤ nums[i] ≤ 100`
+-   `nums` contains distinct integers.

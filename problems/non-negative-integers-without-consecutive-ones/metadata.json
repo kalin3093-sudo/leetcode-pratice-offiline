@@ -1,0 +1,51 @@
+{
+  "id": "non-negative-integers-without-consecutive-ones",
+  "title": "600. Non-negative Integers without Consecutive Ones",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/",
+  "category": "dynamic-programming",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "5",
+      "explanation": "Here are the non-negative integers <= 5 with their corresponding binary representations: 0 : 0 1 : 1 2 : 10 3 : 11 4 : 100 5 : 101 Among them, only integer 3 disobeys the rule (two consecutive ones) and the other 5 satisfy the rule."
+    },
+    {
+      "input": "n = 1",
+      "output": "2"
+    },
+    {
+      "input": "n = 2",
+      "output": "3"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findIntegers(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findIntegers(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findIntegers(self, n: int) -> int:\n        ",
+    "typescript": "function findIntegers(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindIntegers(int n) {\n        \n    }\n}",
+    "go": "func findIntegers(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_integers(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5
+    },
+    {
+      "n": 1
+    },
+    {
+      "n": 2
+    }
+  ],
+  "functionName": "findIntegers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

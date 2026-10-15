@@ -1,0 +1,48 @@
+{
+  "id": "find-mirror-score-of-a-string",
+  "title": "3412. Find Mirror Score of a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/find-mirror-score-of-a-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aczzx\"",
+      "output": "5",
+      "explanation": "i = 0. There is no index j that satisfies the conditions, so we skip. i = 1. There is no index j that satisfies the conditions, so we skip. i = 2. The closest index j that satisfies the conditions is j = 0, so we mark both indices 0 and 2, and then add 2 - 0 = 2 to the score. i = 3. There is no index j that satisfies the conditions, so we skip. i = 4. The closest index j that satisfies the conditions is j = 1, so we mark both indices 1 and 4, and then add 4 - 1 = 3 to the score."
+    },
+    {
+      "input": "s = \"abcdef\"",
+      "output": "0",
+      "explanation": "For each index i, there is no index j that satisfies the conditions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long calculateScore(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long calculateScore(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def calculateScore(self, s: str) -> int:\n        ",
+    "typescript": "function calculateScore(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long CalculateScore(string s) {\n        \n    }\n}",
+    "go": "func calculateScore(s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn calculate_score(s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aczzx"
+    },
+    {
+      "s": "abcdef"
+    }
+  ],
+  "functionName": "calculateScore",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Create a stack for every character.",
+    "For each index, check if the stack for mirror of the letter at that index is empty."
+  ]
+}

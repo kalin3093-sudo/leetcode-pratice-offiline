@@ -1,0 +1,49 @@
+{
+  "id": "maximum-enemy-forts-that-can-be-captured",
+  "title": "2511. Maximum Enemy Forts That Can Be Captured",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "forts = [1,0,0,-1,0,0,0,0,1]",
+      "output": "4",
+      "explanation": "- Moving the army from position 0 to position 3 captures 2 enemy forts, at 1 and 2. - Moving the army from position 8 to position 3 captures 4 enemy forts. Since 4 is the maximum number of enemy forts that can be captured, we return 4."
+    },
+    {
+      "input": "forts = [0,0,1,-1]",
+      "output": "0",
+      "explanation": "Since no enemy fort can be captured, 0 is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int captureForts(vector<int>& forts) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int captureForts(int[] forts) {\n        \n    }\n}",
+    "python": "class Solution:\n    def captureForts(self, forts: list[int]) -> int:\n        ",
+    "typescript": "function captureForts(forts: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CaptureForts(int[] forts) {\n        \n    }\n}",
+    "go": "func captureForts(forts []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn capture_forts(forts: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "forts": "[1,0,0,-1,0,0,0,0,1]"
+    },
+    {
+      "forts": "[0,0,1,-1]"
+    }
+  ],
+  "functionName": "captureForts",
+  "params": [
+    {
+      "name": "forts",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "For each fort under your command, check if you can move the army from here.",
+    "If yes, find the closest empty positions satisfying all criteria.",
+    "How can two-pointers be used to solve this problem optimally?"
+  ]
+}

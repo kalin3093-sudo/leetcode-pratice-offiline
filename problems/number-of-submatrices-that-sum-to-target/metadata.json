@@ -1,0 +1,61 @@
+{
+  "id": "number-of-submatrices-that-sum-to-target",
+  "title": "1074. Number of Submatrices That Sum to Target",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0",
+      "output": "4",
+      "explanation": "The four 1x1 submatrices that only contain 0."
+    },
+    {
+      "input": "matrix = [[1,-1],[-1,1]], target = 0",
+      "output": "5",
+      "explanation": "The two 1x2 submatrices, plus the two 2x1 submatrices, plus the 2x2 submatrix."
+    },
+    {
+      "input": "matrix = [[904]], target = 0",
+      "output": "0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSubmatrixSumTarget(vector<vector<int>>& matrix, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSubmatrixSumTarget(int[][] matrix, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSubmatrixSumTarget(self, matrix: list[list[int]], target: int) -> int:\n        ",
+    "typescript": "function numSubmatrixSumTarget(matrix: number[][], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSubmatrixSumTarget(int[][] matrix, int target) {\n        \n    }\n}",
+    "go": "func numSubmatrixSumTarget(matrix [][]int, target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_submatrix_sum_target(matrix: Vec<Vec<i32>>, target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "matrix": "[[0,1,0],[1,1,1],[0,1,0]]",
+      "target": 0
+    },
+    {
+      "matrix": "[[1,-1],[-1,1]]",
+      "target": 0
+    },
+    {
+      "matrix": "[[904]]",
+      "target": 0
+    }
+  ],
+  "functionName": "numSubmatrixSumTarget",
+  "params": [
+    {
+      "name": "matrix",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Using a 2D prefix sum, we can query the sum of any submatrix in O(1) time.\r\nNow for each (r1, r2), we can find the largest sum of a submatrix that uses every row in [r1, r2] in linear time using a sliding window."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "difference-between-element-sum-and-digit-sum-of-an-array",
+  "title": "2535. Difference Between Element Sum and Digit Sum of an Array",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,15,6,3]",
+      "output": "9",
+      "explanation": "The element sum of nums is 1 + 15 + 6 + 3 = 25. The digit sum of nums is 1 + 1 + 5 + 6 + 3 = 16. The absolute difference between the element sum and digit sum is |25 - 16| = 9."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "0",
+      "explanation": "The element sum of nums is 1 + 2 + 3 + 4 = 10. The digit sum of nums is 1 + 2 + 3 + 4 = 10. The absolute difference between the element sum and digit sum is |10 - 10| = 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int differenceOfSum(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int differenceOfSum(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def differenceOfSum(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function differenceOfSum(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int DifferenceOfSum(int[] nums) {\n        \n    }\n}",
+    "go": "func differenceOfSum(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn difference_of_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,15,6,3]"
+    },
+    {
+      "nums": "[1,2,3,4]"
+    }
+  ],
+  "functionName": "differenceOfSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use a simple for loop to iterate each number.",
+    "How you can get the digit for each number?"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sum-of-good-subsequences",
+  "title": "3351. Sum of Good Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-good-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,1]",
+      "output": "14",
+      "explanation": "Good subsequences are: [1], [2], [1], [1,2], [2,1], [1,2,1]. The sum of elements in these subsequences is 14."
+    },
+    {
+      "input": "nums = [3,4,5]",
+      "output": "40",
+      "explanation": "Good subsequences are: [3], [4], [5], [3,4], [4,5], [3,4,5]. The sum of elements in these subsequences is 40."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int sumOfGoodSubsequences(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int sumOfGoodSubsequences(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def sumOfGoodSubsequences(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function sumOfGoodSubsequences(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int SumOfGoodSubsequences(int[] nums) {\n        \n    }\n}",
+    "go": "func sumOfGoodSubsequences(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn sum_of_good_subsequences(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,1]"
+    },
+    {
+      "nums": "[3,4,5]"
+    }
+  ],
+  "functionName": "sumOfGoodSubsequences",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider counting how many times each element occurs in all possible good subsequences. This can help you derive the final answer more easily.",
+    "Use dynamic programming to track both the count and the sum of subsequences where the last element is <code>nums[i]</code>."
+  ]
+}

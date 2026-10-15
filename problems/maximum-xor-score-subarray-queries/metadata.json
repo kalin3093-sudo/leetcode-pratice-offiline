@@ -1,0 +1,55 @@
+{
+  "id": "maximum-xor-score-subarray-queries",
+  "title": "3277. Maximum XOR Score Subarray Queries",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximum-xor-score-subarray-queries/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,8,4,32,16,1], queries = [[0,2],[1,4],[0,5]]",
+      "output": "[12,60,60]",
+      "explanation": "In the first query, nums[0..2] has 6 subarrays [2], [8], [4], [2, 8], [8, 4], and [2, 8, 4] each with a respective XOR score of 2, 8, 4, 10, 12, and 6. The answer for the query is 12, the largest of all XOR scores. In the second query, the subarray of nums[1..4] with the largest XOR score is nums[1..4] with a score of 60. In the third query, the subarray of nums[0..5] with the largest XOR score is nums[1..4] with a score of 60."
+    },
+    {
+      "input": "nums = [0,7,3,2,8,5,1], queries = [[0,3],[1,5],[2,4],[2,6],[5,6]]",
+      "output": "[7,14,11,14,5]",
+      "explanation": "Index nums[li..ri] Maximum XOR Score Subarray Maximum Subarray XOR Score 0 [0, 7, 3, 2] [7] 7 1 [7, 3, 2, 8, 5] [7, 3, 2, 8] 14 2 [3, 2, 8] [3, 2, 8] 11 3 [3, 2, 8, 5, 1] [2, 8, 5, 1] 14 4 [5, 1] [5] 5"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> maximumSubarrayXor(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] maximumSubarrayXor(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumSubarrayXor(self, nums: List[int], queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function maximumSubarrayXor(nums: number[], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MaximumSubarrayXor(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func maximumSubarrayXor(nums []int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_subarray_xor(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,8,4,32,16,1]",
+      "queries": "[[0,2],[1,4],[0,5]]"
+    },
+    {
+      "nums": "[0,7,3,2,8,5,1]",
+      "queries": "[[0,3],[1,5],[2,4],[2,6],[5,6]]"
+    }
+  ],
+  "functionName": "maximumSubarrayXor",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Precompute the XOR score of every subarray.",
+    "Try to find a relationship between XOR score of <code>nums[i..j], nums[i..j + 1], nums[i..j + 2], …</code>. Do you notice any pattern?",
+    "If <code>dp[i][j]</code> is the XOR score of subarray <code>nums[i..j]</code>, <code>dp[i][j] = dp[i - 1][j] XOR dp[i - 1][j + 1]</code>."
+  ]
+}

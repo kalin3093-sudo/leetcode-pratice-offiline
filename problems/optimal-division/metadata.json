@@ -1,0 +1,45 @@
+{
+  "id": "optimal-division",
+  "title": "553. Optimal Division",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/optimal-division/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1000,100,10,2]",
+      "output": "\"1000/(100/10/2)\"",
+      "explanation": "1000/(100/10/2) = 1000/((100/10)/2) = 200 However, the bold parenthesis in \"1000/((100/10)/2)\" are redundant since they do not influence the operation priority. So you should return \"1000/(100/10/2)\". Other cases: 1000/(100/10)/2 = 50 1000/(100/(10/2)) = 50 1000/100/10/2 = 0.5 1000/100/(10/2) = 2"
+    },
+    {
+      "input": "nums = [2,3,4]",
+      "output": "\"2/(3/4)\"",
+      "explanation": "(2/(3/4)) = 8/3 = 2.667 It can be shown that after trying all possibilities, we cannot get an expression with evaluation greater than 2.667"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string optimalDivision(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String optimalDivision(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def optimalDivision(self, nums: List[int]) -> str:\n        ",
+    "typescript": "function optimalDivision(nums: number[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string OptimalDivision(int[] nums) {\n        \n    }\n}",
+    "go": "func optimalDivision(nums []int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn optimal_division(nums: Vec<i32>) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1000,100,10,2]"
+    },
+    {
+      "nums": "[2,3,4]"
+    }
+  ],
+  "functionName": "optimalDivision",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "string",
+  "hints": []
+}

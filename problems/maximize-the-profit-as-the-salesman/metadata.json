@@ -1,0 +1,55 @@
+{
+  "id": "maximize-the-profit-as-the-salesman",
+  "title": "2830. Maximize the Profit as the Salesman",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximize-the-profit-as-the-salesman/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 5, offers = [[0,0,1],[0,2,2],[1,3,2]]",
+      "output": "3",
+      "explanation": "There are 5 houses numbered from 0 to 4 and there are 3 purchase offers. We sell houses in the range [0,0] to 1st buyer for 1 gold and houses in the range [1,3] to 3rd buyer for 2 golds. It can be proven that 3 is the maximum amount of gold we can achieve."
+    },
+    {
+      "input": "n = 5, offers = [[0,0,1],[0,2,10],[1,3,2]]",
+      "output": "10",
+      "explanation": "There are 5 houses numbered from 0 to 4 and there are 3 purchase offers. We sell houses in the range [0,2] to 2nd buyer for 10 golds. It can be proven that 10 is the maximum amount of gold we can achieve."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maximizeTheProfit(int n, vector<vector<int>>& offers) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maximizeTheProfit(int n, List<List<Integer>> offers) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximizeTheProfit(self, n: int, offers: List[List[int]]) -> int:\n        ",
+    "typescript": "function maximizeTheProfit(n: number, offers: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaximizeTheProfit(int n, IList<IList<int>> offers) {\n        \n    }\n}",
+    "go": "func maximizeTheProfit(n int, offers [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximize_the_profit(n: i32, offers: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "offers": "[[0,0,1],[0,2,2],[1,3,2]]"
+    },
+    {
+      "n": 5,
+      "offers": "[[0,0,1],[0,2,10],[1,3,2]]"
+    }
+  ],
+  "functionName": "maximizeTheProfit",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "offers",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "<div class=\"_1l1MA\">The intended solution uses a dynamic programming approach to solve the problem.</div>",
+    "<div class=\"_1l1MA\">Sort the array offers by <code>start<sub>i</sub></code>.</div>",
+    "<div class=\"_1l1MA\">Let <code>dp[i]</code> = { the maximum amount of gold if the sold houses are in the range <code>[0 … i]</code> }.</div>"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "form-largest-integer-with-digits-that-add-up-to-target",
+  "title": "1449. Form Largest Integer With Digits That Add up to Target",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "cost = [4,3,2,5,6,7,2,5,5], target = 9",
+      "output": "\"7772\"",
+      "explanation": "The cost to paint the digit '7' is 2, and the digit '2' is 3. Then cost(\"7772\") = 2*3+ 3*1 = 9. You could also paint \"977\", but \"7772\" is the largest number. Digit    cost 1  ->   4 2  ->   3 3  ->   2 4  ->   5 5  ->   6 6  ->   7 7  ->   2 8  ->   5 9  ->   5"
+    },
+    {
+      "input": "cost = [7,6,5,5,5,6,8,7,8], target = 12",
+      "output": "\"85\"",
+      "explanation": "The cost to paint the digit '8' is 7, and the digit '5' is 5. Then cost(\"85\") = 7 + 5 = 12."
+    },
+    {
+      "input": "cost = [2,4,6,2,4,6,4,4,4], target = 5",
+      "output": "\"0\"",
+      "explanation": "It is impossible to paint any integer with total cost equal to target."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestNumber(vector<int>& cost, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestNumber(int[] cost, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestNumber(self, cost: list[int], target: int) -> str:\n        ",
+    "typescript": "function largestNumber(cost: number[], target: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestNumber(int[] cost, int target) {\n        \n    }\n}",
+    "go": "func largestNumber(cost []int, target int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_number(cost: Vec<i32>, target: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "cost": "[4,3,2,5,6,7,2,5,5]",
+      "target": 9
+    },
+    {
+      "cost": "[7,6,5,5,5,6,8,7,8]",
+      "target": 12
+    },
+    {
+      "cost": "[2,4,6,2,4,6,4,4,4]",
+      "target": 5
+    }
+  ],
+  "functionName": "largestNumber",
+  "params": [
+    {
+      "name": "cost",
+      "type": "int_array"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Use dynamic programming to find the maximum digits to paint given a total cost.",
+    "Build the largest number possible using this DP table."
+  ]
+}

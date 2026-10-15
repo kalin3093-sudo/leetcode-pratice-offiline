@@ -1,0 +1,57 @@
+{
+  "id": "maximum-number-of-subsequences-after-one-inserting",
+  "title": "3628. Maximum Number of Subsequences After One Inserting",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"LMCT\"",
+      "output": "2",
+      "explanation": "We can insert a \"L\" at the beginning of the string s to make \"LLMCT\", which has 2 subsequences, at indices [0, 3, 4] and [1, 3, 4]."
+    },
+    {
+      "input": "s = \"LCCT\"",
+      "output": "4",
+      "explanation": "We can insert a \"L\" at the beginning of the string s to make \"LLCCT\", which has 4 subsequences, at indices [0, 2, 4], [0, 3, 4], [1, 2, 4] and [1, 3, 4]."
+    },
+    {
+      "input": "s = \"L\"",
+      "output": "0",
+      "explanation": "Since it is not possible to obtain the subsequence \"LCT\" by inserting a single letter, the result is 0."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long numOfSubsequences(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long numOfSubsequences(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numOfSubsequences(self, s: str) -> int:\n        ",
+    "typescript": "function numOfSubsequences(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long NumOfSubsequences(string s) {\n        \n    }\n}",
+    "go": "func numOfSubsequences(s string) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_of_subsequences(s: String) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "LMCT"
+    },
+    {
+      "s": "LCCT"
+    },
+    {
+      "s": "L"
+    }
+  ],
+  "functionName": "numOfSubsequences",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "Precompute <code>preL</code>, <code>preLC</code>, <code>sufT</code>, and <code>sufCT</code> arrays to count L’s, LC’s, T’s, and CT’s at each position.",
+    "Compute <code>base</code> as the sum over all i of <code>preLC[i] * sufT[i]</code>.",
+    "For each insert position i, compute gains <code>sufCT[i]</code> for ‘L’, <code>preL[i] * sufT[i]</code> for ‘C’, and <code>preLC[i]</code> for ‘T’, and take the maximum of <code>base</code> and <code>base + gain</code>."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "count-items-matching-a-rule",
+  "title": "1773. Count Items Matching a Rule",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-items-matching-a-rule/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"color\", ruleValue = \"silver\"",
+      "output": "1",
+      "explanation": "There is only one item matching the given rule, which is [\"computer\",\"silver\",\"lenovo\"]."
+    },
+    {
+      "input": "items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"phone\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"type\", ruleValue = \"phone\"",
+      "output": "2",
+      "explanation": "There are only two items matching the given rule, which are [\"phone\",\"blue\",\"pixel\"] and [\"phone\",\"gold\",\"iphone\"]. Note that the item [\"computer\",\"silver\",\"phone\"] does not match."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countMatches(vector<vector<string>>& items, string ruleKey, string ruleValue) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countMatches(self, items: list[list[str]], ruleKey: str, ruleValue: str) -> int:\n        ",
+    "typescript": "function countMatches(items: string[][], ruleKey: string, ruleValue: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountMatches(IList<IList<string>> items, string ruleKey, string ruleValue) {\n        \n    }\n}",
+    "go": "func countMatches(items [][]string, ruleKey string, ruleValue string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_matches(items: Vec<Vec<String>>, rule_key: String, rule_value: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "items": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]",
+      "ruleKey": "color",
+      "ruleValue": "silver"
+    },
+    {
+      "items": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"phone\"],[\"phone\",\"gold\",\"iphone\"]]",
+      "ruleKey": "type",
+      "ruleValue": "phone"
+    }
+  ],
+  "functionName": "countMatches",
+  "params": [
+    {
+      "name": "items",
+      "type": "string_list_2d"
+    },
+    {
+      "name": "ruleKey",
+      "type": "string"
+    },
+    {
+      "name": "ruleValue",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Iterate on each item, and check if each one matches the rule according to the statement."
+  ]
+}

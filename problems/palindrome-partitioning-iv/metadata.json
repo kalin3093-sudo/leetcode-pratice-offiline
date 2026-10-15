@@ -1,0 +1,48 @@
+{
+  "id": "palindrome-partitioning-iv",
+  "title": "1745. Palindrome Partitioning IV",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/palindrome-partitioning-iv/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"abcbdd\"",
+      "output": "true",
+      "explanation": "\"abcbdd\" = \"a\" + \"bcb\" + \"dd\", and all three substrings are palindromes."
+    },
+    {
+      "input": "s = \"bcbddxy\"",
+      "output": "false",
+      "explanation": "s cannot be split into 3 palindromes."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkPartitioning(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkPartitioning(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def checkPartitioning(self, s: str) -> bool:\n        ",
+    "typescript": "function checkPartitioning(s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckPartitioning(string s) {\n        \n    }\n}",
+    "go": "func checkPartitioning(s string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn check_partitioning(s: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abcbdd"
+    },
+    {
+      "s": "bcbddxy"
+    }
+  ],
+  "functionName": "checkPartitioning",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Preprocess checking palindromes in O(1)",
+    "Note that one string is a prefix and another one is a suffix you can try brute forcing the rest"
+  ]
+}

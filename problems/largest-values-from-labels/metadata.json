@@ -1,0 +1,76 @@
+{
+  "id": "largest-values-from-labels",
+  "title": "1090. Largest Values From Labels",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/largest-values-from-labels/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "values = [5,4,3,2,1], labels = [1,1,2,2,3], numWanted = 3, useLimit = 1",
+      "output": "9",
+      "explanation": "The subset chosen is the first, third, and fifth items with the sum of values 5 + 3 + 1."
+    },
+    {
+      "input": "values = [5,4,3,2,1], labels = [1,3,3,3,2], numWanted = 3, useLimit = 2",
+      "output": "12",
+      "explanation": "The subset chosen is the first, second, and third items with the sum of values 5 + 4 + 3."
+    },
+    {
+      "input": "values = [9,8,8,7,6], labels = [0,0,0,1,1], numWanted = 3, useLimit = 1",
+      "output": "16",
+      "explanation": "The subset chosen is the first and fourth items with the sum of values 9 + 7."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int largestValsFromLabels(vector<int>& values, vector<int>& labels, int numWanted, int useLimit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int largestValsFromLabels(int[] values, int[] labels, int numWanted, int useLimit) {\n        \n    }\n}",
+    "python": "class Solution:\n    def largestValsFromLabels(self, values: list[int], labels: list[int], numWanted: int, useLimit: int) -> int:\n        ",
+    "typescript": "function largestValsFromLabels(values: number[], labels: number[], numWanted: number, useLimit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LargestValsFromLabels(int[] values, int[] labels, int numWanted, int useLimit) {\n        \n    }\n}",
+    "go": "func largestValsFromLabels(values []int, labels []int, numWanted int, useLimit int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn largest_vals_from_labels(values: Vec<i32>, labels: Vec<i32>, num_wanted: i32, use_limit: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "values": "[5,4,3,2,1]",
+      "labels": "[1,1,2,2,3]",
+      "numWanted": 3,
+      "useLimit": 1
+    },
+    {
+      "values": "[5,4,3,2,1]",
+      "labels": "[1,3,3,3,2]",
+      "numWanted": 3,
+      "useLimit": 2
+    },
+    {
+      "values": "[9,8,8,7,6]",
+      "labels": "[0,0,0,1,1]",
+      "numWanted": 3,
+      "useLimit": 1
+    }
+  ],
+  "functionName": "largestValsFromLabels",
+  "params": [
+    {
+      "name": "values",
+      "type": "int_array"
+    },
+    {
+      "name": "labels",
+      "type": "int_array"
+    },
+    {
+      "name": "numWanted",
+      "type": "int"
+    },
+    {
+      "name": "useLimit",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Consider the items in order from largest to smallest value, and greedily take the items if they fall under the use_limit.  We can keep track of how many items of each label are used by using a hash table."
+  ]
+}

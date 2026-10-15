@@ -1,0 +1,55 @@
+{
+  "id": "maximize-count-of-distinct-primes-after-split",
+  "title": "3569. Maximize Count of Distinct Primes After Split",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/maximize-count-of-distinct-primes-after-split/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [2,1,3,1,2], queries = [[1,2],[3,3]]",
+      "output": "[3,4]",
+      "explanation": "Initially nums = [2, 1, 3, 1, 2]. After 1st query, nums = [2, 2, 3, 1, 2]. Split nums into [2] and [2, 3, 1, 2]. [2] consists of 1 distinct prime and [2, 3, 1, 2] consists of 2 distinct primes. Hence, the answer for this query is 1 + 2 = 3. After 2nd query, nums = [2, 2, 3, 3, 2]. Split nums into [2, 2, 3] and [3, 2] with an answer of 2 + 2 = 4. The output is [3, 4]."
+    },
+    {
+      "input": "nums = [2,1,4], queries = [[0,1]]",
+      "output": "[0]",
+      "explanation": "Initially nums = [2, 1, 4]. After 1st query, nums = [1, 1, 4]. There are no prime numbers in nums, hence the answer for this query is 0. The output is [0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> maximumCount(vector<int>& nums, vector<vector<int>>& queries) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] maximumCount(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumCount(self, nums: List[int], queries: List[List[int]]) -> List[int]:\n        ",
+    "typescript": "function maximumCount(nums: number[], queries: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MaximumCount(int[] nums, int[][] queries) {\n        \n    }\n}",
+    "go": "func maximumCount(nums []int, queries [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_count(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[2,1,3,1,2]",
+      "queries": "[[1,2],[3,3]]"
+    },
+    {
+      "nums": "[2,1,4]",
+      "queries": "[[0,1]]"
+    }
+  ],
+  "functionName": "maximumCount",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "queries",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Preprocess all primes up to <code>max(nums)</code> with a sieve to enable O(1) primality checks.",
+    "For each prime <code>p</code>, record its occurrence <code>indices</code>; if it appears at least twice, treat <code>[first, last]</code> as a segment, and note that the split position <code>k</code> with the most overlapping segments equals the number of primes counted on both sides.",
+    "Use a segment tree with lazy propagation over all possible <code>k</code> to maintain, update, and query the sum of distinct-prime counts in the prefix and suffix, adjusting for overlaps."
+  ]
+}

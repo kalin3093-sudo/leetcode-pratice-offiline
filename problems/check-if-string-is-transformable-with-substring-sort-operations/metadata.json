@@ -1,0 +1,62 @@
+{
+  "id": "check-if-string-is-transformable-with-substring-sort-operations",
+  "title": "1585. Check If String Is Transformable With Substring Sort Operations",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s = \"84532\", t = \"34852\"",
+      "output": "true",
+      "explanation": "You can transform s into t using the following sort operations: \"84532\" (from index 2 to 3) -> \"84352\" \"84352\" (from index 0 to 2) -> \"34852\""
+    },
+    {
+      "input": "s = \"34521\", t = \"23415\"",
+      "output": "true",
+      "explanation": "You can transform s into t using the following sort operations: \"34521\" -> \"23451\" \"23451\" -> \"23415\""
+    },
+    {
+      "input": "s = \"12345\", t = \"12435\"",
+      "output": "false"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isTransformable(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isTransformable(String s, String t) {\n        \n    }\n}",
+    "python": "class Solution:\n    def isTransformable(self, s: str, t: str) -> bool:\n        ",
+    "typescript": "function isTransformable(s: string, t: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsTransformable(string s, string t) {\n        \n    }\n}",
+    "go": "func isTransformable(s string, t string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn is_transformable(s: String, t: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "84532",
+      "t": "34852"
+    },
+    {
+      "s": "34521",
+      "t": "23415"
+    },
+    {
+      "s": "12345",
+      "t": "12435"
+    }
+  ],
+  "functionName": "isTransformable",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "Suppose the first digit you need is 'd'. How can you determine if it's possible to get that digit there?",
+    "Consider swapping adjacent characters to maintain relative ordering."
+  ]
+}

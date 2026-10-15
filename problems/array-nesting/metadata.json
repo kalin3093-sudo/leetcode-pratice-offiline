@@ -1,0 +1,44 @@
+{
+  "id": "array-nesting",
+  "title": "565. Array Nesting",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/array-nesting/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [5,4,0,3,1,6,2]",
+      "output": "4",
+      "explanation": "nums[0] = 5, nums[1] = 4, nums[2] = 0, nums[3] = 3, nums[4] = 1, nums[5] = 6, nums[6] = 2. One of the longest sets s[k]: s[0] = {nums[0], nums[5], nums[6], nums[2]} = {5, 6, 2, 0}"
+    },
+    {
+      "input": "nums = [0,1,2]",
+      "output": "1"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int arrayNesting(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int arrayNesting(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def arrayNesting(self, nums: list[int]) -> int:\n        ",
+    "typescript": "function arrayNesting(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ArrayNesting(int[] nums) {\n        \n    }\n}",
+    "go": "func arrayNesting(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn array_nesting(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[5,4,0,3,1,6,2]"
+    },
+    {
+      "nums": "[0,1,2]"
+    }
+  ],
+  "functionName": "arrayNesting",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

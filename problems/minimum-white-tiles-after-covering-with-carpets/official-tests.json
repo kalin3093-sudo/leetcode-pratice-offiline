@@ -1,0 +1,12 @@
+[
+  {
+    "floor": "10110101",
+    "numCarpets": 2,
+    "carpetLen": 2
+  },
+  {
+    "floor": "11111",
+    "numCarpets": 2,
+    "carpetLen": 3
+  }
+]

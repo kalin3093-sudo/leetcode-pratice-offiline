@@ -1,0 +1,44 @@
+{
+  "id": "triangle",
+  "title": "120. Triangle",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/triangle/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]",
+      "output": "11",
+      "explanation": "The triangle looks like: 2 3 4 6 5 7 4 1 8 3 The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above)."
+    },
+    {
+      "input": "triangle = [[-10]]",
+      "output": "-10"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumTotal(vector<vector<int>>& triangle) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumTotal(List<List<Integer>> triangle) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumTotal(self, triangle: list[list[int]]) -> int:\n        ",
+    "typescript": "function minimumTotal(triangle: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumTotal(IList<IList<int>> triangle) {\n        \n    }\n}",
+    "go": "func minimumTotal(triangle [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "triangle": "[[2],[3,4],[6,5,7],[4,1,8,3]]"
+    },
+    {
+      "triangle": "[[-10]]"
+    }
+  ],
+  "functionName": "minimumTotal",
+  "params": [
+    {
+      "name": "triangle",
+      "type": "int_list_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "flipping-an-image",
+  "title": "832. Flipping an Image",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/flipping-an-image/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "image = [[1,1,0],[1,0,1],[0,0,0]]",
+      "output": "[[1,0,0],[0,1,0],[1,1,1]]",
+      "explanation": "First reverse each row: [[0,1,1],[1,0,1],[0,0,0]]. Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]"
+    },
+    {
+      "input": "image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]",
+      "output": "[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]",
+      "explanation": "First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]]. Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> flipAndInvertImage(vector<vector<int>>& image) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] flipAndInvertImage(int[][] image) {\n        \n    }\n}",
+    "python": "class Solution:\n    def flipAndInvertImage(self, image: list[list[int]]) -> list[list[int]]:\n        ",
+    "typescript": "function flipAndInvertImage(image: number[][]): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] FlipAndInvertImage(int[][] image) {\n        \n    }\n}",
+    "go": "func flipAndInvertImage(image [][]int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn flip_and_invert_image(image: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "image": "[[1,1,0],[1,0,1],[0,0,0]]"
+    },
+    {
+      "image": "[[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]"
+    }
+  ],
+  "functionName": "flipAndInvertImage",
+  "params": [
+    {
+      "name": "image",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": []
+}

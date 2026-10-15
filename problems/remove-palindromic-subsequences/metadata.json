@@ -1,0 +1,56 @@
+{
+  "id": "remove-palindromic-subsequences",
+  "title": "1332. Remove Palindromic Subsequences",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/remove-palindromic-subsequences/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"ababa\"",
+      "output": "1",
+      "explanation": "s is already a palindrome, so its entirety can be removed in a single step."
+    },
+    {
+      "input": "s = \"abb\"",
+      "output": "2",
+      "explanation": "\"abb\" -> \"bb\" -> \"\". Remove palindromic subsequence \"a\" then \"bb\"."
+    },
+    {
+      "input": "s = \"baabb\"",
+      "output": "2",
+      "explanation": "\"baabb\" -> \"b\" -> \"\". Remove palindromic subsequence \"baab\" then \"b\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int removePalindromeSub(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int removePalindromeSub(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def removePalindromeSub(self, s: str) -> int:\n        ",
+    "typescript": "function removePalindromeSub(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int RemovePalindromeSub(string s) {\n        \n    }\n}",
+    "go": "func removePalindromeSub(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn remove_palindrome_sub(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "ababa"
+    },
+    {
+      "s": "abb"
+    },
+    {
+      "s": "baabb"
+    }
+  ],
+  "functionName": "removePalindromeSub",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use the fact that string contains only 2 characters.",
+    "Are subsequences composed of only one type of letter always palindrome strings ?"
+  ]
+}

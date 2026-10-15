@@ -1,0 +1,47 @@
+{
+  "id": "count-commas-in-range",
+  "title": "3870. Count Commas in Range",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/count-commas-in-range/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 1002",
+      "output": "3",
+      "explanation": "The numbers \"1,000\", \"1,001\", and \"1,002\" each contain one comma, giving a total of 3."
+    },
+    {
+      "input": "n = 998",
+      "output": "0",
+      "explanation": "All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countCommas(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countCommas(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countCommas(self, n: int) -> int:\n        ",
+    "typescript": "function countCommas(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountCommas(int n) {\n        \n    }\n}",
+    "go": "func countCommas(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_commas(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 1002
+    },
+    {
+      "n": 998
+    }
+  ],
+  "functionName": "countCommas",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Numbers in the range <code>[1000, 100000]</code> have one comma."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "reach-a-number",
+  "title": "754. Reach a Number",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/reach-a-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "target = 2",
+      "output": "3",
+      "explanation": "On the 1st move, we step from 0 to 1 (1 step). On the 2nd move, we step from 1 to -1 (2 steps). On the 3rd move, we step from -1 to 2 (3 steps)."
+    },
+    {
+      "input": "target = 3",
+      "output": "2",
+      "explanation": "On the 1st move, we step from 0 to 1 (1 step). On the 2nd move, we step from 1 to 3 (2 steps)."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int reachNumber(int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int reachNumber(int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reachNumber(self, target: int) -> int:\n        ",
+    "typescript": "function reachNumber(target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ReachNumber(int target) {\n        \n    }\n}",
+    "go": "func reachNumber(target int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reach_number(target: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "target": 2
+    },
+    {
+      "target": 3
+    }
+  ],
+  "functionName": "reachNumber",
+  "params": [
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

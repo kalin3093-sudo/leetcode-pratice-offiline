@@ -1,0 +1,51 @@
+{
+  "id": "count-submatrices-with-top-left-element-and-sum-less-than-k",
+  "title": "3070. Count Submatrices with Top-Left Element and Sum Less Than k",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "grid = [[7,6,3],[6,6,1]], k = 18",
+      "output": "4",
+      "explanation": "There are only 4 submatrices, shown in the image above, that contain the top-left element of grid, and have a sum less than or equal to 18."
+    },
+    {
+      "input": "grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20",
+      "output": "6",
+      "explanation": "There are only 6 submatrices, shown in the image above, that contain the top-left element of grid, and have a sum less than or equal to 20."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSubmatrices(vector<vector<int>>& grid, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSubmatrices(int[][] grid, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSubmatrices(self, grid: List[List[int]], k: int) -> int:\n        ",
+    "typescript": "function countSubmatrices(grid: number[][], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSubmatrices(int[][] grid, int k) {\n        \n    }\n}",
+    "go": "func countSubmatrices(grid [][]int, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_submatrices(grid: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "grid": "[[7,6,3],[6,6,1]]",
+      "k": 18
+    },
+    {
+      "grid": "[[7,2,9],[1,5,0],[2,6,6]]",
+      "k": 20
+    }
+  ],
+  "functionName": "countSubmatrices",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": []
+}

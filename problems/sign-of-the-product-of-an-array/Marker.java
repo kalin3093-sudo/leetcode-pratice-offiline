@@ -1,0 +1,20 @@
+import java.util.*;
+class Marker {
+  public int arraySign(int[] nums) {
+    int sign = 1;
+
+    for (final int num : nums) {
+      if (num == 0)
+        return 0;
+      if (num < 0)
+        sign = -sign;
+    }
+
+    return sign;
+  }
+
+    public boolean isCorrect(int[] nums, int output) {
+        int expected = arraySign(nums);
+        return expected == output;
+    }
+}

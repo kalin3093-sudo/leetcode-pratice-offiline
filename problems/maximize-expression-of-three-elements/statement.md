@@ -1,0 +1,10 @@
+You are given an integer array `nums`.
+
+Choose three elements `a`, `b`, and `c` from `nums` at **distinct** indices such that the value of the expression `a + b - c` is maximized.
+
+Return an integer denoting the **maximum possible value** of this expression.
+
+**Constraints:**
+
+-   `3 ≤ nums.length ≤ 100`
+-   `-100 ≤ nums[i] ≤ 100`

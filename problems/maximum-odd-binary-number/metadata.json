@@ -1,0 +1,47 @@
+{
+  "id": "maximum-odd-binary-number",
+  "title": "2864. Maximum Odd Binary Number",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/maximum-odd-binary-number/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "s = \"010\"",
+      "output": "\"001\"",
+      "explanation": "Because there is just one '1', it must be in the last position. So the answer is \"001\"."
+    },
+    {
+      "input": "s = \"0101\"",
+      "output": "\"1001\"",
+      "explanation": "One of the '1's must be in the last position. The maximum number that can be made with the remaining digits is \"100\". So the answer is \"1001\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string maximumOddBinaryNumber(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String maximumOddBinaryNumber(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def maximumOddBinaryNumber(self, s: str) -> str:\n        ",
+    "typescript": "function maximumOddBinaryNumber(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MaximumOddBinaryNumber(string s) {\n        \n    }\n}",
+    "go": "func maximumOddBinaryNumber(s string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn maximum_odd_binary_number(s: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "010"
+    },
+    {
+      "s": "0101"
+    }
+  ],
+  "functionName": "maximumOddBinaryNumber",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "The binary representation of an odd number contains <code>'1'</code> in the least significant place."
+  ]
+}

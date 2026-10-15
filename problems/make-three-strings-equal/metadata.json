@@ -1,0 +1,59 @@
+{
+  "id": "make-three-strings-equal",
+  "title": "2937. Make Three Strings Equal",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/make-three-strings-equal/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "s1 = \"abc\", s2 = \"abb\", s3 = \"ab\"",
+      "output": "2",
+      "explanation": "Deleting the rightmost character from both s1 and s2 will result in three equal strings."
+    },
+    {
+      "input": "s1 = \"dac\", s2 = \"bac\", s3 = \"cac\"",
+      "output": "-1",
+      "explanation": "Since the first letters of s1 and s2 differ, they cannot be made equal."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMinimumOperations(string s1, string s2, string s3) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMinimumOperations(String s1, String s2, String s3) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findMinimumOperations(self, s1: str, s2: str, s3: str) -> int:\n        ",
+    "typescript": "function findMinimumOperations(s1: string, s2: string, s3: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMinimumOperations(string s1, string s2, string s3) {\n        \n    }\n}",
+    "go": "func findMinimumOperations(s1 string, s2 string, s3 string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_minimum_operations(s1: String, s2: String, s3: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s1": "abc",
+      "s2": "abb",
+      "s3": "ab"
+    },
+    {
+      "s1": "dac",
+      "s2": "bac",
+      "s3": "cac"
+    }
+  ],
+  "functionName": "findMinimumOperations",
+  "params": [
+    {
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
+    },
+    {
+      "name": "s3",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Calculate the length of the longest common prefix of the <code>3</code> strings."
+  ]
+}

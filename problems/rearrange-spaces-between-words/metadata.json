@@ -1,0 +1,47 @@
+{
+  "id": "rearrange-spaces-between-words",
+  "title": "1592. Rearrange Spaces Between Words",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/rearrange-spaces-between-words/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "text = \"\\u0020\\u0020this\\u0020\\u0020\\u0020is\\u0020\\u0020a sentence\\u0020\"",
+      "output": "\"this   is   a   sentence\"",
+      "explanation": "There are a total of 9 spaces and 4 words. We can evenly divide the 9 spaces between the words: 9 / (4-1) = 3 spaces."
+    },
+    {
+      "input": "text = \"\\u0020practice\\u0020\\u0020\\u0020makes\\u0020\\u0020\\u0020perfect\"",
+      "output": "\"practice   makes   perfect \"",
+      "explanation": "There are a total of 7 spaces and 3 words. 7 / (3-1) = 3 spaces plus 1 extra space. We place this extra space at the end of the string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reorderSpaces(string text) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reorderSpaces(String text) {\n        \n    }\n}",
+    "python": "class Solution:\n    def reorderSpaces(self, text: str) -> str:\n        ",
+    "typescript": "function reorderSpaces(text: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReorderSpaces(string text) {\n        \n    }\n}",
+    "go": "func reorderSpaces(text string) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn reorder_spaces(text: String) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "text": "  this   is  a sentence "
+    },
+    {
+      "text": " practice   makes   perfect"
+    }
+  ],
+  "functionName": "reorderSpaces",
+  "params": [
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Count the total number of spaces and words. Then use the integer division to determine the numbers of spaces to add between each word and at the end."
+  ]
+}

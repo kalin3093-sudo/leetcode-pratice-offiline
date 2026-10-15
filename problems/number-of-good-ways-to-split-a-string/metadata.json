@@ -1,0 +1,47 @@
+{
+  "id": "number-of-good-ways-to-split-a-string",
+  "title": "1525. Number of Good Ways to Split a String",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/number-of-good-ways-to-split-a-string/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "s = \"aacaba\"",
+      "output": "2",
+      "explanation": "There are 5 ways to split \"aacaba\" and 2 of them are good. (\"a\", \"acaba\") Left string and right string contains 1 and 3 different letters respectively. (\"aa\", \"caba\") Left string and right string contains 1 and 3 different letters respectively. (\"aac\", \"aba\") Left string and right string contains 2 and 2 different letters respectively (good split). (\"aaca\", \"ba\") Left string and right string contains 2 and 2 different letters respectively (good split). (\"aacab\", \"a\") Left string and right string contains 3 and 1 different letters respectively."
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "1",
+      "explanation": "Split the string as follows (\"ab\", \"cd\")."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSplits(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSplits(String s) {\n        \n    }\n}",
+    "python": "class Solution:\n    def numSplits(self, s: str) -> int:\n        ",
+    "typescript": "function numSplits(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSplits(string s) {\n        \n    }\n}",
+    "go": "func numSplits(s string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn num_splits(s: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "aacaba"
+    },
+    {
+      "s": "abcd"
+    }
+  ],
+  "functionName": "numSplits",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Use two HashMap to store the counts of distinct letters in the left and right substring divided by the current index."
+  ]
+}

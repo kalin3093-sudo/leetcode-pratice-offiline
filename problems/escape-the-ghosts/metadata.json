@@ -1,0 +1,60 @@
+{
+  "id": "escape-the-ghosts",
+  "title": "789. Escape The Ghosts",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/escape-the-ghosts/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "ghosts = [[1,0],[0,3]], target = [0,1]",
+      "output": "true",
+      "explanation": "You can reach the destination (0, 1) after 1 turn, while the ghosts located at (1, 0) and (0, 3) cannot catch up with you."
+    },
+    {
+      "input": "ghosts = [[1,0]], target = [2,0]",
+      "output": "false",
+      "explanation": "You need to reach the destination (2, 0), but the ghost at (1, 0) lies between you and the destination."
+    },
+    {
+      "input": "ghosts = [[2,0]], target = [1,0]",
+      "output": "false",
+      "explanation": "The ghost can reach the target at the same time as you."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool escapeGhosts(vector<vector<int>>& ghosts, vector<int>& target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean escapeGhosts(int[][] ghosts, int[] target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def escapeGhosts(self, ghosts: list[list[int]], target: list[int]) -> bool:\n        ",
+    "typescript": "function escapeGhosts(ghosts: number[][], target: number[]): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool EscapeGhosts(int[][] ghosts, int[] target) {\n        \n    }\n}",
+    "go": "func escapeGhosts(ghosts [][]int, target []int) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn escape_ghosts(ghosts: Vec<Vec<i32>>, target: Vec<i32>) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "ghosts": "[[1,0],[0,3]]",
+      "target": "[0,1]"
+    },
+    {
+      "ghosts": "[[1,0]]",
+      "target": "[2,0]"
+    },
+    {
+      "ghosts": "[[2,0]]",
+      "target": "[1,0]"
+    }
+  ],
+  "functionName": "escapeGhosts",
+  "params": [
+    {
+      "name": "ghosts",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "target",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": []
+}

@@ -1,0 +1,19 @@
+You are given two integer arrays `nums1` and `nums2` of lengths `n` and `m` respectively, and an integer `k`.
+
+You must choose **exactly** `k` pairs of indices `(i1, j1), (i2, j2), ..., (ik, jk)` such that:
+
+-   `0 ≤ i1 < i2 < ... < ik < n`
+-   `0 ≤ j1 < j2 < ... < jk < m`
+
+For each chosen pair `(i, j)`, you gain a score of `nums1[i] * nums2[j]`.
+
+The total **score** is the **sum** of the products of all selected pairs.
+
+Return an integer representing the **maximum** achievable total score.
+
+**Constraints:**
+
+-   `1 ≤ n == nums1.length ≤ 100`
+-   `1 ≤ m == nums2.length ≤ 100`
+-   `-10^6 ≤ nums1[i], nums2[i] ≤ 10^6`
+-   `1 ≤ k ≤ min(n, m)`

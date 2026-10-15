@@ -1,0 +1,68 @@
+{
+  "id": "day-of-the-week",
+  "title": "1185. Day of the Week",
+  "difficulty": "Easy",
+  "link": "https://leetcode.com/problems/day-of-the-week/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "day = 31, month = 8, year = 2019",
+      "output": "\"Saturday\""
+    },
+    {
+      "input": "day = 18, month = 7, year = 1999",
+      "output": "\"Sunday\""
+    },
+    {
+      "input": "day = 15, month = 8, year = 1993",
+      "output": "\"Sunday\""
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string dayOfTheWeek(int day, int month, int year) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String dayOfTheWeek(int day, int month, int year) {\n        \n    }\n}",
+    "python": "class Solution:\n    def dayOfTheWeek(self, day: int, month: int, year: int) -> str:\n        ",
+    "typescript": "function dayOfTheWeek(day: number, month: number, year: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string DayOfTheWeek(int day, int month, int year) {\n        \n    }\n}",
+    "go": "func dayOfTheWeek(day int, month int, year int) string {\n    \n}",
+    "rust": "impl Solution {\n    pub fn day_of_the_week(day: i32, month: i32, year: i32) -> String {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "day": 31,
+      "month": 8,
+      "year": 2019
+    },
+    {
+      "day": 18,
+      "month": 7,
+      "year": 1999
+    },
+    {
+      "day": 15,
+      "month": 8,
+      "year": 1993
+    }
+  ],
+  "functionName": "dayOfTheWeek",
+  "params": [
+    {
+      "name": "day",
+      "type": "int"
+    },
+    {
+      "name": "month",
+      "type": "int"
+    },
+    {
+      "name": "year",
+      "type": "int"
+    }
+  ],
+  "outputType": "string",
+  "hints": [
+    "Sum up the number of days for the years before the given year.",
+    "Handle the case of a leap year.",
+    "Find the number of days for each month of the given year."
+  ]
+}

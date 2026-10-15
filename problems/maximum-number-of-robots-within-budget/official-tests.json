@@ -1,0 +1,12 @@
+[
+  {
+    "chargeTimes": "[3,6,1,3,4]",
+    "runningCosts": "[2,1,3,4,5]",
+    "budget": "25"
+  },
+  {
+    "chargeTimes": "[11,12,19]",
+    "runningCosts": "[10,8,7]",
+    "budget": "19"
+  }
+]

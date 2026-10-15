@@ -1,0 +1,56 @@
+{
+  "id": "count-special-integers",
+  "title": "2376. Count Special Integers",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/count-special-integers/",
+  "category": "math",
+  "examples": [
+    {
+      "input": "n = 20",
+      "output": "19",
+      "explanation": "All the integers from 1 to 20, except 11, are special. Thus, there are 19 special integers."
+    },
+    {
+      "input": "n = 5",
+      "output": "5",
+      "explanation": "All the integers from 1 to 5 are special."
+    },
+    {
+      "input": "n = 135",
+      "output": "110",
+      "explanation": "There are 110 integers from 1 to 135 that are special. Some of the integers that are not special are: 22, 114, and 131."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countSpecialNumbers(int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countSpecialNumbers(int n) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countSpecialNumbers(self, n: int) -> int:\n        ",
+    "typescript": "function countSpecialNumbers(n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountSpecialNumbers(int n) {\n        \n    }\n}",
+    "go": "func countSpecialNumbers(n int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_special_numbers(n: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 20
+    },
+    {
+      "n": 5
+    },
+    {
+      "n": 135
+    }
+  ],
+  "functionName": "countSpecialNumbers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Try to think of dynamic programming.",
+    "Use the idea of digit dynamic programming to build the numbers, in addition to a bitmask that will tell which digits you have used so far on the number that you are building."
+  ]
+}

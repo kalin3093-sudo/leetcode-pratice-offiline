@@ -1,0 +1,14 @@
+[
+  {
+    "s": "abcd",
+    "indices": "[0, 2]",
+    "sources": "[\"a\", \"cd\"]",
+    "targets": "[\"eee\", \"ffff\"]"
+  },
+  {
+    "s": "abcd",
+    "indices": "[0, 2]",
+    "sources": "[\"ab\",\"ec\"]",
+    "targets": "[\"eee\",\"ffff\"]"
+  }
+]

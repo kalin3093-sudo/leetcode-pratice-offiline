@@ -1,0 +1,87 @@
+{
+  "id": "modify-graph-edge-weights",
+  "title": "2699. Modify Graph Edge Weights",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/modify-graph-edge-weights/",
+  "category": "graph-theory",
+  "examples": [
+    {
+      "input": "n = 5, edges = [[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]], source = 0, destination = 1, target = 5",
+      "output": "[[4,1,1],[2,0,1],[0,3,3],[4,3,1]]",
+      "explanation": "The graph above shows a possible modification to the edges, making the distance from 0 to 1 equal to 5."
+    },
+    {
+      "input": "n = 3, edges = [[0,1,-1],[0,2,5]], source = 0, destination = 2, target = 6",
+      "output": "[]",
+      "explanation": "The graph above contains the initial edges. It is not possible to make the distance from 0 to 2 equal to 6 by modifying the edge with weight -1. So, an empty array is returned."
+    },
+    {
+      "input": "n = 4, edges = [[1,0,4],[1,2,3],[2,3,5],[0,3,-1]], source = 0, destination = 2, target = 6",
+      "output": "[[1,0,4],[1,2,3],[2,3,5],[0,3,1]]",
+      "explanation": "The graph above shows a modified graph having the shortest distance from 0 to 2 as 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> modifiedGraphEdges(int n, vector<vector<int>>& edges, int source, int destination, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[][] modifiedGraphEdges(int n, int[][] edges, int source, int destination, int target) {\n        \n    }\n}",
+    "python": "class Solution:\n    def modifiedGraphEdges(self, n: int, edges: List[List[int]], source: int, destination: int, target: int) -> List[List[int]]:\n        ",
+    "typescript": "function modifiedGraphEdges(n: number, edges: number[][], source: number, destination: number, target: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[][] ModifiedGraphEdges(int n, int[][] edges, int source, int destination, int target) {\n        \n    }\n}",
+    "go": "func modifiedGraphEdges(n int, edges [][]int, source int, destination int, target int) [][]int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn modified_graph_edges(n: i32, edges: Vec<Vec<i32>>, source: i32, destination: i32, target: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 5,
+      "edges": "[[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]]",
+      "source": 0,
+      "destination": 1,
+      "target": 5
+    },
+    {
+      "n": 3,
+      "edges": "[[0,1,-1],[0,2,5]]",
+      "source": 0,
+      "destination": 2,
+      "target": 6
+    },
+    {
+      "n": 4,
+      "edges": "[[1,0,4],[1,2,3],[2,3,5],[0,3,-1]]",
+      "source": 0,
+      "destination": 2,
+      "target": 6
+    }
+  ],
+  "functionName": "modifiedGraphEdges",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    },
+    {
+      "name": "source",
+      "type": "int"
+    },
+    {
+      "name": "destination",
+      "type": "int"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_array_2d",
+  "hints": [
+    "Firstly, check that it’s actually possible to make the shortest path from source to destination equal to the target.",
+    "If the shortest path from source to destination without the edges to be modified, is less than the target, then it is not possible.",
+    "If the shortest path from source to destination including the edges to be modified and assigning them a temporary weight of 1, is greater than the target, then it is also not possible.",
+    "Suppose we can find a modifiable edge (u, v) such that the length of the shortest path from source to u (dis1) plus the length of the shortest path from v to destination (dis2) is less than target (dis1 + dis2 < target), then we can change its weight to “target - dis1 - dis2”.",
+    "For all the other edges that still have the weight “-1”, change the weights into sufficient large number (target, target + 1 or 200000000 etc.)."
+  ]
+}

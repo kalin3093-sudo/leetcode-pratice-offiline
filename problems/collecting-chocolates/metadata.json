@@ -1,0 +1,54 @@
+{
+  "id": "collecting-chocolates",
+  "title": "2735. Collecting Chocolates",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/collecting-chocolates/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [20,1,15], x = 5",
+      "output": "13",
+      "explanation": "Initially, the chocolate types are [0,1,2]. We will buy the 1st type of chocolate at a cost of 1. Now, we will perform the operation at a cost of 5, and the types of chocolates will become [1,2,0]. We will buy the 2nd type of chocolate at a cost of 1. Now, we will again perform the operation at a cost of 5, and the chocolate types will become [2,0,1]. We will buy the 0th type of chocolate at a cost of 1. Thus, the total cost will become (1 + 5 + 1 + 5 + 1) = 13. We can prove that this is optimal."
+    },
+    {
+      "input": "nums = [1,2,3], x = 4",
+      "output": "6",
+      "explanation": "We will collect all three types of chocolates at their own price without performing any operations. Therefore, the total cost is 1 + 2 + 3 = 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    long long minCost(vector<int>& nums, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long minCost(int[] nums, int x) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minCost(self, nums: List[int], x: int) -> int:\n        ",
+    "typescript": "function minCost(nums: number[], x: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public long MinCost(int[] nums, int x) {\n        \n    }\n}",
+    "go": "func minCost(nums []int, x int) int64 {\n    \n}",
+    "rust": "impl Solution {\n    pub fn min_cost(nums: Vec<i32>, x: i32) -> i64 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[20,1,15]",
+      "x": 5
+    },
+    {
+      "nums": "[1,2,3]",
+      "x": 4
+    }
+  ],
+  "functionName": "minCost",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    },
+    {
+      "name": "x",
+      "type": "int"
+    }
+  ],
+  "outputType": "long",
+  "hints": [
+    "How many maximum rotations will be needed?",
+    "The array will be rotated for a max of N times, so try all possibilities as N = 1000."
+  ]
+}

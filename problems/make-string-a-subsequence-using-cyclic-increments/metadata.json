@@ -1,0 +1,65 @@
+{
+  "id": "make-string-a-subsequence-using-cyclic-increments",
+  "title": "2825. Make String a Subsequence Using Cyclic Increments",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "str1 = \"abc\", str2 = \"ad\"",
+      "output": "true",
+      "explanation": "Select index 2 in str1. Increment str1[2] to become 'd'. Hence, str1 becomes \"abd\" and str2 is now a subsequence. Therefore, true is returned."
+    },
+    {
+      "input": "str1 = \"zc\", str2 = \"ad\"",
+      "output": "true",
+      "explanation": "Select indices 0 and 1 in str1. Increment str1[0] to become 'a'. Increment str1[1] to become 'd'. Hence, str1 becomes \"ad\" and str2 is now a subsequence. Therefore, true is returned."
+    },
+    {
+      "input": "str1 = \"ab\", str2 = \"d\"",
+      "output": "false",
+      "explanation": "In this example, it can be shown that it is impossible to make str2 a subsequence of str1 using the operation at most once. Therefore, false is returned."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canMakeSubsequence(string str1, string str2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canMakeSubsequence(String str1, String str2) {\n        \n    }\n}",
+    "python": "class Solution:\n    def canMakeSubsequence(self, str1: str, str2: str) -> bool:\n        ",
+    "typescript": "function canMakeSubsequence(str1: string, str2: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanMakeSubsequence(string str1, string str2) {\n        \n    }\n}",
+    "go": "func canMakeSubsequence(str1 string, str2 string) bool {\n    \n}",
+    "rust": "impl Solution {\n    pub fn can_make_subsequence(str1: String, str2: String) -> bool {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "str1": "abc",
+      "str2": "ad"
+    },
+    {
+      "str1": "zc",
+      "str2": "ad"
+    },
+    {
+      "str1": "ab",
+      "str2": "d"
+    }
+  ],
+  "functionName": "canMakeSubsequence",
+  "params": [
+    {
+      "name": "str1",
+      "type": "string"
+    },
+    {
+      "name": "str2",
+      "type": "string"
+    }
+  ],
+  "outputType": "boolean",
+  "hints": [
+    "<div class=\"_1l1MA\">Consider the indices we will increment separately.</div>",
+    "<div class=\"_1l1MA\">We can maintain two pointers: pointer <code>i</code> for <code>str1</code> and pointer <code>j</code> for <code>str2</code>, while ensuring they remain within the bounds of the strings.</div>",
+    "<div class=\"_1l1MA\">If both <code>str1[i]</code> and <code>str2[j]</code> match, or if incrementing <code>str1[i]</code> matches <code>str2[j]</code>, we increase both pointers; otherwise, we increment only pointer <code>i</code>.</div>",
+    "<div class=\"_1l1MA\">It is possible to make <code>str2</code> a subsequence of <code>str1</code> if <code>j</code> is at the end of <code>str2</code>, after we can no longer find a match.</div>"
+  ]
+}

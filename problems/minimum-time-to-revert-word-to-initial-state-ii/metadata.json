@@ -1,0 +1,63 @@
+{
+  "id": "minimum-time-to-revert-word-to-initial-state-ii",
+  "title": "3031. Minimum Time to Revert Word to Initial State II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/",
+  "category": "string",
+  "examples": [
+    {
+      "input": "word = \"abacaba\", k = 3",
+      "output": "2",
+      "explanation": "At the 1st second, we remove characters \"aba\" from the prefix of word, and add characters \"bac\" to the end of word. Thus, word becomes equal to \"cababac\". At the 2nd second, we remove characters \"cab\" from the prefix of word, and add \"aba\" to the end of word. Thus, word becomes equal to \"abacaba\" and reverts to its initial state. It can be shown that 2 seconds is the minimum time greater than zero required for word to revert to its initial state."
+    },
+    {
+      "input": "word = \"abacaba\", k = 4",
+      "output": "1",
+      "explanation": "At the 1st second, we remove characters \"abac\" from the prefix of word, and add characters \"caba\" to the end of word. Thus, word becomes equal to \"abacaba\" and reverts to its initial state. It can be shown that 1 second is the minimum time greater than zero required for word to revert to its initial state."
+    },
+    {
+      "input": "word = \"abcbabcd\", k = 2",
+      "output": "4",
+      "explanation": "At every second, we will remove the first 2 characters of word, and add the same characters to the end of word. After 4 seconds, word becomes equal to \"abcbabcd\" and reverts to its initial state. It can be shown that 4 seconds is the minimum time greater than zero required for word to revert to its initial state."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumTimeToInitialState(string word, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumTimeToInitialState(String word, int k) {\n        \n    }\n}",
+    "python": "class Solution:\n    def minimumTimeToInitialState(self, word: str, k: int) -> int:\n        ",
+    "typescript": "function minimumTimeToInitialState(word: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumTimeToInitialState(string word, int k) {\n        \n    }\n}",
+    "go": "func minimumTimeToInitialState(word string, k int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn minimum_time_to_initial_state(word: String, k: i32) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "word": "abacaba",
+      "k": 3
+    },
+    {
+      "word": "abacaba",
+      "k": 4
+    },
+    {
+      "word": "abcbabcd",
+      "k": 2
+    }
+  ],
+  "functionName": "minimumTimeToInitialState",
+  "params": [
+    {
+      "name": "word",
+      "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Find the longest suffix which is also a prefix and whose length is a multiple of <code>K</code> in <code>O(N)</code>.",
+    "Use Z-function."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "count-covered-buildings",
+  "title": "3531. Count Covered Buildings",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/count-covered-buildings/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "n = 3, buildings = [[1,2],[2,2],[3,2],[2,1],[2,3]]",
+      "output": "1",
+      "explanation": "Only building [2,2] is covered as it has at least one building: above ([1,2]) below ([3,2]) left ([2,1]) right ([2,3]) Thus, the count of covered buildings is 1."
+    },
+    {
+      "input": "n = 3, buildings = [[1,1],[1,2],[2,1],[2,2]]",
+      "output": "0",
+      "explanation": "No building has at least one building in all four directions."
+    },
+    {
+      "input": "n = 5, buildings = [[1,3],[3,2],[3,3],[3,5],[5,3]]",
+      "output": "1",
+      "explanation": "Only building [3,3] is covered as it has at least one building: above ([1,3]) below ([5,3]) left ([3,2]) right ([3,5]) Thus, the count of covered buildings is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countCoveredBuildings(int n, vector<vector<int>>& buildings) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countCoveredBuildings(int n, int[][] buildings) {\n        \n    }\n}",
+    "python": "class Solution:\n    def countCoveredBuildings(self, n: int, buildings: List[List[int]]) -> int:\n        ",
+    "typescript": "function countCoveredBuildings(n: number, buildings: number[][]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountCoveredBuildings(int n, int[][] buildings) {\n        \n    }\n}",
+    "go": "func countCoveredBuildings(n int, buildings [][]int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn count_covered_buildings(n: i32, buildings: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "n": 3,
+      "buildings": "[[1,2],[2,2],[3,2],[2,1],[2,3]]"
+    },
+    {
+      "n": 3,
+      "buildings": "[[1,1],[1,2],[2,1],[2,2]]"
+    },
+    {
+      "n": 5,
+      "buildings": "[[1,3],[3,2],[3,3],[3,5],[5,3]]"
+    }
+  ],
+  "functionName": "countCoveredBuildings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "buildings",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Group buildings with the same x or y value together, and sort each group.",
+    "In each sorted list, the buildings that are not at the first or last positions are covered in that direction."
+  ]
+}

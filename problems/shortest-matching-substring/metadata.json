@@ -1,0 +1,72 @@
+{
+  "id": "shortest-matching-substring",
+  "title": "3455. Shortest Matching Substring",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/shortest-matching-substring/",
+  "category": "two-pointers",
+  "examples": [
+    {
+      "input": "s = \"abaacbaecebce\", p = \"ba*c*ce\"",
+      "output": "8",
+      "explanation": "The shortest matching substring of p in s is \"baecebce\"."
+    },
+    {
+      "input": "s = \"baccbaadbc\", p = \"cc*baa*adb\"",
+      "output": "-1",
+      "explanation": "There is no matching substring in s."
+    },
+    {
+      "input": "s = \"a\", p = \"**\"",
+      "output": "0",
+      "explanation": "The empty substring is the shortest matching substring."
+    },
+    {
+      "input": "s = \"madlogic\", p = \"*adlogi*\"",
+      "output": "6",
+      "explanation": "The shortest matching substring of p in s is \"adlogi\"."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestMatchingSubstring(string s, string p) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestMatchingSubstring(String s, String p) {\n        \n    }\n}",
+    "python": "class Solution:\n    def shortestMatchingSubstring(self, s: str, p: str) -> int:\n        ",
+    "typescript": "function shortestMatchingSubstring(s: string, p: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestMatchingSubstring(string s, string p) {\n        \n    }\n}",
+    "go": "func shortestMatchingSubstring(s string, p string) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn shortest_matching_substring(s: String, p: String) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "s": "abaacbaecebce",
+      "p": "ba*c*ce"
+    },
+    {
+      "s": "baccbaadbc",
+      "p": "cc*baa*adb"
+    },
+    {
+      "s": "a",
+      "p": "**"
+    },
+    {
+      "s": "madlogic",
+      "p": "*adlogi*"
+    }
+  ],
+  "functionName": "shortestMatchingSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "p",
+      "type": "string"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "The pattern string <code>p</code> can be divided into three segments.",
+    "Use the KMP algorithm to locate all occurrences of each segment in <code>s</code>."
+  ]
+}

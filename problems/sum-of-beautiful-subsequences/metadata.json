@@ -1,0 +1,51 @@
+{
+  "id": "sum-of-beautiful-subsequences",
+  "title": "3671. Sum of Beautiful Subsequences",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/sum-of-beautiful-subsequences/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "10",
+      "explanation": "All strictly increasing subsequences and their GCDs are: Subsequence GCD [1] 1 [2] 2 [3] 3 [1,2] 1 [1,3] 1 [2,3] 1 [1,2,3] 1 Calculating beauty for each GCD: GCD Count of subsequences Beauty (GCD &times; Count) 1 5 1 &times; 5 = 5 2 1 2 &times; 1 = 2 3 1 3 &times; 1 = 3 Total beauty is 5 + 2 + 3 = 10."
+    },
+    {
+      "input": "nums = [4,6]",
+      "output": "12",
+      "explanation": "All strictly increasing subsequences and their GCDs are: Subsequence GCD [4] 4 [6] 6 [4,6] 2 Calculating beauty for each GCD: GCD Count of subsequences Beauty (GCD &times; Count) 2 1 2 &times; 1 = 2 4 1 4 &times; 1 = 4 6 1 6 &times; 1 = 6 Total beauty is 2 + 4 + 6 = 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int totalBeauty(vector<int>& nums) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int totalBeauty(int[] nums) {\n        \n    }\n}",
+    "python": "class Solution:\n    def totalBeauty(self, nums: List[int]) -> int:\n        ",
+    "typescript": "function totalBeauty(nums: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int TotalBeauty(int[] nums) {\n        \n    }\n}",
+    "go": "func totalBeauty(nums []int) int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn total_beauty(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "nums": "[1,2,3]"
+    },
+    {
+      "nums": "[4,6]"
+    }
+  ],
+  "functionName": "totalBeauty",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int",
+  "hints": [
+    "Fix a candidate GCD <code>g</code> and keep, in the original order, only those array elements divisible by <code>g</code>; scale them down to <code>x / g</code> so any increasing subsequence here corresponds to a subsequence whose elements are all multiples of <code>g</code>.",
+    "Count strictly increasing subsequences of that scaled list by assigning ranks (coordinate compression) and maintaining prefix sums of ways for smaller ranks (you may use a Fenwick tree).",
+    "The count you get, call it <code>cnt_g</code>, includes subsequences whose GCD is <code>g</code> or any multiple of <code>g</code>; it is therefore an overcount for \"exactly g\".",
+    "To get the number with GCD exactly <code>g</code>, process <code>g</code> from <code>max(nums)</code> down to <code>1</code> and subtract counts already assigned to multiples: <code>F[g] = cnt_g - sum{k=2g,3g,...}*F[k]</code> (do arithmetic mod <code>MOD</code>); descending order ensures multiples are known.",
+    "The final answer is the sum of contributions <code>g * F[g]</code> for all <code>g</code>."
+  ]
+}

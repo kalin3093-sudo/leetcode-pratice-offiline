@@ -1,0 +1,49 @@
+{
+  "id": "decode-xored-permutation",
+  "title": "1734. Decode XORed Permutation",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/decode-xored-permutation/",
+  "category": "array",
+  "examples": [
+    {
+      "input": "encoded = [3,1]",
+      "output": "[1,2,3]",
+      "explanation": "If perm = [1,2,3], then encoded = [1 XOR 2,2 XOR 3] = [3,1]"
+    },
+    {
+      "input": "encoded = [6,5,4,6]",
+      "output": "[2,4,1,5,3]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> decode(vector<int>& encoded) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] decode(int[] encoded) {\n        \n    }\n}",
+    "python": "class Solution:\n    def decode(self, encoded: list[int]) -> list[int]:\n        ",
+    "typescript": "function decode(encoded: number[]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] Decode(int[] encoded) {\n        \n    }\n}",
+    "go": "func decode(encoded []int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn decode(encoded: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "encoded": "[3,1]"
+    },
+    {
+      "encoded": "[6,5,4,6]"
+    }
+  ],
+  "functionName": "decode",
+  "params": [
+    {
+      "name": "encoded",
+      "type": "int_array"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": [
+    "Compute the XOR of the numbers between 1 and n, and think about how it can be used. Let it be x.",
+    "Think why n is odd.",
+    "perm[0] = x XOR encoded[1] XOR encoded[3] XOR encoded[5] ...",
+    "perm[i] = perm[i-1] XOR encoded[i-1]"
+  ]
+}

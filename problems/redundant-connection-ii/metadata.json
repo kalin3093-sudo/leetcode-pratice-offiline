@@ -1,0 +1,43 @@
+{
+  "id": "redundant-connection-ii",
+  "title": "685. Redundant Connection II",
+  "difficulty": "Hard",
+  "link": "https://leetcode.com/problems/redundant-connection-ii/",
+  "category": "depth-first-search",
+  "examples": [
+    {
+      "input": "edges = [[1,2],[1,3],[2,3]]",
+      "output": "[2,3]"
+    },
+    {
+      "input": "edges = [[1,2],[2,3],[3,4],[4,1],[1,5]]",
+      "output": "[4,1]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> findRedundantDirectedConnection(vector<vector<int>>& edges) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] findRedundantDirectedConnection(int[][] edges) {\n        \n    }\n}",
+    "python": "class Solution:\n    def findRedundantDirectedConnection(self, edges: list[list[int]]) -> list[int]:\n        ",
+    "typescript": "function findRedundantDirectedConnection(edges: number[][]): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] FindRedundantDirectedConnection(int[][] edges) {\n        \n    }\n}",
+    "go": "func findRedundantDirectedConnection(edges [][]int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn find_redundant_directed_connection(edges: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "edges": "[[1,2],[1,3],[2,3]]"
+    },
+    {
+      "edges": "[[1,2],[2,3],[3,4],[4,1],[1,5]]"
+    }
+  ],
+  "functionName": "findRedundantDirectedConnection",
+  "params": [
+    {
+      "name": "edges",
+      "type": "int_array_2d"
+    }
+  ],
+  "outputType": "int_array",
+  "hints": []
+}

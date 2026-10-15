@@ -1,0 +1,56 @@
+{
+  "id": "powerful-integers",
+  "title": "970. Powerful Integers",
+  "difficulty": "Medium",
+  "link": "https://leetcode.com/problems/powerful-integers/",
+  "category": "hash-table",
+  "examples": [
+    {
+      "input": "x = 2, y = 3, bound = 10",
+      "output": "[2,3,4,5,7,9,10]",
+      "explanation": "2 = 20 + 30 3 = 21 + 30 4 = 20 + 31 5 = 21 + 31 7 = 22 + 31 9 = 23 + 30 10 = 20 + 32"
+    },
+    {
+      "input": "x = 3, y = 5, bound = 15",
+      "output": "[2,4,6,8,10,14]"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> powerfulIntegers(int x, int y, int bound) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> powerfulIntegers(int x, int y, int bound) {\n        \n    }\n}",
+    "python": "class Solution:\n    def powerfulIntegers(self, x: int, y: int, bound: int) -> list[int]:\n        ",
+    "typescript": "function powerfulIntegers(x: number, y: number, bound: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> PowerfulIntegers(int x, int y, int bound) {\n        \n    }\n}",
+    "go": "func powerfulIntegers(x int, y int, bound int) []int {\n    \n}",
+    "rust": "impl Solution {\n    pub fn powerful_integers(x: i32, y: i32, bound: i32) -> Vec<i32> {\n        \n    }\n}"
+  },
+  "testCases": [
+    {
+      "x": 2,
+      "y": 3,
+      "bound": 10
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "bound": 15
+    }
+  ],
+  "functionName": "powerfulIntegers",
+  "params": [
+    {
+      "name": "x",
+      "type": "int"
+    },
+    {
+      "name": "y",
+      "type": "int"
+    },
+    {
+      "name": "bound",
+      "type": "int"
+    }
+  ],
+  "outputType": "int_list",
+  "hints": []
+}
